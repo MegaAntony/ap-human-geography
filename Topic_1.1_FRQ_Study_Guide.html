@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography — Topic 1.1 FRQ Study Guide (Student Book & Teacher Key References)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 24px; }
+        .container { max-width: 950px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25); }
+        .nav-links { margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .nav-links a { color: white; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+        .nav-links a:hover { background: rgba(255,255,255,0.35); }
+        .badge { display: inline-block; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+        .subtitle { font-size: 15px; opacity: 0.95; }
+
+        /* Master Cross-Reference Box */
+        .xref-box {
+            background: #ffffff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+        }
+        .xref-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .xref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            font-size: 14px;
+        }
+        .xref-item {
+            background: #f0f9ff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #bae6fd;
+        }
+        .xref-item strong { color: #0369a1; display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 2px; }
+
+        /* Dual Citation Tags */
+        .citation-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .student-tag {
+            background: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .teacher-tag {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mnemonic-banner { background: #fef3c7; border-left: 6px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; font-weight: 600; color: #92400e; font-size: 15px; }
+
+        .section-divider {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; margin-bottom: 18px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+        .part-tag { font-weight: 800; font-size: 14px; color: var(--primary); background: #eff6ff; padding: 4px 10px; border-radius: 6px; }
+        .verb-badge { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+        .verb-identify { background: #dbeafe; color: #1e40af; }
+        .verb-define { background: #e0e7ff; color: #3730a3; }
+        .verb-describe { background: #fef9c3; color: #854d0e; }
+        .verb-explain { background: #dcfce7; color: #166534; }
+        .verb-compare { background: #ffedd5; color: #9a3412; }
+        .question-text { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 14px; }
+        .answer-box { background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid var(--success); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+        .answer-title { font-size: 12px; font-weight: 700; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .exact-answer { font-size: 15px; color: #0f172a; font-weight: 600; }
+        .memory-trick { background: #fdf4ff; border-left: 4px solid #c026d3; padding: 12px 14px; border-radius: 6px; font-size: 13px; color: #701a75; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="nav-links">
+            <a href="index.html">🏠 Home Index</a>
+            <a href="Topic_1.1_FRQ_Study_Guide.html">1.1 Maps</a>
+            <a href="Topic_1.2_FRQ_Study_Guide.html">1.2 Data</a>
+            <a href="Topic_1.3_FRQ_Study_Guide.html">1.3 Geospatial</a>
+            <a href="Topic_7.2_FRQ_Study_Guide.html">7.2 Sectors</a>
+            <a href="Topic_7.3_FRQ_Study_Guide.html">7.3 Measures</a>
+            <a href="Topic_7.5_FRQ_Study_Guide.html">7.5 Theories</a>
+        </div>
+        <span class="badge">Georgia GSE & AP Human Geography • Unit 1</span>
+        <h1>Topic 1.1: Introduction to Maps & Chapter 1 Full FRQ</h1>
+        <p class="subtitle">Complete Section References for Student Textbook & Teacher Answer Key</p>
+    </header>
+
+    <!-- Master Dual Cross-Reference Box -->
+    <div class="xref-box">
+        <div class="xref-title">📖 Complete Curriculum & Textbook Section References</div>
+        <div class="xref-grid">
+            <div class="xref-item">
+                <strong>Unit & Chapter</strong>
+                Unit 1: Thinking Geographically<br>Chapter 1: Maps and Geographic Data
+            </div>
+            <div class="xref-item">
+                <strong>Student Book Section</strong>
+                Topic 1.1: Introduction to Maps<br><strong>Pages 4 – 17</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Student Book FRQ Section</strong>
+                Chapter 1 Review & FRQ Exam Practice<br><strong>Pages 26 – 29 (Earth at Night Prompt: p. 28)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Teacher Answer Key (Topic 1.1)</strong>
+                Chapter 1 Topic Keys<br><strong>Key pp. 1–2 (PDF pp. 9–10)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Teacher Answer Key (FRQ Exam)</strong>
+                Chapter 1 Free-Response Scoring Rubrics<br><strong>Key pp. 4–5 (PDF pp. 12–13)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Georgia Standards of Excellence</strong>
+                SSWG1 (Map & Globe Skills, Thematic Projections)
+            </div>
+        </div>
+    </div>
+
+    <div class="mnemonic-banner">
+        🧠 <strong>SUPER MEMORY TRICK (S.A.D.D.):</strong> Every 2D map distorts <strong>S</strong>hape, <strong>A</strong>rea, <strong>D</strong>istance, and <strong>D</strong>irection! <strong>Choro</strong> = <em>Color</em>, <strong>Dots</strong> = <em>Clusters</em>.
+    </div>
+
+    <!-- SECTION 1: CHAPTER 1 FULL OFFICIAL FRQ EXAM (Earth at Night Stimulus) -->
+    <div class="section-divider">
+        📝 Section 1: Official Chapter 1 Free-Response Exam (Earth at Night Stimulus)
+    </div>
+
+    <!-- FRQ Part A -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART A</span>
+            <span class="verb-badge verb-identify">Identify</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt A) & Pages 12–14, 17 (Scale Concepts)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 4 (PDF Page 12)</span>
+        </div>
+        <div class="question-text">
+            Identify the overall scale of the Earth at night image shown in the stimulus.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>Global scale</strong> (or world scale)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> When the image shows the entire planet at once, the scale of analysis is always <strong>Global / World scale</strong>.
+        </div>
+    </div>
+
+    <!-- FRQ Part B -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART B</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt B) & Page 17 (Spatial Patterns)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 4 (PDF Page 12)</span>
+        </div>
+        <div class="question-text">
+            Describe TWO spatial patterns visible on the global lights map.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "1. <strong>Coastal Clustering:</strong> The largest clusters of lights and population are concentrated along the <strong>ocean coasts</strong> of nearly all continents (e.g., eastern China, US Atlantic coast).<br><br>
+                2. <strong>Development Disparity:</strong> Highly developed core regions (United States, Europe, Japan) are <strong>significantly brighter</strong> than less developed interior regions or sub-Saharan Africa."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Lights = <strong>Coasts</strong> (water transport) + <strong>Core Wealth</strong> (electricity & cities).
+        </div>
+    </div>
+
+    <!-- FRQ Part C -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART C</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt C) & Pages 18–20 (Data Types)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 4 (PDF Page 12)</span>
+        </div>
+        <div class="question-text">
+            Explain why the Earth at night satellite image is considered a qualitative source and not quantitative.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The Earth at night image is a <strong>qualitative source</strong> because it is a visual satellite photograph that provides a descriptive visual representation without numerical values; in contrast, <strong>quantitative data</strong> consists of measurable numerical counts and statistics (such as census population numbers), which are not present on the photograph."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Photos = <strong>Qualitative</strong> (visual description). Numbers/Tables = <strong>Quantitative</strong> (counts).
+        </div>
+    </div>
+
+    <!-- FRQ Part D -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART D</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt D) & Pages 10, 14 (Physical Geography)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 5 (PDF Page 13)</span>
+        </div>
+        <div class="question-text">
+            Explain ONE reason why eastern China is significantly brighter than western China on the map.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Eastern China has <strong>favorable physical geography</strong> (fertile soils, fresh water rivers, and temperate climate) and <strong>economic situational advantages</strong> (coastal seaports and manufacturing hubs that attract massive populations), whereas western China is dominated by rugged mountains, deserts, and harsh arid climates that limit settlement."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> East = Oceans, ports, factories, farmable land. West = Deserts and Himalayan mountains.
+        </div>
+    </div>
+
+    <!-- FRQ Part E -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART E</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt E) & Pages 13, 24 (Trade & Relative Location)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 5 (PDF Page 13)</span>
+        </div>
+        <div class="question-text">
+            Explain ONE economic impact of having a high percentage of the world's population living along coastal regions.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Coastal locations provide direct access to deep-water seaports, leading to <strong>greater international trade, manufacturing growth, and higher economic wealth</strong> compared to interior provinces, while simultaneously driving up coastal property values and housing costs."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Coasts = Container ships → Global trade → Higher wealth and higher rent!
+        </div>
+    </div>
+
+    <!-- FRQ Part F -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART F</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt F) & Pages 14, 23 (Human-Environment Impact)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 5 (PDF Page 13)</span>
+        </div>
+        <div class="question-text">
+            Explain ONE environmental impact of dense population concentrations along coastal zones.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "High coastal population density causes <strong>increased water, sewage, and industrial pollution</strong>, leading to the destruction of delicate coastal wetland habitats, coral reefs, and marine ecosystems through urban sprawl and shoreline development."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> More people on the beach = Wetland destruction + Water & plastic runoff!
+        </div>
+    </div>
+
+    <!-- FRQ Part G -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ • PART G</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Prompt G) & Pages 10, 24 (Map Inaccuracies)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 5 (PDF Page 13)</span>
+        </div>
+        <div class="question-text">
+            Describe a major limitation of using the Earth at night image to illustrate the location of the world's population.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The image only reflects places with <strong>access to electrical infrastructure and the financial wealth to power lights at night</strong>; consequently, densely populated rural agricultural areas in less developed regions (particularly in Sub-Saharan Africa and parts of South Asia) appear dark and are severely underrepresented."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> No electricity ≠ No people! Millions of people live in dark rural farm villages.
+        </div>
+    </div>
+
+    <!-- SECTION 2: STUDENT BOOK SPECIFIC IN-BOOK FIGURES & PROMPTS -->
+    <div class="section-divider">
+        🗺️ Section 2: Student Book In-Text Figures & Map Questions (Student pp. 10–17 / Key pp. 1–2)
+    </div>
+
+    <!-- Mexico Reference Map -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT FIGURE</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 10 (Mexico Reference Map)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 1 (PDF Page 9)</span>
+        </div>
+        <div class="question-text">
+            Describe what information is provided on the Mexico Reference Map and explain why someone would use it.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The Mexico reference map displays the <strong>national capital, major cities, highways, and physical mountain ranges</strong>. A geographer or traveler uses it for general reference about physical boundaries, city locations, relative connectivity between cities, and calculating travel distance via major highways."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Reference Map = Navigation & General facts (Cities, roads, mountains).
+        </div>
+    </div>
+
+    <!-- World Population Cartogram -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT FIGURE</span>
+            <span class="verb-badge verb-identify">Identify</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 11 (World Population Cartogram)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 1 (PDF Page 9)</span>
+        </div>
+        <div class="question-text">
+            Identify the FOUR largest countries shown on the World Population Cartogram in Topic 1.1.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>China, India, United States, and Indonesia</strong>."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> <strong>C.I.U.I.</strong> (China, India, US, Indonesia) represent over 40% of the entire world population!
+        </div>
+    </div>
+
+    <!-- Salt Lake City Map -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT FIGURE</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 13 (Relative Location of Salt Lake City Map)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 1 (PDF Page 9)</span>
+        </div>
+        <div class="question-text">
+            Explain the economic benefit of Salt Lake City's relative location along an interstate highway corridor.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Being situated along major interstate highways reduces transportation time and freight costs for businesses, making the city an accessible regional distribution hub and boosting commercial trade."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Highway access = Cheaper shipping + Faster trade!
+        </div>
+    </div>
+
+    <!-- SECTION 3: TOPIC 1.1 CORE MAP THEORIES & SADD DISTORTION -->
+    <div class="section-divider">
+        📐 Section 3: Thematic Map Classifications, Projections & SADD (Student pp. 14–17 / Key pp. 1–2)
+    </div>
+
+    <!-- Thematic Types -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.1 • THEMATIC TYPES</span>
+            <span class="verb-badge verb-identify">Identify</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 10–11 & Page 17 (Thematic Maps Table)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 1 (PDF Page 9)</span>
+        </div>
+        <div class="question-text">
+            Identify the difference between a Choropleth map and a Dot Distribution map.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "A <strong>choropleth map</strong> uses shades of color within predefined political borders (states/counties) to represent data averages, while a <strong>dot distribution map</strong> places individual dots at exact locations, showing spatial clustering and density without boundary constraints."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Choro = Color shading inside counties. Dots = Exact clusters anywhere on the map.
+        </div>
+    </div>
+
+    <!-- Map Projections & SADD -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.1 • PROJECTIONS & DISTORTION</span>
+            <span class="verb-badge verb-compare">Compare</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 14–16 (Map Projections & Distortion)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 1 (PDF Page 9)</span>
+        </div>
+        <div class="question-text">
+            Compare the Mercator projection and Gall-Peters projection regarding the SADD distortion principle.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The <strong>Mercator projection</strong> preserves <strong>direction and shape</strong> (true 90-degree angles for navigation) but severely distorts <strong>land area</strong> at the poles; the <strong>Gall-Peters projection</strong> is an equal-area projection that preserves <strong>accurate relative land area</strong>, but distorts <strong>shape</strong> by vertically stretching equatorial continents."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> <strong>S.A.D.D.</strong> (Shape, Area, Distance, Direction). Mercator = good direction, bad area. Peters = good area, bad shape!
+        </div>
+    </div>
+
+    <!-- Spatial Distribution Patterns -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.1 • SPATIAL PATTERNS</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 17 (Ways to Describe Spatial Patterns Table)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Pages 1–2 (PDF Pages 9–10)</span>
+        </div>
+        <div class="question-text">
+            Describe the differences between Clustered, Linear, Dispersed, and Geometric spatial patterns.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "• <strong>Clustered / Agglomerated:</strong> Features grouped closely together in a concentrated area.<br>
+                • <strong>Linear:</strong> Features arranged in a straight continuous line (along a river or highway).<br>
+                • <strong>Dispersed:</strong> Features spread out over a large area with no close grouping.<br>
+                • <strong>Geometric / Grid:</strong> Features arranged in a regular, rectangular system (such as Township and Range)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Clustered = Bunch, Linear = Line, Dispersed = Scattered, Geometric = Grid boxes.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

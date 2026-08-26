@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography — Topic 7.3 Complete FRQ & Textbook Reference Guide</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 24px; }
+        .container { max-width: 950px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25); }
+        .nav-links { margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .nav-links a { color: white; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+        .nav-links a:hover { background: rgba(255,255,255,0.35); }
+        .badge { display: inline-block; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+        .subtitle { font-size: 15px; opacity: 0.95; }
+
+        /* Master Cross-Reference Box */
+        .xref-box {
+            background: #ffffff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+        }
+        .xref-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .xref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            font-size: 14px;
+        }
+        .xref-item {
+            background: #f0f9ff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #bae6fd;
+        }
+        .xref-item strong { color: #0369a1; display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 2px; }
+
+        /* Dual Citation Tags */
+        .citation-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .student-tag {
+            background: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .teacher-tag {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mnemonic-banner { background: #fef3c7; border-left: 6px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; font-weight: 600; color: #92400e; font-size: 15px; }
+
+        .section-divider {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; margin-bottom: 18px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+        .part-tag { font-weight: 800; font-size: 14px; color: var(--primary); background: #eff6ff; padding: 4px 10px; border-radius: 6px; }
+        .verb-badge { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+        .verb-identify { background: #dbeafe; color: #1e40af; }
+        .verb-define { background: #e0e7ff; color: #3730a3; }
+        .verb-describe { background: #fef9c3; color: #854d0e; }
+        .verb-explain { background: #dcfce7; color: #166534; }
+        .verb-compare { background: #ffedd5; color: #9a3412; }
+        .question-text { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 14px; }
+        .answer-box { background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid var(--success); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+        .answer-title { font-size: 12px; font-weight: 700; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .exact-answer { font-size: 15px; color: #0f172a; font-weight: 600; }
+        .memory-trick { background: #fdf4ff; border-left: 4px solid #c026d3; padding: 12px 14px; border-radius: 6px; font-size: 13px; color: #701a75; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="nav-links">
+            <a href="index.html">🏠 Home Index</a>
+            <a href="Topic_1.1_FRQ_Study_Guide.html">1.1 Maps</a>
+            <a href="Topic_1.2_FRQ_Study_Guide.html">1.2 Data</a>
+            <a href="Topic_1.3_FRQ_Study_Guide.html">1.3 Geospatial</a>
+            <a href="Topic_7.2_FRQ_Study_Guide.html">7.2 Sectors</a>
+            <a href="Topic_7.3_FRQ_Study_Guide.html">7.3 Measures</a>
+            <a href="Topic_7.5_FRQ_Study_Guide.html">7.5 Theories</a>
+        </div>
+        <span class="badge">Georgia GSE & AP Human Geography • Unit 7</span>
+        <h1>Topic 7.3: Measures of Development</h1>
+        <p class="subtitle">Complete Section References for Student Textbook & Teacher Answer Key</p>
+    </header>
+
+    <!-- Master Dual Cross-Reference Box -->
+    <div class="xref-box">
+        <div class="xref-title">📖 Complete Curriculum & Textbook Section References</div>
+        <div class="xref-grid">
+            <div class="xref-item">
+                <strong>Unit & Chapter</strong>
+                Unit 7: Industrial & Economic Development<br>Chapter 18: Industrialization & Economic Development
+            </div>
+            <div class="xref-item">
+                <strong>Student Book Section</strong>
+                Topic 7.3: Measures of Development<br><strong>Pages 463 – 477</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Student Figures & Tables</strong>
+                • Gini Coefficient Map (p. 466)<br>• GII World Rankings Table (p. 468)<br>• Differences in GII Data (p. 469)<br>• Chapter 18 Review (pp. 474–477)
+            </div>
+            <div class="xref-item">
+                <strong>Teacher Answer Key (Topic 7.3)</strong>
+                Chapter 18 Topic Keys<br><strong>Key Page 85 (PDF Page 93)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Official FRQ Test Rubrics</strong>
+                Chapter 18 Free-Response Guidelines<br><strong>Key pp. 87–88 (PDF pp. 95–96)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Georgia Standards of Excellence</strong>
+                SSWG8 (Human Development Index, Global Wealth Metrics)
+            </div>
+        </div>
+    </div>
+
+    <div class="mnemonic-banner">
+        🧠 <strong>THE SCORE RULES:</strong> <strong>HDI: 1.0 is BEST</strong> (Highest wealth, health & school). <strong>Gini: 0.0 is BEST</strong> (0 = perfect equality). <strong>GII: 0.0 is BEST</strong> (0 = zero gender inequality).
+    </div>
+
+    <!-- SECTION 1: ECONOMIC & COMPOSITE MEASURES (GNI, PPP, HDI) -->
+    <div class="section-divider">
+        📈 Section 1: Economic Measures & Human Development Index (Student pp. 463–465 / Key p. 85)
+    </div>
+
+    <!-- GNI Per Capita & PPP -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.3 • GNI PER CAPITA & PPP</span>
+            <span class="verb-badge verb-define">Define</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 464 (Economic Indicators)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Define Gross National Income (GNI) per capita and explain why Purchasing Power Parity (PPP) adjustments are necessary.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>GNI per capita</strong> is the total income earned by a country's citizens and businesses divided by total population. <strong>PPP adjustments</strong> are necessary because the cost of living varies globally; PPP adjusts income metrics to show what money actually buys locally in terms of goods and services."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> GNI = Total national money $\div$ population. PPP = Adjusting for local grocery and rent costs!
+        </div>
+    </div>
+
+    <!-- HDI 3 Components -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.3 • HUMAN DEVELOPMENT INDEX (HDI)</span>
+            <span class="verb-badge verb-identify">Identify</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 464–465 (HDI Framework)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Identify the THREE core components that the United Nations combines to calculate the Human Development Index (HDI).
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "1. <strong>Decent Standard of Living:</strong> GNI per capita adjusted for Purchasing Power Parity (PPP).<br>
+                2. <strong>Long and Healthy Life:</strong> Life expectancy at birth.<br>
+                3. <strong>Access to Knowledge:</strong> Mean years of schooling for adults and expected years of schooling for children."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> HDI = Money (GNI) + Health (Life Expectancy) + Brains (Schooling)!
+        </div>
+    </div>
+
+    <!-- SECTION 2: INEQUALITY MEASURES (GINI COEFFICIENT & GII) -->
+    <div class="section-divider">
+        ⚖️ Section 2: Measuring Inequality: Gini Coefficient & Gender Inequality Index (Student pp. 466–470 / Key p. 85)
+    </div>
+
+    <!-- Gini Coefficient & In-Text Map -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT MAP</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 466 (Gini Coefficient by Country Map)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Explain how the Gini coefficient measures income inequality and describe the correlation between industrialization, middle class size, and Gini scores.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The Gini coefficient measures income distribution from <strong>0.0 (perfect equality)</strong> to <strong>1.0 (complete inequality)</strong>. Countries that have undergone industrialization and economic development tend to have a <strong>larger middle class</strong>, which directly correlates with a <strong>lower Gini coefficient</strong> (closer to 0.0)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> 0.0 = Everyone equal (happy). 1.0 = King takes everything (unequal). Big middle class = Low Gini!
+        </div>
+    </div>
+
+    <!-- Gender Inequality Index (GII) -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT TABLE</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 468–469 (GII World Rankings Table)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Describe the THREE dimensions assessed by the Gender Inequality Index (GII) and explain the significance of a low GII score (such as Switzerland).
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "1. <strong>Reproductive Health:</strong> Maternal mortality ratio and adolescent fertility rate.<br>
+                2. <strong>Empowerment:</strong> Percentage of parliamentary/legislative seats held by women and female secondary education rates.<br>
+                3. <strong>Labor Market Participation:</strong> Percentage of adult women in the formal workforce.<br><br>
+                <em>Significance:</em> A low GII score (closer to 0.0) signifies high gender equality, lower maternal mortality, and expanded female educational opportunities."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> GII = Health (Mothers surviving) + Power (Women in government/school) + Jobs (Women working).
+        </div>
+    </div>
+
+    <!-- Comparing Scales: HDI vs. GII -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.3 • SCALE COMPARISON</span>
+            <span class="verb-badge verb-compare">Compare</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 465, 468</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Compare the score interpretation of the Human Development Index (HDI) with the Gender Inequality Index (GII).
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "For the <strong>Human Development Index (HDI)</strong>, a score closer to <strong>1.0 is the most desirable</strong> (highest socio-economic development); for the <strong>Gender Inequality Index (GII)</strong>, a score closer to <strong>0.0 is the most desirable</strong> (lowest gender disparity)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> HDI = Want High (1.0). GII = Want Zero inequality (0.0).
+        </div>
+    </div>
+
+    <!-- SECTION 3: LIMITATIONS OF ECONOMIC METRICS & THE INFORMAL ECONOMY -->
+    <div class="section-divider">
+        🔍 Section 3: Limitations of Metrics & The Informal Economy (Student pp. 464–465 / Key p. 85)
+    </div>
+
+    <!-- Limitations of National GDP -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.3 • METRIC LIMITATIONS</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 464 (Evaluating GDP Limitations)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Explain ONE major limitation of using national-level economic indicators (such as GDP per capita) to evaluate human well-being.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "National averages <strong>conceal internal regional disparities</strong> (such as wealth concentrated in coastal cities while rural villages remain impoverished) and fail to measure human rights, environmental quality, or distribution of wealth."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> A country can have high average GDP because of 5 billionaires, while most citizens live in poverty!
+        </div>
+    </div>
+
+    <!-- The Informal Economy -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.3 • INFORMAL ECONOMY</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 465 (Formal vs. Informal Economy)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 85 (PDF Page 93)</span>
+        </div>
+        <div class="question-text">
+            Explain why the informal economy is widespread in less developed countries (LDCs) and why it is excluded from GDP statistics.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "The informal economy (unregistered street vending, cash day labor) is widespread in LDCs where formal salaried jobs are scarce; it is omitted from GDP calculations because <strong>cash transactions are unrecorded, untaxed, and unregulated by the government</strong>."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Informal = Cash under the table, street markets, no taxes, no official records.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

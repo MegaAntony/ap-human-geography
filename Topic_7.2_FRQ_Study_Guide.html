@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography — Topic 7.2 Complete FRQ & Textbook Reference Guide</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 24px; }
+        .container { max-width: 950px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25); }
+        .nav-links { margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .nav-links a { color: white; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+        .nav-links a:hover { background: rgba(255,255,255,0.35); }
+        .badge { display: inline-block; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+        .subtitle { font-size: 15px; opacity: 0.95; }
+
+        /* Master Cross-Reference Box */
+        .xref-box {
+            background: #ffffff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+        }
+        .xref-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .xref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            font-size: 14px;
+        }
+        .xref-item {
+            background: #f0f9ff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #bae6fd;
+        }
+        .xref-item strong { color: #0369a1; display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 2px; }
+
+        /* Dual Citation Tags */
+        .citation-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .student-tag {
+            background: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .teacher-tag {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mnemonic-banner { background: #fef3c7; border-left: 6px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; font-weight: 600; color: #92400e; font-size: 15px; }
+
+        .section-divider {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; margin-bottom: 18px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+        .part-tag { font-weight: 800; font-size: 14px; color: var(--primary); background: #eff6ff; padding: 4px 10px; border-radius: 6px; }
+        .verb-badge { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+        .verb-identify { background: #dbeafe; color: #1e40af; }
+        .verb-define { background: #e0e7ff; color: #3730a3; }
+        .verb-describe { background: #fef9c3; color: #854d0e; }
+        .verb-explain { background: #dcfce7; color: #166534; }
+        .verb-compare { background: #ffedd5; color: #9a3412; }
+        .question-text { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 14px; }
+        .answer-box { background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid var(--success); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+        .answer-title { font-size: 12px; font-weight: 700; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .exact-answer { font-size: 15px; color: #0f172a; font-weight: 600; }
+        .memory-trick { background: #fdf4ff; border-left: 4px solid #c026d3; padding: 12px 14px; border-radius: 6px; font-size: 13px; color: #701a75; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="nav-links">
+            <a href="index.html">🏠 Home Index</a>
+            <a href="Topic_1.1_FRQ_Study_Guide.html">1.1 Maps</a>
+            <a href="Topic_1.2_FRQ_Study_Guide.html">1.2 Data</a>
+            <a href="Topic_1.3_FRQ_Study_Guide.html">1.3 Geospatial</a>
+            <a href="Topic_7.2_FRQ_Study_Guide.html">7.2 Sectors</a>
+            <a href="Topic_7.3_FRQ_Study_Guide.html">7.3 Measures</a>
+            <a href="Topic_7.5_FRQ_Study_Guide.html">7.5 Theories</a>
+        </div>
+        <span class="badge">Georgia GSE & AP Human Geography • Unit 7</span>
+        <h1>Topic 7.2: Economic Sectors & Weber's Model</h1>
+        <p class="subtitle">Complete Section References for Student Textbook & Teacher Answer Key</p>
+    </header>
+
+    <!-- Master Dual Cross-Reference Box -->
+    <div class="xref-box">
+        <div class="xref-title">📖 Complete Curriculum & Textbook Section References</div>
+        <div class="xref-grid">
+            <div class="xref-item">
+                <strong>Unit & Chapter</strong>
+                Unit 7: Industrial & Economic Development<br>Chapter 18: Industrialization & Economic Development
+            </div>
+            <div class="xref-item">
+                <strong>Student Book Section</strong>
+                Topic 7.2: Economic Sectors and Patterns<br><strong>Pages 450 – 462</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Student Figures & In-Book Prompts</strong>
+                • Industrial Belt Map (p. 451)<br>• Structural Changes Graph (p. 453)<br>• Labor Force by Sector (p. 454)<br>• Weber's Locational Triangle (p. 456)
+            </div>
+            <div class="xref-item">
+                <strong>Teacher Answer Key (Topic 7.2)</strong>
+                Chapter 18 Topic Keys<br><strong>Key pp. 83–84 (PDF pp. 91–92)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Official FRQ Test Rubrics</strong>
+                Chapter 18 Free-Response (Parts E, F, G)<br><strong>Key pp. 87–88 (PDF pp. 95–96)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Georgia Standards of Excellence</strong>
+                SSWG8 (Economic Systems, Industrialization & Trade)
+            </div>
+        </div>
+    </div>
+
+    <div class="mnemonic-banner">
+        🧠 <strong>SUPER MEMORY TRICK:</strong> 1=Dirt (Farms/Mines), 2=Making (Factories), 3=Serving (Retail/Nurses), 4=Thinking (Code/Finance), 5=Deciding (CEOs). <strong>Bulk-Reducing → Near Raw Materials</strong>. <strong>Bulk-Gaining → Near Market</strong>.
+    </div>
+
+    <!-- SECTION 1: THE 5 ECONOMIC SECTORS & POST-INDUSTRIAL TRANSITIONS -->
+    <div class="section-divider">
+        🏭 Section 1: The 5 Economic Sectors & Structural Transitions (Student pp. 453–455 / Key p. 84)
+    </div>
+
+    <!-- Part A: The 5 Sectors -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.2 • 5 ECONOMIC SECTORS</span>
+            <span class="verb-badge verb-identify">Identify</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 453 (Structural Changes in Economies)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 84 (PDF Page 92)</span>
+        </div>
+        <div class="question-text">
+            Identify the five sectors of economic activity in order of increasing complexity.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "1. <strong>Primary Sector:</strong> Extraction of raw natural materials (agriculture, mining, forestry, fishing).<br>
+                2. <strong>Secondary Sector:</strong> Manufacturing and processing raw materials into finished goods.<br>
+                3. <strong>Tertiary Sector:</strong> Provision of services (retail, healthcare, hospitality, transportation).<br>
+                4. <strong>Quaternary Sector:</strong> Knowledge and information activities (software engineering, financial planning, research).<br>
+                5. <strong>Quinary Sector:</strong> Highest-level executive decision-making (CEOs, government leaders, top scientific researchers)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> 1=Dirt, 2=Making, 3=Serving, 4=Thinking, 5=Deciding.
+        </div>
+    </div>
+
+    <!-- Part B: Post-Industrial Sectoral Shift -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.2 • SECTORAL TRANSITIONS</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 453–454 (Labor Force by Sector Graph)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 84 (PDF Page 92)</span>
+        </div>
+        <div class="question-text">
+            Describe the shift in economic sector employment that occurs as a country transitions to a post-industrial economy.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Primary sector agricultural employment drops to very low levels (<3%), secondary manufacturing employment declines due to automation and global outsourcing, while <strong>tertiary and quaternary service/knowledge sectors expand to employ over 75–80%</strong> of the total labor force."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Developing countries farm; developed countries sit in offices and write software!
+        </div>
+    </div>
+
+    <!-- Part C: Automation vs. Manufacturing Output (Official FRQ Part E) -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">OFFICIAL CHAPTER 18 FRQ • PART E</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 453 & Page 476 (Chapter 18 FRQ Part E)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 88 (PDF Page 96)</span>
+        </div>
+        <div class="question-text">
+            The number of people employed in the secondary sector in the United States has declined since 1975, but the overall production of goods has increased. Explain how this statement is true.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Companies replace human assembly line workers with <strong>advanced automation, industrial robots, and computerized manufacturing machinery</strong> that are far more cost-efficient, resulting in fewer factory workers while total production volume increases."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Robots make more cars in less time with fewer humans on the payroll!
+        </div>
+    </div>
+
+    <!-- SECTION 2: ALFRED WEBER'S LEAST COST THEORY & INDUSTRIAL LOCATION -->
+    <div class="section-divider">
+        📍 Section 2: Alfred Weber's Least Cost Theory & Locational Triangle (Student pp. 456–458 / Key p. 84)
+    </div>
+
+    <!-- Bulk-Reducing Industry -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.2 • BULK-REDUCING INDUSTRY</span>
+            <span class="verb-badge verb-define">Define</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 456 (Weber's Locational Triangle)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 84 (PDF Page 92)</span>
+        </div>
+        <div class="question-text">
+            Define Alfred Weber’s concept of a "bulk-reducing" (weight-losing) industry and state its optimal geographic location.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "A <strong>bulk-reducing industry</strong> is one where raw materials weigh MORE or are bulkier than the finished product. The optimal factory location is <strong>near the raw material source</strong> to minimize expensive transportation freight costs on heavy raw inputs.<br><br>
+                <strong>Examples:</strong> Copper smelting, paper mills, and sawmills."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Bulk-Reducing = Loses weight in the factory $\rightarrow$ Build factory NEXT TO THE MINE/TREES!
+        </div>
+    </div>
+
+    <!-- Bulk-Gaining Industry -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.2 • BULK-GAINING INDUSTRY</span>
+            <span class="verb-badge verb-define">Define</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 456 (Weber's Locational Triangle)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 84 (PDF Page 92)</span>
+        </div>
+        <div class="question-text">
+            Define a "bulk-gaining" (weight-gaining) industry and state its optimal geographic location.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "A <strong>bulk-gaining industry</strong> is one where the finished product weighs MORE, is bulkier, or is more fragile than the raw material components. The optimal factory location is <strong>near the consumer market</strong>.<br><br>
+                <strong>Examples:</strong> Soft drink bottling (heavy water added locally), automobile assembly, and commercial bakeries."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Bulk-Gaining = Gets heavier/bigger $\rightarrow$ Build factory NEXT TO THE CUSTOMER/MARKET!
+        </div>
+    </div>
+
+    <!-- Agglomeration & Break-of-Bulk Points -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 7.2 • AGGLOMERATION & BREAK-OF-BULK</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 457–458 (Industrial Agglomeration)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 83 (PDF Page 91)</span>
+        </div>
+        <div class="question-text">
+            Explain the economic benefit of "agglomeration" and describe the function of a "break-of-bulk point."
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "• <strong>Agglomeration:</strong> The geographic clustering of related businesses (e.g., Silicon Valley) allows firms to share specialized infrastructure, supplier networks, and skilled talent pools, reducing operational costs.<br><br>
+                • <strong>Break-of-Bulk Point:</strong> A location where cargo is transferred from one transportation mode to another (e.g., ocean container ship to rail/truck at deep-water seaports like the Port of Savannah)."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Agglomeration = Clustering together to save money. Break-of-Bulk = Where big ships unload onto trains/trucks.
+        </div>
+    </div>
+
+    <!-- SECTION 3: IN-BOOK FIGURE: THE INDUSTRIAL BELT MAP -->
+    <div class="section-divider">
+        🗺️ Section 3: Student Book In-Text Figure: The Industrial Belt Map (Student p. 451 / Key p. 83)
+    </div>
+
+    <!-- Industrial Belt Geographic Factors -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT FIGURE</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 451 (Industrial Belt and Regions Map)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 83 (PDF Page 91)</span>
+        </div>
+        <div class="question-text">
+            Explain why traditional global industrial regions are concentrated along coastlines, major navigable rivers, and near large urban complexes.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Waterways allow for <strong>inexpensive bulk transportation of raw materials and finished goods</strong> by barge and cargo ship; locations within urban complexes provide direct access to a <strong>large labor supply, a large local consumer market, and established transport networks</strong>."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Rivers/Oceans = Cheap boat shipping. Big Cities = Lots of workers + Lots of shoppers!
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

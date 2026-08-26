@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography — Topic 1.2 Complete FRQ & Textbook Reference Guide</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 24px; }
+        .container { max-width: 950px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25); }
+        .nav-links { margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .nav-links a { color: white; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+        .nav-links a:hover { background: rgba(255,255,255,0.35); }
+        .badge { display: inline-block; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px); padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+        .subtitle { font-size: 15px; opacity: 0.95; }
+
+        /* Master Cross-Reference Box */
+        .xref-box {
+            background: #ffffff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+        }
+        .xref-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .xref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            font-size: 14px;
+        }
+        .xref-item {
+            background: #f0f9ff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #bae6fd;
+        }
+        .xref-item strong { color: #0369a1; display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 2px; }
+
+        /* Dual Citation Tags */
+        .citation-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .student-tag {
+            background: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .teacher-tag {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mnemonic-banner { background: #fef3c7; border-left: 6px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; font-weight: 600; color: #92400e; font-size: 15px; }
+
+        .section-divider {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; margin-bottom: 18px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+        .part-tag { font-weight: 800; font-size: 14px; color: var(--primary); background: #eff6ff; padding: 4px 10px; border-radius: 6px; }
+        .verb-badge { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+        .verb-identify { background: #dbeafe; color: #1e40af; }
+        .verb-define { background: #e0e7ff; color: #3730a3; }
+        .verb-describe { background: #fef9c3; color: #854d0e; }
+        .verb-explain { background: #dcfce7; color: #166534; }
+        .verb-compare { background: #ffedd5; color: #9a3412; }
+        .question-text { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 14px; }
+        .answer-box { background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid var(--success); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+        .answer-title { font-size: 12px; font-weight: 700; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .exact-answer { font-size: 15px; color: #0f172a; font-weight: 600; }
+        .memory-trick { background: #fdf4ff; border-left: 4px solid #c026d3; padding: 12px 14px; border-radius: 6px; font-size: 13px; color: #701a75; margin-top: 10px; }
+
+        /* Comparison Table inside card */
+        .card-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .card-table th, .card-table td {
+            border: 1px solid #cbd5e1;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .card-table th {
+            background: #f1f5f9;
+            color: #1e293b;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="nav-links">
+            <a href="index.html">🏠 Home Index</a>
+            <a href="Topic_1.1_FRQ_Study_Guide.html">1.1 Maps</a>
+            <a href="Topic_1.2_FRQ_Study_Guide.html">1.2 Data</a>
+            <a href="Topic_1.3_FRQ_Study_Guide.html">1.3 Geospatial</a>
+            <a href="Topic_7.2_FRQ_Study_Guide.html">7.2 Sectors</a>
+            <a href="Topic_7.3_FRQ_Study_Guide.html">7.3 Measures</a>
+            <a href="Topic_7.5_FRQ_Study_Guide.html">7.5 Theories</a>
+        </div>
+        <span class="badge">Georgia GSE & AP Human Geography • Unit 1</span>
+        <h1>Topic 1.2: Geographic Data</h1>
+        <p class="subtitle">Complete Section References for Student Textbook & Teacher Answer Key</p>
+    </header>
+
+    <!-- Master Dual Cross-Reference Box -->
+    <div class="xref-box">
+        <div class="xref-title">📖 Complete Curriculum & Textbook Section References</div>
+        <div class="xref-grid">
+            <div class="xref-item">
+                <strong>Unit & Chapter</strong>
+                Unit 1: Thinking Geographically<br>Chapter 1: Maps and Geographic Data
+            </div>
+            <div class="xref-item">
+                <strong>Student Book Section</strong>
+                Topic 1.2: Geographic Data<br><strong>Pages 18 – 22</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Student Figures & In-Book Prompts</strong>
+                • Sources of Quantitative Data (p. 19)<br>• Qualitative Visual: Photo of Tokyo (p. 20)<br>• Methods of Data Collection Table (p. 20)
+            </div>
+            <div class="xref-item">
+                <strong>Teacher Answer Key (Topic 1.2)</strong>
+                Chapter 1 Topic Keys<br><strong>Key Page 2 (PDF Page 10)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Official FRQ Test Connection</strong>
+                Chapter 1 Free-Response (Qualitative vs. Quantitative Data)<br><strong>Key pp. 4–5 (PDF pp. 12–13)</strong>
+            </div>
+            <div class="xref-item">
+                <strong>Georgia Standards of Excellence</strong>
+                SSWG1 (Information Processing, Primary & Secondary Sources)
+            </div>
+        </div>
+    </div>
+
+    <div class="mnemonic-banner">
+        🧠 <strong>SUPER MEMORY TRICK:</strong> <strong>Quantitative = Quantities & Numbers</strong> (Census, GDP, Statistics). <strong>Qualitative = Quality & Stories</strong> (Interviews, Photos, Sketches, Feelings).
+    </div>
+
+    <!-- SECTION 1: CORE DATA TYPES (QUANTITATIVE VS. QUALITATIVE) -->
+    <div class="section-divider">
+        📊 Section 1: Quantitative vs. Qualitative Geographic Data (Student pp. 18–20 / Key p. 2)
+    </div>
+
+    <!-- Part A: Quantitative Data -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • QUANTITATIVE DATA</span>
+            <span class="verb-badge verb-define">Define</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 18–19 (Sources of Quantitative Data)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Define quantitative geographic data and provide ONE example used in human geography.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>Quantitative data</strong> consists of numerical information that can be measured, counted, and statistically recorded.<br><br>
+                <strong>Example:</strong> National census population figures, median household income, fertility rates, or agricultural yield statistics."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> <strong>Quant</strong>itative = <strong>Quant</strong>ity (Math, numbers, tables, graphs).
+        </div>
+    </div>
+
+    <!-- Part B: Qualitative Data -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • QUALITATIVE DATA</span>
+            <span class="verb-badge verb-define">Define</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 20 (Qualitative Data: Photo of Tokyo)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Define qualitative geographic data and provide ONE example used in human geography.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>Qualitative data</strong> consists of descriptive, non-numerical information reflecting human perceptions, opinions, and personal narratives.<br><br>
+                <strong>Example:</strong> Transcripts of resident interviews, personal travel diaries, field sketch notes, or photographs of architectural landscapes."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> <strong>Qual</strong>itative = <strong>Qual</strong>ity & Quotes (Words, photos, feelings, stories).
+        </div>
+    </div>
+
+    <!-- Part C: Qualitative Visual Analysis (Photo of Tokyo) -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">STUDENT BOOK IN-TEXT FIGURE</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 20 (Photo of Tokyo Visual)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Explain the advantage of using qualitative visual sources (such as photographs or landscape images) compared to quantitative data.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Qualitative visual sources provide <strong>firsthand visual context, local perspectives, and cultural insights</strong> about the built environment and atmosphere of a place that raw numerical statistics cannot capture."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> A photo of Tokyo shows neon signs, crowding, and culture; numbers only show population counts!
+        </div>
+    </div>
+
+    <!-- SECTION 2: STRENGTHS & WEAKNESSES OF DATA FORMATS (Student p. 19 / Key p. 2) -->
+    <div class="section-divider">
+        📈 Section 2: Strengths & Weaknesses of Data Representations (Student p. 19 / Key p. 2)
+    </div>
+
+    <!-- Strengths & Weaknesses of Maps, Graphs, Tables, Infographics -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • DATA FORMATS COMPARISON</span>
+            <span class="verb-badge verb-compare">Compare</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 19 (Sources of Quantitative Data Chart)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Compare the strengths and weaknesses of Maps, Graphs, Data Tables, and Infographics in presenting quantitative geographic information.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                <table class="card-table">
+                    <tr>
+                        <th>Format</th>
+                        <th>Strengths (Advantages)</th>
+                        <th>Weaknesses (Limitations)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Map</strong></td>
+                        <td>Displays spatial distribution across many locations.</td>
+                        <td>Can lack specific local details at varying scales.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Graph</strong></td>
+                        <td>Clearly displays trends and changes over time.</td>
+                        <td>Can become confusing if too many variables are included.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Table</strong></td>
+                        <td>Clearly and precisely organizes large numerical sets.</td>
+                        <td>Does not present information in a visual spatial format.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Infographic</strong></td>
+                        <td>Presents complex data in an engaging, visual summary.</td>
+                        <td>Can oversimplify data and lack fine statistical detail.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Maps = Space, Graphs = Time, Tables = Numbers, Infographics = Visual summaries.
+        </div>
+    </div>
+
+    <!-- SECTION 3: DATA COLLECTION METHODS (Student pp. 20–22 / Key p. 2) -->
+    <div class="section-divider">
+        🚶 Section 3: Methods of Geographic Data Collection (Student pp. 20–22 / Key p. 2)
+    </div>
+
+    <!-- Field Observation & Landscape Analysis -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • FIELD OBSERVATION & LANDSCAPE ANALYSIS</span>
+            <span class="verb-badge verb-describe">Describe</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Pages 20–22 (Field Observation & Essential Question)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Describe the geographic data collection method of field observation and landscape analysis.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "<strong>Field observation</strong> is the act of physically visiting a location to gather firsthand data through interviews, photography, and notes. <strong>Landscape analysis</strong> interprets the built and physical environment (building styles, agricultural patterns, street signs) to understand human-environment relationships."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Fieldwork = Boots on the ground! Visiting places in person and taking field notes.
+        </div>
+    </div>
+
+    <!-- Aerial Photography vs. Remote Sensing -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • AERIAL PHOTOS VS. REMOTE SENSING</span>
+            <span class="verb-badge verb-compare">Compare</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 20 (Individual vs. Institutional Data)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Compare Aerial Photography with Remote Sensing as methods of geographic data collection.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "• <strong>Aerial Photography:</strong> Professional images captured by cameras mounted on airplanes or drones operating <strong>within the Earth's atmosphere</strong>.<br><br>
+                • <strong>Remote Sensing:</strong> Data gathered by sensors and cameras mounted on satellites that orbit <strong>above the Earth's atmosphere in space</strong>."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Aerial = Airplanes in the air (Atmosphere). Remote Sensing = Satellites in Space!
+        </div>
+    </div>
+
+    <!-- Individual vs. Institutional Data Sources -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • DATA COLLECTION SOURCES</span>
+            <span class="verb-badge verb-compare">Compare</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 20 (Individual vs. Institutional Sources Table)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Compare Individual Sources of geographic data with Institutional Sources (including tech companies and universities).
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "• <strong>Individual Sources:</strong> Data collected by single researchers or citizens via field observations, smartphone GPS tracking, and interviews.<br>
+                • <strong>Institutional Sources:</strong> Large datasets gathered by government agencies (census bureaus), tech companies (smartphone locational app data), media outlets, and university researchers."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Individual = 1 person with a phone/notebook. Institutional = Government Census Bureau, Tech Apps, or UN.
+        </div>
+    </div>
+
+    <!-- SECTION 4: PUBLIC POLICY & SPATIAL DECISION-MAKING -->
+    <div class="section-divider">
+        🏛️ Section 4: Public Policy & Spatial Decision-Making (Student pp. 19–22 / Key pp. 4–5)
+    </div>
+
+    <!-- Census Application in Urban Planning -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • URBAN PLANNING APPLICATION</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 19 (Census Data in Planning)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 2 (PDF Page 10)</span>
+        </div>
+        <div class="question-text">
+            Explain ONE way government census data is used by urban planners to make spatial decisions.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "Urban planners analyze census demographic and income data to identify high-density, low-income neighborhoods where <strong>new public transit lines, public schools, emergency shelters, or subsidized healthcare clinics</strong> are most urgently needed."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Census numbers tell city planners where to spend tax dollars and build buses/schools.
+        </div>
+    </div>
+
+    <!-- Political Impact: Reapportionment & Redistricting -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">TOPIC 1.2 • POLITICAL GEOGRAPHY IMPACT</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 19 (Political Consequences of Census)</span>
+            <span class="teacher-tag">🔑 Georgia GSE Alignment: SSWG1 / Political Processes</span>
+        </div>
+        <div class="question-text">
+            Explain ONE political consequence of census data collection in the United States.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "U.S. Census population counts determine the <strong>reapportionment of congressional seats in the U.S. House of Representatives</strong> among states and trigger the <strong>redrawing (redistricting) of legislative voting boundaries</strong> every ten years."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Census = Count People → Decide how many seats each state gets in Congress!
+        </div>
+    </div>
+
+    <!-- FRQ Connection: Earth at Night Qualitative Question -->
+    <div class="card">
+        <div class="q-header">
+            <span class="part-tag">CHAPTER 1 FRQ CONNECTION • TOPIC 1.2</span>
+            <span class="verb-badge verb-explain">Explain</span>
+        </div>
+        <div class="citation-container">
+            <span class="student-tag">📖 Student Book: Page 28 (FRQ Stimulus Part C)</span>
+            <span class="teacher-tag">🔑 Teacher Answer Key: Page 4 (PDF Page 12)</span>
+        </div>
+        <div class="question-text">
+            Explain why a satellite photograph is classified as a qualitative data source rather than a quantitative source.
+        </div>
+        <div class="answer-box">
+            <div class="answer-title">⭐ Exactly What to Write on Your Exam:</div>
+            <div class="exact-answer">
+                "A satellite photograph is a <strong>qualitative source</strong> because it provides a visual, descriptive representation of features without numerical measurements; in contrast, <strong>quantitative data</strong> requires recorded numerical statistics, counts, or measurements, which are not inherent in a visual photograph."
+            </div>
+        </div>
+        <div class="memory-trick">
+            💡 <strong>Memory Hook:</strong> Photos = Qualitative (Visuals). Numbers = Quantitative (Counts).
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
