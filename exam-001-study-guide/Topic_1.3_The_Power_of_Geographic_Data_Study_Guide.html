@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography Study Guide — Topic 1.3: The Power of Geographic Data</title>
+    <style>
+        :root {
+            --primary: #c2410c;
+            --primary-light: #ea580c;
+            --primary-subtle: #fff7ed;
+            --accent: #1e3a8a;
+            --accent-subtle: #eff6ff;
+            --warning-border: #f59e0b;
+            --warning-bg: #fffbeb;
+            --danger-border: #ef4444;
+            --danger-bg: #fef2f2;
+            --success-border: #10b981;
+            --success-bg: #f0fdf4;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #c2410c 0%, #9a3412 60%, #7c2d12 100%);
+            color: white;
+            padding: 36px 30px;
+            border-radius: 16px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .badge-curriculum {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #fed7aa;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #ffedd5;
+            max-width: 820px;
+            line-height: 1.6;
+        }
+
+        .toc-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 12px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: var(--text-body);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            border-color: #fed7aa;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid var(--bg-page);
+            padding-bottom: 12px;
+        }
+
+        .section-num {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.95rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 14px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        .callout {
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+            border-left: 4px solid;
+        }
+
+        .callout-definition {
+            background-color: var(--primary-subtle);
+            border-left-color: var(--primary);
+            color: #9a3412;
+        }
+
+        .callout-example {
+            background-color: var(--accent-subtle);
+            border-left-color: var(--accent);
+            color: #1e3a8a;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: #92400e;
+        }
+
+        .callout-trap {
+            background-color: var(--danger-bg);
+            border-left-color: var(--danger-border);
+            color: #991b1b;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .concept-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .concept-box:hover {
+            border-color: #cbd5e1;
+            background: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .concept-box-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .checkpoint-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 14px 0;
+        }
+
+        .checkpoint-q {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkpoint-a {
+            display: none;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+            color: var(--primary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .checkpoint-a.visible {
+            display: block;
+        }
+
+        .toggle-btn {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .bullet-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: 800;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .top-nav, .toc-bar, .toggle-btn {
+                display: none;
+            }
+            .section-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .checkpoint-a {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="../exam-001-mcq/AMSCO_1.3_MCQ_Practice.html">🎯 Take Topic 1.3 MCQ Practice Test (40 Questions) →</a>
+        <a href="../index.html">🏠 Study Portal Dashboard</a>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero">
+        <div class="badge-curriculum">AMSCO® AP® Human Geography — Unit 1: Topic 1.3</div>
+        <h1>Topic 1.3: The Power of Geographic Data</h1>
+        <div class="subtitle">Complete Concept Guide, Spatial Interaction Models, Epidemic Mapping, Gerrymandering & Redlining</div>
+        <p>
+            This comprehensive study guide covers all concepts for Topic 1.3: Decision-Making across geographic scales (Local to Global), Spatial Interaction Models (Tobler’s First Law, Distance Decay, Time-Space Compression, The Gravity Model, Spatial Association), Epidemiological & Crisis Mapping (Dr. John Snow’s Soho Cholera Study), Political Gerrymandering (Packing & Cracking), Historical HOLC Redlining and its modern spatial legacies, and Big Data Ethics.
+        </p>
+    </div>
+
+    <!-- Sticky Table of Contents -->
+    <nav class="toc-bar">
+        <a href="#section-1" class="toc-link">1. Scales of Decision-Making</a>
+        <a href="#section-2" class="toc-link">2. Spatial Interaction Models</a>
+        <a href="#section-3" class="toc-link">3. Epidemic & Crisis Mapping</a>
+        <a href="#section-4" class="toc-link">4. Gerrymandering</a>
+        <a href="#section-5" class="toc-link">5. Historical Redlining Legacies</a>
+        <a href="#section-6" class="toc-link">6. Big Data Ethics</a>
+        <a href="#section-7" class="toc-link">7. Traps & Flashcards</a>
+    </nav>
+
+    <!-- SECTION 1: SCALES OF DECISION-MAKING -->
+    <div class="section-card" id="section-1">
+        <div class="section-header">
+            <div class="section-num">1</div>
+            <h2 class="section-title">Geographic Data in Multi-Scale Decision-Making</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📌 Core Principle: Scale Shapes Spatial Decisions</div>
+            Geographic data is used by individuals, businesses, organizations, and governments to solve real-world problems. The nature of the decision depends directly on the <strong>geographic scale of analysis</strong>.
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Geographic Scale</th>
+                        <th>Key Decision-Making Entities</th>
+                        <th>Real-World Geographic Application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Local Scale</strong></td>
+                        <td>Town/City Councils, Municipal Planners, School Boards, Neighborhood Associations</td>
+                        <td>
+                            • Placing new fire stations and ambulance bays based on 911 drive-time buffers.<br>
+                            • Rezoning elementary school attendance boundaries to prevent classroom overcrowding.<br>
+                            • Adding protected bike lanes and pedestrian crosswalks on high-collision streets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Regional Scale</strong></td>
+                        <td>Multi-county transit authorities, river basin water conservation districts, air quality boards</td>
+                        <td>
+                            • Managing water allocation from the Colorado River Basin among seven member states.<br>
+                            • Planning regional commuter rail corridors (e.g., BART in SF Bay Area or Metra in Chicago).<br>
+                            • Tracking regional wildfire smoke drift across multiple metropolitan counties.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. National Scale</strong></td>
+                        <td>Federal government agencies (FEMA, DOT, EPA, Census Bureau)</td>
+                        <td>
+                            • Allocating billions in federal highway maintenance funding based on interstate freight tonnage.<br>
+                            • Coordinating federal disaster relief staging areas following major hurricane landfall.<br>
+                            • Reapportioning Congressional House seats based on decennial census population shifts.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Global / Supranational</strong></td>
+                        <td>United Nations (UN), World Health Organization (WHO), Intergovernmental Panel on Climate Change (IPCC)</td>
+                        <td>
+                            • Tracking global disease diffusion vectors and international flight connectivity.<br>
+                            • Monitoring worldwide deforestation, carbon emissions, and melting polar ice caps.<br>
+                            • Managing international maritime shipping channels and deep-sea mineral rights.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 2: SPATIAL INTERACTION THEORIES & MODELS -->
+    <div class="section-card" id="section-2">
+        <div class="section-header">
+            <div class="section-num">2</div>
+            <h2 class="section-title">Spatial Interaction Theories & Models</h2>
+        </div>
+
+        <!-- Tobler's First Law -->
+        <h3>1. Tobler's First Law of Geography (1970)</h3>
+        <div class="callout callout-definition">
+            <div class="callout-title">📜 The First Law of Geography (Waldo Tobler)</div>
+            <em>"Everything is related to everything else, but near things are more related than distant things."</em>
+        </div>
+        <p>This foundational spatial rule asserts that spatial interaction, social connectivity, trade volume, and cultural similarity naturally decrease as physical distance increases.</p>
+
+        <!-- Distance Decay & Friction of Distance -->
+        <h3 style="margin-top: 24px;">2. Distance Decay & Friction of Distance</h3>
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">Distance Decay</div>
+                <p>The principle that <strong>the interaction between two places declines as the distance between them increases</strong>. For example, a shopper visits a grocery store 1 mile away weekly, but visits a store 30 miles away only once a year.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Friction of Distance</div>
+                <p>The concept that <strong>distance itself requires energy, financial cost, and time to overcome</strong>. Higher friction reduces spatial interaction; lowering friction (e.g., building a bridge or high-speed rail line) increases interaction.</p>
+            </div>
+        </div>
+
+        <!-- Time-Space Compression -->
+        <h3 style="margin-top: 24px;">3. Time-Space Compression (David Harvey)</h3>
+        <div class="callout callout-definition">
+            <div class="callout-title">⚡ Core Model: Time-Space Compression</div>
+            The <strong>reduction in the time it takes for something (information, goods, culture, finance, or diseases) to diffuse to a distant place</strong> as a result of advances in transportation and telecommunications.
+        </div>
+        <p><strong>Impact:</strong> Makes distant places feel functionally "closer" together, drastically reducing the traditional friction of distance (e.g., jet air travel, undersea fiber-optic internet cables, 24/7 global video conferencing).</p>
+
+        <!-- The Gravity Model -->
+        <h3 style="margin-top: 24px;">4. The Gravity Model of Spatial Interaction</h3>
+        <p>Adapted from Isaac Newton's law of universal gravitation, geographers use the Gravity Model to predict the <strong>volume of interaction (migration, trade, telephone calls, flights)</strong> between two cities.</p>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📐 The Gravity Model Formula</div>
+            $$\text{Interaction} = \frac{\text{Population}_1 \times \text{Population}_2}{\text{Distance}^2}$$
+            <ul style="margin-top: 8px; margin-left: 18px;">
+                <li><strong>Directly proportional to Population Size:</strong> Larger cities generate exponentially more interaction.</li>
+                <li><strong>Inversely proportional to Distance:</strong> Greater physical separation sharply reduces interaction.</li>
+            </ul>
+        </div>
+        <div class="callout callout-example">
+            <div class="callout-title">💡 Real-World Example: New York & Los Angeles vs. New York & El Paso</div>
+            Even though New York and Los Angeles are 2,500 miles apart, their massive population sizes create immense daily spatial interaction (dozens of direct flights, millions of financial transactions). In contrast, New York and a small city at the same distance (like El Paso, Texas) experience far less interaction.
+        </div>
+
+        <!-- Spatial Association -->
+        <h3 style="margin-top: 24px;">5. Spatial Association</h3>
+        <p>The degree to which two or more spatial phenomena share similar geographic distribution patterns across a landscape.</p>
+        <p style="font-size: 0.9rem; color: var(--text-muted);"><strong>Example:</strong> In sub-Saharan Africa, high malaria infection rates share a strong spatial association with low elevations, standing water bodies, and high year-round temperatures.</p>
+    </div>
+
+    <!-- SECTION 3: EPIDEMIOLOGICAL & CRISIS MAPPING -->
+    <div class="section-card" id="section-3">
+        <div class="section-header">
+            <div class="section-num">3</div>
+            <h2 class="section-title">Epidemiological & Crisis Spatial Mapping</h2>
+        </div>
+
+        <!-- Dr. John Snow -->
+        <h3>Dr. John Snow’s 1854 Soho Cholera Map (The Milestone of Spatial Epidemiology)</h3>
+        <div class="callout callout-example">
+            <div class="callout-title">🔬 Case Study: How Mapping Solved a Medical Mystery</div>
+            During the deadly 1854 cholera outbreak in London's Soho district, physician <strong>Dr. John Snow</strong> challenged the prevailing medical belief that cholera spread through "miasma" (airborne vapors).<br><br>
+            <strong>Snow's Spatial Method:</strong> He marked the exact street address of every cholera fatality as a black bar on a street map and plotted the locations of all neighborhood water pumps. The deaths clustered intensely around the <strong>Broad Street public water pump</strong>. When the local council removed the pump handle, cholera cases ceased immediately.
+        </div>
+
+        <h3>Modern Crisis & Disaster Mapping Applications:</h3>
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">Live Disease Dashboards</div>
+                <p>Global GIS tracking platforms (e.g., Johns Hopkins COVID-19 Dashboard) mapping real-time contagion spread, ICU bed strain, and localized vaccine delivery logistics.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Satellite Disaster Assessments</div>
+                <p>Using synthetic aperture radar and optical satellites after hurricanes or earthquakes to rapidly map collapsed bridges, blocked roads, and flooded neighborhoods for rescue crews.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">FEWS NET (Famine Early Warning)</div>
+                <p>Combining satellite rainfall estimates, NDVI vegetation index data, and grain market price surveys to predict regional famines months before severe starvation occurs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: POLITICAL GEOGRAPHY & GERRYMANDERING -->
+    <div class="section-card" id="section-4">
+        <div class="section-header">
+            <div class="section-num">4</div>
+            <h2 class="section-title">Political Redistricting & Partisan Gerrymandering</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🏛️ Reapportionment vs. Redistricting</div>
+            • <strong>Reapportionment:</strong> The reallocation of the 435 US House seats among the 50 states following the decennial census.<br>
+            • <strong>Redistricting:</strong> The redrawing of internal electoral district boundaries within a state by state legislatures to ensure districts have roughly equal population sizes.
+        </div>
+
+        <h3>What is Gerrymandering?</h3>
+        <p><strong>Gerrymandering</strong> is the deliberate manipulation and redrawing of electoral legislative district boundaries to give an unfair political advantage to a specific political party, incumbent politician, or racial group.</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gerrymandering Technique</th>
+                        <th>How It Works</th>
+                        <th>Strategic Goal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Packing</strong></td>
+                        <td>Concentrating as many opposing party voters as possible into a <strong>single district (or very few districts)</strong>.</td>
+                        <td>The opposing party wins that one single district by a huge blowout ($90\%+$), but their surplus votes are wasted, leaving neighboring surrounding districts safely in control of the ruling party.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Cracking</strong></td>
+                        <td>Splitting and dispersing a concentrated block of opposing party voters <strong>across multiple adjacent districts</strong>.</td>
+                        <td>Dilutes the opposing party's voting power so they become a permanent minority ($40\text{--}45\%$) in every district, preventing them from winning a single seat.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 5: HISTORICAL REDLINING & MODERN SPATIAL LEGACIES -->
+    <div class="section-card" id="section-5">
+        <div class="section-header">
+            <div class="section-num">5</div>
+            <h2 class="section-title">Historical Redlining & Modern Spatial Injustice</h2>
+        </div>
+
+        <div class="callout callout-trap">
+            <div class="callout-title">📜 Historical Context: HOLC Redlining Maps (1930s)</div>
+            In the 1930s, the federal government's Home Owners' Loan Corporation (HOLC) created "Residential Security Maps" for over 200 American cities. Neighborhoods were graded from A (Green = Best) to D (Red = Hazardous). <strong>Any neighborhood with Black, Latino, or immigrant residents was shaded in red lines ("redlined")</strong>, legally barring residents from receiving federally backed mortgages and bank loans.
+        </div>
+
+        <h3>Long-Term Modern Spatial Legacies of Historical Redlining:</h3>
+        <ul class="bullet-list">
+            <li><strong>Urban Heat Islands:</strong> Formerly redlined neighborhoods have significantly fewer mature shade trees, less public park space, and more asphalt/concrete. As a result, these neighborhoods are <strong>$5\text{--}10^\circ\text{F}$ hotter</strong> during summer heat waves than historically green-graded areas.</li>
+            <li><strong>Elevated Health Disparities & Asthma:</strong> Redlined zones were frequently rezoned for heavy industrial manufacturing, bus depots, and major interstate highway corridors, resulting in elevated particulate air pollution and high childhood asthma rates.</li>
+            <li><strong>Generational Wealth Gaps:</strong> Because homeownership is the primary vehicle for building family wealth in the US, decades of mortgage denial prevented families in redlined neighborhoods from accumulating home equity and generational wealth.</li>
+            <li><strong>Urban Food Deserts:</strong> Supermarket chains historically avoided redlined zones, leaving residents reliant on convenience corner stores lacking fresh, affordable produce.</li>
+        </ul>
+    </div>
+
+    <!-- SECTION 6: BIG DATA ETHICS, DATA HARVESTING & PRIVACY -->
+    <div class="section-card" id="section-6">
+        <div class="section-header">
+            <div class="section-num">6</div>
+            <h2 class="section-title">Big Data Ethics, Commercial Tracking & Digital Divides</h2>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">Mobile Geofencing & Location Tracking</div>
+                <p>Commercial data brokers aggregate real-time smartphone GPS coordinates and cellular tower pings to build behavioral profiles, target ads, and track foot traffic in retail corridors without explicit consumer consent.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Environmental Racism / Injustice</div>
+                <p>The disproportionate spatial placement of hazardous waste landfills, chemical plants, incinerators, and petrochemical refineries in low-income, minority communities with limited political leverage.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">The Spatial Digital Divide</div>
+                <p>Geographic disparities in access to high-speed fiber-optic broadband internet between wealthy metropolitan centers and impoverished inner-city or remote rural communities.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Counter-Mapping & Participatory GIS</div>
+                <p>Grassroots mapping efforts by indigenous communities and neighborhood activists to document ancestral land boundaries and measure industrial pollution to hold governments accountable.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 7: AP EXAM TRAPS & FLASHCARD CHECKPOINTS -->
+    <div class="section-card" id="section-7">
+        <div class="section-header">
+            <div class="section-num">7</div>
+            <h2 class="section-title">AP Exam Traps & Interactive Checkpoints</h2>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(1)">
+                <span>Q1: How did Dr. John Snow's 1854 London map revolutionize the field of epidemiology?</span>
+                <button class="toggle-btn" id="btn-1">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-1">
+                <strong>Answer: Proving Waterborne Transmission through Spatial Association.</strong> Snow mapped cholera fatalities by home address alongside water pump locations, demonstrating that deaths clustered around the Broad Street pump and disproving the prevailing airborne "miasma" theory.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(2)">
+                <span>Q2: What is the difference between "packing" and "cracking" in partisan gerrymandering?</span>
+                <button class="toggle-btn" id="btn-2">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-2">
+                <strong>Answer: Packing concentrates; Cracking disperses.</strong> "Packing" crowds opposing voters into a single district so their excess votes are wasted. "Cracking" splits opposing voters across multiple districts to keep them as a permanent minority in every district.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(3)">
+                <span>Q3: What two variables determine the level of spatial interaction between two cities in the Gravity Model?</span>
+                <button class="toggle-btn" id="btn-3">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-3">
+                <strong>Answer: Population Size and Distance.</strong> Interaction increases with larger population sizes (direct relationship) and decreases with greater physical distance squared (inverse relationship).
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(4)">
+                <span>Q4: Why are historically redlined urban neighborhoods often significantly hotter than non-redlined areas today?</span>
+                <button class="toggle-btn" id="btn-4">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-4">
+                <strong>Answer: The Urban Heat Island Effect.</strong> Decades of municipal disinvestment left redlined neighborhoods with fewer shade trees/parks and higher concentrations of heat-absorbing asphalt, concrete, highways, and industrial buildings.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const ans = document.getElementById("ans-" + id);
+    const btn = document.getElementById("btn-" + id);
+    if (ans.classList.contains("visible")) {
+        ans.classList.remove("visible");
+        btn.textContent = "Show Answer";
+    } else {
+        ans.classList.add("visible");
+        btn.textContent = "Hide Answer";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography Study Guide — Topic 7.2: Economic Sectors and Patterns</title>
+    <style>
+        :root {
+            --primary: #047857;
+            --primary-light: #059669;
+            --primary-subtle: #ecfdf5;
+            --accent: #1e3a8a;
+            --accent-subtle: #eff6ff;
+            --warning-border: #f59e0b;
+            --warning-bg: #fffbeb;
+            --danger-border: #ef4444;
+            --danger-bg: #fef2f2;
+            --success-border: #10b981;
+            --success-bg: #f0fdf4;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #047857 0%, #065f46 60%, #064e3b 100%);
+            color: white;
+            padding: 36px 30px;
+            border-radius: 16px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .badge-curriculum {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #a7f3d0;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #d1fae5;
+            max-width: 820px;
+            line-height: 1.6;
+        }
+
+        .toc-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 12px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: var(--text-body);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            border-color: #a7f3d0;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid var(--bg-page);
+            padding-bottom: 12px;
+        }
+
+        .section-num {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.95rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 14px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        .callout {
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+            border-left: 4px solid;
+        }
+
+        .callout-definition {
+            background-color: var(--primary-subtle);
+            border-left-color: var(--primary);
+            color: #065f46;
+        }
+
+        .callout-example {
+            background-color: var(--accent-subtle);
+            border-left-color: var(--accent);
+            color: #1e3a8a;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: #92400e;
+        }
+
+        .callout-trap {
+            background-color: var(--danger-bg);
+            border-left-color: var(--danger-border);
+            color: #991b1b;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .concept-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .concept-box:hover {
+            border-color: #cbd5e1;
+            background: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .concept-box-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .checkpoint-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 14px 0;
+        }
+
+        .checkpoint-q {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkpoint-a {
+            display: none;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+            color: var(--primary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .checkpoint-a.visible {
+            display: block;
+        }
+
+        .toggle-btn {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .bullet-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: 800;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .top-nav, .toc-bar, .toggle-btn {
+                display: none;
+            }
+            .section-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .checkpoint-a {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="../exam-001-mcq/AMSCO_7.2_MCQ_Practice.html">🎯 Take Topic 7.2 MCQ Practice Test (40 Questions) →</a>
+        <a href="../index.html">🏠 Study Portal Dashboard</a>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero">
+        <div class="badge-curriculum">AMSCO® AP® Human Geography — Unit 7: Topic 7.2</div>
+        <h1>Topic 7.2: Economic Sectors and Patterns</h1>
+        <div class="subtitle">Complete Concept Guide, Economic Sectors, Development Metrics, Gini, HDI, Gender & Informal Economy</div>
+        <p>
+            This comprehensive study guide covers all concepts for Topic 7.2: The Five Economic Sectors (Primary, Secondary, Tertiary, Quaternary, Quinary), Economic Indicators (GDP, GNP, GNI per Capita, PPP, Gini Index), Social & Human Development Metrics (UN HDI, IMR, TFR, Female Literacy Multiplier), Gender Inequality Index (GII) & Microloans (Grameen Bank), Formal vs. Informal Economies, and the historical Brandt Line.
+        </p>
+    </div>
+
+    <!-- Sticky Table of Contents -->
+    <nav class="toc-bar">
+        <a href="#section-1" class="toc-link">1. Five Economic Sectors</a>
+        <a href="#section-2" class="toc-link">2. Economic Metrics (GDP/GNI/PPP)</a>
+        <a href="#section-3" class="toc-link">3. Gini Coefficient</a>
+        <a href="#section-4" class="toc-link">4. Human Development Index (HDI)</a>
+        <a href="#section-5" class="toc-link">5. Gender Equality & Microloans</a>
+        <a href="#section-6" class="toc-link">6. Formal vs. Informal Economy</a>
+        <a href="#section-7" class="toc-link">7. Traps & Flashcards</a>
+    </nav>
+
+    <!-- SECTION 1: THE FIVE ECONOMIC SECTORS -->
+    <div class="section-card" id="section-1">
+        <div class="section-header">
+            <div class="section-num">1</div>
+            <h2 class="section-title">The Five Economic Sectors</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📌 Core Concept: Structural Economic Transformation</div>
+            As countries develop economically, their labor forces structurally transition away from direct raw material harvesting toward industrial manufacturing, and ultimately into services, data analysis, and executive decision-making.
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Economic Sector</th>
+                        <th>Core Function & Activity</th>
+                        <th>Specific Job Examples</th>
+                        <th>Where Dominant / Global Pattern</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Primary Sector</strong></td>
+                        <td><strong>Direct extraction / harvesting</strong> of raw natural resources from the Earth's surface or interior.</td>
+                        <td>Subsistence farming, commercial agriculture, coal mining, timber logging, commercial fishing, crude oil drilling.</td>
+                        <td><strong>LDCs / Peripheral Countries:</strong> Frequently employs $40\text{--}70\%+$ of the labor force (e.g., Chad, Mali, Afghanistan).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Secondary Sector</strong></td>
+                        <td><strong>Manufacturing, processing, and assembly</strong> of raw materials into finished consumer or industrial capital goods.</td>
+                        <td>Automobile assembly line worker, steel mill operator, garment stitcher, petroleum refiner, food packaging technician.</td>
+                        <td><strong>NICs / Semi-Peripheral Countries:</strong> Major manufacturing hubs (e.g., Vietnam, China, Mexico, India).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Tertiary Sector</strong></td>
+                        <td><strong>Provision of commercial services</strong> to individual consumers and businesses.</td>
+                        <td>Retail sales associate, restaurant server, commercial bank teller, registered nurse, hotel manager, truck driver, real estate agent.</td>
+                        <td><strong>MDCs / Core Post-Industrial Economies:</strong> Employs $70\text{--}85\%+$ of the labor force (e.g., USA, UK, Japan, Germany).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Quaternary Sector</strong></td>
+                        <td><strong>Knowledge-based information processing</strong>, financial modeling, software engineering, and scientific research.</td>
+                        <td>Cloud software engineer, data scientist, financial portfolio analyst, cybersecurity specialist, medical researcher, university professor.</td>
+                        <td>Clustered in high-tech <strong>technopoles</strong> and major financial capitals in Core economies (e.g., Silicon Valley, London, Tokyo).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Quinary Sector</strong></td>
+                        <td><strong>Highest-level executive decision-making</strong>, public policy formulation, and scientific breakthroughs.</td>
+                        <td>US President, Supreme Court justice, Fortune 500 CEO, central bank chairman (Federal Reserve), lead vaccine biomedical scientist.</td>
+                        <td>Concentrated in national political capitals (Washington D.C., Brussels) and global corporate headquarters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 2: ECONOMIC INDICATORS (GDP, GNP, GNI, PPP) -->
+    <div class="section-card" id="section-2">
+        <div class="section-header">
+            <div class="section-num">2</div>
+            <h2 class="section-title">Economic Indicators of National Development</h2>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">GDP (Gross Domestic Product)</div>
+                <p>The total market value of all final goods and services produced <strong>strictly within the geographic territorial borders of a country</strong> in a single year (regardless of whether companies are domestically or foreign-owned).</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">GNP (Gross National Product)</div>
+                <p>The total market value of all goods and services produced by <strong>a nation's citizens and domestic corporations</strong>, regardless of whether production occurs inside the home country or in overseas factories.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">GNI (Gross National Income)</div>
+                <p>GDP plus net income received from abroad (foreign investment profits, overseas remittances) minus income payments sent to foreign entities. <strong>GNI per Capita</strong> divides this total by the national population.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">PPP (Purchasing Power Parity)</div>
+                <p>A monetary adjustment that standardizes currency values based on the <strong>local cost of living and real purchasing power</strong> (e.g., how much food or housing $\$100\text{ USD}$ can buy in Mumbai vs. New York City).</p>
+            </div>
+        </div>
+
+        <div class="callout callout-trap">
+            <div class="callout-title">⚠️ The Trap of GNI Per Capita as a Solo Metric</div>
+            GNI per capita is a pure mathematical average ($\frac{\text{Total Income}}{\text{Total Population}}$). It <strong>completely hides internal wealth distribution</strong>. A small oil-rich country can have a GNI per capita of $\$65,000$ even if a tiny royal elite owns $95\%$ of all wealth while ordinary citizens live in poverty.
+        </div>
+    </div>
+
+    <!-- SECTION 3: THE GINI COEFFICIENT & WEALTH INEQUALITY -->
+    <div class="section-card" id="section-3">
+        <div class="section-header">
+            <div class="section-num">3</div>
+            <h2 class="section-title">The Gini Coefficient (Measuring Inequality)</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📐 Definition: The Gini Index / Coefficient</div>
+            A mathematical statistical measure of <strong>income or wealth inequality within a country</strong> on a scale from <strong>$0.0$ to $1.0$</strong> (or $0$ to $100\%$ on the Gini Index).
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box" style="border-left: 4px solid var(--success-border);">
+                <div class="concept-box-title">Gini = 0.0 (Perfect Equality)</div>
+                <p>Every single household in the country earns the exact same income. In reality, modern Scandinavian social democracies (Norway, Denmark, Sweden) have low Gini scores ($\approx 0.25\text{--}0.28$).</p>
+            </div>
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">Gini = 1.0 (Perfect Inequality)</div>
+                <p>A single individual earns 100% of all national income, while everyone else earns zero. Countries with extreme wealth inequality (South Africa, Brazil) have high Gini scores ($\approx 0.50\text{--}0.63$).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: UN HUMAN DEVELOPMENT INDEX (HDI) -->
+    <div class="section-card" id="section-4">
+        <div class="section-header">
+            <div class="section-num">4</div>
+            <h2 class="section-title">The UN Human Development Index (HDI)</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🌐 The UN Human Development Index (HDI)</div>
+            Created by the United Nations Development Programme (UNDP), HDI is a composite index (scored from <strong>$0.000$ to $1.000$</strong>) combining economic, health, and educational metrics to assess overall quality of human life.
+        </div>
+
+        <h3>The 3 Fundamental Dimensions of HDI:</h3>
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">1. A Long & Healthy Life</div>
+                <p>Measured by <strong>Life Expectancy at Birth</strong> (reflects nutrition, access to clean drinking water, hospital infrastructure, and low Infant Mortality Rates).</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">2. Knowledge / Education</div>
+                <p>Measured by two metrics: <strong>Mean Years of Schooling</strong> for adults (25+) and <strong>Expected Years of Schooling</strong> for entering school-age children.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">3. Decent Standard of Living</div>
+                <p>Measured by <strong>Gross National Income (GNI) per Capita adjusted for Purchasing Power Parity (PPP)</strong>.</p>
+            </div>
+        </div>
+
+        <h3>Key Social & Demographic Indicators of Development:</h3>
+        <ul class="bullet-list">
+            <li><strong>Infant Mortality Rate (IMR):</strong> Annual deaths of infants under 1 year per 1,000 live births (LDCs: $50\text{--}90+$; MDCs: $<4.0$).</li>
+            <li><strong>Total Fertility Rate (TFR):</strong> Average number of children born per woman (LDCs: $4.5\text{--}6.5$; MDCs: $1.2\text{--}1.7$, below the $2.1$ replacement rate).</li>
+            <li><strong>The Female Literacy Multiplier Effect:</strong> When women gain access to formal education, maternal and infant mortality drop dramatically, fertility rates decline as women delay marriage to pursue careers, family earnings rise, and national GDP expands.</li>
+        </ul>
+    </div>
+
+    <!-- SECTION 5: GENDER EQUALITY, GII & MICROFINANCE -->
+    <div class="section-card" id="section-5">
+        <div class="section-header">
+            <div class="section-num">5</div>
+            <h2 class="section-title">Gender Inequality Index (GII) & Microloans</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">⚖️ Gender Inequality Index (GII)</div>
+            A UN metric measuring gender disparities across three dimensions: <strong>Reproductive Health</strong> (maternal mortality & adolescent birth rates), <strong>Empowerment</strong> (female legislative seats & secondary education attainment), and <strong>Labor Market Participation</strong>.<br>
+            <em>Scored from $0.0$ (perfect gender equality) to $1.0$ (extreme gender disparity).</em>
+        </div>
+
+        <h3>Microloans / Microfinance (The Grameen Bank Model)</h3>
+        <div class="callout callout-example">
+            <div class="callout-title">💰 Case Study: Muhammad Yunus & Grameen Bank (Bangladesh)</div>
+            Pioneered by Nobel laureate <strong>Muhammad Yunus</strong>, microfinance provides very small, collateral-free financial loans ($\$50\text{--}\$500$) directly to low-income female entrepreneurs in developing countries who are excluded from commercial banking.<br><br>
+            <strong>Transformative Impact:</strong> Women use microloans to purchase weaving looms, dairy cows, sewing machines, or mobile phones to launch micro-enterprises. Studies show that female entrepreneurs reinvest over $90\%$ of their business profits back into their families' nutrition, clean water, healthcare, and children's school tuition.
+        </div>
+    </div>
+
+    <!-- SECTION 6: FORMAL VS. INFORMAL ECONOMY & THE BRANDT LINE -->
+    <div class="section-card" id="section-6">
+        <div class="section-header">
+            <div class="section-num">6</div>
+            <h2 class="section-title">Formal vs. Informal Economy & The Brandt Line</h2>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Formal Economy</th>
+                        <th>Informal Economy ("Shadow Economy")</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Definition</strong></td>
+                        <td>Economic activities legally registered, monitored, regulated, and taxed by government authorities.</td>
+                        <td>Unregulated, untaxed, and unrecorded cash or barter economic transactions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Job Examples</strong></td>
+                        <td>Salaried corporate employees, registered civil servants, licensed retail stores, union factory workers.</td>
+                        <td>Street food hawkers, unlicensed day laborers, informal domestic maids, unlicensed taxi drivers, waste pickers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Protections</strong></td>
+                        <td>Minimum wage laws, OSHA workplace safety regulations, employer health insurance, legal contracts, pensions.</td>
+                        <td>Zero legal protections, no minimum wage, no healthcare, vulnerable to exploitation and police extortion.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spatial Share</strong></td>
+                        <td>Dominates $90\%+$ of GDP in Core MDCs (USA, Western Europe).</td>
+                        <td>Accounts for <strong>$40\text{--}70\%+$ of non-agricultural employment</strong> in peripheral LDCs and squatter settlements (favelas/slums).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>The Historical Brandt Line (1980)</h3>
+        <p>Created by German Chancellor Willy Brandt in 1980, the <strong>Brandt Line</strong> drew a visual geographic boundary around $30^\circ\text{ N}$ latitude dividing the affluent, industrialized <strong>"Global North"</strong> (North America, Europe, Japan, Australia, New Zealand) from the impoverished <strong>"Global South"</strong> (Latin America, Africa, South Asia).</p>
+        <div class="callout callout-warning">
+            <div class="callout-title">⚠️ Modern AP Exam Critique of the Brandt Line</div>
+            The Brandt Line is now considered <strong>historically outdated</strong> because of the massive economic emergence of the Asian Tigers (South Korea, Taiwan, Singapore), China, India, Brazil, and oil-rich Persian Gulf states (UAE, Qatar), creating complex multipolar development rather than a simple North-South dichotomy.
+        </div>
+    </div>
+
+    <!-- SECTION 7: AP EXAM TRAPS & FLASHCARD CHECKPOINTS -->
+    <div class="section-card" id="section-7">
+        <div class="section-header">
+            <div class="section-num">7</div>
+            <h2 class="section-title">AP Exam Traps & Interactive Checkpoints</h2>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(1)">
+                <span>Q1: In which economic sector would you classify a data analyst writing machine learning algorithms for an investment bank?</span>
+                <button class="toggle-btn" id="btn-1">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-1">
+                <strong>Answer: The Quaternary Sector.</strong> The Quaternary sector involves knowledge-based activities, data processing, financial analysis, information technology, and scientific research.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(2)">
+                <span>Q2: Why is GNI per capita adjusted for Purchasing Power Parity (PPP) a better measure of living standards than standard exchange-rate GNI?</span>
+                <button class="toggle-btn" id="btn-2">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-2">
+                <strong>Answer: It accounts for local price levels and cost of living.</strong> PPP adjusts for differences in what a dollar can actually buy in local goods, housing, and food in different countries rather than relying on volatile currency exchange rates.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(3)">
+                <span>Q3: What does a high Gini coefficient (e.g., 0.58) indicate about a country?</span>
+                <button class="toggle-btn" id="btn-3">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-3">
+                <strong>Answer: Severe Income / Wealth Inequality.</strong> A high Gini coefficient indicates that national income is heavily concentrated in the hands of a small wealthy elite, while the majority of citizens earn low wages.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(4)">
+                <span>Q4: Why do microfinance organizations primarily target women in developing countries?</span>
+                <button class="toggle-btn" id="btn-4">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-4">
+                <strong>Answer: Higher Reinvestment in Family Well-being.</strong> Women disproportionately reinvest business profits directly into family nutrition, healthcare, clean water, and children's education, generating powerful community multiplier effects.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const ans = document.getElementById("ans-" + id);
+    const btn = document.getElementById("btn-" + id);
+    if (ans.classList.contains("visible")) {
+        ans.classList.remove("visible");
+        btn.textContent = "Show Answer";
+    } else {
+        ans.classList.add("visible");
+        btn.textContent = "Hide Answer";
+    }
+}
+</script>
+
+</body>
+</html>

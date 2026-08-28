@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography Study Guide — Topic 7.3: Theories and Models of Development</title>
+    <style>
+        :root {
+            --primary: #be185d;
+            --primary-light: #db2777;
+            --primary-subtle: #fdf2f8;
+            --accent: #1e3a8a;
+            --accent-subtle: #eff6ff;
+            --warning-border: #f59e0b;
+            --warning-bg: #fffbeb;
+            --danger-border: #ef4444;
+            --danger-bg: #fef2f2;
+            --success-border: #10b981;
+            --success-bg: #f0fdf4;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #be185d 0%, #9d174d 60%, #831843 100%);
+            color: white;
+            padding: 36px 30px;
+            border-radius: 16px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .badge-curriculum {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #fbcfe8;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #fce7f3;
+            max-width: 820px;
+            line-height: 1.6;
+        }
+
+        .toc-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 12px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: var(--text-body);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            border-color: #fbcfe8;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid var(--bg-page);
+            padding-bottom: 12px;
+        }
+
+        .section-num {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.95rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 14px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        .callout {
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+            border-left: 4px solid;
+        }
+
+        .callout-definition {
+            background-color: var(--primary-subtle);
+            border-left-color: var(--primary);
+            color: #831843;
+        }
+
+        .callout-example {
+            background-color: var(--accent-subtle);
+            border-left-color: var(--accent);
+            color: #1e3a8a;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: #92400e;
+        }
+
+        .callout-trap {
+            background-color: var(--danger-bg);
+            border-left-color: var(--danger-border);
+            color: #991b1b;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .concept-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .concept-box:hover {
+            border-color: #cbd5e1;
+            background: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .concept-box-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .checkpoint-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 14px 0;
+        }
+
+        .checkpoint-q {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkpoint-a {
+            display: none;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+            color: var(--primary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .checkpoint-a.visible {
+            display: block;
+        }
+
+        .toggle-btn {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .bullet-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: 800;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .top-nav, .toc-bar, .toggle-btn {
+                display: none;
+            }
+            .section-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .checkpoint-a {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="../exam-001-mcq/AMSCO_7.3_MCQ_Practice.html">🎯 Take Topic 7.3 MCQ Practice Test (40 Questions) →</a>
+        <a href="../index.html">🏠 Study Portal Dashboard</a>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero">
+        <div class="badge-curriculum">AMSCO® AP® Human Geography — Unit 7: Topic 7.3</div>
+        <h1>Topic 7.3: Theories and Models of Development</h1>
+        <div class="subtitle">Complete Concept Guide, Rostow's Stages, Wallerstein's World Systems, Dependency & UN SDGs</div>
+        <p>
+            This comprehensive study guide covers all concepts for Topic 7.3: Rostow’s 5 Stages of Economic Growth and major critiques, Wallerstein’s World Systems Theory (Core, Semi-Periphery, Periphery) and multi-scale core-periphery dynamics, Dependency Theory, Commodity Dependence (>60% threshold), Beneficiation, and the 17 UN Sustainable Development Goals (SDGs).
+        </p>
+    </div>
+
+    <!-- Sticky Table of Contents -->
+    <nav class="toc-bar">
+        <a href="#section-1" class="toc-link">1. Rostow's 5 Stages</a>
+        <a href="#section-2" class="toc-link">2. Rostow Critiques</a>
+        <a href="#section-3" class="toc-link">3. Wallerstein's World Systems</a>
+        <a href="#section-4" class="toc-link">4. Multi-Scale Core-Periphery</a>
+        <a href="#section-5" class="toc-link">5. Dependency & Commodity Traps</a>
+        <a href="#section-6" class="toc-link">6. UN SDGs (2030 Agenda)</a>
+        <a href="#section-7" class="toc-link">7. Traps & Flashcards</a>
+    </nav>
+
+    <!-- SECTION 1: ROSTOW'S 5 STAGES OF ECONOMIC GROWTH -->
+    <div class="section-card" id="section-1">
+        <div class="section-header">
+            <div class="section-num">1</div>
+            <h2 class="section-title">Rostow’s 5 Stages of Economic Growth (1960)</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📜 Modernization Theory (W.W. Rostow)</div>
+            Economist W.W. Rostow proposed a <strong>linear, five-stage structural model</strong> arguing that all countries can transition from traditional agrarian poverty to modern high-income prosperity through capital investment, technology diffusion, and industrialization (modeled after Western European and US history).
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage of Growth</th>
+                        <th>Core Economic Characteristics</th>
+                        <th>Labor & Technology Focus</th>
+                        <th>Historical & Modern Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Stage 1: Traditional Society</strong></td>
+                        <td>Subsistence agriculture; primary sector dominance; limited capital accumulation; trade is local or barter-based.</td>
+                        <td>Labor-intensive manual farming; static social hierarchy; minimal technological innovation.</td>
+                        <td>Medieval Europe; remote rural communities in South Sudan or Somalia today.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stage 2: Preconditions for Takeoff</strong></td>
+                        <td>Progressive leadership emerges; elite investment in <strong>vital national infrastructure</strong> (transportation canals/roads, water irrigation, ports, power grids).</td>
+                        <td>Shift toward commercial agriculture; extraction of raw natural resources for export to world markets.</td>
+                        <td>Great Britain in the early 1700s; contemporary resource exporters like Nigeria or Ghana.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stage 3: Takeoff</strong></td>
+                        <td><strong>Rapid industrialization</strong> concentrated in a small number of leading manufacturing sectors (textiles, food processing). Capital investment exceeds $10\%$ of national income.</td>
+                        <td>Massive rural-to-urban migration into factory cities; technological breakthroughs in manufacturing; emergence of an entrepreneurial middle class.</td>
+                        <td>Britain during the Industrial Revolution (1780s–1820s); modern garment hubs like Bangladesh and Vietnam.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stage 4: Drive to Maturity</strong></td>
+                        <td>Modern technology diffuses across <strong>all economic sectors</strong>; industrial base diversifies into heavy industry, chemicals, steel, machinery, and automobiles.</td>
+                        <td>Rapid growth of tertiary transportation, banking, and commercial services; rising real wages and urbanization.</td>
+                        <td>United States in the early 1900s; contemporary emerging industrial powerhouses like China, Brazil, and India.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stage 5: Age of High Mass Consumption</strong></td>
+                        <td>High-income, consumer-driven economy; dominant <strong>tertiary, quaternary, and quinary sectors</strong>.</td>
+                        <td>Widespread consumer durable goods (cars, home appliances, smartphones); expanded social security/public welfare programs and high disposable income.</td>
+                        <td>United States, Japan, Germany, United Kingdom, and Canada today.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 2: CRITIQUES OF ROSTOW'S MODEL -->
+    <div class="section-card" id="section-2">
+        <div class="section-header">
+            <div class="section-num">2</div>
+            <h2 class="section-title">Major Critiques of Rostow’s Growth Model</h2>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">1. Eurocentric / Western Bias</div>
+                <p>Assumes that all non-Western countries must follow the historical trajectory of Great Britain and the United States, ignoring distinct cultural, institutional, and environmental realities.</p>
+            </div>
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">2. Linear Determinism Trap</div>
+                <p>Assumes progress is an inevitable, one-way upward ladder. In reality, countries can experience political collapse, civil war, debt defaults, or severe economic regression (e.g., Argentina, Venezuela).</p>
+            </div>
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">3. Ignores Colonial Exploitation & Debt</div>
+                <p>Treats each nation as an isolated island. It ignores how centuries of European colonial resource extraction, neocolonial debt burdens, and unfair global trade terms prevent peripheral countries from reaching takeoff.</p>
+            </div>
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">4. Environmental & Resource Limits</div>
+                <p>If all 8 billion people on Earth achieved Stage 5 High Mass Consumption at US/European levels of resource consumption and carbon emissions, Earth's planetary boundaries and ecosystems would collapse.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 3: WALLERSTEIN'S WORLD SYSTEMS THEORY -->
+    <div class="section-card" id="section-3">
+        <div class="section-header">
+            <div class="section-num">3</div>
+            <h2 class="section-title">Wallerstein’s World Systems Theory (1974)</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🌐 The Structuralist Global Capitalist System (Immanuel Wallerstein)</div>
+            Unlike Rostow's national-level model, Wallerstein viewed the global economy as a <strong>single, integrated, hierarchical capitalist system</strong> based on an international division of labor. The system consists of three interconnected tiers: <strong>Core, Semi-Periphery, and Periphery</strong>.
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Economic Characteristics & Labor</th>
+                        <th>Role in the Global Economy</th>
+                        <th>Representative Countries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CORE</strong></td>
+                        <td>High wealth, advanced technology, high education, high wages, dominant tertiary, quaternary, and quinary sectors.</td>
+                        <td>Controls global capital, banking, R&D, and multinational corporate headquarters. <strong>Exploits the periphery</strong> for cheap raw materials and low-wage assembly.</td>
+                        <td>United States, United Kingdom, Germany, Japan, Canada, Australia, France.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SEMI-PERIPHERY</strong></td>
+                        <td>Intermediate levels of wealth and industrialization; mix of core and peripheral processes; major secondary manufacturing hubs.</td>
+                        <td>Serves as a global manufacturing buffer; <strong>exploits the periphery</strong> for raw materials while simultaneously <strong>being exploited by the core</strong> for cheap industrial manufacturing.</td>
+                        <td>China, India, Brazil, Mexico, South Africa, Vietnam, Turkey, Indonesia.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PERIPHERY</strong></td>
+                        <td>Low wealth, low technology, low wages, low education, high infant mortality, dominant primary sector extraction.</td>
+                        <td><strong>Structurally dependent on the core</strong>; exports unprocessed agricultural commodities, timber, and minerals; imports high-cost manufactured goods.</td>
+                        <td>Democratic Republic of Congo, Chad, Haiti, Afghanistan, Cambodia, Mali.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout callout-example">
+            <div class="callout-title">🔄 The Asymmetric Flow of Wealth in World Systems Theory</div>
+            <strong>Periphery $\rightarrow$ Core:</strong> Cheap raw materials (copper, cobalt, cocoa, crude oil) and low-wage manual labor.<br>
+            <strong>Core $\rightarrow$ Periphery:</strong> High-value manufactured consumer goods, intellectual property, financial loans, and capital machinery.
+        </div>
+    </div>
+
+    <!-- SECTION 4: MULTI-SCALE CORE-PERIPHERY DYNAMICS -->
+    <div class="section-card" id="section-4">
+        <div class="section-header">
+            <div class="section-num">4</div>
+            <h2 class="section-title">Multi-Scale Core-Periphery Dynamics</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📐 Scale-Free Property of Core-Periphery</div>
+            Core-Periphery relationships are not restricted to global international comparisons. They operate across <strong>multiple geographic scales of spatial analysis</strong>!
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">Global Scale</div>
+                <p>The Global North (MDC Core nations in North America and Western Europe) dominating international trade and financing over the Global South (LDC Periphery).</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">National / Regional Scale</div>
+                <p>Within Brazil, the affluent, industrialized Southeastern corridor around São Paulo acts as the national <strong>Core</strong>, while the rural Amazon Basin and drought-stricken Northeast act as the internal <strong>Periphery</strong>.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Local / Metropolitan Scale</div>
+                <p>A wealthy downtown financial central business district (CBD) or suburban tech corridor acts as the local <strong>Core</strong>, while underserved inner-city neighborhoods or isolated rural exurbs act as the local <strong>Periphery</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5: DEPENDENCY THEORY & COMMODITY DEPENDENCE -->
+    <div class="section-card" id="section-5">
+        <div class="section-header">
+            <div class="section-num">5</div>
+            <h2 class="section-title">Dependency Theory & Commodity Dependence</h2>
+        </div>
+
+        <div class="callout callout-trap">
+            <div class="callout-title">⚠️ Core Concept: Dependency Theory</div>
+            <strong>Dependency Theory</strong> states that the poverty and underdevelopment of peripheral countries is not an accidental stage of history, but the <strong>direct result of historical exploitation and unequal economic power structures maintained by wealthy core nations</strong> (neocolonialism).
+        </div>
+
+        <h3>Commodity Dependence (The Vulnerability Trap)</h3>
+        <div class="callout callout-definition">
+            <div class="callout-title">📊 The 60% UNCTAD Threshold</div>
+            A country is officially classified as <strong>Commodity Dependent</strong> when primary raw commodities (e.g., crude petroleum, copper, coffee, cocoa, soybeans) account for <strong>more than 60% of its total merchandise export revenue</strong>.
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box" style="border-left: 4px solid var(--danger-border);">
+                <div class="concept-box-title">Dangers of Commodity Dependence</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px;">
+                    <li><strong>Global Price Volatility:</strong> A sudden drop in world oil or copper prices immediately collapses national tax revenues and triggers currency devaluations.</li>
+                    <li><strong>The Resource Curse:</strong> Foreign oil/mining revenues often fuel corruption and crowd out investments in public education and healthcare.</li>
+                    <li><strong>Low Added Value:</strong> Exporting raw unrefined cacao yields pennies compared to importing processed Swiss chocolate bars.</li>
+                </ul>
+            </div>
+            <div class="concept-box" style="border-left: 4px solid var(--success-border);">
+                <div class="concept-box-title">The Solution: Beneficiation & Diversification</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px;">
+                    <li><strong>Beneficiation:</strong> Industrially processing raw materials domestically before export (e.g., refining bauxite into aluminum metal inside the country).</li>
+                    <li><strong>Economic Diversification:</strong> Developing secondary manufacturing and tourism/tech service sectors to reduce single-commodity reliance.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6: UN SUSTAINABLE DEVELOPMENT GOALS (SDGS) -->
+    <div class="section-card" id="section-6">
+        <div class="section-header">
+            <div class="section-num">6</div>
+            <h2 class="section-title">The UN Sustainable Development Goals (SDGs)</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🌱 The 2030 Agenda for Sustainable Development</div>
+            Adopted in 2015 by all 193 United Nations member states, the <strong>17 Sustainable Development Goals (SDGs)</strong> provide a universal blueprint for achieving peace, human dignity, and environmental protection by <strong>2030</strong>.
+        </div>
+
+        <p>The SDGs are built on the <strong>Triple Bottom Line</strong> of sustainability: balancing <em>Social Equity</em>, <em>Environmental Protection</em>, and <em>Economic Prosperity</em>.</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>High-Yield SDG Focus Areas</th>
+                        <th>Specific Target & Objective</th>
+                        <th>Geographic Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SDG 1: No Poverty & SDG 2: Zero Hunger</strong></td>
+                        <td>Eradicate extreme poverty (living on $<\$2.15/\text{day}$) and end hunger through sustainable agriculture and food security.</td>
+                        <td>Reduces rural malnutrition and famine vulnerability in sub-Saharan Africa and South Asia.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SDG 3: Good Health & SDG 4: Quality Education</strong></td>
+                        <td>End preventable maternal/child deaths and provide universal, equitable primary and secondary schooling.</td>
+                        <td>Drives the female literacy multiplier effect, lowering TFR and raising living standards.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SDG 5: Gender Equality</strong></td>
+                        <td>End gender-based legal discrimination, empower women through land ownership, and expand microloans.</td>
+                        <td>Accelerates micro-enterprise growth and improves community nutrition and health.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SDG 6: Clean Water & SDG 7: Clean Energy</strong></td>
+                        <td>Universal access to safe drinking water, sanitation, and affordable renewable solar/wind power.</td>
+                        <td>Combats waterborne pathogens (cholera) and reduces reliance on polluting indoor biomass fuels.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SDG 12: Responsible Consumption & SDG 13: Climate Action</strong></td>
+                        <td>Decouple economic growth from environmental degradation and build climate resilience.</td>
+                        <td>Protects low-lying coastal populations and small island developing states (SIDS) from sea-level rise.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 7: AP EXAM TRAPS & FLASHCARD CHECKPOINTS -->
+    <div class="section-card" id="section-7">
+        <div class="section-header">
+            <div class="section-num">7</div>
+            <h2 class="section-title">AP Exam Traps & Interactive Checkpoints</h2>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(1)">
+                <span>Q1: How does Wallerstein's World Systems Theory fundamentally differ from Rostow's Stages of Economic Growth?</span>
+                <button class="toggle-btn" id="btn-1">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-1">
+                <strong>Answer: Structural global exploitation vs. National linear progress.</strong> Rostow views development as a national, linear progression where every country can independently achieve mass consumption. Wallerstein views development as a global, structural hierarchy where the prosperity of Core nations relies upon the persistent exploitation of Periphery nations.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(2)">
+                <span>Q2: What is the primary vulnerability of a nation with commodity dependence (>60% of exports in raw materials)?</span>
+                <button class="toggle-btn" id="btn-2">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-2">
+                <strong>Answer: Extreme Global Price Volatility.</strong> When world commodity prices fall unexpectedly, the country's national revenue collapses, triggering severe budget deficits, currency depreciation, and foreign debt crises.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(3)">
+                <span>Q3: What characterizes Rostow's Stage 3 (Takeoff)?</span>
+                <button class="toggle-btn" id="btn-3">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-3">
+                <strong>Answer: Rapid industrialization in leading manufacturing sectors.</strong> Capital investment surges above 10% of national income, factories expand rapidly in cities (textiles, food processing), and massive rural-to-urban migration occurs.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(4)">
+                <span>Q4: Give an example of core-periphery dynamics operating at a national (sub-national) scale.</span>
+                <button class="toggle-btn" id="btn-4">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-4">
+                <strong>Answer: Brazil's Southeast Core vs. Amazonian Periphery.</strong> The wealthy industrial metropolis of São Paulo and Rio de Janeiro acts as Brazil's national economic Core, extracting raw timber, beef, and minerals from the underdeveloped Amazonian interior Periphery.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const ans = document.getElementById("ans-" + id);
+    const btn = document.getElementById("btn-" + id);
+    if (ans.classList.contains("visible")) {
+        ans.classList.remove("visible");
+        btn.textContent = "Show Answer";
+    } else {
+        ans.classList.add("visible");
+        btn.textContent = "Hide Answer";
+    }
+}
+</script>
+
+</body>
+</html>

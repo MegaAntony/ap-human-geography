@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography Study Guide — Topic 1.2: Geographic Data</title>
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-light: #0d9488;
+            --primary-subtle: #f0fdfa;
+            --accent: #1e3a8a;
+            --accent-subtle: #eff6ff;
+            --warning-border: #f59e0b;
+            --warning-bg: #fffbeb;
+            --danger-border: #ef4444;
+            --danger-bg: #fef2f2;
+            --success-border: #10b981;
+            --success-bg: #f0fdf4;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f766e 0%, #115e59 60%, #134e4a 100%);
+            color: white;
+            padding: 36px 30px;
+            border-radius: 16px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .badge-curriculum {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 5px 14px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #99f6e4;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #ccfbf1;
+            max-width: 820px;
+            line-height: 1.6;
+        }
+
+        .toc-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 12px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: var(--text-body);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            border-color: #99f6e4;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid var(--bg-page);
+            padding-bottom: 12px;
+        }
+
+        .section-num {
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.95rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 14px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        .callout {
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+            border-left: 4px solid;
+        }
+
+        .callout-definition {
+            background-color: var(--primary-subtle);
+            border-left-color: var(--primary);
+            color: #115e59;
+        }
+
+        .callout-example {
+            background-color: var(--accent-subtle);
+            border-left-color: var(--accent);
+            color: #1e3a8a;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: #92400e;
+        }
+
+        .callout-trap {
+            background-color: var(--danger-bg);
+            border-left-color: var(--danger-border);
+            color: #991b1b;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .concept-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .concept-box:hover {
+            border-color: #cbd5e1;
+            background: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .concept-box-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .checkpoint-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 14px 0;
+        }
+
+        .checkpoint-q {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkpoint-a {
+            display: none;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+            color: var(--primary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .checkpoint-a.visible {
+            display: block;
+        }
+
+        .toggle-btn {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .bullet-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: 800;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .top-nav, .toc-bar, .toggle-btn {
+                display: none;
+            }
+            .section-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .checkpoint-a {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="../exam-001-mcq/AMSCO_1.2_MCQ_Practice.html">🎯 Take Topic 1.2 MCQ Practice Test (40 Questions) →</a>
+        <a href="../index.html">🏠 Study Portal Dashboard</a>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero">
+        <div class="badge-curriculum">AMSCO® AP® Human Geography — Unit 1: Topic 1.2</div>
+        <h1>Topic 1.2: Geographic Data</h1>
+        <div class="subtitle">Complete Concept Guide, Data Gathering Methods, Geospatial Technologies & Spatial Ethics</div>
+        <p>
+            This comprehensive study guide covers all concepts for Topic 1.2: Fieldwork and Landscape Analysis, the US Decennial Census and Census Hierarchy, Quantitative vs. Qualitative Spatial Data, Geospatial Technologies (GIS Data Layering, GPS Trilateration, Active vs. Passive Remote Sensing), Decision-Making Across Sectors, and Geospatial Ethics, Surveillance & Data Bias.
+        </p>
+    </div>
+
+    <!-- Sticky Table of Contents -->
+    <nav class="toc-bar">
+        <a href="#section-1" class="toc-link">1. Sources of Data</a>
+        <a href="#section-2" class="toc-link">2. The Census & Units</a>
+        <a href="#section-3" class="toc-link">3. Quantitative vs. Qualitative</a>
+        <a href="#section-4" class="toc-link">4. Geospatial Tech (GIS, GPS, Remote Sensing)</a>
+        <a href="#section-5" class="toc-link">5. Spatial Decision-Making</a>
+        <a href="#section-6" class="toc-link">6. Ethics, Privacy & Bias</a>
+        <a href="#section-7" class="toc-link">7. Traps & Flashcards</a>
+    </nav>
+
+    <!-- SECTION 1: SOURCES & METHODS OF GATHERING GEOGRAPHIC DATA -->
+    <div class="section-card" id="section-1">
+        <div class="section-header">
+            <div class="section-num">1</div>
+            <h2 class="section-title">Sources & Methods of Gathering Geographic Data</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">📌 Core Concept: How do Geographers Collect Data?</div>
+            Geographers gather spatial information through both <strong>primary sources</strong> (firsthand on-the-ground collection) and <strong>secondary sources</strong> (government databases, satellite sensors, statistical archives).
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">1. Fieldwork & Field Observation</div>
+                <p>Physically visiting a location on the ground to observe, take field notes, map features, interview local inhabitants, photograph landscapes, and sketch architectural patterns.</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Example:</strong> Walking commercial street corridors in an immigrant neighborhood to record bilingual store signage.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">2. Landscape Analysis</div>
+                <p>The process of observing, studying, and interpreting how human culture, economic activity, and physical environments interact to create the visible <strong>cultural landscape</strong>.</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Example:</strong> Analyzing converted warehouse brick lofts and bike docks to evaluate gentrification.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">3. Ground Truthing</div>
+                <p>Sending human researchers directly to a physical location on the ground to confirm, calibrate, and validate data collected remotely by satellites or aerial aircraft.</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Example:</strong> Checking crop health in an Iowa cornfield to verify satellite NDVI moisture readings.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">4. Photographic Interpretation</div>
+                <p>Examining historical and contemporary aerial photographs or satellite imagery to track <strong>longitudinal changes over time</strong> across a physical landscape.</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);"><strong>Example:</strong> Comparing 1950 vs. 2025 aerial photos to measure suburban sprawl and wetland loss.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: THE DECENNIAL CENSUS & CENSUS GEOGRAPHIC HIERARCHY -->
+    <div class="section-card" id="section-2">
+        <div class="section-header">
+            <div class="section-num">2</div>
+            <h2 class="section-title">The Decennial Census & Spatial Units</h2>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🏛️ Constitutional Mandate: The US Decennial Census</div>
+            Article I of the US Constitution mandates a complete national population count <strong>every 10 years (decennially)</strong> conducted by the <strong>United States Census Bureau</strong>.
+        </div>
+
+        <h3>Why the Census is Powerful (The 2 Core Legal Functions):</h3>
+        <ul class="bullet-list">
+            <li><strong>Congressional Reapportionment & Redistricting:</strong> Determines how many of the 435 seats in the US House of Representatives each state receives, and provides data to redraw internal voting districts.</li>
+            <li><strong>Federal Funding Allocation:</strong> Directs hundreds of billions of dollars in annual federal formula funding for public schools, hospitals, highways, public transit, and disaster services.</li>
+        </ul>
+
+        <h3>Hierarchy of US Census Geographic Units (From Largest to Smallest):</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Census Spatial Unit</th>
+                        <th>Approximate Scale / Population</th>
+                        <th>Key Characteristics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Nation</strong></td>
+                        <td>Entire United States ($\sim 335$ million)</td>
+                        <td>Highest level of demographic aggregation; used for macro-policy.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. State</strong></td>
+                        <td>Individual 50 states</td>
+                        <td>Used for gubernatorial policy, state tax budgets, and Senate representation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. County</strong></td>
+                        <td>Subdivisions within states</td>
+                        <td>Used for county health services, property records, and public school systems.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Census Tract</strong></td>
+                        <td>$\sim 4,000$ residents ($1,200\text{--}8,000$)</td>
+                        <td>Contiguous neighborhood-scale boundary; designed to remain relatively stable over decades for statistical comparison.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Block Group</strong></td>
+                        <td>$\sim 600\text{--}3,000$ residents</td>
+                        <td>Cluster of census blocks within a single tract.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Census Block</strong></td>
+                        <td>Smallest geographic unit (often $0\text{--}100$ people)</td>
+                        <td>A single city block bounded by four streets or physical boundaries; lowest unit of raw census tabulation.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 3: QUANTITATIVE VS. QUALITATIVE GEOGRAPHIC DATA -->
+    <div class="section-card" id="section-3">
+        <div class="section-header">
+            <div class="section-num">3</div>
+            <h2 class="section-title">Quantitative vs. Qualitative Spatial Data</h2>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Quantitative Geographic Data</th>
+                        <th>Qualitative Geographic Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Core Nature</strong></td>
+                        <td><strong>Numerical, measurable, statistical, and mathematical.</strong></td>
+                        <td><strong>Descriptive, narrative, conceptual, and perceptual.</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Answers Question</strong></td>
+                        <td><em>"What?", "How many?", "Where?"</em> (Spatial patterns & amounts)</td>
+                        <td><em>"Why?", "How do people feel?"</em> (Context, emotion & meaning)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Primary Methods</strong></td>
+                        <td>Census surveys, GPS coordinates, temperature readings, traffic counts, demographic rates.</td>
+                        <td>Open-ended interviews, focus groups, personal travel diaries, oral histories, landscape sketches.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Real-World Examples</strong></td>
+                        <td>
+                            • Median household income is $\$72,400$.<br>
+                            • Population density is $3,500\text{ people/sq mi}$.<br>
+                            • Infant mortality rate is $4.2\text{ per }1,000$.
+                        </td>
+                        <td>
+                            • Resident: <em>"Our front porches make this neighborhood feel close-knit."</em><br>
+                            • Travel log describing a misty highland's haunting isolation.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout callout-example">
+            <div class="callout-title">🔬 The Power of Mixed-Methods Research</div>
+            Modern geographers rarely rely on just one type of data. A <strong>mixed-methods approach</strong> uses quantitative GIS data (e.g., mapping supermarket distance buffers and bus routes) paired with qualitative interviews (e.g., asking neighborhood residents about grocery costs and transit safety) to fully understand urban problems like <em>food deserts</em>.
+        </div>
+    </div>
+
+    <!-- SECTION 4: GEOSPATIAL TECHNOLOGIES (GIS, GPS, REMOTE SENSING) -->
+    <div class="section-card" id="section-4">
+        <div class="section-header">
+            <div class="section-num">4</div>
+            <h2 class="section-title">Geospatial Technologies: GIS, GPS & Remote Sensing</h2>
+        </div>
+
+        <!-- GIS -->
+        <h3>1. Geographic Information Systems (GIS)</h3>
+        <p>A sophisticated computer software and hardware system designed to <strong>capture, store, query, analyze, manipulate, and display spatial data in thematic layers</strong>.</p>
+        
+        <div class="callout callout-definition">
+            <div class="callout-title">🔑 The Core Capability of GIS: Data Layering</div>
+            GIS works by stacking separate thematic map layers on top of each other over the exact same geographic coordinate space. For example:<br>
+            <code>Layer 1 (100-Year Floodplains)</code> + <code>Layer 2 (Household Income)</code> + <code>Layer 3 (Bus Routes)</code> + <code>Layer 4 (Vacant Land Parcels)</code>.
+        </div>
+        <ul class="bullet-list">
+            <li><strong>Primary Applications:</strong> Urban zoning planning, emergency evacuation modeling, public transit corridor design, disease outbreak tracing, commercial retail site selection.</li>
+        </ul>
+
+        <!-- GPS -->
+        <h3 style="margin-top: 24px;">2. Global Positioning System (GPS)</h3>
+        <p>A global satellite navigation system originally developed by the US Department of Defense (Navstar GPS). It consists of a constellation of at least 24 orbiting satellites, ground monitoring stations, and receiver devices.</p>
+
+        <div class="callout callout-definition">
+            <div class="callout-title">🛰️ How GPS Works: Trilateration</div>
+            A GPS receiver calculates its exact absolute location (latitude, longitude, and elevation) by measuring the time delay of radio signals received from <strong>at least 4 orbiting satellites</strong> (3 satellites calculate 2D horizontal coordinates; the 4th calculates elevation and synchronizes atomic clocks).
+        </div>
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">Everyday Consumer GPS</div>
+                <p>Turn-by-turn vehicle routing (Google Maps, Waze), rideshare location tracking (Uber/Lyft), and geotagged smartphone photography.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Precision Agriculture</div>
+                <p>Commercial farmers use GPS-guided tractors and soil sensors to apply exact quantities of seeds, water, and fertilizer down to the square inch.</p>
+            </div>
+        </div>
+
+        <!-- Remote Sensing -->
+        <h3 style="margin-top: 24px;">3. Remote Sensing</h3>
+        <p>Acquiring physical data and imagery of Earth's surface from a distance using sensors on <strong>satellites, aircraft, or drones (UAVs)</strong> without making physical contact.</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Remote Sensing</th>
+                        <th>How It Operates</th>
+                        <th>Examples & Key Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Active Remote Sensing</strong></td>
+                        <td>The sensor <strong>emits its own energy signal/pulse</strong> (lasers, radio waves, microwaves) and measures the return reflection.</td>
+                        <td>
+                            • <strong>LiDAR:</strong> Laser light pulses create ultra-precise 3D topographic models, revealing ancient ruins beneath jungle canopies.<br>
+                            • <strong>Radar:</strong> Measures sea-surface roughness and ice sheet thickness through clouds.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Passive Remote Sensing</strong></td>
+                        <td>The sensor detects and records <strong>naturally reflected sunlight or emitted thermal radiation</strong>.</td>
+                        <td>
+                            • <strong>Optical Satellite Imagery:</strong> Tracking urban sprawl over decades.<br>
+                            • <strong>Infrared NDVI:</strong> Assessing crop health, drought stress, and wildfire burn scars.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 5: SPATIAL DECISION-MAKING ACROSS SCALES & SECTORS -->
+    <div class="section-card" id="section-5">
+        <div class="section-header">
+            <div class="section-num">5</div>
+            <h2 class="section-title">Spatial Decision-Making Across Sectors</h2>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">🏛️ Public Sector / Government</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px; color: var(--text-body);">
+                    <li><strong>Disaster Evacuation:</strong> Layering hurricane storm-surge flood models (SLOSH) with population density to order timely evacuations.</li>
+                    <li><strong>School Rezoning:</strong> Using block-level census child counts to balance student enrollment across facilities.</li>
+                    <li><strong>Public Safety:</strong> Analyzing 911 dispatch response times and crime heat maps to position new police/fire stations.</li>
+                </ul>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">🏢 Commercial / Business</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px; color: var(--text-body);">
+                    <li><strong>Retail Site Selection:</strong> Grocery store chains overlay 10-minute drive-time buffers, median income ($>90k$), and competitor locations.</li>
+                    <li><strong>Target Marketing:</strong> Geofencing mobile advertisements around competitor retail stores.</li>
+                    <li><strong>Supply Chain Logistics:</strong> Real-time telematics tracking delivery trucks to optimize urban routes.</li>
+                </ul>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">👤 Individual / Personal</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px; color: var(--text-body);">
+                    <li><strong>Daily Commuting:</strong> Real-time GPS detour routing around highway collisions.</li>
+                    <li><strong>Home Buying:</strong> Evaluating prospective neighborhoods by overlaying school ratings, flood risks, and walkability scores.</li>
+                </ul>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">🌿 Environmental / Conservation</div>
+                <ul style="font-size: 0.88rem; margin-left: 16px; color: var(--text-body);">
+                    <li><strong>Wildlife Corridors:</strong> Tracking GPS-collared wolves to designate protected migration paths.</li>
+                    <li><strong>Deforestation Monitoring:</strong> Satellite sensors alerting park rangers to illegal Amazon logging.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6: GEOSPATIAL ETHICS, PRIVACY & DATA BIAS -->
+    <div class="section-card" id="section-6">
+        <div class="section-header">
+            <div class="section-num">6</div>
+            <h2 class="section-title">Geospatial Ethics, Privacy & Data Limitations</h2>
+        </div>
+
+        <div class="callout callout-trap">
+            <div class="callout-title">🚨 Ethical Issue #1: Geospatial Privacy vs. Mass Surveillance</div>
+            The ubiquitous harvesting of smartphone GPS coordinates, automated license plate reader (ALPR) scans, and commercial location data creates deep civil liberty tensions. Because individual daily travel trajectories are unique, "anonymized" location data can easily identify private home addresses, medical clinic visits, and religious sites.
+        </div>
+
+        <div class="callout callout-trap">
+            <div class="callout-title">🚨 Ethical Issue #2: Census Undercounting of Marginalized Groups</div>
+            Unhoused individuals, undocumented immigrants, non-English speaking households, and remote rural communities are systematically undercounted during decennial censuses. <strong>Direct Consequence:</strong> Undercounted communities lose equitable political representation in state/federal legislatures and receive millions less in federal funding for public schools, transit, and healthcare.
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <div class="concept-box-title">The Small Number Problem</div>
+                <p>When calculating statistical rates for tiny rural populations (e.g., a county of 1,500 people), a cluster of just 2 or 3 cases causes the rate to appear astronomically high on a choropleth map, visually misleading analysts.</p>
+            </div>
+            <div class="concept-box">
+                <div class="concept-box-title">Volunteered Geographic Information (VGI)</div>
+                <p>Grassroots, crowd-sourced spatial data created voluntarily by ordinary citizens (e.g., OpenStreetMap, crowd-sourced hazard alerts on Waze, participatory indigenous land mapping).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 7: AP EXAM TRAPS & INTERACTIVE FLASHCARDS -->
+    <div class="section-card" id="section-7">
+        <div class="section-header">
+            <div class="section-num">7</div>
+            <h2 class="section-title">AP Exam Traps & Interactive Checkpoints</h2>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(1)">
+                <span>Q1: A researcher claims GIS maps are 100% objective because they are powered by computers and satellites. Why is this claim flawed?</span>
+                <button class="toggle-btn" id="btn-1">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-1">
+                <strong>Answer: Human Subjectivity in Cartography.</strong> GIS maps reflect human choices: cartographers choose which data layers to include or omit, what scale of analysis to use, how to categorize data intervals, and what visual colors to assign.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(2)">
+                <span>Q2: What is the primary difference between GPS and GIS?</span>
+                <button class="toggle-btn" id="btn-2">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-2">
+                <strong>Answer: GPS determines coordinates; GIS analyzes layered data.</strong> GPS uses orbiting satellites and trilateration to pinpoint absolute location coordinates on Earth. GIS is computer software used to store, manipulate, stack, and analyze layered spatial datasets.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(3)">
+                <span>Q3: Which geospatial technology is best suited for tracking Arctic sea ice melting over a 30-year period?</span>
+                <button class="toggle-btn" id="btn-3">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-3">
+                <strong>Answer: Satellite Remote Sensing.</strong> Remote sensing captures longitudinal, large-scale imagery of inaccessible, dynamic environments over decades without requiring hazardous in-person field visits.
+            </div>
+        </div>
+
+        <div class="checkpoint-card">
+            <div class="checkpoint-q" onclick="toggleAnswer(4)">
+                <span>Q4: What is the smallest geographic unit of census data tabulation?</span>
+                <button class="toggle-btn" id="btn-4">Show Answer</button>
+            </div>
+            <div class="checkpoint-a" id="ans-4">
+                <strong>Answer: The Census Block.</strong> In the US Census hierarchy (Nation $\rightarrow$ State $\rightarrow$ County $\rightarrow$ Tract $\rightarrow$ Block Group $\rightarrow$ Block), the Census Block is the smallest unit (often bounded by 4 city streets).
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const ans = document.getElementById("ans-" + id);
+    const btn = document.getElementById("btn-" + id);
+    if (ans.classList.contains("visible")) {
+        ans.classList.remove("visible");
+        btn.textContent = "Show Answer";
+    } else {
+        ans.classList.add("visible");
+        btn.textContent = "Hide Answer";
+    }
+}
+</script>
+
+</body>
+</html>

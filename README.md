@@ -1,8 +1,18 @@
 # AP Human Geography Study Hub
 
-Collection of interactive study materials, FRQ guides, and Multiple Choice Question (MCQ) mastery banks for AP Human Geography based on the AMSCO Advanced Placement Human Geography (2nd Edition) curriculum.
+Collection of interactive study materials, comprehensive concept guides, FRQ prep models, and Multiple Choice Question (MCQ) mastery banks for AP Human Geography based on the AMSCO Advanced Placement Human Geography (2nd Edition) curriculum.
 
 ## 📁 Repository Structure
+
+### 📖 `exam-001-study-guide/` (Comprehensive Concept Study Guides)
+Detailed concept-by-concept study guides with definitions, simple-term explanations, visual models, comparative tables, and interactive flashcard checkpoints:
+- **`exam-001-study-guide/index.html`**: Study Guides Dashboard
+- **`exam-001-study-guide/Topic_1.1_Introduction_to_Maps_Study_Guide.html`**: Topic 1.1 — Introduction to Maps
+- **`exam-001-study-guide/Topic_1.2_Geographic_Data_Study_Guide.html`**: Topic 1.2 — Geographic Data
+- **`exam-001-study-guide/Topic_1.3_The_Power_of_Geographic_Data_Study_Guide.html`**: Topic 1.3 — The Power of Geographic Data
+- **`exam-001-study-guide/Topic_7.2_Economic_Sectors_and_Patterns_Study_Guide.html`**: Topic 7.2 — Economic Sectors & Patterns
+- **`exam-001-study-guide/Topic_7.3_Theories_and_Models_of_Development_Study_Guide.html`**: Topic 7.3 — Theories & Models of Development
+- **`exam-001-study-guide/Topic_7.5_Deindustrialization_and_Restructuring_Study_Guide.html`**: Topic 7.5 — Deindustrialization & Restructuring
 
 ### 🎯 `exam-001-mcq/` (Multiple Choice Practice Portal)
 Interactive practice exam modules with real-time scoring, randomized option lengths (no guessing heuristics), subtopic filtering, and detailed explanations for each choice:

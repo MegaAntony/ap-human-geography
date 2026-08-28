@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography — Comprehensive Concept Study Guides Dashboard</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --card-hover-shadow: 0 12px 24px -4px rgb(0 0 0 / 0.12), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 12px 20px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid var(--border);
+        }
+        .nav-btn-secondary:hover {
+            background: #e2e8f0;
+            color: #1e293b;
+        }
+
+        .nav-btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        .nav-btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+            color: white;
+            padding: 40px 32px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+            margin-bottom: 32px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #dbeafe;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title span {
+            background: #e2e8f0;
+            color: #475569;
+            font-size: 0.8rem;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .topic-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-hover-shadow);
+            border-color: #cbd5e1;
+        }
+
+        .card-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .topic-pill {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pill-blue { background: #eff6ff; color: #1d4ed8; }
+        .pill-teal { background: #f0fdfa; color: #0f766e; }
+        .pill-amber { background: #fff7ed; color: #c2410c; }
+        .pill-green { background: #ecfdf5; color: #047857; }
+        .pill-pink { background: #fdf2f8; color: #be185d; }
+        .pill-indigo { background: #eef2ff; color: #4338ca; }
+
+        .topic-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .topic-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.55;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .btn-launch {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-launch:hover {
+            background: #1d4ed8;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Navigation Bar -->
+    <nav class="top-nav">
+        <a href="../index.html" class="nav-brand">
+            📚 AP Human Geography Study Hub
+        </a>
+        <div class="nav-links">
+            <a href="../exam-001-mcq/index.html" class="nav-btn nav-btn-secondary">🎯 MCQ Practice Banks</a>
+            <a href="index.html" class="nav-btn nav-btn-primary">📖 Concept Study Guides</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header>
+        <div class="hero-badge">AMSCO® AP® Human Geography — 2nd Edition</div>
+        <h1>Exam 001: Comprehensive Concept Study Guides</h1>
+        <p>
+            Complete topic-by-topic content guides with clear definitions, visual models, comparative tables, real-world case studies, and interactive flashcard checkpoints to master all core concepts for Exam 001.
+        </p>
+    </header>
+
+    <!-- Unit 1 -->
+    <div class="section-title">
+        Unit 1: Thinking Geographically <span>3 Topics</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-blue">Topic 1.1</span>
+                </div>
+                <h2 class="topic-title">Introduction to Maps</h2>
+                <p class="topic-desc">
+                    Reference vs. Thematic Maps, Projections (Mercator, Gall-Peters, Robinson, Polar Azimuthal), SADD Distortion Principle, Cartographic Scale (Large vs. Small), and Spatial Distribution Patterns.
+                </p>
+            </div>
+            <a href="Topic_1.1_Introduction_to_Maps_Study_Guide.html" class="btn-launch">Open 1.1 Study Guide →</a>
+        </div>
+
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-teal">Topic 1.2</span>
+                </div>
+                <h2 class="topic-title">Geographic Data</h2>
+                <p class="topic-desc">
+                    Fieldwork & Landscape Analysis, US Decennial Census & Spatial Hierarchy, Quantitative vs. Qualitative Data, Geospatial Tech (GIS Layering, GPS Trilateration, Active/Passive Remote Sensing), and Geospatial Ethics.
+                </p>
+            </div>
+            <a href="Topic_1.2_Geographic_Data_Study_Guide.html" class="btn-launch" style="background-color: #0f766e;">Open 1.2 Study Guide →</a>
+        </div>
+
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-amber">Topic 1.3</span>
+                </div>
+                <h2 class="topic-title">The Power of Geographic Data</h2>
+                <p class="topic-desc">
+                    Multi-Scale Decision Making, Tobler's First Law, Distance Decay, Time-Space Compression, Gravity Model, Dr. John Snow's 1854 Cholera Map, Gerrymandering (Packing & Cracking), and Historical Redlining Legacies.
+                </p>
+            </div>
+            <a href="Topic_1.3_The_Power_of_Geographic_Data_Study_Guide.html" class="btn-launch" style="background-color: #c2410c;">Open 1.3 Study Guide →</a>
+        </div>
+    </div>
+
+    <!-- Unit 7 -->
+    <div class="section-title">
+        Unit 7: Industrial & Economic Development <span>3 Topics</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-green">Topic 7.2</span>
+                </div>
+                <h2 class="topic-title">Economic Sectors and Patterns</h2>
+                <p class="topic-desc">
+                    Primary through Quinary Economic Sectors, GDP/GNP/GNI per Capita, Purchasing Power Parity (PPP), Gini Index, UN Human Development Index (HDI), Gender Inequality Index (GII), Microloans (Grameen Bank), and Informal Economy.
+                </p>
+            </div>
+            <a href="Topic_7.2_Economic_Sectors_and_Patterns_Study_Guide.html" class="btn-launch" style="background-color: #047857;">Open 7.2 Study Guide →</a>
+        </div>
+
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-pink">Topic 7.3</span>
+                </div>
+                <h2 class="topic-title">Theories and Models of Development</h2>
+                <p class="topic-desc">
+                    Rostow's 5 Stages of Growth and its critiques, Wallerstein's World Systems Theory (Core, Semi-Periphery, Periphery), Multi-Scale Core-Periphery Dynamics, Dependency Theory, Commodity Traps, and the 17 UN SDGs.
+                </p>
+            </div>
+            <a href="Topic_7.3_Theories_and_Models_of_Development_Study_Guide.html" class="btn-launch" style="background-color: #be185d;">Open 7.3 Study Guide →</a>
+        </div>
+
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-indigo">Topic 7.5</span>
+                </div>
+                <h2 class="topic-title">Deindustrialization and Restructuring</h2>
+                <p class="topic-desc">
+                    Deindustrialization, Rust Belt to Sun Belt Migration, Brownfield Remediation, New International Division of Labor (NIDL), Offshoring/BPO, Mexican Maquiladoras, China SEZs, Fordism vs. Post-Fordism, JIT Logistics, and Technopoles.
+                </p>
+            </div>
+            <a href="Topic_7.5_Deindustrialization_and_Restructuring_Study_Guide.html" class="btn-launch" style="background-color: #4338ca;">Open 7.5 Study Guide →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© AP Human Geography Study Hub | Designed for comprehensive Exam 001 preparation.</p>
+    </footer>
+</div>
+
+</body>
+</html>
