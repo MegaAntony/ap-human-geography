@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 1.1: Introduction to Maps (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-bg: #eff6ff;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #bfdbfe;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Print Styling */
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 1: Thinking Geographically</h1>
+        <div class="subtitle">Topic 1.1: Introduction to Maps — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #e0e7ff; max-width: 800px;">
+            Covers every concept in Section 1.1: Reference vs. Thematic maps (Choropleth, Dot Density, Graduated Symbol, Isoline, Cartogram, Flow-Line), Cartographic vs. Geographic Scale, Representative Fractions, Map Projections (Mercator, Gall-Peters, Robinson, Azimuthal/Polar, Goode-Homolosine, Conic), SADD Distortions, Absolute vs. Relative Location/Distance, Coordinate Systems, and Spatial Distribution Patterns.
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="map-types">Thematic & Reference Maps</option>
+                <option value="scale">Cartographic & Mathematical Scale</option>
+                <option value="projections">Map Projections & Distortion (SADD)</option>
+                <option value="spatial-concepts">Location, Coordinates & Spatial Patterns</option>
+                <option value="ap-stimulus">AP-Style Stimulus Scenarios</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A tourist arriving in London uses a street directory showing subway lines, major roads, municipal boundaries, and famous landmarks to walk from King's Cross Station to the British Museum.",
+        "question": "Which general category of map is this tourist utilizing?",
+        "options": [
+            "A thematic map, because it displays specific statistical distributions across the city.",
+            "A cartogram, because the physical geometry of the streets is altered to reflect traffic density.",
+            "An isoline map, because lines of equal walking distance connect the landmarks.",
+            "A reference map, because it emphasizes exact physical locations, transportation networks, and geographic landmarks for navigation.",
+            "A dot distribution map, because tourist destinations are marked as individual points."
+        ],
+        "correct": 3,
+        "explanation": "Reference maps are designed for people to refer to general information about places, navigation, boundaries, roads, and landmarks (e.g., road maps, atlas maps, city guides). In contrast, thematic maps show spatial patterns or distributions of specific statistical variables/themes."
+    },
+    {
+        "id": 2,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A public health researcher creates a map of the United States where each county is shaded in varying hues of blue, ranging from light sky blue to dark navy, to represent the percentage of residents diagnosed with diabetes.",
+        "question": "Which specific type of thematic map is being described?",
+        "options": [
+            "Dot distribution map.",
+            "Choropleth map",
+            "Graduated symbol map.",
+            "Isoline map.",
+            "Topographic contour map."
+        ],
+        "correct": 1,
+        "explanation": "A choropleth map uses varying colors, shading, or patterns across predefined administrative units (such as counties, states, or countries) to show average values, percentages, or rates of a specific variable."
+    },
+    {
+        "id": 3,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A demographer maps the agricultural population of Southeast Asia. On the map, the legend indicates: 'Each solid green circle represents 10,000 rural farmers.'",
+        "question": "What type of map is this, and what primary spatial characteristic does it effectively reveal?",
+        "options": [
+            "Cartogram; reveals economic productivity relative to land area.",
+            "Isoline map; reveals lines of equal agricultural yields across topographic regions.",
+            "Dot distribution map; reveals spatial concentration, density, and clustering of a phenomenon.",
+            "Proportional symbol map; reveals the total national GDP through circles of varying diameters, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Flow-line map; reveals the migration trajectories of rural laborers to urban capitals, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification."
+        ],
+        "correct": 2,
+        "explanation": "A dot distribution (or dot density) map places identical dots on a map where each dot represents a fixed predetermined quantity of a phenomenon. It is exceptionally effective at visualizing spatial density, clustering, and dispersion across a landscape."
+    },
+    {
+        "id": 4,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A map of global crude oil consumption displays circles over individual countries. The circle over the United States has a diameter of 30 mm, China has 26 mm, and Costa Rica has 1.5 mm.",
+        "question": "This visualization is best classified as a:",
+        "options": [
+            "Choropleth map, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Cartogram, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Graduated symbol (proportional symbol) map",
+            "Topographic map, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Plat map, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 2,
+        "explanation": "A graduated (or proportional) symbol map uses symbols (frequently circles, squares, or bar icons) of varying sizes to represent quantitative data. Larger symbols correspond to greater magnitudes or totals of the phenomenon."
+    },
+    {
+        "id": 5,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A weather report displays a map with continuous, curved lines connecting locations that experience identical atmospheric temperatures at 12:00 PM EST.",
+        "question": "These lines are known as isotherms. This map is an example of a(n):",
+        "options": [
+            "Cartogram.",
+            "Flow-line map.",
+            "Dot density map.",
+            "Plat map.",
+            "Isoline map"
+        ],
+        "correct": 4,
+        "explanation": "Isoline maps connect points of equal value with continuous lines. Common examples include isotherms (equal temperature), isobars (equal barometric pressure), and contour lines (equal topographic elevation)."
+    },
+    {
+        "id": 6,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "A world map is published where the physical land area of African nations appears significantly swollen and enlarged compared to their geographic boundaries, while Canada, Russia, and Greenland appear shrunken to thin slivers because the map's geometry is scaled by total human population.",
+        "question": "Which thematic mapping technique is being employed?",
+        "options": [
+            "Mercator Projection.",
+            "Isoline map.",
+            "Choropleth map.",
+            "Plat map.",
+            "Cartogram"
+        ],
+        "correct": 4,
+        "explanation": "A cartogram deliberately distorts and resizes geographic shapes and boundaries proportional to a specific statistical data variable (such as total population, GDP, or energy use) rather than physical land area."
+    },
+    {
+        "id": 7,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "stimulus": "An international logistics report shows arrows originating in East Asian ports and terminating in Western European ports. The arrows across the Indian Ocean are 15 millimeters thick, while arrows rounding the Arctic Northern Sea Route are 0.5 millimeters thick.",
+        "question": "Which type of map is this, and what do the arrow widths represent?",
+        "options": [
+            "Isoline map; arrow width represents wind speed.",
+            "Flow-line map; arrow width represents the volume/quantity of cargo transported.",
+            "Choropleth map; arrow width represents port import tax rates, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Plat map; arrow width represents legal maritime property boundaries, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Dot distribution map; arrow width represents the number of ports along the coastline."
+        ],
+        "correct": 1,
+        "explanation": "Flow-line maps use lines or arrows of varying thickness to depict the movement, direction, and volume of people, goods, raw materials, or information between geographic origins and destinations."
+    },
+    {
+        "id": 8,
+        "category": "map-types",
+        "categoryName": "Thematic & Reference Maps",
+        "question": "Which of the following documents is the best example of a reference map used by local governments to show legal land ownership and property boundaries?",
+        "options": [
+            "A national topographic contour sheet.",
+            "A state-level choropleth tax rate map.",
+            "A continental flow-line transportation map.",
+            "A metropolitan dot density zoning map.",
+            "A county plat map"
+        ],
+        "correct": 4,
+        "explanation": "A plat map (or cadastre) is a legal reference map that displays property lines, parcel boundaries, lot dimensions, and ownership divisions for townships, neighborhoods, or municipalities."
+    },
+    {
+        "id": 9,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "question": "What is the precise definition of 'cartographic scale' (or map scale)?",
+        "options": [
+            "The physical size of the paper or digital screen upon which the cartographer prints the map.",
+            "The hierarchy of administrative governance from local municipal councils to national parliaments.",
+            "The level of spatial aggregation used in census tract data collection.",
+            "The mathematical relationship or ratio between the distance on a map and the corresponding actual distance on the Earth's surface.",
+            "The degree of angular curvature applied when flattening a three-dimensional globe."
+        ],
+        "correct": 3,
+        "explanation": "Cartographic scale refers to the mathematical ratio between a measured distance on a map and the actual linear ground distance on Earth."
+    },
+    {
+        "id": 10,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "stimulus": "Examine these three representative fractions:\nMap X: 1:10,000\nMap Y: 1:250,000\nMap Z: 1:5,000,000",
+        "question": "Which of the following statements correctly evaluates their cartographic scales and level of detail?",
+        "options": [
+            "Map Z is the largest-scale map and provides the greatest amount of architectural detail.",
+            "Map X is the smallest-scale map because 10,000 is a smaller number than 5,000,000.",
+            "Map X is the largest-scale map and displays a smaller geographic area with high detail.",
+            "Map Y has a smaller scale than Map Z but a larger scale than Map X, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "All three maps have identical scales because the numerator in each fraction is 1."
+        ],
+        "correct": 2,
+        "explanation": "Cartographic scale is a fraction: 1/10,000 is much larger than 1/5,000,000 (just as 1/10 is larger than 1/100). Therefore, Map X is a large-scale map (zoomed in, shows small area with high detail), while Map Z is a small-scale map (zoomed out, shows vast area with generalized features)."
+    },
+    {
+        "id": 11,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "question": "If a student needs a map to plan an evacuation walking route through their high school campus and immediate neighborhood streets, which cartographic scale would be most appropriate?",
+        "options": [
+            "1:10,000,000.",
+            "1:1,000,000.",
+            "1:250,000.",
+            "1:50,000,000.",
+            "1:5,000"
+        ],
+        "correct": 4,
+        "explanation": "A large-scale map such as 1:5,000 covers a small local area (like a school campus and neighboring blocks) and shows high detail, including sidewalks, building footprints, and street intersections."
+    },
+    {
+        "id": 12,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "question": "A map scale is written in words as: '1 inch represents 16 miles.' Which method of expressing map scale does this illustrate?",
+        "options": [
+            "Representative fraction.",
+            "Graphic (bar) scale, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Isoline scale, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Relative situational scale.",
+            "Verbal (written) scale"
+        ],
+        "correct": 4,
+        "explanation": "A verbal (or written) scale expresses the relationship between map distance and ground distance in descriptive words (e.g., '1 inch equals 1 mile' or '1 cm to 10 km')."
+    },
+    {
+        "id": 13,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "question": "Which type of map scale remains completely accurate and functional even if the map image is enlarged or reduced via photocopying or digital screen resizing?",
+        "options": [
+            "Graphic (bar) scale",
+            "Verbal scale (e.g., '1 inch equals 5 miles').",
+            "Representative fraction (e.g., 1:24,000).",
+            "Cartogram ratio.",
+            "Mercator numerical index."
+        ],
+        "correct": 0,
+        "explanation": "A graphic (or bar) scale consists of a line or bar marked with ground distances. When a map is zoomed, enlarged, or reduced, the bar changes size in exact proportion with the rest of the map, maintaining its accuracy."
+    },
+    {
+        "id": 14,
+        "category": "scale",
+        "categoryName": "Cartographic & Mathematical Scale",
+        "question": "In AP Human Geography, how does 'cartographic scale' differ fundamentally from 'geographic scale (scale of analysis)'?",
+        "options": [
+            "Cartographic scale is used exclusively for physical geography; geographic scale is used only for cultural geography.",
+            "Cartographic scale applies to globes; geographic scale applies only to flat paper maps.",
+            "Cartographic scale refers to mathematical distance ratios; geographic scale refers to the level of spatial aggregation (local, regional, national, global) at which phenomena are studied.",
+            "Cartographic scale measures time-distance decay; geographic scale measures absolute Euclidean coordinates, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "There is no difference; both terms are interchangeable synonyms."
+        ],
+        "correct": 2,
+        "explanation": "Cartographic scale is the mathematical ratio between map distance and real-world distance (large vs. small scale). Geographic scale (or scale of analysis) refers to the conceptual scope of inquiry or data aggregation (local, county, state, national, regional, global)."
+    },
+    {
+        "id": 15,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "question": "Why is it mathematically impossible to create a 2-dimensional flat map of the entire Earth that is 100% accurate in all aspects?",
+        "options": [
+            "Cartographers lack sufficiently precise satellite laser data, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Tectonic plate movement shifts continents faster than projection algorithms can update, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "The International Meridian Conference prohibits perfect reproduction of the equator.",
+            "Earth's magnetic pole does not align with its rotational axis.",
+            "The Earth is a 3-dimensional oblate spheroid (geoid), and flattening it inevitably causes geometric distortion."
+        ],
+        "correct": 4,
+        "explanation": "Because Earth is a three-dimensional curved surface (a sphere/geoid), flattening it onto a flat two-dimensional plane mathematically forces distortion in at least one geometric property: Shape, Area, Distance, or Direction (SADD)."
+    },
+    {
+        "id": 16,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "question": "The four fundamental geometric properties that undergo distortion during map projection are commonly summarized by the acronym SADD. What does SADD stand for?",
+        "options": [
+            "Scale, Altitude, Density, Dispersion.",
+            "Shape, Area, Distance, Direction",
+            "Situation, Site, Aggregation, Demography.",
+            "Spheroid, Azimuth, Declination, Diameter.",
+            "Subdivision, Agriculture, Drainage, Development."
+        ],
+        "correct": 1,
+        "explanation": "Every map projection distorts one or more of the four primary spatial properties: Shape, Area (size), Distance, and Direction (SADD)."
+    },
+    {
+        "id": 17,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "stimulus": "A historical world map projection features a rectangular grid where lines of latitude and longitude intersect at exact 90-degree right angles. Navigators can draw a straight line between two ports and follow a constant compass bearing (rhumb line). However, Greenland appears roughly equal in size to the entire continent of Africa.",
+        "question": "Which map projection is this?",
+        "options": [
+            "Gall-Peters Projection.",
+            "Robinson Projection.",
+            "Mercator Projection",
+            "Goode-Homolosine Projection.",
+            "Azimuthal Equidistant Projection."
+        ],
+        "correct": 2,
+        "explanation": "The Mercator Projection is a conformal cylindrical projection created in 1569 for marine navigation. Lines of latitude and longitude intersect at 90° right angles, preserving true direction and shape locally, but it severely distorts land area at high polar latitudes (making Greenland appear the size of Africa, when Africa is actually ~14 times larger)."
+    },
+    {
+        "id": 18,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "stimulus": "In the 1970s, cartographer Arno Peters promoted a cylindrical equal-area projection, arguing that conventional maps perpetuated a Eurocentric bias by exaggerating the sizes of North America and Europe while diminishing the equatorial continents.",
+        "question": "Which statement accurately describes the trade-off of the Gall-Peters Projection?",
+        "options": [
+            "It preserves relative landmass area accurately but severely distorts and elongates shapes, especially near the equator and poles.",
+            "It preserves perfect shapes of all continents but cuts oceans into disconnected segments, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "It maintains true compass bearing at the expense of distance accuracy.",
+            "It shows true distance from the North Pole but distorts southern hemisphere oceans entirely.",
+            "It curves all parallels of latitude while keeping meridians perfectly straight."
+        ],
+        "correct": 0,
+        "explanation": "The Gall-Peters Projection is an equal-area projection that displays the correct relative size (area) of all landmasses. However, to maintain true area, it severely distorts shapes, causing equatorial landmasses (Africa, South America) to appear stretched out vertically like hanging towels."
+    },
+    {
+        "id": 19,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "question": "The Robinson Projection is frequently utilized in classroom textbooks and modern world atlases because it:",
+        "options": [
+            "Is a compromise projection that balances distortions of shape, area, distance, and direction to produce a visually pleasing world map.",
+            "Maintains 100% true angular direction for oceanic shipping lanes, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Completely eliminates area distortion across both polar regions, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Interrupts oceanic expanses to present landmasses without any distortion whatsoever.",
+            "Projects the globe onto an unfolded twenty-sided polyhedron."
+        ],
+        "correct": 0,
+        "explanation": "The Robinson Projection is a compromise pseudo-cylindrical projection. It does not maintain complete accuracy in any single property (shape, area, distance, or direction), but balances distortions across the entire map, rendering a visually harmonious representation with curved meridians and flat poles."
+    },
+    {
+        "id": 20,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "stimulus": "An airline flight planner in Chicago needs to determine the shortest trans-polar flight path to Beijing (a Great Circle route). The cartographer projects the Earth onto a flat plane touching the North Pole at a single center point.",
+        "question": "Which type of projection is being utilized?",
+        "options": [
+            "Conic Projection, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Mercator Cylindrical Projection.",
+            "Gall-Peters Equal Area Projection.",
+            "Plat Cadastral Projection, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Azimuthal (Planar) Projection"
+        ],
+        "correct": 4,
+        "explanation": "An Azimuthal (or Planar) projection projects Earth's surface onto a flat plane tangent to a specific point (often the North or South Pole). Great circle routes passing through the center point appear as straight lines, making it ideal for polar air navigation."
+    },
+    {
+        "id": 21,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "stimulus": "A map projection resembles an 'interrupted orange peel,' where the oceans are split apart into triangular wedges so that continents can be displayed with minimal shape and area distortion.",
+        "question": "Which projection is being described?",
+        "options": [
+            "Mercator Projection.",
+            "Goode-Homolosine (Interrupted) Projection",
+            "Winkel Tripel Projection.",
+            "Conic Projection.",
+            "Polar Azimuthal Projection."
+        ],
+        "correct": 1,
+        "explanation": "The Goode-Homolosine (or interrupted) projection cuts (interrupts) the major oceans to reduce continental distortion, preserving true relative land area and shape, although it disrupts global ocean continuity and direction."
+    },
+    {
+        "id": 22,
+        "category": "projections",
+        "categoryName": "Map Projections & Distortion (SADD)",
+        "question": "A Conic Projection is most commonly chosen by cartographers when mapping which of the following geographic regions?",
+        "options": [
+            "The entire global ocean conveyor belt system.",
+            "The exact geographic South Pole and Ross Ice Shelf.",
+            "The equatorial rainforest belt of the Amazon Basin.",
+            "Mid-latitude regional landmasses spanning east-west, such as the continental United States or Europe",
+            "A comprehensive 360-degree equatorial navigation strip, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 3,
+        "explanation": "Conic projections project Earth onto a cone tangent along one or two standard parallels of latitude. They are ideal for mapping mid-latitude regions with broad east-west extent (e.g., the United States, Russia, Europe) because distortion is minimized near the standard parallels."
+    },
+    {
+        "id": 23,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "stimulus": "Location A: '41°53′36″ N, 87°38′10″ W'\nLocation B: 'Located along the southwestern shore of Lake Michigan, approximately 90 miles south of Milwaukee, serving as a major Midwest rail hub.'",
+        "question": "How do geographers categorize Location A and Location B?",
+        "options": [
+            "Location A is relative location (situation); Location B is absolute location (site).",
+            "Location A is absolute location; Location B is relative location (situation).",
+            "Location A is a formal region; Location B is a functional nodal region, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Location A is a cognitive mental map; Location B is a cadastral plat survey, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Both descriptions represent absolute mathematical coordinates."
+        ],
+        "correct": 1,
+        "explanation": "Absolute location refers to the exact, precise mathematical point on Earth using a coordinate grid (such as latitude and longitude). Relative location (or situation) describes where a place is located in relation to other physical features, landmarks, cities, or transportation networks."
+    },
+    {
+        "id": 24,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "question": "Which of the following pairs correctly identifies the baseline lines of reference for latitude and longitude, respectively?",
+        "options": [
+            "Latitude: Prime Meridian (0°) | Longitude: Equator (0°), which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Latitude: Tropic of Cancer (23.5° N) | Longitude: International Date Line (180°).",
+            "Latitude: Arctic Circle (66.5° N) | Longitude: Greenwich Baseline (90° E).",
+            "Latitude: Equator (0°) | Longitude: Prime Meridian (0°)",
+            "Latitude: International Date Line (180°) | Longitude: Equator (0°)."
+        ],
+        "correct": 3,
+        "explanation": "Latitude lines (parallels) measure distance north or south of the Equator (0°). Longitude lines (meridians) measure distance east or west of the Prime Meridian (0° at Greenwich, England)."
+    },
+    {
+        "id": 25,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "question": "What is the primary function of the International Date Line, and where is it approximately situated?",
+        "options": [
+            "It demarcates where each calendar day officially begins and ends; situated approximately along the 180th meridian in the Pacific Ocean.",
+            "It establishes zero degrees latitude; situated across the center of Africa.",
+            "It defines the standard time zone for GMT; situated through the Royal Observatory in London at 0° longitude.",
+            "It marks the division between the Northern and Southern Hemispheres along 0° latitude.",
+            "It separates maritime territorial waters from international high seas along the Atlantic Ridge."
+        ],
+        "correct": 0,
+        "explanation": "The International Date Line lies roughly along 180° longitude in the Pacific Ocean (with minor jogs around national boundaries). Crossing it westward advances the date by one calendar day, while crossing it eastward moves the date back one day."
+    },
+    {
+        "id": 26,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "stimulus": "A spatial analyst examines three agricultural settlement patterns:\n1. Farmhouses arranged tightly in a central village square surrounded by communal pastures.\n2. Farmhouses built along both sides of a single river valley road.\n3. Isolated farmhouses situated 1 to 2 miles apart across a vast grid system.",
+        "question": "Which spatial distribution terms correspond to patterns 1, 2, and 3, respectively?",
+        "options": [
+            "1. Dispersed | 2. Random | 3. Clustered.",
+            "1. Clustered (Nucleated) | 2. Linear | 3. Dispersed",
+            "1. Linear | 2. Clustered | 3. Geometric, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "1. Dispersed | 2. Linear | 3. Clustered.",
+            "1. Random | 2. Circular | 3. Symmetrical."
+        ],
+        "correct": 1,
+        "explanation": "In spatial distribution analysis: Clustered (nucleated) means objects are grouped close together; Linear means arranged in a straight or curvilinear line (like along a road or river); Dispersed means spread far apart across the landscape."
+    },
+    {
+        "id": 27,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "question": "How does 'absolute distance' differ from 'relative distance'?",
+        "options": [
+            "Absolute distance applies only to air travel; relative distance applies only to walking paths.",
+            "Absolute distance is measured in standard spatial units (e.g., 5 miles or 8 kilometers); relative distance is measured in time, cost, or perceived effort (e.g., 'a 25-minute drive in traffic').",
+            "Absolute distance changes depending on weather; relative distance is immutable and fixed, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Absolute distance reflects cognitive perception; relative distance reflects strict Euclidean geometry, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Absolute distance refers to longitude; relative distance refers to latitude."
+        ],
+        "correct": 1,
+        "explanation": "Absolute distance is the exact physical distance measured in standard linear units (miles, feet, meters, kilometers). Relative distance measures connectivity or separation in terms of travel time, monetary transportation cost, or effort."
+    },
+    {
+        "id": 28,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "stimulus": "A commuter says: 'My workplace is downtown, heading South toward the Financial District.' Another commuter says: 'My workplace is at a compass azimuth of 180 degrees true south.'",
+        "question": "These statements illustrate the difference between:",
+        "options": [
+            "Cartographic scale vs. Geographic scale, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Formal region vs. Perceptual region, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Quantitative data vs. Qualitative data, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Relative direction vs. Absolute direction",
+            "Site vs. Situation, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 3,
+        "explanation": "Absolute direction is based on the cardinal points of a compass (North, South, East, West or 0°–360° azimuth). Relative direction is culturally or experientially defined based on local landmarks or perceptual frames (e.g., 'out west', 'down south', 'up north', 'toward downtown')."
+    },
+    {
+        "id": 29,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "question": "On a topographic contour map, what physical terrain characteristic is indicated when contour lines are drawn extremely close together?",
+        "options": [
+            "A steep slope or vertical cliff",
+            "A completely flat agricultural floodplain.",
+            "A body of stagnant deep water.",
+            "A depression below sea level.",
+            "A broad plateau with zero elevation change."
+        ],
+        "correct": 0,
+        "explanation": "Contour lines connect points of equal elevation. When contour lines are spaced very close together, it indicates a rapid change in elevation over a short horizontal ground distance—meaning a steep hill, cliff, or slope."
+    },
+    {
+        "id": 30,
+        "category": "spatial-concepts",
+        "categoryName": "Location, Coordinates & Spatial Patterns",
+        "question": "The rectangular grid pattern visible across much of the rural Midwestern and Western United States landscape today is a direct legacy of which historical reference survey system?",
+        "options": [
+            "The French Long-Lot System.",
+            "The British Metes and Bounds System.",
+            "The Spanish Encomienda Grant Cadastre.",
+            "The Public Land Survey System (Township and Range)",
+            "The Azimuthal Meridian Division, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 3,
+        "explanation": "The Township and Range system (created by the Land Ordinance of 1785) surveyed land into 6x6 mile square townships and 1-square-mile sections (640 acres), creating the iconic rectangular grid pattern seen across the American Midwest and Great Plains."
+    },
+    {
+        "id": 31,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A state environmental agency needs to identify specific water pollution discharge points along an industrial river basin, as well as the exact street addresses of chemical factories violating runoff regulations.",
+        "question": "Which combination of map type and cartographic scale is best suited for this task?",
+        "options": [
+            "A small-scale (1:2,000,000) continental flow-line map of global maritime trade.",
+            "A small-scale (1:10,000,000) choropleth map of state environmental tax revenues.",
+            "A large-scale (1:2,500) reference plat and topographic map showing local parcel boundaries and drainage ditches",
+            "A world cartogram scaled by annual plastic production, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "A small-scale (1:5,000,000) Mercator projection of North American biomes, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries."
+        ],
+        "correct": 2,
+        "explanation": "To pinpoint specific discharge pipes, street addresses, and individual factory parcels, researchers need a large-scale map (zoomed in, e.g., 1:2,500) with high local reference detail (plat boundaries and drainage contours)."
+    },
+    {
+        "id": 32,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A student looks at a national choropleth map showing poverty rates by U.S. states. The entire state of California is shaded dark orange (representing 12–15% poverty). The student assumes that every individual neighborhood in Silicon Valley has a 12–15% poverty rate.",
+        "question": "Which fundamental cartographic interpretation error has the student committed?",
+        "options": [
+            "Distance Decay Bias across multiple geographic scales of spatial analysis, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Mercator Polar Inflation Error within regional economic and demographic systems, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Ecological Fallacy (assuming aggregate regional data applies uniformly to all local sub-areas)",
+            "Friction of Distance Inversion to evaluate spatial distributions across landscapes, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Azimuthal Projection Distortion based on standardized quantitative survey data, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 2,
+        "explanation": "The ecological fallacy occurs when an analyst assumes that a generalized statistical average for a broad geographic unit (a whole state or country) applies uniformly to every single individual or neighborhood within that boundary."
+    },
+    {
+        "id": 33,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "Two choropleth maps displaying median household income in Ohio are created using the exact same raw census data. Map 1 makes Ohio appear uniformly wealthy, while Map 2 highlights severe pockets of concentrated poverty.",
+        "question": "What cartographic decision explains this major discrepancy?",
+        "options": [
+            "The cartographers used different Prime Meridians.",
+            "The cartographers selected different class interval breakpoints and data categorization methods (e.g., natural breaks vs. equal intervals).",
+            "Map 1 used an Azimuthal projection while Map 2 used a Conic projection.",
+            "Map 1 omitted the compass rose, reversing North and South.",
+            "One cartographer converted the map to a mental cognitive sketch."
+        ],
+        "correct": 1,
+        "explanation": "Cartographers can significantly alter the visual impression of choropleth maps by changing the class intervals (how data values are grouped into categories, bins, or color gradients), demonstrating how thematic maps can convey different narratives even with identical raw data."
+    },
+    {
+        "id": 34,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A 9th-grade student draws a sketch from memory of their daily route from home to school, labeling their favorite coffee shop, a friend's house, and a dangerous intersection, but omitting several major commercial streets.",
+        "question": "This drawing is an example of a:",
+        "options": [
+            "Cognitive (mental) map",
+            "Plat cadastral survey, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Thematic flow-line chart.",
+            "Conformal Mercator projection.",
+            "Isoline topographic profile."
+        ],
+        "correct": 0,
+        "explanation": "A cognitive (or mental) map is an internal psychological representation of space derived from an individual's personal experience, daily activities, spatial perceptions, and memory."
+    },
+    {
+        "id": 35,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "question": "Which of the following spatial data representations is considered 'qualitative' rather than 'quantitative'?",
+        "options": [
+            "A choropleth map showing infant mortality rates per 1,000 live births, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "A dot distribution map where 1 dot = 500 dairy cows.",
+            "A graduated symbol map showing metric tons of steel exported by nation.",
+            "A reference map showing the predominant religious denomination in each province (e.g., Catholic, Sunni Muslim, Buddhist)",
+            "An isoline map depicting barometric pressure in millibars, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates."
+        ],
+        "correct": 3,
+        "explanation": "Qualitative data describes non-numerical qualities, characteristics, names, or categories (such as religious affiliations, language families, or land-cover types). Quantitative data involves measurable numerical statistics, counts, rates, or amounts."
+    },
+    {
+        "id": 36,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A geography student is comparing two maps of Spain:\nMap Alpha: Shows national highways, province borders, major cities, and mountain ranges.\nMap Beta: Shows olive oil production output per square kilometer across Spanish provinces using graduated green shading.",
+        "question": "Which classification correctly identifies both maps?",
+        "options": [
+            "Map Alpha: Reference map | Map Beta: Thematic (Choropleth) map",
+            "Map Alpha: Thematic map | Map Beta: Reference map, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Map Alpha: Cartogram | Map Beta: Isoline map, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Map Alpha: Plat map | Map Beta: Flow-line map, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Map Alpha: Mental map | Map Beta: Topographic map, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 0,
+        "explanation": "Map Alpha provides general location and navigation information (Reference map). Map Beta communicates a specific spatial distribution/theme (olive oil output) using shading by administrative region (Thematic Choropleth map)."
+    },
+    {
+        "id": 37,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "question": "Which scenario represents the greatest cartographic limitation of using a Graduated Symbol map?",
+        "options": [
+            "In densely populated areas with numerous high-value data points, large symbols frequently overlap and obscure each other or the underlying map.",
+            "It cannot display continuous atmospheric temperature gradients.",
+            "It converts three-dimensional elevation into two-dimensional contour lines.",
+            "It completely erases national boundaries and land area like a cartogram.",
+            "It requires all lines of longitude to remain parallel."
+        ],
+        "correct": 0,
+        "explanation": "A common drawback of graduated symbol maps is symbol congestion/overlap: in regions where many high-magnitude data points are clustered closely together, overlapping large circles obscure data and make reading underlying geography difficult."
+    },
+    {
+        "id": 38,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A maritime cargo vessel sails from Lisbon, Portugal, due west across the Atlantic Ocean toward New York following a constant compass course of 270 degrees.",
+        "question": "Why would the ship's captain use a Mercator projection chart for navigation despite its severe area distortions?",
+        "options": [
+            "Because it accurately depicts the true square mileage of the Atlantic Ocean.",
+            "Because it is an equal-area projection that minimizes shape distortion near the equator.",
+            "Because lines of true compass direction (rhumb lines) are straight lines on a Mercator map.",
+            "Because it splits oceans into interrupted wedges to preserve continental shorelines, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Because it shows elevation changes on the seafloor through contour lines."
+        ],
+        "correct": 2,
+        "explanation": "On a Mercator projection, any straight line is a line of constant compass heading (rhumb line or loxodrome). This unique mathematical property made it the indispensable gold standard for oceanic maritime navigation."
+    },
+    {
+        "id": 39,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "question": "Which of the following coordinates represents a valid absolute location on Earth?",
+        "options": [
+            "125° N, 45° W, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "92° S, 195° W.",
+            "0° N, 210° E.",
+            "34° S, 142° E",
+            "180° N, 0° E, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias."
+        ],
+        "correct": 3,
+        "explanation": "Latitude only ranges from 0° (Equator) to 90° North or South. Longitude ranges from 0° (Prime Meridian) to 180° East or West. Therefore, 34° S, 142° E is valid, whereas 125° N, 92° S, 210° E, and 180° N exceed the mathematical limits of Earth's coordinate system."
+    },
+    {
+        "id": 40,
+        "category": "ap-stimulus",
+        "categoryName": "AP-Style Stimulus Scenarios",
+        "stimulus": "A real estate developer in Dallas is evaluating two maps: Map 1 has a scale of 1:1,200 showing individual building footprints, utility pipes, and driveways. Map 2 has a scale of 1:500,000 showing the entire Dallas-Fort Worth metroplex highway system.",
+        "question": "Which statement correctly compares these two maps?",
+        "options": [
+            "Map 1 is a small-scale map with high generalization; Map 2 is a large-scale map with minimal detail, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Map 1 has greater spatial distortion than Map 2 because 1,200 is smaller than 500,000, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Map 2 is a large-scale map because the physical metropolitan area depicted is larger, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Both maps have identical cartographic scale because they both depict Dallas, Texas, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Map 1 is a large-scale map showing a small area in high detail; Map 2 is a small-scale map showing a large area with generalized features."
+        ],
+        "correct": 4,
+        "explanation": "1/1,200 is a large fraction (Large Scale = zoomed in, small area, high detail like parcels and pipes). 1/500,000 is a small fraction (Small Scale = zoomed out, large area, generalized features like major regional highways)."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return; // prevent re-answering
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>

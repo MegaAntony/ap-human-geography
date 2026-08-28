@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 1.3: The Power of Geographic Data (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #7c2d12;
+            --primary-light: #ea580c;
+            --primary-bg: #fff7ed;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7c2d12 0%, #9a3412 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #fed7aa;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #9a3412;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 1: Thinking Geographically</h1>
+        <div class="subtitle">Topic 1.3: The Power of Geographic Data — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #ffedd5; max-width: 800px;">
+            Covers every concept in Section 1.3: How geographic data influences decisions across scales (local, regional, national, global), Spatial Associations & Patterns, Distance Decay & Tobler's First Law, Time-Space Compression, Friction of Distance, Gravity Model of Spatial Interaction, Epidemiological Mapping (Dr. John Snow's Cholera Study), Disaster Mitigation & Climate Modeling, Gerrymandering (Redistricting & Packing/Cracking), Redlining, and Geospatial Ethics/Propaganda.
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="decision-scales">Decision-Making Across Scales (Local to Global)</option>
+                <option value="spatial-concepts">Spatial Interaction: Distance Decay, Gravity Model & Space-Time Compression</option>
+                <option value="epidemiology-crisis">Disease Tracking (John Snow), Disaster Relief & Climate GIS</option>
+                <option value="gerrymandering-policy">Electoral Redistricting (Gerrymandering), Redlining & Politics</option>
+                <option value="ap-stimulus">AP-Style Stimulus Scenarios & Data Ethics</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "A municipal city council examines response-time maps from local fire stations and paramedic dispatch hubs to determine where to construct a new emergency services station.",
+        "question": "This scenario exemplifies geographic data influencing decision-making at which scale of governance?",
+        "options": [
+            "Global scale.",
+            "National federal scale.",
+            "Local municipal scale",
+            "Supranational continental scale.",
+            "Transnational corporate scale."
+        ],
+        "correct": 2,
+        "explanation": "Decisions regarding neighborhood fire station placement, local police precincts, municipal zoning, and city park maintenance occur at the local (municipal) scale."
+    },
+    {
+        "id": 2,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "Three neighboring states in the American West analyze satellite snowpack depth data and river basin flow rates across the Colorado River watershed to establish legal interstate agricultural water quotas during severe drought years.",
+        "question": "At which geographic scale are these policy decisions being coordinated?",
+        "options": [
+            "Hyper-local block scale.",
+            "Regional scale",
+            "Hemispheric polar scale.",
+            "Global international treaty scale.",
+            "Individual consumer scale."
+        ],
+        "correct": 1,
+        "explanation": "When multiple states or provinces collaborate across a shared physical or cultural landscape (such as a multi-state river watershed, regional transit compact, or economic corridor), they operate at the regional scale."
+    },
+    {
+        "id": 3,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "The Federal Emergency Management Agency (FEMA) uses nationwide demographic vulnerability indices and satellite flood risk models to allocate billions of dollars in federal disaster mitigation grants to coastal counties.",
+        "question": "This government action illustrates the power of geographic data at the:",
+        "options": [
+            "Local city council scale.",
+            "Supranational treaty scale.",
+            "Informal peer scale.",
+            "National scale",
+            "Census block group scale."
+        ],
+        "correct": 3,
+        "explanation": "Federal agencies like FEMA, the Department of Transportation, or the EPA utilize nationwide spatial datasets to make countrywide policy and funding decisions at the national scale."
+    },
+    {
+        "id": 4,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "The World Health Organization (WHO) and United Nations track real-time global airline flight patterns and outbreak clusters of a novel respiratory virus to issue worldwide travel advisories and coordinate vaccine shipments across continents.",
+        "question": "This is a primary example of spatial decision-making at the:",
+        "options": [
+            "Local metropolitan scale, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Cadastral plat scale, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "County precinct scale, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Micro-neighborhood scale, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Global / International scale"
+        ],
+        "correct": 4,
+        "explanation": "International bodies (WHO, UN, IPCC) operate at the global scale, analyzing worldwide spatial interactions and flows across national borders to address planetary health, climate, and economic crises."
+    },
+    {
+        "id": 5,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "question": "Why is geographic data considered 'powerful' in shaping public policy and resource allocation?",
+        "options": [
+            "It permanently eliminates the need for legislative elections.",
+            "It forces all cartographers to use conformal Mercator wall charts.",
+            "It replaces qualitative human interviews with automated satellite commands.",
+            "It guarantees that every neighborhood receives exactly equal funding regardless of population.",
+            "It reveals hidden spatial disparities, guides evidence-based funding to vulnerable areas, and allows officials to evaluate the outcomes of geographic interventions."
+        ],
+        "correct": 4,
+        "explanation": "Geographic data empowers policymakers by visualizing complex spatial inequities (e.g., healthcare access, poverty, environmental hazards), enabling targeted, evidence-based interventions and tracking long-term policy impacts."
+    },
+    {
+        "id": 6,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "A logistics director for Amazon analyzes real-time highway congestion, warehouse inventory levels, and customer order density to optimize delivery truck routes across a metropolitan area.",
+        "question": "This scenario demonstrates how commercial enterprises harness geographic data for:",
+        "options": [
+            "Supply chain efficiency and operational optimization",
+            "Political redistricting, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Decennial census apportionment.",
+            "Continental plate boundary surveying.",
+            "Undersea fiber optic treaty negotiations."
+        ],
+        "correct": 0,
+        "explanation": "Private businesses leverage spatial data (GIS, GPS traffic telemetry, address geocoding) to cut operational costs, streamline delivery routes, and maximize supply chain efficiency."
+    },
+    {
+        "id": 7,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "question": "When geographic data collected at a national scale is used to formulate policy for a specific local neighborhood, what critical analytical danger must policymakers avoid?",
+        "options": [
+            "Using GPS receivers that operate on solar power, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Converting miles into kilometers. within regional economic and demographic systems, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Displaying data using a graphic bar scale instead of a representative fraction.",
+            "Consulting historical aerial photographs.",
+            "Overlooking local heterogeneity and unique community conditions due to high data aggregation (ecological fallacy)."
+        ],
+        "correct": 4,
+        "explanation": "Highly aggregated national-scale data masks significant local variations (the ecological fallacy). Policymakers risk applying broad, ill-fitting solutions to local neighborhoods if they fail to analyze fine-scale, disaggregated data."
+    },
+    {
+        "id": 8,
+        "category": "decision-scales",
+        "categoryName": "Decision-Making Across Scales",
+        "stimulus": "A school district super-intendant reviews a GIS heat map showing pedestrian traffic accidents involving students walking to middle schools within a 2-mile radius.",
+        "question": "Which targeted public policy intervention would directly result from this spatial analysis?",
+        "options": [
+            "Expanding international airport runways 30 miles away, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Switching the textbook curriculum to Goode-Homolosine projection atlases, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Reapportioning congressional seats in the U.S. House of Representatives, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Installing new marked crosswalks, pedestrian crossing signals, and reduced-speed school zones on specific identified high-risk street corridors.",
+            "Requesting satellite radar scans of the stratosphere, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 3,
+        "explanation": "Spatial analysis of accident hotspots directly guides local municipal and school safety investments, such as adding traffic signals, crossing guards, and sidewalk infrastructure where risks are concentrated."
+    },
+    {
+        "id": 9,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "Waldo Tobler famously stated: 'Everything is related to everything else, but near things are more related than distant things.'",
+        "question": "This foundational geographic principle is known as:",
+        "options": [
+            "The Law of Equal Area Projection.",
+            "The Malthusian Population Ceiling.",
+            "The Cadastral Survey Mandate.",
+            "Tobler's First Law of Geography",
+            "The Mercator Rhumb Axiom."
+        ],
+        "correct": 3,
+        "explanation": "Tobler's First Law of Geography establishes that spatial interaction is strongest between proximate places and diminishes with increasing distance (the basis of distance decay)."
+    },
+    {
+        "id": 10,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "A popular amusement park in Orlando, Florida, notices that 65% of its annual visitors live within 50 miles, 25% live within 51–250 miles, and only 10% travel from beyond 250 miles.",
+        "question": "This phenomenon, where the intensity of spatial interaction decreases as distance between places increases, is called:",
+        "options": [
+            "Time-Space Compression.",
+            "Cartographic Generalization.",
+            "Distance Decay",
+            "Spatial Segregation.",
+            "Environmental Determinism."
+        ],
+        "correct": 2,
+        "explanation": "Distance decay is the diminishing in importance and eventual disappearance of a phenomenon or interaction with increasing distance from its origin."
+    },
+    {
+        "id": 11,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "question": "What is 'friction of distance' in human geography?",
+        "options": [
+            "The concept that distance itself acts as an obstacle requiring time, energy, and financial cost to overcome.",
+            "The physical wear and tear caused by automobile tires on highway pavement, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The friction generated by continental tectonic plates grinding past each other, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "The disagreement between cartographers over projection standards.",
+            "The resistance of local populations to federal census workers."
+        ],
+        "correct": 0,
+        "explanation": "Friction of distance refers to the reality that moving across space requires effort, time, energy, and monetary cost. Higher friction restricts movement; lower friction facilitates greater spatial interaction."
+    },
+    {
+        "id": 12,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "In 1850, traveling from New York to San Francisco by stagecoach or sailing around Cape Horn took 3 to 6 months. Today, a commercial flight covers the distance in under 6 hours, and digital video communication occurs instantaneously.",
+        "question": "Which geographic concept describes this shrinking of relative distance and travel time due to technological innovations in transportation and telecommunications?",
+        "options": [
+            "Distance Decay Acceleration, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Metes and Bounds Expansion, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Time-Space Compression (or Space-Time Convergence)",
+            "Choropleth Convergence, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Conformal Preservation, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 2,
+        "explanation": "Time-space compression (coined by geographer David Harvey) refers to the rapid reduction in the time it takes for people, goods, and ideas to diffuse across space as a result of advances in transportation (rail, jets) and communications (internet, smartphones)."
+    },
+    {
+        "id": 13,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "The Gravity Model predicts the volume of spatial interaction (such as trade, airline passenger volume, or migration flows) between two cities using a mathematical formula based on Isaac Newton's law of gravitation.",
+        "question": "According to the Gravity Model, spatial interaction between City X and City Y is:",
+        "options": [
+            "Directly proportional to the sum of their physical land areas and inversely proportional to their elevation.",
+            "Equal to the difference between their annual GDPs multiplied by their latitude.",
+            "Entirely dependent on their absolute compass azimuth.",
+            "Directly proportional to the product of their populations and inversely proportional to the square of the distance separating them.",
+            "Inversely proportional to their populations and directly proportional to the distance between them."
+        ],
+        "correct": 3,
+        "explanation": "The Gravity Model states: Interaction = (Population 1 × Population 2) / (Distance)². Large cities have stronger 'gravitational pull' (generating more trade, phone calls, flights), but greater distance weakens that interaction exponentially."
+    },
+    {
+        "id": 14,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "Consider two city pairs:\nPair 1: New York City (pop. 8.5 million) and Los Angeles (pop. 4.0 million) separated by 2,450 miles.\nPair 2: Des Moines, Iowa (pop. 215,000) and Omaha, Nebraska (pop. 485,000) separated by 140 miles.",
+        "question": "Based on the Gravity Model, why is there massive daily airline traffic between NYC and LA despite the enormous distance?",
+        "options": [
+            "Because the immense population size and economic weight of NYC and LA overcome the friction of distance.",
+            "Because distance decay has no mathematical effect on cities located on ocean coasts, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Because NYC and LA share identical longitudinal meridians.",
+            "Because the Gravity Model only applies to cities separated by fewer than 200 miles.",
+            "Because airplanes operate outside the atmosphere where gravity does not exist."
+        ],
+        "correct": 0,
+        "explanation": "The massive combined population and global economic functions of New York and Los Angeles generate immense spatial interaction (flights, trade, capital flows) that overcomes the dampening effect of the 2,450-mile distance."
+    },
+    {
+        "id": 15,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "stimulus": "A rural village in sub-Saharan Africa had no landline telephone infrastructure for decades. Within two years, residents adopted 4G smartphones and mobile money apps, bypassing landline development completely.",
+        "question": "This technological leapfrogging is an example of:",
+        "options": [
+            "The complete disappearance of absolute location, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "The establishment of a township-and-range cadastre.",
+            "An increase in geographical friction.",
+            "Time-space compression overcoming historical infrastructural friction of distance.",
+            "A shift from quantitative data to qualitative isolation, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates."
+        ],
+        "correct": 3,
+        "explanation": "Mobile cellular technology enables 'technological leapfrogging,' collapsing the time and cost required to connect remote rural areas to the global digital economy and illustrating time-space compression."
+    },
+    {
+        "id": 16,
+        "category": "spatial-concepts",
+        "categoryName": "Spatial Interaction & Models",
+        "question": "What is 'spatial association' in geographic analysis?",
+        "options": [
+            "The legal boundary agreement between two adjacent municipalities, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "The association of professional cartographers in a national union, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The physical distance between two identical GPS satellites, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "The distortion of continent sizes on a Mercator projection, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "The degree to which two or more different phenomena share similar geographic distributions or spatial patterns across a landscape."
+        ],
+        "correct": 4,
+        "explanation": "Spatial association occurs when two or more distributions show similar geographic arrangements across space (e.g., higher rates of malaria having strong spatial association with tropical lowlands and wetland environments)."
+    },
+    {
+        "id": 17,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "During the 1854 London cholera outbreak, physician Dr. John Snow plotted each reported cholera death as a bar on a street map of the Soho district and marked the locations of neighborhood public water pumps.",
+        "question": "Why is Dr. John Snow's work widely celebrated as a foundational milestone in modern spatial data analysis and medical geography?",
+        "options": [
+            "He invented the first satellite remote sensing sensor.",
+            "He used a digital computer running GIS software to redraw parliamentary districts.",
+            "He demonstrated that cholera was caused by walking across prime meridians.",
+            "He created the Gall-Peters equal-area projection to track international epidemics.",
+            "He mapped deaths spatially to uncover a clear visual cluster around the Broad Street pump, proving cholera was waterborne rather than airborne (miasma theory)."
+        ],
+        "correct": 4,
+        "explanation": "Dr. John Snow revolutionized epidemiology by mapping cholera fatalities spatially. The visual clustering of deaths tightly centered around the Broad Street water handle provided conclusive empirical proof that cholera spread through contaminated drinking water, refuting the prevailing 'miasma' (bad air) theory."
+    },
+    {
+        "id": 18,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "During the early stages of a global viral outbreak, public health officials track contact tracing data, quarantine zones, hospital ICU capacity, and wastewater viral load metrics using real-time GIS dashboard maps.",
+        "question": "This modern spatial tracking represents a direct technological evolution of which historical geographic method?",
+        "options": [
+            "Dr. John Snow's spatial disease mapping technique",
+            "The British Metes and Bounds cadastral survey, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The French Long-Lot riverfront distribution system.",
+            "Arno Peters' equal-area cartographic projection.",
+            "Waldo Tobler's stagecoach timetable analysis."
+        ],
+        "correct": 0,
+        "explanation": "Modern real-time epidemiological GIS dashboards (such as the Johns Hopkins COVID-19 dashboard) are direct technological descendants of Dr. John Snow's spatial disease mapping methodology."
+    },
+    {
+        "id": 19,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "Following a catastrophic 7.8 magnitude earthquake in Nepal, international disaster response agencies analyze high-resolution satellite imagery captured before and after the quake.",
+        "question": "How does geospatial data directly assist search-and-rescue teams on the ground?",
+        "options": [
+            "By immediately rebuilding all collapsed structures automatically.",
+            "By identifying blocked mountain roads, triggered landslides, collapsed bridges, and isolated villages needing emergency helicopter supply drops.",
+            "By altering the tectonic fault lines using GPS signals, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "By converting the national currency into digital blockchain tokens, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "By redrawing the country's national borders on world atlases."
+        ],
+        "correct": 1,
+        "explanation": "Post-disaster remote sensing and GIS pinpoint infrastructure damage, impassable roadways, active landslides, and cut-off settlements, enabling search-and-rescue teams to direct critical resources where lives can be saved."
+    },
+    {
+        "id": 20,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "Climate scientists use GIS elevation models and sea-level rise projections to simulate high-tide coastal inundation under 1-meter and 2-meter ocean rise scenarios.",
+        "question": "Which island nations and coastal regions are using this spatial modeling to make existential decisions regarding climate adaptation and planned community relocation?",
+        "options": [
+            "Landlocked nations like Bolivia and Chad, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "High-altitude mountain states like Switzerland and Nepal, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Low-lying Pacific atoll nations (e.g., Tuvalu, Kiribati, Maldives) and low-elevation deltas like Bangladesh",
+            "The central Sahara Desert region to evaluate spatial distributions across landscapes, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The interior Great Plains of North America, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 2,
+        "explanation": "Low-lying island nations (Tuvalu, Kiribati, Maldives) and low-elevation deltaic plains (Bangladesh, Mekong Delta) rely heavily on elevation GIS models to plan seawalls, mangrove restoration, and potential international resettlement."
+    },
+    {
+        "id": 21,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "The California Department of Forestry and Fire Protection (CAL FIRE) utilizes thermal infrared drone cameras, real-time weather station wind telemetry, and GIS fuel-load vegetation maps during an active wildfire.",
+        "question": "What is the primary predictive capability provided by these integrated geospatial tools?",
+        "options": [
+            "Instantly extinguishing flames from high-altitude satellites.",
+            "Calculating the total timber value for 19th-century railroad companies.",
+            "Accurately forecasting the rate, direction, and intensity of wildfire spread to issue timely mandatory evacuation orders.",
+            "Changing the wind direction away from populated valleys.",
+            "Converting the forest into a formal township and range grid."
+        ],
+        "correct": 2,
+        "explanation": "By combining thermal perimeter imaging, live wind vectors, humidity, and dry brush fuel data in GIS models, fire incident commanders can predict wildfire propagation hours in advance and safely evacuate endangered neighborhoods."
+    },
+    {
+        "id": 22,
+        "category": "epidemiology-crisis",
+        "categoryName": "Disease Tracking, Disaster & Climate GIS",
+        "stimulus": "The UN World Food Programme (WFP) uses satellite Normalized Difference Vegetation Index (NDVI) data, soil moisture metrics, and armed conflict maps to monitor the Horn of Africa.",
+        "question": "This application of geographic data is designed to:",
+        "options": [
+            "Establish international patent laws for commercial seed corporations.",
+            "Provide early warning of impending agricultural drought, crop failure, and acute famine to pre-position emergency humanitarian food aid.",
+            "Promote luxury tourism in drought-stricken regions, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Eliminate all traditional pastoralism in favor of factory farming.",
+            "Determine the exact latitude of the Prime Meridian."
+        ],
+        "correct": 1,
+        "explanation": "Satellite NDVI and soil moisture tracking serve as Famine Early Warning Systems (FEWS NET), allowing international humanitarian organizations to anticipate crop failures and dispatch emergency food supplies before starvation occurs."
+    },
+    {
+        "id": 23,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "Every ten years following the release of decennial census data, state legislatures redraw the geographic boundaries of congressional and state legislative voting districts.",
+        "question": "This constitutional process of adjusting electoral district boundaries to reflect population shifts is called:",
+        "options": [
+            "Cadastral Annexation, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Spatial Agglomeration.",
+            "Cartographic Rectification.",
+            "Reapportionment and Redistricting",
+            "Environmental Zoning, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification."
+        ],
+        "correct": 3,
+        "explanation": "Reapportionment is the reallocation of House seats among states based on census counts; Redistricting is the redrawing of internal voting district boundaries within each state to ensure equal population across districts."
+    },
+    {
+        "id": 24,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "A political party controlling a state legislature uses sophisticated GIS mapping software loaded with voter registration history, past election turnout by census block, and party affiliation data to carve bizarre, irregularly shaped voting districts that maximize their party's legislative seats.",
+        "question": "This practice of manipulating legislative district boundaries for partisan political advantage is known as:",
+        "options": [
+            "Topographic contouring.",
+            "Gerrymandering",
+            "Distance decay calibration.",
+            "Volunteered geographic surveying.",
+            "Time-space compression."
+        ],
+        "correct": 1,
+        "explanation": "Gerrymandering is the deliberate redrawing of electoral district boundaries to benefit a specific political party, incumbent politician, or socioeconomic faction."
+    },
+    {
+        "id": 25,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "In state redistricting, cartographers employ two classic strategies:\nStrategy X: Concentrating the opposing party's voters into one or two districts so they win those seats by overwhelming margins while wasting excess votes.\nStrategy Y: Splitting the opposing party's voters across many surrounding districts so they remain a permanent minority (e.g., 40–45%) in every single district.",
+        "question": "What are the common political geography terms for Strategy X and Strategy Y, respectively?",
+        "options": [
+            "Strategy X: Stacking | Strategy Y: Annexing.",
+            "Strategy X: Buffering | Strategy Y: Intersecting.",
+            "Strategy X: Packing | Strategy Y: Cracking",
+            "Strategy X: Centering | Strategy Y: Generalizing.",
+            "Strategy X: Distorting | Strategy Y: Compressing."
+        ],
+        "correct": 2,
+        "explanation": "'Packing' concentrates the opposing party's voters into a few districts to dilute their influence across the rest of the map. 'Cracking' spreads the opposing party's supporters across multiple districts to prevent them from securing a voting majority in any single district."
+    },
+    {
+        "id": 26,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "question": "How has advanced GIS technology transformed the modern process of political gerrymandering?",
+        "options": [
+            "It allows political operatives to analyze block-level demographic and voting data with surgical precision, creating highly resilient, unfair gerrymanders that can withstand shifting voter trends.",
+            "It has made gerrymandering completely impossible because computers automatically detect fairness, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "It has eliminated the need for the decennial census count.",
+            "It forces all voting districts to be drawn as perfect 6x6 mile squares.",
+            "It prevents political parties from accessing geographic data."
+        ],
+        "correct": 0,
+        "explanation": "Modern GIS software, big data analytics, and micro-targeting allow political consultants to gerrymander with unprecedented precision, drawing legislative district maps down to individual streets to lock in partisan majorities for a decade."
+    },
+    {
+        "id": 27,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "In the 1930s, the federal Home Owners' Loan Corporation (HOLC) created residential security maps of major American cities. Neighborhoods with high concentrations of African American and immigrant families were outlined with red ink and classified as 'Hazardous' (Grade D), leading banks to systematically refuse mortgage lending and insurance in those zones.",
+        "question": "This discriminatory historical spatial practice is known as:",
+        "options": [
+            "Time-space compression.",
+            "Redlining",
+            "Urban renewal zoning.",
+            "Gerrymandering.",
+            "Cadastral buffering."
+        ],
+        "correct": 1,
+        "explanation": "Redlining was the discriminatory practice whereby financial institutions and government agencies drew red lines on maps around minority neighborhoods, refusing mortgage loans, private investment, and insurance, cementing decades of racial wealth gaps and disinvestment."
+    },
+    {
+        "id": 28,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "Modern human geographers overlay historical 1930s HOLC redlining maps with contemporary GIS layers showing urban heat island severity, tree canopy coverage, asthma rates, and commercial bank branch locations.",
+        "question": "What do these spatial overlay studies consistently demonstrate?",
+        "options": [
+            "Historical spatial discrimination has no measurable correlation with present-day urban conditions, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "All neighborhoods created in the 1930s have identical economic and environmental health today, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Redlining was strictly limited to agricultural rural regions, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Tree canopy coverage is completely random across urban landscapes, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Historically redlined neighborhoods today experience significantly fewer trees, hotter summer surface temperatures, higher respiratory illness rates, and less private capital investment (spatial legacy of injustice)."
+        ],
+        "correct": 4,
+        "explanation": "Overlay studies reveal that historical spatial policies have persistent, compounding legacies: historically redlined areas today suffer from severe urban heat islands (due to lack of trees/parks), higher asthma rates, and lower home equity values."
+    },
+    {
+        "id": 29,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "A municipality passes a zoning ordinance requiring all new residential construction to consist solely of single-family detached homes on lots of at least two acres, banning multi-family apartment buildings and affordable duplexes.",
+        "question": "This municipal spatial policy is commonly referred to as:",
+        "options": [
+            "Exclusionary zoning",
+            "Participatory planning.",
+            "Smart growth transit-oriented zoning.",
+            "Urban agricultural zoning.",
+            "Industrial brownfield remediation."
+        ],
+        "correct": 0,
+        "explanation": "Exclusionary zoning uses local land-use and zoning regulations (such as high minimum lot sizes and bans on apartments) to drive up housing costs, effectively excluding low- and moderate-income residents from wealthier suburban communities."
+    },
+    {
+        "id": 30,
+        "category": "gerrymandering-policy",
+        "categoryName": "Gerrymandering, Redlining & Politics",
+        "stimulus": "A government publishes an official map in state school textbooks depicting a neighboring sovereign territory within its own international boundaries using a dotted 'Nine-Dash Line.'",
+        "question": "This scenario illustrates how geographic data and cartography can be wielded as an instrument of:",
+        "options": [
+            "Pure objective physical topography.",
+            "Cadastral plat recording.",
+            "Political propaganda and geopolitical territorial claims",
+            "Azimuthal equidistant navigation, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Topographic elevation measurement."
+        ],
+        "correct": 2,
+        "explanation": "Maps are powerful geopolitical tools. Nations frequently use selective map boundaries, naming conventions, and territorial markings (like China's Nine-Dash Line in the South China Sea) to assert geopolitical claims and legitimize state sovereignty."
+    },
+    {
+        "id": 31,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A fast-food restaurant franchise buys mobile ad targeting that sets up a virtual geographic boundary (geofence) of 500 meters around three competing fast-food locations. Whenever a smartphone user enters that zone, they receive a push notification offering a 50% discount coupon.",
+        "question": "This commercial application of geographic data is known as:",
+        "options": [
+            "Topographic contour slicing.",
+            "Geofencing / Location-based mobile marketing",
+            "Decennial census apportionment, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Azimuthal polar navigation, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Cadastral plat recording."
+        ],
+        "correct": 1,
+        "explanation": "Geofencing uses GPS, cellular, or Wi-Fi data to create a virtual geographic perimeter around a real-world location, triggering automated digital actions (like coupons or push ads) when mobile devices enter or exit the buffer zone."
+    },
+    {
+        "id": 32,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "An investigative report reveals that private data brokers buy billions of anonymized location pings from popular weather and flashlight smartphone apps, aggregating spatial travel histories to track visits to medical clinics, places of worship, and union halls.",
+        "question": "What primary ethical question does this modern geographic data industry raise?",
+        "options": [
+            "Whether paper maps should be legally required for all mobile phones, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "The inaccuracy of the Mercator projection when used on mobile smartphone screens, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Whether weather apps should be allowed to display temperature in Fahrenheit, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Whether GPS satellites should be powered by diesel fuel, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The erosion of personal privacy and the difficulty of truly 'anonymizing' unique individual movement trajectories in an era of ubiquitous spatial surveillance."
+        ],
+        "correct": 4,
+        "explanation": "Because an individual's spatial movement patterns (home location at night, work during the day, specific daily routes) are uniquely identifying, aggregating commercial location data creates immense civil liberties and privacy threats."
+    },
+    {
+        "id": 33,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A state environmental justice coalition maps the locations of hazardous industrial waste incinerators, chemical plants, and truck freight corridors, overlaying them with race and income demographics from the census.",
+        "question": "What core pattern is this spatial analysis attempting to expose?",
+        "options": [
+            "Environmental racism / Environmental injustice (the disproportionate siting of toxic and polluting facilities in low-income communities of color).",
+            "The distance decay of corporate income tax revenues.",
+            "The mathematical curvature of the Earth along mid-latitude parallels.",
+            "The efficiency of the Township and Range land division system.",
+            "The superiority of Conic projections over Cylindrical projections."
+        ],
+        "correct": 0,
+        "explanation": "Environmental justice studies use GIS spatial overlays to expose environmental racism—the systemic pattern where polluting industries, hazardous waste landfills, and heavy freight corridors are disproportionately located in poor and minority communities."
+    },
+    {
+        "id": 34,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A global healthcare charity is deploying vaccination teams to remote villages in the Amazon basin. Standard commercial maps show the entire region as blank green forest, but indigenous community members map river channels, seasonal trails, and village locations using handheld GPS units.",
+        "question": "This collaborative mapping method is best described as:",
+        "options": [
+            "Top-down colonial cartography.",
+            "Participatory GIS / Community mapping",
+            "Commercial geofencing, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Metes and Bounds surveying.",
+            "Military remote surveillance."
+        ],
+        "correct": 1,
+        "explanation": "Participatory GIS (or community mapping) empowers local and indigenous populations to map their own lands, knowledge, resources, and trails, creating vital spatial data that formal government or corporate maps often overlook."
+    },
+    {
+        "id": 35,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "question": "What is the 'digital divide,' and how does it restrict the power of geographic data in developing regions?",
+        "options": [
+            "The socioeconomic gap between communities with full access to modern digital technologies and high-speed internet and those without, limiting participation in digital mapping and data-driven governance.",
+            "The boundary line between digital GPS satellites and analog radio towers, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "The difference in file size between vector and raster GIS layers, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The mathematical difference between latitude and longitude coordinates.",
+            "The legal border separating high-income counties from low-income counties."
+        ],
+        "correct": 0,
+        "explanation": "The digital divide refers to the unequal access to digital infrastructure, computers, and high-speed internet across socioeconomic groups and regions, creating disparities in who can access, generate, and benefit from spatial data."
+    },
+    {
+        "id": 36,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A real estate tech company develops an algorithm that predicts future property values by evaluating satellite imagery of lawn greenness, roof conditions, and street cleanliness across metropolitan neighborhoods.",
+        "question": "If the training data for this algorithm reflects historically segregated and redlined investment patterns, what will the algorithm likely do?",
+        "options": [
+            "Automatically eliminate all historical housing disparities, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Convert all residential zones into public national parks, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Force banks to offer 0% interest rates to all homebuyers, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Perpetuate and automate historical spatial discrimination by systematically undervaluing properties in historically marginalized minority neighborhoods (algorithmic bias).",
+            "Discontinue the use of satellite imagery in real estate, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 3,
+        "explanation": "Algorithmic bias occurs when automated computer algorithms trained on historical data reproduce and amplify existing human biases and structural inequities—in this case, perpetuating historical residential segregation and undervaluation."
+    },
+    {
+        "id": 37,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A city transportation department wants to implement a 'Vision Zero' plan to eliminate all pedestrian traffic fatalities by 2030.",
+        "question": "Which spatial data workflow represents the most effective implementation of geographic analysis for this goal?",
+        "options": [
+            "Printing 100,000 tourist road maps of the downtown core.",
+            "Relying solely on informal verbal complaints submitted on social media.",
+            "Conducting a national survey on preferred automobile brands.",
+            "Mapping 10 years of pedestrian-vehicle collision coordinates in GIS, identifying high-injury corridors, overlaying street lighting and vehicle speed data, and redesigning the most dangerous intersections.",
+            "Surveying the city using historical French long-lot techniques."
+        ],
+        "correct": 3,
+        "explanation": "Effective spatial analysis follows an evidence-based pipeline: geocoding historical incident points in GIS, identifying spatial clusters/corridors, overlaying environmental variables (lighting, speed limits, crosswalk spacing), and deploying targeted street redesigns."
+    },
+    {
+        "id": 38,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "question": "Why do authoritarian regimes often restrict public access to detailed topographic, infrastructural, and demographic GIS data?",
+        "options": [
+            "Because topographic maps consume excessive electrical grid power.",
+            "Because the United Nations prohibits digital mapping in non-democratic nations.",
+            "Because controlling spatial information prevents political dissidents, journalists, and external observers from documenting state corruption, military installations, human rights abuses, or environmental damage.",
+            "Because GPS satellites are physically incapable of transmitting signals over authoritarian states, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Because topographic contour lines are considered national trade secrets under maritime law."
+        ],
+        "correct": 2,
+        "explanation": "Spatial data represents immense power. Authoritarian regimes frequently censor or restrict geographic data to suppress dissent, hide human rights abuses (such as internment camps or environmental destruction), and maintain monopolistic control over territorial narrative."
+    },
+    {
+        "id": 39,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A team of economic geographers maps the global supply chain of a smartphone: rare earth elements mined in the Democratic Republic of Congo, microchips fabricated in Taiwan, display screens manufactured in South Korea, final assembly in Shenzhen, China, and retail distribution in North America and Europe.",
+        "question": "This global network illustrates the combined power of:",
+        "options": [
+            "Local subsistence farming and extreme friction of distance.",
+            "Time-space compression, global economic interdependence, and modern spatial logistics networks.",
+            "The complete isolation of sovereign national economies, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The French Long-Lot riverfront land distribution system, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Azimuthal equidistant projection distortions."
+        ],
+        "correct": 1,
+        "explanation": "Modern consumer electronics exemplify global supply chains made possible by time-space compression, containerized shipping logistics, global telecommunications, and international division of labor."
+    },
+    {
+        "id": 40,
+        "category": "ap-stimulus",
+        "categoryName": "AP Stimulus Scenarios & Data Ethics",
+        "stimulus": "A student preparing for the AP Human Geography exam summarizes the central theme of Unit 1 (Topics 1.1, 1.2, and 1.3).",
+        "question": "Which of the following summaries most accurately captures the overarching core essence of geographic thinking?",
+        "options": [
+            "Geography is solely the memorization of country capitals, river lengths, and mountain heights on a globe, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Geography is exclusively the study of rocks, soils, and volcanic eruptions without consideration of human culture, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Geography is the belief that the physical environment completely determines all human societal outcomes with zero human agency, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Geography is the art of drawing hand-painted paper maps without computer assistance, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Geography is the spatial analysis of how human and physical phenomena are distributed, how places interact across scales, how technologies capture spatial data, and how spatial decisions shape our world."
+        ],
+        "correct": 4,
+        "explanation": "Geography is fundamentally the science of space and place—analyzing spatial distributions, human-environment interactions, spatial technologies (GIS, GPS, Remote Sensing), decision-making across scales, and the complex patterns that define our interconnected world."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return;
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores for Section 1.3?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>

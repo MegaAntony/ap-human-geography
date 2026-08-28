@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 1.2: Geographic Data (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-light: #0d9488;
+            --primary-bg: #f0fdfa;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #99f6e4;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #134e4a;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 1: Thinking Geographically</h1>
+        <div class="subtitle">Topic 1.2: Geographic Data — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #ccfbf1; max-width: 800px;">
+            Covers every concept in Section 1.2: Fieldwork & Field Observation, Landscape Analysis, Quantitative vs. Qualitative Spatial Data, Photographic Interpretation, Census Surveys & Decennial Enumeration, Geospatial Technologies (GIS Layering, GPS Trilateration & Navigation, Remote Sensing & Satellite/LiDAR Imagery), Spatial Decision-Making (Public Policy, Commercial Site Selection, Personal Routing), and Geospatial Ethics/Privacy/Data Limitations.
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="data-sources">Data Gathering: Fieldwork, Landscape & Census</option>
+                <option value="quant-qual">Quantitative vs. Qualitative Data</option>
+                <option value="technologies">Geospatial Technologies (GIS, GPS, Remote Sensing)</option>
+                <option value="decision-making">Spatial Decision-Making (Public, Private, Personal)</option>
+                <option value="ethics-ap">Geospatial Ethics, Data Bias & AP Stimulus</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "stimulus": "A cultural geographer visits an immigrant enclave in Queens, New York. She walks the commercial corridors, photographs bilingual storefront signs, sketches pedestrian circulation at street intersections, and conducts structured audio interviews with shopkeepers.",
+        "question": "Which primary geographic data gathering method is this researcher conducting?",
+        "options": [
+            "Remote Sensing.",
+            "Decennial Census Sampling.",
+            "Satellite Trilateration.",
+            "Cadastral Plat Mapping.",
+            "Fieldwork and Field Observation"
+        ],
+        "correct": 4,
+        "explanation": "Fieldwork (or field observation) involves physically going out into the 'field' to observe, record, sketch, photograph, survey, and gather firsthand data directly from the landscape and its inhabitants."
+    },
+    {
+        "id": 2,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "stimulus": "An urban geographer studies the transformation of an old warehouse district by examining architectural facades, converted loft lofts, upscale artisan coffee shops, bike-sharing docks, and newly planted street trees.",
+        "question": "This practice of observing, recording, and interpreting the cultural, built, and physical environment is specifically known as:",
+        "options": [
+            "Equal-Area Map Projection.",
+            "Landscape Analysis",
+            "Spatial Aggregation.",
+            "Cartographic Reduction.",
+            "Geodesic Interpolation."
+        ],
+        "correct": 1,
+        "explanation": "Landscape analysis is the process of studying and interpreting how human culture, economic activity, and physical environments interact to shape the visible features of the cultural landscape."
+    },
+    {
+        "id": 3,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "question": "Under the United States Constitution, how frequently is the federal decennial census conducted, and what is its primary constitutional purpose?",
+        "options": [
+            "Every 5 years; to calculate corporate income tax rates across states.",
+            "Every 10 years; to apportion seats in the U.S. House of Representatives among the 50 states and guide federal funding distribution.",
+            "Every 4 years; to redraw municipal school attendance zones, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Every 2 years; to monitor international migrant visas, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Every 20 years; to update nautical navigation charts."
+        ],
+        "correct": 1,
+        "explanation": "The U.S. Census is mandated by Article I of the Constitution to take place every 10 years (decennially). Its primary legal purpose is the reapportionment and redistricting of congressional seats in the House of Representatives, as well as directing hundreds of billions of dollars in federal formula funding."
+    },
+    {
+        "id": 4,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "stimulus": "A demographer is examining changes in household structure, marital status, median age, and homeownership rates across suburban Atlanta census tracts between 2010 and 2020.",
+        "question": "Which organization is the primary source of this comprehensive demographic survey data in the United States?",
+        "options": [
+            "United States Geological Survey (USGS).",
+            "Federal Aviation Administration (FAA).",
+            "Environmental Protection Agency (EPA).",
+            "United States Census Bureau",
+            "National Geospatial-Intelligence Agency (NGA)."
+        ],
+        "correct": 3,
+        "explanation": "The U.S. Census Bureau is the federal government's principal statistical agency responsible for gathering, tabulating, and publishing quantitative demographic, social, and economic data."
+    },
+    {
+        "id": 5,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "question": "Why do geographers conduct 'ground truthing' during spatial research projects?",
+        "options": [
+            "To calculate the magnetic declination of the North Pole on flat paper maps.",
+            "To verify the accuracy of remotely sensed satellite images or aerial photography by directly observing and checking features on the ground.",
+            "To remove all qualitative subjective data from statistical regression models.",
+            "To replace digital GIS vector files with hand-drawn Mercator charts.",
+            "To establish international maritime boundary baselines."
+        ],
+        "correct": 1,
+        "explanation": "'Ground truthing' is the process of sending researchers directly to a physical location on the ground to confirm, validate, and calibrate data collected remotely via satellites, aerial photography, or computer models."
+    },
+    {
+        "id": 6,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "stimulus": "A high school human geography class surveys 200 commuters exiting a light rail station, asking questions about their daily commuting duration, primary mode of transit, and reason for visiting downtown.",
+        "question": "This primary data collection technique is an example of:",
+        "options": [
+            "Remote Sensing.",
+            "Satellite Radar Interferometry.",
+            "A Survey/Questionnaire",
+            "Plat Cadastral Mapping, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Topographic Triangulation."
+        ],
+        "correct": 2,
+        "explanation": "Surveys and questionnaires are systematic tools used by researchers to gather self-reported behavioral, demographic, and perceptual information from individuals or groups."
+    },
+    {
+        "id": 7,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "question": "Which of the following spatial units used by the U.S. Census Bureau represents the smallest geographic level of data aggregation?",
+        "options": [
+            "County, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "State, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Census Tract.",
+            "Metropolitan Statistical Area (MSA).",
+            "Census Block"
+        ],
+        "correct": 4,
+        "explanation": "The census hierarchy from largest to smallest is: Nation → State → County → Census Tract (approx. 4,000 residents) → Block Group → Census Block (often a single city block bounded by four streets)."
+    },
+    {
+        "id": 8,
+        "category": "data-sources",
+        "categoryName": "Data Gathering: Fieldwork, Landscape & Census",
+        "question": "Which of the following historical records would provide a geographer with the best photographic evidence of suburban land-use transformation over the past 80 years?",
+        "options": [
+            "A modern handheld GPS receiver's waypoint log, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "A current digital street directory within regional economic and demographic systems, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "A sequence of historical aerial photographs taken from aircraft at regular decades-long intervals",
+            "A an equal-area gall-peters world wall map, which utilizes geometric distortions to highlight regional differences.",
+            "A single written diary entry from a 1940s farmer, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 2,
+        "explanation": "Historical aerial photography captured from airplanes (which began in the early 20th century) allows geographers to visually track and measure longitudinal changes in land cover, urban sprawl, and agricultural conversion over decades."
+    },
+    {
+        "id": 9,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "question": "Which of the following best defines 'quantitative geographic data'?",
+        "options": [
+            "Information that can be measured, recorded, and expressed in numerical values, counts, percentages, and statistical metrics.",
+            "Descriptive, narrative accounts of place identity and cultural sense of belonging.",
+            "Visual impressionistic paintings and landscape sketches from local artists.",
+            "Oral folklore and spoken histories passed down across generations.",
+            "Subjective ratings of architectural beauty recorded by tourists."
+        ],
+        "correct": 0,
+        "explanation": "Quantitative data is numerical, measurable, and statistical (e.g., population counts, literacy rates, median household income, elevation in meters, miles per hour)."
+    },
+    {
+        "id": 10,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "question": "Which of the following best defines 'qualitative geographic data'?",
+        "options": [
+            "Non-numerical, descriptive information capturing people's opinions, cultural perceptions, personal narratives, and feelings about place.",
+            "Mathematical calculations of infant mortality rates per 1,000 live births, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Satellite radar measurements of ice shelf thickness in centimeters.",
+            "Precise GPS latitude and longitude coordinates.",
+            "Census counts of registered commercial motor vehicles."
+        ],
+        "correct": 0,
+        "explanation": "Qualitative data is descriptive, conceptual, and non-numerical. It captures personal perspectives, cultural meanings, oral histories, interviews, focus group opinions, and descriptions of landscape character."
+    },
+    {
+        "id": 11,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "stimulus": "Consider these four items from a research study on a historic downtown neighborhood:\nI. Median household income is $64,500.\nII. 42% of residents commute via public transit.\nIII. Resident Interview: 'This neighborhood feels like home because of the close-knit front porch culture.'\nIV. Total population density is 3,200 persons per square mile.",
+        "question": "Which of the research items represent quantitative data?",
+        "options": [
+            "I, II, and IV only",
+            "III only, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "I and III only, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "II and IV only.",
+            "I, II, III, and IV."
+        ],
+        "correct": 0,
+        "explanation": "Items I ($64,500), II (42%), and IV (3,200 persons/sq mi) are numerical and measurable (quantitative). Item III is a personal interview quote expressing subjective feelings (qualitative)."
+    },
+    {
+        "id": 12,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "stimulus": "A geographer investigates why a newly constructed public playground in an inner-city neighborhood remains largely unused by local families.",
+        "question": "Which qualitative data collection method would provide the deepest insight into the underlying community reasons?",
+        "options": [
+            "Downloading satellite NDVI vegetation index scores for the playground's grass, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Counting the number of tire marks on the surrounding perimeter road using traffic cameras, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Measuring the exact square footage of the asphalt basketball court with laser rangefinders, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Conducting in-depth focus groups and open-ended interviews with local neighborhood parents and teenagers.",
+            "Looking up the county property tax valuation of the park parcel, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 3,
+        "explanation": "Open-ended interviews and focus groups (qualitative methods) allow researchers to understand nuanced human motivations, fears (such as safety concerns or lack of lighting), and cultural preferences that numbers alone cannot capture."
+    },
+    {
+        "id": 13,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "question": "Why do modern human geographers frequently employ 'mixed-methods' research combining both quantitative and qualitative data?",
+        "options": [
+            "Because international law mandates that all map legends include word clouds.",
+            "Because GIS software cannot process numerical integers without audio voice recordings.",
+            "Because quantitative data reveals broad spatial patterns and numerical trends, while qualitative data provides context, lived experiences, and explanatory human motivations.",
+            "Because qualitative interviews eliminate all geometric distortion from Mercator projections.",
+            "Because quantitative census surveys are completely prohibited in urban settings."
+        ],
+        "correct": 2,
+        "explanation": "Mixed-methods research bridges the 'what/where' (revealed by quantitative statistics and maps) with the 'why/how' (explained through qualitative interviews, human perceptions, and social context)."
+    },
+    {
+        "id": 14,
+        "category": "quant-qual",
+        "categoryName": "Quantitative vs. Qualitative Data",
+        "stimulus": "A travel writer writes in a published essay: 'The misty highlands of northern Scotland evoke a haunting sense of isolation, where ancient stone ruins whisper centuries of clan warfare.'",
+        "question": "In geographic research, this quote is classified as:",
+        "options": [
+            "Remotely sensed quantitative data.",
+            "A mathematical spatial model of agricultural yield.",
+            "Qualitative data reflecting perceptual sense of place",
+            "A GPS waypoint navigation log, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "A formal cadastral boundary survey."
+        ],
+        "correct": 2,
+        "explanation": "The quote provides descriptive, subjective, emotional reflections of place (sense of place and perceptual geography), which is classic qualitative data."
+    },
+    {
+        "id": 15,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "stimulus": "An urban planner uses a computer software program to combine and overlay multiple thematic layers: Layer 1 (100-year floodplains), Layer 2 (household income distribution), Layer 3 (public transit routes), and Layer 4 (vacant municipal parcels).",
+        "question": "Which geospatial technology is the planner utilizing?",
+        "options": [
+            "Global Positioning System (GPS).",
+            "Geographic Information System (GIS)",
+            "Radar Altimetry, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Barometric Isoline Synthesizer, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Gall-Peters Coordinate Rectifier."
+        ],
+        "correct": 1,
+        "explanation": "A Geographic Information System (GIS) is a computer system designed to capture, store, analyze, manipulate, and display spatial data in distinct thematic layers that can be stacked and cross-analyzed."
+    },
+    {
+        "id": 16,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "question": "What is the core defining technical capability of Geographic Information Systems (GIS)?",
+        "options": [
+            "Layering and integrating diverse spatial datasets on a digital map to analyze complex relationships and correlations.",
+            "Transmitting live radio broadcasts to transatlantic shipping freighters, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Replacing all human field researchers with autonomous robots, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Physically leveling uneven terrain for real estate construction, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Calculating global standard time without reference to the Prime Meridian, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 0,
+        "explanation": "The core capability of GIS is data layering—integrating diverse spatial data layers (e.g., soils, zoning, demographics, infrastructure, hydrology) over the same geographic coordinate space to uncover spatial relationships."
+    },
+    {
+        "id": 17,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "stimulus": "A smartphone user opens a rideshare application. The application immediately displays a blue pulsing dot showing their exact street corner coordinates with an accuracy of within 3 meters.",
+        "question": "Which geospatial technology is primarily responsible for pinpointing this exact absolute location?",
+        "options": [
+            "Geographic Information System (GIS).",
+            "Satellite Remote Sensing.",
+            "LiDAR Vegetation Indexing.",
+            "Global Positioning System (GPS)",
+            "Cartogram Spatial Transformation."
+        ],
+        "correct": 3,
+        "explanation": "The Global Positioning System (GPS) utilizes a constellation of Earth-orbiting satellites that transmit radio signals to receivers on Earth to calculate exact absolute position (latitude, longitude, elevation)."
+    },
+    {
+        "id": 18,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "question": "How does a standard Global Positioning System (GPS) receiver calculate its exact 3D location on Earth?",
+        "options": [
+            "By receiving radio time-signals from at least four orbiting satellites and performing geometric trilateration.",
+            "By taking infrared thermal photographs of surrounding trees, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "By measuring atmospheric barometric pressure changes.",
+            "By comparing county plat boundaries with decennial census tracts.",
+            "By reflecting sonar sound waves off ocean trenches."
+        ],
+        "correct": 0,
+        "explanation": "A GPS receiver uses trilateration—calculating the time delay of signals received from at least 4 satellites in the GPS constellation (3 satellites for 2D position: latitude and longitude; a 4th satellite to calculate altitude/elevation and synchronize clocks)."
+    },
+    {
+        "id": 19,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "stimulus": "A NASA satellite in sun-synchronous orbit captures multispectral infrared imagery of the Amazon Rainforest every 16 days to detect illegal logging, agricultural burn scars, and changes in canopy moisture.",
+        "question": "This technique of gathering data about Earth's surface from a distance without physical contact is called:",
+        "options": [
+            "Landscape Cadastre.",
+            "Remote Sensing",
+            "Fieldwork Observation.",
+            "Participatory Action Research.",
+            "Decennial Census Canvassing."
+        ],
+        "correct": 1,
+        "explanation": "Remote sensing is the acquisition of information and physical data about Earth's surface from aircraft, satellites, or unmanned aerial vehicles (drones) using sensors, cameras, radar, or infrared detectors without direct physical contact."
+    },
+    {
+        "id": 20,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "question": "Which of the following is the best practical application of satellite Remote Sensing?",
+        "options": [
+            "Interviewing local residents about cultural traditions in an urban plaza, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Writing the text of a city's municipal zoning code, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Monitoring the rate of Arctic sea ice melting and tracking hurricane paths over the ocean.",
+            "Conducting door-to-door demographic census questionnaires, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Determining legal inheritance rights for subdivided farmland, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 2,
+        "explanation": "Remote sensing is ideal for environmental monitoring across vast, inaccessible, or dynamic geographic expanses (e.g., polar ice retreat, hurricane tracking, wildfire progression, drought assessment, deforestation)."
+    },
+    {
+        "id": 21,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "stimulus": "Archaeologists flying a drone over dense Guatemalan jungle canopy use Light Detection and Ranging (LiDAR) pulses to penetrate the tree leaves and bounce light off the ground.",
+        "question": "What does this LiDAR technology produce for spatial analysis?",
+        "options": [
+            "A high-resolution, three-dimensional digital elevation model revealing hidden ruins and agricultural terraces beneath the forest.",
+            "A qualitative transcript of ancient Mayan languages.",
+            "A verbal scale bar for 16th-century Spanish sailing charts.",
+            "A decennial demographic census count of historical populations.",
+            "A an equal-area gall-peters cylindrical projection."
+        ],
+        "correct": 0,
+        "explanation": "LiDAR (Light Detection and Ranging) is an active remote sensing technology that shoots millions of laser light pulses to create ultra-precise 3D topographic models of Earth's surface, capable of revealing hidden terrain and structures beneath dense foliage."
+    },
+    {
+        "id": 22,
+        "category": "technologies",
+        "categoryName": "Geospatial Technologies",
+        "stimulus": "A modern commercial farmer in Iowa equips their tractor with GPS receivers, satellite yield-monitoring sensors, and variable-rate fertilizer spreaders connected to a GIS soil-quality map.",
+        "question": "This technology-driven agricultural practice is known as:",
+        "options": [
+            "Nomadic pastoralism, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Slash-and-burn subsistence cultivation.",
+            "Metes and bounds farming.",
+            "Cognitive mental farming.",
+            "Precision agriculture"
+        ],
+        "correct": 4,
+        "explanation": "Precision agriculture uses GPS, GIS, and remote sensing to monitor crop health, field topography, and soil nutrient variations, applying exact amounts of water, seeds, and fertilizer down to the square foot to maximize yield and minimize waste."
+    },
+    {
+        "id": 23,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "The executive team of a major national grocery store chain wants to select the optimal location for a new organic supermarket in suburban Denver. They instruct their spatial analytics team to identify parcels that meet specific demographic criteria.",
+        "question": "How would the analytics team utilize GIS to solve this commercial site selection problem?",
+        "options": [
+            "By randomly driving around suburban subdivisions until they find an empty parking lot, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "By converting the city map into an interrupted Goode-Homolosine projection.",
+            "By conducting qualitative oral history interviews with 19th-century homesteaders.",
+            "By overlaying GIS layers showing median household incomes above $90,000, 10-minute vehicular drive-time buffers, traffic volume counts, and distances from existing competitors.",
+            "By measuring the absolute latitude of the Rocky Mountains, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification."
+        ],
+        "correct": 3,
+        "explanation": "Commercial businesses use GIS for site selection and market analysis by overlaying multiple criteria: target customer demographics (income, age), accessibility (drive-time polygons, road traffic), and proximity to competitor stores."
+    },
+    {
+        "id": 24,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "A coastal county emergency management department prepares for an approaching Category 4 hurricane. Officials must establish mandatory evacuation zones, designate emergency shelters outside flood zones, and coordinate rescue vehicle routes.",
+        "question": "Which combination of geospatial tools and data is most critical for the county government's decision-making?",
+        "options": [
+            "Historical handwritten diaries and 18th-century mental maps, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "A small-scale Gall-Peters projection of South America, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "GIS mapping combining real-time Doppler radar storm track data, SLOSH storm-surge flood models, population density layers, and road elevation data.",
+            "A verbal scale bar drawn on a printed street atlas from 1980, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "A qualitative poetry collection describing ocean waves, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 2,
+        "explanation": "Government emergency managers rely heavily on GIS to layer storm-surge prediction models, elevation, population density, vulnerable elderly care facilities, and road network capacity to coordinate timely evacuations."
+    },
+    {
+        "id": 25,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "A commuter in Los Angeles enters their workplace address into a navigation app on their smartphone at 8:00 AM. The app recommends an alternate detour through residential streets that avoids a recent freeway collision.",
+        "question": "This everyday scenario illustrates how geospatial data guides decision-making at which geographic scale of action?",
+        "options": [
+            "Individual / Personal daily decision-making",
+            "National federal policy making.",
+            "Supranational treaty enforcement.",
+            "Continental climatic modeling.",
+            "Decennial congressional apportionment."
+        ],
+        "correct": 0,
+        "explanation": "Individuals use geospatial data daily through smartphone GPS navigation apps (like Google Maps or Waze) to make real-time decisions about routes, transit choices, shopping, and dining."
+    },
+    {
+        "id": 26,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "A municipal school board faces declining enrollment in the north quadrant of the city and rapid residential growth in the southwest quadrant. The board must redraw school attendance boundaries to balance student populations without overcrowding facilities.",
+        "question": "Which data source provides the most essential information for redrawing these school attendance zones?",
+        "options": [
+            "Satellite infrared vegetation index maps.",
+            "Census block-level demographic data on child age cohorts combined with local school district GIS student address layers",
+            "Small-scale world trade flow-line maps, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Global azimuthal equidistant projections centered on Washington, D.C.",
+            "International maritime cargo billings."
+        ],
+        "correct": 1,
+        "explanation": "Redrawing school attendance boundaries requires highly localized, large-scale quantitative data: census block-level counts of school-age children paired with student home address GIS data and school facility capacity."
+    },
+    {
+        "id": 27,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "A public transit authority in Seattle considers where to build a new light rail corridor and where to position future train stations.",
+        "question": "Which GIS data layer would be LEAST relevant to making this public transit planning decision?",
+        "options": [
+            "Residential population density along potential transit corridors, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Major employment centers and downtown commercial office density, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Average daily vehicular traffic congestion hotspots.",
+            "Locations of existing bus lines and multi-modal transit transfer hubs.",
+            "Deep undersea tectonic trench depth in the central Pacific Ocean"
+        ],
+        "correct": 4,
+        "explanation": "Deep undersea ocean trench depth in the Pacific Ocean is irrelevant to a municipal light rail corridor in Seattle. Population density, employment hubs, traffic congestion, and existing transit routes are all critical GIS layers."
+    },
+    {
+        "id": 28,
+        "category": "decision-making",
+        "categoryName": "Spatial Decision-Making",
+        "stimulus": "A state wildlife conservation agency uses satellite GPS collar tracking data from 50 tagged wolves over a three-year period to designate a protected wildlife migration corridor across several national forests.",
+        "question": "This is an example of using geospatial data for:",
+        "options": [
+            "Electoral gerrymandering, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Corporate tax rate optimization, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Urban residential redlining, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Cadastral plat subdividing, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Environmental policy and biodiversity management"
+        ],
+        "correct": 4,
+        "explanation": "Tracking animal movements using GPS collars and modeling migratory ranges in GIS directly supports environmental conservation, habitat preservation, and wildlife policy decisions."
+    },
+    {
+        "id": 29,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "Civil liberties advocates raise concerns when law enforcement agencies utilize automated license plate readers (ALPR) and commercial mobile phone location data aggregators to track individuals' real-time movements and historical spatial trajectories across a city.",
+        "question": "Which major ethical issue surrounding modern geospatial technology is highlighted in this scenario?",
+        "options": [
+            "The physical limitation of 2D map projections to depict a spherical Earth.",
+            "The balance between public safety/law enforcement and individual privacy rights against warrantless mass surveillance.",
+            "The cost of printing high-resolution paper atlas maps for courtrooms.",
+            "The inaccuracy of the Greenwich Prime Meridian in digital software.",
+            "The inability of GIS software to record automobile speed."
+        ],
+        "correct": 1,
+        "explanation": "The ubiquitous collection of real-time geospatial tracking data (via smartphones, GPS transponders, facial recognition cameras, and license plate readers) creates profound ethical tensions regarding privacy, surveillance, and civil liberties."
+    },
+    {
+        "id": 30,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "During a national decennial census, researchers note that unhoused individuals, non-English speaking immigrant communities, and residents of remote rural areas are consistently counted at lower rates than suburban homeowners.",
+        "question": "What is a major policy consequence of this systematic census undercounting?",
+        "options": [
+            "The affected communities receive disproportionately less federal funding for public infrastructure, hospitals, and schools, and may lose political representation in state and federal legislatures.",
+            "The affected communities are automatically exempted from all local sales taxes, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The affected regions are removed from standard GPS satellite navigation receivers.",
+            "The Prime Meridian is shifted eastward to compensate for the missing count.",
+            "The state's geographic area on a Mercator map shrinks in size."
+        ],
+        "correct": 0,
+        "explanation": "Census data determines both political representation (reapportionment and legislative district drawing) and the allocation of hundreds of billions of dollars in federal formula funding for public services. Undercounting marginalized populations deprives them of equitable funding and political voice."
+    },
+    {
+        "id": 31,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A real estate website allows users to browse homes for sale. Beside each listing, the app automatically embeds GIS-generated data layers showing local school performance ratings, recent property tax assessments, neighborhood crime heat maps, and walkability scores.",
+        "question": "How does this application demonstrate the role of geospatial technology in modern society?",
+        "options": [
+            "It shows how GIS has made printed road atlases legally mandatory, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "It proves that quantitative data has completely replaced the need for photographs in real estate.",
+            "It shows that GPS signals can directly determine property appraisal values without human intervention.",
+            "It illustrates how integrated spatial data empowers consumer decision-making and influences housing market values.",
+            "It demonstrates that cartographic scale is obsolete in digital platforms, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries."
+        ],
+        "correct": 3,
+        "explanation": "By aggregating disparate public and private spatial datasets (crime, schools, walkability, taxes) into a single map interface, geospatial tech directly shapes individual consumer choices and influences property values."
+    },
+    {
+        "id": 32,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A researcher creates a choropleth map showing county-level cancer rates. However, because some rural counties have extremely small populations (fewer than 2,000 residents), a cluster of just two or three cancer cases makes the county's cancer rate appear astronomically high.",
+        "question": "This scenario illustrates which challenge in spatial data analysis?",
+        "options": [
+            "The Mercator High-Latitude Polar Distortion, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Azimuthal Radial Distance Decay within regional economic and demographic systems, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "The Township and Range Survey Contradiction, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "The Small Number Problem (statistical instability caused by small sample sizes in low-population spatial units)",
+            "GPS Satellite Multipath Interference, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 3,
+        "explanation": "The 'Small Number Problem' occurs when calculating rates for small geographic populations: minor fluctuations or single cases create extreme statistical spikes/rates that distort the visual representation and mislead map readers."
+    },
+    {
+        "id": 33,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A team of human geographers is hired by a city to study food insecurity and 'food deserts' (neighborhoods lacking access to fresh, affordable groceries).",
+        "question": "Which research plan represents the most thorough and effective mixed-methods geographic approach?",
+        "options": [
+            "Counting the number of fast-food drive-thrus on a 1950s historical paper road map.",
+            "Looking solely at satellite infrared images of neighborhood rooftop gardens without speaking to residents.",
+            "Measuring the exact distance between the mayor's office and the largest supermarket.",
+            "Using GIS to map spatial buffers around supermarkets and public transit routes (quantitative) combined with conducting grocery shopping interviews and budget surveys with local neighborhood residents (qualitative).",
+            "Surveying only supermarket store managers about corporate wholesale pricing."
+        ],
+        "correct": 3,
+        "explanation": "A robust mixed-methods research strategy combines spatial quantitative modeling in GIS (distance buffers, bus routes, grocery store locations, census income) with qualitative ground-level insights (resident interviews, lived experience with transit schedules, food prices, and cultural food preferences)."
+    },
+    {
+        "id": 34,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "question": "Which geospatial technology was originally developed by the United States Department of Defense for military navigation and weapons guidance before being made available for civilian commercial applications?",
+        "options": [
+            "French Long-Lot Cadastre.",
+            "Census Block Aggregator.",
+            "Global Positioning System (GPS)",
+            "Choropleth Visual Shading Engine.",
+            "Conic Parallels Projection."
+        ],
+        "correct": 2,
+        "explanation": "GPS (originally Navstar GPS) was developed in the 1970s by the U.S. Department of Defense for military navigation and missile guidance. It was later opened for global civilian, scientific, and commercial use."
+    },
+    {
+        "id": 35,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "An insurance company uses high-resolution satellite imagery captured immediately after a major hail storm to verify roof damage claims submitted by thousands of homeowners across an entire metropolitan area.",
+        "question": "Which primary advantage of Remote Sensing does this scenario illustrate?",
+        "options": [
+            "The ability to conduct qualitative open-ended interviews with storm victims.",
+            "The ability to rapidly assess physical damage across a broad geographic area safely and cost-effectively without sending adjusters onto every individual roof.",
+            "The ability to eliminate all mathematical distortion from 2D street projections, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The ability to determine homeowners' political party affiliations, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The ability to predict exact weather patterns 5 years into the future."
+        ],
+        "correct": 1,
+        "explanation": "Remote sensing allows rapid, large-scale, cost-effective, and safe data collection over extensive disaster zones where in-person inspection of every building would be dangerous or take months."
+    },
+    {
+        "id": 36,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "question": "How do geographers distinguish between 'active' remote sensing (such as LiDAR and Radar) and 'passive' remote sensing (such as aerial photography and optical satellite sensors)?",
+        "options": [
+            "Active sensors are operated by humans on the ground; passive sensors operate in deep space, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Active sensors record only qualitative data; passive sensors record only quantitative integers, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Active sensors require paper maps; passive sensors run only on smartphones, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "There is no distinction; both terms refer to handheld compass navigation, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Active sensors emit their own energy pulse (lasers/radio waves) and measure the reflection; passive sensors record naturally reflected sunlight or emitted thermal radiation."
+        ],
+        "correct": 4,
+        "explanation": "Active remote sensing systems (e.g., Radar, LiDAR, Sonar) send out their own signal/energy pulse and measure the return reflection. Passive systems (e.g., standard cameras, optical satellite sensors) simply detect and record existing natural energy, such as reflected sunlight or radiated heat."
+    },
+    {
+        "id": 37,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A historic city neighborhood has no official street signs or formal postal addresses. Community activists equip local youths with smartphones loaded with OpenStreetMap to map footpaths, water wells, clinics, and informal kiosks.",
+        "question": "This grassroots geographic initiative is an example of:",
+        "options": [
+            "Top-down authoritarian census enumeration.",
+            "Military satellite surveillance.",
+            "Mercator grid calibration.",
+            "Volunteered Geographic Information (VGI) / Participatory GIS",
+            "Cadastral plat privatization."
+        ],
+        "correct": 3,
+        "explanation": "Volunteered Geographic Information (VGI), citizen science, and Participatory GIS involve everyday citizens creating, assembling, and disseminating spatial data voluntarily (e.g., OpenStreetMap, crowd-sourced traffic/hazard reports on Waze)."
+    },
+    {
+        "id": 38,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A healthcare analyst is studying the spatial spread of an infectious disease. She wants to see if hospital admission rates correlate with proximity to major chemical refineries and particulate air pollution levels.",
+        "question": "Which analytical GIS tool/function would best allow her to evaluate this relationship?",
+        "options": [
+            "Converting the state map into an equal-area Gall-Peters projection, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Calculating the verbal scale of the hospital's architectural blueprint.",
+            "Conducting oral storytelling sessions with factory shareholders.",
+            "Measuring the magnetic azimuth of the hospital roof.",
+            "Proximity Analysis / Spatial Buffer Overlays (creating distance buffer rings around refineries and overlaying pollution contours with patient address clusters)"
+        ],
+        "correct": 4,
+        "explanation": "Spatial buffer analysis and proximity overlays in GIS allow researchers to draw distance zones (e.g., 1-mile, 3-mile, 5-mile rings) around hazard sources (refineries) and overlay them with health outcomes to test for spatial correlation and environmental justice impacts."
+    },
+    {
+        "id": 39,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "question": "Which of the following scenarios represents an ethical misuse of geographic data and spatial technologies?",
+        "options": [
+            "A city mapping high-crime intersections to install better street lighting.",
+            "A forestry service tracking wildfire spread using thermal satellite imagery.",
+            "A bank using GIS redlining models to systematically deny mortgage loans to minority applicants based strictly on neighborhood demographic composition.",
+            "A marine biologist logging GPS coordinates of coral reef bleaching sites, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "A school district forecasting future kindergarten enrollment using census birth data, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias."
+        ],
+        "correct": 2,
+        "explanation": "Using geospatial data and GIS tools to practice spatial discrimination—such as modern digital redlining, where banks or insurers deny services based on neighborhood racial/ethnic composition—is an illegal and unethical misuse of spatial analytics."
+    },
+    {
+        "id": 40,
+        "category": "ethics-ap",
+        "categoryName": "Geospatial Ethics & Data Bias",
+        "stimulus": "A student states: 'Since GIS software is powered by advanced computer algorithms and satellites, GIS maps are completely objective and free of human bias or error.'",
+        "question": "Which counterargument most accurately evaluates the student's assertion?",
+        "options": [
+            "The student is correct; digital maps never contain inaccuracies, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "The assertion is flawed because GIS software is legally prohibited from processing satellite data, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The assertion is flawed because only paper maps drawn by hand can be objective, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "The student is correct because GPS satellites automatically remove all cartographic errors, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The assertion is flawed; GIS maps reflect human choices regarding which data layers to include, how data classes are categorized, the scale of analysis selected, and the potential biases of the underlying data collectors."
+        ],
+        "correct": 4,
+        "explanation": "GIS maps are not neutral or purely objective. Human cartographers and analysts decide what data to collect, what layers to include or omit, how to classify data ranges, what colors to assign, and how to interpret patterns—meaning human bias and framing are inherent in all spatial representations."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return;
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores for Section 1.2?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>

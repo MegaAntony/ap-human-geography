@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 7.5: Deindustrialization and Economic Restructuring (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #1e1b4b;
+            --primary-light: #4338ca;
+            --primary-bg: #eef2ff;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #c7d2fe;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary-light);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #312e81;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 7: Industrial & Economic Development</h1>
+        <div class="subtitle">Topic 7.5: Deindustrialization and Economic Restructuring — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #e0e7ff; max-width: 800px;">
+            Covers every concept in Section 7.5: Deindustrialization & The Rust Belt, Brownfields & Urban Adaptive Reuse, The New International Division of Labor, Outsourcing vs. Offshoring, Business Process Outsourcing (BPO in India & Philippines), Export Processing Zones (EPZs) & Mexican Maquiladoras, China's Special Economic Zones (SEZs), Fordist vs. Post-Fordist Flexible Production, Just-in-Time (JIT) Logistics & Fragility, Technopoles, Growth Poles, High-Tech Agglomeration, and the Multiplier Effect.
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="deindustrialization-rustbelt">Deindustrialization, The Rust Belt & Brownfields</option>
+                <option value="offshoring-bpo">Global Division of Labor, Offshoring & BPO</option>
+                <option value="epz-maquiladoras-sez">EPZs, Free Trade Zones, Maquiladoras & China SEZs</option>
+                <option value="fordism-postfordism-jit">Fordist vs. Post-Fordist Production & Just-In-Time (JIT)</option>
+                <option value="technopoles-ap-stimulus">Technopoles, Growth Poles, Agglomeration & Multiplier Effect</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "question": "What is 'Deindustrialization' in economic geography?",
+        "options": [
+            "The process of social and economic change caused by the reduction or removal of industrial capacity and manufacturing employment in a region or country.",
+            "A government policy mandating that all citizens work on subsistence farms, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "The physical destruction of factories caused by volcanic eruptions, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "The conversion of all paper maps into digital GIS coordinate layers, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "The mandatory closure of all tertiary retail businesses during a depression, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks."
+        ],
+        "correct": 0,
+        "explanation": "Deindustrialization is the sustained decline in industrial and manufacturing output and employment in an economy or region as it transitions toward a service/tertiary/knowledge-based economy or loses manufacturing to lower-wage global regions."
+    },
+    {
+        "id": 2,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "stimulus": "Between 1970 and 2010, cities across the American Manufacturing Belt (such as Detroit, Cleveland, Buffalo, Pittsburgh, and Gary) lost hundreds of thousands of automotive and steel manufacturing jobs due to factory closures, automation, and overseas relocation.",
+        "question": "This geographic region became known as the:",
+        "options": [
+            "Sun Belt.",
+            "Corn Belt.",
+            "Rust Belt",
+            "Wheat Belt.",
+            "Cotton Belt."
+        ],
+        "correct": 2,
+        "explanation": "The 'Rust Belt' refers to the formerly booming heavy industrial heartland of the northeastern and midwestern United States that suffered sharp manufacturing decline, abandoned factories, and population loss starting in the 1970s."
+    },
+    {
+        "id": 3,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "question": "Which major internal demographic migration stream in the United States was largely triggered by deindustrialization in the Rust Belt?",
+        "options": [
+            "Migration from the Pacific Northwest to the Great Plains, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Migration from rural Florida to urban Maine, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "Migration from the Midwestern/Northeastern Rust Belt to the Southern and Southwestern 'Sun Belt'",
+            "Migration from California to northern Alaska, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Migration from suburban Atlanta to rural North Dakota, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification."
+        ],
+        "correct": 2,
+        "explanation": "The loss of manufacturing jobs, cold winters, and high union labor costs in the Rust Belt drove millions of workers and families to migrate to the 'Sun Belt' (states like Texas, Florida, Arizona, North Carolina, and Georgia) seeking warmer climates, lower costs of living, and expanding service/tech jobs."
+    },
+    {
+        "id": 4,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "stimulus": "An abandoned 40-acre former automotive assembly plant in Detroit sits vacant. The soil is contaminated with petroleum residues and heavy metals, preventing immediate residential development without expensive environmental cleanup.",
+        "question": "In urban and economic geography, this contaminated former industrial parcel is classified as a:",
+        "options": [
+            "Greenfield site, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Growth pole, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Brownfield site",
+            "Maquiladora reserve.",
+            "Cadastral township."
+        ],
+        "correct": 2,
+        "explanation": "A 'brownfield' is an abandoned, idled, or underused commercial/industrial site where redevelopment or reuse is complicated by the presence or potential presence of hazardous substances, pollutants, or contaminants."
+    },
+    {
+        "id": 5,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "stimulus": "The city of Pittsburgh transformed a derelict former steel mill along the Monongahela River into 'Bakery Square' and 'The Waterfront,' featuring modern biotech laboratories, tech firm offices (like Google), apartment lofts, shopping plazas, and public riverwalks.",
+        "question": "This urban redevelopment strategy is an example of:",
+        "options": [
+            "Agricultural intensification, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "Brownfield remediation and adaptive reuse",
+            "Export processing offshore relocation, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Primary sector extraction expansion, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Fordist vertical integration, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations."
+        ],
+        "correct": 1,
+        "explanation": "Brownfield remediation and adaptive reuse involve cleaning up contaminated industrial sites and converting historical factories/mills into productive new commercial, residential, high-tech, and recreational spaces."
+    },
+    {
+        "id": 6,
+        "category": "deindustrialization-rustbelt",
+        "categoryName": "Deindustrialization & The Rust Belt",
+        "question": "Which of the following European regions underwent a severe deindustrialization process similar to the American Rust Belt?",
+        "options": [
+            "The Ruhr Valley in Germany and the Industrial North/Midlands of England (e.g., Sheffield, Manchester)",
+            "The agricultural olive groves of southern Greece, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "The high-altitude ski valleys of the Swiss Alps.",
+            "The fishing villages of northern Norway.",
+            "The cork forests of southern Portugal."
+        ],
+        "correct": 0,
+        "explanation": "The Ruhr Valley in Germany, the Midlands/Northern England (coal, steel, textiles), and Nord-Pas-de-Calais in France experienced intense deindustrialization as heavy industries shut down in the late 20th century."
+    },
+    {
+        "id": 7,
+        "category": "offshoring-bpo",
+        "categoryName": "Global Division of Labor & BPO",
+        "question": "What is the 'New International Division of Labor'?",
+        "options": [
+            "A system where all countries produce only the food their citizens eat, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "An international law requiring all workers to join labor unions, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "A military alliance dividing territory along lines of latitude, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "A spatial reorganization of global manufacturing where high-skill research, design, engineering, and financial management remain in core MDCs, while low-skill, labor-intensive production and assembly are relocated to developing nations (LDCs and NICs).",
+            "A United Nations treaty that bans all international trade, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing."
+        ],
+        "correct": 3,
+        "explanation": "The New International Division of Labor is the outcome of globalization: core countries specialize in high-value quaternary/quinary services, management, and R&D, while developing semi-peripheral/peripheral nations perform lower-wage secondary manufacturing and assembly."
+    },
+    {
+        "id": 8,
+        "category": "offshoring-bpo",
+        "categoryName": "Global Division of Labor & BPO",
+        "question": "How does 'Outsourcing' differ from 'Offshoring'?",
+        "options": [
+            "Outsourcing is moving jobs to a foreign country; Offshoring is hiring domestic workers, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Outsourcing means contracting out a business function to a third-party company (which can be domestic or international); Offshoring specifically means relocating a company's own physical operations or facilities to a foreign country.",
+            "Outsourcing applies only to agriculture; Offshoring applies only to airlines, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "There is no difference; both terms mean closing down a business permanently, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Outsourcing is illegal under international law; Offshoring is mandatory, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 1,
+        "explanation": "Outsourcing is sub-contracting work to an external third-party vendor (e.g., Apple contracting Foxconn). Offshoring is relocating internal business processes or factories overseas to take advantage of lower wages, lower taxes, or favorable regulations."
+    },
+    {
+        "id": 9,
+        "category": "offshoring-bpo",
+        "categoryName": "Global Division of Labor & BPO",
+        "stimulus": "A major US health insurance provider contracts with firms in Bangalore and Hyderabad, India, to handle customer service telephone call centers, medical claims processing, database coding, and billing inquiries.",
+        "question": "This global trade in commercial and technical service jobs is known as:",
+        "options": [
+            "Business Process Outsourcing (BPO)",
+            "Subsistence Pastoral Contracting, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "Fordist Assembly Warehousing, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Cadastral Boundary Mapping, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Primary Sector Extraction, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment."
+        ],
+        "correct": 0,
+        "explanation": "Business Process Outsourcing (BPO) involves contracting standard back-office, IT, customer support, and administrative operations to specialized third-party service providers, frequently located in low-cost developing countries."
+    },
+    {
+        "id": 10,
+        "category": "offshoring-bpo",
+        "categoryName": "Global Division of Labor & BPO",
+        "question": "Why have countries like India and the Philippines become the premier global destinations for Business Process Outsourcing (BPO) and IT services?",
+        "options": [
+            "They have cold arctic climates ideal for server cooling, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "They have banned the use of fiber optic internet cables.",
+            "They have zero telephone infrastructure.",
+            "They require all foreign corporations to pay 90% corporate income tax.",
+            "They possess large pools of college-educated, highly skilled, fluent English-speaking workers whose wage expectations are significantly lower than equivalent workers in core nations, alongside favorable time-zone differences."
+        ],
+        "correct": 4,
+        "explanation": "India and the Philippines excel in BPO due to their large, highly educated, English-fluent labor forces, lower labor costs, advanced telecommunications, and 10–12 hour time-zone offsets that allow 24-hour continuous workflow for Western corporations."
+    },
+    {
+        "id": 11,
+        "category": "offshoring-bpo",
+        "categoryName": "Global Division of Labor & BPO",
+        "stimulus": "A computer hardware designer in California finishes work at 5:00 PM PST and sends software code across fiber optic lines to an engineering team in Bangalore, India, who begin their workday at 9:00 AM IST. When California wakes up, the debugged code is returned.",
+        "question": "This 24-hour continuous global workflow illustrates the power of:",
+        "options": [
+            "High friction of distance and transport barriers, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Time-Space Compression and the Global Division of Service Labor",
+            "The complete failure of international telecommunications, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Stage 1 Traditional Society agriculture, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "The physical distortion of the Mercator projection, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks."
+        ],
+        "correct": 1,
+        "explanation": "High-speed internet and time-zone differences enable 'follow-the-sun' collaborative workflows (time-space compression), allowing core firms to maintain 24/7 continuous productivity across the global division of labor."
+    },
+    {
+        "id": 12,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "question": "What is an 'Export Processing Zone' (EPZ)?",
+        "options": [
+            "A designated customs territory where private farming is strictly prohibited, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "A specialized manufacturing area established by governments in developing nations offering foreign corporations tax holidays, duty-free imports of raw materials, and streamlined regulations to produce manufactured goods for export.",
+            "A military base along a contested international border, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "A nature sanctuary where all human economic activity is banned, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "A an underground coal mining tunnel, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 1,
+        "explanation": "Export Processing Zones (EPZs) are industrial zones set up by governments in developing countries to attract foreign direct investment by offering exemptions from domestic tariffs, corporate taxes, and strict labor/environmental laws for export-oriented factories."
+    },
+    {
+        "id": 13,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "stimulus": "Along the northern border of Mexico (in cities like Tijuana, Ciudad Juárez, and Reynosa), thousands of manufacturing plants import auto parts, television components, and medical equipment from the US duty-free, assemble them using lower-wage Mexican labor, and export the finished products back into the United States with minimal tariffs.",
+        "question": "These foreign-owned border assembly plants in Mexico are known as:",
+        "options": [
+            "Technopoles, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Favelas, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "Ejidos, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "Encomiendas, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Maquiladoras"
+        ],
+        "correct": 4,
+        "explanation": "Maquiladoras are manufacturing plants in northern Mexico, often near the US border, that import components duty-free, assemble or process them using Mexican labor, and export the finished goods (accelerated under NAFTA/USMCA)."
+    },
+    {
+        "id": 14,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "question": "What is the primary geographic location advantage of Mexican maquiladoras compared to factories in East Asia?",
+        "options": [
+            "Lower corporate income taxes in Tokyo, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Access to polar great circle air routes.",
+            "Cheaper coal fuel in the Amazon basin.",
+            "The complete absence of road connections to Texas.",
+            "Proximity to the massive United States consumer market, drastically reducing freight shipping times and transportation costs compared to trans-Pacific ocean shipping (nearshoring)."
+        ],
+        "correct": 4,
+        "explanation": "Maquiladoras offer 'nearshoring' advantages: physical proximity to the US allows trucks and trains to deliver goods to American retail markets in 1–3 days, avoiding weeks of trans-Pacific oceanic shipping."
+    },
+    {
+        "id": 15,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "stimulus": "In 1980, Chinese leader Deng Xiaoping designated Shenzhen, then a small fishing village of 30,000 near Hong Kong, as China's first Special Economic Zone (SEZ). Today, Shenzhen is a global megacity of over 17 million residents known as the 'Silicon Valley of Hardware.'",
+        "question": "What policy allowed Shenzhen to undergo this extraordinary industrial explosion?",
+        "options": [
+            "Reverting 100% of urban land to subsistence rice farming, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Banning all foreign multinational corporations, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Restricting the use of electricity in factories, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Abolishing all maritime container shipping ports, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Opening the zone to foreign capitalist investment, joint ventures, tax exemptions, and market-driven export manufacturing within a socialist nation."
+        ],
+        "correct": 4,
+        "explanation": "China's SEZs (Shenzhen, Zhuhai, Xiamen, Shantou, Pudong) opened coastal China to foreign direct investment (FDI), modern management, advanced technology, and duty-free export processing, transforming China into the world's leading manufacturing powerhouse."
+    },
+    {
+        "id": 16,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "question": "Why were China's Special Economic Zones (SEZs) strategically situated almost exclusively along its southeastern coastline?",
+        "options": [
+            "To be as close as possible to coal mines in the Gobi Desert, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Because interior China was completely covered in ice sheets, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "To provide immediate access to deep-water maritime container shipping lanes and proximity to Hong Kong and Taiwan for foreign capital and export logistics.",
+            "To isolate factory workers from international trade, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Because Chinese law prohibited building roads in eastern provinces, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 2,
+        "explanation": "Coastal placement provided critical situation advantages: direct access to international Pacific shipping routes, deep-water harbors, and immediate proximity to financial capital in Hong Kong and Taiwan."
+    },
+    {
+        "id": 17,
+        "category": "epz-maquiladoras-sez",
+        "categoryName": "EPZs, Maquiladoras & SEZs",
+        "question": "What is a major social and ethical criticism of Export Processing Zones (EPZs) in many developing countries?",
+        "options": [
+            "They frequently feature poor workplace safety standards, long shifts, low wages, suppression of labor unions, and exploitation of young female workers who lack legal recourse.",
+            "They pay workers salaries that are ten times higher than Western executives, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "They refuse to produce consumer goods for export, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "They require all workers to live in luxury high-rise hotels, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "They ban the use of automated assembly lines, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing."
+        ],
+        "correct": 0,
+        "explanation": "Critics highlight that EPZs often create a 'race to the bottom,' where governments keep wages suppressed, ban unions, and relax environmental/safety standards to keep foreign multinationals from relocating to cheaper competitor nations."
+    },
+    {
+        "id": 18,
+        "category": "fordism-postfordism-jit",
+        "categoryName": "Fordist vs. Post-Fordist Production",
+        "stimulus": "In the early 20th century, Henry Ford's River Rouge auto plant in Michigan received raw iron ore, coal, rubber, and glass at one end of a massive factory complex and produced thousands of identical black Model T cars on a moving assembly line.",
+        "question": "This traditional system of standardized mass production is known as:",
+        "options": [
+            "Post-Fordism.",
+            "Flexible Specialization.",
+            "Just-in-Time Craftsmanship.",
+            "Fordism",
+            "Cottage Industry."
+        ],
+        "correct": 3,
+        "explanation": "Fordism is the classic industrial model of standardized mass production: moving assembly lines, low-skilled workers performing single repetitive tasks, large vertically integrated factories, and massive surplus inventory stockpiled in warehouses."
+    },
+    {
+        "id": 19,
+        "category": "fordism-postfordism-jit",
+        "categoryName": "Fordist vs. Post-Fordist Production",
+        "question": "Which of the following characteristics distinguishes 'Post-Fordist' (flexible production) from traditional 'Fordist' production?",
+        "options": [
+            "Post-Fordism produces only one identical product for decades without design changes, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Post-Fordism relies exclusively on horse-drawn transportation, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "Post-Fordism requires factories to store 10 years of raw inventory in giant warehouses, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Post-Fordism bans the use of computers and robotics, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Post-Fordism utilizes flexible manufacturing, team-based multi-skilled workers, computer-automated robotic assembly, small-batch customized production, and global outsourcing."
+        ],
+        "correct": 4,
+        "explanation": "Post-Fordism (Flexible Production) adapts rapidly to changing consumer tastes using computer-controlled robotics, cross-trained worker teams, customized small-batch output, outsourced component networks, and lean inventory systems."
+    },
+    {
+        "id": 20,
+        "category": "fordism-postfordism-jit",
+        "categoryName": "Fordist vs. Post-Fordist Production",
+        "stimulus": "A Toyota automobile plant in Kentucky does not maintain a warehouse of spare tires or windshields. Instead, automated computer systems notify local parts suppliers to deliver exact batches of seats, tires, and glass to the assembly floor 45 minutes before they are bolted onto specific custom-ordered vehicles.",
+        "question": "This lean inventory logistics management strategy is called:",
+        "options": [
+            "Mass Bulk Warehousing, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Fordist Vertical Stockpiling.",
+            "Primary Commodity Storage, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Cadastral Buffer Delivery, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Just-in-Time (JIT) Delivery"
+        ],
+        "correct": 4,
+        "explanation": "Just-In-Time (JIT) delivery is an inventory management strategy where parts and materials arrive at the factory floor immediately before they are needed in the assembly process, drastically reducing warehouse holding costs."
+    },
+    {
+        "id": 21,
+        "category": "fordism-postfordism-jit",
+        "categoryName": "Fordist vs. Post-Fordist Production",
+        "question": "What is the primary spatial impact of Just-in-Time (JIT) manufacturing on the geographic location of component parts suppliers?",
+        "options": [
+            "Suppliers scatter randomly to remote polar regions, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Suppliers move exclusively to landlocked African nations, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Suppliers are prohibited from operating within 500 miles of the main plant, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Suppliers cluster (agglomerate) in close geographic proximity to the main assembly plant to ensure fast, reliable, multiple-times-per-day truck deliveries without traffic delays.",
+            "Suppliers cease all physical manufacturing, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks."
+        ],
+        "correct": 3,
+        "explanation": "Because JIT requires components to arrive within tight delivery windows (often under 1 hour), parts suppliers cluster spatially around assembly plants (e.g., auto parts suppliers along the I-75 / I-65 auto corridor in the US)."
+    },
+    {
+        "id": 22,
+        "category": "fordism-postfordism-jit",
+        "categoryName": "Fordist vs. Post-Fordist Production",
+        "stimulus": "In 2021, a single container ship (the Ever Given) wedged sideways in the Suez Canal for six days, and global semiconductor microchip shortages forced major automotive plants in North America and Europe to shut down assembly lines for months.",
+        "question": "These crises revealed which fundamental vulnerability of modern globalized Just-in-Time supply chains?",
+        "options": [
+            "Lean JIT supply chains lack backup inventory buffers, making global manufacturing highly fragile to shipping choke-point blockages, geopolitical tensions, natural disasters, or component shortages.",
+            "JIT systems have zero fragility and are impervious to global events, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Container ships are too small to transport electronic microchips.",
+            "Automakers have too much spare warehouse inventory.",
+            "The Suez Canal has no connection to global trade."
+        ],
+        "correct": 0,
+        "explanation": "The major drawback of JIT is supply chain fragility: because factories carry virtually zero inventory cushions, any disruption at a single geographic choke point (Suez Canal, microchip factory fire, pandemic shutdown) cascades into global factory halts."
+    },
+    {
+        "id": 23,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "question": "What is a 'Technopole' (or High-Tech Growth Pole) in economic geography?",
+        "options": [
+            "A power plant that generates electricity from timber woodchips, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "A traditional coal-mining village in the Appalachian mountains, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "A military radar installation at the North Pole, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "A concentrated geographic hub of high-tech innovation, research, development, and advanced manufacturing, typically anchored by major research universities, venture capital, and elite engineering talent.",
+            "A government warehouse storing surplus grain, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs."
+        ],
+        "correct": 3,
+        "explanation": "A technopole is a center of high-tech manufacturing, software development, and information-based industry (e.g., Silicon Valley, Silicon Glen, Route 128) that benefits from spatial clustering and synergy with nearby elite research universities."
+    },
+    {
+        "id": 24,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "stimulus": "Silicon Valley in Northern California is anchored by Stanford University and UC Berkeley. It contains thousands of tech giants (Apple, Google, Meta), semiconductor firms, specialized patent law practices, and over 40% of all US venture capital firms located within a 30-mile corridor.",
+        "question": "This spatial clustering of related high-tech firms is a premier example of:",
+        "options": [
+            "Deindustrialized brownfield decay, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Traditional Stage 1 subsistence farming, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Fordist standardized assembly line production, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Agglomeration economies and technopole development",
+            "Maquiladora border processing, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 3,
+        "explanation": "Agglomeration occurs when related industries cluster together to share a specialized pool of skilled labor, knowledge spillovers, specialized legal/financial services, and venture capital, creating self-reinforcing economic growth."
+    },
+    {
+        "id": 25,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "stimulus": "In North Carolina, the 'Research Triangle' (Raleigh-Durham-Chapel Hill) was established as a planned technopole anchored by Duke University, UNC Chapel Hill, and North Carolina State University, attracting global pharmaceutical, biotechnology, and software corporations.",
+        "question": "What was the primary geographic motivation for founding Research Triangle Park?",
+        "options": [
+            "To access cheap ocean shipping for raw iron ore exports, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "To build the world's largest coal-fired steel mill, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "To leverage the intellectual capital and STEM graduate talent produced by three top research universities to transform a traditional tobacco/textile economy into a knowledge-based quaternary powerhouse.",
+            "To relocate all government offices from Washington, D.C, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "To establish a duty-free border maquiladora zone, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations."
+        ],
+        "correct": 2,
+        "explanation": "Research Triangle Park was deliberately planned to harness the research output and engineering/biotech graduates of nearby elite universities, transforming North Carolina from a declining agricultural/textile economy into a global high-tech leader."
+    },
+    {
+        "id": 26,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "question": "What is the 'Multiplier Effect' in local and regional economic development?",
+        "options": [
+            "The calculation of a country's arithmetic density multiplied by its infant mortality rate.",
+            "The mathematical multiplication of map coordinates on an Azimuthal projection.",
+            "The process of doubling tariffs on imported agricultural goods.",
+            "The phenomenon where the creation of one new basic economic job (e.g., in high-tech or manufacturing) stimulates additional consumer spending that generates multiple non-basic service jobs (e.g., in housing, restaurants, retail, healthcare, education) in the surrounding community.",
+            "The rapid increase in factory pollution over time, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 3,
+        "explanation": "The multiplier effect occurs when new basic sector jobs bring outside money into a local economy, which is re-spent locally, creating additional secondary jobs (cashiers, teachers, doctors, construction workers, mechanics) across the service sector."
+    },
+    {
+        "id": 27,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "stimulus": "When an electric vehicle battery manufacturing plant employing 3,000 engineers and assembly workers opens in a rural Georgia county, local real estate agencies, supermarkets, coffee shops, dental clinics, and daycare centers experience an economic boom, adding an estimated 5,000 new service jobs.",
+        "question": "This economic ripple effect directly demonstrates the:",
+        "options": [
+            "Multiplier Effect",
+            "Distance Decay Paradox.",
+            "Resource Curse, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Ecological Fallacy.",
+            "Friction of Distance Inversion."
+        ],
+        "correct": 0,
+        "explanation": "This is a classic illustration of the multiplier effect: the initial 3,000 high-wage manufacturing jobs inject capital into the regional economy, creating 5,000 supporting service jobs in the community."
+    },
+    {
+        "id": 28,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "question": "What is 'Deglomeration' in economic geography?",
+        "options": [
+            "The clustering of identical factories in a downtown core, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "The conversion of farmland into high-tech server farms, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The dispersal of businesses away from crowded industrial clusters due to soaring land rents, traffic congestion, high labor costs, and environmental pollution (diseconomies of scale).",
+            "The mandatory unionization of all corporate employees, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "The transition from high mass consumption back to traditional barter, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 2,
+        "explanation": "Deglomeration occurs when the costs of agglomeration (skyrocketing land rents, extreme traffic gridlock, inflated living costs, pollution) outweigh the benefits, causing companies and workers to relocate to cheaper, less congested secondary cities."
+    },
+    {
+        "id": 29,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "stimulus": "Between 2018 and 2023, numerous software tech firms and venture capitalists relocated from Silicon Valley and San Francisco to Austin (Texas), Denver (Colorado), and Salt Lake City (Utah) due to lower state corporate taxes, cheaper housing for employees, and lower office rents.",
+        "question": "This geographic migration of firms is a clear real-world manifestation of:",
+        "options": [
+            "The collapse of all quaternary sector activities in North America, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "Deglomeration driven by high operating costs in mature core clusters",
+            "A return to Fordist assembly line manufacturing, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "The establishment of Mexican border maquiladoras, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Rostow Stage 1 Traditional Society stagnation, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment."
+        ],
+        "correct": 1,
+        "explanation": "Tech companies expanding beyond Silicon Valley to lower-cost emerging hubs (Austin, Denver, Salt Lake City) is a classic example of deglomeration driven by excessive real estate and labor costs in the original agglomeration cluster."
+    },
+    {
+        "id": 30,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "Technopoles & Growth Poles",
+        "question": "How do government tax incentives, research subsidies, and infrastructure investments function as catalysts for establishing 'Growth Poles'?",
+        "options": [
+            "They force all foreign corporations to shut down their websites.",
+            "They guarantee that all manufactured products are made by hand without electricity.",
+            "They lower the initial capital risk for innovative firms, attract private investment, and create critical mass that triggers self-sustaining private agglomeration and regional economic expansion.",
+            "They eliminate the need for university higher education, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "They legally restrict workers from leaving the county."
+        ],
+        "correct": 2,
+        "explanation": "Governments seed growth poles through public investments (tax credits, science parks, modern transit, research grants) to attract anchor firms, which in turn attract suppliers, talent, and private venture capital."
+    },
+    {
+        "id": 31,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "A global athletic shoe brand designs running sneakers at its headquarters in Oregon, sources rubber from plantations in Malaysia, manufactures synthetic mesh in Taiwan, assembles the shoes in Vietnam, coordinates global accounting in the Philippines, and retails the shoes in malls across 80 countries.",
+        "question": "This worldwide production network is a comprehensive illustration of:",
+        "options": [
+            "A traditional local cottage craft industry, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Fordist vertical integration within a single factory, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "A an isolated, self-sufficient national economy, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "A subsistence farming barter network, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "A Transnational Corporation (TNC) optimizing a global commodity chain across the New International Division of Labor"
+        ],
+        "correct": 4,
+        "explanation": "Modern consumer products embody global commodity chains managed by Transnational Corporations: high-value design in the core, raw materials from the periphery, manufacturing/assembly in the semi-periphery, and service BPO across specialized nodes."
+    },
+    {
+        "id": 32,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "question": "Why did traditional steel manufacturing in the US Great Lakes region rely on Alfred Weber's 'Least Cost Theory' principles of bulk-reducing raw material orientation, whereas modern software companies are considered 'footloose'?",
+        "options": [
+            "Steel mills required heavy, bulky coal and iron ore located near rail/water transport to minimize heavy freight costs, while software data can be transmitted globally over the internet at near-zero freight cost.",
+            "Software engineers must live inside iron ore mines, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Steel is lighter than software code, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Weber's theory applies only to computer microchips, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "There is no difference in transportation costs between steel and software, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 0,
+        "explanation": "Heavy manufacturing (bulk-reducing steel) is tied to raw material sites (coal/iron) due to massive freight shipping costs. Software and digital services are 'footloose' because data moves weightlessly over fiber optic networks, allowing firms to locate anywhere with internet and talent."
+    },
+    {
+        "id": 33,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "An old industrial city in New York faces a 40% loss of manufacturing jobs. The municipal mayor proposes a three-point revitalization plan: 1. Clean up contaminated waterfront brownfields. 2. Offer tax abatements for biomedical research startups. 3. Partner with the local state university to open a high-tech incubator.",
+        "question": "The mayor's strategy aims to restructure the local economy from:",
+        "options": [
+            "A post-industrial economy back into a Stage 1 traditional society, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "A high-mass consumption society into subsistence agriculture, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "A high-tech technopole into an informal street market, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "A declining secondary manufacturing base to a knowledge-based quaternary/tertiary growth pole",
+            "A democratic municipal zone into an offshore maquiladora, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs."
+        ],
+        "correct": 3,
+        "explanation": "The plan seeks economic restructuring: transitioning from obsolete secondary manufacturing to modern quaternary/tertiary research and innovation by remediating brownfields and leveraging university talent."
+    },
+    {
+        "id": 34,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "question": "What is a 'Cottage Industry', and how does it contrast with modern factory production?",
+        "options": [
+            "Manufacturing conducted exclusively in offshore oil tankers.",
+            "Home-based, small-scale manufacturing of goods by individuals or families using hand tools prior to the Industrial Revolution, contrasted with mechanized, high-volume centralized factory production.",
+            "High-tech software coding done on quantum supercomputers, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Mass automated automotive assembly lines.",
+            "Industrial steel smelting inside urban apartment towers."
+        ],
+        "correct": 1,
+        "explanation": "Cottage industries were pre-industrial, decentralized, home-based production systems where families manufactured goods (textiles, pottery, tools) by hand on a small scale, in contrast to modern centralized mass-factory systems."
+    },
+    {
+        "id": 35,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "A solar panel manufacturer in Germany shuts down its domestic plants and opens a state-of-the-art automated mega-factory in western China near vast solar silicon supply chains and low-cost industrial electricity.",
+        "question": "This business decision was primarily driven by:",
+        "options": [
+            "Minimizing input production costs (raw materials and energy) to maintain global price competitiveness (offshoring/outsourcing)",
+            "A desire to pay higher transportation shipping tariffs, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "A legal mandate forcing German corporations to leave the European Union, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The complete absence of solar energy demand in Europe, despite government tax subsidies and infrastructure development programs designed to attract foreign direct investment.",
+            "Rostow Stage 1 agricultural regulations, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations."
+        ],
+        "correct": 0,
+        "explanation": "Firms offshore and relocate production to lower input costs (cheaper raw silicon supply chains, lower electricity costs, competitive labor) to maximize profit margins and underprice global competitors."
+    },
+    {
+        "id": 36,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "question": "Which of the following spatial patterns characterizes the 'Auto Alley' (Automotive Corridor) in the United States today?",
+        "options": [
+            "A cluster of factories located exclusively in the Rocky Mountains of Colorado, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "A ring of automotive plants along the northern Alaskan pipeline, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "An unbroken chain of assembly plants across the Mojave Desert, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "A linear corridor running along Interstates 65 and 75 from the Midwest down through Kentucky, Tennessee, Alabama, and Georgia.",
+            "A single factory located in downtown Manhattan, New York, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 3,
+        "explanation": "Modern automotive manufacturing shifted south from the old Rust Belt (Michigan/Ohio) into 'Auto Alley' along the I-65 and I-75 interstate highway corridors (Tennessee, Kentucky, Alabama, Georgia), attracted by right-to-work laws, lower labor costs, state tax incentives, and JIT highway connectivity."
+    },
+    {
+        "id": 37,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "A sociologist examines economic restructuring in a former coal-mining town in West Virginia. Following the closure of the mines, opioid addiction rates rose, population declined by 25%, and average household income dropped by half.",
+        "question": "This localized crisis demonstrates the severe socioeconomic risks of:",
+        "options": [
+            "Excessive quaternary sector high-tech research funding, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Single-industry economic dependence and a failure to achieve economic restructuring and diversification following deindustrialization",
+            "Over-expansion of public research universities, which fails to account for the environmental liabilities and ground contamination associated with heavy industrial operations.",
+            "The establishment of international technopoles, reflecting the underlying transformation toward flexible, small-batch manufacturing and outsourced global logistics networks.",
+            "Universal high-mass consumption based on standardized quantitative survey data, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing."
+        ],
+        "correct": 1,
+        "explanation": "Single-industry resource or factory towns (mono-economies) face devastating economic collapse, depopulation, and social distress when their primary employer shuts down if the local economy fails to diversify."
+    },
+    {
+        "id": 38,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "question": "What is 'Nearshoring', and why are many North American and European corporations adopting it after the COVID-19 pandemic?",
+        "options": [
+            "Moving factories to floating barges in the middle of the Pacific Ocean.",
+            "Banning all trade between neighboring countries.",
+            "Moving manufacturing operations to geographically proximate neighbor countries (e.g., US moving production to Mexico; Western Europe moving production to Eastern Europe/North Africa) to reduce shipping times and avoid long-distance trans-Pacific supply chain bottlenecks.",
+            "Relocating all factories into high-density urban residential skyscrapers, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Transitioning exclusively to Stage 1 subsistence farming."
+        ],
+        "correct": 2,
+        "explanation": "Nearshoring brings outsourced manufacturing closer to home consumer markets (e.g., US firms moving from China to Mexico) to shorten supply chain transit times, cut freight shipping costs, and protect against global shipping crises."
+    },
+    {
+        "id": 39,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "A container vessel docks at the Port of Los Angeles. 4,000 intermodal metal containers filled with electronics are transferred onto diesel freight trains and 18-wheeler semi-trucks, which travel across interstate highways to distribution warehouses within 48 hours.",
+        "question": "This seamless transfer between ocean ship, railroad, and semi-truck without unpacking individual items is known as:",
+        "options": [
+            "Traditional Cottage Production, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Fordist Vertical Stockpiling, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Brownfield Reclamation, although this transition is frequently hindered by high capital barrier costs and the lack of regional venture financing.",
+            "Subsistence Barter Exchange, which often leads to severe spatial polarization between affluent metropolitan centers and peripheral industrial suburbs.",
+            "Intermodal Containerization and Break-of-Bulk Efficiency"
+        ],
+        "correct": 4,
+        "explanation": "Intermodal containerization enables freight containers to be transferred smoothly across multiple transport modes (ship to train to truck) with minimal break-of-bulk handling costs, underpinning the entire modern globalized logistics economy."
+    },
+    {
+        "id": 40,
+        "category": "technopoles-ap-stimulus",
+        "categoryName": "AP Scenarios & Restructuring",
+        "stimulus": "A student preparing for the AP Human Geography exam reviews the central theme of Topic 7.5 (Deindustrialization and Economic Restructuring).",
+        "question": "Which of the following statements provides the most comprehensive and geographically accurate synthesis?",
+        "options": [
+            "Deindustrialization means that no manufacturing exists anywhere on planet Earth, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Economic restructuring is the global shift where manufacturing has decentralized from traditional core industrial regions (causing deindustrialization and brownfields) to lower-cost developing hubs (EPZs, SEZs, Maquiladoras), while core economies have shifted toward quaternary technopoles and tertiary services, organized by flexible Post-Fordist Just-In-Time supply chains.",
+            "All manufacturing is returning permanently to small family cottage workshops, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Fordist assembly lines have completely replaced all computers and robotics, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Supply chains are entirely self-contained within single municipal towns, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 1,
+        "explanation": "This statement accurately synthesizes the full scope of Topic 7.5: deindustrialization of historical core regions, the global shift of manufacturing to EPZs/SEZs/maquiladoras, the rise of post-industrial technopoles and services in the core, and the adoption of flexible Post-Fordist/JIT logistics."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return;
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores for Section 7.5?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>

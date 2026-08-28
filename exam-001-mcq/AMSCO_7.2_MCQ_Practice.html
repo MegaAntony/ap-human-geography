@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 7.2: Economic Sectors and Patterns (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #065f46;
+            --primary-light: #10b981;
+            --primary-bg: #ecfdf5;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #a7f3d0;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #047857;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 7: Industrial & Economic Development</h1>
+        <div class="subtitle">Topic 7.2: Economic Sectors and Patterns — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #d1fae5; max-width: 800px;">
+            Covers every concept in Section 7.2: Economic Sectors (Primary, Secondary, Tertiary, Quaternary, Quinary), Economic Measures (GDP, GNP, GNI per capita, Purchasing Power Parity / PPP), Sectoral Workforce Shifts, Social & Health Indicators (Literacy, Life Expectancy, IMR, TFR), The UN Human Development Index (HDI), Gender Inequality Index (GII) & Women's Empowerment, Microloans / Microfinance, Formal vs. Informal Economy, and Global Core-Periphery Spatial Patterns (The Brandt Line).
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="economic-sectors">Economic Sectors (Primary to Quinary)</option>
+                <option value="income-gdp-measures">Economic Indicators (GDP, GNP, GNI, PPP)</option>
+                <option value="hdi-social">Social Indicators & Human Development Index (HDI)</option>
+                <option value="gender-microloans">Gender Inequality Index (GII) & Microfinance</option>
+                <option value="informal-ap-stimulus">Formal vs. Informal Economy & AP Scenarios</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "question": "Which of the following economic activities is classified within the 'Primary Sector' of the economy?",
+        "options": [
+            "Extracting iron ore from an open-pit mine",
+            "Assembling electrical batteries in an automated factory.",
+            "Teaching AP European History at a public high school.",
+            "Designing computer algorithms for artificial intelligence.",
+            "Passing national tax legislation as a senator."
+        ],
+        "correct": 0,
+        "explanation": "The primary sector involves the direct extraction or harvesting of natural raw materials from Earth (e.g., agriculture, mining, fishing, forestry, and oil drilling)."
+    },
+    {
+        "id": 2,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "stimulus": "A textile mill in Bangladesh imports raw cotton bales, spins them into thread, weaves the thread into denim fabric, and sews the fabric into blue jeans for export to European retailers.",
+        "question": "These manufacturing and processing activities are classified under which economic sector?",
+        "options": [
+            "Primary Sector, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Tertiary Sector.",
+            "Quaternary Sector.",
+            "Quinary Sector.",
+            "Secondary Sector"
+        ],
+        "correct": 4,
+        "explanation": "The secondary sector processes, manufactures, and constructs raw materials into finished, value-added consumer and industrial goods (e.g., textile mills, car assembly, steel manufacturing, chemical refining)."
+    },
+    {
+        "id": 3,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "question": "The 'Tertiary Sector' of the economy is primarily characterized by:",
+        "options": [
+            "Providing services to consumers and businesses, such as retail, banking, tourism, healthcare, and transportation.",
+            "Extracting crude oil from offshore deep-water rigs, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Smelting bauxite ore into aluminum sheets, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Conducting biochemical research on genetic seed modification.",
+            "Formulating high-level foreign monetary policy at the World Bank."
+        ],
+        "correct": 0,
+        "explanation": "The tertiary sector is the service industry—providing commercial, personal, and professional services to individuals and businesses (e.g., retail clerks, bus drivers, nurses, restaurant workers, real estate agents)."
+    },
+    {
+        "id": 4,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "stimulus": "An economist tracks four professionals in Austin, Texas:\n1. A software engineer programming cloud database architecture.\n2. A financial quantitative analyst modeling investment risk algorithms.\n3. A biotechnology scientist conducting pharmaceutical clinical trials.\n4. A corporate management consultant advising on enterprise digital transformation.",
+        "question": "These knowledge-based, research, and information-handling occupations belong to the:",
+        "options": [
+            "Secondary Sector, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Quaternary Sector",
+            "Primary Sector, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Informal Sector, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Subsistence Sector."
+        ],
+        "correct": 1,
+        "explanation": "The quaternary sector focuses on knowledge-based, intellectual activities, information handling, data management, research and development (R&D), software engineering, financial analysis, and higher education."
+    },
+    {
+        "id": 5,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "stimulus": "The Chief Executive Officer (CEO) of a multinational tech corporation, the President of the European Central Bank, and the Supreme Court Justices of a sovereign nation make strategic decisions that impact millions of citizens and billions of dollars in capital.",
+        "question": "In the economic structure hierarchy, these elite decision-makers occupy the:",
+        "options": [
+            "Primary Sector.",
+            "Secondary Sector.",
+            "Tertiary Sector.",
+            "Quinary Sector",
+            "Subsistence Sector."
+        ],
+        "correct": 3,
+        "explanation": "The quinary sector consists of the highest-level decision-makers in society and the economy, including top government executives, corporate heads (C-suite executives), leading scientific research heads, and key policy makers."
+    },
+    {
+        "id": 6,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "stimulus": "Country X has 65% of its workforce in agriculture, 12% in manufacturing, and 23% in services. Country Y has 2% of its workforce in agriculture, 18% in manufacturing, and 80% in services and knowledge sectors.",
+        "question": "What do these sectoral employment structures reveal about Country X and Country Y?",
+        "options": [
+            "Country X is a post-industrial developed country; Country Y is a developing agrarian country, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Both countries are in Stage 2 of the Demographic Transition Model.",
+            "Country X has a higher Gross National Income per capita than Country Y.",
+            "Country Y suffers from severe subsistence food shortages.",
+            "Country X is a developing/less developed country (LDC); Country Y is a highly developed post-industrial country (MDC)."
+        ],
+        "correct": 4,
+        "explanation": "Less Developed Countries (LDCs) have high percentages of workers in the primary sector (agriculture/extraction). As countries industrialize and develop into post-industrial economies (MDCs), the workforce shifts overwhelmingly into the tertiary and quaternary service sectors, with less than 2-3% in farming due to mechanization."
+    },
+    {
+        "id": 7,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "question": "Which of the following historical transformations was the primary driver that shifted Western European and North American workforces from the primary sector to the secondary sector during the 18th and 19th centuries?",
+        "options": [
+            "The Green Revolution.",
+            "The Digital Internet Revolution.",
+            "The Industrial Revolution and rural-to-urban factory migration",
+            "The Demarcation of the Brandt Line, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The Introduction of Microloans, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility."
+        ],
+        "correct": 2,
+        "explanation": "The Industrial Revolution (mechanization of production, steam power, factories) automated farm labor and created millions of urban manufacturing jobs, driving massive migration from primary agriculture to secondary factory production."
+    },
+    {
+        "id": 8,
+        "category": "economic-sectors",
+        "categoryName": "Economic Sectors (Primary to Quinary)",
+        "stimulus": "A Newly Industrialized Country (NIC) such as Vietnam or Mexico experiences a rapid surge in foreign direct investment, with thousands of multinational electronics and automotive assembly plants opening in export processing zones.",
+        "question": "This phase of economic development is characterized by the rapid expansion of which sector?",
+        "options": [
+            "Primary Sector, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Secondary Sector",
+            "Quinary Sector, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Subsistence Sector.",
+            "Traditional Craft Sector."
+        ],
+        "correct": 1,
+        "explanation": "Newly Industrialized Countries (NICs) transition rapidly from agrarian economies into global manufacturing hubs, characterized by a booming secondary sector driven by export manufacturing."
+    },
+    {
+        "id": 9,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "question": "What is the key conceptual difference between Gross Domestic Product (GDP) and Gross National Product (GNP)?",
+        "options": [
+            "GDP measures only agricultural goods; GNP measures only manufactured goods.",
+            "GDP includes informal street vending; GNP excludes all corporate profits.",
+            "GDP is adjusted for inflation; GNP is never adjusted for currency rates.",
+            "GDP applies only to landlocked nations; GNP applies only to maritime nations.",
+            "GDP measures all economic output produced within a country's physical geographic borders; GNP measures all economic output produced by a country's citizens and corporations, regardless of whether production occurs at home or abroad."
+        ],
+        "correct": 4,
+        "explanation": "GDP measures output produced *inside* a nation's territorial borders (Domestic). GNP measures output produced by a nation's *citizens and domestic companies*, including foreign branch profits and overseas investments (National)."
+    },
+    {
+        "id": 10,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "stimulus": "An American multinational corporation (Apple Inc.) designs smartphones in California, manufactures them in Shenzhen, China, and sells them worldwide, repatriating corporate profits back to its U.S. corporate headquarters.",
+        "question": "How are these economic activities accounted for in national economic metrics?",
+        "options": [
+            "All output counts exclusively toward China's GNI, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "The smartphone sales count only toward California's agricultural density.",
+            "The profits are completely excluded from both nations' accounts.",
+            "The factory counts toward U.S. GDP because Apple is an American brand.",
+            "The physical factory manufacturing output counts toward China's GDP; the repatriated corporate profits count toward the United States' GNI/GNP."
+        ],
+        "correct": 4,
+        "explanation": "Physical assembly within China's borders is part of China's GDP (Domestic production), while the profit flows returning to the U.S. parent corporation are incorporated into U.S. Gross National Income (GNI) and Gross National Product (GNP)."
+    },
+    {
+        "id": 11,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "question": "Why do economists and geographers divide Gross National Income by total population to calculate 'GNI per capita'?",
+        "options": [
+            "To calculate the total fertility rate of female agricultural laborers.",
+            "To eliminate the need for national currency exchange rates.",
+            "To measure the average monetary income and standard of living per individual citizen, allowing meaningful economic comparisons between countries with vastly different population sizes.",
+            "To determine the arithmetic density of urban factory workers, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "To calculate the exact number of secondary schools per district, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries."
+        ],
+        "correct": 2,
+        "explanation": "GNI per capita divides total national income by total population, standardizing the figure on a per-person basis so small-population wealthy nations (like Luxembourg or Norway) can be compared accurately against massive nations (like India or China)."
+    },
+    {
+        "id": 12,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "stimulus": "In Country A, a basic basket of groceries and housing costs $1,000 USD per month. In Country B, an identical basket of groceries and housing costs only $250 USD per month due to lower domestic prices.",
+        "question": "Which economic adjustment metric accounts for these international cost-of-living differences when evaluating true standard of living?",
+        "options": [
+            "Gini Coefficient of Inequality.",
+            "Gender Empowerment Measure, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Infant Mortality Adjustment, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "Purchasing Power Parity (PPP)",
+            "Representative Fraction Ratio, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 3,
+        "explanation": "Purchasing Power Parity (PPP) adjusts income figures based on relative cost of living and local prices, measuring what a given unit of currency can actually purchase in goods and services inside a specific country."
+    },
+    {
+        "id": 13,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "question": "What is a major inherent limitation of using GNI per capita as a standalone measure of national well-being?",
+        "options": [
+            "It is impossible to calculate for countries with more than 1 million residents.",
+            "It cannot be converted into U.S. dollars.",
+            "It includes all illegal underground black market transactions.",
+            "It ignores all corporate stock dividends.",
+            "It is a national mathematical average that masks severe internal income inequality and wealth disparities between rich elites and impoverished citizens."
+        ],
+        "correct": 4,
+        "explanation": "GNI per capita is an aggregate mean: a high GNI per capita in an oil-rich oligarchy can obscure the reality that 90% of the population lives in poverty while a tiny ruling elite controls nearly all the national wealth."
+    },
+    {
+        "id": 14,
+        "category": "income-gdp-measures",
+        "categoryName": "Economic Indicators (GDP, GNP, GNI, PPP)",
+        "stimulus": "The Gini coefficient (or Gini index) is a statistical metric ranging from 0.0 to 1.0 (or 0 to 100%).",
+        "question": "What does a Gini coefficient of 0.0 represent, and what does a Gini coefficient close to 1.0 represent?",
+        "options": [
+            "0.0 = Complete economic poverty | 1.0 = Universal billionaire status.",
+            "0.0 = Perfect income equality (everyone earns identical income) | 1.0 = Perfect income inequality (one person possesses all national income)",
+            "0.0 = 100% primary workforce | 1.0 = 100% quinary workforce, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "0.0 = Zero maternal mortality | 1.0 = Zero infant mortality.",
+            "0.0 = Total industrial automation | 1.0 = Pure subsistence agriculture."
+        ],
+        "correct": 1,
+        "explanation": "The Gini coefficient measures income inequality: 0.0 (or 0) represents absolute mathematical equality (every household earns exactly the same), while 1.0 (or 100) represents absolute inequality (a single individual captures all wealth)."
+    },
+    {
+        "id": 15,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "question": "The Human Development Index (HDI), created by the United Nations Development Programme (UNDP), evaluates national development using three fundamental dimensions. What are these three dimensions?",
+        "options": [
+            "Military spending, nuclear capability, and territorial land area.",
+            "Carbon emissions, agricultural density, and percentage of arable land.",
+            "A decent standard of living (GNI per capita PPP), access to knowledge (education), and a long and healthy life (life expectancy)",
+            "Automobile ownership, broadband speed, and number of airports, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Gini coefficient, total fertility rate, and physiological density, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates."
+        ],
+        "correct": 2,
+        "explanation": "The UN Human Development Index (HDI) combines three pillars: (1) Standard of Living (GNI per capita adjusted for PPP), (2) Knowledge/Education (Mean years of schooling for adults + Expected years of schooling for children), and (3) Health (Life expectancy at birth)."
+    },
+    {
+        "id": 16,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "question": "On the Human Development Index (HDI) numerical scale, what score range is classified as 'Very High Human Development'?",
+        "options": [
+            "0.00 to 0.49, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "0.50 to 0.69, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "0.80 to 1.00",
+            "0.70 to 0.79, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "1.50 to 2.00, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 2,
+        "explanation": "The HDI scale runs from 0.0 to 1.0: Very High Human Development is 0.800 to 1.000 (e.g., Norway, Switzerland, Canada, Japan, USA); High is 0.700–0.799; Medium is 0.550–0.699; Low is below 0.550."
+    },
+    {
+        "id": 17,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "question": "Which of the following pairs of indicators are used by the UN to calculate the 'Access to Knowledge / Education' component of the HDI?",
+        "options": [
+            "Number of university professors and total library books per capita.",
+            "Mean years of schooling for adults aged 25+ and Expected years of schooling for school-age children",
+            "High school graduation percentage and STEM test scores.",
+            "Literacy rate in English and internet bandwidth speed.",
+            "Number of laptops per student and private school tuition rates."
+        ],
+        "correct": 1,
+        "explanation": "The education dimension of HDI is measured by combining: (1) Mean years of schooling (average years of education completed by adults aged 25 and older) and (2) Expected years of schooling (total years of schooling a child entering the school system can expect to receive)."
+    },
+    {
+        "id": 18,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "stimulus": "Consider two countries:\nCountry Alpha: Life expectancy at birth = 84.2 years | Infant Mortality Rate (IMR) = 2.1 per 1,000 live births\nCountry Beta: Life expectancy at birth = 53.8 years | Infant Mortality Rate (IMR) = 72.4 per 1,000 live births",
+        "question": "What do these health demographic indicators indicate about the relative development levels of Country Alpha and Country Beta?",
+        "options": [
+            "Country Alpha has an underdeveloped healthcare infrastructure and high infectious disease rates.",
+            "Country Beta has a post-industrial quaternary economy.",
+            "Country Alpha is a highly developed core nation (MDC) with advanced sanitation, clean water, and universal medical care; Country Beta is an LDC facing severe public health challenges.",
+            "Both countries have identical Human Development Index scores, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Country Alpha has a higher Total Fertility Rate than Country Beta."
+        ],
+        "correct": 2,
+        "explanation": "High life expectancy (>80 years) and low infant mortality rates (<5 per 1,000) strongly correlate with high socioeconomic development, reflecting modern hospitals, clean water, widespread vaccination, maternal care, and food security."
+    },
+    {
+        "id": 19,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "question": "How does the 'Total Fertility Rate' (TFR) typically correlate with national economic development and female educational attainment?",
+        "options": [
+            "TFR is inversely correlated with development; as women gain access to secondary/higher education, career opportunities, and family planning, TFR drops significantly (often below the 2.1 replacement level in MDCs).",
+            "TFR is positively correlated with development; wealthier women have significantly more children (TFR > 5.0), although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "TFR remains identical at 2.1 in every country regardless of economic changes, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "TFR is determined strictly by national physical land area.",
+            "TFR increases as a country shifts from the primary sector to the tertiary sector."
+        ],
+        "correct": 0,
+        "explanation": "TFR is inversely correlated with development. In less developed countries, TFR is high (4.0–6.0+). In developed post-industrial nations, increased female education, workforce participation, and urban living cause TFR to decline below the 2.1 replacement level."
+    },
+    {
+        "id": 20,
+        "category": "hdi-social",
+        "categoryName": "Human Development Index (HDI)",
+        "stimulus": "A non-governmental organization (NGO) tracks the adult literacy rate in a rural district. When the literacy rate among young women increased from 35% to 88% over two decades, infant mortality dropped by 60% and family income rose.",
+        "question": "This phenomenon highlights that female literacy is a powerful catalyst for:",
+        "options": [
+            "Increasing the national Gini coefficient, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Expanding the primary agricultural extraction sector, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Raising the adolescent birth rate. to evaluate spatial distributions across landscapes, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Accelerating overall human and economic development through improved child nutrition, healthcare practices, and workforce empowerment.",
+            "Increasing the friction of distance in rural transportation, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 3,
+        "explanation": "Educating women and raising female literacy has the highest multiplier effect on human development: literate mothers have healthier children, lower infant mortality, smaller planned families, and higher household earnings."
+    },
+    {
+        "id": 21,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "question": "The United Nations Gender Inequality Index (GII) measures gender disparities across which three critical dimensions?",
+        "options": [
+            "Military enlistment, athletic participation, and driving licenses.",
+            "Primary sector employment, marriage age, and homeownership.",
+            "GNI per capita, life expectancy, and literacy rates.",
+            "Reproductive health, empowerment, and labor market participation",
+            "Physiological density, arithmetic density, and agricultural density."
+        ],
+        "correct": 3,
+        "explanation": "The Gender Inequality Index (GII) measures gender inequality across three dimensions: (1) Reproductive Health (Maternal Mortality Ratio & Adolescent Birth Rate), (2) Empowerment (share of parliamentary seats & secondary educational attainment), and (3) Labor Market (female labor force participation rate)."
+    },
+    {
+        "id": 22,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "question": "How is the numerical score of the Gender Inequality Index (GII) interpreted?",
+        "options": [
+            "A score of 0.0 represents perfect equality (women and men fare equally across all metrics); a score of 1.0 represents complete inequality (women suffer maximum disadvantage).",
+            "A score of 1.0 represents perfect gender equality; 0.0 represents complete inequality, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Scores range from 100 to 1,000, with 100 being the highest equality.",
+            "Any score above 0.50 means women earn double the income of men.",
+            "The score measures only the percentage of female corporate CEOs."
+        ],
+        "correct": 0,
+        "explanation": "Unlike the HDI (where 1.0 is highest/best), the GII is an inequality index where 0.0 represents perfect gender equality (zero disparity) and 1.0 represents complete inequality where women face severe disadvantages across all metrics."
+    },
+    {
+        "id": 23,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "stimulus": "In Country X, 48% of parliamentary seats are held by women, female secondary school completion is 96%, and the maternal mortality ratio is 4 deaths per 100,000 live births.\nIn Country Y, 4% of parliamentary seats are held by women, female secondary school completion is 18%, and the maternal mortality ratio is 650 deaths per 100,000 live births.",
+        "question": "How do the Gender Inequality Index (GII) scores of Country X and Country Y compare?",
+        "options": [
+            "Country X has a much higher GII score (near 1.0) than Country Y, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Both countries have identical GII scores because parliamentary seats are excluded from GII, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Country Y has greater gender empowerment than Country X.",
+            "GII cannot be calculated for countries with parliamentary systems.",
+            "Country X has a very low GII score (near 0.0, indicating high gender equality); Country Y has a very high GII score (near 1.0, indicating severe gender disparity)."
+        ],
+        "correct": 4,
+        "explanation": "Country X exhibits strong reproductive healthcare, high female education, and high female political representation, yielding a very low GII score (near 0.0, high equality). Country Y suffers from severe gender disparity, yielding a high GII score (near 1.0)."
+    },
+    {
+        "id": 24,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "stimulus": "In 1976, Bangladeshi economist Muhammad Yunus founded the Grameen Bank, pioneering a financial model that provides tiny, collateral-free loans ($50 to $500) primarily to impoverished rural women to start small ventures like weaving, sewing, or purchasing a dairy cow.",
+        "question": "This development finance strategy is known as:",
+        "options": [
+            "Microloans / Microfinance",
+            "Structural Adjustment Program (SAP).",
+            "Foreign Direct Investment (FDI).",
+            "Neoliberal Privatization, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Tariff Quota Subsidy, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 0,
+        "explanation": "Microloans (or microfinance) provide small-scale, collateral-free credit to low-income entrepreneurs—especially women in developing countries—who lack access to traditional commercial banking, enabling them to build micro-enterprises and achieve self-sufficiency."
+    },
+    {
+        "id": 25,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "question": "Why do microfinance institutions overwhelmingly target women borrowers in developing regions?",
+        "options": [
+            "Commercial banks are legally prohibited from lending money to men.",
+            "Studies demonstrate that women have higher loan repayment rates and consistently reinvest a far greater portion of their business profits into children's education, family nutrition, and healthcare.",
+            "Women in developing nations work exclusively in quaternary research labs.",
+            "Microloans can only be used to purchase agricultural tractors.",
+            "International law requires microloans to be repaid in gold bullion."
+        ],
+        "correct": 1,
+        "explanation": "Empirical research shows that women borrowers achieve exceptionally high repayment rates (over 95%) and overwhelmingly channel earnings directly into family well-being—buying nutritious food, school uniforms/tuition, and medicines—lifting entire households out of poverty."
+    },
+    {
+        "id": 26,
+        "category": "gender-microloans",
+        "categoryName": "Gender Inequality & Microfinance",
+        "stimulus": "A woman in rural Kenya uses a $150 microloan from a peer-lending platform to purchase a solar-powered mobile phone charging station and a water purification pump, earning daily income from neighboring villagers.",
+        "question": "This scenario illustrates how microfinance contributes to:",
+        "options": [
+            "Increasing the national external debt crisis.",
+            "Replacing all domestic agriculture with multinational factory farms.",
+            "Female economic empowerment, local entrepreneurship, and grassroots community development",
+            "Eliminating the country's tertiary service sector, which involves manufacturing and secondary industrial processing.",
+            "Forced urbanization into squatter settlements."
+        ],
+        "correct": 2,
+        "explanation": "Microloans foster bottom-up, grassroots economic development and female empowerment, enabling women to gain financial autonomy, build community assets, and enhance local quality of life."
+    },
+    {
+        "id": 27,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "question": "Which of the following best defines the 'Informal Economy' (also known as the informal sector or shadow economy)?",
+        "options": [
+            "Economic activities that are registered with the government, subject to corporate income taxes, and protected by official labor laws.",
+            "High-frequency algorithmic trading on international stock exchanges.",
+            "Economic activities, jobs, and enterprises that operate outside formal government regulation, licensing, monitoring, and taxation, and are not counted in official GDP calculations.",
+            "Government-run postal and public transit systems, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Multinational manufacturing plants operating in free trade zones, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility."
+        ],
+        "correct": 2,
+        "explanation": "The informal economy consists of unregulated, untaxed, and unmonitored economic activities (e.g., street vendors, unregistered day laborers, home-based shoe repair, subsistence selling) that do not appear in official GDP or GNI calculations."
+    },
+    {
+        "id": 28,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "In cities like Lagos (Nigeria), Lima (Peru), and Mumbai (India), between 40% and 70% of the urban labor force works as unlicensed street hawkers, informal taxi drivers, roadside food vendors, and waste recyclers.",
+        "question": "What is a major structural vulnerability faced by workers in the informal economy?",
+        "options": [
+            "They pay excessively high corporate income tax rates, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "They lack legal labor protections, minimum wage guarantees, health insurance, workplace safety standards, and social security pensions.",
+            "They are required to hold master's degrees in computer engineering, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "They can only conduct transactions using international wire transfers, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "They are counted twice in decennial census surveys, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 1,
+        "explanation": "Informal sector workers lack formal contracts, legal labor protections, workers' compensation for injuries, health insurance, minimum wage guarantees, and retirement pensions, leaving them economically vulnerable to sudden shocks, illness, or exploitation."
+    },
+    {
+        "id": 29,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "question": "Why does official GDP and GNI per capita data significantly understate the actual economic production and standard of living in many Less Developed Countries (LDCs)?",
+        "options": [
+            "Because LDCs use currencies that have no mathematical exchange value.",
+            "Because the United Nations only measures economic output in Western Europe.",
+            "Because satellite sensors cannot photograph rural markets.",
+            "Because a vast portion of economic livelihood occurs in the unrecorded, untaxed informal sector and subsistence agriculture, which are excluded from official GDP tabulations.",
+            "Because all manufacturing in LDCs is automated by robots."
+        ],
+        "correct": 3,
+        "explanation": "Since official GDP and GNI only capture formal, tax-reported market transactions, they omit the massive informal economy and subsistence production that sustains millions of livelihoods in developing nations."
+    },
+    {
+        "id": 30,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "In 1980, former German Chancellor Willy Brandt presented a map proposing the 'Brandt Line' (or North-South Divide), drawing an undulating boundary across the globe.",
+        "question": "What spatial pattern did the historical Brandt Line demarcate?",
+        "options": [
+            "The division between democratic nations and communist states during the Cold War, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "The boundary separating high-altitude mountain biomes from low-altitude coastal plains.",
+            "The division between countries using the metric system and those using imperial units.",
+            "The maritime boundary separating international waters from territorial coastlines.",
+            "The broad geographic divide separating the wealthy, industrialized 'Global North' (North America, Europe, Japan, Australia, New Zealand) from the poorer, developing 'Global South' (Latin America, Africa, parts of Asia)."
+        ],
+        "correct": 4,
+        "explanation": "The Brandt Line was a conceptual socio-economic line that divided the rich, industrialized 'Global North' from the poorer, developing 'Global South' (noting that developed Australia and New Zealand were grouped into the Global North despite their southern latitude)."
+    },
+    {
+        "id": 31,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "question": "Why is the historical Brandt Line considered increasingly oversimplified and outdated by 21st-century geographers?",
+        "options": [
+            "Because rapid economic growth in Newly Industrialized Countries (NICs), the Asian Tigers (South Korea, Taiwan, Singapore), China, and the Gulf Oil States has blurred the rigid North-South binary.",
+            "Because all countries on Earth now have identical GDP per capita, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Because the equator has shifted 500 miles northward due to continental drift, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Because European nations have transitioned entirely back to subsistence agriculture.",
+            "Because the United Nations abolished all international development tracking."
+        ],
+        "correct": 0,
+        "explanation": "The rise of dynamic economic powerhouses (South Korea, Singapore, Taiwan, China, UAE, Qatar) located in the traditional 'South'—alongside economic turbulence in parts of the 'North'—makes the rigid binary North-South divide outdated."
+    },
+    {
+        "id": 32,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "Examine these three economic profiles:\nCountry 1: GNI per Capita = $58,000 | Primary = 1.5%, Secondary = 18.5%, Tertiary/Quaternary = 80%\nCountry 2: GNI per Capita = $12,500 | Primary = 18%, Secondary = 42%, Tertiary = 40%\nCountry 3: GNI per Capita = $1,800 | Primary = 68%, Secondary = 10%, Tertiary = 22%",
+        "question": "Which classification correctly assigns development stages to Countries 1, 2, and 3, respectively?",
+        "options": [
+            "1: Post-Industrial MDC (Core) | 2: Newly Industrialized / Developing (Semi-Periphery) | 3: Less Developed Agrarian (Periphery)",
+            "1: LDC | 2: Post-Industrial MDC | 3: NIC, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "1: Agrarian | 2: Post-Industrial | 3: Commercial, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "1: Developing | 2: High Inequality | 3: Core, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "All three countries are in identical economic stages, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 0,
+        "explanation": "Country 1 is a Post-Industrial Core nation (high GNI, 80% service/quaternary). Country 2 is a Semi-Periphery / NIC (middle income, heavy 42% manufacturing/secondary). Country 3 is a Peripheral LDC (low GNI, dominant 68% primary agriculture)."
+    },
+    {
+        "id": 33,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "A government in Southeast Asia establishes a special coastal zone where foreign multinational corporations pay 0% corporate tax for 10 years, face no import duties on raw materials, and are exempt from standard national environmental and labor regulations.",
+        "question": "This designated manufacturing area is known as an:",
+        "options": [
+            "Informal Subsistence Enclave.",
+            "Electoral Gerrymandered Precinct.",
+            "Agricultural Cadastral Reserve.",
+            "Export Processing Zone (EPZ) / Free Trade Zone",
+            "Indigenous Heritage Sanctuary."
+        ],
+        "correct": 3,
+        "explanation": "Export Processing Zones (EPZs), Special Economic Zones (SEZs), or Free Trade Zones are designated areas where governments offer tax exemptions, duty-free imports, and relaxed regulations to attract foreign direct investment (FDI) in export manufacturing."
+    },
+    {
+        "id": 34,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "A sociologist compares gender dynamics in sub-Saharan Africa. In villages where clean municipal piped water wells were installed near homes, girls' school enrollment surged by 45%.",
+        "question": "What geographic explanation accounts for this dramatic educational increase?",
+        "options": [
+            "Water wells automatically generate digital internet wifi.",
+            "The school curriculum was converted into an isoline topographic format.",
+            "Water wells increased the national Gini coefficient.",
+            "Young girls were freed from the daily burden of walking multiple hours to haul heavy water containers, allowing them to attend primary and secondary school.",
+            "The girls were recruited into secondary sector automobile factories, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 3,
+        "explanation": "In many developing rural areas, the time-consuming domestic burden of fetching water and firewood falls disproportionately on young girls. Basic infrastructure (water wells, electricity) eliminates this spatial labor, enabling girls to attend school."
+    },
+    {
+        "id": 35,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "question": "Which of the following is considered an 'ecotourism' development initiative?",
+        "options": [
+            "Building a 40-story mega-casino resort that clears 500 acres of coastal mangrove wetlands, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Constructing an open-pit coal mine in an endangered gorilla sanctuary.",
+            "Opening a duty-free luxury fashion mall along an industrial container canal.",
+            "A community-managed rainforest lodge in Costa Rica where local indigenous guides lead low-impact wildlife tours, using revenue to fund forest conservation and local schools.",
+            "Paving a multi-lane concrete expressway through a coral reef, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates."
+        ],
+        "correct": 3,
+        "explanation": "Ecotourism is responsible, low-impact travel to natural areas that conserves the environment, respects local culture, and sustains the economic well-being of local communities."
+    },
+    {
+        "id": 36,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "A major apparel corporation based in the United States shuts down its domestic sewing plants in North Carolina and contracts with private garment factories in Cambodia, where factory wages are $0.90 per hour.",
+        "question": "This geographic reorganization of manufacturing to exploit global wage differentials is an example of:",
+        "options": [
+            "Subsistence Pastoralism, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "The New International Division of Labor and Offshoring",
+            "Agricultural Intensification, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Cadastral Plat Mapping, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Topophilic Regionalism, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 1,
+        "explanation": "The New International Division of Labor involves transferring low-skill, labor-intensive secondary manufacturing jobs from high-wage core countries (MDCs) to low-wage developing nations (LDCs/NICs) to minimize production costs."
+    },
+    {
+        "id": 37,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "question": "What is 'Fair Trade', and how does it alter conventional trade relationships between LDC producers and MDC consumers?",
+        "options": [
+            "A model that eliminates all tariffs on multinational oil corporations.",
+            "A policy that mandates all coffee beans be grown in greenhouse laboratories in Western Europe.",
+            "An alternative trading partnership based on dialogue, transparency, and respect that ensures small-scale farmers and artisans in developing countries receive guaranteed fair minimum prices, safe working conditions, and environmental sustainability standards.",
+            "An international law banning all microloans in agricultural communities.",
+            "A trade treaty that forces developing nations to sell all commodities below cost."
+        ],
+        "correct": 2,
+        "explanation": "Fair Trade is a consumer-driven movement that guarantees smallholder farmers (e.g., coffee, cacao, tea growers in Latin America and Africa) a fair price floor above market crashes, democratic workplace rights, direct market access, and sustainable environmental practices."
+    },
+    {
+        "id": 38,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "A country discovers vast offshore natural gas reserves. However, the government fails to invest the energy revenues into public schools, healthcare, or economic diversification. Foreign energy corporations and corrupt political elites extract the wealth, while the local population remains impoverished and inflation surges.",
+        "question": "This paradoxical economic phenomenon is commonly known as:",
+        "options": [
+            "The Green Revolution Miracle, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "The Microfinance Dividend.",
+            "The Brandt Line Equilibrium.",
+            "The Time-Space Convergence.",
+            "The Resource Curse (or Paradox of Plenty)"
+        ],
+        "correct": 4,
+        "explanation": "The 'Resource Curse' (or Paradox of Plenty) occurs when countries with abundant non-renewable natural resources (oil, gas, minerals) experience slower economic growth, extreme corruption, violent conflict, and poorer development outcomes than countries with fewer natural resources."
+    },
+    {
+        "id": 39,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "An urban planner in Mumbai investigates why millions of migrants arriving from rural farming villages live in self-constructed informal settlements (favelas/slums/squatter settlements) like Dharavi.",
+        "question": "What is the primary structural cause driving the rapid growth of informal squatter settlements in LDC megacities?",
+        "options": [
+            "Rural-to-urban migration and urban population growth far outpace the municipal government's financial capacity to build affordable formal housing, piped water, sewers, and electricity infrastructure.",
+            "Migrants legally prefer paying high municipal property taxes on informal shacks, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "International zoning treaties prohibit the construction of permanent apartment towers, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The city has an oversupply of luxury government housing that migrants refuse to enter.",
+            "Satellite GPS systems prevent roads from being paved in urban areas."
+        ],
+        "correct": 0,
+        "explanation": "Rapid rural-to-urban migration in developing megacities overwhelms municipal budgets, forcing millions of low-income arrivals into informal squatter settlements lacking legal tenure, formal plumbing, electricity, or sewage infrastructure."
+    },
+    {
+        "id": 40,
+        "category": "informal-ap-stimulus",
+        "categoryName": "Formal vs. Informal Economy & AP Scenarios",
+        "stimulus": "A student preparing for the AP Human Geography exam synthesizes the core takeaways of Topic 7.2 (Economic Sectors and Patterns of Development).",
+        "question": "Which of the following statements provides the most comprehensive and geographically accurate synthesis?",
+        "options": [
+            "Development is measured exclusively by a nation's total military expenditure, regardless of health or education, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Economic development involves a structural shift from primary extraction toward secondary manufacturing and tertiary/quaternary knowledge services, accompanied by multidimensional improvements in living standards (GNI/PPP), health (life expectancy/IMR), education (literacy/schooling), and gender equality (GII/empowerment).",
+            "All countries follow identical development paths at the exact same pace with zero informal economy, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Gender equality has no measurable relationship to national economic productivity or infant mortality rates, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The primary sector becomes larger and employs more workers as a country becomes an MDC, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 1,
+        "explanation": "This statement accurately captures the multidimensional essence of Topic 7.2: structural workforce transitions from primary to tertiary/quaternary sectors, integrated with economic (GNI/PPP), social (HDI, education, health), and gender empowerment (GII, microfinance) indicators."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return;
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores for Section 7.2?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>

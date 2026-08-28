@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Human Geography - Exam 001 MCQ Practice Portal</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --card-hover-shadow: 0 12px 24px -4px rgb(0 0 0 / 0.12), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Top Nav */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 12px 20px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid var(--border);
+        }
+        .nav-btn-secondary:hover {
+            background: #e2e8f0;
+            color: #1e293b;
+        }
+
+        .nav-btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        .nav-btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        /* Hero Banner */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+            color: white;
+            padding: 40px 32px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+            margin-bottom: 32px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #dbeafe;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* Quick Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Topic Cards Grid */
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title span {
+            background: #e2e8f0;
+            color: #475569;
+            font-size: 0.8rem;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .topic-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-hover-shadow);
+            border-color: #cbd5e1;
+        }
+
+        .card-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .topic-pill {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pill-blue { background: #eff6ff; color: #1d4ed8; }
+        .pill-teal { background: #f0fdfa; color: #0f766e; }
+        .pill-amber { background: #fff7ed; color: #c2410c; }
+        .pill-green { background: #ecfdf5; color: #047857; }
+        .pill-pink { background: #fdf2f8; color: #be185d; }
+        .pill-indigo { background: #eef2ff; color: #4338ca; }
+
+        .question-count {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .topic-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .topic-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.55;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-launch {
+            flex-grow: 1;
+            text-align: center;
+            text-decoration: none;
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-launch:hover {
+            background: #1d4ed8;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Navigation Bar -->
+    <nav class="top-nav">
+        <a href="../index.html" class="nav-brand">
+            📚 AP Human Geography Hub
+        </a>
+        <div class="nav-links">
+            <a href="../exam-001/index.html" class="nav-btn nav-btn-secondary">📝 FRQ Study Guides</a>
+            <a href="index.html" class="nav-btn nav-btn-primary">🎯 MCQ Practice Portal</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header>
+        <div class="hero-badge">AMSCO® AP® Human Geography — 2nd Edition</div>
+        <h1>Exam 001: Multiple Choice Question Practice Portal</h1>
+        <p>
+            Master all core curriculum topics for Exam 001 with 240 interactive, AP-style multiple choice questions. Features real-time scoring, randomized option lengths to prevent guessing heuristics, subtopic filters, and comprehensive explanatory rationales for every question.
+        </p>
+    </header>
+
+    <!-- Overview Stats -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Core Exam Topics</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">240</div>
+            <div class="stat-label">Total Practice Questions</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">40 Qs</div>
+            <div class="stat-label">Per Topic Exam Module</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Instant Rationales & Keys</div>
+        </div>
+    </div>
+
+    <!-- Unit 1 Section -->
+    <div class="section-title">
+        Unit 1: Thinking Geographically <span>3 Topics (120 Questions)</span>
+    </div>
+
+    <div class="cards-grid">
+        <!-- Topic 1.1 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-blue">Topic 1.1</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">Introduction to Maps</h2>
+                <p class="topic-desc">
+                    Reference vs. thematic maps (choropleth, dot density, isoline, graduated symbol, cartograms, flow-line), cartographic vs. geographic scale, map projections (Mercator, Gall-Peters, Robinson, Polar Azimuthal, Conic), and SADD distortions.
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Reference Maps</span>
+                    <span class="tag">Thematic Maps</span>
+                    <span class="tag">Scale Fractions</span>
+                    <span class="tag">Mercator</span>
+                    <span class="tag">Gall-Peters</span>
+                    <span class="tag">Contour Lines</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_1.1_MCQ_Practice.html" class="btn-launch">Launch 1.1 Practice Exam →</a>
+            </div>
+        </div>
+
+        <!-- Topic 1.2 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-teal">Topic 1.2</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">Geographic Data</h2>
+                <p class="topic-desc">
+                    Fieldwork and landscape analysis, decennial census mandates and spatial units, quantitative vs. qualitative data, geospatial technologies (GIS layering, GPS trilateration, active vs. passive Remote Sensing, LiDAR), and geospatial privacy ethics.
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Fieldwork</span>
+                    <span class="tag">Census Hierarchy</span>
+                    <span class="tag">GIS Layering</span>
+                    <span class="tag">GPS Trilateration</span>
+                    <span class="tag">Remote Sensing</span>
+                    <span class="tag">Spatial Ethics</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_1.2_MCQ_Practice.html" class="btn-launch" style="background-color: #0f766e;">Launch 1.2 Practice Exam →</a>
+            </div>
+        </div>
+
+        <!-- Topic 1.3 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-amber">Topic 1.3</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">The Power of Geographic Data</h2>
+                <p class="topic-desc">
+                    Spatial decision-making across scales (local to global), Tobler's First Law and distance decay, time-space compression, the Gravity Model, Dr. John Snow's 1854 cholera study, partisan gerrymandering (packing & cracking), and historical redlining legacies.
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Distance Decay</span>
+                    <span class="tag">Gravity Model</span>
+                    <span class="tag">John Snow Cholera</span>
+                    <span class="tag">Gerrymandering</span>
+                    <span class="tag">Redlining</span>
+                    <span class="tag">Time-Space Compression</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_1.3_MCQ_Practice.html" class="btn-launch" style="background-color: #c2410c;">Launch 1.3 Practice Exam →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unit 7 Section -->
+    <div class="section-title">
+        Unit 7: Industrial & Economic Development <span>3 Topics (120 Questions)</span>
+    </div>
+
+    <div class="cards-grid">
+        <!-- Topic 7.2 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-green">Topic 7.2</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">Economic Sectors and Patterns</h2>
+                <p class="topic-desc">
+                    Primary through quinary economic sectors, GDP/GNP/GNI per capita, Purchasing Power Parity (PPP), Gini coefficient of inequality, UN Human Development Index (HDI), Gender Inequality Index (GII), female literacy multiplier, microloans, and informal economies.
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Economic Sectors</span>
+                    <span class="tag">GNI per Capita</span>
+                    <span class="tag">PPP</span>
+                    <span class="tag">HDI Index</span>
+                    <span class="tag">GII & Microfinance</span>
+                    <span class="tag">Informal Economy</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_7.2_MCQ_Practice.html" class="btn-launch" style="background-color: #047857;">Launch 7.2 Practice Exam →</a>
+            </div>
+        </div>
+
+        <!-- Topic 7.3 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-pink">Topic 7.3</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">Theories and Models of Development</h2>
+                <p class="topic-desc">
+                    Rostow's 5 Stages of Economic Growth and its critiques, Wallerstein's World Systems Theory (Core, Semi-Periphery, Periphery), Dependency Theory, commodity dependence (>60% threshold), multi-scale core-periphery dynamics, and the 17 UN Sustainable Development Goals (SDGs).
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Rostow 5 Stages</span>
+                    <span class="tag">Wallerstein WST</span>
+                    <span class="tag">Core-Periphery</span>
+                    <span class="tag">Dependency Theory</span>
+                    <span class="tag">Commodity Traps</span>
+                    <span class="tag">UN SDGs 2030</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_7.3_MCQ_Practice.html" class="btn-launch" style="background-color: #be185d;">Launch 7.3 Practice Exam →</a>
+            </div>
+        </div>
+
+        <!-- Topic 7.5 -->
+        <div class="topic-card">
+            <div>
+                <div class="card-top-bar">
+                    <span class="topic-pill pill-indigo">Topic 7.5</span>
+                    <span class="question-count">40 Questions</span>
+                </div>
+                <h2 class="topic-title">Deindustrialization and Restructuring</h2>
+                <p class="topic-desc">
+                    Deindustrialization, Rust Belt to Sun Belt migration, brownfield remediation, New International Division of Labor, offshoring vs. outsourcing, Business Process Outsourcing (BPO in India & Philippines), Mexican Maquiladoras, China SEZs, Fordism vs. Post-Fordism, Just-in-Time (JIT) delivery, and technopoles.
+                </p>
+                <div class="topic-tags">
+                    <span class="tag">Rust Belt</span>
+                    <span class="tag">Brownfields</span>
+                    <span class="tag">Offshoring & BPO</span>
+                    <span class="tag">Maquiladoras</span>
+                    <span class="tag">China SEZs</span>
+                    <span class="tag">Just-In-Time (JIT)</span>
+                    <span class="tag">Technopoles</span>
+                </div>
+            </div>
+            <div class="card-actions">
+                <a href="AMSCO_7.5_MCQ_Practice.html" class="btn-launch" style="background-color: #4338ca;">Launch 7.5 Practice Exam →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© AP Human Geography Study Hub | Designed for comprehensive Exam 001 preparation.</p>
+        <p style="margin-top: 6px;">
+            <a href="../exam-001/index.html">View FRQ Study Guides</a> • 
+            <a href="https://github.com/MegaAntony/ap-human-geography">GitHub Repository</a>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

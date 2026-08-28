@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSCO AP Human Geography - Topic 7.3: Theories and Models of Development (Comprehensive MCQ Practice)</title>
+    <style>
+        :root {
+            --primary: #831843;
+            --primary-light: #db2777;
+            --primary-bg: #fdf2f8;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --danger: #b91c1c;
+            --danger-bg: #fee2e2;
+            --warning: #b45309;
+            --warning-bg: #fef3c7;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #831843 0%, #9d174d 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #fbcfe8;
+            margin-bottom: 15px;
+        }
+
+        .book-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sticky Control Bar */
+        .controls-sticky {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-group {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .stat-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--gray-100);
+        }
+
+        .stat-badge span {
+            color: var(--primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #9d174d;
+        }
+
+        .btn-secondary {
+            background-color: var(--gray-100);
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+        .btn-secondary:hover {
+            background-color: var(--gray-200);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            background: white;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Question Cards */
+        .q-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-bg);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .q-stimulus {
+            background: var(--gray-50);
+            border-left: 4px solid var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 14px;
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        /* Option List */
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+            user-select: none;
+        }
+
+        .option-item:hover:not(.locked) {
+            background: var(--gray-50);
+            border-color: var(--primary-light);
+        }
+
+        .option-letter {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .option-content {
+            font-size: 0.95rem;
+            color: var(--gray-800);
+            flex-grow: 1;
+        }
+
+        /* Result States */
+        .option-item.selected-correct {
+            background-color: var(--success-bg) !important;
+            border-color: var(--success) !important;
+        }
+        .option-item.selected-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-item.selected-incorrect {
+            background-color: var(--danger-bg) !important;
+            border-color: var(--danger) !important;
+        }
+        .option-item.selected-incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .option-item.show-answer-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+        .option-item.show-answer-correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .explanation-box {
+            display: none;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            border: 1px solid var(--gray-300);
+            margin-top: 14px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .explanation-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .explanation-text {
+            font-size: 0.92rem;
+            color: var(--gray-700);
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .controls-sticky, .btn-group, .filter-select {
+                display: none;
+            }
+            .q-card {
+                page-break-inside: avoid;
+                border: 1px solid #ccc;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            .explanation-box {
+                display: block !important;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="book-badge">AMSCO® AP® Human Geography — 2nd Edition (David Palmer)</div>
+        <h1 style="margin-top: 12px;">Unit 7: Industrial & Economic Development</h1>
+        <div class="subtitle">Topic 7.3: Theories and Models of Development — Comprehensive Multiple Choice Mastery Bank</div>
+        <p style="font-size: 0.88rem; color: #fce7f3; max-width: 800px;">
+            Covers every concept in Section 7.3: Rostow's Stages of Economic Growth (Traditional Society, Preconditions for Takeoff, Takeoff, Drive to Maturity, Age of High Mass Consumption), Critiques of Rostow (Eurocentric bias, linear assumptions, resource constraints), Wallerstein's World Systems Theory (Core, Semi-Periphery, Periphery), Dependency Theory & Commodity Dependence, Multi-Scale Core-Periphery Dynamics, and the UN Sustainable Development Goals (SDGs).
+        </p>
+    </header>
+
+    <div class="controls-sticky">
+        <div class="stats-group">
+            <div class="stat-badge">Total Questions: <span id="total-count">40</span></div>
+            <div class="stat-badge">Answered: <span id="answered-count">0</span></div>
+            <div class="stat-badge">Score: <span id="score-val">0 / 0 (0%)</span></div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="topic-filter" class="filter-select">
+                <option value="all">All Subtopics (All 40 Questions)</option>
+                <option value="rostow-stages">Rostow's 5 Stages of Economic Growth</option>
+                <option value="rostow-critiques">Critiques of Rostow & Modernization Theory</option>
+                <option value="wallerstein-wst">Wallerstein's World Systems Theory (Core-Periphery)</option>
+                <option value="dependency-commodity">Dependency Theory & Commodity Dependence</option>
+                <option value="sdgs-ap-stimulus">UN Sustainable Development Goals & AP Scenarios</option>
+            </select>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleAllExplanations()">Show/Hide All Keys</button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">Reset Progress</button>
+                <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUESTIONS CONTAINER -->
+    <div id="questions-container"></div>
+</div>
+
+<script>
+const questionsData = [
+    {
+        "id": 1,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "question": "In W.W. Rostow's Stages of Economic Growth (1960), what are the five linear stages in their correct chronological sequence?",
+        "options": [
+            "Traditional Society → Preconditions for Takeoff → Takeoff → Drive to Maturity → Age of High Mass Consumption",
+            "Traditional Society → Takeoff → Preconditions for Takeoff → Drive to Maturity → High Mass Consumption.",
+            "Preconditions for Takeoff → Traditional Society → Drive to Maturity → Takeoff → Post-Industrial Society.",
+            "Primary Extraction → Secondary Assembly → Tertiary Service → Quaternary Knowledge → Quinary Policy.",
+            "Periphery → Semi-Periphery → Core → Post-Core → Globalized Network."
+        ],
+        "correct": 0,
+        "explanation": "Rostow's 5-stage modernization model follows a strict linear sequence: 1. Traditional Society → 2. Preconditions for Takeoff → 3. Takeoff → 4. Drive to Maturity → 5. Age of High Mass Consumption."
+    },
+    {
+        "id": 2,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "stimulus": "A nation's economy is characterized by subsistence agriculture using hand tools and animal power. A large portion of national wealth is spent on non-productive cultural institutions and military defense, and technological change is viewed with deep skepticism by a rigid hereditary aristocracy.",
+        "question": "According to Rostow's model, which stage of economic growth is this country experiencing?",
+        "options": [
+            "Stage 2: Preconditions for Takeoff.",
+            "Stage 3: Takeoff.",
+            "Stage 1: Traditional Society",
+            "Stage 4: Drive to Maturity, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Stage 5: Age of High Mass Consumption."
+        ],
+        "correct": 2,
+        "explanation": "Stage 1 (Traditional Society) is dominated by subsistence agriculture, low technological capabilities, rigid social structures, and resource allocation to non-productive activities (monuments, military, religious hierarchy)."
+    },
+    {
+        "id": 3,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "stimulus": "In Country Z, an innovative leadership elite takes political power. They secure international loans to construct deep-water ports, paved national highways, and hydroelectric dams, while beginning to export cash-crop palm oil to global buyers.",
+        "question": "In Rostow's framework, Country Z is entering which stage?",
+        "options": [
+            "Stage 1: Traditional Society.",
+            "Stage 2: Preconditions for Takeoff (The Transitional Stage)",
+            "Stage 3: Takeoff, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Stage 4: Drive to Maturity, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Stage 5: Age of High Mass Consumption."
+        ],
+        "correct": 1,
+        "explanation": "Stage 2 (Preconditions for Takeoff) features an elite group initiating progressive economic changes, investments in foundational infrastructure (roads, ports, energy), and commercializing raw material exports."
+    },
+    {
+        "id": 4,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "stimulus": "During the late 18th century in Great Britain, the textile industry experienced rapid mechanization with steam-powered spinning frames. Factory employment exploded, millions migrated from countryside farms to Manchester, and industrial profits were reinvested directly into new machinery.",
+        "question": "This transformative phase of rapid industrialization corresponds to Rostow's:",
+        "options": [
+            "Stage 1: Traditional Society.",
+            "Stage 2: Preconditions for Takeoff.",
+            "Stage 4: Drive to Maturity.",
+            "Stage 3: Takeoff",
+            "Stage 5: Age of High Mass Consumption."
+        ],
+        "correct": 3,
+        "explanation": "Stage 3 (Takeoff) is characterized by rapid, dynamic growth concentrated in a few key leading manufacturing industries (like textiles or food processing), major technological breakthroughs, accelerating urbanization, and substantial capital reinvestment."
+    },
+    {
+        "id": 5,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "stimulus": "Over a 40-year period, Country M expands technological innovation from basic textiles into advanced steel manufacturing, chemical refining, automotive production, and electrical power generation. Workers become highly skilled, and international trade diversifies widely.",
+        "question": "Country M has progressed into which stage of Rostow's model?",
+        "options": [
+            "Stage 1: Traditional Society.",
+            "Stage 2: Preconditions for Takeoff.",
+            "Stage 3: Takeoff.",
+            "Stage 4: Drive to Maturity",
+            "Stage 5: Age of High Mass Consumption."
+        ],
+        "correct": 3,
+        "explanation": "Stage 4 (Drive to Maturity) occurs as advanced modern technology diffuses across a wide variety of industries (beyond the initial takeoff sectors), creating a skilled, specialized workforce and broad participation in international trade."
+    },
+    {
+        "id": 6,
+        "category": "rostow-stages",
+        "categoryName": "Rostow's Stages of Growth",
+        "stimulus": "In post-WWII United States, the majority of the labor force works in tertiary service and office jobs. Citizens enjoy high disposable incomes, allowing widespread purchasing of passenger automobiles, washing machines, color televisions, and suburban single-family homes.",
+        "question": "This economic reality defines Rostow's:",
+        "options": [
+            "Stage 1: Traditional Society.",
+            "Stage 2: Preconditions for Takeoff.",
+            "Stage 5: Age of High Mass Consumption",
+            "Stage 3: Takeoff, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Stage 4: Drive to Maturity."
+        ],
+        "correct": 2,
+        "explanation": "Stage 5 (Age of High Mass Consumption) is marked by a dominant tertiary/service economy, high disposable income, broad middle-class consumerism, and the mass production of consumer durable goods (cars, appliances, electronics)."
+    },
+    {
+        "id": 7,
+        "category": "rostow-critiques",
+        "categoryName": "Critiques of Rostow's Model",
+        "question": "Which of the following is a major geographic and economic critique of Rostow's Stages of Economic Growth?",
+        "options": [
+            "It places too much emphasis on socialist central planning.",
+            "It assumes that all countries can and will follow a linear, Western European/North American development trajectory, ignoring colonial exploitation and structural barriers.",
+            "It claims that agriculture is completely unnecessary for human survival, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "It requires all nations to use the exact same currency, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "It predicts that all countries will eventually return to subsistence farming."
+        ],
+        "correct": 1,
+        "explanation": "A primary critique is Eurocentric linear bias: Rostow based his model on the historical experience of Western Europe and the US, assuming all developing countries could follow the same linear path while ignoring how colonialism locked many LDCs into unequal global trade relationships."
+    },
+    {
+        "id": 8,
+        "category": "rostow-critiques",
+        "categoryName": "Critiques of Rostow's Model",
+        "question": "How does Rostow's model overlook environmental and ecological sustainability?",
+        "options": [
+            "It bans the use of solar and wind renewable energy in Stage 5, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "It assumes Earth possesses infinite fossil fuel and mineral resources, overlooking the fact that global high mass consumption causes catastrophic resource depletion and climate change.",
+            "It requires all countries to turn 100% of their land into national parks, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "It forbids manufacturing in tropical biomes, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "It forces all factories to operate on watermills, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 1,
+        "explanation": "Rostow assumed endless economic growth and mass consumption, ignoring the planet's ecological carrying capacity, finite fossil fuel reserves, pollution, carbon emissions, and global climate limits."
+    },
+    {
+        "id": 9,
+        "category": "rostow-critiques",
+        "categoryName": "Critiques of Rostow's Model",
+        "stimulus": "A critic notes that when Britain, Germany, and the United States industrialized in the 1800s, they faced minimal global competition and extracted cheap raw materials from their overseas colonies. Developing nations today face fierce competition from established multinational conglomerates.",
+        "question": "This critique challenges Rostow's assumption of:",
+        "options": [
+            "Uniform global starting conditions and independent national development without external geopolitical barriers",
+            "The mathematical accuracy of representative fraction map scales.",
+            "The necessity of human language in trade.",
+            "The physical location of the Greenwich Meridian.",
+            "The use of arithmetic population density."
+        ],
+        "correct": 0,
+        "explanation": "Rostow treated each country as an isolated, independent entity that develops internally, ignoring that today's developing nations operate in a highly unequal global capitalist market dominated by established core powers."
+    },
+    {
+        "id": 10,
+        "category": "rostow-critiques",
+        "categoryName": "Critiques of Rostow's Model",
+        "question": "Why do critics argue that Rostow's model ignores spatial inequality within developing countries?",
+        "options": [
+            "Because developing nations have no geographic borders, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Because all citizens in LDCs earn identical salaries under international treaties.",
+            "Because GPS data proves that income is uniform across all latitudes.",
+            "Because Rostow only studied uninhabited islands.",
+            "Because an LDC can have a wealthy, modern industrial urban core (Stage 4) while its surrounding rural hinterlands remain in extreme subsistence poverty (Stage 1)."
+        ],
+        "correct": 4,
+        "explanation": "Rostow assigned an entire country to a single stage, masking internal dual economies—such as a modern, high-tech capital city (e.g., Nairobi, Mumbai) coexisting alongside vast rural regions still practicing subsistence agriculture."
+    },
+    {
+        "id": 11,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "stimulus": "Sociologist Immanuel Wallerstein proposed World Systems Theory in the 1970s, arguing that the global economy is a single integrated capitalist system divided into three structural tiers.",
+        "question": "What are the three tiers of Wallerstein's World Systems Theory?",
+        "options": [
+            "Core, Semi-Periphery, and Periphery",
+            "First World, Second World, and Third World.",
+            "Traditional, Industrial, and Post-Industrial.",
+            "Primary, Secondary, and Tertiary.",
+            "Urban, Suburban, and Rural."
+        ],
+        "correct": 0,
+        "explanation": "Wallerstein's World Systems Theory establishes a three-tiered spatial structure: Core, Semi-Periphery, and Periphery, bound together by an unequal international division of labor."
+    },
+    {
+        "id": 12,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "question": "Which of the following characteristics defines a 'Core' country in Wallerstein's model?",
+        "options": [
+            "Dominance in low-wage subsistence agriculture and raw mineral extraction, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "Complete absence of military defense infrastructure, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Dependency on foreign food aid for basic survival, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "High levels of capital accumulation, advanced high-skill technology, high education levels, high salaries, and economic dominance over global financial institutions.",
+            "Total exclusion from international trade organizations, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 3,
+        "explanation": "Core countries (e.g., USA, Germany, Japan, UK) generate high wealth, possess advanced quaternary/tertiary sectors, high wages, high education, strong state institutions, and dominant multinational corporations."
+    },
+    {
+        "id": 13,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "question": "Which of the following characteristics defines a 'Periphery' country in Wallerstein's model?",
+        "options": [
+            "Corporate headquarters of the world's largest investment banks.",
+            "Dominance of high-tech artificial intelligence research labs.",
+            "Universal high-mass consumption among all citizens.",
+            "Low-wage labor, low technological development, weak government institutions, and an economy centered on extracting and exporting cheap raw materials/agricultural commodities to the core.",
+            "Control over international shipping container standards."
+        ],
+        "correct": 3,
+        "explanation": "Periphery countries (e.g., Chad, DR Congo, Afghanistan, Haiti) have low levels of industrialization, low wages, rudimentary tech, and economies dependent on providing cheap raw materials and labor to the core."
+    },
+    {
+        "id": 14,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "stimulus": "Countries like Brazil, China, India, Mexico, and South Africa export manufactured consumer goods and electronics to core nations while also importing cheap raw minerals and agricultural labor from peripheral nations.",
+        "question": "In Wallerstein's framework, these countries are classified as:",
+        "options": [
+            "The Core.",
+            "The Periphery.",
+            "The Non-Aligned Traditional Tier.",
+            "The Semi-Periphery",
+            "The Subsistence Fringe."
+        ],
+        "correct": 3,
+        "explanation": "Semi-periphery countries (including the BRICS and NICs) occupy an intermediate position: they have growing manufacturing sectors, intermediate wages, and both exploit the periphery while being economically influenced/exploited by the core."
+    },
+    {
+        "id": 15,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "question": "How does Wallerstein's World Systems Theory differ fundamentally from Rostow's Stages of Economic Growth?",
+        "options": [
+            "Rostow focuses on international communism; Wallerstein focuses on free market capitalism.",
+            "Rostow studied only Asia; Wallerstein studied only South America.",
+            "Rostow views development as a national internal linear progression that all countries can achieve; Wallerstein views development as a global structural system where core wealth actively depends on peripheral exploitation.",
+            "Rostow rejects the Industrial Revolution; Wallerstein claims it never occurred, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "There is no difference; both models were written by the same author, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates."
+        ],
+        "correct": 2,
+        "explanation": "Rostow's modernization model assumes all countries can independently climb 5 stages of wealth. In sharp contrast, Wallerstein's World Systems Theory argues that underdevelopment in the periphery is structural—periphery countries remain poor because the capitalist world system extracts their wealth to enrich the core."
+    },
+    {
+        "id": 16,
+        "category": "wallerstein-wst",
+        "categoryName": "Wallerstein's World Systems",
+        "stimulus": "In Brazil, the southeastern metropolitan region around São Paulo and Rio de Janeiro possesses advanced financial banking, high-tech manufacturing, and high-income tertiary jobs, while the rural Northeast region suffers from severe drought, low literacy, and subsistence poverty.",
+        "question": "This internal national dynamic demonstrates that the Core-Periphery model can be applied at which geographic scale?",
+        "options": [
+            "The sub-national / regional scale within an individual country",
+            "The extraterrestrial planetary scale, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "The global supranational scale only, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "The international maritime treaty scale, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "The cadastral plat scale exclusively, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas."
+        ],
+        "correct": 0,
+        "explanation": "Core-periphery dynamics are scale-free: they operate globally (Core nations vs. Peripheral nations) as well as sub-nationally within a single country (prosperous urban economic core vs. impoverished rural periphery)."
+    },
+    {
+        "id": 17,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "question": "What is the core argument of 'Dependency Theory' in human geography?",
+        "options": [
+            "Political and economic relationships between countries have created an unequal global structure where developing nations remain poor and dependent on wealthy nations for capital, manufactured goods, and technology.",
+            "Core nations are financially dependent on foreign humanitarian food aid from LDCs.",
+            "All countries are completely self-sufficient and independent of global trade.",
+            "Tropical climates prevent human beings from developing language.",
+            "Infant mortality rates depend strictly on geographic latitude."
+        ],
+        "correct": 0,
+        "explanation": "Dependency Theory posits that resources and wealth flow from a 'periphery' of poor and underdeveloped states to a 'core' of wealthy states, actively maintaining the wealth of the core and the poverty/dependency of the periphery."
+    },
+    {
+        "id": 18,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "stimulus": "Under British colonial rule, Ghana was developed primarily to export raw cocoa beans to European chocolate factories. Decades after political independence, Ghana still exports raw unprocessed cocoa at low global commodity prices while importing expensive packaged European chocolates.",
+        "question": "This persistent unequal economic structure is an example of:",
+        "options": [
+            "Stage 5 High Mass Consumption, although historical census surveys frequently undercounted marginalized demographic cohorts in urban fringe areas.",
+            "A balanced self-sufficiency economic model.",
+            "An isoline topographic equilibrium.",
+            "Ecotourism conservation.",
+            "Neocolonialism and unequal terms of trade"
+        ],
+        "correct": 4,
+        "explanation": "Neocolonialism refers to the indirect economic, financial, and cultural dominance that core nations maintain over former colonies through unequal terms of trade (selling cheap raw materials, buying expensive finished goods)."
+    },
+    {
+        "id": 19,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "question": "According to the United Nations Conference on Trade and Development (UNCTAD), a country is considered 'Commodity Dependent' when primary commodities account for what percentage of its total merchandise export revenue?",
+        "options": [
+            "Over 60%",
+            "Over 10%, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Over 25%, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Over 99%.",
+            "Over 5%."
+        ],
+        "correct": 0,
+        "explanation": "UNCTAD classifies a nation as 'commodity dependent' when primary commodities (agricultural crops, raw minerals, crude oil) comprise more than 60% of its total merchandise export value."
+    },
+    {
+        "id": 20,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "stimulus": "Country K relies on crude oil exports for 88% of its government budget. When global oil prices crash from $110 a barrel to $35 a barrel, the government is forced to slash funding for schools, hospitals, and food subsidies, triggering a national economic crisis.",
+        "question": "This crisis illustrates the primary structural danger of:",
+        "options": [
+            "Having a high Human Development Index score, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Transitioning into the quaternary sector, which focuses on raw material harvesting and natural resource extraction.",
+            "Joining the World Trade Organization, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "High commodity dependence and vulnerability to global market price volatility",
+            "Promoting female microfinance initiatives, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 3,
+        "explanation": "Commodity-dependent economies are acutely vulnerable to global boom-and-bust price shocks. When global prices for their single export drop, government revenues collapse, causing fiscal crises and poverty."
+    },
+    {
+        "id": 21,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "question": "Which of the following geographic regions contains the highest concentration of commodity-dependent nations in the world?",
+        "options": [
+            "Western and Northern Europe.",
+            "East Asia (Japan, South Korea, Taiwan).",
+            "Sub-Saharan Africa and parts of Latin America",
+            "North America (United States and Canada).",
+            "Australia and New Zealand."
+        ],
+        "correct": 2,
+        "explanation": "Sub-Saharan Africa has the highest concentration of commodity-dependent countries (over 80% of nations in the region rely on raw agricultural, mineral, or energy exports), alongside parts of South America and Central Asia."
+    },
+    {
+        "id": 22,
+        "category": "dependency-commodity",
+        "categoryName": "Dependency & Commodity Dependence",
+        "stimulus": "To overcome severe commodity dependence, the government of Costa Rica invested in universal public education, built eco-industrial parks for medical device manufacturing, and promoted global software engineering alongside its traditional coffee exports.",
+        "question": "This government strategy is known as:",
+        "options": [
+            "Structural peripheralization.",
+            "Cadastral annexation.",
+            "Economic diversification",
+            "Primary sector specialization.",
+            "Neocolonial retrenchment."
+        ],
+        "correct": 2,
+        "explanation": "Economic diversification is the process of expanding an economy away from a single commodity or primary product into secondary manufacturing and tertiary/quaternary knowledge services, reducing economic vulnerability."
+    },
+    {
+        "id": 23,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "In 2015, all 193 United Nations member states adopted the 2030 Agenda for Sustainable Development, establishing a universal blueprint for peace and prosperity.",
+        "question": "How many Sustainable Development Goals (SDGs) were established by the United Nations, and what is their target completion year?",
+        "options": [
+            "8 goals; target year 2015.",
+            "17 goals; target year 2030",
+            "10 goals; target year 2050, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "5 goals; target year 2025, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "20 goals; target year 2100."
+        ],
+        "correct": 1,
+        "explanation": "The UN established 17 Sustainable Development Goals (SDGs) in 2015 with a target completion deadline of 2030 (succeeding the earlier 8 Millennium Development Goals which ran from 2000 to 2015)."
+    },
+    {
+        "id": 24,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "Which of the following correctly identifies UN Sustainable Development Goal 1 (SDG 1)?",
+        "options": [
+            "No Poverty (End poverty in all its forms everywhere)",
+            "Affordable and Clean Energy, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Life Below Water, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Industry, Innovation, and Infrastructure, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Peace, Justice, and Strong Institutions, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data."
+        ],
+        "correct": 0,
+        "explanation": "SDG 1 is 'No Poverty'—aiming to eradicate extreme poverty (people living on less than $2.15/day) and ensure social protection systems for all vulnerable populations."
+    },
+    {
+        "id": 25,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "How do the UN Sustainable Development Goals (SDGs) differ fundamentally from the earlier Millennium Development Goals (MDGs)?",
+        "options": [
+            "The MDGs applied only to European nations; the SDGs apply only to Antarctica.",
+            "The SDGs eliminated all goals related to women's education.",
+            "The MDGs were designed by corporate banks; the SDGs were written by private charities.",
+            "There is no difference; both consist of the exact same 8 goals.",
+            "The MDGs focused primarily on developing nations to reduce extreme poverty; the SDGs are universal, applying to all countries (both developed core and developing peripheral nations) and integrating environmental sustainability with economic growth."
+        ],
+        "correct": 4,
+        "explanation": "Unlike the MDGs (which targeted developing LDCs), the SDGs are universal (applying to all MDCs and LDCs) and explicitly balance the 'Triple Bottom Line': economic prosperity, social inclusion, and planetary environmental protection."
+    },
+    {
+        "id": 26,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A government program in rural India installs community solar microgrids in 500 off-grid villages, providing clean, renewable electricity to homes, health clinics, and water filtration pumps.",
+        "question": "This initiative directly advances which UN Sustainable Development Goal?",
+        "options": [
+            "SDG 14: Life Below Water, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "SDG 16: Peace, Justice and Strong Institutions.",
+            "SDG 17: Partnerships for the Goals.",
+            "SDG 11: Sustainable Space Colonization.",
+            "SDG 7: Affordable and Clean Energy"
+        ],
+        "correct": 4,
+        "explanation": "SDG 7 focuses on ensuring universal access to affordable, reliable, sustainable, and modern energy for all, particularly through decentralized renewable solar and wind systems in off-grid rural regions."
+    },
+    {
+        "id": 27,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A multinational coffee company commits to buying 100% of its beans from Rainforest Alliance-certified farms that protect biodiversity, eliminate hazardous pesticides, and guarantee living wages for female agricultural laborers.",
+        "question": "This corporate policy reflects which core development philosophy?",
+        "options": [
+            "Rostow Stage 1 Subsistence Farming across multiple geographic scales of spatial analysis.",
+            "Sustainable Development (balancing economic profit, ecological conservation, and social equity)",
+            "Neocolonial Commodity Exploitation within regional economic and demographic systems, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Mercator Cadastral Allocation to evaluate spatial distributions across landscapes, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Authoritarian Centrally Planned Modernization."
+        ],
+        "correct": 1,
+        "explanation": "Sustainable development meets the needs of the present generation without compromising the ability of future generations to meet their own needs, balancing economic productivity, environmental protection, and social justice."
+    },
+    {
+        "id": 28,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "Which of the following is considered an 'Interlocking System' of development in the UN SDG framework?",
+        "options": [
+            "Achieving gender equality (SDG 5) directly accelerates poverty reduction (SDG 1), improves family nutrition (SDG 2), and enhances child educational outcomes (SDG 4).",
+            "All economic development requires burning maximum coal reserves, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Poverty can only be eliminated by shutting down all secondary manufacturing, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation.",
+            "Clean water projects have no measurable impact on disease transmission, which allows researchers to identify spatial clustering patterns while minimizing subjective perceptual bias.",
+            "Economic growth must always destroy natural ecosystems, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities."
+        ],
+        "correct": 0,
+        "explanation": "The SDGs are interconnected: progress in one goal (e.g., gender equality or clean water) creates powerful synergistic multipliers across education, health, poverty alleviation, and economic productivity."
+    },
+    {
+        "id": 29,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A global logistics map shows container freight ships transporting raw copper cathode from mines in Zambia to factories in eastern China, which manufactures copper wiring that is installed in electric vehicles designed and sold in Germany and the United States.",
+        "question": "How would Immanuel Wallerstein categorize Zambia, China, and Germany/USA in this global production chain?",
+        "options": [
+            "Zambia: Core | China: Periphery | Germany/USA: Semi-Periphery.",
+            "Zambia: Semi-Periphery | China: Core | Germany/USA: Periphery.",
+            "All three nations are in the Core.",
+            "Zambia: Periphery | China: Semi-Periphery | Germany/USA: Core",
+            "All three nations are in the Periphery."
+        ],
+        "correct": 3,
+        "explanation": "Zambia provides raw primary commodity extraction (Periphery), China provides high-volume secondary manufacturing (Semi-Periphery), and Germany/USA provide high-value engineering, design, capital, and consumer markets (Core)."
+    },
+    {
+        "id": 30,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "In China, coastal Special Economic Zones like Shenzhen and Shanghai have average per capita incomes exceeding $25,000 and boast world-class high-speed rail, while remote rural western provinces like Guizhou have per capita incomes under $5,000.",
+        "question": "This internal economic disparity is a classic manifestation of:",
+        "options": [
+            "Universal High Mass Consumption across all provinces, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "The complete absence of the secondary sector.",
+            "The physical distortion of the Gall-Peters projection.",
+            "Rostow Stage 1 stagnation across the entire country.",
+            "Uneven Spatial Development and Sub-National Core-Periphery Inequality"
+        ],
+        "correct": 4,
+        "explanation": "National development is geographically uneven: coastal export hubs function as national economic cores, while interior rural hinterlands function as peripheral resource and labor suppliers."
+    },
+    {
+        "id": 31,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "What is 'Agglomeration' in economic geography, and how does it reinforce core development?",
+        "options": [
+            "The complete dispersal of factories into uninhabited arctic zones, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The forced migration of agricultural laborers to rural homesteads, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "The mathematical calculation of arithmetic density on a topographic map.",
+            "The legal prohibition of international trade.",
+            "The clustering of similar businesses, suppliers, and skilled workers in a specific geographic area (e.g., Silicon Valley), lowering production costs and boosting innovation."
+        ],
+        "correct": 4,
+        "explanation": "Agglomeration occurs when related industries and businesses cluster spatially to share specialized infrastructure, skilled labor pools, and supply chains, reinforcing the economic dominance of core urban regions."
+    },
+    {
+        "id": 32,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A garment multinational based in France establishes subcontracted sewing workshops in Lesotho. When labor unions in Lesotho strike for a $0.20/hour wage increase, the French corporation immediately terminates the contracts and moves production to Madagascar.",
+        "question": "This scenario demonstrates which vulnerability of peripheral nations in the global economy?",
+        "options": [
+            "The rigid stability of traditional Stage 1 societies, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales.",
+            "The enforcement of the UN Law of the Sea, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Footloose industries and capital mobility exploiting low-wage labor with zero local loyalty",
+            "The benefits of universal high mass consumption, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "The complete elimination of global trade flows, which often leads to inaccurate generalizations due to the modifiable areal unit problem and high data aggregation."
+        ],
+        "correct": 2,
+        "explanation": "'Footloose' manufacturing industries can relocate easily to wherever labor and regulatory costs are lowest, creating a 'race to the bottom' among peripheral nations desperate for foreign manufacturing contracts."
+    },
+    {
+        "id": 33,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "What is a 'Growth Pole' (Technopole) in regional economic planning?",
+        "options": [
+            "A high-altitude weather monitoring station at the South Pole.",
+            "A traditional timber logging depot in a boreal forest.",
+            "A government checkpoint along an international border.",
+            "An urban concentration of advanced high-tech and innovative industries that stimulates economic growth and development in the surrounding region through agglomeration and spillover effects (e.g., Silicon Valley, Research Triangle).",
+            "A subsistence farming cooperative in a flood basin."
+        ],
+        "correct": 3,
+        "explanation": "A Growth Pole (or Technopole) is an innovative core cluster (often anchored by research universities, venture capital, and tech firms, like Research Triangle Park, NC or Silicon Valley) that drives economic expansion throughout its surrounding regional hinterland."
+    },
+    {
+        "id": 34,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A small island developing state (SIDS) in the Caribbean depends on luxury cruise ship tourism for 70% of its GDP. Following a catastrophic hurricane that damages the cruise terminal, national tourist revenue drops to near zero for 18 months.",
+        "question": "This vulnerability mirrors which economic challenge?",
+        "options": [
+            "Over-diversification of the quaternary sector.",
+            "Excessive Stage 5 High Mass Consumption.",
+            "The Resource Curse of oil extraction.",
+            "The failure of the Township and Range grid.",
+            "Single-Sector / Service Commodity Dependence"
+        ],
+        "correct": 4,
+        "explanation": "Over-reliance on a single service industry (such as tourism) carries the same extreme economic vulnerability as commodity dependence: sudden external shocks (hurricanes, pandemics) can instantly wipe out national revenue."
+    },
+    {
+        "id": 35,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "How does the concept of 'Backwash Effects' (Gunnar Myrdal) explain why peripheral regions often remain poor even when core regions experience booming economic growth?",
+        "options": [
+            "Core regions pay peripheral workers triple their normal wages.",
+            "Core regions pull capital, investment, skilled human talent ('brain drain'), and raw resources away from the peripheral hinterlands, starving them of the resources needed for local development.",
+            "Peripheral regions build too many high-speed rail lines, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Backwash effects refer to ocean storm surges flooding agricultural farms, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "Peripheral nations are legally banned from using digital computers."
+        ],
+        "correct": 1,
+        "explanation": "Backwash effects occur when economic growth in a core center drains surrounding peripheral areas of their capital, educated talent (brain drain), and raw materials, reinforcing uneven spatial inequality."
+    },
+    {
+        "id": 36,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "The government of South Korea in the 1960s and 1970s heavily subsidized domestic steel, shipbuilding, and electronics corporations (chaebols like Samsung and Hyundai) while protecting domestic markets with selective tariffs until they became global market leaders.",
+        "question": "This state-led development model is known as:",
+        "options": [
+            "Pure Subsistence Pastoralism, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Informal Street Vending, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Total Laissez-Faire Free Market Deregulation.",
+            "Rostow Stage 1 Traditional Agriculture, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Export-Oriented Industrialization (EOI)"
+        ],
+        "correct": 4,
+        "explanation": "Export-Oriented Industrialization (EOI), utilized by the Asian Tigers (South Korea, Taiwan, Singapore, Hong Kong), uses government subsidies, strategic investment, and export manufacturing incentives to accelerate industrial takeoff and achieve core economic status."
+    },
+    {
+        "id": 37,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "question": "Which of the following describes 'Just-in-Time' (JIT) manufacturing, and how has it reshaped global industrial supply chains?",
+        "options": [
+            "Factories store 5 years worth of surplus parts in giant warehouses to prevent supply disruptions.",
+            "Factories only operate during daylight hours.",
+            "Parts and raw materials are ordered and delivered to factory assembly lines immediately before they are needed, reducing inventory storage costs but making supply chains highly vulnerable to transport disruptions.",
+            "All manufacturing is completed on hand looms without electricity.",
+            "Products are shipped exclusively via horse-drawn wagons."
+        ],
+        "correct": 2,
+        "explanation": "Just-In-Time (JIT) manufacturing minimizes warehouse inventory costs by synchronizing supplier shipments to arrive at factory assembly lines exactly as needed, though it creates fragile supply chains susceptible to global bottlenecks."
+    },
+    {
+        "id": 38,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A geographer evaluates the economic transformation of the 'Rust Belt' in the American Midwest (e.g., Detroit, Cleveland, Pittsburgh) over the past 50 years.",
+        "question": "Which process caused the massive loss of manufacturing jobs and urban economic distress across the Rust Belt?",
+        "options": [
+            "A massive return to subsistence primary agriculture.",
+            "The complete absence of road and rail transportation.",
+            "Deindustrialization and automation/offshoring to low-wage regions",
+            "The enforcement of the French long-lot survey system, although this method is typically restricted to local parcel tax assessments and cadastral boundary verification.",
+            "An influx of high-mass consumption automobile buyers."
+        ],
+        "correct": 2,
+        "explanation": "Deindustrialization (the closing of factories due to automation and the relocation of manufacturing jobs to the US Sunbelt and lower-wage overseas nations) severely impacted the industrial Rust Belt."
+    },
+    {
+        "id": 39,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "An African Union summit discusses strategies to break historical dependency on raw mineral exports to core nations.",
+        "question": "Which policy recommendation aligns best with modern economic development geographic theory?",
+        "options": [
+            "Banning all secondary education across the continent.",
+            "Investing in domestic processing and value-added refining (e.g., smelting raw bauxite into aluminum and manufacturing car parts locally) before export.",
+            "Increasing the extraction of raw unprocessed minerals to 100% of the economy, despite the inherent cartographic distortion introduced when projecting three-dimensional ellipsoidal coordinates.",
+            "Abolishing all paved transportation networks, primarily because it fails to capture localized variations in socioeconomic status and infrastructure accessibility.",
+            "Eliminating all international airport customs."
+        ],
+        "correct": 1,
+        "explanation": "Moving up the value chain (beneficiation)—processing, refining, and manufacturing raw resources into finished goods within the country rather than exporting cheap raw ores—captures higher profits and creates skilled domestic jobs."
+    },
+    {
+        "id": 40,
+        "category": "sdgs-ap-stimulus",
+        "categoryName": "UN SDGs & AP Scenarios",
+        "stimulus": "A student preparing for the AP Human Geography exam compares Rostow's Modernization Model with Wallerstein's World Systems Theory.",
+        "question": "Which summary statement correctly synthesizes the fundamental ideological divide between these two cornerstone development theories?",
+        "options": [
+            "Rostow argues that capitalism is evil; Wallerstein argues that communism is inevitable, which is constrained by the friction of distance and the availability of competing intervening commercial opportunities.",
+            "Rostow believes that all nations have equal potential to develop internally through linear capitalist stages; Wallerstein argues that international capitalism inherently locks peripheral nations into structural exploitation and dependency on the core.",
+            "Rostow views development as a single global system; Wallerstein views development as an isolated national process, even though modern geospatial technologies have largely automated the collection of physical terrain elevation data.",
+            "Both theorists agree that geographic latitude is the only factor that determines national wealth, reflecting the underlying economic structural shifts from primary commodity extraction to high-value service industries.",
+            "Both models claim that economic development will permanently end by 2030, which is primarily utilized when evaluating broad macro-demographic trends across national and continental scales."
+        ],
+        "correct": 1,
+        "explanation": "This statement accurately captures the central debate in AP Human Geography development theory: Rostow's internal, linear modernization optimism vs. Wallerstein's structural, interdependent core-periphery dependency critique."
+    }
+];
+
+// State Management
+let userAnswers = {};
+let currentFilter = "all";
+
+// Render Questions
+function renderQuestions() {
+    const container = document.getElementById("questions-container");
+    container.innerHTML = "";
+
+    const filtered = questionsData.filter(q => {
+        if (currentFilter === "all") return true;
+        return q.category === currentFilter;
+    });
+
+    document.getElementById("total-count").textContent = filtered.length;
+
+    filtered.forEach((q, index) => {
+        const card = document.createElement("div");
+        card.className = "q-card";
+        card.id = `q-card-${q.id}`;
+
+        const isAnswered = userAnswers.hasOwnProperty(q.id);
+        const selectedIdx = userAnswers[q.id];
+
+        let stimulusHtml = q.stimulus ? `<div class="q-stimulus">${escapeHtml(q.stimulus)}</div>` : '';
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+            const letter = String.fromCharCode(65 + optIdx);
+            let stateClass = "";
+
+            if (isAnswered) {
+                stateClass = "locked ";
+                if (optIdx === q.correct) {
+                    stateClass += (selectedIdx === optIdx) ? "selected-correct" : "show-answer-correct";
+                } else if (selectedIdx === optIdx) {
+                    stateClass += "selected-incorrect";
+                }
+            }
+
+            return `
+                <li class="option-item ${stateClass}" onclick="handleOptionSelect(${q.id}, ${optIdx})">
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-content">${escapeHtml(opt)}</div>
+                </li>
+            `;
+        }).join("");
+
+        const explVisible = isAnswered ? "visible" : "";
+
+        card.innerHTML = `
+            <div class="q-header">
+                <span class="q-number">Question ${index + 1} of ${filtered.length} (ID #${q.id})</span>
+                <span class="q-category">${q.categoryName}</span>
+            </div>
+            ${stimulusHtml}
+            <div class="q-text">${escapeHtml(q.question)}</div>
+            <ul class="options-list">
+                ${optionsHtml}
+            </ul>
+            <div class="explanation-box ${explVisible}" id="expl-${q.id}">
+                <div class="explanation-title">Correct Answer: Option ${String.fromCharCode(65 + q.correct)}</div>
+                <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    updateStats();
+}
+
+function handleOptionSelect(qId, optionIdx) {
+    if (userAnswers.hasOwnProperty(qId)) return;
+
+    userAnswers[qId] = optionIdx;
+    renderQuestions();
+}
+
+function updateStats() {
+    const answeredTotal = Object.keys(userAnswers).length;
+    let correctTotal = 0;
+
+    for (let qId in userAnswers) {
+        const q = questionsData.find(item => item.id == qId);
+        if (q && userAnswers[qId] === q.correct) {
+            correctTotal++;
+        }
+    }
+
+    const pct = answeredTotal > 0 ? Math.round((correctTotal / answeredTotal) * 100) : 0;
+
+    document.getElementById("answered-count").textContent = answeredTotal;
+    document.getElementById("score-val").textContent = `${correctTotal} / ${answeredTotal} (${pct}%)`;
+}
+
+function toggleAllExplanations() {
+    const boxes = document.querySelectorAll(".explanation-box");
+    const anyHidden = Array.from(boxes).some(b => !b.classList.contains("visible"));
+    
+    boxes.forEach(b => {
+        if (anyHidden) {
+            b.classList.add("visible");
+        } else {
+            b.classList.remove("visible");
+        }
+    });
+}
+
+function resetQuiz() {
+    if (confirm("Reset all quiz progress and scores for Section 7.3?")) {
+        userAnswers = {};
+        renderQuestions();
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/&/g, "&amp;")
+               .replace(/</g, "&lt;")
+               .replace(/>/g, "&gt;")
+               .replace(/"/g, "&quot;")
+               .replace(/'/g, "&#039;");
+}
+
+document.getElementById("topic-filter").addEventListener("change", function(e) {
+    currentFilter = e.target.value;
+    renderQuestions();
+});
+
+// Initial Render
+renderQuestions();
+</script>
+
+</body>
+</html>
