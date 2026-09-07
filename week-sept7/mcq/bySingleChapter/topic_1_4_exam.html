@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography Topic 1.4 Mastery Exam (25 Questions)</title>
+<style>
+  :root {
+    --cb-blue: #0077c8;
+    --cb-dark: #1b263b;
+    --cb-gray: #f4f6f9;
+    --cb-border: #d0d7de;
+    --correct-bg: #e6f4ea;
+    --correct-border: #137333;
+    --wrong-bg: #fce8e6;
+    --wrong-border: #c5221f;
+  }
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--cb-gray); color: #202124; padding: 24px 16px; }
+  .exam-container { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid var(--cb-border); padding: 32px; }
+  .header-bar { border-bottom: 2px solid var(--cb-blue); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: gap; gap: 12px; }
+  .header-bar h1 { margin: 0; font-size: 22px; color: var(--cb-dark); }
+  .header-bar .subtitle { font-size: 13px; color: #57606a; margin-top: 4px; }
+  .score-badge { font-weight: bold; color: var(--cb-dark); font-size: 15px; background: #e8f0fe; padding: 8px 14px; border-radius: 6px; border: 1px solid #c2e7ff; }
+  .q-card { border: 1px solid var(--cb-border); border-radius: 8px; padding: 20px; margin-bottom: 24px; background: #fafbfc; }
+  .q-meta { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+  .skill-pill { background: #1b263b; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .amsco-pill { background: #eef2f6; color: #334155; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid #cbd5e1; }
+  .q-stimulus { background: #f1f5f9; border-left: 4px solid var(--cb-blue); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1e293b; border-radius: 0 4px 4px 0; }
+  .q-prompt { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 16px; color: #1f2328; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .opt-btn { background: #fff; border: 1.5px solid var(--cb-border); border-radius: 6px; padding: 12px 14px; text-align: left; font-size: 14.5px; cursor: pointer; transition: all 0.15s ease; color: #24292f; line-height: 1.45; }
+  .opt-btn:hover:not(:disabled) { border-color: var(--cb-blue); background: #f8fbff; }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.correct { background: var(--correct-bg) !important; border-color: var(--correct-border) !important; color: #0d5423; font-weight: 600; }
+  .opt-btn.wrong { background: var(--wrong-bg) !important; border-color: var(--wrong-border) !important; color: #9c1a17; text-decoration: line-through; }
+  .feedback-box { display: none; margin-top: 14px; padding: 14px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; }
+  .feedback-box.show { display: block; }
+  .feedback-box.correct { background: #edf7ed; border-left: 4px solid var(--correct-border); color: #1e4620; }
+  .feedback-box.wrong { background: #fdf2f2; border-left: 4px solid var(--wrong-border); color: #5c1818; }
+  .feedback-box strong { display: block; margin-bottom: 4px; }
+  .nav-back { display: inline-block; margin-bottom: 16px; color: var(--cb-blue); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="exam-container">
+  <a href="../index.html" class="nav-back">&larr; Return to Master Interactive Test Hub</a>
+  <div class="header-bar">
+    <div>
+      <h1>AP Human Geography: Topic 1.4 Mastery Exam</h1>
+      <div class="subtitle">Spatial Concepts &bull; 25 Interactive College Board-Standard Questions &bull; David L. Palmer AMSCO 2nd Ed.</div>
+    </div>
+    <div class="score-badge" id="scoreTracker">Score: 0 / 25 answered (0%)</div>
+  </div>
+
+  <div id="quizForm"></div>
+</div>
+
+<script>
+const examQuestions = [
+  {
+    "id": "1.4-Q01",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Absolute and Relative Location",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Location: Absolute and Relative'"
+    },
+    "stimulus": null,
+    "question": "Which of the following statements provides an absolute location rather than a relative location?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tokyo is situated mathematically at 35 degrees North latitude and 139 degrees East longitude.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tokyo is situated approximately two hours travel east of Mount Fuji via high-speed bullet train.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tokyo is situated strategically along the northwestern coastline of the Pacific Ocean shipping lanes.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tokyo is situated south of Sendai and northeast of the historic imperial Japanese capital of Kyoto.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Absolute location describes the exact mathematical coordinates of a place on Earth's surface using a standard grid system such as latitude and longitude or street address, remaining constant regardless of surrounding landmarks.",
+      "distractors": {
+        "B": "Travel time relative to Mount Fuji is a relative location metric that varies based on transport mode.",
+        "C": "Coastline position relative to the Pacific Ocean represents a relative situational description.",
+        "D": "Compass directions relative to Sendai and Kyoto describe relational position, not mathematical coordinates."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q02",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Site and Situation",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Place: Site and Situation'"
+    },
+    "stimulus": null,
+    "question": "New Orleans was historically founded along the Mississippi River delta on low-lying, marshy ground prone to flooding. In human geography, these physical landscape attributes describe the city's:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Commercial situation relative to Gulf of Mexico trans-oceanic trade routes.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Physical site characteristics consisting of local terrain, soil, and elevation.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Spatial interaction networks connecting agricultural grain export elevators.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Formal regional boundaries established by federal legislative congressional acts.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Site refers to the physical character of a place, including absolute topography, climate, soil quality, water sources, vegetation, and elevation.",
+      "distractors": {
+        "A": "Connectivity to Gulf of Mexico trade lanes describes New Orleans' situation, not its physical site.",
+        "C": "Grain export networks represent spatial connectivity and trade flows, not internal site traits.",
+        "D": "Legislative boundaries define political or administrative formal regions, not physical site properties."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q03",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Distance Decay and Tobler's First Law",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Spatial Interaction and Distance Decay'"
+    },
+    "stimulus": null,
+    "question": "A regional bank observes that customer branch visits decline sharply as the driving distance between a household and the nearest branch increases. This spatial phenomenon illustrates:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental possibilism altering residential housing preferences across town.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem distorting banking customer demographic records.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The principle of distance decay reducing interaction as physical distance grows.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sequent occupance leaving architectural artifacts across historical downtowns.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Distance decay states that the contact or interaction between two places diminishes as the distance between them increases, an empirical reflection of Tobler's First Law of Geography ('near things are more related than distant things').",
+      "distractors": {
+        "A": "Possibilism explains how humans adapt to physical environments, not customer travel decay curves.",
+        "B": "MAUP relates to statistical boundary aggregation artifacts, not physical travel friction.",
+        "D": "Sequent occupance describes layers of cultural architecture over time, not spatial patronage drop-off."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q04",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Time-Space Compression",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Time-Space Compression'"
+    },
+    "stimulus": null,
+    "question": "In the nineteenth century, traveling from New York to London took weeks by sailing ship, whereas modern jet airliners make the journey in seven hours and fiber-optic cables transmit financial transactions instantly. Geographers term this shrinking effect:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism dictating trans-oceanic commercial migration paths.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conformal cartographic distortion inflating high-latitude North Atlantic areas.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The ecological fallacy applying aggregate national data to individual commuters.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Time-space compression reducing the perceived friction of geographic distance.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Time-space compression (or space-time convergence) describes the reduction in time and cost required to travel or communicate across space, brought about by rapid technological advancements in transportation (airplanes) and communications (internet).",
+      "distractors": {
+        "A": "Environmental determinism claims physical climate dictates human society, not technological speedups.",
+        "B": "Conformal map distortion is a cartographic geometric property (Mercator), not an economic transit speedup.",
+        "C": "The ecological fallacy is a statistical error in data interpretation, not a reduction in travel time."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q05",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Sense of Place vs. Placelessness",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Sense of Place and Placelessness'"
+    },
+    "stimulus": null,
+    "question": "The widespread construction of identical suburban strip malls, big-box retailers, chain fast-food outlets, and uniform gas stations across North America produces which geographic outcome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Placelessness resulting in the homogenization of the built cultural landscape.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A strong localized sense of place rooted in unique historic heritage architecture.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The natural development of formal climatic vegetative biomes across cities.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Extreme cartographic projection distortion on metropolitan zoning map layers.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Placelessness (coined by geographer Edward Relph) describes the loss of uniqueness in the cultural landscape, resulting in standardized, indistinct, and homogenized commercial environments where one place looks identical to any other.",
+      "distractors": {
+        "B": "Sense of place is the distinctive emotional identity of a specific location, the opposite of placelessness.",
+        "C": "Vegetative biomes are natural ecological categories, not commercial corporate retail strips.",
+        "D": "Cartographic projection distortion relates to map math, not corporate architectural uniformity."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q06",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 2.A",
+    "skillDescription": "Describe a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Density, Concentration, and Dispersion",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Spatial Distribution: Density and Concentration'"
+    },
+    "stimulus": null,
+    "question": "Two agricultural counties in Kansas have identical land areas (1,000 square miles) and identical total populations (5,000 residents). In County X, residents live clustered in a central town, while in County Y, residents are evenly scattered across isolated farmsteads. How do these two counties compare spatially?",
+    "options": [
+      {
+        "id": "A",
+        "text": "County X has a higher arithmetic density than County Y, but identical spatial dispersion.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Both counties have identical arithmetic density, but County X exhibits greater concentration.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "County Y has a higher arithmetic density than County X, but identical spatial clustering.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Both counties have identical spatial concentration, but County Y exhibits higher density.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Density measures frequency within a given area (both have 5,000 people / 1,000 sq mi = 5 people/sq mi). Concentration measures the spread across space: County X is clustered (concentrated in a town), whereas County Y is dispersed across the landscape.",
+      "distractors": {
+        "A": "Arithmetic density is identical (5 people per square mile); they differ fundamentally in dispersion.",
+        "C": "County Y does not have higher density, and it exhibits dispersion rather than clustering.",
+        "D": "Their spatial concentration is totally different (clustered vs. dispersed), while their densities are equal."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q07",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 2.B",
+    "skillDescription": "Explain a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Situation and Commercial Trade Hubs",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'The Significance of Situation'"
+    },
+    "stimulus": null,
+    "question": "Singapore is an island nation with scarce arable farmland and no significant mineral reserves. Despite these severe physical site constraints, Singapore evolved into one of the world's wealthiest financial and commercial hubs primarily because of its:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expansive fertile agricultural soils suitable for large-scale intensive rice farming.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vast domestic reserves of anthracite coal fueling local industrial steel refineries.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Strategic situation commanding the Strait of Malacca global maritime shipping bottleneck.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Extreme polar latitude preserving natural ice shipping corridors throughout the year.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Situation refers to a place's relative location and connectivity to other regions. Singapore leveraged its premier situation commanding the Strait of Malacca (connecting the Indian Ocean and South China Sea) to become a dominant global entrep\u00f4t port.",
+      "distractors": {
+        "A": "Singapore is a densely urbanized city-state with virtually no arable farmland or commercial agriculture.",
+        "B": "Singapore has no coal or mineral deposits and imports nearly all raw energy resources.",
+        "D": "Singapore is located 1 degree north of the equator in the tropics, not in polar latitudes."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q08",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Spatial Association",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Spatial Association'"
+    },
+    "stimulus": null,
+    "question": "When a health geographer overlays two choropleth maps and observes that census tracts with high industrial air pollution consistently coincide with tracts reporting high childhood asthma hospitalizations, this spatial relationship is known as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental possibilism overcoming biological respiratory limits across cities.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem invalidating medical epidemiology registries.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sequent occupance replacing historical neighborhoods with industrial refineries.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Spatial association indicating that two distinct distributions share similar patterns.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Spatial association occurs when two or more spatial distributions or phenomena exhibit matching or closely corresponding geographic patterns across a map, suggesting an underlying causal relationship or shared spatial driver.",
+      "distractors": {
+        "A": "Possibilism explains human technological adaptation to physical nature, not pollution-disease correlations.",
+        "B": "MAUP describes statistical boundary effects, whereas spatial association describes shared geographic patterns.",
+        "C": "Sequent occupance is historical cultural layering over generations, not simultaneous cross-map correlation."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q09",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Friction of Distance",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Friction of Distance'"
+    },
+    "stimulus": null,
+    "question": "Which of the following scenarios best demonstrates how the friction of distance influences human economic activity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A manufacturing company sources heavy raw timber locally because transit costs grow with distance.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A multinational tech company transmits digital cloud software updates instantly across all continents.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "An urban municipal planning department names streets after indigenous tribal leaders and flora.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A university geographer uses equal-area Gall-Peters projections to display continental boundaries.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The friction of distance is the concept that physical distance requires the expenditure of effort, energy, time, and financial cost to overcome; heavy, bulk-losing timber incurs high freight costs over distance, compelling factories to locate near raw forests.",
+      "distractors": {
+        "B": "Instantaneous digital software transmission illustrates time-space compression overcoming friction of distance.",
+        "C": "Street naming reflects cultural toponyms and memorialization, not the friction of distance.",
+        "D": "Using equal-area projections is a cartographic choice, unrelated to distance friction in freight logistics."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q10",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Toponyms as Cultural Imprints",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Place Names: Toponyms'"
+    },
+    "stimulus": null,
+    "question": "Town names throughout the southwestern United States\u2014such as San Antonio, San Diego, Santa Fe, and Las Vegas\u2014provide historical evidence of which geographic process?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The establishment of formal British colonial township and range boundary survey grids.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Toponyms reflecting the enduring linguistic and religious imprint of Spanish colonization.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The complete eradication of all pre-existing cultural landscapes by federal highway planners.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The natural biological diffusion of non-native plant species across arid desert biomes.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Toponyms (place names) reflect the history, culture, language, and political power of the societies that settled an area; Spanish religious saints (San/Santa) and descriptors (Las Vegas = 'the meadows') illustrate Spanish colonial legacy in the Southwest.",
+      "distractors": {
+        "A": "The British colonial survey was metes and bounds in the East, while Township and Range was an American system.",
+        "C": "Highway construction modified transportation, but did not erase regional Spanish toponyms.",
+        "D": "Biological plant diffusion is an ecological botanical process, not cultural place naming."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q11",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "The Gravity Model of Spatial Interaction",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'The Gravity Model'"
+    },
+    "stimulus": null,
+    "question": "According to the Gravity Model of spatial interaction, the volume of airline passenger traffic or commercial trade between two metropolitan cities is directly related to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "The difference in elevation between their municipal central business district towers.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The mathematical ratio of their cartographic map scale representations on world charts.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The product of their populations and inversely related to the distance between them.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The number of formal vernacular dialect boundaries separating their municipal borders.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The Gravity Model (adapted from Newton's law of universal gravitation) posits that spatial interaction between two places is directly proportional to the product of their populations and inversely proportional to the square (or distance) separating them.",
+      "distractors": {
+        "A": "Elevation differences have no direct mathematical role in the Gravity Model formulation.",
+        "B": "Cartographic map scale is a drawing ratio on paper, not a real-world demographic interaction variable.",
+        "D": "Dialect boundaries are linguistic cultural frontiers, not core mathematical variables in the Gravity Model."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q12",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Spatial Patterns: Linear, Clustered, and Dispersed",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Spatial Patterns'"
+    },
+    "stimulus": "A geographer studies the arrangement of mining settlements in a narrow Appalachian mountain valley and observes that all homes, railroads, and retail stores follow the single narrow river corridor in an elongated arrangement.",
+    "question": "Which spatial pattern describes the geometric layout of these settlements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A centralized circular ring pattern radiating outward from an isolated civic monument.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A random dispersed scatter showing zero geometric order across high mountain ridges.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hexagonal Christaller central place lattice spanning an open, featureless plain.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A linear pattern shaped by the physical constraints of the river valley transport route.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "A linear pattern occurs when features or settlements are arranged in an elongated line, typically following a river, valley floor, railroad track, or highway corridor due to topographic constraints or transportation access.",
+      "distractors": {
+        "A": "Centralized circular patterns form around a central node (like a cathedral or plaza on flat land).",
+        "B": "Random dispersion lacks any spatial structure, whereas valley mining towns follow the river corridor strictly.",
+        "C": "Hexagonal lattice patterns occur on uniform isotropic plains (Christaller's Central Place Theory), not narrow valleys."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q13",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 2.B",
+    "skillDescription": "Explain a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Evaluating Site Constraints vs. Situational Advantages",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Site and Situation in Urban Growth'"
+    },
+    "stimulus": null,
+    "question": "Venice, Italy, was constructed on marshy mud islands inside a coastal lagoon with poor building foundations and no fresh water. Why did the city prosper historically despite these challenging site conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its island lagoon site provided defense against invasion and its situation dominated Mediterranean trade.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Its interior continental situation allowed unimpeded trans-Eurasian railroad connectivity to East Asia.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Its expansive flat terrain supported intensive commercial mechanized wheat cultivation for export.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Its polar latitude protected domestic maritime harbors from tropical hurricane storm surges.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Venice overcame poor physical site conditions (marshy soils, sinking ground) because its lagoon site offered vital defense from Germanic invaders, while its exceptional situation at the head of the Adriatic Sea positioned it as the dominant maritime trade hub between Europe and the Byzantine/Levant worlds.",
+      "distractors": {
+        "B": "Venice is an Adriatic maritime coastal archipelago, not an interior continental rail terminal.",
+        "C": "Venice consists of coastal salt lagoons and islands with zero arable grain farming acreage.",
+        "D": "Venice is located in Southern Europe in the temperate Mediterranean basin, not at a polar latitude."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q14",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Relocation Diffusion vs. Expansion Diffusion",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Spatial Diffusion: Relocation and Expansion'"
+    },
+    "stimulus": null,
+    "question": "When Amish religious communities migrated from Switzerland and Germany to Pennsylvania in the 1700s, they brought their unique dialect, horse-and-buggy transport, and communal farming customs. This spatial spread exemplifies:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hierarchical diffusion spreading exclusively through elite fashion television networks.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Relocation diffusion driven by the physical permanent migration of cultural groups.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Contagious diffusion spreading rapidly via internet social media digital transmissions.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stimulus diffusion altering underlying religious principles to fit industrial capitalism.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Relocation diffusion occurs when people physically migrate from their cultural hearth to a new destination, taking their language, religion, culinary traditions, and technologies with them.",
+      "distractors": {
+        "A": "Hierarchical diffusion trickles down through urban hierarchy or elites, not through 18th-century agrarian migration.",
+        "C": "Contagious diffusion spreads like a wave across space without bodily relocation, unlike physical migrant voyages.",
+        "D": "Stimulus diffusion involves adopting an idea while modifying the trait, whereas the Amish maintained traditional practices intact."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q15",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Hierarchical Diffusion Processes",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Hierarchical Diffusion'"
+    },
+    "stimulus": null,
+    "question": "A luxury high-fashion trend debuts on runways in Paris and Milan, spreads next to major global financial capitals like London, New York, and Tokyo, and only later trickles down to suburban department stores and regional malls. This process represents:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Relocation diffusion where fashion designers physically emigrate to every individual suburb.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contagious diffusion spreading uniformly outward across rural farming villages like a wave.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hierarchical diffusion cascading from major global urban nodes down through smaller places.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Environmental possibilism altering textile manufacturing tolerances in cold climate regions.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Hierarchical diffusion occurs when an innovation or cultural trend spreads by cascading down through an established hierarchy of nodes\u2014from major global megacities (Paris, New York) or elite tastemakers down to smaller urban centers and suburbs.",
+      "distractors": {
+        "A": "Relocation diffusion requires the physical migration of individuals, whereas fashion ideas diffuse through media.",
+        "B": "Contagious diffusion spreads indiscriminately to adjacent places, whereas fashion skips rural areas to hit global nodes first.",
+        "D": "Possibilism concerns human adaptation to physical nature, not luxury fashion trends across global cities."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q16",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Contagious Diffusion Mechanics",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Contagious Diffusion'"
+    },
+    "stimulus": null,
+    "question": "An infectious viral disease or a viral internet comedy video spreads rapidly and indiscriminately outward from a point of origin, affecting nearly every person in adjacent contact without regard to social status or urban rank. This exemplifies:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hierarchical diffusion spreading strictly from political leaders to secondary civil servants.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Relocation diffusion occurring solely through the permanent overseas migration of populations.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Stimulus diffusion modifying underlying cultural traits to accommodate local religious laws.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contagious diffusion expanding through person-to-person contact across contiguous space.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Contagious diffusion is the rapid, widespread diffusion of a feature, trend, or illness throughout a population by direct contact, spreading like a wave through contiguous space without skipping or adhering to a social hierarchy.",
+      "distractors": {
+        "A": "Hierarchical diffusion flows along rank and skips intervening rural populations, unlike contagious spread.",
+        "B": "Relocation diffusion requires physical movement of people, whereas internet videos spread contagiously online.",
+        "C": "Stimulus diffusion involves altering an idea to make it acceptable, not uniform person-to-person transmission."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q17",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Stimulus Diffusion",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Stimulus Diffusion'"
+    },
+    "stimulus": null,
+    "question": "When American fast-food franchise McDonald's expanded into India, it adapted to Hindu and Muslim dietary customs by removing all beef and pork products from the menu and serving the Maharaja Mac (made with spiced potatoes or chicken). This adaptation is a classic example of:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stimulus diffusion where an underlying concept is adopted while modifying the specific cultural trait.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Relocation diffusion requiring the physical expulsion of indigenous restaurant kitchen staff abroad.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Environmental determinism dictating that tropical climates physically prohibit beef cattle consumption.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The modifiable areal unit problem distorting consumer nutritional calorie counts on wall menus.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Stimulus diffusion occurs when the fundamental principle or idea behind an innovation is adopted by a new culture, but the specific form or trait is modified because the original version was rejected due to local cultural, religious, or economic barriers.",
+      "distractors": {
+        "B": "Relocation diffusion involves the physical migration of people, not corporate menu adaptation.",
+        "C": "Vegetarianism in India is rooted in Hindu and Jain religious beliefs, not physical climatic determinism.",
+        "D": "MAUP describes statistical boundary effects in GIS, completely unrelated to fast-food menu localization."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q18",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Connectivity and Accessibility in Spatial Networks",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Networks, Accessibility, and Connectivity'"
+    },
+    "stimulus": null,
+    "question": "Chicago's rapid nineteenth-century emergence as the dominant economic metropolis of the American Midwest was fueled by the construction of hub-and-spoke railroad networks converging at Lake Michigan. In spatial analysis, these transportation linkages increased the city's:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Placelessness by eradicating all historical warehouse architecture in the central loop.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Accessibility and connectivity, reducing travel time to regional agricultural hinterlands.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Arithmetic density while simultaneously decreasing the city's total municipal population.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartographic distortion along standard high-latitude parallels on conic projection charts.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Accessibility (the ease of reaching a location) and connectivity (the degree of direct linkage between nodes in a spatial network) were dramatically enhanced in Chicago as 30+ railroad lines converged at its lake port, funneling regional grain and cattle into the city.",
+      "distractors": {
+        "A": "Placelessness refers to modern landscape homogenization, not 19th-century railroad infrastructure growth.",
+        "C": "Density and population increased concurrently during Chicago's boom; population did not decrease.",
+        "D": "Cartographic projection distortion is a map-making property, wholly unrelated to physical rail networks."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q19",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Carl Sauer and the Cultural Landscape",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'The Cultural Landscape'"
+    },
+    "stimulus": null,
+    "question": "Geographer Carl Sauer famously asserted that 'culture is the agent, the natural area is the medium, the cultural landscape is the result.' Which of the following visual features best exemplifies Sauer's concept of the cultural landscape?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An undisturbed primeval rainforest canopy untouched by human habitation or timber harvesting.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A tectonic mountain trench formed exclusively through geological subduction zone collisions.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Terraced rice paddies carved into steep Indonesian hillsides with communal irrigation canals.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The natural gravitational orbit of communication satellites circling high above the atmosphere.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The cultural landscape (the built environment) is the visible imprint of human activity and culture on the natural landscape, exemplified by terraced agricultural hillsides, irrigation networks, fences, temples, and villages.",
+      "distractors": {
+        "A": "An untouched primeval rainforest is a natural physical landscape devoid of cultural modification.",
+        "B": "A tectonic fault rift is created by geological forces, representing the physical landscape, not human culture.",
+        "D": "Satellite orbits are astronomical and aerospace physics phenomena, not landscape imprints on Earth's surface."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q20",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Sequent Occupance",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Sequent Occupance'"
+    },
+    "stimulus": "A traveler in Mexico City notices that modern glass office skyscrapers stand adjacent to a baroque Catholic cathedral built by the Spanish in the 1500s, which itself rests directly atop the excavated stone foundations of an Aztec ceremonial pyramid.",
+    "question": "This visible layering of successive human cultures over the same physical space illustrates which geographic concept?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism dictating uniform architectural styles across all historical eras.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem invalidating historical municipal cadastral boundaries.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Time-space compression eliminating the physical distance between historical capital cities.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sequent occupance leaving cumulative cultural and architectural imprints across generations.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Sequent occupance (formulated by Derwent Whittlesey) describes the process by which successive cultural groups inhabit a place, each leaving its own tangible architectural and cultural imprint on the landscape, forming cumulative historical layers.",
+      "distractors": {
+        "A": "Determinism claims nature controls human style, but Mexico City displays widely differing cultural architectures.",
+        "B": "MAUP describes statistical boundary issues in spatial data, not physical architectural layering.",
+        "C": "Time-space compression relates to faster transit and communication across space, not archaeological strata."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q21",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "The Evolution of Environmental Perception",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Human-Environmental Relationships: Site Perception'"
+    },
+    "stimulus": null,
+    "question": "Nineteenth-century scholars often claimed that tropical climates caused human societal indolence, while temperate climates produced industrious civilizations. In modern geographic inquiry, this discredited worldview is known as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism, which wrongly claimed the physical climate strictly dictates human culture.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Environmental possibilism, which argues that culture and technology allow humans to modify nature.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cultural ecology, which studies the adaptive interaction between human cultural groups and ecosystems.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The gravity model, which calculates demographic trade volumes as a function of physical distance.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Environmental determinism was a 19th-century theory proposing that the physical environment (especially climate) strictly controls human intelligence, culture, and societal development, often used to justify European colonialism and racism.",
+      "distractors": {
+        "B": "Possibilism replaced determinism, arguing that the physical environment sets limits but humans possess agency.",
+        "C": "Cultural ecology is the modern scientific study of human-environment interactions without racial determinism.",
+        "D": "The gravity model calculates spatial interaction between populations, unrelated to climatic cultural claims."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q22",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Absolute Distance vs. Relative Distance",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Distance: Absolute and Relative'"
+    },
+    "stimulus": null,
+    "question": "Two mountain towns are physically separated by 10 miles of linear spatial distance, but traveling between them requires a four-hour drive along winding, unpaved gravel switchbacks. In geographic terminology, this scenario demonstrates:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A short relative distance combined with an extraordinarily long absolute linear ground distance.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A short absolute distance combined with a long relative distance measured in travel transit time.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The complete eradication of distance friction through modern highway infrastructure engineering.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartographic projection distortion inflating the scale ratio of high-elevation mountain peaks.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Absolute distance is the exact mathematical measurement of spatial separation in physical units (10 miles), whereas relative distance is measured in terms of travel time, financial cost, or human effort (4 hours of slow driving).",
+      "distractors": {
+        "A": "This reverses the terms: the absolute distance is short (10 miles) and the relative distance is long (4 hours).",
+        "C": "The slow, winding four-hour gravel drive proves the friction of distance is intense, not eradicated.",
+        "D": "This is a real-world physical travel reality, not a cartographic projection math distortion on paper."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q23",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Absolute Direction vs. Relative Direction",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Direction: Absolute and Relative'"
+    },
+    "stimulus": null,
+    "question": "While cardinal points on a compass (North, South, East, West) represent absolute direction, phrases like 'the Deep South,' 'Out West,' and 'the Middle East' represent which spatial concept?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Formal administrative regions established by multilateral United Nations boundary treaties.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mathematical coordinate nodes calculated via automated global positioning satellite networks.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Relative direction shaped by cultural perceptions, historical context, and subjective viewpoints.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Topographic isolines connecting points of equal atmospheric pressure across regional terrain.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Relative direction describes directional references that are culturally based, perceptive, and subjective (e.g., 'the Middle East' reflects a Eurocentric viewpoint east of Western Europe; 'Out West' reflects American eastward settlement perspective).",
+      "distractors": {
+        "A": "These are perceptive vernacular regions and relative directions, not formal UN treaty territories.",
+        "B": "Mathematical nodes use absolute coordinates (latitude/longitude), not subjective cultural terms.",
+        "D": "Isolines connect equal numerical measurements (isobars, contours), not cultural directional descriptions."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q24",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Barriers to Spatial Interaction and Diffusion",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Barriers to Diffusion'"
+    },
+    "stimulus": null,
+    "question": "Which of the following scenarios illustrates a cultural barrier that impedes the spatial diffusion of an innovation across borders?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An impassable mountain chain with zero highway tunnels preventing vehicular freight transit.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A severe ocean tsunami severing underwater trans-oceanic fiber-optic broadband internet cables.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A sovereign customs tariff and trade embargo legally banning commercial manufacturing imports.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A strict religious prohibition against consuming alcoholic beverages preventing brewery expansion.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Barriers to spatial diffusion can be physical (mountains, oceans), political (tariffs, legal bans), or cultural (religious taboos, language differences, social values). A religious ban on alcohol is an ideological/cultural barrier preventing brewery diffusion.",
+      "distractors": {
+        "A": "An impassable mountain range is a physical barrier, not a cultural barrier.",
+        "B": "A tsunami severing cables is an environmental physical hazard, not a cultural barrier.",
+        "C": "A customs tariff is a political and legal economic barrier, not a cultural barrier."
+      }
+    }
+  },
+  {
+    "id": "1.4-Q25",
+    "topic": "Topic 1.4: Spatial Concepts",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.4: Spatial Concepts",
+      "section": "Synthesizing Core Spatial Concepts in Global Supply Chains",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.4, under 'Synthesizing Spatial Concepts'"
+    },
+    "stimulus": "A smartphone designer in California engineers a device with minerals mined in Central Africa, microchips fabricated in Taiwan, and final assembly completed in coastal China before shipping to retail stores across Europe and the Americas in 48 hours.",
+    "question": "How does this contemporary global manufacturing network synthesize the core spatial concepts of human geography?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It proves that environmental determinism strictly dictates the geographic location of all factories.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It proves that spatial distance has been abolished and geographic location no longer matters on Earth.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It demonstrates that global manufacturing operates entirely within isolated formal cultural regions.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It combines site comparative advantages with high situation connectivity and time-space compression.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Modern global supply chains synthesize spatial concepts: local site attributes (raw minerals, low-cost assembly labor, advanced semiconductor cleanrooms) are linked through exceptional situational connectivity and modern time-space compression (container ships, air cargo, instant telecom).",
+      "distractors": {
+        "A": "Global supply chains illustrate human possibilism and complex corporate organization, not environmental determinism.",
+        "B": "Distance still matters: transport costs, customs borders, and supply chain frictions remain vital geographic factors.",
+        "C": "Global production spans multiple interconnected continents, not isolated formal regions."
+      }
+    }
+  }
+];
+
+let userAnswers = {};
+let score = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('quizForm');
+  container.innerHTML = '';
+
+  examQuestions.forEach((q, idx) => {
+    const card = document.createElement('div');
+    card.className = 'q-card';
+    card.id = 'card-' + idx;
+
+    const meta = document.createElement('div');
+    meta.className = 'q-meta';
+    meta.innerHTML = '<span class="skill-pill">' + q.skill + '</span> ' +
+      '<span class="amsco-pill">AMSCO: ' + q.amscoReference.section + '</span>';
+    card.appendChild(meta);
+
+    if (q.stimulus) {
+      const stim = document.createElement('div');
+      stim.className = 'q-stimulus';
+      stim.innerHTML = '<strong>Stimulus:</strong> ' + q.stimulus;
+      card.appendChild(stim);
+    }
+
+    const prompt = document.createElement('div');
+    prompt.className = 'q-prompt';
+    prompt.textContent = (idx + 1) + '. ' + q.question;
+    card.appendChild(prompt);
+
+    const optGrid = document.createElement('div');
+    optGrid.className = 'options-grid';
+
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.innerHTML = '<strong>(' + opt.id + ')</strong> ' + opt.text;
+      btn.onclick = () => selectAnswer(idx, opt.id);
+      optGrid.appendChild(btn);
+    });
+    card.appendChild(optGrid);
+
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback-box';
+    feedback.id = 'fb-' + idx;
+    card.appendChild(feedback);
+
+    container.appendChild(card);
+  });
+}
+
+function selectAnswer(qIdx, selectedOptId) {
+  if (userAnswers[qIdx] !== undefined) return;
+  userAnswers[qIdx] = selectedOptId;
+
+  const q = examQuestions[qIdx];
+  const isCorrect = (selectedOptId === q.correctAnswer);
+  if (isCorrect) score++;
+
+  const card = document.getElementById('card-' + qIdx);
+  const buttons = card.querySelectorAll('.opt-btn');
+
+  buttons.forEach((btn, bIdx) => {
+    btn.disabled = true;
+    const opt = q.options[bIdx];
+    if (opt.id === q.correctAnswer) {
+      btn.classList.add('correct');
+    } else if (opt.id === selectedOptId && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  const fb = document.getElementById('fb-' + qIdx);
+  fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+
+  let distractorNote = '';
+  if (!isCorrect && q.explanation.distractors && q.explanation.distractors[selectedOptId]) {
+    distractorNote = '<p style="margin-top:6px; color:#c5221f;"><strong>Why (' + selectedOptId + ') is incorrect:</strong> ' + q.explanation.distractors[selectedOptId] + '</p>';
+  }
+
+  fb.innerHTML = '<strong>' + (isCorrect ? '✓ Correct!' : '✗ Incorrect. Correct Answer is (' + q.correctAnswer + ')') + '</strong>' +
+    '<p style="margin:4px 0;">' + q.explanation.summary + '</p>' +
+    distractorNote +
+    '<p style="margin-top:6px; font-size:12px; color:#64748b;"><strong>Where to find this in textbook:</strong> ' + q.amscoReference.whereToLook + '</p>';
+
+  updateTracker();
+}
+
+function updateTracker() {
+  const answeredCount = Object.keys(userAnswers).length;
+  const pct = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+  document.getElementById('scoreTracker').textContent = 'Score: ' + score + ' / ' + answeredCount + ' answered (' + pct + '%)';
+}
+
+renderQuiz();
+</script>
+</body>
+</html>

@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography Topic 1.1 Mastery Exam (25 Questions)</title>
+<style>
+  :root {
+    --cb-blue: #0077c8;
+    --cb-dark: #1b263b;
+    --cb-gray: #f4f6f9;
+    --cb-border: #d0d7de;
+    --correct-bg: #e6f4ea;
+    --correct-border: #137333;
+    --wrong-bg: #fce8e6;
+    --wrong-border: #c5221f;
+  }
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--cb-gray); color: #202124; padding: 24px 16px; }
+  .exam-container { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid var(--cb-border); padding: 32px; }
+  .header-bar { border-bottom: 2px solid var(--cb-blue); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; }
+  .header-bar h1 { margin: 0; font-size: 22px; color: var(--cb-dark); }
+  .header-bar .subtitle { font-size: 13px; color: #57606a; margin-top: 4px; }
+  .score-badge { font-weight: bold; color: var(--cb-dark); font-size: 15px; background: #e8f0fe; padding: 8px 14px; border-radius: 6px; border: 1px solid #c2e7ff; }
+  .q-card { border: 1px solid var(--cb-border); border-radius: 8px; padding: 20px; margin-bottom: 24px; background: #fafbfc; }
+  .q-meta { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+  .skill-pill { background: #1b263b; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .amsco-pill { background: #eef2f6; color: #334155; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid #cbd5e1; }
+  .q-stimulus { background: #f1f5f9; border-left: 4px solid var(--cb-blue); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1e293b; border-radius: 0 4px 4px 0; }
+  .q-prompt { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 16px; color: #1f2328; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .opt-btn { background: #fff; border: 1.5px solid var(--cb-border); border-radius: 6px; padding: 12px 14px; text-align: left; font-size: 14.5px; cursor: pointer; transition: all 0.15s ease; color: #24292f; line-height: 1.45; }
+  .opt-btn:hover:not(:disabled) { border-color: var(--cb-blue); background: #f8fbff; }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.correct { background: var(--correct-bg) !important; border-color: var(--correct-border) !important; color: #0d5423; font-weight: 600; }
+  .opt-btn.wrong { background: var(--wrong-bg) !important; border-color: var(--wrong-border) !important; color: #9c1a17; text-decoration: line-through; }
+  .feedback-box { display: none; margin-top: 14px; padding: 14px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; }
+  .feedback-box.show { display: block; }
+  .feedback-box.correct { background: #edf7ed; border-left: 4px solid var(--correct-border); color: #1e4620; }
+  .feedback-box.wrong { background: #fdf2f2; border-left: 4px solid var(--wrong-border); color: #5c1818; }
+  .feedback-box strong { display: block; margin-bottom: 4px; }
+  .nav-back { display: inline-block; margin-bottom: 16px; color: var(--cb-blue); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="exam-container">
+  <a href="../index.html" class="nav-back">&larr; Return to Master Interactive Test Hub</a>
+  <div class="header-bar">
+    <div>
+      <h1>AP Human Geography: Topic 1.1 Mastery Exam</h1>
+      <div class="subtitle">Introduction to Maps &bull; 25 Interactive College Board-Standard Questions &bull; David L. Palmer AMSCO 2nd Ed.</div>
+    </div>
+    <div class="score-badge" id="scoreTracker">Score: 0 / 25 answered (0%)</div>
+  </div>
+
+  <div id="quizForm"></div>
+</div>
+
+<script>
+const examQuestions = [
+  {
+    "id": "1.1-Q01",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Types of Maps: Graduated Symbol Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Graduated Symbol Maps'"
+    },
+    "stimulus": null,
+    "question": "A cartographer produces a map of European population distribution where each green circle indicates a town or city, and larger circles denote progressively greater municipal populations. Which category of thematic map is utilized in this visual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A graduated symbol map that scales the size of circular glyphs to data values.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "An isoline map that connects points of equal elevation using continuous contour lines.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cartogram that distorts the geographic geometry of countries by population size.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A choropleth map that shades political subdivisions based on predefined data ranges.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Graduated (or proportional) symbol maps scale the physical area or diameter of a symbol (such as a circle) in direct proportion to the numerical value of the data point being mapped.",
+      "distractors": {
+        "B": "Isoline maps connect points of equal value (e.g., elevation contours or weather isotherms) with continuous lines.",
+        "C": "Cartograms distort and resize geographic land boundaries based on statistical attributes, rather than placing proportional circles on a real base map.",
+        "D": "Choropleth maps apply tonal shading or colors inside established administrative units (like counties or states)."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q02",
+    "topic": "1.1",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Map Projections and Distortion (SADD)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Map Projections and Distortion'"
+    },
+    "stimulus": null,
+    "question": "Which of the following statements best explains why it is geometrically impossible to display Earth on a two-dimensional flat sheet without introducing distortion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tectonic continental drift alters global coordinates faster than cartographic projection formulas can recalculate them.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Flattening a three-dimensional curved spheroid onto a two-dimensional planar sheet inherently stretches, tears, or compresses space.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Satellite sensors capture spatial data through curved radial optical lenses that systematically skew coordinate intervals.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartographers must omit elevation contour data whenever projecting spherical sovereign borders onto flat rectangular paper grids.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Every flat map introduces distortion because a three-dimensional sphere cannot be projected onto a two-dimensional flat surface without tearing, stretching, or compressing at least one of the four spatial properties: Shape, Area, Distance, or Direction (SADD).",
+      "distractors": {
+        "A": "Plate tectonics operates over millions of years at centimeters per year and has no bearing on 2D map projection geometry.",
+        "C": "Satellite lens distortion is mathematically corrected during orthorectification and is not the root mathematical cause of map distortion.",
+        "D": "Elevation can be displayed on 2D maps via isolines or hillshading; its inclusion or omission does not cause projection distortion."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q03",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Mercator Projection Properties (Shape & Direction)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'The Mercator Projection'"
+    },
+    "stimulus": null,
+    "question": "According to the AMSCO textbook and College Board curriculum, which spatial properties are accurately preserved across the entirety of a Mercator projection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Relative continental land area and true polar surface distances.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Absolute physical distance and equatorial demographic density.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Local landmass shape and constant compass navigational direction.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Proportional global landmass size and agricultural crop yield.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "In AMSCO Topic 1.1, the Mercator projection is defined as a conformal projection that preserves **Shape** and **Direction** (compass bearings), while severely distorting **Area** (relative size near the poles) and **Distance**.",
+      "distractors": {
+        "A": "The Mercator heavily distorts continental area and polar distances, making high-latitude regions appear enormous.",
+        "B": "Physical distances are stretched progressively toward the poles, making distance measurements inaccurate.",
+        "D": "Proportional landmass size (area) is distorted, not preserved, on the Mercator projection."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q04",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Limitations of Choropleth Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Choropleth Maps and Limitations'"
+    },
+    "stimulus": null,
+    "question": "A state economic agency presents a county-level choropleth map demonstrating the percentage of households earning under the federal poverty line. Which of the following describes a prominent limitation of this visual representation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It fails to represent data quantitatively because it uses color shades rather than numbers.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It completely removes latitudinal navigation coordinates required for spatial analysis.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It causes overlapping circular symbols that obscure underlying municipal parcel boundaries.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It hides localized poverty pockets by applying one uniform shade across each county boundary.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Choropleth maps aggregate data into broad political or administrative units (like counties), creating a false impression of uniformity across the entire polygon while masking severe localized disparities within the unit.",
+      "distractors": {
+        "A": "Choropleth maps represent quantitative data effectively through structured classification intervals and color ramps.",
+        "B": "Latitude and longitude coordinates remain active and intact on choropleth basemaps.",
+        "C": "Overlapping circular symbols occur on graduated symbol maps, not polygon-shaded choropleth maps."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q05",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Types of Maps: Isoline Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Isoline Maps'"
+    },
+    "stimulus": null,
+    "question": "A meteorologist generates a weather map displaying North American barometric air pressure by drawing continuous curved lines that link geographic stations recording identical millibar measurements. Which of the following designates this map format?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An isoline map that connects geographic points possessing identical numerical values.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A cartogram that resizes national boundaries based on barometric pressure measurements.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A choropleth map that shades political subdivisions based on regional temperature averages.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dot distribution map that places dots where individual atmospheric weather stations exist.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "An isoline map connects points of equal value with continuous lines (such as isobars for air pressure, isotherms for temperature, or contour lines for elevation).",
+      "distractors": {
+        "B": "Cartograms distort geographic territory size according to an attribute, rather than drawing continuous lines of equal value.",
+        "C": "Choropleth maps shade predefined political or administrative units (e.g., states or counties).",
+        "D": "Dot distribution maps place individual points to show frequency and distribution of discrete events."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q06",
+    "topic": "1.1",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Mercator Projection and Navigation",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Mercator Navigation Advantage'"
+    },
+    "stimulus": null,
+    "question": "Why did transoceanic navigators in the sixteenth through twentieth centuries rely heavily on the Mercator projection despite its dramatic landmass distortions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It accurately displayed the relative land area of equatorial states without distortion.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lines of constant compass direction plot as straight lines, enabling simple navigation bearings.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It maintained true physical mileage distances across the vast expanse of the Pacific Ocean.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It balanced all four geometric properties by mathematically averaging continental errors.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "On a Mercator projection, lines of constant compass direction (rhumb lines or loxodromes) appear as straight lines. A mariner can draw a straight line between two ports and follow that exact compass bearing without recalculating headings.",
+      "distractors": {
+        "A": "Mercator preserves equatorial shape well, but its main navigation advantage was direction, not land area preservation.",
+        "C": "Distance on a Mercator projection is distorted and varies continuously with latitude, making distance measurements complex.",
+        "D": "Averaging errors to create a balanced view describes compromise projections like the Robinson, not the conformal Mercator."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q07",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Types of Maps: Cartograms",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Cartograms'"
+    },
+    "stimulus": null,
+    "question": "A thematic world map portrays national territories where the land area of each country is resized directly in proportion to its total gross domestic product (GDP), resulting in a visibly expanded Japan and an extremely shriveled Sub-Saharan Africa. This graphic is an example of a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Topographic reference map designed to illustrate physical mountain elevations and waterways.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dot-density map where individual dots represent fixed units of commercial economic output.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cartogram that distorts geographic polygon size to reflect the magnitude of statistical data.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Polar azimuthal projection map that measures true directional bearings from the North Pole.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "A cartogram intentionally distorts and resizes the geographic area of political units according to a specific statistical variable (such as population or GDP) rather than actual land area.",
+      "distractors": {
+        "A": "Topographic reference maps depict natural terrain elevations, contour lines, and physical features accurately.",
+        "B": "Dot-density maps place individual dots on an undistorted base map to show spatial concentration.",
+        "D": "Polar azimuthal maps project Earth from a pole onto a flat plane to display true directional bearings."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q08",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Limitations of Dot Distribution Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Dot Distribution Maps and Limitations'"
+    },
+    "stimulus": null,
+    "question": "When cartographers design a dot-density map to represent agricultural livestock across a Midwestern state, which of the following methodological errors poses the greatest threat to valid data interpretation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Failing to convert nautical miles into standard terrestrial survey statute miles in the scale bar.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intentionally altering county political boundary shapes to emphasize regional economic inequality.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Connecting points of equal agricultural output with continuous topographic contour isolines.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Selecting an improper dot value, causing dots to merge into solid blobs or leave rural counties empty.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "In dot-density mapping, setting the dot value either too low causes dots to coalesce into indistinguishable solid black clusters in dense zones, while setting it too high makes moderately populated rural areas look completely empty.",
+      "distractors": {
+        "A": "Scale bar units (nautical vs. statute miles) do not impact dot cluster density interpretation.",
+        "B": "Altering boundary shapes to represent data is done in cartograms, not standard dot-density maps.",
+        "C": "Connecting points of equal value produces an isoline map, which is an entirely different cartographic technique."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q09",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Gall-Peters Projection Properties (Area Preservation)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'The Gall-Peters Projection'"
+    },
+    "stimulus": null,
+    "question": "Which map projection was introduced and popularized by Arno Peters to counteract Eurocentric geographic perceptions by displaying continents according to their true proportional surface area, albeit with noticeable vertical stretching?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Gall-Peters projection, which preserves relative land area while distorting shape.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "The Mercator projection, which preserves local shape while expanding polar land area.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The Robinson projection, which compromises all geometric properties to appear visually balanced.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The polar azimuthal projection, which preserves true compass direction from a center node.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The Gall-Peters projection is an equal-area (equivalent) projection that displays landmasses with accurate relative surface area, but distorts shape by stretching equatorial countries vertically and compressing polar zones horizontally.",
+      "distractors": {
+        "B": "The Mercator projection inflates high-latitude landmasses (like Europe and North America) and is the target of Peters' critique.",
+        "C": "The Robinson is a compromise projection adopted by the National Geographic Society to reduce extreme visual distortions.",
+        "D": "Polar azimuthal projections are planar projections centered on a pole, commonly used for air routes."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q10",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Cartographic Scale: Large Scale vs. Small Scale",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Types of Map Scale'"
+    },
+    "stimulus": null,
+    "question": "Which of the following representative fraction (RF) map scales provides the highest level of localized physical detail on an urban zoning map?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1:1,000,000, which displays an entire state or country with highly generalized features.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1:10,000, which captures individual city parcels, street centerlines, and building footprints.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1:250,000, which portrays a multi-county regional metropolitan area with moderate detail.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1:50,000, which illustrates a township and surrounding rural agricultural hinterland.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "1:10,000 is the 'largest scale' among the choices because the fraction 1/10,000 is mathematically larger than 1/1,000,000. Large-scale maps show smaller geographic areas with much greater, zoomed-in local detail.",
+      "distractors": {
+        "A": "1:1,000,000 is a very small-scale map that covers a huge territory with very generalized features.",
+        "C": "1:250,000 is a regional-scale map suitable for state highways, not urban parcel zoning.",
+        "D": "1:50,000 is a standard USGS topographic quadrangle scale, displaying broader terrain rather than individual city parcels."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q11",
+    "topic": "1.1",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Mathematical Nature of Cartographic Scale",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Representative Fraction and Scale Ratios'"
+    },
+    "stimulus": null,
+    "question": "Why is a map with a scale of 1:15,000 classified as a 'large-scale' map, whereas a map with a scale of 1:5,000,000 is classified as a 'small-scale' map?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A 1:15,000 scale map requires physically larger paper sheets to display an entire continental landmass.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Small-scale maps capture local neighborhoods, while large-scale maps display planetary global hemispheres.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The fraction 1/15,000 is mathematically larger than 1/5,000,000, representing a zoomed-in local area.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1:15,000 maps exclusively measure physical elevation, whereas 1:5,000,000 maps measure political states.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Cartographic scale is a mathematical ratio or fraction: 1/15,000 is a larger number than 1/5,000,000. A large-scale map shows a smaller terrestrial area with more detail, while a small-scale map shows a larger area with less detail.",
+      "distractors": {
+        "A": "Map scale refers to the mathematical ratio between map distance and ground distance, not the physical dimensions of the paper sheet.",
+        "B": "This statement reverses the definitions: small-scale maps show global/continental extents, while large-scale maps show local neighborhoods.",
+        "D": "Scale applies to all map types regardless of whether they depict physical topography or political borders."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q12",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Reference Maps vs. Thematic Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Reference Maps vs. Thematic Maps'"
+    },
+    "stimulus": null,
+    "question": "Which of the following pairs correctly distinguishes a reference map from a thematic map?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reference maps illustrate spatial distributions of datasets, while thematic maps display legal borders.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reference maps rely entirely on qualitative interviews, while thematic maps rely on satellite rasters.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reference maps eliminate all distortion, while thematic maps strictly preserve compass direction.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reference maps show locations of physical landmarks and borders, while thematic maps show data patterns.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Reference maps (e.g., political or physical road atlases) emphasize the location of geographic features, boundaries, and landmarks. Thematic maps focus on the spatial distribution or pattern of a specific topic or statistical dataset (e.g., poverty, climate, voting).",
+      "distractors": {
+        "A": "This statement reverses the definitions: reference maps show locations/borders, while thematic maps show datasets.",
+        "B": "Both reference and thematic maps can utilize satellite, survey, and census data; reference maps do not rely on interviews.",
+        "C": "No flat map eliminates all distortion (due to projection limits), and thematic maps do not strictly preserve compass direction."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q13",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Compromise Projections: The Robinson Projection",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'The Robinson Projection'"
+    },
+    "stimulus": null,
+    "question": "Which cartographic trade-off is intentionally accepted in the design of the Robinson projection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All four geometric properties (shape, area, distance, direction) are slightly distorted to create visual balance.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "True continental land area is preserved everywhere by completely eliminating compass direction accuracy.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Equatorial landmasses are stretched vertically by 300% to guarantee absolute polar navigational clarity.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "High-latitude continents are doubled in physical size to prioritize maritime container shipping routes.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The Robinson projection is a compromise projection: it does not maintain 100% accuracy in any single property, but distributes distortion modestly across shape, area, distance, and direction (SADD) so that the entire globe appears visually balanced and aesthetically pleasing.",
+      "distractors": {
+        "B": "Preserving true area everywhere at the expense of shape describes equal-area projections like Gall-Peters.",
+        "C": "Severe vertical equatorial stretching describes the cylindrical Gall-Peters projection, not the rounded Robinson.",
+        "D": "Doubling high-latitude size is a consequence of the conformal Mercator projection, not the compromise Robinson."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q14",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Topographic Maps and Isolines",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Topographic Maps and Contour Lines'"
+    },
+    "stimulus": null,
+    "question": "What geographic feature does an isoline map illustrate when applied to topographic landscapes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It divides municipal land into legal rectangular parcels according to township survey numbers.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It connects points of equal physical elevation to illustrate landform slopes, ridges, and valleys.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It shades county polygons to represent the percentage of residents employed in manufacturing.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It resizes national boundaries based on the total monetary output of commercial agriculture.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "On topographic maps, isolines (contour lines) connect points of equal elevation above sea level. Closely spaced lines indicate steep terrain/slopes, while widely spaced lines denote gentle plains or plateaus.",
+      "distractors": {
+        "A": "Dividing land into rectangular parcels describes cadastral township and range survey maps.",
+        "C": "Shading county polygons to show employment percentages describes a choropleth thematic map.",
+        "D": "Resizing national boundaries based on economic output describes a cartogram."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q15",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Limitations of Graduated Symbol Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Graduated Symbol Maps and Overlap Issues'"
+    },
+    "stimulus": null,
+    "question": "A cartographer prepares a graduated symbol map displaying national carbon emissions across Western Europe. Which visual challenge is most likely to distort a viewer's interpretation of this map?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Graduated symbols cannot portray numerical data and must rely exclusively on qualitative text.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Continuous contour lines will merge into dense ridges that distort national border positions.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Symbols in small, densely clustered countries overlap and obscure underlying borders and values.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The map will automatically alter the physical square mileage of sovereign national landmasses.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "A primary limitation of graduated symbol maps is symbol congestion and overlap: in regions with small, closely spaced countries (like Europe), large circles overlap each other, making it hard to see which circle belongs to which country or read precise values.",
+      "distractors": {
+        "A": "Graduated symbols are specifically designed to represent quantitative numerical data effectively.",
+        "B": "Contour lines belong to isoline maps, not graduated circle symbol maps.",
+        "D": "Altering physical square mileage of territory occurs in cartograms, not graduated symbol maps."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q16",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "The Four Types of Map Distortion (SADD)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Types of Distortion: Shape, Area, Distance, Direction'"
+    },
+    "stimulus": null,
+    "question": "Which of the following spatial distortions is matched with its correct AMSCO textbook definition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Shape distortion: The absolute compass heading between two cities is mathematically altered.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distance distortion: The geographic perimeter of an island is stretched into an unnatural form.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Direction distortion: The physical mileage between two seaports is systematically expanded.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Area distortion: The relative proportional size of a landmass is depicted inaccurately.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "AMSCO defines Area distortion as when the relative size of different areas is altered, causing a region to appear much larger or smaller than it is in reality (e.g., Greenland appearing as large as Africa on the Mercator).",
+      "distractors": {
+        "A": "Altering compass headings defines direction distortion, not shape distortion.",
+        "B": "Stretching an island perimeter into an unnatural form defines shape distortion, not distance distortion.",
+        "C": "Systematically altering physical mileage between locations defines distance distortion, not direction distortion."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q17",
+    "topic": "1.1",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Mercator High-Latitude Distortion Mechanics",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Why Mercator Distorts Area'"
+    },
+    "stimulus": "On a standard Mercator projection, Greenland appears roughly equal in geographic area to the continent of Africa. In reality, Africa is approximately 14 times larger than Greenland.",
+    "question": "Which geometric factor explains why this dramatic area discrepancy occurs on the Mercator projection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parallels of latitude are spaced further apart toward the poles to keep grid lines at 90 degrees.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Longitudinal meridians curve inward toward the equator, compressing equatorial continent land area.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The Prime Meridian centers on Greenwich, which inherently stretches east-west physical borders.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartographers intentionally shrink tropical landmasses to accommodate ocean shipping legend bars.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "On a globe, meridians converge at the poles. The Mercator forces meridians to remain parallel vertical lines; to maintain accurate 90\u00b0 intersection angles (conformal shape), parallels of latitude must be spaced progressively further apart toward the poles, inflating high-latitude areas enormously.",
+      "distractors": {
+        "B": "Meridians do not curve inward toward the equator on a Mercator; they are drawn as completely parallel vertical lines.",
+        "C": "The Prime Meridian is an arbitrary 0\u00b0 reference line that does not dictate mathematical projection stretching.",
+        "D": "Distortion is an unavoidable mathematical consequence of cylindrical projection geometry, not a legend layout choice."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q18",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Thematic Maps: Dot Distribution Maps",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Dot Distribution Maps'"
+    },
+    "stimulus": null,
+    "question": "A state agricultural agency seeks to illustrate the exact clustering, dispersal, and geographic density of commercial apple orchards across Washington State. Which thematic map type is best suited for this objective?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A choropleth map that shades each county polygon based on total agricultural crop revenue.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dot-density map where each point represents a fixed number of orchards across the state.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A cartogram that distorts the geographic boundary lines of counties based on farm employment.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "An isoline map that connects individual farming communities with continuous contour bands.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Dot-density (dot distribution) maps place uniform dots to represent discrete quantities of a phenomenon, making them ideal for showing visual spatial patterns of clustering, dispersion, and density across a landscape.",
+      "distractors": {
+        "A": "A choropleth map aggregates data into county totals, hiding exact localized orchard clustering within counties.",
+        "C": "A cartogram resizes county boundaries and distorts real spatial locations, obscuring geographic distribution.",
+        "D": "Isoline maps depict continuous numerical gradients (like elevation or rainfall), not discrete farming locations."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q19",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "The Ecological Fallacy in Cartography",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Misleading Conclusions and Ecological Fallacy'"
+    },
+    "stimulus": null,
+    "question": "A student looks at a national-level choropleth map of adult illiteracy in Brazil and mistakenly concludes that every single resident living within the Amazon basin cannot read. This student's error exemplifies which geographic pitfall?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism dictating agricultural labor choices.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Time-space compression reducing communication friction across distances.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The ecological fallacy of applying aggregate group statistics to every individual.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The modifiable areal unit problem altering projection geometry angles.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The ecological fallacy occurs when an analyst assumes that a statistical trait observed at an aggregate group or regional level applies uniformly to every individual residing within that area.",
+      "distractors": {
+        "A": "Environmental determinism claims physical climate controls human civilization, which is unrelated to statistical overgeneralization.",
+        "B": "Time-space compression relates to faster transit and communication across space, not statistical interpretation error.",
+        "D": "MAUP describes how redrawing statistical boundaries changes data results, not assuming individuals match group averages."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q20",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Azimuthal (Planar) Projections",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Planar and Azimuthal Projections'"
+    },
+    "stimulus": null,
+    "question": "Which map projection is constructed by projecting Earth's surface onto a flat plane touching at a single point (often a pole), making it ideal for polar air navigation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cylindrical Mercator projection, which preserves direction along rectangular compass grids.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A conic projection, which wraps a paper cone over mid-latitude temperate landmasses.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Goode Homolosine projection, which interrupts ocean basins to preserve continental shape.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "An azimuthal (planar) projection, which displays true direction from its center point.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "An azimuthal (or planar) projection is created by projecting the globe onto a flat surface touching at a single focal point (often the North or South Pole). Great circle routes radiating from the center point plot as straight lines, making it the premier projection for polar aviation.",
+      "distractors": {
+        "A": "Cylindrical Mercator projections wrap a cylinder around the equator and distort polar areas to infinity.",
+        "B": "Conic projections project onto a cone tangent to mid-latitudes, best for mapping countries like the US or Russia.",
+        "C": "Goode's Homolosine is an interrupted pseudo-cylindrical projection that tears oceans to preserve continental shapes."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q21",
+    "topic": "1.1",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "The Purpose of Cartographic Scale",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Why Geographers Use Map Scale'"
+    },
+    "stimulus": null,
+    "question": "Why do geographers utilize cartographic map scale when conducting spatial analysis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It establishes the mathematical relationship between distance on a map and ground distance on Earth.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "It determines whether a geographic region should be classified as formal or vernacular.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It dictates whether survey interview data should be categorized as quantitative or qualitative.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It measures the Gini coefficient to identify income inequality across metropolitan census tracts.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Map scale mathematically defines the ratio of a distance on the map to the corresponding physical distance on Earth's surface (expressed as a ratio, graphic bar scale, or written statement).",
+      "distractors": {
+        "B": "Classifying formal vs. vernacular regions is based on cultural/administrative traits, not map scale ratios.",
+        "C": "Qualitative vs. quantitative classification depends on data format (text vs. numbers), not cartographic distance scale.",
+        "D": "The Gini coefficient is an econometric measure of wealth distribution, not a cartographic map scale."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q22",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Reading Isoline Gradient Patterns",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Interpreting Isoline Gradients'"
+    },
+    "stimulus": null,
+    "question": "A cartographer displays internet broadband download speeds across a state using an isoline map with lines drawn at 25 Mbps intervals. In an area where the lines are drawn very close together, what does the map indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Broadband download speeds are completely uniform throughout that entire geographic county.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Broadband speeds change rapidly over a very short physical distance, showing a steep gradient.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "That specific area possesses the lowest absolute human population density in the entire state.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The cartographer mistakenly applied a cartogram algorithm across that specific regional zone.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "On isoline maps, closely spaced lines represent a steep gradient or rapid rate of change across geographic space (e.g., steep mountain cliffs on topographic maps, or abrupt drops in broadband speed at city borders).",
+      "distractors": {
+        "A": "If speeds were uniform, there would be no isolines drawn, as isolines indicate transitions between values.",
+        "C": "Isolines display data values (broadband speed), not population density unless explicitly mapping census counts.",
+        "D": "Closely spaced lines are standard cartographic technique for steep gradients, not an algorithmic software error."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q23",
+    "topic": "1.1",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Geopolitical Bias in the Mercator Projection",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Cartographic Bias and World Views'"
+    },
+    "stimulus": null,
+    "question": "What is a prominent criticism of using a world map based on the Mercator projection in an introductory geography classroom?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It completely distorts the geometric shapes and angles of small oceanic island nations.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It fails to allow straight lines on the map to represent constant navigational compass bearings.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It fosters Eurocentric bias by exaggerating Northern Core landmasses and shrinking the Periphery.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "It eliminates lines of latitude and longitude from the global cartographic grid entirely.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "By heavily inflating high-latitude regions (Europe, North America, Greenland) and shrinking equatorial landmasses (Africa, South America, South Asia), the Mercator projection visually exaggerates the physical prominence of wealthy Global North nations at the expense of developing Global South countries.",
+      "distractors": {
+        "A": "Mercator is conformal and preserves local shapes and angles very accurately, especially for smaller landmasses.",
+        "B": "Allowing straight lines to represent constant compass bearings is the primary purpose and strength of the Mercator.",
+        "D": "The Mercator grid clearly displays latitude and longitude intersecting at perfect 90-degree right angles."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q24",
+    "topic": "1.1",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Interrupted Projections: Goode Homolosine",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Interrupted Projections: Goode's Homolosine'"
+    },
+    "stimulus": null,
+    "question": "Which of the following is a classic example of an interrupted map projection that divides the oceans into wedges in order to maintain accurate landmass area and shape?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mercator projection, which extends ocean basins continuously to preserve compass navigation bearings.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gall-Peters projection, which wraps a cylindrical surface to maintain proportional continental area.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polar azimuthal projection, which projects the Northern Hemisphere onto a flat circular plane.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Goode's Homolosine projection, which interrupts oceanic space to preserve continental shape and size.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Goode's Homolosine projection is an interrupted composite projection that divides ocean basins (resembling an unpeeled orange) to minimize distortion of both landmass shape and equal area.",
+      "distractors": {
+        "A": "The Mercator is an uninterrupted cylindrical projection that keeps oceans contiguous for navigation.",
+        "B": "The Gall-Peters is an uninterrupted cylindrical equal-area projection that distorts shape without cutting the oceans.",
+        "C": "Polar azimuthal projections are planar circular maps with no oceanic interruptions."
+      }
+    }
+  },
+  {
+    "id": "1.1-Q25",
+    "topic": "1.1",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.1: Introduction to Maps",
+      "section": "Thematic Maps: Choropleth Maps and Classification",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.1, under 'Thematic Maps: Choropleth Maps'"
+    },
+    "stimulus": null,
+    "question": "An economic development analyst uses five distinct shading gradations from light yellow to dark purple to illustrate municipal median home values across a metropolitan region. Which type of map is being utilized?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An isoline map that connects points of equal value using continuous curved contour lines.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dot-density map that places individual identical points to represent clusters of homes.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cartogram that distorts municipal boundary dimensions based on total tax revenues.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A choropleth map that uses varying color tones to represent data intervals within defined areas.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "A choropleth map uses tonal shading, color saturation, or hatching within predefined statistical units (e.g., municipalities, counties) to represent quantitative data intervals.",
+      "distractors": {
+        "A": "Isoline maps use continuous lines connecting equal values, not polygon-shaded administrative zones.",
+        "B": "Dot-density maps use point symbols scattered across space, not shaded polygons.",
+        "C": "Cartograms physically distort boundary shapes, whereas choropleth maps keep true geographic boundaries intact."
+      }
+    }
+  }
+];
+
+let userAnswers = {};
+let score = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('quizForm');
+  container.innerHTML = '';
+
+  examQuestions.forEach((q, idx) => {
+    const card = document.createElement('div');
+    card.className = 'q-card';
+    card.id = 'card-' + idx;
+
+    const meta = document.createElement('div');
+    meta.className = 'q-meta';
+    meta.innerHTML = '<span class="skill-pill">' + q.skill + '</span> ' +
+      '<span class="amsco-pill">AMSCO: ' + q.amscoReference.section + '</span>';
+    card.appendChild(meta);
+
+    if (q.stimulus) {
+      const stim = document.createElement('div');
+      stim.className = 'q-stimulus';
+      stim.innerHTML = '<strong>Stimulus:</strong> ' + q.stimulus;
+      card.appendChild(stim);
+    }
+
+    const prompt = document.createElement('div');
+    prompt.className = 'q-prompt';
+    prompt.textContent = (idx + 1) + '. ' + q.question;
+    card.appendChild(prompt);
+
+    const optGrid = document.createElement('div');
+    optGrid.className = 'options-grid';
+
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.innerHTML = '<strong>(' + opt.id + ')</strong> ' + opt.text;
+      btn.onclick = () => selectAnswer(idx, opt.id);
+      optGrid.appendChild(btn);
+    });
+    card.appendChild(optGrid);
+
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback-box';
+    feedback.id = 'fb-' + idx;
+    card.appendChild(feedback);
+
+    container.appendChild(card);
+  });
+}
+
+function selectAnswer(qIdx, selectedOptId) {
+  if (userAnswers[qIdx] !== undefined) return;
+  userAnswers[qIdx] = selectedOptId;
+
+  const q = examQuestions[qIdx];
+  const isCorrect = (selectedOptId === q.correctAnswer);
+  if (isCorrect) score++;
+
+  const card = document.getElementById('card-' + qIdx);
+  const buttons = card.querySelectorAll('.opt-btn');
+
+  buttons.forEach((btn, bIdx) => {
+    btn.disabled = true;
+    const opt = q.options[bIdx];
+    if (opt.id === q.correctAnswer) {
+      btn.classList.add('correct');
+    } else if (opt.id === selectedOptId && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  const fb = document.getElementById('fb-' + qIdx);
+  fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+
+  let distractorNote = '';
+  if (!isCorrect && q.explanation.distractors && q.explanation.distractors[selectedOptId]) {
+    distractorNote = '<p style="margin-top:6px; color:#c5221f;"><strong>Why (' + selectedOptId + ') is incorrect:</strong> ' + q.explanation.distractors[selectedOptId] + '</p>';
+  }
+
+  fb.innerHTML = '<strong>' + (isCorrect ? '✓ Correct!' : '✗ Incorrect. Correct Answer is (' + q.correctAnswer + ')') + '</strong>' +
+    '<p style="margin:4px 0;">' + q.explanation.summary + '</p>' +
+    distractorNote +
+    '<p style="margin-top:6px; font-size:12px; color:#64748b;"><strong>Where to find this in textbook:</strong> ' + q.amscoReference.whereToLook + '</p>';
+
+  updateTracker();
+}
+
+function updateTracker() {
+  const answeredCount = Object.keys(userAnswers).length;
+  const pct = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+  document.getElementById('scoreTracker').textContent = 'Score: ' + score + ' / ' + answeredCount + ' answered (' + pct + '%)';
+}
+
+renderQuiz();
+</script>
+</body>
+</html>

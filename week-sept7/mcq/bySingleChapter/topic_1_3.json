@@ -1,0 +1,1193 @@
+{
+  "unit": 1,
+  "unitTitle": "Unit 1: Thinking Geographically",
+  "topic": "Topic 1.3",
+  "topicTitle": "The Power of Geographic Data",
+  "curriculum": "AP Human Geography (College Board CED)",
+  "totalQuestions": 25,
+  "textbook": {
+    "title": "Advanced Placement Human Geography, 2nd Edition",
+    "author": "David L. Palmer",
+    "publisher": "AMSCO / Perfection Learning",
+    "chapter": "Unit 1: Thinking Geographically",
+    "topic": "Topic 1.3: The Power of Geographic Data",
+    "unit": "Unit 1: Thinking Geographically"
+  },
+  "questions": [
+    {
+      "id": "1.3-Q01",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Geographic Information Systems (GIS)",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geographic Information Systems (GIS)'"
+      },
+      "stimulus": null,
+      "question": "Which of the following descriptions accurately characterizes a Geographic Information System (GIS)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A computer system that captures, stores, analyzes, and layers spatial data.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A network of orbital satellites transmitting synchronized radio timing signals.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A handheld receiver calculating terrestrial elevation using atomic time clocks.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A specialized photographic camera capturing multispectral radiant light waves.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "A Geographic Information System (GIS) is a computer software and hardware framework designed to capture, store, manipulate, analyze, manage, and visualize multiple thematic layers of georeferenced spatial data.",
+        "distractors": {
+          "B": "A network of orbital satellites broadcasting radio timing signals describes the Global Positioning System (GPS), not a GIS.",
+          "C": "A handheld receiver calculating altitude and position via atomic clocks is a GPS receiver unit.",
+          "D": "A multispectral camera mounted on aircraft or satellites represents remote sensing hardware."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q02",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Remote Sensing Technologies",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Remote Sensing'"
+      },
+      "stimulus": null,
+      "question": "Which of the following technologies gathers geographic information about Earth's surface without physical contact?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fieldwork surveys conducting pedestrian door-to-door resident interviews.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Remote sensing sensors capturing reflected electromagnetic radiation.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Cadastral ground markers measuring metes and bounds property lines.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Decennial census questionnaires mailed to suburban residential homes.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Remote sensing is the acquisition of physical and environmental data from a distance, utilizing sensors mounted on satellites, airplanes, or drones that detect reflected or emitted electromagnetic radiation.",
+        "distractors": {
+          "A": "Door-to-door interviews represent direct, on-the-ground qualitative fieldwork with human contact.",
+          "C": "Cadastral surveying involves physical boundary stakes, tripods, and on-site land measurement.",
+          "D": "Census questionnaires are direct written survey instruments administered to human respondents."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q03",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Global Positioning System (GPS) Mechanics",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Global Positioning System (GPS)'"
+      },
+      "stimulus": null,
+      "question": "How does the Global Positioning System (GPS) determine the precise mathematical location of a receiver on Earth?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By calculating electromagnetic magnetic flux along tectonic fault rifts.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "By transcribing qualitative field narratives from local resident observers.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "By using trilateration signals transmitted from a minimum of 4 satellites.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "By interpolating temperature contour lines across regional weather maps.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "GPS receivers determine precise geographic coordinates (latitude, longitude, altitude) by calculating the exact travel time of radio signals transmitted from a minimum of four medium-Earth orbit satellites via mathematical trilateration.",
+        "distractors": {
+          "A": "GPS relies on satellite radio timing signals, not magnetic flux measurements along tectonic rifts.",
+          "B": "Qualitative oral narratives represent humanistic fieldwork, completely unrelated to satellite geodesy.",
+          "D": "Isoline temperature interpolation is a meteorological cartographic technique, not GPS trilateration."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q04",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "GIS Data Structures: Vector vs. Raster Data",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'GIS Data Formats: Vector and Raster'"
+      },
+      "stimulus": null,
+      "question": "In a Geographic Information System (GIS), how does vector spatial data fundamentally differ from raster spatial data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vector data represents continuous elevation grids while raster data maps point coordinates.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Vector data stores qualitative interviews while raster data compiles monetary trade figures.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Vector data records satellite photos while raster data demarcates legal property boundaries.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Vector data uses points, lines, and polygons while raster data uses a grid of square cells.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "In GIS, vector models represent discrete geographic features using coordinate points, lines (roads, rivers), and polygons (parcels, lakes), whereas raster models represent continuous surfaces using regular grid cells or pixels (satellite imagery, elevation rasters).",
+        "distractors": {
+          "A": "This reverses the two: raster grids display continuous elevation, while vector points map exact coordinates.",
+          "B": "Vector and raster are both spatial data formats; neither is defined as raw interview audio or monetary figures.",
+          "C": "Satellite photos are stored as raster grids, while legal property parcels are stored as vector polygons."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q05",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "GIS Layering and Spatial Overlay Analysis",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Spatial Analysis: Layering Data'"
+      },
+      "stimulus": "A municipal emergency management department wants to coordinate disaster evacuation routing by analyzing 100-year floodplain contours, elevation models, highway capacities, and senior care facility locations.",
+      "question": "Which geospatial technique allows planners to combine these disparate spatial datasets to determine high-risk zones?",
+      "options": [
+        {
+          "id": "A",
+          "text": "GIS overlay analysis that integrates multiple thematic vector and raster map layers.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Conformal cylindrical projections that expand high-latitude land areas for navigators.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Unstructured qualitative interviews conducted with municipal highway toll booth workers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Single-variable dot-density mapping indicating aggregate county population numbers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "GIS overlay analysis enables analysts to stack multiple thematic layers—hydrology, topography, transit infrastructure, and vulnerable population nodes—to identify intersections of hazard risk and guide evacuation planning.",
+        "distractors": {
+          "B": "Conformal cylindrical projections relate to cartographic distortion (like Mercator), not multi-variable hazard modeling.",
+          "C": "Toll worker interviews provide limited qualitative anecdotes, not comprehensive spatial overlay modeling.",
+          "D": "Single-variable dot maps display only one demographic attribute and cannot calculate multi-criteria hazard zones."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q06",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Precision Agriculture and Geospatial Technology",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geospatial Technology in Agriculture'"
+      },
+      "stimulus": null,
+      "question": "Commercial farmers combine multispectral satellite imagery with GPS-guided tractors to practice precision agriculture. What is the primary geographic benefit of this integrated approach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eliminating all seasonal variations in regional weather patterns across crop fields.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Targeting water and fertilizer application to specific micro-zones needing nutrients.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Preventing international commodity price fluctuations on global agricultural boards.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Converting commercial grain farms into fully automated residential shopping centers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Precision agriculture integrates remote sensing (identifying stressed vegetation zones) and GPS tractor navigation to deliver exact quantities of water, seeds, and fertilizer only where needed, reducing waste and chemical runoff.",
+        "distractors": {
+          "A": "Geospatial guidance systems optimize field inputs; they cannot control atmospheric weather patterns.",
+          "C": "Global commodity market prices fluctuate based on international supply and demand, not farm-level GPS.",
+          "D": "Precision agriculture improves agricultural productivity; it does not convert cropland into suburban malls."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q07",
+      "topic": "Topic 1.3",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns, networks, and relationships.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Time-Series Satellite Imagery and Environmental Change",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Monitoring Environmental Change from Space'"
+      },
+      "stimulus": null,
+      "question": "Environmental geographers analyzing time-series satellite imagery of Central Asia over four decades observe that the Aral Sea lost over 90% of its surface area. What analytical capability makes remote sensing essential for this study?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Its reliance on qualitative folklore interviews recorded from local fishing villages.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Its capacity to alter historical atmospheric carbon concentrations over lake basins.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Its ability to capture repeated, consistent landscape imagery across broad spans of time.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Its legal authority to redistribute water quotas among sovereign Central Asian nations.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Remote sensing satellites capture repeated, consistent multispectral images over the same geographic coordinates for decades, providing visual, empirical proof of environmental change, desiccation, and deforestation.",
+        "distractors": {
+          "A": "Remote sensing relies on electro-optical and radar satellite sensors, not ethnographic folklore interviews.",
+          "B": "Satellites monitor and record environmental phenomena; they do not alter atmospheric chemistry.",
+          "D": "Satellite imagery provides objective scientific documentation; it possesses no legal governance authority."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q08",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Commercial Retail Site Selection and Market Area Buffering",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Commercial Applications: Retail Site Selection'"
+      },
+      "stimulus": null,
+      "question": "A national retail supermarket chain uses GIS to evaluate prospective store sites by analyzing household median incomes, competitor locations, and road drive-time catchments. This commercial application demonstrates the use of GIS for which purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enforcing international commercial maritime shipping treaties across ocean straits.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Apportioning legislative seats among congressional districts following a census.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Eliminating all freight transportation fuel expenses across nationwide supply chains.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Determining market threshold viability and selecting optimal commercial store sites.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Private retail corporations use GIS spatial analytics (market threshold, drive-time trade area buffers, competitor proximity, and customer demographic overlays) to determine profitable store locations and minimize market cannibalization.",
+        "distractors": {
+          "A": "Maritime shipping treaties are international diplomatic matters, not private supermarket retail expansion.",
+          "B": "Congressional reapportionment is a constitutional legislative process, not private business marketing.",
+          "C": "GIS route optimization reduces fuel costs, but it cannot eliminate logistics transport expenses entirely."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q09",
+      "topic": "Topic 1.3",
+      "skill": "Skill 4.A",
+      "skillDescription": "Identify the different types of information presented in visual sources.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Volunteered Geographic Information (VGI) and Crowdsourcing",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Volunteered Geographic Information and Crisis Mapping'"
+      },
+      "stimulus": "Following a catastrophic 7.0 magnitude earthquake in Haiti, hundreds of international volunteers updated OpenStreetMap in real time using satellite imagery to trace impassable roads, collapsed bridges, and spontaneous triage clinics.",
+      "question": "This collaborative humanitarian cartography exemplifies which contemporary geographic data collection method?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Volunteered Geographic Information (VGI) generated through online crowdsourcing.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Classified military satellite radar reconnaissance conducted by state defense forces.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Decennial constitutional census enumeration executed by international treaty agents.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Commercial proprietary consumer transaction telemetry bought from credit agencies.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Volunteered Geographic Information (VGI) involves citizen volunteers and grassroots communities voluntarily gathering, digitizing, and sharing georeferenced spatial data (as in OpenStreetMap crisis mapping after disasters).",
+        "distractors": {
+          "B": "Military radar reconnaissance is closed, classified intelligence, not open collaborative volunteer cartography.",
+          "C": "Decennial census surveys are formal periodic government counts, not voluntary post-disaster crowd-mapping.",
+          "D": "Commercial transaction telemetry is private financial data, unrelated to open-access humanitarian disaster maps."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q10",
+      "topic": "Topic 1.3",
+      "skill": "Skill 4.F",
+      "skillDescription": "Explain possible limitations of the visual source or data provided.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Limitations and Quality Control of Crowdsourced Spatial Data",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Assessing Volunteered Geographic Information'"
+      },
+      "stimulus": null,
+      "question": "While Volunteered Geographic Information (VGI) provides rapid, low-cost spatial updates during humanitarian crises, what is a primary limitation of relying solely on crowdsourced data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "VGI platforms cannot display vector line features like roadway corridors on map screens.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Data quality varies greatly due to inconsistent contributor expertise and lack of verification.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Federal international treaties strictly prohibit relief agencies from utilizing digital maps.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Crowdsourced platforms can only operate on cylindrical conformal Mercator projections.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "The main vulnerability of VGI is variable quality and accuracy: because anyone can contribute, data may be incomplete, unverified by professional cartographers, or subject to volunteer bias, omission, and vandalism.",
+        "distractors": {
+          "A": "VGI platforms (like OpenStreetMap) excel at digitizing vector roads, lines, points, and building footprints.",
+          "C": "No international treaties prohibit using digital maps in disaster relief; humanitarian agencies rely on them heavily.",
+          "D": "VGI platforms can project spatial data using any coordinate system or digital projection."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q11",
+      "topic": "Topic 1.3",
+      "skill": "Skill 4.F",
+      "skillDescription": "Explain possible limitations of the visual source or data provided.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Spatial Privacy, Ethics, and Surveillance",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geospatial Ethics: Privacy and Surveillance'"
+      },
+      "stimulus": null,
+      "question": "The widespread commercial collection and spatial aggregation of real-time smartphone geolocation traces has generated intense public controversy primarily because it:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Overloads international telecommunication satellite orbits with physical clutter.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Artificially accelerates tectonic plate shifts near high-density metropolitan cities.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Threatens individual privacy by enabling surveillance and deanonymization of routines.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Renders computer geographic information systems obsolete for municipal planners.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Commercial aggregation of smartphone location data creates profound civil liberties concerns: tracking repetitive daily movement patterns allows analysts to deanonymize individuals, exposing their home addresses, places of worship, healthcare visits, and political gatherings.",
+        "distractors": {
+          "A": "Smartphone tracking uses terrestrial cell towers and software pings; it does not add physical debris to orbit.",
+          "B": "Digital telecommunication signals have zero physical influence on tectonic plate movements.",
+          "D": "Location telemetry fuels modern GIS analytics; it does not make GIS software obsolete."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q12",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "LiDAR Technology and Canopy Penetration",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'LiDAR and Elevation Mapping'"
+      },
+      "stimulus": null,
+      "question": "Archaeologists and physical geographers mapping ancient Maya settlements beneath dense tropical rainforest canopies in Guatemala utilize airborne Light Detection and Ranging (LiDAR). Why is LiDAR uniquely suited for this spatial task?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It transcribes ancient glyph inscriptions directly into modern spoken foreign languages.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It captures ethnographic audio interviews with ancient pre-Columbian civilization leaders.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It replaces satellite positioning systems by measuring atmospheric barometric pressures.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It pulses millions of laser beams through forest canopy gaps to map hidden ground relief.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Airborne LiDAR pulses millions of laser light beams per second toward the ground; while some reflect off the dense tree canopy, others penetrate between leaves to strike the forest floor, revealing hidden topography, ancient stone pyramids, and terraced agricultural canals.",
+        "distractors": {
+          "A": "LiDAR measures physical distances to calculate elevation; it cannot decipher or translate written language glyphs.",
+          "B": "Pre-Columbian Maya civilization flourished centuries ago; LiDAR is an optical laser scanner, not an audio recorder.",
+          "C": "LiDAR works in tandem with GPS/IMU systems to calculate coordinates; it does not replace them."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q13",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Spatial Epidemiology and Disease Tracking",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geographic Data in Public Health'"
+      },
+      "stimulus": "A state public health agency maps reported cases of waterborne cholera alongside municipal sewer lines, elevation gradients, and communal well pump locations.",
+      "question": "This analytical application mirrors which historical milestone in the evolution of modern spatial epidemiology and medical geography?",
+      "options": [
+        {
+          "id": "A",
+          "text": "John Snow's 1854 spatial analysis identifying the contaminated Broad Street water pump in London.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "E.G. Ravenstein's formulation of international migration laws and gravity flow principles.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Thomas Malthus's demographic theory forecasting catastrophic exponential population crash.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Alfred Weber's least cost theory calculating raw material transportation weight losses.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Dr. John Snow's famous 1854 Soho cholera map in London mapped death locations and communal water pumps, proving cholera was waterborne and pioneering the spatial disease overlay techniques central to modern GIS epidemiology.",
+        "distractors": {
+          "B": "Ravenstein developed laws of human migration (short-distance, rural-to-urban), not waterborne disease mapping.",
+          "C": "Malthus theorized that population growth outstrips food production, unrelated to spatial disease mapping.",
+          "D": "Weber's Least Cost Theory calculates industrial manufacturing plant location based on transport costs."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q14",
+      "topic": "Topic 1.3",
+      "skill": "Skill 3.A",
+      "skillDescription": "Identify the different types of data presented in visual sources.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Thermal Remote Sensing and Urban Heat Islands",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Thermal Imagery and Urban Environmental Analysis'"
+      },
+      "stimulus": null,
+      "question": "An urban environmental planner examines satellite thermal infrared imagery of a metropolitan area to evaluate the Urban Heat Island effect. Which pattern will the thermal imagery most likely reveal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Heavily forested parks exhibit significantly higher surface temperatures than asphalt parking lots.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Dense commercial corridors with asphalt and concrete absorb heat and register elevated temperatures.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Surface temperatures remain completely uniform across all residential, commercial, and rural zones.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Thermal sensors cannot measure infrared radiation emitted from human-built pavement materials.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Thermal infrared satellite imagery records emitted surface heat: impervious surfaces (asphalt roads, dark roofs, concrete parking decks) absorb solar radiation and reradiate heat, making dense urban cores far hotter than vegetated parks.",
+        "distractors": {
+          "A": "Vegetated parks experience evaporative cooling from tree canopies, registering lower temperatures than asphalt.",
+          "C": "Urban areas exhibit sharp thermal variations due to differential albedo and vegetation cover, not uniform temperatures.",
+          "D": "Thermal sensors specifically measure longwave infrared energy radiated from Earth's surface materials."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q15",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Crime Hotspot Analysis and Predictive Policing",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Spatial Data in Public Safety and Policing'"
+      },
+      "stimulus": null,
+      "question": "A municipal police department uses GIS kernel density estimation to produce 'heatmaps' of late-night vehicle break-ins across city sectors. How does this spatial analysis inform resource allocation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It mandates the immediate constitutional annexation of all surrounding unincorporated counties.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It proves that vehicle break-ins are caused exclusively by physical topographical elevation slopes.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It identifies statistically significant crime clusters to deploy targeted nighttime foot patrols.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the legal need for municipal law enforcement officers to maintain written logbooks.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Crime hotspot analysis applies spatial point pattern analysis to identify statistically significant clusters (hotspots) of criminal activity, enabling police departments to deploy patrols and street lighting to targeted corridors.",
+        "distractors": {
+          "A": "Municipal territorial annexation is a formal legal state legislative process, not a patrol allocation tactic.",
+          "B": "Vehicle thefts relate to socioeconomic opportunities and guardianship, not physical elevation terrain.",
+          "D": "Spatial heatmaps guide operational patrol deployments; they do not alter legal record-keeping requirements."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q16",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "GIS Proximity and Buffer Analysis",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Spatial Buffer Analysis'"
+      },
+      "stimulus": null,
+      "question": "An urban planning board utilizes GIS spatial buffer analysis to enforce environmental zoning laws around protected river corridors. Which of the following operations describes this GIS procedure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Digitizing historical qualitative oral poetry recordings into acoustic soundwave databases.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Recalibrating satellite atomic clocks to adjust for relativistic time distortions in outer orbit.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Distorting map border dimensions based on the monetary GDP output of riverside factories.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Generating a 500-foot restricted setback zone along riverbanks to evaluate building permits.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Buffer analysis in GIS generates a polygon encompassing a specified distance around a point, line, or polygon feature (such as a 500-foot buffer around protected riverbanks) to assess zoning compliance and prevent environmental runoff.",
+        "distractors": {
+          "A": "Digitizing spoken poetry is an archival humanities procedure, not a GIS proximity buffering algorithm.",
+          "B": "Atomic clock relativistic adjustments are handled by satellite physics engineers, not urban zoning boards.",
+          "C": "Distorting boundaries based on economic statistics produces a cartogram, not a proximity buffer zone."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q17",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Crowdsourced Real-Time Traffic Navigation",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Real-Time Navigation and Crowdsourced Telemetry'"
+      },
+      "stimulus": null,
+      "question": "Mobile navigation applications (such as Waze or Google Maps) reroute drivers around unexpected highway collisions in real time. Which geographic process enables this instantaneous optimization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aggregating passive crowdsourced GPS vehicle velocity traces with active user incident alerts.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Relying exclusively on decennial federal highway traffic census reports published every decade.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Conducting annual in-person postal surveys mailed to licensed commercial truck drivers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Projecting vehicle movements using high-latitude interrupted polar azimuthal coordinate charts.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Modern navigation apps rely on passive crowdsourcing (tracking real-time speed and location pings from millions of smartphones) combined with active crowdsourced alerts (users reporting crashes or police) to dynamically reroute drivers.",
+        "distractors": {
+          "B": "Decennial census data is collected once every 10 years and cannot provide real-time minute-by-minute traffic updates.",
+          "C": "Annual postal surveys measure historical freight trends, not instantaneous live congestion conditions.",
+          "D": "Polar azimuthal charts are specialized navigation projections for aviation, not road navigation algorithms."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q18",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Geospatial Technology in Wildlife Conservation",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geographic Data in Wildlife Management'"
+      },
+      "stimulus": null,
+      "question": "Wildlife conservationists in Kenya fit endangered elephants with GPS satellite telemetry collars programmed with virtual boundaries ('geofences') around agricultural villages. How does this spatial data protect both wildlife and farmers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It enables elephants to autonomously harvest commercial export crops during night hours.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It sends automated text alerts to park rangers when elephants approach village farms.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It legally eliminates all national park boundaries established during the colonial era.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for elephants to drink fresh water during prolonged seasonal droughts.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "GPS geofencing creates virtual perimeter boundaries: when a collared elephant crosses into an agricultural zone, automated satellite alerts trigger text messages to rangers and farmers to intercept the animals peacefully, preventing human-wildlife conflict.",
+        "distractors": {
+          "A": "Elephants are wild herbivores; GPS collars do not train them to perform commercial agricultural labor.",
+          "C": "GPS tracking monitors animal movements; it does not repeal statutory national park boundaries.",
+          "D": "Geospatial tracking provides spatial situational awareness; it cannot alter animal biological hydration needs."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q19",
+      "topic": "Topic 1.3",
+      "skill": "Skill 4.F",
+      "skillDescription": "Explain possible limitations of the visual source or data provided.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Commercial Geofencing and Targeted Mobile Advertising",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Geofencing and Commercial Tracking'"
+      },
+      "stimulus": null,
+      "question": "Retail marketing corporations establish virtual spatial boundaries around competing clothing stores so that consumers entering the competitor's building receive instant discount coupons on their smartphones. This practice is known as which commercial technique?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sovereign territorial demarcation under the United Nations Convention on the Law of the Sea.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Environmental possibilism overcoming commercial physical topography across urban retail markets.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Location-based commercial geofencing designed to intercept shoppers via mobile advertising.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The modifiable areal unit problem altering aggregated voting precinct boundary calculations.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Commercial geofencing establishes a virtual geographic perimeter around specific retail locations using GPS, Wi-Fi, or cellular proximity, triggering targeted mobile advertisements or push notifications when consumers enter the zone.",
+        "distractors": {
+          "A": "UNCLOS governs international maritime Exclusive Economic Zones, not private smartphone coupon advertising.",
+          "B": "Possibilism explains how humans adapt to physical environments, wholly unrelated to digital proximity advertising.",
+          "D": "MAUP describes statistical aggregation artifacts on choropleth maps, not commercial mobile geofencing."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q20",
+      "topic": "Topic 1.3",
+      "skill": "Skill 3.A",
+      "skillDescription": "Identify the different types of data presented in visual sources.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Multispectral Satellite Vegetation Indices (NDVI)",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Multispectral Remote Sensing and Agriculture'"
+      },
+      "stimulus": null,
+      "question": "Agricultural economists evaluate famine vulnerability across the Sahel region of Africa using satellite-derived Normalized Difference Vegetation Index (NDVI) data. What does NDVI measure to predict agricultural crop failure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The exact monetary market price of imported wheat traded on international commodity exchanges.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The total quantitative population count of nomadic pastoralist herders residing in desert zones.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The concentration of chemical synthetic nitrogen additives present in municipal tap water systems.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The relative absorption and reflection of red and near-infrared light by chlorophyll in plant leaves.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "NDVI measures the difference between visible red light (absorbed by plant chlorophyll for photosynthesis) and near-infrared light (strongly reflected by healthy leaf cellular structure), providing a reliable index of vegetation health and drought severity.",
+        "distractors": {
+          "A": "Commodity market prices are tracked through financial trading exchanges, not orbital spectral reflectance.",
+          "B": "Nomadic population counts require demographic surveys and census enumeration, not plant chlorophyll reflectance.",
+          "C": "Water chemical analysis requires laboratory testing of water samples, not satellite vegetation indexing."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q21",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Municipal Infrastructure and Utility GIS",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'GIS in Municipal Management'"
+      },
+      "stimulus": null,
+      "question": "A city public works department maintains a comprehensive enterprise GIS tracking underground water mains, pipe installation dates, valve shutoffs, and soil acidity levels. When a major water main bursts, how does this spatial system assist repair crews?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It instantly identifies which specific isolation valves to close to stop the leak with minimal service cutoff.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It automatically rewrites municipal building zoning codes to prohibit all future residential construction.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It replaces all physical underground cast-iron water pipes with digital wireless broadband transmissions.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for civil engineering technicians to physically conduct on-site water repairs.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Utility GIS networks map interconnected infrastructure (pipes, valves, meters). In a rupture, the network tracing tool calculates the exact isolation valves that must be closed to stop flooding while minimizing the number of homes left without water.",
+        "distractors": {
+          "B": "GIS helps repair broken infrastructure; it does not arbitrarily enact bans on residential construction.",
+          "C": "Water requires physical pressurized pipes; physical plumbing cannot be replaced by wireless data signals.",
+          "D": "GIS directs crews to the exact pipe location, but physical technicians must still excavate and repair the main."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q22",
+      "topic": "Topic 1.3",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Disaster Response and Evacuation Management",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Emergency Management and Disaster Planning'"
+      },
+      "stimulus": null,
+      "question": "Ahead of an approaching Category 5 hurricane, state emergency officials use integrated GIS models to coordinate regional evacuations. Which function illustrates the power of geographic data in this crisis scenario?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dissolving all sovereign national borders to permit uninspected international trans-ocean flights.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Modeling storm surge inundation zones alongside highway traffic flow to reverse contraflow lanes.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Banning all meteorological radar tracking systems from publishing weather alerts to local citizens.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Converting all coastal petroleum refineries into permanent organic agricultural farming communes.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Emergency planners integrate SLOSH storm surge inundation maps with roadway capacity and population densities in GIS to time phased evacuation orders and open contraflow lanes (turning inbound highways into outbound routes).",
+        "distractors": {
+          "A": "Hurricane evacuations follow domestic emergency protocols; they do not dissolve international borders.",
+          "C": "Meteorological radar alerts are vital public safety tools that are widely broadcast, not banned.",
+          "D": "Refineries are industrial facilities managed during crises; they are not converted into agricultural communes."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q23",
+      "topic": "Topic 1.3",
+      "skill": "Skill 4.F",
+      "skillDescription": "Explain possible limitations of the visual source or data provided.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Automated License Plate Readers (ALPR) and Spatial Surveillance",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Surveillance Technologies and Civil Liberties'"
+      },
+      "stimulus": null,
+      "question": "Municipalities increasingly install Automated License Plate Readers (ALPR) at major intersections to capture vehicle movements, creating multi-billion-point travel databases. Why do civil liberties advocates view this geospatial dataset with concern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ALPR camera systems systematically corrupt satellite atomic clock transmissions across orbit.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "License plate cameras prevent municipal traffic lights from changing during busy rush hours.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Indiscriminate retention of travel patterns allows warrantless tracking of law-abiding citizens.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Optical license plate cameras can only operate on equal-area Gall-Peters map projections.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "ALPR systems continuously record timestamps and GPS coordinates of all passing vehicles without reasonable suspicion, creating massive searchable historical archives that allow government agencies or hackers to reconstruct individuals' private travel histories.",
+        "distractors": {
+          "A": "ALPR cameras are optical road sensors; they have no interaction with satellite atomic clocks.",
+          "B": "Traffic signal timings are governed by transit controllers, not license plate optical character recognition.",
+          "D": "ALPR records coordinates in latitude/longitude; display projections do not govern optical hardware."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q24",
+      "topic": "Topic 1.3",
+      "skill": "Skill 3.A",
+      "skillDescription": "Identify the different types of data presented in visual sources.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Spatial Resolution in Remote Sensing Imagery",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Spatial Resolution and Scale in Remote Sensing'"
+      },
+      "stimulus": null,
+      "question": "A geographer chooses between a satellite imagery dataset with 30-meter pixel resolution and an aerial drone dataset with 5-centimeter pixel resolution. What is the fundamental trade-off between these two spatial data sources?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 30-meter satellite image can identify individual parked cars while the drone image only shows continents.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The 5-centimeter drone image cannot be projected onto two-dimensional flat computer mapping interfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The 30-meter satellite data is legally banned for civilian academic environmental research projects.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The drone provides fine local detail over small areas, while the satellite provides broad regional coverage.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Spatial resolution defines the size of the smallest ground feature represented by a single pixel: high-resolution drone imagery (5 cm) reveals fine physical details over localized footprints, whereas moderate-resolution satellite imagery (30 m) covers vast regional landscapes in a single pass.",
+        "distractors": {
+          "A": "This reverses the resolutions: 5-centimeter drone imagery identifies cars, while 30-meter pixels average large terrain patches.",
+          "B": "Drone imagery is routinely georeferenced and projected onto 2D computer screens and GIS maps.",
+          "C": "30-meter satellite imagery (such as USGS Landsat) is free, open, and standard for academic research globally."
+        }
+      }
+    },
+    {
+      "id": "1.3-Q25",
+      "topic": "Topic 1.3",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.3: The Power of Geographic Data",
+        "section": "Synthesizing GIS, GPS, and Remote Sensing in Disaster Relief",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.3, under 'Synthesizing Geospatial Technologies'"
+      },
+      "stimulus": "Following an earthquake and tsunami, humanitarian agencies deploy field teams with GPS handhelds, fly drones with high-resolution cameras, and ingest the findings into a cloud GIS to deliver food, clean water, and medical aid.",
+      "question": "How does integrating GPS, remote sensing, and GIS empower humanitarian organizations during a complex crisis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It demonstrates that physical environmental determinism controls all human societal recovery choices.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It proves that mathematical coordinate geometry is obsolete in modern humanitarian disaster operations.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It ensures that national census bureaus can eliminate all future decennial population surveys entirely.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It combines precise location, real-time visual assessment, and analytical layering for coordinated triage.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "The true 'power of geographic data' lies in technological synthesis: GPS provides exact spatial coordinates, remote sensing provides rapid visual damage assessment from above, and GIS layers these datasets with demographics to direct life-saving aid efficiently.",
+        "distractors": {
+          "A": "Disaster response demonstrates human resilience and technological possibilism, not environmental determinism.",
+          "B": "Coordinate geometry is the foundation of GPS and GIS, making it more critical than ever during crises.",
+          "C": "Disaster relief technologies do not replace decennial constitutional population counts."
+        }
+      }
+    }
+  ]
+}

@@ -42,6 +42,13 @@ Interactive vocabulary test runners with dynamic word banks, 30-minute exam coun
 - **`vocabRunner/vocab_test_runner-03.html`**: Set 03 — Real-World Scenarios & Applications (30 Qs)
 - **`vocabRunner/vocab_test_runner-04.html`**: Set 04 — Conceptual Traps & Subtle Distinctions (30 Qs)
 
+### 📊 `week-sept7/mcq/` (Exam Mastery Hub — Week of Sept 7)
+Full interactive exam portal powered by `exam_data_registry.js`:
+- **`week-sept7/mcq/index.html`**: Main Exam Mastery Hub Dashboard
+- **`week-sept7/mcq/bySingleChapter/`**: 10 standalone single-topic exams (Topics 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 7.2, 7.3, 7.5) with markdown question banks and JSON definitions
+- **`week-sept7/mcq/byCrossChapter/`**: 3 multi-topic cross-chapter exams (40-50 questions each) complete with visual stimuli (`images_03/`, `amsco_images/`, `collegeBoardPractice/`) and AMSCO page citations
+
 ---
 *Maintained by MegaAntony for Grade 9 AP Human Geography Exam Preparation.*
+
 

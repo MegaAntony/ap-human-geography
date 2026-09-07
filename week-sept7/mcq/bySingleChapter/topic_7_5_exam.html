@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography Topic 7.5 Mastery Exam (25 Questions)</title>
+<style>
+  :root {
+    --cb-blue: #0077c8;
+    --cb-dark: #1b263b;
+    --cb-gray: #f4f6f9;
+    --cb-border: #d0d7de;
+    --correct-bg: #e6f4ea;
+    --correct-border: #137333;
+    --wrong-bg: #fce8e6;
+    --wrong-border: #c5221f;
+  }
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--cb-gray); color: #202124; padding: 24px 16px; }
+  .exam-container { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid var(--cb-border); padding: 32px; }
+  .header-bar { border-bottom: 2px solid var(--cb-blue); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; }
+  .header-bar h1 { margin: 0; font-size: 22px; color: var(--cb-dark); }
+  .header-bar .subtitle { font-size: 13px; color: #57606a; margin-top: 4px; }
+  .score-badge { font-weight: bold; color: var(--cb-dark); font-size: 15px; background: #e8f0fe; padding: 8px 14px; border-radius: 6px; border: 1px solid #c2e7ff; }
+  .q-card { border: 1px solid var(--cb-border); border-radius: 8px; padding: 20px; margin-bottom: 24px; background: #fafbfc; }
+  .q-meta { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+  .skill-pill { background: #1b263b; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .amsco-pill { background: #eef2f6; color: #334155; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid #cbd5e1; }
+  .q-stimulus { background: #f1f5f9; border-left: 4px solid var(--cb-blue); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1e293b; border-radius: 0 4px 4px 0; }
+  .q-prompt { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 16px; color: #1f2328; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .opt-btn { background: #fff; border: 1.5px solid var(--cb-border); border-radius: 6px; padding: 12px 14px; text-align: left; font-size: 14.5px; cursor: pointer; transition: all 0.15s ease; color: #24292f; line-height: 1.45; }
+  .opt-btn:hover:not(:disabled) { border-color: var(--cb-blue); background: #f8fbff; }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.correct { background: var(--correct-bg) !important; border-color: var(--correct-border) !important; color: #0d5423; font-weight: 600; }
+  .opt-btn.wrong { background: var(--wrong-bg) !important; border-color: var(--wrong-border) !important; color: #9c1a17; text-decoration: line-through; }
+  .feedback-box { display: none; margin-top: 14px; padding: 14px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; }
+  .feedback-box.show { display: block; }
+  .feedback-box.correct { background: #edf7ed; border-left: 4px solid var(--correct-border); color: #1e4620; }
+  .feedback-box.wrong { background: #fdf2f2; border-left: 4px solid var(--wrong-border); color: #5c1818; }
+  .feedback-box strong { display: block; margin-bottom: 4px; }
+  .nav-back { display: inline-block; margin-bottom: 16px; color: var(--cb-blue); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="exam-container">
+  <a href="../index.html" class="nav-back">&larr; Return to Master Interactive Test Hub</a>
+  <div class="header-bar">
+    <div>
+      <h1>AP Human Geography: Topic 7.5 Mastery Exam</h1>
+      <div class="subtitle">Theories of Development &bull; 25 Interactive College Board-Standard Questions &bull; David L. Palmer AMSCO 2nd Ed.</div>
+    </div>
+    <div class="score-badge" id="scoreTracker">Score: 0 / 25 answered (0%)</div>
+  </div>
+
+  <div id="quizForm"></div>
+</div>
+
+<script>
+const examQuestions = [
+  {
+    "id": "7.5-Q01",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Rostow's Stages: Stage 1 Traditional Society",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Rostow's Stages of Economic Growth: Stage 1'"
+    },
+    "stimulus": null,
+    "question": "According to W.W. Rostow's Stages of Economic Growth model, what fundamental condition defines Stage 1: The Traditional Society?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High employment in subsistence agriculture, limited technological capability, and local barter trade.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rapid expansion in automated robotics manufacturing, venture capital banking, and global trade.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Widespread consumer purchasing of durable household electronics, private automobiles, and luxury goods.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Universal tertiary and quaternary white-collar employment across corporate financial headquarters.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Rostow's Stage 1 (Traditional Society) is characterized by a high percentage of the workforce engaged in subsistence agriculture, static social structures, low productivity, and resistance to technological innovation, with commerce restricted to local barter.",
+      "distractors": {
+        "B": "Industrial automation and venture capital emerge in Stage 4 (Drive to Maturity) and Stage 5 (High Mass Consumption).",
+        "C": "Mass consumer durable goods purchases define Stage 5 (Age of High Mass Consumption).",
+        "D": "Tertiary and quaternary corporate predominance characterizes post-industrial Stage 5 economies."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q02",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Rostow's Stages: Stage 2 Preconditions for Takeoff",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Rostow's Stages: Stage 2 Preconditions for Takeoff'"
+    },
+    "stimulus": null,
+    "question": "In Rostow's development model, what critical socioeconomic transformation marks Stage 2: Preconditions for Takeoff?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A total collapse of sovereign agricultural food production requiring emergency foreign aid.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Progressive leadership investing in transportation infrastructure and commercial crop surpluses.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The complete replacement of domestic manufacturing plants with offshore transnational factories.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Universal transition of the national labor force into quaternary digital data analytics.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Stage 2 (Preconditions for Takeoff) begins when innovative, forward-thinking leadership initiates infrastructure investments (roads, canals, ports), commercializes agriculture to create food surpluses, and stimulates external demand for raw material exports.",
+      "distractors": {
+        "A": "Stage 2 requires agricultural productivity to rise and create surpluses, not collapse into famine.",
+        "C": "Offshore transnational manufacturing is a feature of the modern New International Division of Labor, not early modernization.",
+        "D": "Quaternary employment characterizes advanced post-industrial economies in Stage 5."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q03",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Rostow's Stages: Stage 3 The Takeoff",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Rostow's Stages: Stage 3 Takeoff'"
+    },
+    "stimulus": null,
+    "question": "Which structural milestone identifies a developing state entering Rostow's Stage 3: The Takeoff stage?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universal civilian employment in state-funded municipal environmental conservation programs.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Total reliance upon traditional village clan elders for resolving regional farming disputes.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rapid industrial expansion in a few leading export sectors, factory urbanization, and investment.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The complete elimination of physical national currency in favor of cryptocurrency transactions.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Stage 3 (Takeoff) is the pivotal breakthrough stage: technological innovations spark rapid industrialization in a few key export sectors (such as textiles or food processing), capital investment rises above 10% of national income, and rural-to-urban factory migration surges.",
+      "distractors": {
+        "A": "Environmental conservation programs typically emerge in wealthy post-industrial Stage 5 societies.",
+        "B": "Reliance on traditional clan elders characterizes Stage 1 Traditional Societies.",
+        "D": "Cryptocurrency and digital banking are 21st-century technological innovations unrelated to Rostow's classical industrial takeoff."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q04",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Rostow's Stages: Stage 4 Drive to Maturity",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Rostow's Stages: Stage 4 Drive to Maturity'"
+    },
+    "stimulus": null,
+    "question": "What primary industrial dynamic characterizes a country progressing through Rostow's Stage 4: Drive to Maturity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A return to primary subsistence agriculture due to severe industrial raw material depletion.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "An absolute concentration of all manufacturing workers within a single textile assembly plant.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A total prohibition of international foreign direct investment by foreign multinational firms.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Technological diffusion across multiple industries, creating diversified modern manufacturing.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "In Stage 4 (Drive to Maturity), modern technology spreads beyond the initial takeoff sectors into a broad range of industries (such as heavy machinery, steel, and chemicals); workers become more skilled, import dependence declines, and the economy diversifies.",
+      "distractors": {
+        "A": "Maturity involves advancing technology and expanding industry, not reverting to subsistence farming.",
+        "B": "Maturity is characterized by industrial diversification across multiple sectors, moving far beyond single textile mills.",
+        "C": "Mature economies actively participate in international trade and foreign capital exchange rather than imposing total bans."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q05",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Rostow's Stages: Stage 5 High Mass Consumption",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Rostow's Stages: Stage 5 High Mass Consumption'"
+    },
+    "stimulus": null,
+    "question": "In Rostow's model, what structural feature defines Stage 5: The Age of High Mass Consumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dominant service sector, high disposable personal income, and widespread consumer durables.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "An overwhelming national workforce concentration in primary iron ore mining and agriculture.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "An absence of state social welfare safety nets, healthcare systems, and public schooling.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Strict statutory rationing of basic grain foodstuffs and mandatory rural commune farming.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Stage 5 (Age of High Mass Consumption) is achieved when high real per capita income shifts consumer spending toward durable manufactured goods (automobiles, consumer electronics) and tertiary/quaternary services, supported by public welfare safety nets and social security.",
+      "distractors": {
+        "B": "Primary resource extraction shrinks to a tiny fraction of the labor force in Stage 5 economies.",
+        "C": "Stage 5 societies typically establish institutional welfare systems, public health, and social safety nets.",
+        "D": "Food rationing and communal agriculture characterize command wartime economies or early stages, not high mass consumption."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q06",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Criticisms of Rostow's Modernization Theory",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Criticisms of Rostow's Theory'"
+    },
+    "stimulus": null,
+    "question": "Which of the following is a major theoretical critique leveled by geographers against Rostow's Modernization Model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It was designed specifically to analyze prehistoric nomadic hunter-gatherer arctic societies.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It assumes an unvarying Western linear path, ignoring colonial exploitation and debt barriers.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It relies exclusively upon real-time orbital satellite imagery to evaluate macroeconomic trends.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It requires all sovereign nations to abolish private property and establish central planning.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Geographers critique Rostow's model for its Western (Euro-American) bias, assuming every country can follow the same linear trajectory. It ignores that developing countries today face historical structural hurdles (colonial resource drainage, unequal terms of trade, foreign debt) that Western powers never faced.",
+      "distractors": {
+        "A": "Rostow formulated his theory based on 18th-20th century European and American industrial history, not arctic hunters.",
+        "C": "Rostow's 1960 model is an economic stage theory developed decades before commercial satellite GIS datasets.",
+        "D": "Rostow was explicitly pro-capitalist (his book was subtitled 'A Non-Communist Manifesto') and championed free markets."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q07",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Wallerstein's World Systems Theory: The Core",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Wallerstein's World Systems Theory: Core Countries'"
+    },
+    "stimulus": null,
+    "question": "In Immanuel Wallerstein's World Systems Theory, which set of characteristics distinguishes core countries?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low per capita income, labor-intensive crop farming, and an absence of corporate patents.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Total reliance upon foreign bilateral loans to purchase basic foodstuffs for urban citizens.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "High capital accumulation, technological innovation, skilled labor, and global economic control.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Severe vulnerability to commodity price shocks due to raw mineral export concentration.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "In Wallerstein's World Systems Theory, core countries (such as the US, Germany, Japan, and the UK) possess high levels of capital wealth, advanced technology, highly skilled labor, sophisticated R&D, and strong political/military power, allowing them to dominate global trade flows.",
+      "distractors": {
+        "A": "Labor-intensive farming and low technological capacity characterize periphery nations, not the core.",
+        "B": "Dependence on emergency foreign food loans is a trait of peripheral or crisis-stricken countries.",
+        "D": "Commodity dependence and raw material price shocks disproportionately plague peripheral economies."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q08",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Wallerstein's World Systems Theory: The Periphery",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Wallerstein's World Systems Theory: Periphery Countries'"
+    },
+    "stimulus": null,
+    "question": "According to Wallerstein's World Systems framework, what functional economic role is assigned to peripheral countries?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Financing global international loans and managing multinational corporate headquarters.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conducting cutting-edge commercial biotechnology research and advanced microprocessor design.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enforcing international antitrust legislation across transnational container shipping lines.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Supplying low-cost raw natural materials, agricultural commodities, and cheap manual labor.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "In Wallerstein's framework, peripheral nations (found across parts of Sub-Saharan Africa, Latin America, and South Asia) function as providers of raw agricultural products, minerals, and cheap labor for the core, while remaining dependent on core states for high-value finished goods and capital.",
+      "distractors": {
+        "A": "Financing global loans and hosting corporate headquarters are functions of core economic nodes.",
+        "B": "Biotechnology R&D and microprocessor design require capital-intensive infrastructure found in core economies.",
+        "C": "Enforcing international trade regulations is coordinated by supranational bodies dominated by core states."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q09",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Wallerstein's World Systems Theory: The Semi-Periphery",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Wallerstein's World Systems Theory: Semi-Periphery'"
+    },
+    "stimulus": null,
+    "question": "In World Systems Theory, which countries represent the semi-periphery and what dual economic role do they play?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Industrializing nations (like Brazil and China) that exploit the periphery while being exploited by the core.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Affluent post-industrial nations that completely isolate their economies from all international trade.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Impoverished agricultural states that maintain no diplomatic relations with foreign sovereign governments.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Small island nations that specialize exclusively in luxury international cruise ship passenger services.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The semi-periphery (including the BRICS nations: Brazil, Russia, India, China, South Africa, along with Mexico and Turkey) occupies an intermediate position: they have growing manufacturing sectors and exploit raw materials from the periphery, while remaining subordinate to core capital and technology.",
+      "distractors": {
+        "B": "Semi-peripheral nations are deeply integrated into global trade rather than practicing economic isolationism.",
+        "C": "The semi-periphery includes major global geopolitical powers, not isolated impoverished states.",
+        "D": "Island micro-states specializing in cruise tourism do not constitute the major industrial semi-periphery."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q10",
+    "topic": "Topic 7.5",
+    "skill": "Skill 5.B",
+    "skillDescription": "Explain spatial relationships across different scales of analysis.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Core-Periphery Patterns Across Spatial Scales",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Core-Periphery at Multiple Scales'"
+    },
+    "stimulus": null,
+    "question": "How does the core-periphery model apply when geographers examine internal economic patterns at the subnational scale?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It demonstrates that wealth and political influence are dispersed with total geographic uniformity.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It illustrates capital concentration in metropolitan cores while peripheral rural regions supply resources.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It proves that rural farming villages possess greater financial capital than major capital cities.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It indicates that subnational state boundaries prevent commercial movement between domestic cities.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "The core-periphery concept operates across multiple scales. At the subnational scale within a country (e.g., Brazil or the United States), financial capital, corporate decision-making, and high-wage jobs concentrate in metropolitan cores (São Paulo, New York), while peripheral rural hinterlands supply food, energy, and raw materials.",
+      "distractors": {
+        "A": "Subnational spatial analysis reveals severe regional unevenness rather than geographic uniformity.",
+        "C": "Metropolitan urban centers concentrate far more banking and corporate capital than rural farming hamlets.",
+        "D": "Domestic trade flows freely across internal state boundaries rather than being blocked."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q11",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Criticisms of World Systems Theory",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Criticisms of World Systems Theory'"
+    },
+    "stimulus": null,
+    "question": "What is a primary critique of Wallerstein's World Systems Theory regarding upward economic mobility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It presumes that all peripheral countries will automatically transform into post-industrial core nations.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It claims that international trade has ceased entirely due to modern technological transport obsolescence.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It underestimates internal policy and ignores how states like South Korea transitioned from periphery to core.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "It focuses solely on local village barter while ignoring multinational corporate foreign capital investments.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Critics argue that Wallerstein's World Systems Theory is overly deterministic and rigid, attributing all outcomes to global capitalism while underestimating the power of internal state policies, education, and innovation—as proven by the Asian Tigers (e.g., South Korea, Taiwan) rising successfully into the core.",
+      "distractors": {
+        "A": "World Systems Theory posits that the periphery is trapped in structural subordination, not that it will automatically modernize.",
+        "B": "Wallerstein's model is fundamentally built around the expansion and dominance of global trade networks.",
+        "D": "The model focuses heavily on global capitalism, transnational flows, and imperialist trade rather than village barter."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q12",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Dependency Theory",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Dependency Theory'"
+    },
+    "stimulus": null,
+    "question": "What foundational premise differentiates Dependency Theory from classical Modernization Theory regarding poverty in developing states?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Developing states are poor because their populations refuse to cultivate modern high-yield hybrid seed varieties.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Underdevelopment is caused by an absence of deep-water container shipping ports along sovereign shorelines.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Poorer states lack sufficient natural fossil fuel reserves required to power secondary steel smelting furnaces.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Underdevelopment is an ongoing condition created by historical colonialism and unequal capitalist trade terms.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Dependency Theory asserts that the poverty of the developing world is not an early stage of development (as Modernization Theory claims), but an actively created condition resulting from centuries of colonial exploitation and trade structures that lock peripheral nations into exporting cheap raw goods and buying expensive imports.",
+      "distractors": {
+        "A": "Dependency theorists focus on structural global inequality rather than blaming local farmers' technology choices.",
+        "B": "Container port availability is an infrastructural factor, not the foundational philosophical premise of Dependency Theory.",
+        "C": "Many peripheral nations possess immense oil and mineral reserves yet remain impoverished due to structural dependency."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q13",
+    "topic": "Topic 7.5",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Colonial Infrastructure and Dendritic Networks",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Colonialism and Spatial Infrastructure'"
+    },
+    "stimulus": null,
+    "question": "How did European colonial railway construction create persistent spatial barriers to internal regional development in Africa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rail lines were built as dendritic routes linking interior mines to ports rather than interconnecting domestic cities.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rail systems linked every rural village into an interconnected grid, eliminating urban primate city dominance.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colonial tracks were electrified using solar microgrids that deteriorated rapidly in equatorial rainforests.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rail networks were constructed exclusively along international perimeter borders to prevent maritime smuggling.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Colonial powers designed 'dendritic' (tree-like) transportation networks: rail lines ran directly from interior mines and plantations straight to coastal export seaports. They intentionally bypassed neighboring domestic towns, leaving post-colonial nations without integrated national transportation systems.",
+      "distractors": {
+        "B": "Colonial networks explicitly failed to link rural villages into an integrated grid, concentrating trade on single port cities.",
+        "C": "Colonial railways operated on steam (coal/wood) rather than solar technology.",
+        "D": "Railways were laid to transport commodities from interior resource basins to coastal ports, not along perimeter borders."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q14",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Neo-Colonialism in the Global Economy",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Neo-Colonialism and Economic Control'"
+    },
+    "stimulus": null,
+    "question": "In post-colonial development studies, what scenario best illustrates the geopolitical concept of neo-colonialism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sovereign nation deploying military forces to establish direct territorial governance over an overseas island.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A formally independent nation experiencing economic domination by foreign transnational firms and international lenders.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A group of developing states creating a regional trade bloc to eliminate tariffs on agricultural commerce.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "An indigenous ethnic community negotiating formal territorial autonomy within a federal constitutional system.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Neo-colonialism refers to a geopolitical condition where a country possesses formal political independence and sovereignty, but its economy, resources, and fiscal policies remain under the indirect control of foreign transnational corporations, former colonial powers, and external financial institutions.",
+      "distractors": {
+        "A": "Deploying military forces to rule territory directly is traditional formal imperialism/colonialism, not neo-colonialism.",
+        "C": "Establishing regional South-South trade blocs is an effort to overcome dependency, not neo-colonialism.",
+        "D": "Negotiating domestic indigenous autonomy is an internal constitutional process unrelated to foreign neo-colonial control."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q15",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Commodity Dependence",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Commodity Dependence and Vulnerability'"
+    },
+    "stimulus": null,
+    "question": "The United Nations Conference on Trade and Development (UNCTAD) classifies a state as commodity-dependent when it meets what threshold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Over ninety percent of civilian adults are employed in secondary automotive manufacturing plants.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Foreign direct investment accounts for over half of annual municipal commercial real estate sales.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Primary agricultural and mineral commodities constitute sixty percent or more of total merchandise exports.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "National sovereign debt exceeds the combined market valuation of all domestic residential housing.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "According to UNCTAD, a country is considered commodity-dependent when primary commodities (such as crude oil, copper, iron ore, coffee, or cocoa) account for 60% or more of its total merchandise export revenue (common in over 85 developing nations).",
+      "distractors": {
+        "A": "Commodity-dependent economies are dominated by primary extraction, not high percentages of automotive manufacturing.",
+        "B": "Commercial real estate transactions do not define national merchandise trade commodity dependency thresholds.",
+        "D": "Sovereign debt ratios measure fiscal indebtedness rather than export commodity concentration."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q16",
+    "topic": "Topic 7.5",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Vulnerabilities of Commodity Dependence",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Risks of Commodity Dependence'"
+    },
+    "stimulus": null,
+    "question": "What primary economic hazard threatens states (such as Zambia or Venezuela) that exhibit severe commodity export dependence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chronic labor shortages across the primary agricultural sector caused by rapid industrial automation.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mandatory international trade embargoes automatically imposed by the United Nations Security Council.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "An immediate exodus of transnational technological firms seeking lower domestic corporate tax rates.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Extreme fiscal volatility and budget shortfalls caused by sudden swings in global raw material prices.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Commodity-dependent countries suffer from boom-and-bust cycles: when global raw material prices crash (e.g., copper in Zambia or oil in Venezuela), government revenues collapse, leading to currency devaluations, severe debt crises, inflation, and cuts to social services.",
+      "distractors": {
+        "A": "Commodity-dependent states typically suffer from underemployment and informal labor rather than primary labor shortages.",
+        "B": "UN trade embargoes are political sanctions for aggression, not automated penalties for exporting raw materials.",
+        "C": "Commodity-dependent states typically lack major high-tech corporate clusters to begin with."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q17",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Import Substitution Industrialization (ISI)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Trade Strategies: Import Substitution'"
+    },
+    "stimulus": null,
+    "question": "What was the core strategy of Import Substitution Industrialization (ISI) adopted by many Latin American nations in the twentieth century?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protecting domestic infant industries through high tariffs and quotas to manufacture goods previously imported.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eliminating all national tariffs to allow cheap foreign consumer goods to flood domestic retail stores.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dismantling domestic manufacturing plants in order to specialize entirely in agricultural raw exports.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Requiring all national corporations to relocate their operational factories into overseas foreign ports.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Import Substitution Industrialization (ISI) aimed to build domestic economic independence by placing steep protective tariffs and import quotas on foreign manufactured goods, subsidizing domestic factories to produce consumer goods locally instead of importing them.",
+      "distractors": {
+        "B": "Eliminating tariffs describes neoliberal free trade, which is the exact opposite of protective ISI policies.",
+        "C": "ISI aimed to industrialize and escape primary export dependency, not return to pure agricultural extraction.",
+        "D": "ISI focused on domestic national factory construction rather than offshoring production overseas."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q18",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Export-Oriented Industrialization (EOI)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Trade Strategies: Export-Oriented Growth'"
+    },
+    "stimulus": null,
+    "question": "How did the Four Asian Tigers (South Korea, Taiwan, Singapore, Hong Kong) achieve rapid development through Export-Oriented Industrialization (EOI)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "By closing national borders to international commerce and relying exclusively on rural barter trade.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "By identifying comparative advantages and manufacturing consumer goods for international export markets.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "By nationalizing all foreign multinational assets and banning English language instruction in schools.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "By converting all prime industrial land into subsidized subsistence agricultural wet rice terracing.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "The Asian Tigers embraced Export-Oriented Industrialization (EOI): rather than protecting closed home markets, they integrated into global capitalism by focusing on their comparative advantages (initially low labor costs, then advanced technology) to produce electronics and manufactured goods for worldwide export.",
+      "distractors": {
+        "A": "The Asian Tigers pursued aggressive international export integration, not closed autarkic barter.",
+        "C": "The Asian Tigers welcomed foreign technology, joint ventures, and global commercial partnerships.",
+        "D": "They industrialized rapidly, transitioning workers out of subsistence rice farming into factories and high-tech parks."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q19",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Neoliberal Economic Policies",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Neoliberal Policies and Free Market Capitalism'"
+    },
+    "stimulus": null,
+    "question": "Which set of economic reforms is characteristic of neoliberal developmental policies (the Washington Consensus)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High import tariffs, state-run corporate monopolies, price controls, and expanding labor subsidies.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Complete nationalization of all commercial banking systems and private industrial corporations.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Privatization of state industries, deregulation, reduced trade barriers, and attracting foreign investment.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Compulsory statutory bans on the operation of transnational logistics and container shipping lines.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Neoliberal developmental policies emphasize free-market capitalism: privatizing state-owned enterprises, eliminating tariffs and trade quotas, cutting government subsidies, deregulating markets, and creating open investment environments for foreign capital.",
+      "distractors": {
+        "A": "Tariffs, monopolies, and price controls characterize protectionist and socialist policies, the opposite of neoliberalism.",
+        "B": "Nationalization of banks and corporations is a socialist or command-economy policy opposed by neoliberal reformers.",
+        "D": "Neoliberal policies strongly encourage international shipping and trade rather than banning container logistics."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q20",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "The Fair Trade Movement",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Fair Trade Principles'"
+    },
+    "stimulus": null,
+    "question": "What primary operational objective distinguishes the international Fair Trade movement from conventional commercial commodity trade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maximizing corporate profits for multinational supermarket chains through aggressive wholesale price slashing.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eliminating all environmental conservation standards to expedite pesticide-intensive agricultural yields.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Replacing smallholder family farming cooperatives with massive automated agribusiness monocultures.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Guaranteeing minimum floor prices, fair wages, democratic worker co-ops, and sustainable farming standards.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "The Fair Trade movement aims to protect small-scale agricultural producers and artisans in the periphery (growing coffee, cocoa, bananas) by guaranteeing minimum floor prices regardless of global market crashes, ensuring living wages, empowering democratic worker cooperatives, and enforcing environmental sustainability.",
+      "distractors": {
+        "A": "Fair trade bypasses corporate middlemen to return profits to grassroots farmers, rather than maximizing retail margins.",
+        "B": "Fair trade certification mandates strict environmental protection and limits toxic synthetic agrochemicals.",
+        "C": "Fair trade supports smallholder family farmers and cooperatives against displacement by industrial agribusiness conglomerates."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q21",
+    "topic": "Topic 7.5",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Ecotourism and Sustainable Development",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Sustainable Development: Ecotourism'"
+    },
+    "stimulus": null,
+    "question": "How does well-managed ecotourism contribute to sustainable economic development in biodiversity-rich countries like Costa Rica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It generates local jobs and revenue while providing financial incentives to preserve fragile ecosystems.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "It clears tropical rainforest canopies to construct massive high-rise casino resorts and cruise docks.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It mandates that local indigenous residents abandon all cultural traditions in favor of factory labor.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It replaces all domestic currency circulation with foreign speculative cryptocurrency investments.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Ecotourism is responsible travel to natural areas that conserves the environment, sustains local human well-being, and involves interpretation and education. It provides economic alternatives to logging or poaching by generating revenue from guided nature tours, eco-lodges, and park fees.",
+      "distractors": {
+        "B": "Clearing rainforests for high-rise mega-resorts is mass tourism, which destroys the ecological base ecotourism seeks to protect.",
+        "C": "Ecotourism actively celebrates and integrates local indigenous culture and traditional ecological knowledge.",
+        "D": "Ecotourism injects conventional foreign tourist revenues into local businesses rather than speculative crypto assets."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q22",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "The UN Sustainable Development Goals (SDGs)",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'UN Sustainable Development Goals (SDGs)'"
+    },
+    "stimulus": null,
+    "question": "What core philosophical principle underpins the United Nations 2030 Sustainable Development Goals (SDGs)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Economic expansion should prioritize fossil fuel extraction regardless of future carbon consequences.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Human development must integrate economic growth with poverty relief, gender equity, and planetary health.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "All peripheral developing nations must achieve complete economic autarky by ending international trade.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Technological patents should be restricted exclusively to affluent post-industrial core member states.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "The UN 2030 Agenda consists of 17 Sustainable Development Goals (SDGs) that recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth—all while tackling climate change and preserving oceans and forests.",
+      "distractors": {
+        "A": "SDG 13 specifically mandates urgent climate action and transitioning away from unabated fossil fuels.",
+        "C": "The SDGs encourage fair global partnerships (SDG 17) and open cooperative trade, not national isolationism.",
+        "D": "The SDGs promote global technology sharing and capacity building in developing nations, not technology hoarding."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q23",
+    "topic": "Topic 7.5",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Upward Mobility in World Systems: The Asian Tigers",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Case Studies: Asian Tigers and Upward Mobility'"
+    },
+    "stimulus": null,
+    "question": "How does the post-1960 economic rise of South Korea provide an empirical challenge to the static assumptions of Dependency Theory?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It demonstrates that peripheral nations can achieve wealth only by conquering overseas colonial empires.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It proves that agricultural subsistence barter is the single fastest mechanism to attain global wealth.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It shows that targeted state policies and education can propel a peripheral nation into the semi-periphery and core.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "It confirms that foreign direct investment permanently traps developing states in primary copper mining.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "South Korea was a war-torn, impoverished peripheral nation in the 1950s. Through state-led industrial policy, heavy investment in education, export manufacturing, and technological upgrading (chaebols), it ascended into the semi-periphery and is today a full core nation, proving that peripheral status is not an inescapable permanent trap.",
+      "distractors": {
+        "A": "South Korea achieved development through domestic industrialization and global trade, not military colonial conquests.",
+        "B": "South Korea shifted rapidly from subsistence agriculture to advanced electronics, autos, and semiconductors.",
+        "D": "South Korea's ascension directly refutes the claim that peripheral states are perpetually trapped in raw material extraction."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q24",
+    "topic": "Topic 7.5",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "The Circular Economy versus Linear Models",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Sustainable Development: The Circular Economy'"
+    },
+    "stimulus": null,
+    "question": "In contemporary sustainable economic geography, how does a circular economy model contrast with the traditional linear industrial model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It maximizes immediate landfill waste disposal by manufacturing single-use disposable consumer plastics.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It eliminates all international maritime container shipping in favor of transcontinental trucking fleets.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It mandates that every commercial industrial enterprise relocate into offshore tax-exempt free trade zones.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It designs out waste through material reuse, refurbishment, and closed-loop recycling across production cycles.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "The traditional industrial economy is linear ('take-make-waste'). In contrast, a circular economy is regenerative by design: products are designed for durability, disassembly, repair, and closed-loop recycling, keeping materials in productive economic use indefinitely and drastically reducing virgin resource extraction.",
+      "distractors": {
+        "A": "Single-use plastics and landfill waste embody the linear model that circular economies actively eliminate.",
+        "B": "Circular principles apply to manufacturing design and resource recycling, not abolishing maritime freight.",
+        "C": "Tax-exempt free trade zones relate to tariff policy, not circular material recovery engineering."
+      }
+    }
+  },
+  {
+    "id": "7.5-Q25",
+    "topic": "Topic 7.5",
+    "skill": "Skill 5.B",
+    "skillDescription": "Explain spatial relationships across different scales of analysis.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 7: Industrial and Economic Development",
+      "chapter": "Unit 7: Industrial and Economic Development",
+      "section": "Synthesizing Modernization and World Systems Theories",
+      "whereToLook": "AMSCO 2nd Ed, Topic 7.5, under 'Comparing Development Theories'"
+    },
+    "stimulus": null,
+    "question": "When contrasting Rostow's Modernization Model with Wallerstein's World Systems Theory, what fundamental geographical divide emerges?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rostow analyzes regional linguistic dialects, whereas Wallerstein examines physical tectonic fault lines.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rostow rejects all industrial manufacturing, whereas Wallerstein advocates returning to subsistence farming.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rostow views development as impossible, whereas Wallerstein claims every country will modernize equally.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rostow views development as an internal national process, whereas Wallerstein views it as a global structure.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "The fundamental divide in development theory: Rostow views development through an internal, national lens where every country can progress sequentially through 5 stages given the right policies; Wallerstein views development through a global structural lens, arguing the core cannot exist without an exploited periphery.",
+      "distractors": {
+        "A": "Neither model is focused on linguistic dialects or physical earthquake faults; both analyze economic development.",
+        "B": "Both theorists study industrial capitalism and manufacturing, not pastoral subsistence farming.",
+        "C": "Rostow is optimistic about universal linear modernization, while Wallerstein emphasizes systemic structural inequality."
+      }
+    }
+  }
+];
+
+let userAnswers = {};
+let totalScore = 0;
+let answeredCount = 0;
+
+function renderExam() {
+  const container = document.getElementById("quizForm");
+  container.innerHTML = "";
+
+  examQuestions.forEach((q, idx) => {
+    const qNum = idx + 1;
+    const card = document.createElement("div");
+    card.className = "q-card";
+    card.id = "card-" + qNum;
+
+    let stimulusHtml = "";
+    if (q.stimulus) {
+      stimulusHtml = `<div class="q-stimulus"><strong>Stimulus Source:</strong> ${q.stimulus}</div>`;
+    }
+
+    let optsHtml = "";
+    q.options.forEach(opt => {
+      optsHtml += `
+        <button class="opt-btn" id="btn-q${qNum}-${opt.id}" onclick="handleSelection(${idx}, '${opt.id}')">
+          <strong>(${opt.id})</strong> ${opt.text}
+        </button>
+      `;
+    });
+
+    card.innerHTML = `
+      <div class="q-meta">
+        <span class="skill-pill">Question ${qNum} &bull; ${q.skill}</span>
+        <span class="amsco-pill">&bull; AMSCO 2nd Ed: ${q.amscoReference.section}</span>
+      </div>
+      ${stimulusHtml}
+      <div class="q-prompt">${q.question}</div>
+      <div class="options-grid">${optsHtml}</div>
+      <div class="feedback-box" id="feedback-${qNum}"></div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+function handleSelection(qIdx, choiceId) {
+  const qNum = qIdx + 1;
+  if (userAnswers[qNum]) return; // Already answered
+
+  userAnswers[qNum] = choiceId;
+  answeredCount++;
+
+  const q = examQuestions[qIdx];
+  const isCorrect = (choiceId === q.correctAnswer);
+  if (isCorrect) totalScore++;
+
+  // Disable buttons & style
+  q.options.forEach(opt => {
+    const btn = document.getElementById(`btn-q${qNum}-${opt.id}`);
+    btn.disabled = true;
+    if (opt.id === q.correctAnswer) {
+      btn.classList.add("correct");
+    } else if (opt.id === choiceId) {
+      btn.classList.add("wrong");
+    }
+  });
+
+  // Display rationale
+  const fb = document.getElementById(`feedback-${qNum}`);
+  fb.className = "feedback-box show " + (isCorrect ? "correct" : "wrong");
+
+  let distractorsHtml = "";
+  if (!isCorrect && q.explanation.distractors[choiceId]) {
+    distractorsHtml = `<div style="margin-top: 8px; font-weight: 500;"><strong>Why (${choiceId}) is incorrect:</strong> ${q.explanation.distractors[choiceId]}</div>`;
+  }
+
+  fb.innerHTML = `
+    <strong>${isCorrect ? "Correct!" : "Incorrect — Correct Answer is (" + q.correctAnswer + ")"}</strong>
+    <div>${q.explanation.summary}</div>
+    ${distractorsHtml}
+    <div style="margin-top: 8px; font-size: 12px; color: #475569;">
+      📖 <em>Reference: ${q.amscoReference.whereToLook}</em>
+    </div>
+  `;
+
+  // Update score
+  const pct = Math.round((totalScore / answeredCount) * 100);
+  document.getElementById("scoreTracker").innerText = `Score: ${totalScore} / ${answeredCount} answered (${pct}%)`;
+}
+
+renderExam();
+</script>
+</body>
+</html>

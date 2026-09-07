@@ -1,0 +1,2016 @@
+{
+  "unit": "Unit 1 & Unit 7",
+  "unitTitle": "Unit 1 & Unit 7: Cross-Chapter Integration",
+  "topic": "03",
+  "topicTitle": "AMSCO Stimulus Synthesis Exam",
+  "curriculum": "AP Human Geography (College Board CED)",
+  "totalQuestions": 40,
+  "textbook": {
+    "title": "Advanced Placement Human Geography, 2nd Edition",
+    "author": "David L. Palmer",
+    "publisher": "AMSCO / Perfection Learning",
+    "focus": "Visual Stimulus Geospatial Synthesis & Industrial/Economic Geography"
+  },
+  "questions": [
+    {
+      "id": "STIM3-01",
+      "questionNumber": 1,
+      "topic": "Topics 1.2 / 7.2",
+      "skill": "Skill 2.A",
+      "skillDescription": "Explain how map projections distort spatial relationships in global trade.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "8-14, 26",
+        "concept": "Cylindrical Projections and Oceanic Navigation Utility",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 26 (Review Question 1) & pp. 8-14"
+      },
+      "image": "./images_03/amsco_01_mercator_navigation.png",
+      "stimulusType": "Map Projection Diagram",
+      "stimulus": "Questions 1 and 2 refer to the map projection shown below.",
+      "question": "Why is the cylindrical map projection shown in the image especially valuable for commercial transoceanic maritime trade navigation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Landmass areas across polar latitudes are displayed with absolute proportional fidelity relative to tropical continents.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "True rhumb lines of constant compass bearing plot as straight linear courses across the map, simplifying open ocean navigation.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Distortion of continental shapes is completely eliminated, allowing precise surface distance calculations without any scale adjustments.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It forces cargo ships to travel strictly along the equator, eliminating the need for satellite positioning technology at sea.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 26 (Question 1) & pp. 8-14: The Mercator projection is a cylindrical conformal projection. Its defining mathematical property is that lines of constant compass bearing (rhumb lines or loxodromes) appear as straight lines. Navigators can plot a straight line between ports and maintain a single compass bearing, making it the historic foundation of oceanic trade navigation.",
+        "distractors": {
+          "A": "Mercator severely exaggerates high-latitude landmasses (e.g., Greenland appearing as large as Africa), the opposite of proportional area fidelity.",
+          "C": "No flat map can eliminate distortion entirely; Mercator preserves shape locally but severely distorts area and distance at high latitudes.",
+          "D": "The projection does not force ships to travel along the equator; it is used for navigation across all oceans and latitudes."
+        }
+      }
+    },
+    {
+      "id": "STIM3-02",
+      "questionNumber": 2,
+      "topic": "Topics 1.2 / 7.3",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns and cartographic distortions in map projections.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "10-15, 26",
+        "concept": "Cartographic Distortion and Geopolitical Power Perceptions",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 26 (Review Question 2) & pp. 10-15"
+      },
+      "image": "./images_03/amsco_01_mercator_navigation.png",
+      "stimulusType": "Map Projection Diagram",
+      "stimulus": "Questions 1 and 2 refer to the map projection shown below.",
+      "question": "Which major cartographic limitation of this projection has drawn criticism from development geographers analyzing global inequality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It severely exaggerates the landmass area of high-latitude wealthy nations while drastically shrinking equatorial developing continents.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It inverts the Northern and Southern hemispheres, placing Antarctica at the top of classroom instructional maps worldwide.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It completely erases national political boundaries, preventing geographers from measuring gross domestic product across sovereign states.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It portrays all developing countries as landlocked territories, obscuring their access to international maritime shipping lanes.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 26 (Question 2) & Chapter 19, pp. 484-486: Because lines of latitude spread apart near the poles on the Mercator projection, northern core nations (North America, Europe) appear vastly larger relative to tropical developing regions (Africa, South America, South Asia). Critics like Arno Peters argued this Eurocentric visual bias reinforced colonial hierarchies by exaggerating the apparent physical importance of the Global North.",
+        "distractors": {
+          "B": "Mercator places north at the top; south-up maps are distinct cartographic conventions not depicted here.",
+          "C": "The Mercator projection accurately represents coordinate lines; political boundaries can be readily overlaid on it.",
+          "D": "Mercator accurately shows coastlines and oceans; it does not turn coastal nations into landlocked countries."
+        }
+      }
+    },
+    {
+      "id": "STIM3-03",
+      "questionNumber": 3,
+      "topic": "Topics 1.1 / 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Identify geographic concepts and absolute location on reference maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "12-14, 28",
+        "concept": "Absolute Location and Coordinate Grids",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 28 (Review Question 6) & pp. 12-14"
+      },
+      "image": "./images_03/amsco_02_spain_france_reference.png",
+      "stimulusType": "Regional Reference Map",
+      "stimulus": "Questions 3 and 4 refer to the regional reference map shown below.",
+      "question": "Based on the reference map, which statement most accurately describes the absolute location of Paris, France?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Located approximately 127 miles southeast of the English Channel along the primary agricultural Seine river valley.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Situated squarely within the center of the European Union as a dominant political and cultural core headquarters.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Positioned at approximately 49 degrees north latitude and 2 degrees east longitude on the global geographic grid.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Located directly along the Mediterranean coastline south of the Pyrenees mountain barrier dividing France and Spain.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 28 (Question 6) & pp. 12-14: Absolute location is the precise point on Earth's surface expressed via an alphanumeric coordinate grid, most commonly latitude and longitude. On the map, Paris is plotted at approximately 49°N, 2°E.",
+        "distractors": {
+          "A": "Distance and direction relative to the English Channel describes relative location, not absolute location.",
+          "B": "Describing Paris as a political/cultural headquarters inside the EU describes its situation and function, not absolute coordinates.",
+          "D": "Paris is in northern France, far inland from the Mediterranean Sea and the southern Pyrenees boundary."
+        }
+      }
+    },
+    {
+      "id": "STIM3-04",
+      "questionNumber": 4,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 1.C",
+      "skillDescription": "Explain geographic concepts regarding site and situation on reference maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "12-16, 28",
+        "concept": "Relative Location and Maritime Commercial Situation",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 28 (Review Question 7) & pp. 12-16"
+      },
+      "image": "./images_03/amsco_02_spain_france_reference.png",
+      "stimulusType": "Regional Reference Map",
+      "stimulus": "Questions 3 and 4 refer to the regional reference map shown below.",
+      "question": "Which statement best evaluates the situation and relative location of Barcelona, Spain within the Mediterranean trade network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Positioned at exactly 41 degrees north latitude and 2 degrees east longitude on the international navigational grid.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Occupying a landlocked alpine plateau surrounded by impassable mountain ranges with zero access to ocean commerce.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Functioning as the sovereign federal capital city of the entire Iberian Peninsula under unified Portuguese governance.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Situated along the northeastern Mediterranean coast approximately 386 miles east of Madrid, facilitating sea trade.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 28 (Question 7) & pp. 12-16: Relative location (situation) describes where a place is positioned relative to other landmarks, cities, and transportation corridors. Barcelona's situation on the northeastern Spanish Mediterranean coast, ~386 miles east of Madrid and ~644 miles south of Paris, gave it historical commercial prominence as Catalonia's primary port.",
+        "distractors": {
+          "A": "Latitude and longitude coordinates (41°N, 2°E) define absolute location, not relative location (situation).",
+          "B": "Barcelona is a major coastal seaport on the Mediterranean, not a landlocked alpine plateau.",
+          "C": "Barcelona is the regional capital of Catalonia; Madrid is the capital of Spain, and Portugal is an independent sovereign state."
+        }
+      }
+    },
+    {
+      "id": "STIM3-05",
+      "questionNumber": 5,
+      "topic": "Topics 1.3 / 7.2",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns presented in nighttime satellite imagery.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "18-22, 29",
+        "concept": "Remote Sensing of Global Urbanization and Energy Infrastructure",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 29 (Free-Response Stimulus) & pp. 18-22"
+      },
+      "image": "./images_03/amsco_03_earth_at_night.png",
+      "stimulusType": "Satellite Remote Sensing Composite",
+      "stimulus": "Questions 5 and 6 refer to the NASA Earth at Night satellite composite image shown below.",
+      "question": "At a global scale of analysis, what primary socioeconomic pattern is revealed by the spatial distribution of artificial light emissions in the nighttime satellite composite?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nocturnal light emissions are distributed uniformly across all continents regardless of national development levels.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Concentrated nocturnal luminosity correlates with core urban-industrial agglomerations and high per-capita electrical power use.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Extensive brightness is concentrated exclusively in primary subsistence agricultural zones due to nighttime field cultivation.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Light emissions are highest across polar tundra regions due to geothermal power plants operating in sub-zero blizzards.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 29 (Scoring Guidelines) & Chapter 18, pp. 450-454: The NASA Earth at Night composite reveals stark spatial clustering of artificial light. The brightest areas correspond to core post-industrial and rapidly industrializing regions (eastern North America, Western Europe, Japan, coastal China), reflecting dense urbanization, industrial power infrastructure, and affluent energy consumption.",
+        "distractors": {
+          "A": "Luminosity is highly uneven across the globe, disproving claims of uniform spatial distribution.",
+          "C": "Subsistence agricultural regions (e.g., parts of central Africa) generate minimal artificial light at night.",
+          "D": "Polar tundra regions are largely dark and unpopulated, with minimal electrical illumination."
+        }
+      }
+    },
+    {
+      "id": "STIM3-06",
+      "questionNumber": 6,
+      "topic": "Topics 1.3 / 7.5",
+      "skill": "Skill 3.D",
+      "skillDescription": "Compare patterns in satellite imagery to draw conclusions regarding development disparities.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "18-22, 29",
+        "concept": "Uneven Development and Rural Electrification Deficits",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, p. 29 (Scoring Guidelines) & Chapter 19, pp. 484-488"
+      },
+      "image": "./images_03/amsco_03_earth_at_night.png",
+      "stimulusType": "Satellite Remote Sensing Composite",
+      "stimulus": "Questions 5 and 6 refer to the NASA Earth at Night satellite composite image shown below.",
+      "question": "Why do extensive, densely populated rural regions in parts of Sub-Saharan Africa appear nearly dark in the satellite composite despite significant population numbers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tropical cloud cover permanently blocks all optical satellite sensors from detecting electrical streetlights from orbit.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "National zoning ordinances legally prohibit residential settlements from turning on interior lighting after sunset hours.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Peripheral agricultural populations frequently lack access to centralized electrical power grids and commercial energy infrastructure.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Every rural settlement operates entirely underground to shield residents from high diurnal surface desert temperatures.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, p. 29 & Chapter 18, pp. 468-470: Comparing population density maps with nighttime imagery highlights an 'energy poverty' gap. While rural Sub-Saharan Africa and South Asia support hundreds of millions of people, a lack of rural electrification and capital investment means settlements emit minimal nighttime light, underscoring peripheral economic status.",
+        "distractors": {
+          "A": "NASA composites combine cloud-free satellite passes over hundreds of orbital swaths to eliminate cloud obstruction.",
+          "B": "Darkness results from structural lack of electrical infrastructure, not legal prohibitions against lighting.",
+          "D": "Rural agricultural communities live in surface villages, not underground bunkers."
+        }
+      }
+    },
+    {
+      "id": "STIM3-07",
+      "questionNumber": 7,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 2.B",
+      "skillDescription": "Explain how transportation costs and weight changes dictate manufacturing location.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "456-460",
+        "concept": "Bulk-Gaining Manufacturing and Market Proximity",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 456-460 (Soft Drink Bottling Diagram)"
+      },
+      "image": "./images_03/amsco_05_bulk_gaining_soft_drinks.png",
+      "stimulusType": "Industrial Process Diagram",
+      "stimulus": "Questions 7 and 8 refer to the manufacturing diagram shown below.",
+      "question": "Based on the manufacturing model shown in the diagram, why do commercial soft drink bottling enterprises consistently locate adjacent to urban consumer markets?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adding ubiquitous municipal water during bottling significantly increases product weight and volume, making market-proximate distribution far cheaper.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Soft drink production is heavily bulk-reducing, requiring foundries to locate directly atop remote sugar beet and corn syrup farms.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Finished bottled beverages must be transported exclusively via supersonic air freight, necessitating factory sites directly inside airport runways.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Environmental regulations prohibit bottling trucks from operating on interstate highways outside of designated municipal city centers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 456-458: Soft drink bottling is a classic bulk-gaining (weight-gaining) industry. Bottlers purchase concentrated syrup (compact, lightweight) and mix it with local municipal water (ubiquitous, heavy) and carbonation. Because shipping heavy liquid bottles over long distances is expensive, plants locate near their metropolitan consumer markets to minimize outbound transit costs.",
+        "distractors": {
+          "B": "Soft drink fabrication is bulk-gaining, not bulk-reducing; finished liquid bottles weigh far more than dry syrup concentrate.",
+          "C": "Commercial beverages are transported by ground freight trucks, not supersonic air freight.",
+          "D": "Bottling delivery trucks travel on highways; plant location is driven by transport economics, not highway bans."
+        }
+      }
+    },
+    {
+      "id": "STIM3-08",
+      "questionNumber": 8,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 2.B",
+      "skillDescription": "Explain how location theory predicts industrial costs when distance increases.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "456-460",
+        "concept": "Least Cost Transport Penalties in Bulk-Gaining Siting",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 456-460 & Weberian Location Models"
+      },
+      "image": "./images_03/amsco_05_bulk_gaining_soft_drinks.png",
+      "stimulusType": "Industrial Process Diagram",
+      "stimulus": "Questions 7 and 8 refer to the manufacturing diagram shown below.",
+      "question": "If a soft drink manufacturer attempted to centralize all national bottling inside a single rural syrup extraction facility, which economic penalty would occur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The company would face massive tariffs imposed by municipal border customs checkpoints on beverage crates entering each urban county.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Finished beverages would suffer instant evaporation during highway transit, destroying product inventory before reaching store shelves.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The factory would lose access to telecommunications satellites, preventing administrative staff from placing telephone calls to grocery managers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Outbound shipping expenses for heavy finished liquid beverages would dramatically exceed the freight savings from cheap rural acreage.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 456-460: According to Weberian location principles, centralizing bulk-gaining production far from consumer markets incurs crippling outbound freight penalties. Shipping heavy, fragile, liquid-filled containers across thousands of miles generates transport costs that overwhelm any savings gained from cheaper rural land or labor.",
+        "distractors": {
+          "A": "Interstate and inter-county commerce within nations is duty-free; there are no municipal border tariffs on beverage trucks.",
+          "B": "Beverages are packaged in hermetically sealed glass, plastic, or aluminum cans that prevent evaporation during shipping.",
+          "C": "Rural areas in developed countries have modern telecommunications; the primary barrier is physical transportation cost."
+        }
+      }
+    },
+    {
+      "id": "STIM3-09",
+      "questionNumber": 9,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 2.B",
+      "skillDescription": "Explain how Weber's Least Cost Theory balances raw material and market friction.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "456-458, 475",
+        "concept": "Weber's Location Triangle and Bulk-Reducing Industries",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 456-458 (Weber's Least Cost Theory)"
+      },
+      "image": "./images_03/amsco_06_weber_least_cost_theory.png",
+      "stimulusType": "Economic Model Diagram",
+      "stimulus": "Questions 9 and 10 refer to Alfred Weber's Least Cost Theory model shown below.",
+      "question": "In Alfred Weber's Least Cost Theory diagram, what spatial condition compels a production facility to locate directly adjacent to Raw Material 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Raw Material 1 is weightless and ubiquitously accessible across every parcel of land throughout the entire geographic region.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Raw Material 1 experiences substantial weight loss during fabrication, whereas other inputs are ubiquitous and readily available at market.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Government industrial subsidies mandate that all fabrication facilities must construct headquarters atop high-cost urban retail real estate.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Finished goods are ten times heavier and more perishable than the unprocessed rocks extracted from the raw material excavation quarry.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 456-458: Alfred Weber's Least Cost Theory posits that manufacturing location is determined primarily by minimizing transportation costs. If Raw Material 1 is 'bulk-reducing' (weight-losing, like copper ore or coal) and localized, shipping the unrefined rock to market is cost-prohibitive. If other inputs are ubiquitous (like air or water), the plant pulls directly to the weight-losing raw material site.",
+        "distractors": {
+          "A": "If Raw Material 1 were weightless and ubiquitous, it would exert zero spatial pull toward its source.",
+          "C": "Weber's model is based on free-market cost optimization (transport, labor, agglomeration), not government real estate mandates.",
+          "D": "If finished goods were ten times heavier, production would be bulk-gaining and locate at the market, not at the raw material source."
+        }
+      }
+    },
+    {
+      "id": "STIM3-10",
+      "questionNumber": 10,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain how the substitution principle modifies Weberian industrial location theory.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "458-462, 476",
+        "concept": "Substitution Principle and Labor Cost Offsets",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 458-462 & Topic 7.2"
+      },
+      "image": "./images_03/amsco_06_weber_least_cost_theory.png",
+      "stimulusType": "Economic Model Diagram",
+      "stimulus": "Questions 9 and 10 refer to Alfred Weber's Least Cost Theory model shown below.",
+      "question": "How does the substitution principle modify Weber's classic transport-cost minimization model in contemporary high-tech secondary manufacturing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Firms refuse to utilize automated robotics, choosing to replace all electrical machinery with manual pre-industrial artisan tools.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Enterprises only locate factories in high-rent downtown cores to maximize land acquisition expenses and property tax burdens.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Firms accept higher long-distance freight charges if significant savings in lower offshore labor costs or state tax subsidies offset transit.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Corporations mandate that finished components be transported exclusively by horse-drawn wagons to eliminate diesel engine expenditures.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 458-460: The substitution principle states that one factor of production (e.g., labor costs) can be substituted for another (e.g., transport costs). In modern globalization, transnational firms frequently tolerate higher intercontinental shipping costs from Asia to North America because vast savings in low labor costs far outweigh the increased freight expenses.",
+        "distractors": {
+          "A": "Modern high-tech manufacturing heavily embraces automation and robotics to increase precision and throughput.",
+          "B": "Firms seek to minimize production costs; intentionally maximizing land rent contradicts basic economic rationality.",
+          "D": "Globalized industries rely on intermodal container ships, rail corridors, and jet aircraft, not pre-industrial wagons."
+        }
+      }
+    },
+    {
+      "id": "STIM3-11",
+      "questionNumber": 11,
+      "topic": "Topics 1.5 / 7.3",
+      "skill": "Skill 2.D",
+      "skillDescription": "Explain how Wallerstein's World Systems Theory models global spatial inequality.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 19: Development and Trade",
+        "pages": "481-484, 492",
+        "concept": "Wallerstein's World Systems Theory and Core-Periphery Dominance",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 19, pp. 481-484 (World Systems Diagram) & p. 492"
+      },
+      "image": "./images_03/amsco_07_core_periphery_wallerstein.png",
+      "stimulusType": "Theoretical Model Diagram",
+      "stimulus": "Questions 11 and 12 refer to the economic relationship diagram shown below.",
+      "question": "According to Immanuel Wallerstein's World Systems Theory diagram, which structural relationship maintains the economic dominance of core nations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Core nations extract low-cost raw materials and agricultural commodities from peripheral zones while exporting high-profit finished goods.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Core nations donate 90 percent of their annual gross national income directly to peripheral states without receiving any physical merchandise.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Peripheral nations impose severe trade embargoes that completely prevent core multinational corporations from acquiring tropical farm produce.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "All three tiers exchange manufactured consumer electronics at identical unit prices, establishing total price equilibrium worldwide.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 19, pp. 481-484: Wallerstein's World Systems Theory posits a single capitalist global division of labor. Core nations dominate high-skill, capital-intensive quaternary and secondary manufacturing and finance, while peripheral nations remain dependent on low-skill primary extraction and cash-crop exports. This unequal exchange drains wealth from the periphery to the core, perpetuating global spatial inequality.",
+        "distractors": {
+          "B": "Core nations do not donate their national income; global trade dynamics systematically favor core capital accumulation.",
+          "C": "Peripheral states are heavily integrated into global trade and rely on selling primary commodities to core markets.",
+          "D": "Terms of trade are highly unequal; manufactured high-tech goods command far higher profit margins than raw extracted minerals."
+        }
+      }
+    },
+    {
+      "id": "STIM3-12",
+      "questionNumber": 12,
+      "topic": "Topics 1.5 / 7.2",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain how commodity dependence traps peripheral economies within global trade networks.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 19: Development and Trade",
+        "pages": "484-488, 493",
+        "concept": "Commodity Dependence and Vulnerability in the Periphery",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 19, pp. 484-488 (Commodity Dependence & CDCs)"
+      },
+      "image": "./images_03/amsco_07_core_periphery_wallerstein.png",
+      "stimulusType": "Theoretical Model Diagram",
+      "stimulus": "Questions 11 and 12 refer to the economic relationship diagram shown below.",
+      "question": "Why do contemporary human geographers argue that peripheral commodity dependence hinders long-term sovereign economic development?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Primary extractive minerals experience zero market volatility, guaranteeing perpetual budget surpluses for developing national governments.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Reliance on domestic agricultural exports completely insulates peripheral economies from international financial currency devaluation cycles.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Transnational manufacturing conglomerates automatically construct high-tech robotics foundries inside every rural subsistence farming village.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Extreme price volatility on world commodity markets combined with low value-added processing leaves national fiscal budgets acutely vulnerable.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 19, pp. 484-488: A country is commodity-dependent when raw commodities account for over 60% of merchandise exports (e.g., copper in Zambia, oil in Angola). Raw goods suffer from severe price swings on global commodity exchanges, low value-added returns, and declining terms of trade relative to expensive imported capital machinery.",
+        "distractors": {
+          "A": "Raw commodity prices are notoriously volatile, resulting in severe budgetary deficits rather than perpetual surpluses.",
+          "B": "Commodity dependence heightens exposure to global financial panics and currency fluctuations rather than insulating the economy.",
+          "C": "Transnational firms locate robotics in core or semi-peripheral technopoles, not in isolated rural subsistence villages."
+        }
+      }
+    },
+    {
+      "id": "STIM3-13",
+      "questionNumber": 13,
+      "topic": "Topics 1.2 / 7.5",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns presented in global thematic choropleth maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "468-471, 475",
+        "concept": "Spatial Patterns of Global Energy Consumption",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, p. 468 (Energy Consumption Map) & p. 475"
+      },
+      "image": "./images_03/amsco_08_world_energy_consumption.png",
+      "stimulusType": "Thematic Choropleth Map",
+      "stimulus": "Questions 13 and 14 refer to the world energy consumption map shown below.",
+      "question": "Based on the choropleth map, which spatial generalization accurately characterizes per-capita annual commercial energy consumption worldwide?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Equatorial Sub-Saharan African states consume the highest volume of commercial electricity per resident across the entire globe.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Core post-industrial nations in North America and Northern Europe exhibit the highest per-capita commercial energy consumption rates.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Energy consumption per person is distributed in an isotropic uniform pattern across all continental landmasses regardless of income.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Developing agrarian societies in South Asia utilize more fossil fuel energy per household than automobile-dependent suburban Americans.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, p. 468 (Map) & pp. 468-471: The choropleth map shows that energy consumption per person is highest (>250 million BTUs per person) in core industrialized countries (United States, Canada, Norway, Australia) and wealthy petroleum states (Saudi Arabia, UAE). These economies have high vehicle ownership, widespread heating/cooling, and power-intensive industrial and commercial infrastructure.",
+        "distractors": {
+          "A": "Sub-Saharan Africa shows the lowest per-capita commercial energy consumption on the map (<25 million BTUs per person).",
+          "C": "Energy consumption is sharply clustered and unevenly distributed, not uniform or isotropic.",
+          "D": "South Asian agrarian households consume far less energy per capita than suburban American households."
+        }
+      }
+    },
+    {
+      "id": "STIM3-14",
+      "questionNumber": 14,
+      "topic": "Topics 1.6 / 7.5",
+      "skill": "Skill 3.D",
+      "skillDescription": "Compare spatial patterns of energy consumption to evaluate environmental sustainability.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "468-472, 476",
+        "concept": "Energy Transitions, Carbon Footprints, and Sustainable Development",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 468-472 & Chapter 19 Sustainable Goals"
+      },
+      "image": "./images_03/amsco_08_world_energy_consumption.png",
+      "stimulusType": "Thematic Choropleth Map",
+      "stimulus": "Questions 13 and 14 refer to the world energy consumption map shown below.",
+      "question": "What primary geographic challenge complicates international efforts to transition global energy consumption toward sustainable renewable sources?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Core nations have entrenched capital investments in legacy fossil fuel power grids, while developing nations seek cheap power to industrialize.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Solar radiation and atmospheric wind currents occur exclusively in polar ice caps where human electrical power transmission is impossible.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Peripheral agricultural nations possess infinite financial capital reserves that enable immediate construction of national nuclear power grids.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "International environmental accords legally prohibit post-industrial metropolitan areas from installing rooftop photovoltaic solar panels.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 468-472 & Chapter 19: The spatial disparity in energy consumption creates a major dilemma in sustainable development. Core economies have vast sunken investments in carbon-heavy infrastructure, while rapidly growing semi-peripheral and peripheral nations (India, Indonesia) rely on affordable coal and gas to lift populations out of poverty, creating geopolitical friction over emissions targets.",
+        "distractors": {
+          "B": "Solar insolation and wind resources are abundant in temperate, tropical, and arid zones, not restricted to polar ice.",
+          "C": "Peripheral nations face severe capital shortages, preventing them from easily financing multi-billion-dollar clean energy grids.",
+          "D": "International treaties encourage renewable solar adoption; there are no bans on rooftop photovoltaic installations."
+        }
+      }
+    },
+    {
+      "id": "STIM3-15",
+      "questionNumber": 15,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain what the data imply or illustrate about gender development indicators in tables.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "471-473, 477",
+        "concept": "Gender Inequality Index (GII) Dimensions and Measurement",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, p. 471 (GII Data Table) & pp. 471-473"
+      },
+      "image": "./images_03/amsco_09_gii_data_table.png",
+      "stimulusType": "Quantitative Data Table",
+      "stimulus": "Questions 15 and 16 refer to the Gender Inequality Index data table shown below.",
+      "question": "According to the GII data table, what statistical relationship distinguishes high-ranking gender equity nations from lower-ranking nations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High-ranking gender equality nations consistently exhibit adolescent birth rates exceeding 150 births per 1,000 adolescent females.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Nations with low overall gender inequality demonstrate zero female participation across all municipal secondary school classrooms.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Nations with low GII scores exhibit low maternal mortality rates, high female secondary education, and significant legislative representation.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Developing nations achieve the lowest gender inequality indices when female citizens are excluded from formal labor employment.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, p. 471 (Table) & pp. 471-473: The UN Gender Inequality Index (GII) is an inverse index where 0 represents complete gender equality and 1 represents total inequality. Highly ranked nations like Switzerland have scores near zero, characterized by low maternal mortality (under 5 per 100k), minimal adolescent fertility, high female secondary/tertiary schooling, and robust representation in national parliament.",
+        "distractors": {
+          "A": "High adolescent birth rates are a hallmark of high gender inequality (e.g., in low-ranking peripheral states), not high-ranking equity states.",
+          "B": "High-ranking nations have near-universal female secondary school completion rates (>95%).",
+          "D": "Excluding women from the workforce drastically worsens GII scores rather than improving them."
+        }
+      }
+    },
+    {
+      "id": "STIM3-16",
+      "questionNumber": 16,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.D",
+      "skillDescription": "Compare patterns across countries in quantitative gender data tables.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "471-474, 477",
+        "concept": "Female Political Empowerment and National Legislative Quotas",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, p. 471 (GII Data Table, Rwanda Case) & pp. 471-474"
+      },
+      "image": "./images_03/amsco_09_gii_data_table.png",
+      "stimulusType": "Quantitative Data Table",
+      "stimulus": "Questions 15 and 16 refer to the Gender Inequality Index data table shown below.",
+      "question": "In the GII data table, Rwanda exhibits a remarkably high percentage of female parliamentary seats (over 60%). Which factor best explains this spatial anomaly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Total historic domination of national heavy secondary manufacturing and iron smelting industries by female labor unions since 1850.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A constitutional prohibition that completely bans all male adult citizens from casting ballots in sovereign legislative elections.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Immediate post-conflict conversion of the national economy into an autarkic agrarian commune that abolished all formal legal codes.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Post-conflict constitutional gender quotas enacted following the 1994 genocide, mandating substantial female representation in parliament.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, p. 471 & Chapter 18 Review: Rwanda's world-leading female parliamentary representation (>60%) is a well-known geographic case study. Following the 1994 genocide, women comprised ~70% of the surviving population. The 2003 Rwandan Constitution instituted legislative gender quotas requiring at least 30% of parliamentary seats be reserved for women, fundamentally reshaping national governance.",
+        "distractors": {
+          "A": "Rwanda's economy is primarily agricultural and service-oriented, not historic heavy iron smelting.",
+          "B": "Male citizens have full voting rights; quotas reserve seats for female candidates, not disenfranchise men.",
+          "C": "Rwanda operates a modern market economy integrated into East African trade, not an autarkic commune."
+        }
+      }
+    },
+    {
+      "id": "STIM3-17",
+      "questionNumber": 17,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain what the data imply or illustrate about composite human development metrics.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "472-474, 477",
+        "concept": "Human Development Index Dimensions: Health, Education, and Income",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, p. 473 (HDI Table) & pp. 472-474"
+      },
+      "image": "./images_03/amsco_10_hdi_rankings_table.png",
+      "stimulusType": "Composite Index Table",
+      "stimulus": "Question 17 refers to the Human Development Index (HDI) ranking table shown below.",
+      "question": "Which three underlying developmental dimensions are mathematically combined to generate the composite Human Development Index (HDI) scores displayed in the table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Military defense expenditure per capita, total annual crude oil refining capacity, and national highway road lane mileage.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A long and healthy life (life expectancy), knowledge acquisition (mean schooling), and decent standard of living (GNI per capita PPP).",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Total landmass area measured in square miles, total volume of municipal gold reserves, and total domestic coal pit output.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Average number of cellular smartphone towers, total annual international tourist arrivals, and national sports stadium capacities.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, p. 473 & pp. 472-474: The UN Human Development Index (HDI) was designed to evaluate development beyond simple economic growth. It combines three core dimensions: (1) Health (life expectancy at birth), (2) Education (expected years of schooling for children and mean years of schooling for adults), and (3) Standard of Living (Gross National Income per capita adjusted for Purchasing Power Parity).",
+        "distractors": {
+          "A": "Military spending and highway miles are infrastructure/defense metrics, not human welfare components of HDI.",
+          "C": "Land area and gold reserves reflect physical geography and bullion, completely ignored by HDI.",
+          "D": "Smartphone towers and tourism are secondary indicators, not the core dimensions of the composite HDI."
+        }
+      }
+    },
+    {
+      "id": "STIM3-18",
+      "questionNumber": 18,
+      "topic": "Topics 1.7 / 7.5",
+      "skill": "Skill 1.D",
+      "skillDescription": "Explain geographic concepts, approaches, and theories related to environmental possibilism.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "38-42",
+        "concept": "Environmental Possibilism in Arid Economic Development",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 38-42 & Chapter 18 Modern Agriculture"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "How does the construction of large-scale solar-powered seawater desalination facilities in the Arabian Gulf demonstrate human adaptation under environmental possibilism?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It proves that arid desert climates permanently prohibit modern urbanization and force all citizens into nomadic pastoral herding.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It confirms that physical geography exerts zero influence on economic costs, allowing freshwater to generate spontaneously without energy.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Societies apply capital investment and advanced engineering to overcome severe physical water scarcity and sustain affluent urban centers.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It forces desert residents to abandon coastal seaports and migrate permanently to freezing polar tundras to harvest melting icebergs.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 38-42: Environmental possibilism argues that while the physical environment sets certain limitations, human societies possess agency and technological capability to overcome physical obstacles. In hyper-arid regions like the Arabian Peninsula, deploying advanced desalination, air conditioning, and solar arrays allows prosperous post-industrial cities (Dubai, Doha) to flourish despite severe natural freshwater deficits.",
+        "distractors": {
+          "A": "This reflects the rigid, disproven ideology of environmental determinism.",
+          "B": "Possibilism does not claim the environment has zero influence; desalination is extremely capital- and energy-intensive.",
+          "D": "Desalination enables populations to thrive in their existing desert coastal cities rather than migrating to polar regions."
+        }
+      }
+    },
+    {
+      "id": "STIM3-19",
+      "questionNumber": 19,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain how agglomeration economies foster quaternary technopole growth.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "462-466",
+        "concept": "Agglomeration Economies and Technopole Spatial Clustering",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 462-466 (High-Tech Corridors & Technopoles)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "What primary economic advantage do biotechnology and software corporations gain by clustering together inside planned technopoles like Research Triangle Park?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Agglomeration economies provide shared access to specialized STEM university labor pools, venture capital financiers, and knowledge spillovers.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Direct physical pipeline connectivity to underground coal mines allowing software programmers to burn raw peat during coding sessions.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Strict legal immunity from all federal corporate taxation and complete exemption from international patent copyright regulations.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Elimination of all electrical power grid requirements by replacing electronic microchips with manual mechanical wooden gears.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 462-466: Technopoles (e.g., Silicon Valley, Research Triangle Park) are agglomeration centers for high-tech quaternary industries. Co-locating near research universities enables external economies of scale: a deep pool of specialized talent, shared infrastructure, venture capital networks, patent attorneys, and informal knowledge spillovers that accelerate innovation.",
+        "distractors": {
+          "B": "Biotechnology and software are quaternary intellectual property industries, not coal-burning heavy secondary foundries.",
+          "C": "Technopoles operate under federal tax and intellectual property laws; they do not possess blanket legal immunity.",
+          "D": "High-tech research relies on cutting-edge supercomputing and power infrastructure, not pre-industrial wooden gears."
+        }
+      }
+    },
+    {
+      "id": "STIM3-20",
+      "questionNumber": 20,
+      "topic": "Topics 1.5 / 7.2",
+      "skill": "Skill 1.C",
+      "skillDescription": "Explain how post-Fordist manufacturing transforms industrial spatial organization.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "458-464",
+        "concept": "Post-Fordist Flexible Production and Just-in-Time Logistics",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 458-464 (Fordist vs. Post-Fordist Production)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "How did the shift from traditional Fordist mass production to modern post-Fordist flexible manufacturing reshape industrial factory spatial operations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It forced automotive factories to warehouse ten years of raw steel stockpiles on site to prevent any reliance on external suppliers.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It compelled corporations to execute every single stage of extraction, smelting, assembly, and sales inside a single rural workshop.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It banned international container shipping, requiring all industrial components to be manufactured within walking distance of consumers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It replaced massive on-site inventory stockpiles with just-in-time delivery networks, relying on computerized supplier coordination.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 458-464: Fordism was characterized by assembly-line mass production under one roof with massive warehouses buffering raw material inventories ('just-in-case'). Post-Fordism relies on flexible specialization, automated robotics, and 'just-in-time' (JIT) delivery, where parts arrive at the factory floor hours or minutes before assembly, drastically reducing inventory storage overhead.",
+        "distractors": {
+          "A": "Warehousing massive multi-year stockpiles is characteristic of Fordist 'just-in-case' production, the direct opposite of post-Fordism.",
+          "B": "Post-Fordism disintegrates production geographically across the global supply chain, rather than centralizing it in one workshop.",
+          "C": "Post-Fordism relies heavily on intermodal container shipping and international trade to source modular parts globally."
+        }
+      }
+    },
+    {
+      "id": "STIM3-21",
+      "questionNumber": 21,
+      "topic": "Topics 1.3 / 7.2",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial data layers in GIS multi-criteria overlay analysis.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "16-20",
+        "concept": "Geographic Information Systems (GIS) and Multi-Layer Overlays",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 16-20 (GIS Applications) & Topic 1.3"
+      },
+      "image": "./images_03/amsco_14_gis_overlay_layers.png",
+      "stimulusType": "Geospatial Technology Diagram",
+      "stimulus": "Questions 21 and 22 refer to the Geographic Information System (GIS) schematic shown below.",
+      "question": "How does the multi-layer GIS overlay capability shown in the diagram assist industrial site-selection analysts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It automatically manufactures physical automated assembly robots directly inside computerized desktop memory units.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It integrates disparate spatial layers like zoning, transport access, and flood plains to find optimal buildable parcels.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the physical need for real estate acreage by teleporting warehouses directly into digital cyberspace networks.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It forces industrial developers to locate manufacturing facilities exclusively inside protected wetland nature preserves.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 16-20: Geographic Information Systems (GIS) store geospatial data in thematic layers (e.g., elevation, zoning ordinances, transportation corridors, soil stability, tax districts). By mathematically overlaying these layers, planners can identify parcels that satisfy multiple simultaneous criteria while screening out unsuitable or environmentally sensitive land.",
+        "distractors": {
+          "A": "GIS is an analytical geospatial mapping software tool; it does not physically manufacture robotics equipment.",
+          "C": "GIS models real-world physical geography; it does not eliminate the physical reality of land or teleport facilities.",
+          "D": "GIS multi-criteria analysis is used to avoid protected wetlands and environmental hazards, not force development onto them."
+        }
+      }
+    },
+    {
+      "id": "STIM3-22",
+      "questionNumber": 22,
+      "topic": "Topics 1.3 / 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain how vector and raster geospatial data structures represent physical phenomena.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "17-21",
+        "concept": "Vector versus Raster Geospatial Data Models",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 17-21 & GIS Principles"
+      },
+      "image": "./images_03/amsco_14_gis_overlay_layers.png",
+      "stimulusType": "Geospatial Technology Diagram",
+      "stimulus": "Questions 21 and 22 refer to the Geographic Information System (GIS) schematic shown below.",
+      "question": "Which data representation pairing correctly matches a GIS vector feature with its real-world transportation or land-use asset?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Satellite thermal infrared radiation bands stored exclusively as hand-written alphanumeric journal diaries.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Continuous elevation contour gradients represented solely as verbal oral history recordings of local elders.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Rail freight corridors stored as vector line segments and warehouse footprints stored as closed vector polygons.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Oceanic water depths represented exclusively through physical woodblock carvings mailed between post offices.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 17-21: In GIS vector data models, spatial features are represented by geometric coordinates: points (specific addresses, transmission towers), lines (roads, rivers, rail lines), and polygons (parcels, municipal boundaries, warehouse building footprints). In contrast, raster models store data in grid cells/pixels (e.g., satellite imagery, elevation surfaces).",
+        "distractors": {
+          "A": "Thermal satellite data is stored as digital raster pixel grids, not qualitative diary notes.",
+          "B": "Elevation in GIS is stored as digital elevation model (DEM) raster grids or vector contour lines, not oral recordings.",
+          "D": "Bathymetric depths are stored digitally as raster grids or point soundings, not wooden carvings."
+        }
+      }
+    },
+    {
+      "id": "STIM3-23",
+      "questionNumber": 23,
+      "topic": "Topics 1.6 / 7.2",
+      "skill": "Skill 5.B",
+      "skillDescription": "Explain spatial relationships across various scales of analysis in regional economic maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "32-38",
+        "concept": "Scale of Analysis and Sub-National Economic Disparities",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 32-38 (Scales of Analysis & Regional Disparities)"
+      },
+      "image": "./images_03/amsco_15_german_states_disparity.png",
+      "stimulusType": "Sub-National Regional Choropleth Map",
+      "stimulus": "Questions 23 and 24 refer to the regional economic disparity map of Germany shown below.",
+      "question": "What significant spatial pattern of contemporary economic development is evident in the sub-national map of Germany?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Persistent regional economic disparities exist between prosperous western/southern states and lagging eastern federal states.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Every single municipality in Germany possesses identical per capita income, proving that geographic scale has zero effect on data.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The entire former East German region has completely deindustrialized into unpopulated arctic permafrost hunting grounds.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Southern Bavarian manufacturing clusters have collapsed entirely due to mandatory conversion to subsistence potato farming.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 32-38 & Chapter 18: Analyzing Germany at the sub-national scale of analysis reveals persistent spatial disparities stemming from the Cold War division. Western and southern states (Bavaria, Baden-Württemberg) exhibit high GDP per capita driven by advanced automotive and quaternary engineering, while eastern states (former GDR) lag in wages and corporate headquarters despite massive reunification investment.",
+        "distractors": {
+          "B": "The map clearly shows marked variation across states, directly contradicting any claim of uniform per capita income.",
+          "C": "Eastern Germany has a temperate climate and major urban centers (Leipzig, Dresden); it is not an arctic permafrost wilderness.",
+          "D": "Bavaria is one of Europe's wealthiest high-tech manufacturing regions (BMW, Siemens), not a subsistence potato farming region."
+        }
+      }
+    },
+    {
+      "id": "STIM3-24",
+      "questionNumber": 24,
+      "topic": "Topics 1.6 / 7.2",
+      "skill": "Skill 5.C",
+      "skillDescription": "Explain how the modifiable areal unit problem and scale masking affect data interpretation.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "34-39",
+        "concept": "Scale Masking and the Ecological Fallacy",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 34-39 (Scale Masking & MAUP)"
+      },
+      "image": "./images_03/amsco_15_german_states_disparity.png",
+      "stimulusType": "Sub-National Regional Choropleth Map",
+      "stimulus": "Questions 23 and 24 refer to the regional economic disparity map of Germany shown below.",
+      "question": "If an economist relied strictly on a single national-scale GDP figure for Germany, which critical geographic reality would be obscured?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The total absence of any formal monetized banking institutions across the entire European continental mainland.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The complete legal prohibition on automotive vehicle assembly throughout the European Union trade perimeter.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The immediate physical submersion of the North Sea coastline under thousand-foot volcanic molten lava flows.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Internal regional core-periphery imbalances and post-industrial transitions occurring across individual sub-national states.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 34-39: Analyzing data solely at a coarse national scale of analysis masks significant internal regional disparities (scale masking). While Germany as a unified country boasts a high national average GDP per capita, aggregating the data conceals pockets of high unemployment in deindustrialized coal regions and structural economic divides between western and eastern states.",
+        "distractors": {
+          "A": "Germany possesses one of the world's most sophisticated banking and financial networks (e.g., Frankfurt financial center).",
+          "B": "Germany is Europe's leading automotive manufacturer; assembly is highly encouraged rather than prohibited.",
+          "C": "The North Sea coast is low-lying coastal plain and marsh, not active volcanic molten lava."
+        }
+      }
+    },
+    {
+      "id": "STIM3-25",
+      "questionNumber": 25,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns presented in national population density maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "30-35",
+        "concept": "Population Density and Industrial Labor Sheds",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 30-35 (Population Density & Spatial Distribution)"
+      },
+      "image": "./images_03/amsco_16_us_population_density.png",
+      "stimulusType": "National Choropleth Density Map",
+      "stimulus": "Questions 25 and 26 refer to the United States population density map shown below.",
+      "question": "Based on the spatial patterns in the US population density map, which region provides the densest consumer market and labor pool for bulk-gaining assembly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Great Basin and intermountain desert valleys of Nevada and Utah characterized by sparse arid populations.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The Northeast megalopolis and Midwestern industrial corridor flanking the Great Lakes and Interstate 80 corridor.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The northern subalpine coniferous forests of remote rural Alaska located hundreds of miles from paved roads.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The arid shortgrass cattle ranching ranges of eastern Wyoming where county density drops below two people per square mile.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 30-35 & Chapter 18: The choropleth map shows extreme population concentration east of the Mississippi River, particularly along the Northeast Corridor (BosWash) and around the Great Lakes manufacturing belt. For bulk-gaining manufacturers (bottling, commercial bakeries, bulky packaging), locating in these dense urban corridors minimizes outbound transit costs to millions of consumers.",
+        "distractors": {
+          "A": "The Great Basin has very low population densities, offering limited immediate consumer market demand.",
+          "C": "Remote Alaska has extreme low density and high transportation friction, making bulk-gaining assembly cost-prohibitive.",
+          "D": "Eastern Wyoming's low density makes it unsuitable for market-oriented bulk-gaining manufacturing."
+        }
+      }
+    },
+    {
+      "id": "STIM3-26",
+      "questionNumber": 26,
+      "topic": "Topics 1.1 / 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain the difference between arithmetic density and physiological density in industrial regions.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "32-36",
+        "concept": "Arithmetic versus Physiological Density Calculations",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 32-36 & Topic 1.4 Spatial Measures"
+      },
+      "image": "./images_03/amsco_16_us_population_density.png",
+      "stimulusType": "National Choropleth Density Map",
+      "stimulus": "Questions 25 and 26 refer to the United States population density map shown below.",
+      "question": "How does physiological population density differ fundamentally from the arithmetic population density depicted on the map?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Physiological density measures total human beings divided strictly by total national ocean surface square mileage.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Arithmetic density divides total urban manufacturing laborers by the total number of operational freight diesel train engines.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Physiological density divides total human population by arable land, measuring ecological carrying capacity pressure.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Arithmetic density measures only citizens who hold university degrees in computer science and artificial intelligence.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 32-36: Arithmetic density is the crude ratio of total population divided by total land area (depicted on the map). In contrast, physiological density is the ratio of total population divided by arable (farmable) land area. A high physiological density indicates that a society must cultivate its agricultural land intensely to sustain its population, providing insight into agricultural carrying capacity.",
+        "distractors": {
+          "A": "Physiological density divides population by farmable land (arable land), not open ocean waters.",
+          "B": "Arithmetic density divides total population by total land area; it does not measure railroad locomotives.",
+          "D": "Arithmetic density counts every resident, regardless of education or occupational sector."
+        }
+      }
+    },
+    {
+      "id": "STIM3-27",
+      "questionNumber": 27,
+      "topic": "Topics 1.2 / 7.2",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns presented in isoline topographic maps for site selection.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "10-15",
+        "concept": "Isoline Maps and Topographic Elevation Analysis",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 10-15 (Isoline & Topographic Maps)"
+      },
+      "image": "./images_03/amsco_17_topographic_contour_map.png",
+      "stimulusType": "Topographic Isoline Map",
+      "stimulus": "Question 27 refers to the topographic contour map shown below.",
+      "question": "When an industrial engineering firm evaluates this topographic isoline map for siting a large 100-acre automotive factory, which location is most favorable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Directly atop the steepest ridgeline where contour lines are packed extremely closely together to minimize foundation grading costs.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Inside the deepest active river canyon where flash floods regularly submerge all access roadways during torrential rainfall events.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "On an exposed cliff precipice where heavy freight trucks must navigate 45-degree vertical rock faces to deliver automotive engines.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Across the broad valley floor where contour lines are spaced widely apart, indicating gentle slopes for building construction.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 10-15: Topographic maps use isolines (contour lines) connecting points of equal elevation. Closely spaced contour lines indicate steep, rugged slopes, which incur exorbitant earth-moving and grading expenses and impede truck transit. Widely spaced contour lines indicate flat or gently rolling terrain, providing optimal site conditions for sprawling modern single-story industrial plants and rail spurs.",
+        "distractors": {
+          "A": "Closely spaced contours indicate steep cliffs, which drastically increase grading and foundation costs.",
+          "B": "Locating inside flood-prone canyons exposes multimillion-dollar machinery to severe flood damage and transit cutoffs.",
+          "C": "Heavy trucks cannot navigate vertical cliffs; industrial sites require gentle slopes under 5-8% gradient."
+        }
+      }
+    },
+    {
+      "id": "STIM3-28",
+      "questionNumber": 28,
+      "topic": "Topics 1.2 / 7.5",
+      "skill": "Skill 3.D",
+      "skillDescription": "Explain how cartograms distort geographic boundaries to visualize thematic data.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "11-15",
+        "concept": "Thematic Cartograms and Value-by-Area Cartography",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 11-15 (Cartogram Thematic Representations)"
+      },
+      "image": "./images_03/amsco_18_global_cartogram.png",
+      "stimulusType": "Thematic Cartogram",
+      "stimulus": "Question 28 refers to the global thematic cartogram shown below.",
+      "question": "What primary cartographic transformation defines the thematic cartogram shown in the image?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Country polygon areas are mathematically distorted and resized in direct proportion to the statistical variable being mapped.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Every continent is rendered with identical square mileage to enforce visual equality across all member states of the United Nations.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "All landmasses are replaced by circular compass roses that depict only the prevailing wind directions across commercial sea lanes.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "National borders are locked into rigid geometric Mercator shapes that prioritize true compass navigation over data values.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 11-15: A cartogram is a specialized thematic map where geographic area is intentionally distorted, expanded, or shrunk in proportion to a specific statistical value (e.g., population, GDP, industrial carbon emissions). This allows viewers to instantly perceive the global spatial distribution and relative weight of an economic or demographic variable.",
+        "distractors": {
+          "B": "Cartograms do not make continents equal; they size polygons based on data values, creating pronounced size differences.",
+          "C": "Cartograms display resized national territories, not nautical compass roses.",
+          "D": "Cartograms sacrifice traditional geometric shapes and land area accuracy to visualize quantitative statistical data."
+        }
+      }
+    },
+    {
+      "id": "STIM3-29",
+      "questionNumber": 29,
+      "topic": "Topics 1.5 / 7.2",
+      "skill": "Skill 2.B",
+      "skillDescription": "Explain how break-of-bulk points and containerization reduce friction of distance.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "456-460",
+        "concept": "Break-of-Bulk Points and Intermodal Containerization",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 456-460 (Break-of-Bulk & Transportation Modes)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "Which operational function defines a geographic break-of-bulk point within global intermodal shipping supply chains?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A deep underground vault where paper currency is destroyed by sovereign federal reserve banks to manage national inflation.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A physical location where cargo is transferred from one transportation mode (e.g., container ship) to another (e.g., rail or truck).",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "A rural agricultural commune that completely forbids the use of motorized cargo vehicles and electronic communications.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A manufacturing assembly facility that produces only delicate microprocessors without consuming any physical raw materials.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 456-460: A break-of-bulk point is a location where cargo is transferred from one transportation carrier or mode to another—for example, from an ocean container vessel to freight railcars or long-haul trucks at a seaport (e.g., Port of Los Angeles, Rotterdam). Standardized 20-foot and 40-foot intermodal shipping containers revolutionized break-of-bulk operations by eliminating manual dock unloading.",
+        "distractors": {
+          "A": "Break-of-bulk points handle physical merchandise logistics, not central bank currency destruction.",
+          "C": "Break-of-bulk points are bustling transportation hubs (ports, rail yards, airports), the opposite of isolated communes.",
+          "D": "This describes a footloose high-tech assembly facility, not a transport transshipment terminal."
+        }
+      }
+    },
+    {
+      "id": "STIM3-30",
+      "questionNumber": 30,
+      "topic": "Topics 1.4 / 7.2",
+      "skill": "Skill 1.C",
+      "skillDescription": "Explain how Export Processing Zones (EPZs) utilize site incentives to attract manufacturing.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "462-466",
+        "concept": "Export Processing Zones (EPZs) and Foreign Direct Investment",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 462-466 (EPZs, Maquiladoras, & Special Economic Zones)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "Which combination of policy incentives do developing countries typically establish inside Export Processing Zones (EPZs) to attract foreign investment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exorbitant 90 percent corporate income tax rates combined with strict legal mandates requiring all factory profits to be seized by the state.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Mandatory closure of all nearby seaports and total prohibition of foreign trade container vessels from entering coastal territorial waters.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Tax holidays, duty-free import of intermediate machinery and materials, streamlined customs, and subsidized infrastructure near ports.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Strict legal requirements that foreign corporations must produce only handcrafted artisanal pottery using medieval hand tools.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 462-466: Export Processing Zones (EPZs), Special Economic Zones (SEZs), and maquiladora corridors are designated industrial territories designed to attract foreign direct investment (FDI). Host governments offer favorable site conditions: exemptions from import/export tariffs, corporate tax holidays, modern deepwater port access, reliable electricity, and flexible labor regulations.",
+        "distractors": {
+          "A": "High taxes and profit seizure repel foreign investors; EPZs offer tax holidays and full profit repatriation.",
+          "B": "EPZs are intentionally sited directly adjacent to deepwater seaports and international airports to maximize trade throughput.",
+          "D": "EPZs target modern manufacturing assembly (electronics, apparel, auto parts), not medieval handicraft pottery."
+        }
+      }
+    },
+    {
+      "id": "STIM3-31",
+      "questionNumber": 31,
+      "topic": "Topics 1.2 / 7.2",
+      "skill": "Skill 2.A",
+      "skillDescription": "Explain how map projections distort spatial relationships in global trade.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "8-14",
+        "concept": "Conformal versus Interrupted Equal-Area Projections",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 8-14 (Mercator vs. Goode's Homolosine)"
+      },
+      "image": "./images_03/amsco_19_map_projections_comparison.png",
+      "stimulusType": "Map Projection Comparison Diagram",
+      "stimulus": "Questions 31 and 32 refer to the comparative map projection diagram shown below.",
+      "question": "What primary cartographic advantage does Goode's Homolosine projection (Map B) offer over the Mercator projection (Map A) when analyzing global distributions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It preserves the relative surface area sizes of landmasses across all latitudes by interrupting the oceanic basins.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It renders straight lines of compass bearing across the open ocean, allowing direct transoceanic ship navigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It completely eliminates all mathematical distortion of shape, distance, direction, and area simultaneously.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It inverts all continent coordinates so that the South Pole is positioned directly at the geometric center of the map.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 8-14: Goode's Homolosine projection is an interrupted, composite equal-area projection. By placing interruptions ('cuts') through the major oceanic basins, it minimizes distortion of both shape and relative area of the continental landmasses. This makes it ideal for thematic world maps displaying global population or economic data without the high-latitude area distortion of the Mercator projection.",
+        "distractors": {
+          "B": "Preserving true compass bearings as straight lines is the defining property of the Mercator projection, not Goode's Homolosine.",
+          "C": "It is mathematically impossible to flatten a 3D sphere onto a 2D plane without distorting at least one spatial property.",
+          "D": "Goode's Homolosine uses standard northern-orientation; it does not place the South Pole at the center."
+        }
+      }
+    },
+    {
+      "id": "STIM3-32",
+      "questionNumber": 32,
+      "topic": "Topics 1.2 / 7.2",
+      "skill": "Skill 2.A",
+      "skillDescription": "Explain the trade-offs between conformal and equal-area projections in maritime trade.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "8-14",
+        "concept": "Trade-Offs Between Navigation Utility and Area Accuracy",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 8-14 (Projection Trade-Offs)"
+      },
+      "image": "./images_03/amsco_19_map_projections_comparison.png",
+      "stimulusType": "Map Projection Comparison Diagram",
+      "stimulus": "Questions 31 and 32 refer to the comparative map projection diagram shown below.",
+      "question": "Why is Goode's Homolosine projection (Map B) poorly suited for plotting direct oceanic shipping lanes between Asian export hubs and North American ports?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It legally prohibits merchant cargo vessels from traversing international waters under international maritime law.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It portrays all world oceans as frozen solid sheets of polar glacier ice that prevent container ship transit.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It shrinks the apparent physical size of high-latitude nations like Canada and Russia to less than one square mile.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The intentional interruptions across oceanic basins sever continuous navigational trajectories and distort sea distances.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 8-14: The very feature that allows Goode's Homolosine to preserve continental land area—interruptions cut through the Atlantic, Pacific, and Indian oceans—makes it unusable for nautical navigation. Navigators cannot draw continuous straight courses across interrupted oceans, which sever sea lanes and distort oceanic distances.",
+        "distractors": {
+          "A": "Map projections have no legal authority over international maritime transit rights under UN treaties.",
+          "B": "The map depicts liquid ocean basins; interruptions are cartographic incisions, not frozen ice sheets.",
+          "C": "Goode's Homolosine preserves proportional land area; it does not shrink Canada to one square mile."
+        }
+      }
+    },
+    {
+      "id": "STIM3-33",
+      "questionNumber": 33,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.B",
+      "skillDescription": "Describe spatial patterns presented in global adult literacy choropleth maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "470-474",
+        "concept": "Spatial Patterns of Global Adult Literacy",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 470-474 (Social Development Indicators)"
+      },
+      "image": "./images_03/amsco_20_adult_literacy_choropleth.png",
+      "stimulusType": "Thematic Choropleth Map",
+      "stimulus": "Questions 33 and 34 refer to the world adult literacy rate map shown below.",
+      "question": "Based on the global choropleth map, which regional generalization accurately describes adult literacy rates worldwide?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nations across North America, Western Europe, and East Asia consistently report adult literacy rates dipping below 25 percent.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Core and semi-peripheral nations exhibit literacy above 90 percent, while parts of Sub-Saharan Africa and South Asia lag.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Adult literacy is distributed in a completely random spatial mosaic with zero correlation to national economic wealth.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Landlocked developing countries consistently attain the highest female university graduation rates across the world.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 470-474: The adult literacy map reflects a classic core-periphery pattern. High-income core nations (North America, Europe, Japan) and industrialized semi-peripheral nations (China, Russia) have adult literacy rates exceeding 95-99%. In contrast, peripheral nations in Sub-Saharan Africa and parts of South Asia show literacy rates below 60-70%, driven by underfunded public education and rural poverty.",
+        "distractors": {
+          "A": "Core nations have near-universal literacy (>98%), not rates dipping below 25%.",
+          "C": "Literacy is intensely correlated with national wealth, school funding, and GNI per capita, not random.",
+          "D": "Landlocked developing countries often struggle with educational infrastructure funding, lagging behind core states."
+        }
+      }
+    },
+    {
+      "id": "STIM3-34",
+      "questionNumber": 34,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain how female literacy rates correlate spatially with fertility and development.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "471-475",
+        "concept": "Correlation Between Female Education and Demographic Transition",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 471-475 (Gender Empowerment & Fertility)"
+      },
+      "image": "./images_03/amsco_20_adult_literacy_choropleth.png",
+      "stimulusType": "Thematic Choropleth Map",
+      "stimulus": "Questions 33 and 34 refer to the world adult literacy rate map shown below.",
+      "question": "What major demographic principle explains why countries with high female literacy consistently exhibit low total fertility rates (TFR)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Educated women gain employment autonomy, marry later in life, and access reproductive healthcare, resulting in smaller families.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "High school graduation biologically prevents human reproduction by altering atmospheric ozone concentrations over cities.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Literate households are legally required by international law to surrender all children to state-run secondary academies.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Nations with high female literacy mandate that all citizens must practice nomadic pastoralism in remote alpine pastures.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 471-475 & Unit 2: Across human geography, female literacy is the single most powerful predictor of fertility decline. Educated women remain in school longer, delay marriage and childbearing, enter the formal workforce, have greater agency over reproductive healthcare, and prioritize higher investment per child, driving the total fertility rate (TFR) downward toward replacement levels.",
+        "distractors": {
+          "B": "Education influences demographic decisions through socioeconomic empowerment, not biological atmospheric changes.",
+          "C": "Families choose smaller family sizes autonomously; there is no international mandate to surrender children.",
+          "D": "Higher literacy is associated with urban tertiary and quaternary employment, not nomadic pastoralism."
+        }
+      }
+    },
+    {
+      "id": "STIM3-35",
+      "questionNumber": 35,
+      "topic": "Topics 1.2 / 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Identify different types of thematic maps and their appropriate analytical uses.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 1: Maps and Geographic Data",
+        "pages": "8-12",
+        "concept": "Thematic Map Types: Dot, Choropleth, Graduated Symbol, and Isoline",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 1, pp. 8-12 (Types of Thematic Maps)"
+      },
+      "image": "./images_03/amsco_21_thematic_map_types.png",
+      "stimulusType": "Cartographic Taxonomy Graphic",
+      "stimulus": "Question 35 refers to the thematic map types graphic shown below.",
+      "question": "Which pairing correctly matches a thematic map type shown in the graphic with its primary analytical cartographic purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Choropleth map: Uses physical wooden sticks to navigate canoes across open equatorial oceanic currents without coordinates.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Dot distribution map: Replaces sovereign country boundaries with equal-sized geometric circles that ignore real coordinates.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Graduated symbol map: Uses varying symbol sizes to illustrate quantitative differences in data magnitudes across locations.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Isoline map: Colors every administrative county with identical fluorescent dye to eliminate all elevation differences.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 1, pp. 8-12: Thematic maps convey specific spatial data patterns. A graduated (proportional) symbol map uses symbols of varying sizes (typically circles) to represent numerical differences in data values across locations (e.g., container port volumes or urban populations), allowing visual comparison of magnitudes while keeping points placed accurately.",
+        "distractors": {
+          "A": "Choropleth maps use color shading across administrative units to show statistical rates, not wooden navigation sticks.",
+          "B": "Dot distribution maps place dots where each dot represents a specific quantity of a phenomenon; they do not replace boundaries with equal circles.",
+          "D": "Isoline maps connect points of equal value (elevation, temperature), not color counties uniformly."
+        }
+      }
+    },
+    {
+      "id": "STIM3-36",
+      "questionNumber": 36,
+      "topic": "Topics 1.6 / 7.2",
+      "skill": "Skill 5.B",
+      "skillDescription": "Explain spatial relationships across various scales of analysis in population maps.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 2: Spatial Concepts and Geographic Analysis",
+        "pages": "32-37",
+        "concept": "Multi-Scale Analysis: State versus County versus Census Block",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 2, pp. 32-37 (Scales of Analysis & Granularity)"
+      },
+      "image": "./images_03/amsco_22_ny_density_scale.png",
+      "stimulusType": "Multi-Scale Density Map Pair",
+      "stimulus": "Question 36 refers to the multi-scale density map pair of New York State shown below.",
+      "question": "What cartographic insight is gained by shifting analysis from the aggregate state scale (Map 1) to the disaggregated county scale (Map 2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It demonstrates that population density is distributed in an isotropic uniform pattern across all northern Adirondack counties.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It proves that census data collection at the county scale contains mathematical errors that make local mapping unreliable.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It shows that New York City has completely decentralized, causing suburban residents to migrate into rural dairy pastures.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It reveals extreme clustering in the New York City metropolitan area masked by the moderate statewide arithmetic density average.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 2, pp. 32-37: Shifting scale of analysis alters perceived spatial patterns. At the statewide scale, New York appears to have a moderate, uniform density. However, zooming in to the county scale reveals that the vast majority of the population is hyper-concentrated in the five boroughs of New York City and surrounding suburbs, while upstate counties (e.g., the Adirondacks) are rural and sparsely populated.",
+        "distractors": {
+          "A": "Adirondack counties have very low density; the distribution is highly clustered, not isotropic or uniform.",
+          "B": "County-level data provides finer spatial resolution and reveals genuine local variation, not mathematical error.",
+          "C": "New York City remains the densest urban agglomeration in the nation, not decentralized into dairy pastures."
+        }
+      }
+    },
+    {
+      "id": "STIM3-37",
+      "questionNumber": 37,
+      "topic": "Topics 1.6 / 7.2",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain what the data imply or illustrate about socioeconomic variables in tables.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "450-456",
+        "concept": "Deindustrialization, Sectoral Shifts, and Median Income Disparities",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 450-456 & Chapter 2 Data Tables"
+      },
+      "image": "./images_03/amsco_23_county_data_table.png",
+      "stimulusType": "County Socioeconomic Data Table",
+      "stimulus": "Question 37 refers to the county-level socioeconomic data table shown below.",
+      "question": "Based on the data in the table, what economic correlation is evident between manufacturing employment share and household median income?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Counties with 90 percent heavy manufacturing employment consistently generate the highest median household incomes nationwide.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Counties transitioning into high-tech quaternary services exhibit higher incomes than legacy deindustrialized factory counties.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Median household income remains perfectly uniform across all counties regardless of local economic sectoral specializations.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Rural agricultural counties devoid of any electrical utilities consistently out-earn suburban metropolitan banking hubs.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 450-456: In post-industrial economies, counties anchored in legacy secondary manufacturing often experience wage stagnation or decline following plant closures (deindustrialization). Conversely, counties that successfully transition toward quaternary research, finance, and specialized technology services consistently boast significantly higher median household incomes.",
+        "distractors": {
+          "A": "Heavy manufacturing counties in the Rust Belt often experience economic depression relative to tech hubs, not the highest incomes.",
+          "C": "Median income varies dramatically across counties depending on industry mix, directly refuting uniformity.",
+          "D": "Metropolitan banking hubs have far higher median incomes than impoverished rural agricultural counties."
+        }
+      }
+    },
+    {
+      "id": "STIM3-38",
+      "questionNumber": 38,
+      "topic": "Topics 1.5 / 7.3",
+      "skill": "Skill 2.D",
+      "skillDescription": "Explain the stages and structural assumptions of Rostow's modernization model.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 19: Development and Trade",
+        "pages": "479-482, 492",
+        "concept": "Rostow's Stages of Economic Growth: Stage 2 Preconditions for Takeoff",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 19, pp. 479-482 (Rostow's Model) & p. 492"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "In W.W. Rostow's Stages of Economic Growth model, why is substantial capital investment in transportation and energy infrastructure deemed an essential precondition for takeoff (Stage 2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It forces developing nations to ban all international trade and adopt autarkic subsistence agricultural production techniques.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It legally invalidates private business ownership by transferring all commercial factories into foreign colonial military depots.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Reliable road, rail, and power networks reduce transport costs and power industrial machinery, enabling commercial manufacturing takeoff.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It replaces automated digital robotics with manual wooden carts, ensuring zero consumption of refined petroleum products.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 19, pp. 479-482 & p. 492: Rostow's modernization theory posits that Stage 2 ('Preconditions for Takeoff') requires building social overhead capital—specifically physical infrastructure like roads, canals, railroads, and electrical power grids. Without efficient transportation to move raw materials to factories and goods to market, a society cannot generate the commercial profits needed for industrial takeoff (Stage 3).",
+        "distractors": {
+          "A": "Rostow's model is based on integrating into world trade and commercial capitalism, the opposite of closed autarky.",
+          "B": "Rostow emphasizes private enterprise, entrepreneurship, and capital investment, not foreign military confiscation.",
+          "D": "Stage 2 prepares a society for mechanized power and modern technology, not reverting to primitive wooden tools."
+        }
+      }
+    },
+    {
+      "id": "STIM3-39",
+      "questionNumber": 39,
+      "topic": "Topics 1.6 / 7.3",
+      "skill": "Skill 3.E",
+      "skillDescription": "Explain how grassroots microcredit initiatives foster local bottom-up development.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 18: Industrial and Economic Development",
+        "pages": "472-475",
+        "concept": "Microfinance, Grassroots Enterprise, and Female Empowerment",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 18, pp. 472-475 (Microloans & Bottom-Up Development)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "How do non-governmental microfinance programs (such as the Grameen Bank model) stimulate bottom-up economic development in peripheral rural communities?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They provide small collateral-free loans to low-income female entrepreneurs to launch micro-enterprises, reinvesting profits in family health.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "They finance multi-billion-dollar nuclear submarine drydocks and heavy aerospace rocket launch complexes across rural agricultural farmland.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "They legally prohibit female village residents from owning livestock or selling woven craft goods at local municipal town marketplaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "They require rural borrowers to surrender all agricultural farmland to foreign commercial mining syndicates in exchange for paper currency.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 18, pp. 472-475: Microcredit provides modest loans (often $50–$500) to individuals—disproportionately women—who lack traditional banking collateral. Borrowers start small enterprises (poultry farming, sewing, mobile phone kiosks). The resulting earnings are plowed into family nutrition, healthcare, and children's schooling, fostering resilient bottom-up community development without state debt.",
+        "distractors": {
+          "B": "Microfinance provides modest individual loans for village micro-enterprises, not multi-billion-dollar military or aerospace infrastructure.",
+          "C": "Microcredit explicitly empowers women to own businesses and build assets, directly contradicting patriarchal restrictions.",
+          "D": "Microloans do not seize farmland; they build private borrower equity and financial self-sufficiency."
+        }
+      }
+    },
+    {
+      "id": "STIM3-40",
+      "questionNumber": 40,
+      "topic": "Topics 1.7 / 7.5",
+      "skill": "Skill 1.D",
+      "skillDescription": "Explain how ecotourism aligns economic development with ecological conservation.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition (Palmer)",
+        "author": "David L. Palmer",
+        "chapter": "Chapter 19: Development and Trade",
+        "pages": "488-492",
+        "concept": "Ecotourism as a Sustainable Development Strategy",
+        "whereToLook": "AMSCO 2nd Ed (Palmer), Chapter 19, pp. 488-492 (Sustainable Tourism & Conservation)"
+      },
+      "image": null,
+      "stimulusType": "Conceptual Synthesis",
+      "stimulus": null,
+      "question": "How does community-managed ecotourism in biodiverse tropical rainforests serve as an economically viable alternative to primary resource extraction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It completely clears ancient virgin rainforest canopies to construct open-pit copper mines that generate non-renewable tax revenue.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It forces indigenous forest residents into forced migration out of their homeland to create unpopulated commercial monoculture palm oil plantations.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It mandates the construction of heavy coal-fired power stations along pristine coral reefs to supply power for luxury multi-story casino towers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It monetizes intact natural ecosystems through foreign traveler fees, providing local employment that directly disincentivizes logging.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Refer to AMSCO Chapter 19, pp. 488-492: Ecotourism establishes an economic model that values standing forests and thriving biodiversity over short-term clear-cutting or cattle ranching. By employing local residents as park rangers, naturalists, and eco-lodge hosts, it creates sustainable tertiary livelihoods that directly incentivize the long-term conservation of fragile tropical ecosystems.",
+        "distractors": {
+          "A": "Open-pit copper mining destroys forest ecosystems, which is the direct antithesis of sustainable ecotourism.",
+          "B": "Monoculture palm oil plantations destroy biodiversity and displace indigenous communities; ecotourism seeks to integrate and protect them.",
+          "C": "Heavy coal plants and high-rise casinos represent unsustainable mass tourism, not community-based ecotourism."
+        }
+      }
+    }
+  ]
+}

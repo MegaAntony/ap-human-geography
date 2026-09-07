@@ -1,0 +1,1193 @@
+{
+  "unit": 1,
+  "unitTitle": "Unit 1: Thinking Geographically",
+  "topic": "Topic 1.7",
+  "topicTitle": "Regional Analysis",
+  "curriculum": "AP Human Geography (College Board CED)",
+  "totalQuestions": 25,
+  "textbook": {
+    "title": "Advanced Placement Human Geography, 2nd Edition",
+    "author": "David L. Palmer",
+    "publisher": "AMSCO / Perfection Learning",
+    "chapter": "Unit 1: Thinking Geographically",
+    "topic": "Topic 1.7: Regional Analysis",
+    "unit": "Unit 1: Thinking Geographically"
+  },
+  "questions": [
+    {
+      "id": "1.7-Q01",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Formal (Uniform) Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Formal Regions (Uniform Regions)'"
+      },
+      "stimulus": null,
+      "question": "Which of the following spatial units represents a formal (uniform) region in human geography?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The State of Montana, where all citizens are subject to uniform state statutory laws.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The commercial delivery reception zone radiating outward from a local Italian pizzeria.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The cultural territory that sports enthusiasts informally refer to as Red Sox Nation.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The electromagnetic broadcast transmission reception footprint of an urban radio station.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "A formal (or uniform) region is an area defined by common human or physical characteristics (e.g., shared language, climate, or political boundaries). The State of Montana is a formal political region because state laws and administrative authority apply uniformly within its borders.",
+        "distractors": {
+          "B": "A pizza delivery radius is a functional (nodal) region organized around a central commercial kitchen.",
+          "C": "Red Sox Nation is a vernacular (perceptual) region rooted in informal sports fan loyalty.",
+          "D": "A radio transmission footprint is a functional region organized around a central broadcasting tower."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q02",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Functional (Nodal) Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Functional Regions (Nodal Regions)'"
+      },
+      "stimulus": null,
+      "question": "A functional (nodal) region is distinguished from other regional types primarily because it:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Features fuzzy, subjective boundaries that vary depending on personal resident opinions.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Is organized around a central node connected to surrounding areas by transportation or flows.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Requires that every resident within its boundaries speaks the exact same native language.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Possesses permanent, unalterable physical borders defined by natural mountain chains.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "A functional (nodal) region is structured around a central focal point or node (such as a city core, airline hub, or broadcast tower) and is tied to surrounding hinterlands by transportation routes, communication lines, or trade flows.",
+        "distractors": {
+          "A": "Fuzzy, subjective boundaries define vernacular (perceptual) regions, not functional regions.",
+          "C": "Uniform language traits characterize cultural formal regions, not nodal functional systems.",
+          "D": "Functional regions are defined by dynamic operational flows, not permanent physical mountain barriers."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q03",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Vernacular (Perceptual) Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Vernacular Regions (Perceptual Regions)'"
+      },
+      "stimulus": null,
+      "question": "Which of the following examples best represents a vernacular (perceptual) region?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The legal municipal property boundaries demarcated on a county cadastral land tax map.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The international trade territory governed by the European Union common market rules.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The American 'Deep South,' defined by shared cultural heritage and subjective mental maps.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The designated cellular phone signal coverage zone of a commercial telecommunication tower.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "A vernacular (or perceptual) region exists in the minds of people as part of their cultural identity and informal mental maps (e.g., 'the Deep South,' 'the Midwest'). It lacks precise, legally defined borders, and its spatial extent varies according to individual perception.",
+        "distractors": {
+          "A": "Cadastral tax parcels are formal administrative units with legally precise surveyed boundaries.",
+          "B": "The European Union is a formal supranational political and economic region established by treaty.",
+          "D": "A cell tower coverage zone is a functional (nodal) region centered on a physical transmitter."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q04",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Regional Transition Zones",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Boundaries and Transition Zones'"
+      },
+      "stimulus": null,
+      "question": "Unlike sharp, legally demarcated boundaries between sovereign nations, the boundaries separating cultural and vernacular regions are best characterized as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Permanent lines of latitude that never adjust over centuries of human migration history.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Absolute geometric survey markers installed and maintained by federal cartographers.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "International maritime Exclusive Economic Zones governed by United Nations admiralty law.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Gradual transition zones where regional characteristics slowly diminish and blend together.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Cultural, agricultural, and vernacular regions rarely have knife-edge boundaries; instead, they fade into broad transition zones (e.g., the transition between the American South and Midwest in Kentucky and southern Ohio) where characteristics overlap and change gradually.",
+        "distractors": {
+          "A": "Parallels of latitude are mathematical coordinate lines, not dynamic cultural transition frontiers.",
+          "B": "Geometric markers define cadastral property and political borders, not cultural vernacular zones.",
+          "C": "Exclusive Economic Zones are formal maritime jurisdictional boundaries under UNCLOS."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q05",
+      "topic": "Topic 1.7",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Broadcast Media and Designated Market Areas (DMAs)",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Functional Regions: Media Market Areas'"
+      },
+      "stimulus": null,
+      "question": "A regional television station broadcasts local news from a downtown skyscraper antenna to surrounding suburban and rural communities. Beyond a 60-mile radius, household reception degrades and viewers tune in to broadcast signals from an adjacent metropolitan city. This television viewing area represents:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A functional region organized around a broadcast node, with connectivity decaying with distance.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A formal administrative region established by sovereign constitutional federal treaty accords.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A vernacular perceptual region defined by shared dialect pronunciation and folk music traditions.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "An environmental biome defined by uniform native vegetation canopy and annual rainfall levels.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "A broadcast media market (or Nielsen Designated Market Area) is a classic functional region: the antenna acts as the central node, electromagnetic signals provide the link, and signal strength weakens with distance decay until reaching the boundary of an adjacent competing nodal market.",
+        "distractors": {
+          "B": "Broadcast reception footprints are commercial telecommunication zones, not constitutional treaties.",
+          "C": "Viewing areas are determined by electronic broadcast range, not folk dialect or music traditions.",
+          "D": "A vegetation canopy defines a physical ecological biome, not an urban television broadcast footprint."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q06",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Nested and Hierarchical Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Nested Regional Hierarchies'"
+      },
+      "stimulus": null,
+      "question": "The concept that a single residential neighborhood exists inside a municipal city, which exists inside a county, which exists inside a state, which exists inside a sovereign country, which exists inside a global continental realm illustrates:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The modifiable areal unit problem invalidating all formal cadastral property registers.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Nested hierarchical regionalization, where smaller spatial units are embedded inside larger ones.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Environmental determinism dictating that municipal borders must follow physical ridgelines.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The complete elimination of all cartographic projection distortion on local planning charts.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Nested regional hierarchies organize geographic space across multiple embedded scales: micro-scale units (neighborhoods) fit within meso-scale administrative units (cities, counties, states), which fit within macro-scale continental or supranational regions.",
+        "distractors": {
+          "A": "Hierarchical administrative nesting is standard political geography, not a statistical MAUP error.",
+          "C": "Political subdivisions are established by human legislative acts, not physical environmental determinism.",
+          "D": "Cartographic projection distortion is an optical map math property, unrelated to administrative nesting."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q07",
+      "topic": "Topic 1.7",
+      "skill": "Skill 2.A",
+      "skillDescription": "Describe a geographic concept, process, model, or theory in a specified context.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Agricultural Formal Regions: The Corn Belt",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Economic Formal Regions: The Corn Belt'"
+      },
+      "stimulus": null,
+      "question": "The American 'Corn Belt' in the Midwestern United States (stretching across Iowa, Illinois, and Indiana) is categorized by human geographers as an economic formal region because:",
+      "options": [
+        {
+          "id": "A",
+          "text": "All agricultural farming operations are controlled by a single federal grain elevator tower.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The region possesses fuzzy, subjective mental borders based strictly on college football fandom.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Corn cultivation and soybean crop rotations are the shared, dominant economic land use throughout.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The region is bounded by high alpine mountain peaks that block all vehicular commercial transit.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The Corn Belt is a formal economic region because it is defined by a measurable, uniform agricultural characteristic: across this contiguous geographic zone, corn and soybean farming constitutes the predominant land use, crop yield, and agricultural farm revenue.",
+        "distractors": {
+          "A": "The Corn Belt contains thousands of independent private farms, not a single centralized grain elevator.",
+          "B": "College football fandom defines vernacular cultural territories, not formal agricultural production regions.",
+          "D": "The Midwest Corn Belt occupies flat to gently rolling plains, completely devoid of alpine mountain peaks."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q08",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Zelinsky's Vernacular Regions Study",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Mapping Vernacular Regions: Wilbur Zelinsky'"
+      },
+      "stimulus": null,
+      "question": "In his landmark 1980 study of American vernacular regions, geographer Wilbur Zelinsky mapped the frequency of commercial business names using regional monikers (such as 'Dixie' or 'Southern' in phone directories). What did this spatial research reveal about vernacular boundaries?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vernacular regional boundaries match federal state borders with absolute mathematical precision.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Commercial businesses are legally prohibited from utilizing regional cultural labels in titles.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The American South is physically bounded by active subduction zone oceanic tectonic trenches.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Perceptual regions have ambiguous, transitional borders that reflect shared cultural identities.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Wilbur Zelinsky analyzed telephone directories across North America to map vernacular culture regions. His maps demonstrated that perceptual regions like 'the South' have distinct cultural cores with high moniker frequency, but fade into wide, fuzzy transitional zones without sharp administrative edges.",
+        "distractors": {
+          "A": "Vernacular boundaries do not follow state borders neatly; parts of northern Florida or Virginia differ from the core South.",
+          "B": "Businesses routinely adopt regional monikers for commercial marketing without legal prohibitions.",
+          "C": "The American South is situated on a passive continental margin, not active subduction ocean trenches."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q09",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Formal Cultural and Linguistic Regions: Quebec",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Cultural Formal Regions: Language and Law'"
+      },
+      "stimulus": null,
+      "question": "The Canadian province of Quebec is frequently categorized as both a political and cultural formal region because within its legally defined provincial borders:",
+      "options": [
+        {
+          "id": "A",
+          "text": "French is the legally protected official language and civil law governs legal property affairs.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "All municipal residents reside within a 15-minute commuter transit radius of central Montreal.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The province operates an independent national military that controls Arctic maritime trade.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Topographical mountain ridges prevent any physical highway connections to adjacent provinces.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Quebec is a formal region defined by shared, uniform political and cultural criteria: legally demarcated provincial borders, French as the statutory official language (Bill 101), and a distinctive legal code based on French civil law rather than British common law.",
+        "distractors": {
+          "B": "Quebec spans over 500,000 square miles; millions of residents live hours or days away from Montreal.",
+          "C": "Quebec is a Canadian province that relies on federal Canadian armed forces, not a separate sovereign military.",
+          "D": "Quebec is linked to Ontario and New Brunswick by major trans-Canada highways and railways."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q10",
+      "topic": "Topic 1.7",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Airline Hub-and-Spoke Networks as Functional Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Transportation Networks as Functional Regions'"
+      },
+      "stimulus": null,
+      "question": "Delta Air Lines operates a major hub-and-spoke flight network centered at Hartsfield-Jackson International Airport in Atlanta, routing hundreds of connecting flights daily across regional spoke airports throughout the southeastern United States. In spatial analysis, this commercial route network represents:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A formal political region established by multilateral United Nations commercial aviation treaties.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A functional nodal region organized around Atlanta, with flight linkages binding the hinterland.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "A vernacular perceptual region defined by shared regional culinary tastes and folk expressions.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "An environmental climate biome defined by uniform subtropical vegetation and hurricane risks.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Airline hub-and-spoke systems are prime examples of functional regions: the central hub airport (Atlanta) serves as the primary operational node, while spoke flights create functional linkages binding distant cities to the hub through scheduled commercial transport.",
+        "distractors": {
+          "A": "Airline route networks are private corporate logistics systems, not UN sovereign boundary treaties.",
+          "C": "Flight routes are planned around economic passenger yields, not shared culinary tastes or folk dialects.",
+          "D": "Subtropical biomes define physical ecological zones, not commercial aviation transportation networks."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q11",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Physical Formal Regions: Climatic and Biome Realms",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Physical Formal Regions'"
+      },
+      "stimulus": null,
+      "question": "The Sahara Desert in North Africa spans over 3.5 million square miles across eleven countries. In physical and human geography, the Sahara is categorized as a physical formal region primarily because:",
+      "options": [
+        {
+          "id": "A",
+          "text": "All resident Saharan nomadic tribes speak an identical standardized dialect of classical Arabic.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It is officially administered as a single centralized sovereign nation governed from Cairo.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It exhibits uniform physical traits of hyper-arid climate, sparse vegetation, and sand dunes.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "All trans-Saharan commercial transit is coordinated around a single municipal airport hub.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The Sahara is a physical formal region because it is defined by a uniform, homogeneous physical criterion: an arid climate regime receiving less than 3 inches of rainfall annually, supporting specialized drought-resistant xerophytic flora and desert geomorphology.",
+        "distractors": {
+          "A": "The Sahara is home to linguistically diverse groups (Berbers, Tuareg, Arabic speakers, Teda).",
+          "B": "The Sahara is divided among 11 distinct sovereign nation-states, not a single unitary government.",
+          "D": "Transport across the Sahara involves multiple overland routes and airports; it is not a single nodal functional system."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q12",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Vernacular Economic Regions: The Rust Belt",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Perceptual Economic Regions: The Rust Belt'"
+      },
+      "stimulus": null,
+      "question": "The term 'Rust Belt' is commonly applied to a geographic swath of the northeastern and midwestern United States extending from western New York through Pennsylvania, Ohio, and Michigan. Why is the Rust Belt classified as a vernacular (perceptual) region?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is a formal administrative region established by interstate compacts to levy uniform taxes.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It is organized around a single central corporate steel mill that coordinates all manufacturing.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It has precise legally surveyed borders demarcated on federal cadastral land parcel maps.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It is an informal cultural descriptor associated with factory closures and economic decline.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "The 'Rust Belt' is a vernacular (perceptual) region: it lacks statutory boundaries, and its borders are informally drawn based on widespread public perception of historical heavy industry, manufacturing job losses, and deindustrialization.",
+        "distractors": {
+          "A": "There is no formal legal interstate tax district named the 'Rust Belt.'",
+          "B": "The Rust Belt contains dozens of independent metropolitan cities (Detroit, Cleveland, Pittsburgh), not a single node.",
+          "C": "Cadastral maps demarcate legal property boundaries, not informal vernacular descriptors like the Rust Belt."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q13",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Micro Functional Regions: Service Delivery Radii",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Local Functional Regions'"
+      },
+      "stimulus": null,
+      "question": "A local independent pharmacy delivers prescription medications to customers residing within a 5-mile driving radius of its retail storefront. Customers living beyond 5 miles must pick up orders in person. In spatial geography, this delivery boundary forms:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A micro functional region organized around the retail store node via vehicle delivery routes.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A formal political territory established by sovereign international pharmaceutical accords.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A vernacular perceptual territory rooted in shared regional religious identity and dialect.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "An environmental climax community defined by native botanical forest canopy vegetation.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "A retail or service delivery radius is a micro-scale functional region: the pharmacy serves as the central operational node, delivery drivers establish spatial links, and delivery boundaries delineate the operational service catchment area.",
+        "distractors": {
+          "B": "A commercial pharmacy delivery route is private business operations, not an international sovereign treaty.",
+          "C": "Prescription delivery is a functional commercial service, not a religious or linguistic vernacular territory.",
+          "D": "A climax community is a biological ecological concept, wholly unrelated to pharmacy delivery zones."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q14",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Regional Classification Dilemmas: Mexico",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Regional Dilemmas: Categorizing Countries'"
+      },
+      "stimulus": null,
+      "question": "When geographers delineate world regions, Mexico is categorized as part of North America under physical and economic criteria (such as the USMCA trade pact), but as part of Latin America under cultural and linguistic criteria. What does this classification dilemma illustrate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mexico's national sovereign government has been officially dissolved by international treaties.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Regional boundaries are human analytical constructs that shift based on the criteria chosen.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Cartographic projection distortion completely destroys mathematical accuracy on world maps.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Environmental determinism dictates that Spanish language can only diffuse across tropical climates.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Regions are intellectual constructs created by geographers to organize space: because borders are defined by human criteria rather than natural laws, a country like Mexico belongs to North America when prioritizing physical landmass and trade, but Latin America when prioritizing historical Spanish colonial culture.",
+        "distractors": {
+          "A": "Mexico is a fully sovereign federal constitutional republic recognized internationally.",
+          "C": "Map projection distortion alters flat map geometry, but does not dictate regional cultural definitions.",
+          "D": "Spanish diffuses through human migration and conquest (possibilism), not climatic determinism."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q15",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "World Regional Realms: SWANA / MENA",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'World Regions: Southwest Asia and North Africa'"
+      },
+      "stimulus": null,
+      "question": "Geographers frequently group North Africa and Southwest Asia into a single cohesive world regional realm (often designated as SWANA or MENA) despite bridging two distinct continents. Which combination of shared characteristics justifies this regional classification?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Universal adherence to Roman Catholicism and dense tropical rainforest canopy ecosystems.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Sub-Arctic permafrost soils combined with heavy commercial timber forestry industries.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Predominantly arid BWh climates, historical Islamic cultural heritage, and petroleum resources.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Complete political integration into a single unitary sovereign federal republic system.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The Southwest Asia and North Africa (SWANA) realm shares unifying formal physical and cultural traits: extensive arid desert biomes, the widespread practice of Islam, the Arabic language (with Turkish and Persian enclaves), and massive petroleum reserves around the Persian Gulf.",
+        "distractors": {
+          "A": "SWANA is predominantly Islamic with desert biomes, not Roman Catholic with tropical rainforests.",
+          "B": "Permafrost and timber forestry characterize the sub-Arctic taiga (Russia/Canada), not North Africa/Middle East.",
+          "D": "SWANA comprises over 20 distinct sovereign states with varying political systems, not a single unitary republic."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q16",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Vernacular Technology Regions: Silicon Valley",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Vernacular Economic Clusters: Silicon Valley'"
+      },
+      "stimulus": null,
+      "question": "The region known as 'Silicon Valley' in Northern California is internationally recognized as a premier global hub for semiconductor design, software development, and venture capital. Why is Silicon Valley categorized as a vernacular region rather than a formal political region?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It possesses an independent standing army that patrols surrounding mountain valley passes.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It is an unpopulated wilderness territory devoid of residential suburban neighborhoods.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It is established by formal international United Nations semiconductor trade treaties.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It lacks legal municipal borders and is defined by popular perception of its tech cluster.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "'Silicon Valley' is a vernacular (perceptual) region: there is no formal administrative government or official legal municipality named 'Silicon Valley'; the moniker reflects widespread public perception of an innovative tech cluster centered in the Santa Clara Valley.",
+        "distractors": {
+          "A": "Silicon Valley is part of California and the United States, with zero independent military force.",
+          "B": "Silicon Valley is a densely populated metropolitan area containing cities like San Jose, Palo Alto, and Sunnyvale.",
+          "C": "There are no UN treaties establishing Silicon Valley; it emerged from private corporate venture capital."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q17",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Supranational Formal Regions: The European Union",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Supranational Formal Regions: The EU'"
+      },
+      "stimulus": null,
+      "question": "The European Union (EU) operates as a supranational formal region primarily because all member nations within its external territorial boundary agree to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Abide by common economic market regulations, trade policies, and open internal Schengen travel.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Eliminate all domestic languages and mandate the exclusive use of classical Latin speech.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Merge all national territory into a single centralized municipal urban planning district.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Prohibit all commercial internet broadband transmissions across member state frontiers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "The European Union is a formal supranational political and economic region because its member states are legally bound by shared institutions, common trade rules, standard product regulations, and (for most members) the borderless Schengen Zone and Euro currency.",
+        "distractors": {
+          "B": "The EU recognizes 24 official native European languages, celebrating multilingualism rather than mandating Latin.",
+          "C": "Member states remain sovereign national territories; they do not merge into a single city district.",
+          "D": "The EU strongly promotes cross-border digital infrastructure and high-speed broadband connectivity."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q18",
+      "topic": "Topic 1.7",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Port Hinterlands as Functional Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Port Hinterlands and Trade Corridors'"
+      },
+      "stimulus": null,
+      "question": "The Port of Rotterdam in the Netherlands processes ocean freight from container ships and funnels cargo via the Rhine River, rail corridors, and highways across industrial manufacturing centers in Germany, Belgium, and France. In human geography, this economic trade territory forms:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A formal administrative state territory governed by a single municipal Dutch mayor.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A functional port hinterland organized around the maritime logistics node of Rotterdam.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "A vernacular perceptual region defined by shared culinary folklore and religious traditions.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "An environmental nature reserve protecting endangered marine mammals from all boat traffic.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "A port's hinterland—the commercial tributary area from which it draws exports and through which it distributes imports—is a classic functional region: the container port acts as the central node, while river barges, trains, and trucks establish spatial connections.",
+        "distractors": {
+          "A": "Rotterdam's hinterland spans multiple sovereign nations, far exceeding the jurisdiction of a Dutch mayor.",
+          "C": "Port hinterlands are defined by commercial freight logistics, not shared folklore or religious heritage.",
+          "D": "The Port of Rotterdam is Europe's largest industrial shipping complex, not a restricted nature reserve."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q19",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "The Evolution of Vernacular Regions: The Sun Belt",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'The Dynamic Nature of Vernacular Regions'"
+      },
+      "stimulus": null,
+      "question": "Beginning in the late twentieth century, the term 'Sun Belt' gained widespread prominence to describe the southern and southwestern tier of the United States. Which combination of factors drove the rise and popular recognition of this vernacular region?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The mandatory relocation of the federal national capital from Washington, D.C., to Miami.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The total abandonment of air conditioning systems in southern homes to conserve electricity.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Massive post-WWII migration from the Rust Belt attracted by warm climate, air conditioning, and jobs.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The formal demarcation of the Sun Belt as an independent sovereign nation by the United Nations.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Vernacular regions evolve over time: the 'Sun Belt' emerged as a popular perceptual region following massive demographic shifts—retirees and workers migrating from the deindustrializing Rust Belt to warm southern states, enabled by air conditioning, lower taxes, and aerospace/tech jobs.",
+        "distractors": {
+          "A": "The federal capital remains permanently located in Washington, D.C.",
+          "B": "Widespread air conditioning was the primary technological enabler of southern population growth.",
+          "D": "The Sun Belt is an informal regional descriptor within the U.S., not an independent sovereign nation."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q20",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Sub-Regions of World Realms",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Sub-Regions: Latin America'"
+      },
+      "stimulus": null,
+      "question": "Geographers frequently subdivide the expansive world regional realm of Latin America into smaller, cohesive sub-regions based on physical landforms and cultural histories. Which of the following lists correctly identifies three standard sub-regions of Latin America?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Northern Scandinavia, the southern Iberian Peninsula, and the western British Isles.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The semi-arid African Sahel, the coastal Maghreb, and the eastern Horn of Africa.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Eastern Polynesia, northern Micronesia, and the south Melanesian archipelago.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Middle America (Mexico and Central America), the Caribbean islands, and South America.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Latin America is standardly subdivided into three major geographical sub-regions: Middle America (Mexico and the Central American isthmus), the Caribbean island archipelago (Greater and Lesser Antilles), and the South American continent.",
+        "distractors": {
+          "A": "Scandinavia, Iberia, and the British Isles are sub-regions of Europe.",
+          "B": "The Sahel, Maghreb, and Horn of Africa are sub-regions of Africa.",
+          "C": "Polynesia, Micronesia, and Melanesia are sub-regions of Oceania in the Pacific."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q21",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Formal Climate Classifications",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Formal Environmental Regions: Koppen Climate'"
+      },
+      "stimulus": null,
+      "question": "Under the Köppen Climate Classification System, coastal California, central Chile, southern South Africa, and the Mediterranean basin are all categorized as possessing a 'Mediterranean Climate' (Csa/Csb). What makes this a formal geographic region?",
+      "options": [
+        {
+          "id": "A",
+          "text": "All four non-contiguous territories share homogeneous traits of warm, dry summers and mild, rainy winters.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "All four territories are governed by a single centralized municipal parliament located in Rome, Italy.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "All four territories are linked by a direct passenger commuter subway transit railway network.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Residents in all four territories share an informal vernacular belief in ancient Greek mythological deities.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "A formal region does not have to be contiguous: disjointed geographic territories are grouped into a formal climate region because they share uniform, measurable physical characteristics—in this case, dry summer subtropical climate supporting olive, citrus, and grape agriculture.",
+        "distractors": {
+          "B": "These territories span four separate continents (North America, South America, Africa, Europe) under independent sovereign governments.",
+          "C": "Subway transit cannot cross trans-oceanic distances between continents.",
+          "D": "Climate classification is empirical atmospheric science, not Greek mythological religious belief."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q22",
+      "topic": "Topic 1.7",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Functional Administrative Regions: Emergency Dispatch",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Administrative Functional Regions'"
+      },
+      "stimulus": null,
+      "question": "A county 911 emergency communications dispatch center routes ambulances and fire rescue vehicles from four fire stations across designated service sectors based on drive-time road networks. In geographic analysis, each fire station's service sector represents:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A formal linguistic territory defined throughout by uniform indigenous language dialects.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A functional region organized around a station node to optimize emergency response times.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "A vernacular perceptual region rooted deeply in subjective folklore and sports loyalties.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A natural ecological physical biome defined by native climax forest canopy vegetation.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Emergency response districts are operational functional regions: the fire station serves as the central focal node, road networks provide the physical links, and the boundary represents the limit where another station can respond more rapidly.",
+        "distractors": {
+          "A": "Emergency service sectors are defined by drive-times, not linguistic cultural dialects.",
+          "C": "Emergency dispatch boundaries are mathematically calculated public safety zones, not subjective vernacular folklore.",
+          "D": "Emergency response zones manage municipal services, not natural biological forest biomes."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q23",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Sports Geographies and Overlapping Vernacular Regions",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Sports Geographies and Regional Loyalty'"
+      },
+      "stimulus": null,
+      "question": "In Connecticut, residents in the eastern half of the state overwhelmingly support the Boston Red Sox, while residents in the southwestern counties support the New York Yankees. The dividing territory between these two sports fan bases exemplifies:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sovereign international border maintained by armed military border patrol guards.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A formal administrative boundary established by the United States Supreme Court.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A fluid cultural transition zone where overlapping vernacular identities compete.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "An impassable geological tectonic ridge preventing human vehicular transportation.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Sports allegiances represent vernacular (perceptual) regions shaped by media broadcasts and proximity to major metropolitan nodes (Boston vs. New York). Central Connecticut acts as a fluid transition zone where fan loyalties overlap, split families, and change gradually.",
+        "distractors": {
+          "A": "Connecticut is a domestic U.S. state; there are no military border checkpoints within its counties.",
+          "B": "The Supreme Court does not adjudicate or establish sports fandom boundaries.",
+          "D": "Connecticut features gentle rolling hills and highways, not impassable tectonic ridges."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q24",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "World Regional Dilemmas: Russia",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Regional Dilemmas: Russia and Eurasia'"
+      },
+      "stimulus": null,
+      "question": "Geographers frequently debate whether Russia should be classified as part of the European world realm, the Asian world realm, or a distinct Eurasian realm. Which geographic reality explains why Russia defies simple regional categorization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Russia's national sovereign government has been officially dissolved by United Nations decrees.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Russia is physically located on an isolated island archipelago in the central Pacific Ocean.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Russia's population is entirely nomadic and maintains zero permanent urban settlements.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Its core population and culture are European, while 75% of its landmass lies in northern Asia.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Russia bridges two world realms: roughly 78% of its population, its capital (Moscow), and its historical cultural heritage are situated west of the Ural Mountains in Europe, while over 75% of its vast land territory (Siberia) extends east across Asia to the Pacific.",
+        "distractors": {
+          "A": "Russia is a permanent member of the UN Security Council, not a dissolved state.",
+          "B": "Russia is a transcontinental landmass in northern Eurasia, not an isolated Pacific island.",
+          "C": "Over 74% of Russia's population lives in major metropolitan cities (Moscow, St. Petersburg, Novosibirsk)."
+        }
+      }
+    },
+    {
+      "id": "1.7-Q25",
+      "topic": "Topic 1.7",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 1: Thinking Geographically",
+        "chapter": "Topic 1.7: Regional Analysis",
+        "section": "Synthesizing Formal, Functional, and Vernacular Regional Types",
+        "whereToLook": "AMSCO 2nd Ed, Topic 1.7, under 'Synthesizing Regional Concepts'"
+      },
+      "stimulus": "Salt Lake City is the legally incorporated state capital of Utah, the corporate headquarters coordinating church branches across the worldwide Latter-day Saint (LDS) ecclesiastical network, and the core of the cultural perceptual realm known as 'Mormon Country.'",
+      "question": "How does Salt Lake City exemplify the simultaneous coexistence of all three fundamental regional types?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It proves that environmental determinism strictly dictates municipal religious practices.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It demonstrates that functional and formal boundaries cannot legally exist in the same state.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for geographers to utilize mathematical cartographic scale in GIS.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It operates as a formal legal capital, a functional administrative node, and a vernacular hearth.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "A single geographic place can embody all three regional frameworks simultaneously: Salt Lake City is a formal political region (incorporated capital of Utah), a functional nodal region (the hub coordinating global church administration and regional retail/transit), and the cultural hearth of a vernacular region ('Mormon Country').",
+        "distractors": {
+          "A": "Mormon migration and religious practice reflect human cultural history and agency, not climatic determinism.",
+          "B": "All three regional types routinely overlap and coexist across the same geographic space.",
+          "C": "Cartographic map scale remains essential for spatial analysis regardless of regional types."
+        }
+      }
+    }
+  ]
+}

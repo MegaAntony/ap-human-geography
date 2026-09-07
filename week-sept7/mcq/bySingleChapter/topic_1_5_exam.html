@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography Topic 1.5 Mastery Exam (25 Questions)</title>
+<style>
+  :root {
+    --cb-blue: #0077c8;
+    --cb-dark: #1b263b;
+    --cb-gray: #f4f6f9;
+    --cb-border: #d0d7de;
+    --correct-bg: #e6f4ea;
+    --correct-border: #137333;
+    --wrong-bg: #fce8e6;
+    --wrong-border: #c5221f;
+  }
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--cb-gray); color: #202124; padding: 24px 16px; }
+  .exam-container { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid var(--cb-border); padding: 32px; }
+  .header-bar { border-bottom: 2px solid var(--cb-blue); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; }
+  .header-bar h1 { margin: 0; font-size: 22px; color: var(--cb-dark); }
+  .header-bar .subtitle { font-size: 13px; color: #57606a; margin-top: 4px; }
+  .score-badge { font-weight: bold; color: var(--cb-dark); font-size: 15px; background: #e8f0fe; padding: 8px 14px; border-radius: 6px; border: 1px solid #c2e7ff; }
+  .q-card { border: 1px solid var(--cb-border); border-radius: 8px; padding: 20px; margin-bottom: 24px; background: #fafbfc; }
+  .q-meta { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+  .skill-pill { background: #1b263b; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .amsco-pill { background: #eef2f6; color: #334155; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid #cbd5e1; }
+  .q-stimulus { background: #f1f5f9; border-left: 4px solid var(--cb-blue); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1e293b; border-radius: 0 4px 4px 0; }
+  .q-prompt { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 16px; color: #1f2328; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .opt-btn { background: #fff; border: 1.5px solid var(--cb-border); border-radius: 6px; padding: 12px 14px; text-align: left; font-size: 14.5px; cursor: pointer; transition: all 0.15s ease; color: #24292f; line-height: 1.45; }
+  .opt-btn:hover:not(:disabled) { border-color: var(--cb-blue); background: #f8fbff; }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.correct { background: var(--correct-bg) !important; border-color: var(--correct-border) !important; color: #0d5423; font-weight: 600; }
+  .opt-btn.wrong { background: var(--wrong-bg) !important; border-color: var(--wrong-border) !important; color: #9c1a17; text-decoration: line-through; }
+  .feedback-box { display: none; margin-top: 14px; padding: 14px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; }
+  .feedback-box.show { display: block; }
+  .feedback-box.correct { background: #edf7ed; border-left: 4px solid var(--correct-border); color: #1e4620; }
+  .feedback-box.wrong { background: #fdf2f2; border-left: 4px solid var(--wrong-border); color: #5c1818; }
+  .feedback-box strong { display: block; margin-bottom: 4px; }
+  .nav-back { display: inline-block; margin-bottom: 16px; color: var(--cb-blue); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="exam-container">
+  <a href="../index.html" class="nav-back">&larr; Return to Master Interactive Test Hub</a>
+  <div class="header-bar">
+    <div>
+      <h1>AP Human Geography: Topic 1.5 Mastery Exam</h1>
+      <div class="subtitle">Human-Environmental Interaction &bull; 25 Interactive College Board-Standard Questions &bull; David L. Palmer AMSCO 2nd Ed.</div>
+    </div>
+    <div class="score-badge" id="scoreTracker">Score: 0 / 25 answered (0%)</div>
+  </div>
+
+  <div id="quizForm"></div>
+</div>
+
+<script>
+const examQuestions = [
+  {
+    "id": "1.5-Q01",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Environmental Determinism",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Environmental Determinism'"
+    },
+    "stimulus": null,
+    "question": "Which of the following assertions best represents the foundational philosophy of nineteenth-century environmental determinism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The physical environment, especially climate, strictly dictates human cultural traits and societal success.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Human cultural values and technological innovations empower societies to completely modify the natural world.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Economic development levels are determined entirely by the mathematical scale of local cartographic wall maps.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Geographic Information Systems allow governments to eliminate the physical friction of geographic distance.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Environmental determinism was a 19th-century intellectual theory (championed by Humboldt, Ritter, and Semple) arguing that the physical environment, particularly climate and topography, strictly controls and determines human culture, intelligence, and economic development.",
+      "distractors": {
+        "B": "This describes environmental possibilism, which emphasizes human agency, technology, and cultural adaptation.",
+        "C": "Cartographic map scale is a drawing ratio on paper, not a philosophical theory of human-environment interaction.",
+        "D": "GIS is a digital geospatial analysis tool; it does not eliminate the physical reality of geographic distance."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q02",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Critique and Rejection of Determinism",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Rejection of Environmental Determinism'"
+    },
+    "stimulus": null,
+    "question": "Why did twentieth-century geographers overwhelmingly reject environmental determinism in favor of possibilism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Satellite remote sensing proved that Earth's climate biomes never experience seasonal temperature fluctuations.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It was scientifically flawed, ignored human agency, and served to justify European colonialism and racism.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "International maritime treaties legally prohibited universities from publishing geographic climate theories.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Computer relational databases proved that physical topography has zero measurable impact on road transit.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Geographers discarded environmental determinism because it was empirically unscientific, discounted human cultural agency, and was historically weaponized to rationalize European imperial subjugation of tropical indigenous peoples by claiming they were inherently inferior.",
+      "distractors": {
+        "A": "Earth's biomes clearly experience significant seasonal weather variations and climatic shifts.",
+        "C": "Maritime treaties govern international ocean navigation, not academic geographical theories.",
+        "D": "Physical topography undeniably influences human transit engineering, even under possibilist frameworks."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q03",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Environmental Possibilism",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Possibilism'"
+    },
+    "stimulus": null,
+    "question": "Which of the following statements accurately summarizes the geographic concept of environmental possibilism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical climate patterns strictly dictate the political forms of government that nations must adopt.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The physical environment exerts zero influence over human agricultural and architectural decisions.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The physical environment sets broad limits, but humans have the agency to choose multiple pathways.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Human societies are powerless against natural topography unless guided by federal cadastral surveys.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Environmental possibilism (developed by Paul Vidal de la Blache) argues that while the physical environment establishes certain baseline parameters and challenges, human societies possess the cultural ingenuity and technology to adapt, innovate, and pursue multiple paths of development.",
+      "distractors": {
+        "A": "Claiming climate strictly dictates political governance is classic environmental determinism.",
+        "B": "Possibilism does not claim the environment has zero influence; it acknowledges environmental limits.",
+        "D": "Cadastral land boundary surveys are property recording tools, not prerequisites for environmental adaptation."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q04",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.B",
+    "skillDescription": "Explain a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "The Dutch Polders and Landscape Engineering",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Modifying the Environment: The Netherlands'"
+    },
+    "stimulus": null,
+    "question": "Over hundreds of years, the people of the Netherlands constructed an elaborate network of seawalls, dikes, and drainage pumping stations to reclaim low-lying coastal land from the North Sea (creating polders). This monumental engineering achievement exemplifies:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism dictating that Dutch society must abandon coastal maritime settlements.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem creating misleading statistical distortions across county lines.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The inevitable natural desertification of agricultural croplands caused by regional overgrazing.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Environmental possibilism modifying natural marine geography to create productive farmland.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "The Dutch polders (reclaiming 27% of Dutch land from below sea level via dikes and pumps) represent the quintessential historical example of environmental possibilism\u2014humans deploying technology to alter physical geography and create productive agricultural territory.",
+      "distractors": {
+        "A": "Environmental determinism would have forced the Dutch to flee the sinking marshes, the opposite of polder building.",
+        "B": "MAUP describes statistical aggregation artifacts on choropleth maps, not civil engineering of seawalls.",
+        "C": "Reclaiming marine sea beds creates lush, irrigated agricultural soil, not arid dryland desertification."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q05",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.B",
+    "skillDescription": "Explain a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Agricultural Terracing in Mountain Environments",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Agricultural Modification: Terracing'"
+    },
+    "stimulus": null,
+    "question": "For centuries, indigenous farmers in the Philippine Cordilleras and the South American Andes carved stepped, horizontal flat platforms into steep, vertical mountainsides to cultivate rice and potatoes. This landscape modification illustrates:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental possibilism altering steep mountain slopes into arable, water-retaining farming terraces.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Environmental determinism forcing mountain societies to abandon agriculture and practice nomadic herding.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The complete eradication of all traditional cultural landscapes through modern corporate manufacturing.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The modifiable areal unit problem skewing regional elevation calculations on topographic map contours.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Agricultural terracing demonstrates possibilism: rather than succumbing to steep mountain terrain and soil erosion, farmers carved flat step-like terraces to trap gravity-fed irrigation water and soil, transforming rugged mountains into productive croplands.",
+      "distractors": {
+        "B": "Determinism would claim steep mountains prevent crop farming, whereas terrace farming proved agriculture is viable.",
+        "C": "Terraces are ancient, enduring cultural landscapes built and maintained across generations, not corporate factories.",
+        "D": "MAUP involves drawing statistical boundaries on maps, not physical earth-moving and hydraulic engineering."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q06",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Cultural Ecology",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Cultural Ecology'"
+    },
+    "stimulus": null,
+    "question": "Which of the following subfields within human geography specifically examines how human cultural groups interact with, adapt to, and reshape their natural physical ecosystems?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Geodesy, which calculates the exact mathematical flattening ratio of Earth's polar axis.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cultural ecology, which analyzes the relationships between human cultural groups and the environment.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Econometrics, which models central bank currency valuations across international trade markets.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartography, which projects spherical terrestrial surface coordinates onto planar sheets.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Cultural ecology (pioneered by anthropologist Julian Steward and embraced by geographers like Carl Sauer) is the scientific study of the dynamic reciprocal relationship between human cultural practices and their physical ecosystems.",
+      "distractors": {
+        "A": "Geodesy is the geophysical measurement of Earth's shape, gravity field, and orientation in space.",
+        "C": "Econometrics applies mathematical statistics to financial and economic market data.",
+        "D": "Cartography is the science and art of mapmaking, not the ecological study of human-environment relations."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q07",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Urban Expansion in Arid Environments",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Modern Possibilism: Arid Climates'"
+    },
+    "stimulus": null,
+    "question": "The explosive population growth and suburban expansion of cities like Las Vegas, Phoenix, and Dubai\u2014located in hyper-arid desert environments with summer temperatures exceeding 115\u00b0F\u2014was made possible primarily by which combination of technologies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Strict societal adherence to traditional nomadic pastoralist livestock grazing schedules.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The total replacement of municipal drinking water networks with digital broadband software.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Widespread air conditioning, long-distance aqueduct water diversion, and seawater desalination.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The complete elimination of all commercial air transportation and highway vehicle transit.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Modern desert metropolises represent 20th/21st-century possibilism: electric air conditioning, deep groundwater pumping, long-distance water pipelines (e.g., Central Arizona Project from the Colorado River), and thermal desalination plants allow millions to live comfortably in hyper-arid deserts.",
+      "distractors": {
+        "A": "Nomadic pastoralism supports small mobile populations, not modern multimillion-resident metropolitan hubs.",
+        "B": "Water is a physical biological requirement that cannot be substituted with digital data signals.",
+        "D": "Air travel and highways expanded connectivity to desert cities; they were not eliminated."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q08",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Resource Depletion: The Ogallala Aquifer",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Depleting Nonrenewable Resources: Ogallala Aquifer'"
+    },
+    "stimulus": null,
+    "question": "Why is the rapid depletion of the Ogallala (High Plains) Aquifer by commercial center-pivot crop irrigation across eight Great Plains states considered an unsustainable human-environmental practice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Federal constitutional law strictly prohibits farmers from cultivating corn on flat plains.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The aquifer is composed exclusively of boiling hydrothermal water unsuited for grain crops.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Center-pivot irrigation systems cause severe cartographic projection distortion on state maps.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Water is being extracted at rates far exceeding the slow, natural precipitation recharge rate.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "The Ogallala Aquifer contains fossil groundwater deposited during the last Ice Age. Industrial agriculture extracts millions of gallons daily for corn and cattle feed, while natural rainwater recharge takes millennia, leading to water table drops of over 100 feet and threatening the region's agricultural future.",
+      "distractors": {
+        "A": "Federal law does not ban corn cultivation; corn is heavily subsidized across the Great Plains.",
+        "B": "The Ogallala is fresh groundwater, not boiling hydrothermal water.",
+        "C": "Irrigation has zero connection to cartographic map projection mathematics."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q09",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Defining Sustainable Development",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Sustainability and Sustainable Development'"
+    },
+    "stimulus": null,
+    "question": "Which of the following definitions best encapsulates the concept of sustainable development formulated by the United Nations Brundtland Commission?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meeting the needs of the present generation without compromising the ability of future generations to meet theirs.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Extracting all finite natural mineral reserves as rapidly as possible to maximize short-term corporate capital gains.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Permanently halting all global industrial manufacturing and returning humanity to primitive hunter-gatherer living.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Restricting human settlement exclusively to high-latitude polar biomes to preserve all tropical and temperate lands.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The 1987 UN Brundtland Commission report ('Our Common Future') defined sustainable development as development that satisfies the socioeconomic needs of the present without compromising the ability of future generations to meet their own needs, balancing economic growth, social equity, and environmental conservation.",
+      "distractors": {
+        "B": "Rapid extraction for short-term profit is resource depletion, the antithesis of sustainability.",
+        "C": "Sustainability seeks a viable balance between human welfare and conservation, not the collapse of civilization.",
+        "D": "Restricting human settlement solely to polar ice caps is physically impossible and socially absurd."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q10",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Deforestation in the Amazon Basin",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Deforestation and Land Degradation'"
+    },
+    "stimulus": null,
+    "question": "Extensive clearing of tropical rainforest in the Brazilian Amazon for commercial cattle ranching and soybean monoculture leads to which unintended environmental consequence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An immediate permanent expansion of sub-Arctic permafrost across the South American continent.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Accelerated topsoil erosion, severe biodiversity loss, and disruption of regional precipitation cycles.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The total automatic elimination of all anthropogenic greenhouse gases from Earth's upper atmospheric layers.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dramatic permanent increase in the navigable depth of indigenous Amazonian fresh river waterways.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Tropical rainforest soils are nutrient-poor (oxisols), relying on the forest canopy for nutrient cycling. Deforestation strips root systems, causing rapid erosion, loss of endemic species, carbon emissions, and disruption of atmospheric 'flying rivers' (evapotranspiration) that water continental agriculture.",
+      "distractors": {
+        "A": "Permafrost is frozen sub-Arctic ground, which cannot form in the equatorial tropical Amazon.",
+        "C": "Deforestation releases massive quantities of carbon dioxide into the atmosphere, accelerating global warming.",
+        "D": "Runoff and siltation from eroded cleared land fill riverbeds with sediment, making rivers shallower, not deeper."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q11",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Soil Salinization in Arid Agriculture",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Soil Salinization and Irrigation'"
+    },
+    "stimulus": null,
+    "question": "In heavily irrigated arid agricultural valleys (such as California's Central Valley or the Aral Sea basin), prolonged flooding of fields with mineral-rich irrigation water in hot climates frequently causes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "The rapid physical formation of expansive glaciers along flat agricultural cropland furrow beds.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The permanent transformation of arid cropland into dense, tropical deciduous hardwood forests.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Soil salinization, where evaporating water leaves behind toxic surface salt crusts that poison crops.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Severe cartographic projection distortions occurring across municipal cadastral parcel boundary maps.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Soil salinization occurs when irrigation water in arid climates evaporates rapidly in intense heat, drawing underground salts to the surface. Over time, toxic crusts accumulate in the root zone, stunting or killing crops and rendering millions of acres barren.",
+      "distractors": {
+        "A": "Glaciers require freezing polar/alpine conditions, not hot, sun-baked irrigated agricultural valleys.",
+        "B": "Salinization destroys vegetation; it does not generate lush tropical hardwood forests.",
+        "D": "Soil chemistry is an empirical agronomic degradation process, not a cartographic map projection issue."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q12",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Desertification in the African Sahel",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Desertification in Arid and Semi-Arid Regions'"
+    },
+    "stimulus": null,
+    "question": "Across the semi-arid Sahel region bordering the southern Sahara Desert, the combination of prolonged climatic droughts, population growth, overgrazing by livestock, and deforestation for firewood has triggered which environmental crisis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The natural transformation of semi-arid scrubland into lush, wetland mangrove swamp ecosystems.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "An unprecedented expansion of polar ice caps extending across sub-Saharan African nations.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The complete eradication of international national borders through regional United Nations decrees.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desertification, the progressive degradation of productive semi-arid land into barren desert.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Desertification is the human-induced degradation of land in arid, semi-arid, and dry sub-humid areas. Overgrazing strips protective vegetation, while trampling hooves compact topsoil; combined with drought and firewood harvesting, the Sahara Desert expands southward into the Sahel.",
+      "distractors": {
+        "A": "Desertification dries and degrades land; it cannot produce coastal mangrove wetland ecosystems.",
+        "B": "The Sahel is in tropical Africa, thousands of miles from polar ice caps.",
+        "C": "Environmental degradation causes resource conflicts; it does not dissolve international sovereign borders."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q13",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Political Ecology",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Political Ecology'"
+    },
+    "stimulus": null,
+    "question": "Which geographic perspective analyzes how unequal political power relations, corporate economic interests, and state policies dictate who benefits from and who suffers the burdens of environmental exploitation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Political ecology, which integrates political and economic power structures with environmental issues.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Environmental determinism, which claims physical terrain dictates all human legislative voting patterns.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Geodesy, which calculates the mathematical curvature of Earth along equatorial nautical meridians.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The modifiable areal unit problem, which creates optical illusions on small-scale world projections.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Political ecology examines the intersection of political economy, power disparities, and ecological change, revealing how global capitalism, governmental extraction permits, and social inequalities drive environmental degradation and unevenly allocate resource wealth and toxic hazards.",
+      "distractors": {
+        "B": "Environmental determinism claims physical climate controls culture, ignoring political economy and corporate power.",
+        "C": "Geodesy is the geophysical measurement of Earth's geometry, not social-environmental critique.",
+        "D": "MAUP relates to statistical boundary aggregation, not political-economic power dynamics."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q14",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Wetland Draining: The Florida Everglades",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Modifying Natural Hydrology: The Everglades'"
+    },
+    "stimulus": null,
+    "question": "Throughout the twentieth century, the U.S. Army Corps of Engineers constructed hundreds of miles of canals, levees, and drainage channels across South Florida to convert the Everglades 'River of Grass' into commercial sugarcane fields and residential suburbs. What major ecological problem resulted from this massive hydrological modification?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The spontaneous development of dense boreal pine forests across South Florida coastal wetlands.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Severe freshwater depletion, disruption of native wading bird habitats, and toxic agricultural runoff.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "An uncontrollable surge of tectonic volcanic eruptions throughout the Florida limestone peninsula.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The permanent transformation of the Gulf of Mexico into an unnavigable sub-Arctic ice corridor.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Draining the Everglades halved its spatial footprint, diverted vital freshwater away from Florida Bay, collapsed wading bird populations by 90%, and channeled agricultural fertilizer runoff (phosphorus) into the remaining marsh, triggering toxic algal blooms and prompting a multi-billion-dollar federal restoration plan.",
+      "distractors": {
+        "A": "Boreal forests grow in cold sub-Arctic climates (Canada, Russia), not sub-tropical Florida.",
+        "C": "Florida is a stable carbonate limestone platform with zero active tectonic fault rifts or volcanism.",
+        "D": "The Gulf of Mexico is a warm sub-tropical basin; wetland draining cannot freeze ocean waters."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q15",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 3.B",
+    "skillDescription": "Describe spatial patterns, networks, and relationships.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "The Built Environment and Urban Heat Islands",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Urban Microclimates: The Urban Heat Island'"
+    },
+    "stimulus": null,
+    "question": "How does human construction of the built environment\u2014specifically replacing natural vegetative cover with dark asphalt paving, concrete structures, and high-rise office towers\u2014modify local urban microclimates?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It causes city centers to register significantly lower ambient temperatures than rural woodlands.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It completely halts all atmospheric air movement and eliminates cloud formation over the city.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It creates Urban Heat Islands, where low-albedo materials absorb heat and reradiate it at night.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "It converts urban downtowns into natural biological preserves for endangered apex predator animals.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The Urban Heat Island (UHI) effect occurs because urban materials (asphalt, concrete, roofing) have low albedo (reflectivity) and high thermal mass, absorbing solar heat during the day and radiating it back at night, compounded by waste heat from HVAC systems and vehicles.",
+      "distractors": {
+        "A": "Cities are consistently hotter (often 5\u201315\u00b0F warmer) than surrounding rural woodlands, not cooler.",
+        "B": "Urban heat islands often enhance urban convection, thunderstorms, and downwind rainfall, not eliminate clouds.",
+        "D": "Built urban cores displace apex predators, replacing them with synanthropic species (pigeons, rodents)."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q16",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Renewable vs. Nonrenewable Resources",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Natural Resources: Renewable and Nonrenewable'"
+    },
+    "stimulus": null,
+    "question": "In human geography and resource management, which of the following pairs correctly contrasts a renewable natural resource with a nonrenewable natural resource?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Petroleum fuel oil (renewable) versus commercial wind turbine kinetic energy (nonrenewable).",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anthracite coal deposits (renewable) versus photovoltaic solar radiation power (nonrenewable).",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enriched uranium ore (renewable) versus naturally replenished timber forestry (nonrenewable).",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Photovoltaic solar radiation (renewable) versus extracted underground crude petroleum (nonrenewable).",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Renewable resources (solar energy, wind, geothermal, sustainably harvested timber) replenish naturally over human timescales without permanent depletion. Nonrenewable resources (crude oil, coal, natural gas, uranium) exist in finite geological stocks that take millions of years to form.",
+      "distractors": {
+        "A": "Petroleum is nonrenewable (takes millions of years to form); wind is infinitely renewable.",
+        "B": "Coal is a finite fossil fuel (nonrenewable); solar energy is continuously replenished.",
+        "C": "Uranium is a finite mineral element (nonrenewable); timber can be regrown and replenished."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q17",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Vulnerability and Resilience: Natural Hazards vs. Disasters",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Natural Hazards and Human Vulnerability'"
+    },
+    "stimulus": "In 2010, an 8.8 magnitude earthquake struck offshore Chile, causing approximately 500 fatalities. Weeks earlier, a less powerful 7.0 magnitude earthquake struck Port-au-Prince, Haiti, causing over 200,000 fatalities.",
+    "question": "What geographic concept best explains the massive disparity in human casualties resulting from these two tectonic events?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Human vulnerability shaped by building code enforcement, public infrastructure quality, and wealth.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Environmental determinism proving that island nations cannot physically withstand ground tremors.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The modifiable areal unit problem skewing earthquake seismograph measurements on regional maps.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Extreme cartographic distortion inflating the physical ground shaking intensity across Chile.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "A natural hazard becomes a human disaster based on socioeconomic vulnerability. Chile\u2019s strict seismic building codes, reinforced concrete construction, emergency disaster preparedness, and economic wealth saved lives, whereas Haiti\u2019s unreinforced masonry, extreme poverty, and lack of municipal emergency services compounded catastrophe.",
+      "distractors": {
+        "B": "Japan and New Zealand are island nations with world-class earthquake resilience, refuting determinism.",
+        "C": "MAUP relates to map boundary statistical aggregation, not physical building collapse and death tolls.",
+        "D": "Seismographs measure physical ground acceleration objectively; cartographic distortion does not affect physical tremors."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q18",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.B",
+    "skillDescription": "Explain a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Massive Hydroelectric Dams: Trade-offs",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Hydroelectric Dams: The Three Gorges Project'"
+    },
+    "stimulus": null,
+    "question": "China's construction of the Three Gorges Dam on the Yangtze River generated enormous quantities of clean hydroelectric power and tamed downstream seasonal flooding, but it also required which significant human-environmental sacrifice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The permanent geographic transformation of central China into an uninhabitable hyper-arid sand desert.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The forced displacement of over 1.3 million residents and submergence of historic cultural heritage.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The legal dissolution of China's national territorial boundaries under international maritime treaties.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The total catastrophic eradication of all freshwater aquatic fish species across the Asian continent.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Mega-dam projects represent massive possibilist environmental engineering with profound trade-offs: the Three Gorges Dam produces 22,500 MW of renewable electricity, but flooded 13 cities, 140 towns, and 1,350 villages, displacing 1.3 million people and drowning ancient archaeological sites.",
+      "distractors": {
+        "A": "The Yangtze River valley remains a fertile, humid subtropical river basin, not an arid sand desert.",
+        "C": "Building a domestic dam has no connection to dissolving sovereign international borders.",
+        "D": "While the dam severely impacted native river species (like the Yangtze river dolphin), it did not wipe out all Asian aquatic life."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q19",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Possibilism in Cold Climates: Geothermal Energy in Iceland",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Possibilism in Cold Climates: Iceland'"
+    },
+    "stimulus": null,
+    "question": "Iceland is located on the edge of the Arctic Circle with short, cool summers and dark winters unsuited for conventional crop farming. Yet, Iceland produces abundant fresh tomatoes, cucumbers, and bananas year-round. How did Icelanders overcome their physical site constraints?",
+    "options": [
+      {
+        "id": "A",
+        "text": "By relying on environmental determinism to modify human genetic tolerances for cold climates.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "By permanently abandoning all island settlements to cultivate imported food crops on African plantations.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "By harnessing volcanic geothermal energy to heat and illuminate massive commercial indoor greenhouses.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "By using interrupted equal-area Goode Homolosine map projections to alter incident solar radiation angles.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Iceland exemplifies environmental possibilism: situated atop the Mid-Atlantic Ridge volcanic rift, Iceland harnesses abundant geothermal steam and hydro power to heat and artificially light expansive greenhouse complexes, producing fresh vegetables despite its sub-Arctic latitude.",
+      "distractors": {
+        "A": "Determinism claims climate limits human life; heating greenhouses with volcanic energy is possibilism.",
+        "B": "Icelanders did not abandon their island; they built a thriving modern high-income domestic economy.",
+        "D": "Map projections represent spatial drawings on paper; they cannot alter physical solar radiation."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q10",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 3.B",
+    "skillDescription": "Describe spatial patterns, networks, and relationships.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Coastal Land Reclamation and Artificial Islands",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Land Reclamation: Singapore and Dubai'"
+    },
+    "stimulus": null,
+    "question": "Metropolises such as Singapore, Tokyo, and Dubai have added square miles of new territory by dredging sand from the ocean floor to construct artificial islands and container ports. Which critical environmental trade-off accompanies this artificial land reclamation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The immediate freezing of surrounding tropical ocean waters into perpetual Arctic sea ice.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The complete eradication of international global positioning satellite orbital constellations.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The total replacement of all terrestrial container shipping with airborne drone delivery.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The destruction of sensitive coral reefs, seagrass beds, and natural coastal marine habitats.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Coastal reclamation dredges millions of tons of seafloor sand, smothering fragile coral reef ecosystems, burying seagrass meadows, clouding waters with sediment (choking marine filter feeders), and disrupting natural coastal wave dynamics.",
+      "distractors": {
+        "A": "Dredging sand has zero thermal cooling effect and cannot freeze warm tropical waters.",
+        "B": "Earth-moving dredging vessels have no interaction with GPS satellite orbits in space.",
+        "C": "Reclamation expands seaport container berths; it does not eliminate container shipping."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q21",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Environmental Justice and Toxic Siting",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Environmental Justice and Equity'"
+    },
+    "stimulus": null,
+    "question": "In 1982, residents of Warren County, North Carolina\u2014a predominantly rural, low-income African American community\u2014protested the state's decision to deposit 6,000 truckloads of toxic PCB-contaminated soil in their neighborhood landfill. This historic event launched which national geographic movement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Environmental Justice movement combating environmental racism and disproportionate toxic burdens.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "The environmental determinism movement claiming climate controls racial industrial distributions.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The modifiable areal unit problem movement dedicated to redrawing electoral voting borders.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The United States Public Land Survey movement organizing Midwest lands into square townships.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "The Warren County protests catalyzed the Environmental Justice movement, highlighting environmental racism\u2014the empirical reality that hazardous waste facilities, toxic landfills, and polluting refineries are disproportionately sited in minority and poor communities.",
+      "distractors": {
+        "B": "Determinism is an outdated 19th-century theory, not a 1980s civil rights environmental campaign.",
+        "C": "MAUP is a statistical cartographic phenomenon, not a grassroots environmental civil rights movement.",
+        "D": "The PLSS (Township and Range) was established in 1785, two centuries prior to the 1982 Warren County protests."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q22",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.A",
+    "skillDescription": "Describe a geographic concept, process, model, or theory in a specified context.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Indigenous Ecological Knowledge and Fire Management",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Indigenous Environmental Knowledge'"
+    },
+    "stimulus": null,
+    "question": "For thousands of years, Australian Aboriginal peoples and Native American nations in California practiced 'cultural burning'\u2014setting low-intensity, controlled mosaic fires across savannas and forests. Why are modern forestry agencies now adopting this traditional practice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It permanently clears all native trees to establish corporate monoculture soybean farms.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It reduces excessive dry underbrush fuel and prevents catastrophic high-intensity mega-wildfires.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It forces wild animals to permanently migrate across international maritime sovereign borders.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It eliminates the need for modern forestry departments to utilize satellite remote sensing.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Indigenous cultural burning illustrates sophisticated traditional ecological knowledge: frequent, low-heat fires clear accumulated dry forest floor underbrush, stimulate native plant germination, and create natural fuel breaks that stop catastrophic, uncontrollable wildfires.",
+      "distractors": {
+        "A": "Cultural burning preserves healthy forest ecosystems; it does not clear-cut land for corporate soy farms.",
+        "C": "Controlled mosaic burns enhance local wildlife habitats and biodiversity rather than forcing animals abroad.",
+        "D": "Forestry agencies use satellite remote sensing to plan and monitor controlled burns, not eliminate satellite tools."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q23",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "The Tragedy of the Commons",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Common Pool Resources: The Tragedy of the Commons'"
+    },
+    "stimulus": null,
+    "question": "Commercial industrial trawlers from multiple nations deploy massive drag nets in international waters beyond any country's 200-nautical-mile Exclusive Economic Zone, leading to the collapse of global bluefin tuna and cod fisheries. This depletion illustrates:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental determinism dictating that marine fish cannot biologically reproduce in ocean water.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem invalidating international maritime fishery stock models.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The Tragedy of the Commons, where unmanaged open-access resources are depleted by self-interest.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sequent occupance leaving architectural artifacts across historical metropolitan downtowns.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The Tragedy of the Commons (Garrett Hardin) describes how individuals acting independently and rationally in their own self-interest deplete a shared, unregulated common resource (like open-ocean fish stocks, clean atmosphere, or groundwater), undermining the collective good.",
+      "distractors": {
+        "A": "Fish reproduce naturally; overfishing by human commercial fleets causes the population crash, not determinism.",
+        "B": "MAUP relates to statistical boundary choices on maps, not real-world marine stock depletion.",
+        "D": "Sequent occupance is historical cultural layering of built landscapes, unrelated to open-ocean fishing."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q24",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 2.C",
+    "skillDescription": "Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Transboundary Environmental Pollution and Acid Rain",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Transboundary Pollution: Acid Rain'"
+    },
+    "stimulus": null,
+    "question": "Coal-fired power plants in the American Midwest burn sulfur-rich coal, releasing sulfur dioxide and nitrogen oxides into the atmosphere. Prevailing westerly winds transport these emissions eastward, where they fall as acid rain over Canadian boreal forests and lakes, killing fish and damaging timber. This geopolitical environmental dilemma exemplifies:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Localized environmental possibilism operating strictly within a single municipal city boundary.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem skewing atmospheric chemical composition calculations in GIS.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A formal vernacular region bounded by international United Nations customs tariffs.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transboundary pollution, where environmental degradation crosses sovereign borders downwind.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Transboundary pollution occurs when air pollutants or waterborne contaminants generated in one sovereign state travel through physical atmospheric or river systems across international borders, causing ecological damage in downwind or downstream nations that had no voice in emitting them.",
+      "distractors": {
+        "A": "Acid rain travels hundreds of miles across national frontiers; it is the opposite of localized single-city dynamics.",
+        "B": "Acid rain is physical atmospheric chemistry and deposition, not a GIS map boundary artifact.",
+        "C": "Transboundary pollution is an environmental process, not a formal vernacular cultural region."
+      }
+    }
+  },
+  {
+    "id": "1.5-Q25",
+    "topic": "Topic 1.5: Human-Environmental Interaction",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.5: Human-Environmental Interaction",
+      "section": "Synthesizing Determinism and Possibilism in the Anthropocene",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.5, under 'Human-Environmental Synthesis: The Anthropocene'"
+    },
+    "stimulus": "Low-lying Pacific island nations (such as Tuvalu and Kiribati) face total territorial submersion due to global sea-level rise, while coastal cities like Miami and Venice experience routine sunny-day tidal flooding despite massive seawalls and pumps.",
+    "question": "How does anthropogenic climate change challenge twentieth-century possibilist assumptions regarding human mastery over the physical environment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It proves that 19th-century environmental determinism was correct and that climate dictates human culture.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It proves that modern human technological innovation has completely abolished all physical ecological limits.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It demonstrates that global climate circulation patterns are wholly unaffected by industrial carbon emissions.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It shows that human modification can destabilize ecosystems, triggering limits that exceed engineering capacity.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "While 20th-century possibilism celebrated human technological mastery over nature, the Anthropocene and global climate change reveal critical feedback loops: massive human transformation of the biosphere (carbon emissions) alters global climate systems, generating severe environmental crises that overwhelm technological and engineering defenses.",
+      "distractors": {
+        "A": "Climate change does not validate racist 19th-century determinism; it shows the consequences of industrial emissions.",
+        "B": "Rising sea levels flooding cities prove that physical ecological limits have NOT been abolished.",
+        "C": "Sea level rise and global warming are driven by anthropogenic greenhouse gas emissions, not unaffected by them."
+      }
+    }
+  }
+];
+
+let userAnswers = {};
+let score = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('quizForm');
+  container.innerHTML = '';
+
+  examQuestions.forEach((q, idx) => {
+    const card = document.createElement('div');
+    card.className = 'q-card';
+    card.id = 'card-' + idx;
+
+    const meta = document.createElement('div');
+    meta.className = 'q-meta';
+    meta.innerHTML = '<span class="skill-pill">' + q.skill + '</span> ' +
+      '<span class="amsco-pill">AMSCO: ' + q.amscoReference.section + '</span>';
+    card.appendChild(meta);
+
+    if (q.stimulus) {
+      const stim = document.createElement('div');
+      stim.className = 'q-stimulus';
+      stim.innerHTML = '<strong>Stimulus:</strong> ' + q.stimulus;
+      card.appendChild(stim);
+    }
+
+    const prompt = document.createElement('div');
+    prompt.className = 'q-prompt';
+    prompt.textContent = (idx + 1) + '. ' + q.question;
+    card.appendChild(prompt);
+
+    const optGrid = document.createElement('div');
+    optGrid.className = 'options-grid';
+
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.innerHTML = '<strong>(' + opt.id + ')</strong> ' + opt.text;
+      btn.onclick = () => selectAnswer(idx, opt.id);
+      optGrid.appendChild(btn);
+    });
+    card.appendChild(optGrid);
+
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback-box';
+    feedback.id = 'fb-' + idx;
+    card.appendChild(feedback);
+
+    container.appendChild(card);
+  });
+}
+
+function selectAnswer(qIdx, selectedOptId) {
+  if (userAnswers[qIdx] !== undefined) return;
+  userAnswers[qIdx] = selectedOptId;
+
+  const q = examQuestions[qIdx];
+  const isCorrect = (selectedOptId === q.correctAnswer);
+  if (isCorrect) score++;
+
+  const card = document.getElementById('card-' + qIdx);
+  const buttons = card.querySelectorAll('.opt-btn');
+
+  buttons.forEach((btn, bIdx) => {
+    btn.disabled = true;
+    const opt = q.options[bIdx];
+    if (opt.id === q.correctAnswer) {
+      btn.classList.add('correct');
+    } else if (opt.id === selectedOptId && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  const fb = document.getElementById('fb-' + qIdx);
+  fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+
+  let distractorNote = '';
+  if (!isCorrect && q.explanation.distractors && q.explanation.distractors[selectedOptId]) {
+    distractorNote = '<p style="margin-top:6px; color:#c5221f;"><strong>Why (' + selectedOptId + ') is incorrect:</strong> ' + q.explanation.distractors[selectedOptId] + '</p>';
+  }
+
+  fb.innerHTML = '<strong>' + (isCorrect ? '✓ Correct!' : '✗ Incorrect. Correct Answer is (' + q.correctAnswer + ')') + '</strong>' +
+    '<p style="margin:4px 0;">' + q.explanation.summary + '</p>' +
+    distractorNote +
+    '<p style="margin-top:6px; font-size:12px; color:#64748b;"><strong>Where to find this in textbook:</strong> ' + q.amscoReference.whereToLook + '</p>';
+
+  updateTracker();
+}
+
+function updateTracker() {
+  const answeredCount = Object.keys(userAnswers).length;
+  const pct = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+  document.getElementById('scoreTracker').textContent = 'Score: ' + score + ' / ' + answeredCount + ' answered (' + pct + '%)';
+}
+
+renderQuiz();
+</script>
+</body>
+</html>

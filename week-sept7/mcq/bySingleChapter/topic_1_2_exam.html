@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography Topic 1.2 Mastery Exam (25 Questions)</title>
+<style>
+  :root {
+    --cb-blue: #0077c8;
+    --cb-dark: #1b263b;
+    --cb-gray: #f4f6f9;
+    --cb-border: #d0d7de;
+    --correct-bg: #e6f4ea;
+    --correct-border: #137333;
+    --wrong-bg: #fce8e6;
+    --wrong-border: #c5221f;
+  }
+  * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--cb-gray); color: #202124; padding: 24px 16px; }
+  .exam-container { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid var(--cb-border); padding: 32px; }
+  .header-bar { border-bottom: 2px solid var(--cb-blue); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; }
+  .header-bar h1 { margin: 0; font-size: 22px; color: var(--cb-dark); }
+  .header-bar .subtitle { font-size: 13px; color: #57606a; margin-top: 4px; }
+  .score-badge { font-weight: bold; color: var(--cb-dark); font-size: 15px; background: #e8f0fe; padding: 8px 14px; border-radius: 6px; border: 1px solid #c2e7ff; }
+  .q-card { border: 1px solid var(--cb-border); border-radius: 8px; padding: 20px; margin-bottom: 24px; background: #fafbfc; }
+  .q-meta { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+  .skill-pill { background: #1b263b; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .amsco-pill { background: #eef2f6; color: #334155; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid #cbd5e1; }
+  .q-stimulus { background: #f1f5f9; border-left: 4px solid var(--cb-blue); padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1e293b; border-radius: 0 4px 4px 0; }
+  .q-prompt { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 16px; color: #1f2328; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .opt-btn { background: #fff; border: 1.5px solid var(--cb-border); border-radius: 6px; padding: 12px 14px; text-align: left; font-size: 14.5px; cursor: pointer; transition: all 0.15s ease; color: #24292f; line-height: 1.45; }
+  .opt-btn:hover:not(:disabled) { border-color: var(--cb-blue); background: #f8fbff; }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.correct { background: var(--correct-bg) !important; border-color: var(--correct-border) !important; color: #0d5423; font-weight: 600; }
+  .opt-btn.wrong { background: var(--wrong-bg) !important; border-color: var(--wrong-border) !important; color: #9c1a17; text-decoration: line-through; }
+  .feedback-box { display: none; margin-top: 14px; padding: 14px; border-radius: 6px; font-size: 13.5px; line-height: 1.5; }
+  .feedback-box.show { display: block; }
+  .feedback-box.correct { background: #edf7ed; border-left: 4px solid var(--correct-border); color: #1e4620; }
+  .feedback-box.wrong { background: #fdf2f2; border-left: 4px solid var(--wrong-border); color: #5c1818; }
+  .feedback-box strong { display: block; margin-bottom: 4px; }
+  .nav-back { display: inline-block; margin-bottom: 16px; color: var(--cb-blue); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .nav-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="exam-container">
+  <a href="../index.html" class="nav-back">&larr; Return to Master Interactive Test Hub</a>
+  <div class="header-bar">
+    <div>
+      <h1>AP Human Geography: Topic 1.2 Mastery Exam</h1>
+      <div class="subtitle">Geographic Data &bull; 25 Interactive College Board-Standard Questions &bull; David L. Palmer AMSCO 2nd Ed.</div>
+    </div>
+    <div class="score-badge" id="scoreTracker">Score: 0 / 25 answered (0%)</div>
+  </div>
+
+  <div id="quizForm"></div>
+</div>
+
+<script>
+const examQuestions = [
+  {
+    "id": "1.2-Q01",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Quantitative vs. Qualitative Geographic Data",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Types of Geographic Data: Quantitative and Qualitative'"
+    },
+    "stimulus": null,
+    "question": "Which of the following data-gathering approaches produces quantitative geospatial data rather than qualitative geographic information?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compiling census enumeration records of household median income levels across metropolitan tracts.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Recording ethnographic oral histories from long-term senior residents living in historic urban areas.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transcribing descriptive field journal entries written by nineteenth-century scientific surveyors.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conducting open-ended unstructured interviews regarding community feelings about neighborhood crime.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Quantitative geographic data consists of numerical measurements, counts, and statistical values (such as census income figures, population counts, or temperature readings) that can be analyzed mathematically.",
+      "distractors": {
+        "B": "Oral histories provide qualitative narrative accounts, personal memories, and cultural descriptions, not numerical geospatial metrics.",
+        "C": "Surveyor journals represent qualitative descriptive text documenting visual impressions rather than quantifiable measurements.",
+        "D": "Open-ended sentiment interviews capture qualitative human perceptions, attitudes, and emotions rather than numerical values."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q02",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "The Decennial Census and Political Reapportionment",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'The United States Census and Reapportionment'"
+    },
+    "stimulus": null,
+    "question": "The United States Constitution mandates a national census every ten years primarily to fulfill which of the following governmental obligations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Establishing uniform zoning designations for private commercial land developments across states.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Determining proportional seat apportionment among the fifty states in the House of Representatives.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Calculating annual municipal real estate property tax assessments for public school facilities.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Regulating interstate commerce tariffs and commercial freight toll rates across transport routes.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Article I, Section 2 of the U.S. Constitution requires a decennial census to reapportion the 435 voting seats in the House of Representatives among the 50 states based on relative population shifts.",
+      "distractors": {
+        "A": "Zoning regulations are enacted and administered by local municipal and county governments, not by the federal decennial census.",
+        "C": "Property tax assessments are calculated by local municipal and county tax assessors based on local real estate values.",
+        "D": "Interstate commerce and transportation tariffs are regulated by federal regulatory agencies, not decennial population surveys."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q03",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Fieldwork and Observational Data Gathering",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Fieldwork: How Geographers Gather Data'"
+    },
+    "stimulus": null,
+    "question": "A team of urban geographers conducts a pedestrian intercept survey while recording physical building facades and walking times between transit stops. Which geographic methodology is being demonstrated?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Passive synthetic aperture radar imaging captured by low-Earth orbit satellites.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Automated demographic projection modeling using historical regional mortality tables.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Direct on-the-ground geographic fieldwork combined with systematic field observation.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Algorithmic calibration of theoretical spatial interaction gravity flow simulations.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Fieldwork is the foundational geographic practice of going into the field to gather empirical data through direct observation, interviews, physical mapping, photography, and sensory recording.",
+      "distractors": {
+        "A": "Satellite radar imaging is a technological remote sensing technique operating from space, not on-the-ground human observation.",
+        "B": "Demographic projection modeling relies on secondary actuarial statistics, not active primary field data collection.",
+        "D": "Gravity model simulations are econometric theoretical calculations, not direct observational landscape analysis."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q04",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Spatial Data in Public Policy and Resource Allocation",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Using Geographic Data in Public Policy'"
+    },
+    "stimulus": null,
+    "question": "A regional hospital system analyzes geocoded patient records alongside census tract poverty indices to open new community clinics. This scenario illustrates which application of spatial data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Demarcating international maritime boundary exclusive economic fishing lanes.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enforcing sovereign trade import quotas on foreign manufactured pharmaceuticals.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Setting benchmark commercial interest rates for metropolitan municipal bond issues.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Allocating essential public health infrastructure to target underserved communities.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Governments, NGOs, and healthcare organizations use spatial data (geocoded addresses, disease prevalence, socioeconomic indices) to identify geographic gaps in services and allocate infrastructure to vulnerable populations.",
+      "distractors": {
+        "A": "Maritime fishing lanes are governed by international treaties such as UNCLOS, not local public health clinics.",
+        "B": "Pharmaceutical import quotas are federal international trade regulations, not municipal spatial healthcare delivery plans.",
+        "C": "Municipal bond interest rates are financial instruments determined by bond markets and central bank monetary policies."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q05",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Limitations and Biases of Survey Data",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Limitations and Biases in Geographic Data'"
+    },
+    "stimulus": null,
+    "question": "Which of the following factors presents the most significant limitation when relying on voluntary internet-based geographic survey responses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Selection bias resulting from unequal access to digital technology, computers, and broadband connectivity.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prohibitive computational storage expenses required to archive digitized text entries on cloud servers.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Federal statutory bans prohibiting local agencies from publishing aggregated public survey maps online.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Physical limitations of relational databases preventing the storage of coordinate latitude-longitude pairs.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Voluntary online surveys suffer from selection bias due to the digital divide: lower-income, rural, and elderly populations with limited broadband or smartphone access are underrepresented, while tech-connected individuals are overrepresented.",
+      "distractors": {
+        "B": "Digital cloud storage costs are negligible today and do not create fundamental statistical sampling distortion.",
+        "C": "No federal statutes prohibit publishing aggregated public survey maps; public planning departments do so constantly.",
+        "D": "Relational spatial databases routinely store billions of coordinate pairs without technical difficulty."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q06",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Landscape Analysis and Photographic Interpretation",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Visual Evidence and Photographic Interpretation'"
+    },
+    "stimulus": null,
+    "question": "A geographer reviews a photograph taken from a street corner showing signs in Spanish, storefront religious altars, and public soccer murals. This visual source provides which form of geographic evidence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuous isoline cartographic measurements of urban microclimates.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Qualitative visual observations reflecting the local cultural landscape.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Parametric quantitative counts derived from decennial census surveys.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mathematical distance scale ratios calibrated for cadastral boundary maps.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Photographic evidence of signage, architecture, religious symbols, and street art constitutes qualitative observational data that reveals the cultural landscape and ethnic imprint of resident populations.",
+      "distractors": {
+        "A": "Isoline lines measure numerical gradients across continuous fields (temperature, atmospheric pressure), not visual cultural artifacts.",
+        "C": "Decennial census surveys produce quantitative statistical tables, not photographic streetscape observations.",
+        "D": "Mathematical distance scale ratios establish cartographic ground proportions, not cultural landscape evidence."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q07",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Definition and Methods of Landscape Analysis",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Landscape Analysis: Reading the Cultural Landscape'"
+    },
+    "stimulus": null,
+    "question": "Which of the following definitions accurately describes the process of landscape analysis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calculating astronomical orbital perturbations to recalibrate global positioning datums.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Automating satellite telecommunication relays to calculate maritime nautical transit miles.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observing and interpreting human impacts on the physical environment and built environment.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Establishing international currency exchange valuations to regulate foreign trade balances.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Landscape analysis involves the careful observation, documentation, and interpretation of how human culture, economic activity, and governance shape and modify the physical and built environment.",
+      "distractors": {
+        "A": "Recalibrating satellite orbital datums is geodesy and orbital mechanics, not geographic landscape analysis.",
+        "B": "Automating telecommunication links is navigational engineering, not cultural landscape interpretation.",
+        "D": "Foreign exchange valuation is financial macroeconomics, not spatial landscape analysis."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q08",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.A",
+    "skillDescription": "Identify the different types of information presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Commercial vs. Public Geospatial Data",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Commercial Data vs. Government Data'"
+    },
+    "stimulus": null,
+    "question": "A private delivery corporation gathers real-time location pings from its smartphone application to optimize parcel routes. This data source is best classified as which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An official decennial population enumeration conducted by a national census bureau.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A peer-reviewed ethnographic oral history transcribed by an academic research team.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "An international boundary demarcation treaty registered with sovereign legal courts.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proprietary commercial tracking data collected through mobile telecommunication devices.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Commercial data refers to spatial information gathered by private businesses (such as telematics, GPS vehicle pings, credit card purchases, and smartphone location telemetry) for operational efficiency and commercial monetization.",
+      "distractors": {
+        "A": "Decennial census surveys are periodic public counts administered by national governments, not private app telemetry.",
+        "B": "Ethnographic oral histories are qualitative human interview narratives, not digital automated tracking pings.",
+        "C": "International boundary treaties are sovereign legal agreements, not private corporate logistics tracking records."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q09",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Mixed Methods in Human Geography",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Combining Quantitative and Qualitative Geographic Data'"
+    },
+    "stimulus": null,
+    "question": "Why do contemporary human geographers frequently combine quantitative statistical datasets with qualitative resident interviews when studying gentrification?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quantitative data reveals broad spatial trends while qualitative interviews provide human lived context.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quantitative statistical data is legally inadmissible in research unless corroborated by recorded oral audio.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Modern geographic information software can only process spoken verbal narratives rather than numeric files.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cartographic projection distortion completely destroys mathematical accuracy on metropolitan scale maps.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Mixed-methods research blends quantitative data (showing macroscopic patterns like median income shifts and rent increases) with qualitative data (capturing personal narratives, cultural displacement, and community identity) for complete analysis.",
+      "distractors": {
+        "B": "Quantitative statistical data is fully valid and rigorously analyzed on its own; mixed methods provide depth, not legal admissibility.",
+        "C": "GIS software was engineered primarily to manage quantitative numerical and spatial coordinate tables, not solely audio recordings.",
+        "D": "Cartographic projection distortion is negligible at local metropolitan scales and does not destroy statistical accuracy."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q10",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Census Undercounting and Hard-to-Count Populations",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Challenges in Census Data Collection'"
+    },
+    "stimulus": null,
+    "question": "A major challenge confronting national census bureaus in accurately tallying metropolitan populations is the systematic undercounting of which demographic group?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wealthy suburban homeowners occupying detached single-family residential subdivisions.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Marginalized residents experiencing homelessness and undocumented agricultural day laborers.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Senior civil servants holding permanent appointments in state administrative office towers.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tenured university professors teaching geography seminars at state higher education centers.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Census enumerations historically undercount marginalized and vulnerable populations\u2014including people experiencing homelessness, undocumented migrants, low-income renters, and rural remote indigenous communities\u2014due to housing instability and language barriers.",
+      "distractors": {
+        "A": "Suburban homeowners have permanent residential street addresses and established mail delivery, yielding very high response rates.",
+        "C": "Civil servants with permanent government employment and stable housing are consistently enumerated with high accuracy.",
+        "D": "University faculty with stable residences and professional institutional ties are easily counted by census surveys."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q11",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Cadastral Survey Systems: Township and Range",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Cadastral Surveys and Land Division Systems'"
+    },
+    "stimulus": "A satellite image of agricultural land in Iowa reveals an orderly grid of square-mile parcels, straight roads intersecting at right angles, and farmsteads evenly spaced across the landscape.",
+    "question": "Which historic land survey system generated this structured cadastral boundary data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The British colonial metes and bounds system based on natural landscape landmarks and stream beds.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The French riparian long-lot system dividing fertile riverfront access into narrow ribbon parcels.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "The United States Public Land Survey System organizing land into square township and range grids.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "The Spanish communal land grant system establishing unpartitioned collective ejido grazing pastures.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "The Public Land Survey System (Township and Range), established by the Land Ordinance of 1785, surveyed federal lands west of the Appalachians into a rigid geometric grid of 6-mile-square townships divided into 36 one-square-mile sections (640 acres).",
+      "distractors": {
+        "A": "Metes and bounds created irregular boundaries following natural landmarks (trees, rocks, rivers) in the original 13 Colonies.",
+        "B": "The French long-lot system produced narrow strips of land fronting rivers, characteristic of Louisiana and Quebec.",
+        "D": "Spanish land grants created sprawling irregular communal grazing pastures throughout the American Southwest."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q12",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.A",
+    "skillDescription": "Identify the different types of information presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Historical Qualitative Data Sources",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Travel Narratives and Historical Records'"
+    },
+    "stimulus": null,
+    "question": "A historical geographer reconstructs nineteenth-century indigenous land-use patterns in the American West by analyzing personal travel diaries kept by frontier survey naturalists. What type of geographic source material is being utilized?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decennial federal demographic statistical compilations stored in census tables.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "High-resolution digital multispectral raster imagery captured by orbiting probes.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Automated global positioning telemetry waypoints transmitted by digital navigators.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Primary qualitative textual narratives documenting first-person field observations.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Travel diaries, personal letters, explorer journals, and historical field notes represent primary qualitative textual sources, offering subjective eyewitness perspectives on physical environments and cultural practices.",
+      "distractors": {
+        "A": "Census compilations are aggregated secondary quantitative tables, not firsthand narrative diaries.",
+        "B": "Satellite rasters are modern digital remote sensing products that did not exist in the nineteenth century.",
+        "C": "GPS telemetry is modern electronic coordinate data, not historical handwritten naturalist records."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q13",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Qualitative Insights in Public Transit Planning",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Qualitative Data: Interviews and Focus Groups'"
+    },
+    "stimulus": null,
+    "question": "A municipal transit authority hosts focus groups with neighborhood commuter groups to understand why bus ridership declined after dark. What specific geographic insight does this qualitative methodology provide that ridership turnstile counts cannot?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Commuter perceptions of personal safety and emotional motivations underlying transit avoidance.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Exact mechanical engine performance metrics and exhaust emission levels of transit bus fleets.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Precise mathematical coordinate coordinates of bus stop locations measured with geodetic receivers.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Physical structural weight capacity of roadway asphalt along metropolitan arterial transit routes.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "While turnstile taps provide quantitative counts of ridership volume, qualitative focus groups reveal the human experiential reasons behind spatial behavior, such as fear of poorly lit stops, lack of security, or perceived danger.",
+      "distractors": {
+        "B": "Mechanical engine metrics are collected via onboard vehicle telemetry sensors, not passenger focus groups.",
+        "C": "Bus stop coordinates are determined via GPS surveying equipment, not passenger dialogues.",
+        "D": "Roadway pavement tolerances are calculated through civil engineering stress tests, not community interviews."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q14",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.A",
+    "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Commercial GIS and Market Threshold Analysis",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Business Geographics: Market Threshold and Site Selection'"
+    },
+    "stimulus": null,
+    "question": "A national coffeehouse chain analyzes drive-time traffic counts, morning pedestrian foot traffic, and daytime office worker density to choose a new franchise location. This practice demonstrates the use of geographic data for which purpose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redrawing representative voting district lines following decennial legislative reapportionment.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evaluating commercial market threshold capacity and optimizing private retail facility location.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Enforcing international marine conservation fishing quotas across sovereign maritime ocean zones.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Establishing bilateral diplomatic consulates and international embassy missions across foreign lands.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Commercial spatial analysis uses demographic data, customer counts, and traffic flows to determine market threshold (minimum customer base required to support a business) and select optimal retail store sites.",
+      "distractors": {
+        "A": "Legislative redistricting is a political governmental process, not commercial market site selection.",
+        "C": "Marine fishing enforcement is governed by sovereign maritime treaties, not urban pedestrian traffic data.",
+        "D": "Diplomatic consulates are sovereign governmental installations, not commercial franchise stores."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q15",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Geospatial Ethics: Smartphone Tracking and Privacy",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Ethical Concerns: Geospatial Data and Privacy'"
+    },
+    "stimulus": null,
+    "question": "When commercial data brokers aggregate continuous smartphone GPS location traces without explicit anonymization, which ethical concern is most frequently raised by geographers and civil liberties advocates?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rapid physical depletion of server storage capacity across regional cloud computing facilities.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Catastrophic distortion of terrestrial scale calculations on high-latitude cylindrical projections.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "High vulnerability to deanonymizing individuals and tracking visits to sensitive health or private sites.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Atmospheric interference causing persistent corruption of satellite radio broadcast frequencies.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Continuous granular GPS location telemetry can easily deanonymize individuals by identifying their unique home and workplace locations, exposing visits to sensitive medical clinics, places of worship, or political rallies.",
+      "distractors": {
+        "A": "Server storage capacity is an infrastructure cost challenge, not a violation of personal civil liberties.",
+        "B": "Map projection distortion is a geometric mathematical trait, wholly unrelated to digital location privacy rights.",
+        "D": "Radio frequency interference is an atmospheric physical condition, not an ethical privacy concern."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q16",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 3.B",
+    "skillDescription": "Describe spatial patterns, networks, and relationships.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Environmental Justice and Spatial Overlay Analysis",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Geographic Data and Environmental Justice'"
+    },
+    "stimulus": "A GIS research lab overlays 40 years of municipal land-use permits with racial demographic distributions, finding that 85% of chemical refineries and commercial incinerators are located inside minority neighborhoods.",
+    "question": "If the overlay reveals that hazardous waste sites are overwhelmingly concentrated in low-income, minority census tracts, the research provides spatial empirical evidence of which concept?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Environmental possibilism empowering human societies to overcome extreme natural topographic barriers.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem creating misleading statistical artifacts across electoral borders.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Natural ecological succession driving the inevitable expansion of formal climatic agricultural biomes.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Environmental racism and systematic spatial injustice embedded in municipal zoning and land-use choices.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Environmental racism describes the disproportionate placement of toxic waste facilities, heavy industrial plants, and polluting infrastructure in communities of color and economically disadvantaged neighborhoods.",
+      "distractors": {
+        "A": "Possibilism explains how humans adapt to physical environments, not racial discrimination in industrial zoning.",
+        "B": "MAUP relates to statistical boundary aggregations, whereas toxic placement reflects tangible structural policy choices.",
+        "C": "Ecological succession is the biological transition of species over time, unrelated to municipal toxic dump siting."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q17",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Census Temporal Lag and American Community Survey",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Census Timing and the American Community Survey'"
+    },
+    "stimulus": null,
+    "question": "A fast-growing boomtown suburb doubled its population between 2021 and 2026. Why would a municipal urban planner hesitate to rely solely on the 2020 Decennial Census to allocate emergency services in 2026?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Significant temporal lag renders ten-year census data obsolete for rapidly expanding communities.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Federal statutory mandates prohibit municipal agencies from consulting census figures after five years.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Decennial census enumeration protocols only record older retired citizens living in nursing homes.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The 2020 Decennial Census was published exclusively as an interrupted equal-area Goode projection.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Decennial census data suffers from temporal lag because it is collected only once every ten years. Rapidly growing boomtowns outpace these static figures, requiring planners to supplement decennial data with annual American Community Survey (ACS) estimates.",
+      "distractors": {
+        "B": "No federal law bans using census data after five years; the limitation is practical obsolescence in fast-growing areas.",
+        "C": "The census is constitutionally mandated to count all permanent residents of all ages, not just elderly citizens.",
+        "D": "Census data is published primarily as digital tabular statistical data, not solely on Goode's projections."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q18",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.A",
+    "skillDescription": "Identify the different types of information presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Media Reports as Secondary Qualitative Sources",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Media Reports and Textual Data Sources'"
+    },
+    "stimulus": null,
+    "question": "A political geographer tracks the spatial diffusion of anti-dam protests across a river basin by analyzing local newspaper reports and broadcast media stories. In geographic data classification, these sources represent which format?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primary quantitative measurements gathered via airborne LiDAR laser altimetry instruments.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Secondary qualitative textual narratives and journalistic media accounts of social events.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Automated telemetry waypoints transmitted by continuous satellite navigation receivers.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sovereign boundary baseline surveys demarcating international continental shelf limits.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Newspaper reports, radio transcripts, and television news stories represent secondary qualitative text data, offering descriptive, narrative commentary and third-party perspectives on spatial events.",
+      "distractors": {
+        "A": "LiDAR produces high-density quantitative elevation point-clouds, not narrative descriptions of civil protests.",
+        "C": "Satellite telemetry records automated coordinate positions, not journalistic interpretations of social unrest.",
+        "D": "Continental shelf baseline surveys are sovereign legal cartographic boundaries under maritime law."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q19",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "School Redistricting and Demographic Forecasting",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Public Planning: School Boundaries and Infrastructure'"
+    },
+    "stimulus": null,
+    "question": "A public school board evaluates neighborhood birth rates, housing construction permits, and census tract age-cohort data to redraw attendance boundaries. What is the primary objective of using this geographic data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eradicating cartographic projection distortion across local county cadastral property registers.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Negotiating preferential bilateral trade agreements and tariff schedules with adjacent counties.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Balancing classroom student capacity and preventing severe instructional overcrowding in schools.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transitioning modern suburban secondary schools into specialized primary-sector dairy farming hubs.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "School districts use demographic geographic data (age structures, fertility rates, new housing developments) to forecast neighborhood student enrollment, optimize bus routing, and rebalance attendance zones before schools become overcrowded.",
+      "distractors": {
+        "A": "Cartographic projection distortion is a map math phenomenon, not an administrative school capacity problem.",
+        "B": "Counties do not negotiate international-style trade agreements or tariff rates with neighboring jurisdictions.",
+        "D": "Suburban public schools do not convert their campuses into commercial primary-sector dairy operations."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q20",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Survey Non-Response Bias in Diverse Communities",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Non-Response Bias and Language Barriers'"
+    },
+    "stimulus": null,
+    "question": "When a municipal planning department mails out city-planning questionnaires printed only in English across a neighborhood where 65% of residents speak Vietnamese or Spanish, what survey bias is introduced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extreme mathematical distortion of cartographic distance ratios on municipal planning base maps.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The modifiable areal unit problem artificially altering aggregated statistical county boundaries.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Total operational failure of regional satellite navigation systems transmitting coordinate fixes.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Severe non-response bias resulting in the systematic underrepresentation of non-English speakers.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Distributing monolingual questionnaires in multilingual communities creates severe non-response bias, systematically excluding non-English speakers from public planning and biasing results toward affluent, native English-speaking residents.",
+      "distractors": {
+        "A": "Language barriers on community paper surveys have zero relationship to cartographic scale ratios.",
+        "B": "MAUP involves drawing aggregate statistical boundaries on maps, not linguistic comprehension of survey forms.",
+        "C": "Satellite navigation operates via orbiting radio signals, entirely unaffected by human survey language barriers."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q21",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 3.A",
+    "skillDescription": "Identify the different types of data presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Aerial and Drone Photographic Interpretation",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Photographic Interpretation and Remote Sensing'"
+    },
+    "stimulus": null,
+    "question": "Following a major tornado, emergency management teams deploy low-altitude unmanned aerial drones to capture high-resolution imagery of damaged neighborhoods. What is the primary analytical advantage of this geographic data source?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It provides rapid, fine-scale visual documentation of physical structural damage to prioritize rescue efforts.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "It instantly translates foreign language interviews into English to accelerate international immigration courts.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It automatically recalibrates decennial federal census population counts for the entire metropolitan area.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It replaces the need for on-the-ground human rescue personnel and heavy emergency response machinery.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "summary": "Low-altitude drone aerial photography captures immediate, centimeter-resolution visual evidence of collapsed buildings, blocked roadways, and downed power grids, allowing disaster responders to prioritize urgent search-and-rescue operations.",
+      "distractors": {
+        "B": "Drone cameras record optical and thermal imaging; they do not transcribe or translate spoken human interviews.",
+        "C": "Decennial census figures are official constitutional population counts that cannot be altered by drone flights.",
+        "D": "Drone imagery informs and guides first responders; it does not replace physical human search-and-rescue teams."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q22",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.B",
+    "skillDescription": "Describe spatial patterns, networks, and relationships.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Participatory Mapping and Community Advocacy",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Community Mapping and Local Advocacy'"
+    },
+    "stimulus": null,
+    "question": "Community residents in a dense urban neighborhood walk their streets to map vacant lots, broken streetlights, and lack of park access on a shared digital map to present to city council. This practice is known as which approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Centralized military intelligence surveillance using high-altitude classified reconnaissance radars.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Participatory community mapping and citizen GIS designed for grassroots urban planning advocacy.",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mandatory decennial constitutional population enumeration administered by federal census agents.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uncontrolled geometric cartographic projection distortion occurring along high-latitude parallels.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "summary": "Participatory mapping (or community GIS) empowers local grassroots citizens to combine lived spatial knowledge with digital mapping tools to document neglected neighborhood conditions and advocate for equitable municipal investments.",
+      "distractors": {
+        "A": "Military reconnaissance radar surveillance is classified national defense activity, not local grassroots advocacy.",
+        "C": "Decennial census enumeration is an official federal government count, not voluntary local advocacy mapping.",
+        "D": "Cartographic projection distortion relates to map curvature mathematics, not community civic engagement."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q23",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.F",
+    "skillDescription": "Explain possible limitations of the visual source or data provided.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Social Media Geolocation Data Biases",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Social Media Data and Demographic Skew'"
+    },
+    "stimulus": null,
+    "question": "A researcher analyzes millions of geotagged social media posts to identify popular public gathering spaces in a city. Why must the researcher exercise caution when interpreting this dataset as representative of the entire population?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Social media data is legally banned under international maritime treaties governing commercial transit lanes.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Global positioning satellites cannot calculate latitude or longitude coordinates on conformal map projections.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Social media users heavily skew toward younger, wealthier demographics, underrepresenting children and elderly.",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Commercial digital operating platforms prevent geocoded coordinate markers from displaying on computer screens.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "summary": "Geotagged social media activity creates significant demographic bias: younger, affluent, and technologically connected smartphone users are heavily overrepresented, while children, low-income residents, and the elderly are largely absent.",
+      "distractors": {
+        "A": "Maritime treaties govern international ocean navigation, not commercial social media platform data.",
+        "B": "GPS satellites calculate absolute coordinates using trilateration, regardless of display projections.",
+        "D": "Geotagged social media points are easily rendered and visualized on digital maps and GIS platforms."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q24",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 4.A",
+    "skillDescription": "Identify the different types of information presented in visual sources.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Cadastral and Property Assessment Data",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Government Records: Cadastral and Tax Maps'"
+    },
+    "stimulus": null,
+    "question": "A county tax assessor maintains a digital parcel database recording property boundary deeds, assessed building valuations, and ownership transfers for every plot of land in the jurisdiction. In human geography, this dataset is known as which record?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An ethnographic qualitative folklore archive documenting cultural oral music traditions.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A continuous global multispectral satellite raster measuring photosynthetic chlorophyll.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A polar azimuthal navigation chart projecting great-circle polar aviation flight corridors.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A municipal cadastral property database recording legal boundaries and taxable land parcels.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Cadastral data refers to public records of the extent, legal boundaries, value, and ownership of land parcels for legal title demarcation, real estate transfers, and local property taxation.",
+      "distractors": {
+        "A": "Ethnographic archives preserve cultural folk songs, oral stories, and heritage traditions, not property tax titles.",
+        "B": "Multispectral satellite rasters measure vegetation index (NDVI), not legal land parcel deeds.",
+        "C": "Polar azimuthal charts guide long-range polar flight routes, not municipal property tax boundaries."
+      }
+    }
+  },
+  {
+    "id": "1.2-Q25",
+    "topic": "Topic 1.2: Geographic Data",
+    "skill": "Skill 1.B",
+    "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+    "amscoReference": {
+      "textbook": "Advanced Placement Human Geography, 2nd Edition",
+      "author": "David L. Palmer",
+      "unit": "Unit 1: Thinking Geographically",
+      "chapter": "Topic 1.2: Geographic Data",
+      "section": "Synthesizing Data to Study Historical Redlining",
+      "whereToLook": "AMSCO 2nd Ed, Topic 1.2, under 'Historical Applications: Evaluating Spatial Inequity'"
+    },
+    "stimulus": "A geographer investigates historical redlining by analyzing 1930s Home Owners' Loan Corporation (HOLC) residential security maps, modern census tract mortgage denial rates, and oral histories from displaced African American families.",
+    "question": "How does integrating historical cartography, modern quantitative statistics, and qualitative oral testimony produce a more comprehensive geographic analysis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It proves that environmental determinism dictated housing values and industrial growth across urban cities.",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It proves that mathematical coordinate geometry can be eliminated entirely from contemporary urban plans.",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It demonstrates that modern urban residential neighborhoods operate as isolated formal agricultural areas.",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It connects historical policy boundaries to contemporary racial wealth gaps while documenting human impacts.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "summary": "Synthesizing historical spatial boundaries (HOLC maps), modern quantitative metrics (mortgage denial rates), and qualitative testimony (oral histories) explains the structural legacy of discriminatory policies and their tangible human impacts.",
+      "distractors": {
+        "A": "Redlining was caused by institutional discrimination and federal policy, not physical environmental determinism.",
+        "B": "Mathematical coordinate systems remain essential for GIS, cadastral mapping, and urban planning.",
+        "C": "Inner-city neighborhoods are complex urban residential zones, not isolated agricultural regions."
+      }
+    }
+  }
+];
+
+let userAnswers = {};
+let score = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('quizForm');
+  container.innerHTML = '';
+
+  examQuestions.forEach((q, idx) => {
+    const card = document.createElement('div');
+    card.className = 'q-card';
+    card.id = 'card-' + idx;
+
+    const meta = document.createElement('div');
+    meta.className = 'q-meta';
+    meta.innerHTML = '<span class="skill-pill">' + q.skill + '</span> ' +
+      '<span class="amsco-pill">AMSCO: ' + q.amscoReference.section + '</span>';
+    card.appendChild(meta);
+
+    if (q.stimulus) {
+      const stim = document.createElement('div');
+      stim.className = 'q-stimulus';
+      stim.innerHTML = '<strong>Stimulus:</strong> ' + q.stimulus;
+      card.appendChild(stim);
+    }
+
+    const prompt = document.createElement('div');
+    prompt.className = 'q-prompt';
+    prompt.textContent = (idx + 1) + '. ' + q.question;
+    card.appendChild(prompt);
+
+    const optGrid = document.createElement('div');
+    optGrid.className = 'options-grid';
+
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.innerHTML = '<strong>(' + opt.id + ')</strong> ' + opt.text;
+      btn.onclick = () => selectAnswer(idx, opt.id);
+      optGrid.appendChild(btn);
+    });
+    card.appendChild(optGrid);
+
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback-box';
+    feedback.id = 'fb-' + idx;
+    card.appendChild(feedback);
+
+    container.appendChild(card);
+  });
+}
+
+function selectAnswer(qIdx, selectedOptId) {
+  if (userAnswers[qIdx] !== undefined) return;
+  userAnswers[qIdx] = selectedOptId;
+
+  const q = examQuestions[qIdx];
+  const isCorrect = (selectedOptId === q.correctAnswer);
+  if (isCorrect) score++;
+
+  const card = document.getElementById('card-' + qIdx);
+  const buttons = card.querySelectorAll('.opt-btn');
+
+  buttons.forEach((btn, bIdx) => {
+    btn.disabled = true;
+    const opt = q.options[bIdx];
+    if (opt.id === q.correctAnswer) {
+      btn.classList.add('correct');
+    } else if (opt.id === selectedOptId && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  const fb = document.getElementById('fb-' + qIdx);
+  fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+
+  let distractorNote = '';
+  if (!isCorrect && q.explanation.distractors && q.explanation.distractors[selectedOptId]) {
+    distractorNote = '<p style="margin-top:6px; color:#c5221f;"><strong>Why (' + selectedOptId + ') is incorrect:</strong> ' + q.explanation.distractors[selectedOptId] + '</p>';
+  }
+
+  fb.innerHTML = '<strong>' + (isCorrect ? '✓ Correct!' : '✗ Incorrect. Correct Answer is (' + q.correctAnswer + ')') + '</strong>' +
+    '<p style="margin:4px 0;">' + q.explanation.summary + '</p>' +
+    distractorNote +
+    '<p style="margin-top:6px; font-size:12px; color:#64748b;"><strong>Where to find this in textbook:</strong> ' + q.amscoReference.whereToLook + '</p>';
+
+  updateTracker();
+}
+
+function updateTracker() {
+  const answeredCount = Object.keys(userAnswers).length;
+  const pct = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+  document.getElementById('scoreTracker').textContent = 'Score: ' + score + ' / ' + answeredCount + ' answered (' + pct + '%)';
+}
+
+renderQuiz();
+</script>
+</body>
+</html>

@@ -1,0 +1,1193 @@
+{
+  "unit": 7,
+  "unitTitle": "Unit 7: Industrial and Economic Development",
+  "topic": "Topic 7.2",
+  "topicTitle": "Economic Sectors and Patterns",
+  "curriculum": "AP Human Geography (College Board CED)",
+  "totalQuestions": 25,
+  "textbook": {
+    "title": "Advanced Placement Human Geography, 2nd Edition",
+    "author": "David L. Palmer",
+    "publisher": "AMSCO / Perfection Learning",
+    "unit": "Unit 7: Industrial and Economic Development",
+    "topic": "Topic 7.2: Economic Sectors and Patterns",
+    "chapter": "Unit 7: Industrial and Economic Development"
+  },
+  "questions": [
+    {
+      "id": "7.2-Q01",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Primary Sector: Resource Extraction",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Five Economic Sectors: Primary Sector'"
+      },
+      "stimulus": null,
+      "question": "A worker employed in commercial copper extraction in Chile's Atacama Desert is operating within which economic sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The primary sector, which extracts or harvests natural raw materials directly from the earth.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The secondary sector, which fabricates and manufactures finished consumer merchandise in factories.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The tertiary sector, which sells specialized consumer retail merchandise and commercial services.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The quaternary sector, which processes algorithmic spatial databases and scientific information.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "The primary economic sector involves the direct harvesting, gathering, or extraction of raw natural resources from the Earth, including mining, commercial agriculture, commercial fishing, and forestry.",
+        "distractors": {
+          "B": "The secondary sector processes, refines, and manufactures extracted raw materials into value-added finished goods.",
+          "C": "The tertiary sector provides consumer, commercial, and professional services such as retail, banking, and hospitality.",
+          "D": "The quaternary sector handles knowledge-based, research, and data-processing tasks such as software development."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q02",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Secondary Sector: Processing and Manufacturing",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Five Economic Sectors: Secondary Sector'"
+      },
+      "stimulus": null,
+      "question": "An industrial facility that transforms raw sheet metal and polymer pellets into automotive panels is classified under which sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The primary sector, which directly cultivates or extracts unprocessed environmental materials.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The secondary sector, which processes raw commodities into tangible manufactured merchandise.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The tertiary sector, which administers commercial real estate and regional freight transport.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The quinary sector, which formulates executive legislative policy and strategic legal codes.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "The secondary sector processes, refines, assembles, or manufactures raw natural commodities into tangible finished goods and intermediate components with added economic value.",
+        "distractors": {
+          "A": "Primary activities extract or harvest resources directly from nature rather than processing them.",
+          "C": "Tertiary activities provide intangible services rather than manufacturing physical goods.",
+          "D": "Quinary activities involve top-level executive governance and strategic societal decision-making."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q03",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Tertiary Sector: Services",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Five Economic Sectors: Tertiary Sector'"
+      },
+      "stimulus": null,
+      "question": "A professional working as a physical therapist at an outpatient rehabilitation clinic operates within which economic sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The primary sector, because physical clinical therapy relies upon direct bodily physical labor.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The secondary sector, because clinic facilities construct customized prosthetic joint equipment.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The tertiary sector, because healthcare practitioners deliver specialized personal services.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The quinary sector, because rehabilitation clinics oversee federal health legislative programs.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The tertiary sector involves providing services to consumers and businesses, including healthcare, retail sales, education, hospitality, transportation, and personal wellness.",
+        "distractors": {
+          "A": "Primary activities involve harvesting natural resources directly from the physical environment.",
+          "B": "Secondary activities assemble and fabricate physical manufactured merchandise.",
+          "D": "Quinary activities involve top-tier executive institutional leadership and international policy formulation."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q04",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Quaternary Sector: Knowledge and Information",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Knowledge-Based and Decision-Making Sectors'"
+      },
+      "stimulus": null,
+      "question": "A team of cybersecurity analysts managing encrypted database architectures for an investment bank operates in which sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The primary sector, because electronic server processors depend upon refined copper wiring.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The secondary sector, because corporate analysts construct tangible electronic circuit boards.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The tertiary sector, because banking institutions dispense paper currency to retail consumers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The quaternary sector, because employees analyze, synthesize, and manage digital information.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "The quaternary sector focuses on intellectual, knowledge-based, and information-handling activities, such as software development, financial analysis, data management, and scientific research.",
+        "distractors": {
+          "A": "Primary activities extract physical mineral ores from the earth rather than managing software code.",
+          "B": "Secondary activities physically manufacture computer hardware rather than analyzing digital network traffic.",
+          "C": "Tertiary activities encompass routine retail transactions rather than specialized intellectual data manipulation."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q05",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Quinary Sector: High-Level Decision Making",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Quinary Sector: Policy and Leadership'"
+      },
+      "stimulus": null,
+      "question": "A council of cabinet ministers and central bank governors establishing sovereign monetary policy operates in which sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The quinary sector, which involves elite executive governance and overarching public policy.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The quaternary sector, which delivers routine statistical software programming services.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The tertiary sector, which conducts retail currency exchanges for commercial airline travelers.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The secondary sector, which fabricates physical paper banknotes at sovereign treasury presses.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "The quinary economic sector encompasses the highest levels of decision-making, policy formulation, and executive leadership in society, including heads of state, top cabinet officials, university chancellors, and chief executives.",
+        "distractors": {
+          "B": "Quaternary activities execute data collection and technical research rather than establishing sovereign legislative directives.",
+          "C": "Tertiary activities handle routine consumer financial service transactions rather than macroeconomic policy.",
+          "D": "Secondary activities manufacture physical currency paper rather than formulating central bank interest rate policies."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q06",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Sector Shifts in Economic Development",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Sector Shifts and Industrial Transformation'"
+      },
+      "stimulus": null,
+      "question": "As a developing state transitions from a low-income to a post-industrial high-income economy, how does employment distribute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Primary employment expands steadily while tertiary and quaternary activities contract rapidly.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Primary labor declines sharply while tertiary and quaternary employment expand substantially.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Secondary manufacturing expands indefinitely while tertiary service activities remain static.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Quinary leadership occupations encompass the majority of all civilian employment opportunities.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "During economic development (the Clark-Fisher transition), agricultural mechanization causes primary employment to drop dramatically, industrial manufacturing peaks in the middle-income stage, and tertiary/quaternary service jobs come to dominate post-industrial economies.",
+        "distractors": {
+          "A": "Primary employment decreases as agricultural productivity rises through mechanization.",
+          "C": "Secondary manufacturing peaks during industrialization and subsequently declines due to deindustrialization and automation.",
+          "D": "Quinary occupations represent an elite, highly concentrated leadership tier that never employs a majority of civilian workers."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q07",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The Multiplier Effect in Regional Economies",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'The Multiplier Effect and Regional Development'"
+      },
+      "stimulus": null,
+      "question": "The construction of a major semiconductor fabrication plant in an exurban county stimulates what regional economic response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A contraction in local property tax collections due to widespread agricultural land conversion.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "An immediate departure of transportation infrastructure providers from surrounding transit routes.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A multiplier effect that creates ancillary jobs across dining, housing, and technical services.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "A total collapse in regional consumer demand for professional residential housing developments.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The multiplier effect occurs when the introduction of a major basic industry (like a microchip plant) generates additional secondary and tertiary jobs in restaurants, retail, construction, and supply services to support the workforce.",
+        "distractors": {
+          "A": "Industrial construction typically increases the local property tax base substantially.",
+          "B": "Major manufacturing investments draw increased transportation and logistics infrastructure investment rather than causing departures.",
+          "D": "Worker influx significantly increases local demand for residential housing and commercial services."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q08",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Alfred Weber's Least Cost Theory: Foundational Principles",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Alfred Weber’s Least Cost Theory'"
+      },
+      "stimulus": null,
+      "question": "According to Alfred Weber's Least Cost Theory, which variable functions as the primary determinant of factory location?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The spatial proximity to national government administrative offices and regulatory bureaus.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The aesthetic appeal of surrounding cultural landscapes and recreational open green spaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The historical presence of centuries-old mercantile trade routes and ancestral canal locks.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The minimization of transportation costs for moving raw material inputs and finished goods.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Weber's Least Cost Theory postulates that minimizing transportation costs (determined by cargo weight and transit distance) is the critical primary factor in industrial location, followed by labor costs and agglomeration advantages.",
+        "distractors": {
+          "A": "Proximity to government bureaucratic offices is not a primary factor in Weber's classical manufacturing location triangle.",
+          "B": "Aesthetic environmental qualities do not determine least-cost industrial manufacturing locations.",
+          "C": "Historical heritage routes are secondary to contemporary transportation friction and raw material weight calculations."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q09",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Bulk-Reducing Industries: Raw Material Orientation",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Bulk-Reducing and Bulk-Gaining Industries'"
+      },
+      "stimulus": null,
+      "question": "Why do commercial copper smelting operations consistently establish processing facilities adjacent to copper ore mines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Smelting is bulk-reducing, making it cheaper to ship concentrated metal than heavy raw ore.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Smelting is bulk-gaining, requiring proximity to urban consumer centers to prevent spoilage.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Copper ingots perish rapidly if transported across long intercontinental shipping distances.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Refined copper wire gains substantial physical mass and cubic volume during thermal refining.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Bulk-reducing (weight-losing) industries, like copper smelting and paper manufacturing, process raw materials that are significantly heavier and bulkier than the final output; they locate near the raw material source to minimize hauling costs on waste rock.",
+        "distractors": {
+          "B": "Smelting is a weight-losing process, not bulk-gaining; raw ore contains over 95% waste rock.",
+          "C": "Copper is an imperishable metal and does not spoil during transit.",
+          "D": "Refining extracts pure copper and discards bulk slag, greatly decreasing rather than increasing mass."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q10",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Bulk-Gaining Industries: Market Orientation",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Bulk-Gaining Industries'"
+      },
+      "stimulus": null,
+      "question": "Why do commercial soft drink and beer bottling operations construct bottling plants in close proximity to major consumer markets?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Concentrated flavor syrups weigh significantly more than bottled water-infused carbonated soda.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Bottling is bulk-gaining, because adding ubiquitous water adds heavy mass to the final product.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Aluminum beverage containers deteriorate chemically when transported over regional railways.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Glass bottle fabrication requires specialized thermal geothermal power found only in city cores.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Soft drink bottling is a classic bulk-gaining (weight-gaining) industry. Lightweight syrup is combined with locally sourced, heavy water at the bottling plant, making the finished beverages much heavier to ship than the ingredients; plants locate near urban consumer markets.",
+        "distractors": {
+          "A": "Concentrated syrup is compact and light compared to the thousands of gallons of water added during bottling.",
+          "C": "Aluminum cans are durable and do not break down chemically during railway transit.",
+          "D": "Bottling plants utilize municipal electricity and water utilities rather than rare geothermal energy sources."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q11",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Perishable Products and Market Proximity",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Market Orientation: Perishable Products'"
+      },
+      "stimulus": null,
+      "question": "Commercial fluid milk processing and fresh artisan bakeries consistently locate near metropolitan consumers due to what factor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Government trade tariffs mandate that raw wheat grains be converted into bread within rural farms.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Baking is bulk-reducing, which causes packaged loaves of bread to weigh less than milled flours.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Product perishability requires rapid market access to ensure freshness before spoilage occurs.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Commercial ovens operate exclusively on high-voltage hydroelectric current available in downtowns.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Producers of perishable goods (such as fresh fluid milk, bread, and fresh cut flowers) must locate close to consumer markets to deliver products rapidly to retail shelves before spoilage, high refrigeration costs, or obsolescence occurs.",
+        "distractors": {
+          "A": "Tariff regulations do not force bakeries to process grain on rural farms; bakeries choose urban locations for freshness.",
+          "B": "Baking is actually weight-gaining because moisture and yeast expand dough volume, but perishability is the dominant driver.",
+          "D": "Modern commercial bakery ovens use standard natural gas or electric power found widely across all regions."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q12",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Single-Market Manufacturers",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Single-Market Manufacturers and Component Suppliers'"
+      },
+      "stimulus": null,
+      "question": "Why do specialized manufacturers of customized automobile seating clusters construct factories directly adjacent to auto assembly plants?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leather and foam seat materials lose over ninety percent of their physical weight during stitching.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Federal interstate commerce regulations forbid shipping completed automotive seats across state lines.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Seat fabrication plants depend on continuous direct thermal water discharge from the auto assembly site.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Single-market manufacturers locate near their sole customer to enable rapid just-in-time deliveries.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Single-market manufacturers produce specialized parts sold to only one or two major industrial clients (e.g., auto seats supplied directly to an assembly plant). They locate adjacent to the buyer to minimize freight costs and facilitate synchronized just-in-time delivery.",
+        "distractors": {
+          "A": "Assembling vehicle seats is not bulk-reducing; finished seats are bulky and awkward to transport long distances.",
+          "B": "Federal regulations permit interstate shipments of auto components without geographic restrictions.",
+          "C": "Component manufacturing does not require thermal wastewater exchange with vehicle assembly complexes."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q13",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Transportation Modes and Cost Curves",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Transportation Modes and Costs'"
+      },
+      "stimulus": null,
+      "question": "In transportation geography, which transit mode is most cost-effective for short-distance local freight deliveries under two hundred miles?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Truck transport, which offers rapid loading, flexible route navigation, and minimal terminal fees.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Rail freight, which provides the lowest terminal loading overhead across very short urban journeys.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Ocean shipping, which navigates shallow municipal riverways to deliver retail parcels directly.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Air cargo, which minimizes overall monetary expenditure when transporting dense concrete pavers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Truck transport is the cheapest and most flexible mode for short-distance hauling because it avoids high terminal loading/unloading fees and can deliver door-to-door without transfer stops.",
+        "distractors": {
+          "B": "Rail transport involves high fixed terminal costs (switching tracks, yard handling), making it cost-prohibitive for short runs.",
+          "C": "Ocean vessels require deep-water maritime ports and are suited for long-distance intercontinental transit.",
+          "D": "Air cargo has the highest per-ton-mile cost and is reserved for lightweight, perishable, or high-value items."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q14",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Air Cargo and High-Value Freight",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Air Cargo and High-Value-to-Weight Goods'"
+      },
+      "stimulus": null,
+      "question": "Under what circumstance is air transport the economically preferred shipping mode despite its elevated per-ton-mile freight rates?",
+      "options": [
+        {
+          "id": "A",
+          "text": "When moving unprocessed iron ore from remote mining concessions to coastal blast furnaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "When shipping high-value, lightweight, time-sensitive cargo such as biopharmaceuticals or microchips.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "When transporting bulk grain harvest volumes from midwestern silos to maritime export docks.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "When hauling dense structural steel beams from metallurgical plants to bridge construction sites.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Air freight is the most expensive transit mode per ton-mile, but its extreme speed makes it ideal for compact, lightweight, perishable, or ultra-high-value commodities (such as advanced microprocessors, urgent vaccines, luxury jewelry, and donor organs).",
+        "distractors": {
+          "A": "Iron ore is a bulky, low-value commodity shipped cheaply by bulk rail or ocean freighter.",
+          "C": "Agricultural grains are transported in massive bulk volumes via rail hopper cars and river barges.",
+          "D": "Structural steel is heavy and bulky, making truck and rail transit vastly more economical than air cargo."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q15",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Break-of-Bulk Points",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Break-of-Bulk Points and Intermodal Transportation'"
+      },
+      "stimulus": null,
+      "question": "Which geographic feature is best exemplified by the Port of Rotterdam, where ocean container ships unload onto trains and barges?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An export processing zone where foreign transnational corporations evade municipal labor taxes.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A raw material concession where heavy fossil petroleum reserves are extracted from subsea wells.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A break-of-bulk point where freight transfers from one transportation mode to another for onward transit.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "A central business district where corporate executives manage municipal financial investment portfolios.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "A break-of-bulk point is a location (such as a deep-water seaport, rail depot, or airport terminal) where cargo is transferred from one transportation mode (e.g., container ship) to another (e.g., freight rail or flatbed truck) for the next leg of its journey.",
+        "distractors": {
+          "A": "Export processing zones are duty-free industrial manufacturing areas, not transit transshipment points.",
+          "B": "Subsea oil wells are primary extraction sites rather than intermodal cargo transfer terminals.",
+          "D": "A central business district is an urban commercial and corporate office core rather than a freight transshipment hub."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q16",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Containerization and Intermodal Freight",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Intermodal Transportation and Containerization'"
+      },
+      "stimulus": null,
+      "question": "The introduction of standardized intermodal steel shipping containers in the mid-twentieth century generated what global economic impact?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A massive surge in dockside manual break-bulk longshoreman labor requirements across global seaports.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "An exponential rise in maritime freight insurance rates due to severe cargo tampering in open transit.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A complete abandonment of global deep-water marine shipping in favor of transcontinental trucking fleets.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A dramatic reduction in cargo transfer time and freight costs, accelerating globalized supply networks.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Containerization revolutionized international commerce by standardizing twenty-foot and forty-foot steel boxes (TEUs) that seamlessly transfer between container ships, freight trains, and trucks without unpacking, drastically lowering shipping costs and fueling globalization.",
+        "distractors": {
+          "A": "Containerization drastically reduced manual dockside longshoreman labor needs through automated gantry cranes.",
+          "B": "Sealed metal containers reduced theft, damage, and tampering, which lowered rather than increased insurance costs.",
+          "C": "Containerization greatly expanded international deep-water maritime shipping rather than causing its abandonment."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q17",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Agglomeration Economies",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Agglomeration Economies and Industrial Clustering'"
+      },
+      "stimulus": null,
+      "question": "What primary economic benefit do competing software engineering firms derive from co-locating within a single metropolitan district?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Agglomeration economies arising from a deep skilled talent pool, specialized vendors, and knowledge spillovers.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Deglomeration advantages that eliminate urban traffic congestion and lower central office leasing expenses.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Monopoly exemptions that shield co-located technological enterprises from national consumer protection laws.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Heavy bulk-reducing transportation subsidies that cut long-distance rail freight costs for physical software.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Agglomeration economies refer to the cost savings and productivity advantages firms achieve by clustering near one another in the same industry, benefiting from a shared pool of skilled labor, specialized legal/technical suppliers, and informal knowledge spillovers.",
+        "distractors": {
+          "B": "Deglomeration refers to firms dispersing away from crowded clusters to escape rising rents and traffic congestion.",
+          "C": "Co-locating in an industrial cluster confers no antitrust or legal monopoly exemptions.",
+          "D": "Software is a digital service rather than a heavy physical commodity requiring rail transport subsidies."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q18",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "High-Tech Technopoles and Research Hubs",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Technopoles and Regional Growth Hubs'"
+      },
+      "stimulus": null,
+      "question": "What key spatial factor explains why Silicon Valley, California, developed into a preeminent global high-technology technopole?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unsurpassed geographic proximity to massive open-pit iron ore deposits and abundant anthracite coal seams.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Proximity to world-class research universities, venture capital investors, and an elite engineering workforce.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Extensive break-of-bulk rail classification yards connecting regional wheat granaries to coastal export mills.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "State constitutional statutory mandates requiring all international technological patents be registered locally.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Technopoles (like Silicon Valley, Route 128 in Boston, and Research Triangle Park in North Carolina) flourish because of proximity to elite research universities (Stanford, UC Berkeley), abundant private venture capital, and a highly educated STEM workforce.",
+        "distractors": {
+          "A": "Silicon Valley did not develop based on coal or iron deposits, which were foundational to 19th-century heavy manufacturing belts.",
+          "C": "Grain transshipment rail hubs relate to agricultural commodity geography, not high-tech technopoles.",
+          "D": "Federal patent offices are located in Alexandria, Virginia, and have no link to state constitutional mandates in California."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q19",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Deglomeration and Diseconomies of Scale",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Deglomeration and Diseconomies of Agglomeration'"
+      },
+      "stimulus": null,
+      "question": "When excessive industrial concentration in a megacity leads to skyrocketing rents and paralyzed transit, what process occurs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Centripetal urbanization, drawing rural agricultural families into crowded inner-city tenement blocks.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Hierarchical diffusion, transmitting technological patents to developing peripheral agricultural villages.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Deglomeration, prompting firms to relocate outward to escape prohibitive operating overhead and congestion.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Import substitution, requiring regional municipal departments to manufacture all local consumer merchandise.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "Deglomeration occurs when the diseconomies of excessive agglomeration (exorbitant real estate rents, severe traffic gridlock, inflated wages, and pollution) outweigh clustering benefits, causing enterprises to disperse to suburbs, smaller cities, or rural regions.",
+        "distractors": {
+          "A": "Centripetal migration concentrates people inward rather than describing business dispersal away from excessive overhead.",
+          "B": "Hierarchical diffusion is the spatial spread of an innovation downward through an urban rank hierarchy.",
+          "D": "Import substitution is a national trade policy aimed at replacing foreign imports with domestic industrial production."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q20",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.A",
+      "skillDescription": "Describe geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Footloose Industries",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Footloose Industries and Spatial Flexibility'"
+      },
+      "stimulus": null,
+      "question": "Why are corporate accounting call centers and software algorithmic design firms categorized as footloose industries?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Their manufacturing processes generate immense volumes of perishable biological dairy consumables.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Their operational facilities must locate adjacent to oceanic deep-water container break-of-bulk ports.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Their heavy industrial stamping presses require continuous direct supplies of metallurgical coking coal.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Their inputs and outputs are weightless digital data, making freight costs negligible in site location.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Footloose industries are businesses whose spatial location is neither tied to raw material sources (not bulk-reducing) nor consumer markets (not bulk-gaining), because their products (software, call centers, lightweight microchips) have negligible transport costs.",
+        "distractors": {
+          "A": "Perishable dairy operations must locate close to consumer markets and are strictly market-oriented.",
+          "B": "Break-of-bulk marine port proximity is critical for heavy intermodal freight rather than digital service firms.",
+          "C": "Coking coal is a heavy raw material input for blast furnaces in bulk-reducing steelmaking."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q21",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Just-In-Time Delivery Systems",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Just-in-Time Delivery and Modern Manufacturing'"
+      },
+      "stimulus": null,
+      "question": "What primary operational objective motivates automotive assembly plants to adopt just-in-time (JIT) manufacturing delivery?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimizing expensive warehouse inventory storage costs by having parts arrive hours before installation.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Maximizing onsite stockpiling of surplus raw steel materials to guard against long-term price deflation.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Eliminating reliance upon electronic tracking networks and modern computerized logistics communications.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Ensuring manufacturing components are sourced exclusively from overseas transoceanic suppliers.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Just-in-Time (JIT) delivery aims to minimize capital tied up in warehousing and stored inventory by having component parts delivered to the factory assembly line exactly when needed, often only hours before installation.",
+        "distractors": {
+          "B": "JIT deliberately minimizes onsite stockpiling; stockpiling large reserves is the traditional 'just-in-case' approach.",
+          "C": "JIT relies heavily on sophisticated real-time digital communication and tracking systems between suppliers and plants.",
+          "D": "JIT encourages parts suppliers to locate close to the final assembly plant to guarantee reliable, rapid hourly deliveries."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q22",
+      "topic": "Topic 7.2",
+      "skill": "Skill 2.C",
+      "skillDescription": "Explain a possible cause or effect of a spatial pattern or relationship.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Vulnerabilities of Just-In-Time Delivery",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Risks of Just-in-Time Supply Chains'"
+      },
+      "stimulus": null,
+      "question": "What inherent structural vulnerability affects manufacturing plants that rely completely upon just-in-time logistics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Severe municipal warehouse overcapacity fees triggered by storing excess raw materials on factory floors.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Immediate production shutdowns caused by transit strikes, severe weather, or supply chain bottlenecks.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Compulsory federal antitrust fines levied against corporations that maintain synchronized freight routes.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Inability to introduce customized consumer options onto moving automotive vehicle production lines.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "summary": "Because JIT manufacturing keeps little to no buffer inventory on hand, any external shock to the transportation or supplier network (a dock strike, snowstorm, border closure, or component shortage) can halt the entire assembly line within hours.",
+        "distractors": {
+          "A": "JIT maintains virtually zero warehouse inventory, eliminating warehouse holding overhead entirely.",
+          "C": "Antitrust regulations do not penalize corporations for operating synchronized logistics delivery schedules.",
+          "D": "JIT actually facilitates flexible, customized manufacturing by allowing parts to be sequenced to specific customer orders."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q23",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "The New International Division of Labor",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'The New International Division of Labor'"
+      },
+      "stimulus": null,
+      "question": "How does the New International Division of Labor (NIDL) spatially distribute manufacturing processes across global regions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "All manufacturing stages concentrate exclusively within high-wage post-industrial North American states.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Developing peripheral countries control global corporate finance while core states assemble low-cost goods.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Labor-intensive assembly shifts to developing states while executive R&D remains in core economies.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Transnational manufacturing ceases entirely as every sovereign country achieves complete industrial autarky.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": {
+        "summary": "The New International Division of Labor (NIDL) describes the global spatial reorganization of production: labor-intensive, low-skill assembly jobs shift to low-wage developing/semi-peripheral countries, while high-skill R&D, design, and corporate headquarters stay in core nations.",
+        "distractors": {
+          "A": "Manufacturing has dispersed globally away from high-wage core nations to lower-cost emerging economies.",
+          "B": "Core nations retain control over finance and R&D, while developing nations perform factory assembly.",
+          "D": "Global trade integration has deepened through global supply chains rather than retreating to national autarky."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q24",
+      "topic": "Topic 7.2",
+      "skill": "Skill 1.B",
+      "skillDescription": "Explain geographic concepts, processes, models, and theories.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Export Processing Zones and Maquiladoras",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Export Processing Zones and Maquiladoras'"
+      },
+      "stimulus": null,
+      "question": "What primary economic advantages do export processing zones (EPZs), such as Mexican maquiladoras, offer multinational firms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Strict statutory environmental mandates requiring zero greenhouse emissions from manufacturing furnaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Extensive sovereign subsidies guaranteeing lifetime civil service pensions for all factory employees.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Mandatory nationalization of foreign intellectual property and domestic ownership of all machinery.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Duty-free tariff exemptions on imported components, reduced corporate taxes, and lower labor expenses.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "Export Processing Zones (EPZs), Special Economic Zones (SEZs), and Mexican maquiladoras attract foreign transnational capital by providing duty-free imports of raw materials and machinery, tax holidays, relaxed environmental/labor regulations, and low-cost labor.",
+        "distractors": {
+          "A": "EPZs are known for relaxed or streamlined environmental oversight rather than exceptionally strict emissions mandates.",
+          "B": "EPZ workers are employed by private transnational contractors with limited benefits rather than government civil service pensions.",
+          "C": "EPZs protect foreign capital investments and allow full repatriation of profits rather than nationalizing assets."
+        }
+      }
+    },
+    {
+      "id": "7.2-Q25",
+      "topic": "Topic 7.2",
+      "skill": "Skill 5.B",
+      "skillDescription": "Explain spatial relationships across different scales of analysis.",
+      "amscoReference": {
+        "textbook": "Advanced Placement Human Geography, 2nd Edition",
+        "author": "David L. Palmer",
+        "unit": "Unit 7: Industrial and Economic Development",
+        "chapter": "Unit 7: Industrial and Economic Development",
+        "section": "Deindustrialization and the Rust Belt",
+        "whereToLook": "AMSCO 2nd Ed, Topic 7.2, under 'Deindustrialization and Regional Rust Belts'"
+      },
+      "stimulus": null,
+      "question": "How did the global relocation of heavy manufacturing in the late twentieth century reshape the North American Manufacturing Belt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It triggered massive migration into Great Lakes factory centers as regional blast furnace operations expanded rapidly.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It eliminated municipal service economies across the continent, forcing urban industrial residents back into farming.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It transformed Midwestern industrial manufacturing hubs into dominant international duty-free export processing zones.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It spurred widespread deindustrialization, producing the Rust Belt characterized by plant closures and population loss.",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": {
+        "summary": "As heavy steel and automotive manufacturing shifted to low-wage international regions and southern US right-to-work states, the historic North American Manufacturing Belt experienced severe deindustrialization, becoming the 'Rust Belt' with factory shutdowns, urban decay, and out-migration.",
+        "distractors": {
+          "A": "The Rust Belt experienced severe factory closures and out-migration rather than expanding blast furnaces.",
+          "B": "Deindustrialization accelerated the transition to a service and knowledge-based tertiary/quaternary economy rather than returning to farming.",
+          "C": "Midwestern cities did not become export processing zones; EPZs emerged primarily in low-wage developing nations."
+        }
+      }
+    }
+  ]
+}

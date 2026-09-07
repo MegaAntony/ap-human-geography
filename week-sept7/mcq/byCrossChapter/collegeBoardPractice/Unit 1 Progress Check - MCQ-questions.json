@@ -1,0 +1,448 @@
+{
+    "meta": {
+        "status": true,
+        "timestamp": 1788734721,
+        "versions": {
+            "requested": "v2025.2.LTS",
+            "mapped": "v1.135",
+            "concrete": "v1.135.6"
+        },
+        "records": 1
+    },
+    "data": {
+        "items": [
+            {
+                "reference": "VR021439---1",
+                "source": {
+                    "reference": "VR021439",
+                    "organisation_id": 537
+                },
+                "content": "<div class=\"row\"><div class=\"col-xs-12\"><div class=\"learnosity-feature\" data-type=\"scrollablepassage\" data-height=\"100%\"><span class=\"learnosity-feature feature-_56c13922b36414dd3709a39351a6c6a4\"></span><span class=\"learnosity-response question-_1866837f2df31682a4a3f265eb23d0c1\"></span></div></div></div>",
+                "metadata": {
+                    "rubric_reference": "VR021439_rubric"
+                },
+                "workflow": [],
+                "response_ids": [
+                    "_1866837f2df31682a4a3f265eb23d0c1"
+                ],
+                "feature_ids": [
+                    "_56c13922b36414dd3709a39351a6c6a4"
+                ],
+                "questions": [
+                    {
+                        "metadata": {
+                            "distractor_rationale_response_level": [
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Election results do not yield information about population density. Data about age and numbers of persons per household are collected in census surveys.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Correct. Questions about age and numbers of persons per household are found on census surveys. Such surveys provide an important source of information for researchers that are used to calculate several spatial statistics such as population density.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although geographers might layer population data with satellite imagery and other geographic system data, the maps do not show satellite-image data. Data about age and numbers of persons per household are collected in census surveys.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Informal observation does not usually include reliable or sufficiently large samples to yield statistical spatial data for the census. Data about age and numbers of persons per household are collected in census surveys.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. While census data may be supplemented with interviews, it is not likely that interviews would be the primary source of spatial data for an area as large as the United States. Data about age and numbers of persons per household are collected in census surveys.</p>"
+                            ],
+                            "valid_response_count": 1,
+                            "sheet_reference": "VR021439",
+                            "widget_reference": "VR021439_RESPONSE",
+                            "source": {
+                                "organisation_id": 537
+                            }
+                        },
+                        "stimulus": "<div><include href=\"../Passage/VR021393.qti.xml\" xmlns:xi=\"http://www.w3.org/2001/XInclude\"></include></div><p class=\"stem_paragraph\">The maps show data most likely collected through</p>\n",
+                        "type": "mcq",
+                        "validation": {
+                            "scoring_type": "exactMatch",
+                            "valid_response": {
+                                "score": 1,
+                                "value": [
+                                    "i2"
+                                ]
+                            }
+                        },
+                        "options": [
+                            {
+                                "label": "<p class=\"choice_paragraph\">election results</p>",
+                                "value": "i1"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">census surveys</p>",
+                                "value": "i2"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">satellite imagery</p>",
+                                "value": "i3"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">informal observation</p>",
+                                "value": "i4"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">interviews</p>",
+                                "value": "i5"
+                            }
+                        ],
+                        "response_id": "_1866837f2df31682a4a3f265eb23d0c1"
+                    }
+                ],
+                "features": [
+                    {
+                        "type": "sharedpassage",
+                        "content": "<div class=\"stimulus_reference\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<div class=\"standalone_image\">\n<div class=\"title\">\n<p class=\"title_line passage-title\">COUNTY-LEVEL DATA</p>\n</div>\n<img alt=\"The figure presents three maps of the United States titled “County Level Data.” Each map shows varying shades of gray. Three keys are provided. The key for map 1 is labeled “Population Density per Square Mile,” and indicates that black represents Greater than 1,000, dark gray represents 101 through 1,000, light gray represents 10 through 100, and white represents Less than 10. In map 1, most areas of gray and dark gray are located in the eastern half of the United States. Areas of gray and dark gray are also concentrated along the west coast of the United States. The key for map 2 is labeled “Percent Over Age 65,” and indicates that black represents 20.1% through 43.4%, dark gray represents 15.1% through 20%, light gray represents 10.1% through 15%, and white represents 0% through 10%. In map 2, nearly the entire map is shaded to some degree, with only small areas of white throughout the map. The white portions of the map are concentrated mostly in the western half of the country. Most of the shading is gray or dark gray, with concentrations of black mainly in the Midwest, the Great Plains region, and the western United States. The key for map 3 is labeled “Average Number of People per Household,” and indicates that black represents Greater than 3.0, dark gray represents 2.6 through 2.9, light gray represents 2.1 through 2.5, and white represents Less than 2.0. In map 3, nearly the entire map is shaded to some degree. The map is shaded mostly light gray, with areas of dark gray scattered throughout the map. Areas of black are concentrated mostly in the southwestern United States.\" height=\"332\" src=\"https://assets.learnosity.com/organisations/537/VR021393.g01.png\" width=\"500\" /></div>\n</div>\n",
+                        "feature_id": "_56c13922b36414dd3709a39351a6c6a4"
+                    }
+                ],
+                "tags": [
+                    "created_by:CB_AP",
+                    "Subject:FYM Human Geography",
+                    "Unit:1",
+                    "Skill Category:Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                    "Topic:1.2: Geographic Data",
+                    "Skill:Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                    "Assessment Type:Formative",
+                    "Question Type:MCQ",
+                    "18_PPC:1.2|Skill 3.A"
+                ]
+            },
+            {
+                "reference": "VH911603---1",
+                "source": {
+                    "reference": "VH911603",
+                    "organisation_id": 537
+                },
+                "content": "<div class=\"row\"><div class=\"col-xs-12\"><div class=\"learnosity-feature\" data-type=\"scrollablepassage\" data-height=\"100%\"><span class=\"learnosity-response question-_da1afed55a7bfb8aa774df13c30aa8d8\"></span></div></div></div>",
+                "metadata": {
+                    "rubric_reference": "VH911603_rubric"
+                },
+                "workflow": [],
+                "response_ids": [
+                    "_da1afed55a7bfb8aa774df13c30aa8d8"
+                ],
+                "feature_ids": [],
+                "questions": [
+                    {
+                        "metadata": {
+                            "distractor_rationale_response_level": [
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Correct. Direction is accurate on Mercator projection maps. Mercator maps are used for navigation charts because any straight line on a Mercator projection map is a constant compass bearing along a straight-line course. However, because the actual distance between longitude lines decreases as one moves away from the Equator, objects near the poles are greatly exaggerated in size in the Mercator projection.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. The Robinson projection uses a combination of mathematical approaches to represent the three-dimensional globe as a flat map. In doing this, the Robinson projection compromises direction in order to better achieve proportional area. Direction is accurate on Mercator projection maps, but the size of some areas may be exaggerated.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Just as area is distorted on the Mercator Projection, distances are most accurate at the Equator and are increasingly stretched closer to the poles. Direction is accurate on Mercator projection maps, but the size of some areas may be exaggerated.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although the distortion is spread throughout the entire Robinson projection rather than concentrated in the polar regions, both shape and direction are inaccurate in the Robinson projection. Direction is accurate on Mercator projection maps, but the size of some areas may be exaggerated.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. The Mercator projection does not provide accurate size for land areas, especially in the polar regions. Direction is accurate on Mercator projection maps, but the size of some areas may be exaggerated.</p>"
+                            ],
+                            "valid_response_count": 1,
+                            "sheet_reference": "VH911603",
+                            "widget_reference": "VH911603_RESPONSE",
+                            "source": {
+                                "organisation_id": 537
+                            }
+                        },
+                        "stimulus": "<div>\n<div class=\"stimulus_reference\">\n<div class=\"standalone_image\"><img alt=\"The figure presents two maps of the Earth, one labeled Mercator Projection and the other labeled Robinson Projection. The Mercator Projection shows parallel lines of latitude spaced farther and farther apart as distance from the equator increases. The Robinson Projection shows gently curving meridians and flattened north and south poles.\" height=\"255\" src=\"https://assets.learnosity.com/organisations/537/VH911603.g01.png\" width=\"540\" /></div>\n</div>\n</div>\n\n<p class=\"stem_paragraph\">Which of the following statements is an accurate comparison of the two map projections shown?</p>\n",
+                        "type": "mcq",
+                        "validation": {
+                            "scoring_type": "exactMatch",
+                            "valid_response": {
+                                "score": 1,
+                                "value": [
+                                    "i1"
+                                ]
+                            }
+                        },
+                        "options": [
+                            {
+                                "label": "<p class=\"choice_paragraph\">The Mercator projection accurately shows direction but distorts the size of some areas compared to the Robinson projection.</p>",
+                                "value": "i1"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">The Robinson projection accurately shows direction but distorts the size of some areas compared to the Mercator projection.</p>",
+                                "value": "i2"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">The Mercator projection accurately shows distances but distorts direction compared to the Robinson projection.</p>",
+                                "value": "i3"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">The Robinson projection accurately shows shapes but distorts direction compared to the Mercator projection.</p>",
+                                "value": "i4"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">The Mercator projection accurately shows area but distorts shapes compared to the Robinson projection.</p>",
+                                "value": "i5"
+                            }
+                        ],
+                        "ui_style": {
+                            "type": "horizontal"
+                        },
+                        "response_id": "_da1afed55a7bfb8aa774df13c30aa8d8"
+                    }
+                ],
+                "features": [],
+                "tags": [
+                    "created_by:CB_AP",
+                    "Subject:FYM Human Geography",
+                    "Unit:1",
+                    "Skill Category:Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                    "Topic:1.1: Introduction to Maps",
+                    "Skill:Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                    "Assessment Type:Formative",
+                    "Question Type:MCQ",
+                    "18_PPC:1.1|Skill 3.A"
+                ]
+            },
+            {
+                "reference": "VR021253---1",
+                "source": {
+                    "reference": "VR021253",
+                    "organisation_id": 537
+                },
+                "content": "<div class=\"row\"><div class=\"col-xs-12\"><div class=\"learnosity-feature\" data-type=\"scrollablepassage\" data-height=\"100%\"><span class=\"learnosity-feature feature-_452d5693cf5a87e4419151ef84a23e7e\"></span><span class=\"learnosity-response question-_cd5f43cbff0ace5b63824b0f799558e4\"></span></div></div></div>",
+                "metadata": {
+                    "rubric_reference": "VR021253_rubric"
+                },
+                "workflow": [],
+                "response_ids": [
+                    "_cd5f43cbff0ace5b63824b0f799558e4"
+                ],
+                "feature_ids": [
+                    "_452d5693cf5a87e4419151ef84a23e7e"
+                ],
+                "questions": [
+                    {
+                        "metadata": {
+                            "distractor_rationale_response_level": [
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Countries in Latin America have some need in terms of improving literacy. However, countries in sub-Saharan Africa, such as Ethiopia, Somalia, and South Sudan, have the lowest literacy rates and would be most in need for international education programs.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Countries in Southeast Asia have some need in terms of improving literacy. However, countries in sub-Saharan Africa, such as Ethiopia, Somalia, and South Sudan, have the lowest literacy rates and would be most in need for international education programs.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Countries in Latin America have some need in terms of improving literacy. However, countries in sub-Saharan Africa, such as Ethiopia, Somalia, and South Sudan, have the lowest literacy rates and would be most at need for international education programs.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Countries in North Africa and the Middle East have some need in terms of improving literacy. However, countries in sub-Saharan Africa, such as Ethiopia, Somalia, and South Sudan, have the lowest literacy rates and would be most in need for international education programs.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Correct. Countries in sub-Saharan Africa, such as Ethiopia, Somalia, and South Sudan, have the lowest literacy rates and would be most in need for international education programs.</p>"
+                            ],
+                            "valid_response_count": 1,
+                            "sheet_reference": "VR021253",
+                            "widget_reference": "VR021253_RESPONSE",
+                            "source": {
+                                "organisation_id": 537
+                            }
+                        },
+                        "stimulus": "<div><include href=\"../Passage/VR021249.qti.xml\" xmlns:xi=\"http://www.w3.org/2001/XInclude\"></include></div><p class=\"stem_paragraph\">A nongovernmental organization is planning a new international elementary education program. Based on the map shown, which of the following groups of countries would be the best candidates to receive funding?</p>\n",
+                        "type": "mcq",
+                        "validation": {
+                            "scoring_type": "exactMatch",
+                            "valid_response": {
+                                "score": 1,
+                                "value": [
+                                    "i5"
+                                ]
+                            }
+                        },
+                        "options": [
+                            {
+                                "label": "<p class=\"choice_paragraph\">Brazil, Bolivia, Peru</p>",
+                                "value": "i1"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Indonesia, Malaysia, Thailand</p>",
+                                "value": "i2"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Mexico, Colombia, Ecuador</p>",
+                                "value": "i3"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Egypt, Libya, Saudi Arabia</p>",
+                                "value": "i4"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Ethiopia, Somalia, South Sudan</p>",
+                                "value": "i5"
+                            }
+                        ],
+                        "response_id": "_cd5f43cbff0ace5b63824b0f799558e4"
+                    }
+                ],
+                "features": [
+                    {
+                        "type": "sharedpassage",
+                        "content": "<div class=\"stimulus_reference\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<div class=\"standalone_image\">\n<div class=\"title\">\n<p class=\"title_line passage-title\">ADULT LITERACY RATE BY COUNTRY</p>\n</div>\n<img alt=\"The figure presents a map of the world titled, Adult Literacy Rate by Country. A key labeled Adult Literacy Rate indicates that different shading and patterns on the map represent the following 6 categories: 1. 95% to 100%; 2. 90% to 94.9%; 3. 75% to 89.9%; 4. 50% to 74.9%; 5. 15% to 44.9%; and 6. no data. The data given by the map are as follows. Adult literacy rates fall between 95% to 100% in the following locations: the United States, Canada, Cuba, Costa Rica, Argentina, Chile, Australia, New Zealand, Russia, Thailand, most of Europe, and most of central and east Asia. Adult literacy rates fall between 90% to 94.9% in the following locations: most of Central and South America including Mexico, Panama, Colombia, Bolivia, Venezuela, Ecuador, Peru, and Brazil; South Africa; portions of North Africa and the Middle East including Libya, Saudi Arabia, and Oman; and a portion of Southeast Asia including Malaysia, Myanmar, Indonesia, and Vietnam. Adult literacy rates fall between 75% to 89.9% in the following locations: a portion of Central America including Honduras, Nicaragua, and Guatemala, portions of Africa and the Middle East including Namibia, Botswana, Zimbabwe, Tanzania, Republic of the Congo, Gabon, Egypt, Syria, Iraq, and Iran. Adult literacy rates fall between 50% to 74.9% in the following locations: Yemen, Pakistan, India, Laos, Cambodia, and Papua New Guinea, and portions of Africa including Angola, Zambia, Mozambique, Madagascar, Morocco, Ghana, Nigeria, Cameroon, and Sudan. Adult literacy rates fall between 15% to 44.9% in the following locations: portions of Africa including the Democratic Republic of Congo, South Sudan, Ethiopia, Somalia, Chad, Niger, Mali, Burkina Faso, Côte d’Ivoire, Liberia, and Mauritania. No data is available for Afghanistan, Antarctica, and Greenland.\" height=\"292\" src=\"https://assets.learnosity.com/organisations/537/VR021249.g05.png\" width=\"550\" />\n<p class=\"attribution author\">Source: World Bank</p>\n</div>\n</div>\n",
+                        "feature_id": "_452d5693cf5a87e4419151ef84a23e7e"
+                    }
+                ],
+                "tags": [
+                    "created_by:CB_AP",
+                    "Subject:FYM Human Geography",
+                    "Unit:1",
+                    "Skill:Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                    "Skill Category:Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                    "Topic:1.3: The Power of Geographic Data",
+                    "Assessment Type:Formative",
+                    "Question Type:MCQ",
+                    "18_PPC:1.3|Skill 3.B"
+                ]
+            },
+            {
+                "reference": "VR021300---1",
+                "source": {
+                    "reference": "VR021300",
+                    "organisation_id": 537
+                },
+                "content": "<div class=\"row\"><div class=\"col-xs-12\"><div class=\"learnosity-feature\" data-type=\"scrollablepassage\" data-height=\"100%\"><span class=\"learnosity-feature feature-_452d5693cf5a87e4419151ef84a23e7e\"></span><span class=\"learnosity-response question-_48fc24b81b62de7a55eed902c351d04b\"></span></div></div></div>",
+                "metadata": {
+                    "rubric_reference": "VR021300_rubric"
+                },
+                "workflow": [],
+                "response_ids": [
+                    "_48fc24b81b62de7a55eed902c351d04b"
+                ],
+                "feature_ids": [
+                    "_452d5693cf5a87e4419151ef84a23e7e"
+                ],
+                "questions": [
+                    {
+                        "metadata": {
+                            "distractor_rationale_response_level": [
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although literacy affects a country’s economic capabilities, productivity would be measured with economic data on per capita production (e.g., GDP per capita, GNP per capita), which would provide a more accurate indicator of economic development. From a social perspective, the literacy rate indicates the level of participation in schools. As well, the literacy rate indicates a government’s willingness or ability to provide access to education for its population.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although literacy affects a country’s economic situation, earnings would be measured with economic data on per capita income (e.g., GNI, median household income), which would provide a more accurate indicator of economic development. From a social perspective, the literacy rate indicates the level of participation in schools. As well, the literacy rate indicates a government’s willingness or ability to provide access to education for its population.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although literacy affects a country’s political participation, civic participation would be measured with data on voting or membership in political parties, which would provide a more accurate indicator of political development. From a social perspective, the literacy rate indicates the level of participation in schools. As well, the literacy rate indicates a government’s willingness or ability to provide access to education for its population.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. Although literacy affects a country’s political participation, the system of government does not directly relate to a country’s level of development. From a social perspective, the literacy rate indicates the level of participation in schools. As well, the literacy rate indicates a government’s willingness or ability to provide access to education for its population.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Correct. The adult literacy rate is one indicator of how far each country is developed socially. The literacy rate indicates the level of participation in schools. As well, the literacy rate indicates a government’s willingness or ability to provide access to education for its population.</p>"
+                            ],
+                            "valid_response_count": 1,
+                            "sheet_reference": "VR021300",
+                            "widget_reference": "VR021300_RESPONSE",
+                            "source": {
+                                "organisation_id": 537
+                            }
+                        },
+                        "stimulus": "<div><include href=\"../Passage/VR021249.qti.xml\" xmlns:xi=\"http://www.w3.org/2001/XInclude\"></include></div><p class=\"stem_paragraph\">Which of the following best describes the spatial pattern of adult literacy rates presented in the map?</p>\n",
+                        "type": "mcq",
+                        "validation": {
+                            "scoring_type": "exactMatch",
+                            "valid_response": {
+                                "score": 1,
+                                "value": [
+                                    "i5"
+                                ]
+                            }
+                        },
+                        "options": [
+                            {
+                                "label": "<p class=\"choice_paragraph\">It provides an economic perspective on the productivity of each country’s workforce.</p>",
+                                "value": "i1"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">It provides an economic perspective on earnings for each country’s population.</p>",
+                                "value": "i2"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">It provides a political perspective on each country’s level of civic participation.</p>",
+                                "value": "i3"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">It provides a political perspective on each country’s system of government.</p>",
+                                "value": "i4"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">It provides a perspective on each country’s level of social development.</p>",
+                                "value": "i5"
+                            }
+                        ],
+                        "response_id": "_48fc24b81b62de7a55eed902c351d04b"
+                    }
+                ],
+                "features": [
+                    {
+                        "type": "sharedpassage",
+                        "content": "<div class=\"stimulus_reference\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<div class=\"standalone_image\">\n<div class=\"title\">\n<p class=\"title_line passage-title\">ADULT LITERACY RATE BY COUNTRY</p>\n</div>\n<img alt=\"The figure presents a map of the world titled, Adult Literacy Rate by Country. A key labeled Adult Literacy Rate indicates that different shading and patterns on the map represent the following 6 categories: 1. 95% to 100%; 2. 90% to 94.9%; 3. 75% to 89.9%; 4. 50% to 74.9%; 5. 15% to 44.9%; and 6. no data. The data given by the map are as follows. Adult literacy rates fall between 95% to 100% in the following locations: the United States, Canada, Cuba, Costa Rica, Argentina, Chile, Australia, New Zealand, Russia, Thailand, most of Europe, and most of central and east Asia. Adult literacy rates fall between 90% to 94.9% in the following locations: most of Central and South America including Mexico, Panama, Colombia, Bolivia, Venezuela, Ecuador, Peru, and Brazil; South Africa; portions of North Africa and the Middle East including Libya, Saudi Arabia, and Oman; and a portion of Southeast Asia including Malaysia, Myanmar, Indonesia, and Vietnam. Adult literacy rates fall between 75% to 89.9% in the following locations: a portion of Central America including Honduras, Nicaragua, and Guatemala, portions of Africa and the Middle East including Namibia, Botswana, Zimbabwe, Tanzania, Republic of the Congo, Gabon, Egypt, Syria, Iraq, and Iran. Adult literacy rates fall between 50% to 74.9% in the following locations: Yemen, Pakistan, India, Laos, Cambodia, and Papua New Guinea, and portions of Africa including Angola, Zambia, Mozambique, Madagascar, Morocco, Ghana, Nigeria, Cameroon, and Sudan. Adult literacy rates fall between 15% to 44.9% in the following locations: portions of Africa including the Democratic Republic of Congo, South Sudan, Ethiopia, Somalia, Chad, Niger, Mali, Burkina Faso, Côte d’Ivoire, Liberia, and Mauritania. No data is available for Afghanistan, Antarctica, and Greenland.\" height=\"292\" src=\"https://assets.learnosity.com/organisations/537/VR021249.g05.png\" width=\"550\" />\n<p class=\"attribution author\">Source: World Bank</p>\n</div>\n</div>\n",
+                        "feature_id": "_452d5693cf5a87e4419151ef84a23e7e"
+                    }
+                ],
+                "tags": [
+                    "created_by:CB_AP",
+                    "Subject:FYM Human Geography",
+                    "Unit:1",
+                    "Skill:Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                    "Skill Category:Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                    "Topic:1.3: The Power of Geographic Data",
+                    "Assessment Type:Formative",
+                    "Question Type:MCQ",
+                    "18_PPC:1.3|Skill 3.B"
+                ]
+            },
+            {
+                "reference": "VH911497---1",
+                "source": {
+                    "reference": "VH911497",
+                    "organisation_id": 537
+                },
+                "content": "<div class=\"row\"><div class=\"col-xs-12\"><span class=\"learnosity-response question-_8424a26b18e1ee1e252def8f8c210484\"></span></div></div>",
+                "metadata": {
+                    "rubric_reference": "VH911497_rubric"
+                },
+                "workflow": [],
+                "response_ids": [
+                    "_8424a26b18e1ee1e252def8f8c210484"
+                ],
+                "feature_ids": [],
+                "questions": [
+                    {
+                        "metadata": {
+                            "distractor_rationale_response_level": [
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. A perceptual region is defined based on subjective perceptions of a region or place. The suburbs of Chicago form a functional system with a central node, as opposed to a perception of a region.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Correct. A functional region is defined based on activities and interactions within the region. The suburbs of Chicago form a functional system with a central node.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. A formal region refers to an area with a unifying characteristic. The suburbs of Chicago form a functional system with a central node, as opposed to a region where there is a common geographical feature.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. The term \"conformal\" refers to a type of map projection rather than a type of region. The suburbs of Chicago form a functional region with a central node.</p>",
+                                "<p class=\"rationale_paragraph\" xmlns=\"http://www.imsglobal.org/xsd/apip/apipv1p0/qtiitem/imsqti_v2p2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">Incorrect. The term \"equal area\" refers to a type of map projection rather than a type of region. The suburbs of Chicago form a functional region with a central node.</p>"
+                            ],
+                            "valid_response_count": 1,
+                            "sheet_reference": "VH911497",
+                            "widget_reference": "VH911497_RESPONSE",
+                            "source": {
+                                "organisation_id": 537
+                            }
+                        },
+                        "stimulus": "<p class=\"stem_paragraph\">Which of the following terms best describes the suburban area of Illinois where many residents commute to Chicago?</p>\n",
+                        "type": "mcq",
+                        "validation": {
+                            "scoring_type": "exactMatch",
+                            "valid_response": {
+                                "score": 1,
+                                "value": [
+                                    "i2"
+                                ]
+                            }
+                        },
+                        "options": [
+                            {
+                                "label": "<p class=\"choice_paragraph\">Perceptual region</p>",
+                                "value": "i1"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Functional region</p>",
+                                "value": "i2"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Formal region</p>",
+                                "value": "i3"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Conformal region</p>",
+                                "value": "i4"
+                            },
+                            {
+                                "label": "<p class=\"choice_paragraph\">Equal area region</p>",
+                                "value": "i5"
+                            }
+                        ],
+                        "response_id": "_8424a26b18e1ee1e252def8f8c210484"
+                    }
+                ],
+                "features": [],
+                "tags": [
+                    "created_by:CB_AP",
+                    "Subject:FYM Human Geography",
+                    "Unit:1",
+                    "Skill:Skill 1.A: Describe geographic concepts, processes, models, and theories.",
+                    "Skill Category:Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                    "Topic:1.7: Regional Analysis",
+                    "Assessment Type:Formative",
+                    "Question Type:MCQ",
+                    "18_PPC:1.7|Skill 1.A"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,1389 @@
+{
+    "data": {
+        "assignment": {
+            "id": "80315771",
+            "quizIsPpc": true,
+            "status": "opened",
+            "scoreDisplay": "full",
+            "hasImmediateFeedback": false,
+            "studentResponses": "{\"236151992\": {\"VH911293\": [\"B\"], \"questions\": {\"7ecb2b2eb3924047486a3a48a9aff29a\": [\"B\"], \"bc1a56789f2d4e0e3dc4ab7819246af8\": [\"D\"], \"1b1d8eb54cbd973422bff75ac3174de3\": [\"B\"], \"abcc1bb60b054af3e5c1816b63e1f936\": [\"C\"], \"df110151fc9a9e2db7524899ae75f7dc\": [\"B\"], \"2c3576c5717b18df17bbc7de221746df\": [\"D\"], \"eee9a0be48d5e50ce91ea913132de5bc\": [\"E\"], \"e22be59e15b23ec857f8100f07c01614\": [\"A\"], \"5e64a403507295fcb9253a719be17f54\": [\"C\"], \"1e78f761a3133d559a65d9000fc49d24\": [\"E\"], \"b0c427d9b5a78333febd2113ae3f1085\": [\"C\"], \"1106c2c985b68a974fd4e27fee88f897\": [\"B\"], \"b8ab4f1338f0bcc1b27dc458cf7e0285\": [\"A\"], \"8921bac5c1f7c5fc0065a5efe895d36e\": [\"E\"], \"e44c0ad4f26a6c5bdcd565d5d7077d4f\": [\"C\"], \"d163c3e8db5697a2579b32513bc9364e\": [\"D\"], \"e5f8de9ee1e56b4bac7db2773ea55c06\": [\"B\"], \"56e235709c5e4fce31478590b4e8d8a3\": [\"A\"], \"1250eef4c3806ce56dc66be6a0629e53\": [\"E\"], \"ee7e58ec7413393b5befd47df7e00c85\": [\"E\"], \"11ddc309acbdaa8875355cf35b258e16\": [\"B\"]}, \"VH918379\": [\"D\"], \"VH907437\": [\"B\"], \"VH901705\": [\"C\"], \"VH918000\": [\"B\"], \"VH919220\": [\"D\"], \"VH918440\": [\"E\"], \"VH911290\": [\"A\"], \"VH911265\": [\"C\"], \"VR021329\": [\"E\"], \"VR021369\": [\"C\"], \"VH911447\": [\"B\"], \"VH907462\": [\"A\"], \"VH911292\": [\"E\"], \"VH907440\": [\"C\"], \"VR021409\": [\"D\"], \"VR021439\": [\"B\"], \"VH911603\": [\"A\"], \"VR021253\": [\"E\"], \"VR021300\": [\"E\"], \"VH911497\": [\"B\"]}}",
+            "scoringRubricResponses": "{}",
+            "results": "{\"security\": {\"consumer_key\": \"gHpBBB2lEYn2EDoS\", \"domain\": \"apclassroom.collegeboard.org\", \"timestamp\": \"20260906-2226\", \"signature\": \"$02$156c60041d219c3cbb37528851ab9f5fe47060b8064553a27bb4380102ae7840\"}, \"request\": {\"reports\": [{\"users\": [{\"id\": \"236151992\", \"name\": \"Antony Anish\"}], \"id\": \"2febce21-4ccd-4cc5-8e81-2aec8d485e9d\", \"render\": false, \"activities\": [{\"id\": \"TQ966670_1_28\", \"name\": \"Unit 1 Progress Check: MCQ\"}], \"scoring_type\": \"partial\", \"ui\": \"numeric\", \"type\": \"lastscore-by-activity-by-user\"}], \"organisation_id\": 537, \"meta\": {\"sdk\": {\"version\": \"v0.3.13\", \"lang\": \"python\", \"lang_version\": \"3.12.13\", \"platform\": \"Linux\", \"platform_version\": \"6.1.180-225.360.amzn2023.x86_64\"}}}}",
+            "resultsByItem": "{\"security\": {\"consumer_key\": \"gHpBBB2lEYn2EDoS\", \"domain\": \"apclassroom.collegeboard.org\", \"timestamp\": \"20260906-2226\", \"signature\": \"$02$06aec38c96a0f091baf556d334e388237628d44ec6c2bdbc44fd3352725e5f8d\"}, \"request\": {\"reports\": [{\"users\": [{\"id\": \"236151992\", \"name\": \"Antony Anish\"}], \"id\": \"85a023b7-3e60-4a0b-9c17-02d8a8d97109\", \"render\": false, \"activity_id\": \"TQ966670_1_28\", \"scoring_type\": \"partial\", \"type\": \"lastscore-by-item-by-user\"}], \"organisation_id\": 537, \"meta\": {\"sdk\": {\"version\": \"v0.3.13\", \"lang\": \"python\", \"lang_version\": \"3.12.13\", \"platform\": \"Linux\", \"platform_version\": \"6.1.180-225.360.amzn2023.x86_64\"}}}}",
+            "scoringRubricResults": "{\"security\": {\"consumer_key\": \"gHpBBB2lEYn2EDoS\", \"domain\": \"apclassroom.collegeboard.org\", \"timestamp\": \"20260906-2226\", \"signature\": \"$02$32248811e2e40172f47389cb230fd07253cf0a14399abad0b792da43533dc91d\"}, \"request\": {\"reports\": [{\"users\": [{\"id\": \"236151992\", \"name\": \"Antony Anish\"}], \"id\": \"bc91fad3-8042-4165-bead-495cab59b4d8\", \"render\": false, \"activity_id\": \"TQ966670_1_28_scoring\", \"scoring_type\": \"partial\", \"type\": \"lastscore-by-item-by-user\"}], \"organisation_id\": 537, \"meta\": {\"sdk\": {\"version\": \"v0.3.13\", \"lang\": \"python\", \"lang_version\": \"3.12.13\", \"platform\": \"Linux\", \"platform_version\": \"6.1.180-225.360.amzn2023.x86_64\"}}}}",
+            "responseAnalysis": "{\"security\": {\"consumer_key\": \"gHpBBB2lEYn2EDoS\", \"domain\": \"apclassroom.collegeboard.org\", \"timestamp\": \"20260906-2226\", \"signature\": \"$02$d41f14c5f1cf0930cc1464e619587786a9c43c78d949217a93178ab0a0515352\"}, \"request\": {\"reports\": [{\"render\": false, \"id\": \"3965b35a-8125-41c8-905c-da90d5cc22e4\", \"type\": \"response-analysis-by-item\", \"session_ids\": [\"8a7dceed-5b53-4f19-8879-462aaafbfda9\"], \"users\": [{\"id\": \"236151992\", \"name\": \"Antony Anish\"}]}], \"organisation_id\": 537, \"meta\": {\"sdk\": {\"version\": \"v0.3.13\", \"lang\": \"python\", \"lang_version\": \"3.12.13\", \"platform\": \"Linux\", \"platform_version\": \"6.1.180-225.360.amzn2023.x86_64\"}}}}",
+            "scoringRubricResponseAnalysis": null,
+            "studentScoringRubricResults": null,
+            "teacherScoringRubricResults": null,
+            "title": "Unit 1 Progress Check: MCQ",
+            "startsAt": "2026-09-04 08:29:00-04:00",
+            "dueAt": "2026-09-09 08:00:00-04:00",
+            "timer": null,
+            "sectionName": "Knight Per. 6",
+            "sectionId": "4125997",
+            "isSecure": false,
+            "studentScoring": false,
+            "hasStudentScores": false,
+            "isIndividualAssignment": false,
+            "printToggle": false,
+            "students": null,
+            "progress": {
+                "submitted": 0,
+                "scoring": 0,
+                "scored": 0,
+                "studentScored": 0,
+                "teacherAndStudentScored": 0,
+                "__typename": "AssignmentProgress"
+            },
+            "studentSessions": null,
+            "feedback": [
+                null
+            ],
+            "timeTaken": [
+                {
+                    "studentId": "236151992",
+                    "seconds": "1072.46117",
+                    "__typename": "TimeTaken"
+                }
+            ],
+            "timezone": "America/New_York",
+            "assessment": {
+                "id": "594531",
+                "title": "Unit 1 Progress Check: MCQ",
+                "isPracticeExam": false,
+                "isLearningCheckpoint": false,
+                "isPerformanceTask": false,
+                "associatedResources": [],
+                "isCbPracticeQuiz": false,
+                "isSampleQuiz": false,
+                "isSpp": false,
+                "isPpc": true,
+                "is_learning_checkpoint": false,
+                "__typename": "Assessment"
+            },
+            "customAssignmentSettings": null,
+            "questions": [
+                {
+                    "id": "594490",
+                    "ownerId": 9,
+                    "title": "Functional Region",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911293",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308709",
+                                    "label": "1.7",
+                                    "title": "Regional Analysis",
+                                    "description": "1.7: Regional Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308671",
+                                    "label": "Skill 1.A",
+                                    "title": "Skill 1.A",
+                                    "description": "Skill 1.A: Describe geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308709",
+                            "label": "1.7",
+                            "title": "Regional Analysis",
+                            "description": "1.7: Regional Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594509",
+                    "ownerId": 9,
+                    "title": "GIS And GPS Combined Use",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH918379",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308705",
+                                    "label": "1.3",
+                                    "title": "The Power of Geographic Data",
+                                    "description": "1.3: The Power of Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308705",
+                            "label": "1.3",
+                            "title": "The Power of Geographic Data",
+                            "description": "1.3: The Power of Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594521",
+                    "ownerId": 9,
+                    "title": "Map Types",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH907437",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308703",
+                                    "label": "1.1",
+                                    "title": "Introduction to Maps",
+                                    "description": "1.1: Introduction to Maps",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308703",
+                            "label": "1.1",
+                            "title": "Introduction to Maps",
+                            "description": "1.1: Introduction to Maps",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594484",
+                    "ownerId": 9,
+                    "title": "Statistics for German States",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH901705",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308704",
+                                    "label": "1.2",
+                                    "title": "Geographic Data",
+                                    "description": "1.2: Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308704",
+                            "label": "1.2",
+                            "title": "Geographic Data",
+                            "description": "1.2: Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594500",
+                    "ownerId": 9,
+                    "title": "Scale of Analysis",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH918000",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308708",
+                                    "label": "1.6",
+                                    "title": "Scales of Analysis",
+                                    "description": "1.6: Scales of Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308697",
+                                    "label": "Skill 5.A",
+                                    "title": "Skill 5.A",
+                                    "description": "Skill 5.A: Identify the scales of analysis presented by maps, quantitative and geospatial data, images, and landscapes.",
+                                    "category": "Skill Category 5: Analyze geographic theories, approaches, concepts, processes, and models across geographic scales to explain spatial relationships.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308708",
+                            "label": "1.6",
+                            "title": "Scales of Analysis",
+                            "description": "1.6: Scales of Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594512",
+                    "ownerId": 9,
+                    "title": "Population density map",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH919220",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308706",
+                                    "label": "1.4",
+                                    "title": "Spatial Concepts",
+                                    "description": "1.4: Spatial Concepts",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308706",
+                            "label": "1.4",
+                            "title": "Spatial Concepts",
+                            "description": "1.4: Spatial Concepts",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594502",
+                    "ownerId": 9,
+                    "title": "Relative Distance",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH918440",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308706",
+                                    "label": "1.4",
+                                    "title": "Spatial Concepts",
+                                    "description": "1.4: Spatial Concepts",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308706",
+                            "label": "1.4",
+                            "title": "Spatial Concepts",
+                            "description": "1.4: Spatial Concepts",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594498",
+                    "ownerId": 9,
+                    "title": "Topographic Map Selection",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911290",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308708",
+                                    "label": "1.6",
+                                    "title": "Scales of Analysis",
+                                    "description": "1.6: Scales of Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308697",
+                                    "label": "Skill 5.A",
+                                    "title": "Skill 5.A",
+                                    "description": "Skill 5.A: Identify the scales of analysis presented by maps, quantitative and geospatial data, images, and landscapes.",
+                                    "category": "Skill Category 5: Analyze geographic theories, approaches, concepts, processes, and models across geographic scales to explain spatial relationships.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308708",
+                            "label": "1.6",
+                            "title": "Scales of Analysis",
+                            "description": "1.6: Scales of Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594486",
+                    "ownerId": 9,
+                    "title": "Sustainability",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911265",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308707",
+                                    "label": "1.5",
+                                    "title": "Human-Environmental Interaction",
+                                    "description": "1.5: Human-Environmental Interaction",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308672",
+                                    "label": "Skill 1.B",
+                                    "title": "Skill 1.B",
+                                    "description": "Skill 1.B: Explain geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308707",
+                            "label": "1.5",
+                            "title": "Human-Environmental Interaction",
+                            "description": "1.5: Human-Environmental Interaction",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594504",
+                    "ownerId": 9,
+                    "title": "New York Density",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021329",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594482, 3)",
+                        "itemId": "594482",
+                        "title": "New York density",
+                        "learnosityItemReference": "VR021322",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308708",
+                                    "label": "1.6",
+                                    "title": "Scales of Analysis",
+                                    "description": "1.6: Scales of Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308697",
+                                    "label": "Skill 5.A",
+                                    "title": "Skill 5.A",
+                                    "description": "Skill 5.A: Identify the scales of analysis presented by maps, quantitative and geospatial data, images, and landscapes.",
+                                    "category": "Skill Category 5: Analyze geographic theories, approaches, concepts, processes, and models across geographic scales to explain spatial relationships.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308708",
+                            "label": "1.6",
+                            "title": "Scales of Analysis",
+                            "description": "1.6: Scales of Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594507",
+                    "ownerId": 9,
+                    "title": "New York Density",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021369",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594482, 3)",
+                        "itemId": "594482",
+                        "title": "New York density",
+                        "learnosityItemReference": "VR021322",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308706",
+                                    "label": "1.4",
+                                    "title": "Spatial Concepts",
+                                    "description": "1.4: Spatial Concepts",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308706",
+                            "label": "1.4",
+                            "title": "Spatial Concepts",
+                            "description": "1.4: Spatial Concepts",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594496",
+                    "ownerId": 9,
+                    "title": "Sugar Beets and Possibilism",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911447",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308707",
+                                    "label": "1.5",
+                                    "title": "Human-Environmental Interaction",
+                                    "description": "1.5: Human-Environmental Interaction",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308672",
+                                    "label": "Skill 1.B",
+                                    "title": "Skill 1.B",
+                                    "description": "Skill 1.B: Explain geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308707",
+                            "label": "1.5",
+                            "title": "Human-Environmental Interaction",
+                            "description": "1.5: Human-Environmental Interaction",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594525",
+                    "ownerId": 9,
+                    "title": "Vernacular Region",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH907462",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308709",
+                                    "label": "1.7",
+                                    "title": "Regional Analysis",
+                                    "description": "1.7: Regional Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308671",
+                                    "label": "Skill 1.A",
+                                    "title": "Skill 1.A",
+                                    "description": "Skill 1.A: Describe geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308709",
+                            "label": "1.7",
+                            "title": "Regional Analysis",
+                            "description": "1.7: Regional Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594488",
+                    "ownerId": 9,
+                    "title": "Broad Street Pump",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911292",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308707",
+                                    "label": "1.5",
+                                    "title": "Human-Environmental Interaction",
+                                    "description": "1.5: Human-Environmental Interaction",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308672",
+                                    "label": "Skill 1.B",
+                                    "title": "Skill 1.B",
+                                    "description": "Skill 1.B: Explain geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308707",
+                            "label": "1.5",
+                            "title": "Human-Environmental Interaction",
+                            "description": "1.5: Human-Environmental Interaction",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594523",
+                    "ownerId": 9,
+                    "title": "Cartogram",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH907440",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308703",
+                                    "label": "1.1",
+                                    "title": "Introduction to Maps",
+                                    "description": "1.1: Introduction to Maps",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308703",
+                            "label": "1.1",
+                            "title": "Introduction to Maps",
+                            "description": "1.1: Introduction to Maps",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594514",
+                    "ownerId": 9,
+                    "title": "GIS layers",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021409",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594483, 3)",
+                        "itemId": "594483",
+                        "title": "GIS layers",
+                        "learnosityItemReference": "VR021393",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308704",
+                                    "label": "1.2",
+                                    "title": "Geographic Data",
+                                    "description": "1.2: Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308704",
+                            "label": "1.2",
+                            "title": "Geographic Data",
+                            "description": "1.2: Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594517",
+                    "ownerId": 9,
+                    "title": "GIS layers",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021439",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594483, 3)",
+                        "itemId": "594483",
+                        "title": "GIS layers",
+                        "learnosityItemReference": "VR021393",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308704",
+                                    "label": "1.2",
+                                    "title": "Geographic Data",
+                                    "description": "1.2: Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308704",
+                            "label": "1.2",
+                            "title": "Geographic Data",
+                            "description": "1.2: Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594519",
+                    "ownerId": 9,
+                    "title": "Map Projections",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911603",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308703",
+                                    "label": "1.1",
+                                    "title": "Introduction to Maps",
+                                    "description": "1.1: Introduction to Maps",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308683",
+                                    "label": "Skill 3.A",
+                                    "title": "Skill 3.A",
+                                    "description": "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308703",
+                            "label": "1.1",
+                            "title": "Introduction to Maps",
+                            "description": "1.1: Introduction to Maps",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594492",
+                    "ownerId": 9,
+                    "title": "Adult literacy",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021253",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594481, 3)",
+                        "itemId": "594481",
+                        "title": "Adult literacy map",
+                        "learnosityItemReference": "VR021249",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308705",
+                                    "label": "1.3",
+                                    "title": "The Power of Geographic Data",
+                                    "description": "1.3: The Power of Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308705",
+                            "label": "1.3",
+                            "title": "The Power of Geographic Data",
+                            "description": "1.3: The Power of Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594494",
+                    "ownerId": 9,
+                    "title": "Adult literacy",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VR021300",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": {
+                        "id": "(594481, 3)",
+                        "itemId": "594481",
+                        "title": "Adult literacy map",
+                        "learnosityItemReference": "VR021249",
+                        "__typename": "SharedStimulus"
+                    },
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308705",
+                                    "label": "1.3",
+                                    "title": "The Power of Geographic Data",
+                                    "description": "1.3: The Power of Geographic Data",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308684",
+                                    "label": "Skill 3.B",
+                                    "title": "Skill 3.B",
+                                    "description": "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.",
+                                    "category": "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308705",
+                            "label": "1.3",
+                            "title": "The Power of Geographic Data",
+                            "description": "1.3: The Power of Geographic Data",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                },
+                {
+                    "id": "594510",
+                    "ownerId": 9,
+                    "title": "Commuting Functional Region",
+                    "isSecure": false,
+                    "isTopicQuestion": false,
+                    "isRetired": false,
+                    "isTeacherAuthored": false,
+                    "learnosityItemReference": "VH911497",
+                    "itemShareChain": null,
+                    "partSuffix": "",
+                    "stackedItemLearnosityItemReference": null,
+                    "sharedStimulus": null,
+                    "relatedSkills": [
+                        {
+                            "tagCategoryId": "19916",
+                            "title": "Topic",
+                            "children": [
+                                {
+                                    "tagId": "308709",
+                                    "label": "1.7",
+                                    "title": "Regional Analysis",
+                                    "description": "1.7: Regional Analysis",
+                                    "category": "1: Thinking Geographically",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        },
+                        {
+                            "tagCategoryId": "19913",
+                            "title": "Skill",
+                            "children": [
+                                {
+                                    "tagId": "308671",
+                                    "label": "Skill 1.A",
+                                    "title": "Skill 1.A",
+                                    "description": "Skill 1.A: Describe geographic concepts, processes, models, and theories.",
+                                    "category": "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts.",
+                                    "learnosityItemReference": null,
+                                    "__typename": "RelatedSkillTag"
+                                }
+                            ],
+                            "__typename": "RelatedSkill"
+                        }
+                    ],
+                    "relatedOtherTags": [
+                        {
+                            "tagId": "308709",
+                            "label": "1.7",
+                            "title": "Regional Analysis",
+                            "description": "1.7: Regional Analysis",
+                            "category": "Topic",
+                            "learnosityItemReference": "",
+                            "__typename": "RelatedOtherTag"
+                        }
+                    ],
+                    "type": "MultipleChoiceQuestion",
+                    "__typename": "MultipleChoiceQuestion"
+                }
+            ],
+            "categories": "['Topic', 'Skill']",
+            "scrambleQuestionsPerStudent": true,
+            "__typename": "Assignment"
+        }
+    }
+}
