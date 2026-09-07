@@ -34,5 +34,14 @@ Interactive FRQ study guides and model responses for AP exam preparation:
 - **Topic 7.3**: Measures of Development
 - **Topic 7.5**: Theories of Development
 
+### 🔤 `vocabRunner/` (Vocabulary Summative Simulator Hub)
+Interactive vocabulary test runners with dynamic word banks, 30-minute exam countdown timers, and instant diagnostics:
+- **`vocabRunner/index.html`**: Vocabulary Simulator Hub Dashboard
+- **`vocabRunner/vocab_test_runner-01.html`**: Set 01 — Core Definitions (30 Qs)
+- **`vocabRunner/vocab_test_runner-02.html`**: Set 02 — Complementary Terms & Spatial Relationships (30 Qs)
+- **`vocabRunner/vocab_test_runner-03.html`**: Set 03 — Real-World Scenarios & Applications (30 Qs)
+- **`vocabRunner/vocab_test_runner-04.html`**: Set 04 — Conceptual Traps & Subtle Distinctions (30 Qs)
+
 ---
 *Maintained by MegaAntony for Grade 9 AP Human Geography Exam Preparation.*
+

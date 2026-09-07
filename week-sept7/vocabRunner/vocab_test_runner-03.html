@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Human Geography — Vocabulary Simulator (Set 03: Real-World Scenarios)</title>
+  <style>
+    :root {
+      --primary: #0033a0;
+      --primary-dark: #002266;
+      --primary-light: #e6eef9;
+      --accent: #c99600;
+      --dark: #1b263b;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --correct-bg: #dcfce7;
+      --correct-border: #16a34a;
+      --correct-text: #166534;
+      --wrong-bg: #fee2e2;
+      --wrong-border: #dc2626;
+      --wrong-text: #991b1b;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 24px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .header-left h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .header-left p {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+
+    .timer-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.12);
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .timer-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #e2e8f0;
+    }
+    .timer-clock {
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-family: ui-monospace, monospace;
+      color: #ffffff;
+    }
+    .timer-warning {
+      color: #f87171 !important;
+      animation: pulse 1s infinite alternate;
+    }
+    @keyframes pulse { from { opacity: 0.7; } to { opacity: 1; } }
+
+    .main-layout {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .main-layout { grid-template-columns: 1fr; }
+    }
+
+    /* Navigation Bar between Sets */
+    .nav-sets {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .nav-set-btn {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text-main);
+      transition: all 0.15s;
+    }
+    .nav-set-btn:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+    .nav-set-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Word Bank Sidebar */
+    .word-bank-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      max-height: calc(100vh - 130px);
+      display: flex;
+      flex-direction: column;
+    }
+    .word-bank-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-light);
+    }
+    .word-bank-header h2 {
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+    .word-bank-search {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+    .word-bank-list {
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding-right: 4px;
+    }
+    .word-tag {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+      border: 1px solid transparent;
+    }
+    .word-tag:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-1px);
+    }
+    .word-tag.used {
+      background: #f1f5f9;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+
+    /* Questions Container */
+    .questions-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+    .question-card.active-card {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-light);
+    }
+    .question-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .question-text {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: var(--dark);
+    }
+    .input-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .answer-input {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+    .answer-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    /* Results styling */
+    .question-card.correct {
+      background-color: var(--correct-bg);
+      border-color: var(--correct-border);
+    }
+    .question-card.incorrect {
+      background-color: var(--wrong-bg);
+      border-color: var(--wrong-border);
+    }
+    .feedback-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb {
+      background: rgba(22, 163, 74, 0.1);
+      color: var(--correct-text);
+      border-left: 4px solid var(--correct-border);
+    }
+    .feedback-box.wrong-fb {
+      background: rgba(220, 38, 38, 0.1);
+      color: var(--wrong-text);
+      border-left: 4px solid var(--wrong-border);
+    }
+
+    /* Actions Bar */
+    .action-bar {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+    }
+    .btn {
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+    .btn-reset {
+      background: #e2e8f0;
+      color: var(--text-main);
+    }
+    .btn-reset:hover {
+      background: #cbd5e1;
+    }
+
+    /* Score banner */
+    .score-banner {
+      background: var(--card-bg);
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      display: none;
+    }
+    .score-banner.show { display: block; }
+    .score-title { font-size: 1.1rem; color: var(--text-muted); }
+    .score-number { font-size: 2.8rem; font-weight: 900; color: var(--primary); margin: 6px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Unit 1 Vocabulary Summative Simulator — Set 03</h1>
+    <p>30 Real-World Case Scenarios • 30 Minutes • Fill-in-the-Blank with Word Bank • Mrs. Knight</p>
+  </div>
+  <div class="timer-container">
+    <span class="timer-label">Time Remaining</span>
+    <span id="timerClock" class="timer-clock">30:00</span>
+  </div>
+</header>
+
+<div class="main-layout">
+  <!-- Left: Questions -->
+  <div>
+    <div class="nav-sets">
+      <a href="index.html" class="nav-set-btn" style="background: #f1f5f9; border-color: #cbd5e1; font-weight: 700;">🏠 Vocab Hub</a>
+      <a href="vocab_test_runner-01.html" class="nav-set-btn">Set 01 (Core Definitions)</a>
+      <a href="vocab_test_runner-02.html" class="nav-set-btn">Set 02 (Complementary Terms)</a>
+      <span class="nav-set-btn active">Set 03 (Real-World Scenarios)</span>
+      <a href="vocab_test_runner-04.html" class="nav-set-btn">Set 04 (Conceptual Traps)</a>
+    </div>
+
+    <div id="scoreBanner" class="score-banner">
+      <div class="score-title">Your Assessment Result</div>
+      <div id="scoreDisplay" class="score-number">0 / 30</div>
+      <p id="scoreSummary" style="font-size: 1rem;"></p>
+    </div>
+
+    <form id="quizForm" class="questions-container" onsubmit="return false;">
+      <!-- Questions injected by JS -->
+    </form>
+
+    <div class="action-bar">
+      <button type="button" class="btn btn-reset" onclick="resetQuiz()">Reset & Restart Timer</button>
+      <button type="button" class="btn btn-submit" onclick="gradeQuiz()">Submit Test & Grade</button>
+    </div>
+  </div>
+
+  <!-- Right: Sticky Word Bank -->
+  <aside>
+    <div class="word-bank-card">
+      <div class="word-bank-header">
+        <h2>Word Bank</h2>
+        <span id="wordCount" style="font-size: 0.8rem; color: var(--text-muted);">35 terms</span>
+      </div>
+      <input type="text" id="searchWords" class="word-bank-search" placeholder="Filter terms..." oninput="filterWords()">
+      <div id="wordBankList" class="word-bank-list">
+        <!-- Tags injected by JS -->
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script>
+const QUESTIONS_DATA = [
+  {
+    id: 1,
+    standard: "7.2 Economic Sectors",
+    prompt: "A worker in Shenzhen, China, operates machinery in a factory assembling microchips and screens into smartphones. This job belongs to the ________________.",
+    answers: ["secondary sector", "secondary"],
+    explanation: "Manufacturing, processing, and assembly of raw components into finished products falls under the secondary sector."
+  },
+  {
+    id: 2,
+    standard: "7.2 Economic Sectors",
+    prompt: "A rural family in the Andes mountains harvests potatoes and shears alpaca wool to sell raw at a local cooperative. This economic livelihood belongs to the ________________.",
+    answers: ["primary sector", "primary"],
+    explanation: "Harvesting, mining, forestry, and direct agricultural resource extraction define the primary sector."
+  },
+  {
+    id: 3,
+    standard: "7.2 Economic Sectors",
+    prompt: "An epidemiologist working at the CDC headquarters in Atlanta conducts statistical modeling and genomic data analysis to track viral spread. This intellectual career is in the ________________.",
+    answers: ["quaternary sector", "quaternary"],
+    explanation: "The quaternary sector centers on information management, scientific research, financial analysis, and software engineering."
+  },
+  {
+    id: 4,
+    standard: "7.2 Economic Sectors",
+    prompt: "A barista preparing espresso drinks and ringing up orders at a local Starbucks in Forsyth County is employed in the ________________.",
+    answers: ["tertiary sector", "tertiary"],
+    explanation: "Hospitality, retail sales, customer service, and commercial services are components of the tertiary sector."
+  },
+  {
+    id: 5,
+    standard: "7.5 Theories of Development",
+    prompt: "Nigeria’s national economy is acutely vulnerable to global recession because crude petroleum consistently accounts for over 85% of its foreign export revenue. Nigeria illustrates the dilemma of ________________.",
+    answers: ["commodity dependence", "commodity dependency"],
+    explanation: "Commodity dependence occurs when a country relies on primary raw commodities for 60%+ of its export earnings."
+  },
+  {
+    id: 6,
+    standard: "7.3 Measures of Development",
+    prompt: "A nurse from the Philippines working in a London hospital wires 40% of her monthly paycheck back to her parents in Manila to pay for medicine. These cross-border funds are known as ________________.",
+    answers: ["remittances", "remittance"],
+    explanation: "Remittances are financial transfers sent home by international migrant workers to support families in their country of origin."
+  },
+  {
+    id: 7,
+    standard: "7.3 Measures of Development",
+    prompt: "An economist adjusts the income of Indian software engineers to reflect that a dollar buys significantly more groceries and rent in Bangalore than in San Francisco. The economist is applying ________________.",
+    answers: ["purchasing power parity", "ppp"],
+    explanation: "Purchasing Power Parity (PPP) adjusts currency comparisons based on local prices and living costs."
+  },
+  {
+    id: 8,
+    standard: "7.3 Measures of Development",
+    prompt: "An undocumented mechanic fixing bicycles out of his garage for cash, without business registration, liability insurance, or reported income taxes, operates in the ________________.",
+    answers: ["informal sector", "informal economy"],
+    explanation: "The informal sector encompasses unregulated, unmonitored, and untaxed commercial activities without legal protections."
+  },
+  {
+    id: 9,
+    standard: "7.3 Measures of Development",
+    prompt: "South Africa scores a 0.63 on this mathematical scale because a small minority of the population earns an immense portion of national wealth while millions live in poverty. This metric is the ________________.",
+    answers: ["gini coefficient", "gini index"],
+    explanation: "The Gini Coefficient measures income inequality, where higher scores indicate severe wealth disparity."
+  },
+  {
+    id: 10,
+    standard: "7.5 Theories of Development",
+    prompt: "During the colonial era, European powers required African colonies to export raw copper, rubber, and cotton cheaply while purchasing expensive finished textiles and weapons exclusively from European factories. This structural imbalance is explained by the ________________.",
+    answers: ["dependency model", "dependency theory"],
+    explanation: "The Dependency Model describes how raw goods flow from poor periphery states to enrich wealthy core states, trapping the periphery in debt."
+  },
+  {
+    id: 11,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A world map intentionally shrinks the visual size of Canada and expands the geographic boundaries of India to reflect that India has a dramatically higher population. This is a ________________.",
+    answers: ["cartogram"],
+    explanation: "A cartogram distorts landmass sizes in direct proportion to a selected statistical variable."
+  },
+  {
+    id: 12,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A map publisher shades counties across the state of Georgia using darker greens for higher median incomes and lighter greens for lower incomes. This is a ________________.",
+    answers: ["choropleth map", "choropleth"],
+    explanation: "Choropleth maps use color shades or patterns within existing political boundaries to show quantitative data values."
+  },
+  {
+    id: 13,
+    standard: "1.1 Introduction to Maps",
+    prompt: "An agricultural atlas plots the location of dairy cattle in Wisconsin, where each individual red dot represents exactly 1,000 cows. This is a ________________.",
+    answers: ["dot distribution map", "dot density map"],
+    explanation: "A dot distribution map uses uniform dots representing a set quantity to show density and spatial dispersion."
+  },
+  {
+    id: 14,
+    standard: "1.1 Introduction to Maps",
+    prompt: "Hikers climbing Blood Mountain in northern Georgia consult a map showing closely spaced brown contour lines to evaluate slope steepness and elevation gains. They are using a ________________.",
+    answers: ["topographic map", "topographic"],
+    explanation: "Topographic maps use contour lines (isolines) of equal elevation to depict physical terrain and elevation change."
+  },
+  {
+    id: 15,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A traveler opens a folding road atlas to inspect interstate exits, rest stops, and county boundary lines. This is a ________________.",
+    answers: ["reference map", "reference maps"],
+    explanation: "Reference maps provide location and navigational reference without presenting specialized analytical datasets."
+  },
+  {
+    id: 16,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A map legend states that '1 unit on the map equals 100,000 units on the ground' (1:100,000). This mathematical representation is the ________________.",
+    answers: ["cartographic scale"],
+    explanation: "Cartographic scale expresses the ratio between map distance and real-world ground distance."
+  },
+  {
+    id: 17,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A poster showing the entire planet Earth hung on a classroom wall displays a huge expanse of territory with very small individual city detail. This is classified as a ________________.",
+    answers: ["small-scale map", "small scale map", "small-scale maps"],
+    explanation: "Small-scale maps depict large surface areas with a small amount of detail (e.g., 1:10,000,000)."
+  },
+  {
+    id: 18,
+    standard: "1.1 Introduction to Maps",
+    prompt: "Giving a 911 dispatcher the exact street address '585 Peachtree Pkwy, Cumming, GA' communicates the building's ________________.",
+    answers: ["absolute location"],
+    explanation: "Absolute location is the fixed, unchanging coordinate point or formal street address of a place."
+  },
+  {
+    id: 19,
+    standard: "1.1 Introduction to Maps",
+    prompt: "Telling a friend to meet you 'at the park across the street from the high school stadium, two miles west of the freeway' describes its ________________.",
+    answers: ["relative location"],
+    explanation: "Relative location describes a location in relation to other known physical landmarks and transit networks."
+  },
+  {
+    id: 20,
+    standard: "1.2 & 1.3 Geographic Data",
+    prompt: "NASA scientists track the retreat of Antarctic glaciers over a 20-year period using digital sensor imagery captured by orbiting Terra satellites. This technique is ________________.",
+    answers: ["remote sensing"],
+    explanation: "Remote sensing acquires environmental images and data via aircraft or satellites without physical contact."
+  },
+  {
+    id: 21,
+    standard: "1.2 & 1.3 Geographic Data",
+    prompt: "A smartphone delivery app uses satellite constellation signals to guide a driver turn-by-turn to a customer's doorstep. The app relies on ________________.",
+    answers: ["global positioning system", "gps"],
+    explanation: "GPS uses satellites to determine exact geographic coordinates and provide turn-by-turn navigational tracking."
+  },
+  {
+    id: 22,
+    standard: "1.2 & 1.3 Geographic Data",
+    prompt: "Forsyth County emergency managers overlay GIS layers containing 100-year flood zones, road elevations, and vulnerable elderly populations to design disaster evacuation routes. This technology is ________________.",
+    answers: ["geographic information systems", "gis", "geographic information system"],
+    explanation: "GIS allows planners to layer multiple geographic datasets (topography, zoning, demographics) for spatial problem-solving."
+  },
+  {
+    id: 23,
+    standard: "1.4 Spatial Concepts",
+    prompt: "New Orleans was historically vulnerable to catastrophic flooding because its physical land sits in a low-lying basin below sea level on marshy soil. This description details the city's ________________.",
+    answers: ["site"],
+    explanation: "Site refers to the internal, physical characteristics of a location (elevation, soil, climate, harbor access)."
+  },
+  {
+    id: 24,
+    standard: "1.4 Spatial Concepts",
+    prompt: "New York City became the financial capital of North America because of its prime location at the mouth of the Hudson River, connected via the Erie Canal to the Great Lakes and across the Atlantic to European trade. This highlights its ________________.",
+    answers: ["situation"],
+    explanation: "Situation describes the location of a place relative to other regional features and trade/transport connectivity."
+  },
+  {
+    id: 25,
+    standard: "1.4 Spatial Concepts",
+    prompt: "A Native American community visits an ancestral burial ground and experiences profound sacred reverence, cultural pride, and grief. This emotional connection reflects their ________________.",
+    answers: ["sense of place"],
+    explanation: "Sense of place is the subjective, emotional, and psychological attachment individuals have for a specific landscape."
+  },
+  {
+    id: 26,
+    standard: "1.4 Spatial Concepts",
+    prompt: "The name 'Baton Rouge' (French for 'Red Stick') assigned to Louisiana's capital marks historical French colonial territorial boundary posts. This name is a geographic ________________.",
+    answers: ["toponym", "toponyms"],
+    explanation: "A toponym is a formal place name that provides historical and cultural insight into who founded or settled an area."
+  },
+  {
+    id: 27,
+    standard: "1.4 Spatial Concepts",
+    prompt: "In 1850, traveling between London and Sydney took several months by sailing vessel; today, passengers fly between them in under 24 hours, and internet video calls are instantaneous. This phenomenon is ________________.",
+    answers: ["time-space compression", "space-time compression"],
+    explanation: "Time-space compression refers to technological advancements in transit and communication reducing the time needed to cross distance."
+  },
+  {
+    id: 28,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "In Dubai, a developer constructs an indoor refrigerated snow ski resort in the middle of a desert where outdoor temperatures exceed 110°F. This achievement is a classic example of ________________.",
+    answers: ["possibilism", "human possibilism"],
+    explanation: "Possibilism holds that human ingenuity, engineering, and technology can overcome extreme physical environmental constraints."
+  },
+  {
+    id: 29,
+    standard: "1.7 Regional Analysis",
+    prompt: "A commuter rail system (such as MARTA in Atlanta) features train lines radiating out from central downtown transit hubs to suburban stations. The commuter shed of this transit network is a ________________.",
+    answers: ["functional region", "nodal region"],
+    explanation: "A functional (nodal) region is organized around a focal hub with transit or economic linkages connecting the periphery."
+  },
+  {
+    id: 30,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "A municipal timber company plants two pine saplings for every mature tree harvested to ensure perpetual forest resources for future generations. This forestry practice embodies ________________.",
+    answers: ["sustainability"],
+    explanation: "Sustainability is the practice of meeting current societal resource needs without depleting them for future generations."
+  }
+];
+
+const WORD_BANK_TERMS = [
+  "Absolute Location", "Cartogram", "Cartographic Scale", "Choropleth Map",
+  "Commodity Dependence", "Dependency Model", "Dot Distribution Map", "Field Observations",
+  "Formal Sector", "Functional Region", "Gender Inequality Index", "Geographic Information Systems (GIS)",
+  "Gini Coefficient", "Global Positioning System (GPS)", "Human Development Index", "Informal Sector",
+  "Possibilism", "Primary Sector", "Purchasing Power Parity", "Quaternary Sector",
+  "Reference Map", "Relative Location", "Remittances", "Remote Sensing",
+  "Secondary Sector", "Sense of Place", "Site", "Situation",
+  "Small-Scale Maps", "Sustainability", "Tertiary Sector", "Time-Space Compression",
+  "Topographic Map", "Toponym"
+];
+
+let activeInputId = null;
+let timerInterval = null;
+let secondsRemaining = 30 * 60;
+
+function initQuiz() {
+  const form = document.getElementById("quizForm");
+  form.innerHTML = "";
+
+  QUESTIONS_DATA.forEach((q, idx) => {
+    const card = document.createElement("div");
+    card.className = "question-card";
+    card.id = `qCard_${q.id}`;
+    card.innerHTML = `
+      <div class="question-meta">
+        <span>Scenario ${idx + 1} of 30</span>
+        <span>${q.standard}</span>
+      </div>
+      <div class="question-text">${q.prompt}</div>
+      <div class="input-row">
+        <input type="text" id="ans_${q.id}" class="answer-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Type or click a term from the Word Bank..." onfocus="setActiveInput(${q.id})" oninput="updateWordUsage()">
+      </div>
+      <div id="fb_${q.id}" class="feedback-box"></div>
+    `;
+    form.appendChild(card);
+  });
+
+  renderWordBank();
+  startTimer();
+}
+
+function renderWordBank() {
+  const countEl = document.getElementById("wordCount");
+  if (countEl) countEl.textContent = WORD_BANK_TERMS.length + " terms";
+  const list = document.getElementById("wordBankList");
+  list.innerHTML = "";
+  WORD_BANK_TERMS.forEach(term => {
+    const span = document.createElement("span");
+    span.className = "word-tag";
+    span.id = `tag_${sanitize(term)}`;
+    span.textContent = term;
+    span.onclick = () => selectWord(term);
+    list.appendChild(span);
+  });
+}
+
+function sanitize(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function setActiveInput(id) {
+  activeInputId = id;
+  document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active-card"));
+  const currentCard = document.getElementById(`qCard_${id}`);
+  if (currentCard) currentCard.classList.add("active-card");
+}
+
+function selectWord(term) {
+  if (!activeInputId) {
+    for (let q of QUESTIONS_DATA) {
+      const input = document.getElementById(`ans_${q.id}`);
+      if (!input.value.trim()) {
+        activeInputId = q.id;
+        break;
+      }
+    }
+  }
+  if (activeInputId) {
+    const input = document.getElementById(`ans_${activeInputId}`);
+    input.value = term;
+    updateWordUsage();
+    const nextQ = QUESTIONS_DATA.find(q => q.id > activeInputId && !document.getElementById(`ans_${q.id}`).value.trim());
+    if (nextQ) {
+      setActiveInput(nextQ.id);
+      document.getElementById(`ans_${nextQ.id}`).focus();
+    }
+  }
+}
+
+function updateWordUsage() {
+  const allValues = QUESTIONS_DATA.map(q => document.getElementById(`ans_${q.id}`).value.trim().toLowerCase());
+  WORD_BANK_TERMS.forEach(term => {
+    const tag = document.getElementById(`tag_${sanitize(term)}`);
+    if (tag) {
+      const isUsed = allValues.some(v => v === term.toLowerCase() || v.includes(term.toLowerCase()));
+      if (isUsed) {
+        tag.classList.add("used");
+      } else {
+        tag.classList.remove("used");
+      }
+    }
+  });
+}
+
+function filterWords() {
+  const q = document.getElementById("searchWords").value.toLowerCase();
+  WORD_BANK_TERMS.forEach(term => {
+    const tag = document.getElementById(`tag_${sanitize(term)}`);
+    if (tag) {
+      tag.style.display = term.toLowerCase().includes(q) ? "inline-block" : "none";
+    }
+  });
+}
+
+function startTimer() {
+  clearInterval(timerInterval);
+  secondsRemaining = 30 * 60;
+  const clock = document.getElementById("timerClock");
+  timerInterval = setInterval(() => {
+    secondsRemaining--;
+    if (secondsRemaining <= 0) {
+      clearInterval(timerInterval);
+      clock.textContent = "00:00";
+      clock.classList.add("timer-warning");
+      alert("Time is up! Submitting your test for grading.");
+      gradeQuiz();
+      return;
+    }
+    const mins = Math.floor(secondsRemaining / 60);
+    const secs = secondsRemaining % 60;
+    clock.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    if (secondsRemaining <= 300) {
+      clock.classList.add("timer-warning");
+    } else {
+      clock.classList.remove("timer-warning");
+    }
+  }, 1000);
+}
+
+function normalize(str) {
+  if (!str) return "";
+  return str.toLowerCase().replace(/[^a-z0-9]/g, "").trim();
+}
+
+function cleanVariants(str) {
+  if (!str) return [];
+  const s = str.trim().toLowerCase();
+  const withoutParens = s.replace(/\(.*?\)/g, "").trim();
+  const insideParensMatch = s.match(/\((.*?)\)/);
+  const insideParens = insideParensMatch ? insideParensMatch[1].trim() : "";
+  return Array.from(new Set([
+    normalize(s),
+    normalize(withoutParens),
+    normalize(insideParens)
+  ])).filter(x => x.length > 0);
+}
+
+function checkMatch(userInput, answersList) {
+  const userVariants = cleanVariants(userInput);
+  for (let u of userVariants) {
+    for (let ans of answersList) {
+      const ansVariants = cleanVariants(ans);
+      for (let a of ansVariants) {
+        if (u === a) return true;
+        if (u.length > 3 && u.replace(/s$/, "") === a.replace(/s$/, "")) return true;
+      }
+    }
+  }
+  return false;
+}
+
+function gradeQuiz() {
+  clearInterval(timerInterval);
+  let correctCount = 0;
+
+  QUESTIONS_DATA.forEach(q => {
+    const input = document.getElementById(`ans_${q.id}`);
+    const card = document.getElementById(`qCard_${q.id}`);
+    const fb = document.getElementById(`fb_${q.id}`);
+    const userVal = normalize(input.value);
+
+    const isCorrect = checkMatch(input.value, q.answers);
+
+    card.classList.remove("correct", "incorrect");
+    fb.classList.remove("correct-fb", "wrong-fb");
+
+    if (isCorrect) {
+      correctCount++;
+      card.classList.add("correct");
+      fb.className = "feedback-box show correct-fb";
+      fb.innerHTML = `<strong>Correct!</strong> ${q.explanation}`;
+    } else {
+      card.classList.add("incorrect");
+      fb.className = "feedback-box show wrong-fb";
+      fb.innerHTML = `<strong>Incorrect.</strong> Correct answer: <u>${q.answers[0].toUpperCase()}</u><br>${q.explanation}`;
+    }
+  });
+
+  const banner = document.getElementById("scoreBanner");
+  const display = document.getElementById("scoreDisplay");
+  const summary = document.getElementById("scoreSummary");
+  banner.classList.add("show");
+  display.textContent = `${correctCount} / ${QUESTIONS_DATA.length} (${Math.round((correctCount / QUESTIONS_DATA.length) * 100)}%)`;
+
+  if (correctCount >= 27) {
+    summary.innerHTML = `<span style="color: #16a34a; font-weight: 700;">Outstanding Scenario Mastery!</span> You understand how these concepts apply to the real world!`;
+  } else if (correctCount >= 21) {
+    summary.innerHTML = `<span style="color: #c99600; font-weight: 700;">Good Effort!</span> Review the missed real-world applications below, then try again.`;
+  } else {
+    summary.innerHTML = `<span style="color: #dc2626; font-weight: 700;">Needs Review.</span> Review the concrete examples in <code>01_VOCABULARY_MASTER_LIST.md</code> and retake!`;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function resetQuiz() {
+  if (confirm("Are you sure you want to reset your test and restart the 30-minute timer?")) {
+    document.getElementById("scoreBanner").classList.remove("show");
+    QUESTIONS_DATA.forEach(q => {
+      document.getElementById(`ans_${q.id}`).value = "";
+      document.getElementById(`qCard_${q.id}`).className = "question-card";
+      document.getElementById(`fb_${q.id}`).className = "feedback-box";
+    });
+    activeInputId = null;
+    renderWordBank();
+    startTimer();
+  }
+}
+
+window.onload = initQuiz;
+</script>
+
+</body>
+</html>

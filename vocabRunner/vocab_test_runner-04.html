@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Human Geography — Vocabulary Simulator (Set 04: Conceptual Traps & Distinctions)</title>
+  <style>
+    :root {
+      --primary: #0033a0;
+      --primary-dark: #002266;
+      --primary-light: #e6eef9;
+      --accent: #c99600;
+      --dark: #1b263b;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --correct-bg: #dcfce7;
+      --correct-border: #16a34a;
+      --correct-text: #166534;
+      --wrong-bg: #fee2e2;
+      --wrong-border: #dc2626;
+      --wrong-text: #991b1b;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 24px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .header-left h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .header-left p {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+
+    .timer-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.12);
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .timer-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #e2e8f0;
+    }
+    .timer-clock {
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-family: ui-monospace, monospace;
+      color: #ffffff;
+    }
+    .timer-warning {
+      color: #f87171 !important;
+      animation: pulse 1s infinite alternate;
+    }
+    @keyframes pulse { from { opacity: 0.7; } to { opacity: 1; } }
+
+    .main-layout {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .main-layout { grid-template-columns: 1fr; }
+    }
+
+    /* Navigation Bar between Sets */
+    .nav-sets {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .nav-set-btn {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text-main);
+      transition: all 0.15s;
+    }
+    .nav-set-btn:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+    .nav-set-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Word Bank Sidebar */
+    .word-bank-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      max-height: calc(100vh - 130px);
+      display: flex;
+      flex-direction: column;
+    }
+    .word-bank-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-light);
+    }
+    .word-bank-header h2 {
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+    .word-bank-search {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+    .word-bank-list {
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding-right: 4px;
+    }
+    .word-tag {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+      border: 1px solid transparent;
+    }
+    .word-tag:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-1px);
+    }
+    .word-tag.used {
+      background: #f1f5f9;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+
+    /* Questions Container */
+    .questions-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+    .question-card.active-card {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-light);
+    }
+    .question-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .question-text {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: var(--dark);
+    }
+    .input-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .answer-input {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+    .answer-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    /* Results styling */
+    .question-card.correct {
+      background-color: var(--correct-bg);
+      border-color: var(--correct-border);
+    }
+    .question-card.incorrect {
+      background-color: var(--wrong-bg);
+      border-color: var(--wrong-border);
+    }
+    .feedback-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb {
+      background: rgba(22, 163, 74, 0.1);
+      color: var(--correct-text);
+      border-left: 4px solid var(--correct-border);
+    }
+    .feedback-box.wrong-fb {
+      background: rgba(220, 38, 38, 0.1);
+      color: var(--wrong-text);
+      border-left: 4px solid var(--wrong-border);
+    }
+
+    /* Actions Bar */
+    .action-bar {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+    }
+    .btn {
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+    .btn-reset {
+      background: #e2e8f0;
+      color: var(--text-main);
+    }
+    .btn-reset:hover {
+      background: #cbd5e1;
+    }
+
+    /* Score banner */
+    .score-banner {
+      background: var(--card-bg);
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      display: none;
+    }
+    .score-banner.show { display: block; }
+    .score-title { font-size: 1.1rem; color: var(--text-muted); }
+    .score-number { font-size: 2.8rem; font-weight: 900; color: var(--primary); margin: 6px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Unit 1 Vocabulary Summative Simulator — Set 04</h1>
+    <p>30 Conceptual Traps & AP Distinctions • 30 Minutes • Fill-in-the-Blank with Word Bank • Mrs. Knight</p>
+  </div>
+  <div class="timer-container">
+    <span class="timer-label">Time Remaining</span>
+    <span id="timerClock" class="timer-clock">30:00</span>
+  </div>
+</header>
+
+<div class="main-layout">
+  <!-- Left: Questions -->
+  <div>
+    <div class="nav-sets">
+      <a href="index.html" class="nav-set-btn" style="background: #f1f5f9; border-color: #cbd5e1; font-weight: 700;">🏠 Vocab Hub</a>
+      <a href="vocab_test_runner-01.html" class="nav-set-btn">Set 01 (Core Definitions)</a>
+      <a href="vocab_test_runner-02.html" class="nav-set-btn">Set 02 (Complementary Terms)</a>
+      <a href="vocab_test_runner-03.html" class="nav-set-btn">Set 03 (Real-World Scenarios)</a>
+      <span class="nav-set-btn active">Set 04 (Conceptual Traps)</span>
+    </div>
+
+    <div id="scoreBanner" class="score-banner">
+      <div class="score-title">Your Assessment Result</div>
+      <div id="scoreDisplay" class="score-number">0 / 30</div>
+      <p id="scoreSummary" style="font-size: 1rem;"></p>
+    </div>
+
+    <form id="quizForm" class="questions-container" onsubmit="return false;">
+      <!-- Questions injected by JS -->
+    </form>
+
+    <div class="action-bar">
+      <button type="button" class="btn btn-reset" onclick="resetQuiz()">Reset & Restart Timer</button>
+      <button type="button" class="btn btn-submit" onclick="gradeQuiz()">Submit Test & Grade</button>
+    </div>
+  </div>
+
+  <!-- Right: Sticky Word Bank -->
+  <aside>
+    <div class="word-bank-card">
+      <div class="word-bank-header">
+        <h2>Word Bank</h2>
+        <span id="wordCount" style="font-size: 0.8rem; color: var(--text-muted);">35 terms</span>
+      </div>
+      <input type="text" id="searchWords" class="word-bank-search" placeholder="Filter terms..." oninput="filterWords()">
+      <div id="wordBankList" class="word-bank-list">
+        <!-- Tags injected by JS -->
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script>
+const QUESTIONS_DATA = [
+  {
+    id: 1,
+    standard: "1.4 Spatial Concepts",
+    prompt: "While ________________ refers to the physical geometric distance or interval between two points on Earth, a location that has been imbued with human meaning, memory, and cultural characteristics becomes a place.",
+    answers: ["space"],
+    explanation: "Space is the geometric physical interval between points; place is space given distinct human and physical identity."
+  },
+  {
+    id: 2,
+    standard: "1.4 Spatial Concepts",
+    prompt: "While a city’s ________________ relates to its internal physical attributes like soil type, elevation, and freshwater supply, its situation describes its external connectivity to outside regional trade networks.",
+    answers: ["site"],
+    explanation: "Site = internal physical characteristics; Situation = relative location and connectivity to other places."
+  },
+  {
+    id: 3,
+    standard: "1.4 Spatial Concepts",
+    prompt: "Unlike space-time compression which reduces travel times through technology, ________________ is the geographic principle stating that interaction between two places diminishes as the physical distance between them expands.",
+    answers: ["distance decay"],
+    explanation: "Distance decay states that interaction decreases with distance. Time-space compression counteracts this friction."
+  },
+  {
+    id: 4,
+    standard: "1.4 Spatial Concepts",
+    prompt: "Distance decay occurs because the ________________ requires financial capital, human energy, and travel time to overcome.",
+    answers: ["friction of distance"],
+    explanation: "Friction of distance is the physical impedance and cost inherent in moving across distance."
+  },
+  {
+    id: 5,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "While ________________ argued that tropical climates inherently produce lazy societies (a 19th-century colonial rationalization), modern geographers embrace possibilism, noting that human societies innovate technologies to adapt to any environment.",
+    answers: ["environmental determinism"],
+    explanation: "Environmental determinism claimed the physical climate strictly dictates human cultural progress."
+  },
+  {
+    id: 6,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "Geographer Carl Sauer defined the ________________ as the visible tangible imprint of human culture, architecture, and technology superimposed on the physical natural environment.",
+    answers: ["cultural landscape"],
+    explanation: "Cultural landscape refers to the modified visible environment showing human cultural and architectural imprint."
+  },
+  {
+    id: 7,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "Streets, viaducts, apartment skyscrapers, and asphalt parking lots constructed by humans are components of the ________________.",
+    answers: ["built environment"],
+    explanation: "The built environment consists of man-made physical structures and facilities created for human habitation."
+  },
+  {
+    id: 8,
+    standard: "1.6 Scales of Analysis",
+    prompt: "A map displaying the entire Earth, but aggregating and shading data on an individual country-by-country basis, has a ________________ of analysis, NOT a global scale of analysis.",
+    answers: ["national scale", "national"],
+    explanation: "The scale of analysis is determined by the data reporting unit (country-level = national scale), regardless of the map's visual frame."
+  },
+  {
+    id: 9,
+    standard: "1.6 Scales of Analysis",
+    prompt: "When researchers study poverty patterns across different census tracts or school attendance zones within Forsyth County, they are operating at a ________________ of analysis.",
+    answers: ["local scale", "local"],
+    explanation: "Local scale analysis investigates fine-grained community, precinct, or neighborhood data variations."
+  },
+  {
+    id: 10,
+    standard: "1.6 Scales of Analysis",
+    prompt: "A geographer compares economic data grouped across Sub-Saharan Africa, Latin America, and Southeast Asia. The scale of analysis being utilized is the ________________.",
+    answers: ["world scale", "world regional scale"],
+    explanation: "World Scale (or World Regional Scale) compares broad multi-country cultural or sub-continental regions."
+  },
+  {
+    id: 11,
+    standard: "1.7 Regional Analysis",
+    prompt: "The European Union Eurozone is classified as a ________________ because all member states within its borders share the legal, uniform characteristic of utilizing the euro currency.",
+    answers: ["formal region", "uniform region", "homogeneous region"],
+    explanation: "A formal region is characterized by a shared, uniform characteristic (political borders, common currency, official language) throughout."
+  },
+  {
+    id: 12,
+    standard: "1.7 Regional Analysis",
+    prompt: "An airport flight route network radiating out from Delta's hub in Atlanta to regional feeder airports across the Southeast forms a ________________.",
+    answers: ["functional region", "nodal region"],
+    explanation: "A functional (nodal) region is organized around a focal node, with interaction dropping off toward the periphery."
+  },
+  {
+    id: 13,
+    standard: "1.7 Regional Analysis",
+    prompt: "An informal region such as 'The Rust Belt' or 'The American South,' whose fuzzy borders are based on people's subjective cultural perceptions rather than legal surveys, is a ________________.",
+    answers: ["vernacular region", "perceptual region"],
+    explanation: "Vernacular (perceptual) regions exist in people's cultural beliefs and mental maps without precise legal borders."
+  },
+  {
+    id: 14,
+    standard: "7.5 Theories of Development",
+    prompt: "In Wallerstein's World Systems Theory, nations such as Brazil, India, and China that possess aspects of both core and periphery—characterized by rapid industrialization and manufacturing—are categorized as the ________________.",
+    answers: ["semi-periphery", "semi periphery", "semi-periphery countries"],
+    explanation: "Semi-periphery nations occupy the middle tier: active in manufacturing, industrial exports, and emerging economies (BRICS)."
+  },
+  {
+    id: 15,
+    standard: "7.5 Theories of Development",
+    prompt: "In Wallerstein's model, impoverished nations like Chad and Afghanistan that have low-skill labor, weak governance, and extract raw materials for low wages are located in the ________________.",
+    answers: ["periphery", "periphery countries"],
+    explanation: "The periphery comprises low-income, resource-extracting nations exploited by the industrialized core."
+  },
+  {
+    id: 16,
+    standard: "7.5 Theories of Development",
+    prompt: "Highly developed, post-industrial nations with capital-intensive high-tech production, dominant militaries, and corporate headquarters (such as the US, UK, and Japan) form the ________________ of the world economy.",
+    answers: ["core", "core countries"],
+    explanation: "The core dominates global trade, controls capital investment, and manufactures high-value advanced goods."
+  },
+  {
+    id: 17,
+    standard: "7.2 Economic Sectors",
+    prompt: "While a high-school math teacher or commercial banker works in the tertiary sector, a computer software engineer developing artificial intelligence algorithms operates in the ________________.",
+    answers: ["quaternary sector", "quaternary"],
+    explanation: "The quaternary sector centers on intellectual knowledge production, research, data science, and financial analysis."
+  },
+  {
+    id: 18,
+    standard: "7.2 Economic Sectors",
+    prompt: "The highest tier of economic decision-making, consisting of national presidents, corporate CEOs, and university chancellors formulating sweeping policy, is the ________________.",
+    answers: ["quinary sector", "quinary"],
+    explanation: "The quinary sector represents top executive decision makers and institutional leadership."
+  },
+  {
+    id: 19,
+    standard: "7.3 Measures of Development",
+    prompt: "Unlike GDP which measures production inside a nation's borders, ________________ calculates the total value of all goods and services produced by a nation's citizens and businesses, even if manufactured overseas.",
+    answers: ["gross national product", "gnp"],
+    explanation: "GNP includes earnings and output of domestic citizens and corporations abroad, whereas GDP is strictly territorial."
+  },
+  {
+    id: 20,
+    standard: "7.3 Measures of Development",
+    prompt: "On the Gini Coefficient scale, a score approaching 0 represents complete income equality, whereas a score approaching 1.0 indicates complete income ________________.",
+    answers: ["inequality"],
+    explanation: "Gini Coefficient of 0 = perfect equality; 1.0 = total inequality (one person owns all wealth)."
+  },
+  {
+    id: 21,
+    standard: "7.3 Measures of Development",
+    prompt: "The United Nations Human Development Index (HDI) measures development through three key dimensions: health (life expectancy), standard of living (GNI per capita), and ________________ (expected and mean years of schooling).",
+    answers: ["education", "knowledge"],
+    explanation: "HDI combines three dimensions: Health (Life Expectancy), Education (Years of Schooling), and Standard of Living (GNI PPP)."
+  },
+  {
+    id: 22,
+    standard: "7.3 Measures of Development",
+    prompt: "On the UN Gender Inequality Index (GII), a score of 0 indicates complete gender equality, while a score of 1.0 indicates that women face severe ________________ across health, empowerment, and labor.",
+    answers: ["inequality", "disparity"],
+    explanation: "Unlike HDI (where 1.0 is highest development), a GII score of 1.0 indicates maximal gender inequality."
+  },
+  {
+    id: 23,
+    standard: "1.1 Introduction to Maps",
+    prompt: "All flat 2D maps must suffer from geometric ________________ in shape, area, distance, or direction because it is mathematically impossible to flatten a 3D sphere without distortion.",
+    answers: ["distortion"],
+    explanation: "Map distortion is inevitable when projecting a spherical Earth onto a flat two-dimensional surface."
+  },
+  {
+    id: 24,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A map showing a neighborhood with a scale fraction of 1:2,000 is a ________________ map because it covers a small geographic area and shows a large amount of detail.",
+    answers: ["large-scale map", "large scale map", "large-scale", "large scale"],
+    explanation: "Large-scale maps show small land areas with large detail (e.g., 1:2,000). Small-scale maps show large areas with small detail (e.g., 1:10,000,000)."
+  },
+  {
+    id: 25,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A weather map depicting isotherms by drawing continuous curved lines that connect points of identical air temperature is an example of an ________________.",
+    answers: ["isoline map", "isoline"],
+    explanation: "Isoline maps use lines connecting points of equal numerical value (temperature, air pressure, or elevation)."
+  },
+  {
+    id: 26,
+    standard: "1.1 Introduction to Maps",
+    prompt: "A map showing property boundaries, subdivision lots, and official land ownership records recorded in county courthouses is a ________________.",
+    answers: ["plat map", "plat"],
+    explanation: "Plat maps are reference maps showing legal tract lines and property ownership boundaries."
+  },
+  {
+    id: 27,
+    standard: "1.2 & 1.3 Geographic Data",
+    prompt: "While ________________ uses satellite signals to identify absolute coordinates on Earth, Geographic Information Systems (GIS) stores and analyzes layered digital map datasets.",
+    answers: ["global positioning system", "gps"],
+    explanation: "GPS provides navigation and coordinate positioning; GIS provides complex layered database spatial analysis."
+  },
+  {
+    id: 28,
+    standard: "1.4 Spatial Concepts",
+    prompt: "The spatial arrangement of farmhouses clustered around a central church square in a European village is an example of a nucleated or clustered ________________.",
+    answers: ["pattern"],
+    explanation: "Pattern describes the spatial or geometric arrangement of features across space (linear, clustered, dispersed)."
+  },
+  {
+    id: 29,
+    standard: "1.5 Human-Environment Interaction",
+    prompt: "The concept that human societies must harvest timber, extract water, and utilize energy at rates that preserve these resources perpetually for our grandchildren is called ________________.",
+    answers: ["sustainability"],
+    explanation: "Sustainability ensures that resource consumption meets present human needs without depleting supplies for future generations."
+  },
+  {
+    id: 30,
+    standard: "1.7 Regional Analysis",
+    prompt: "Regional boundaries are considered ________________ because natural environments change (desertification) and political treaties repeatedly alter historical borders over time.",
+    answers: ["transitional"],
+    explanation: "Boundaries are transitional and fluid because geopolitical events, environmental dynamics, and cultural perceptions change over time."
+  }
+];
+
+const WORD_BANK_TERMS = [
+  "Built Environment", "Core", "Cultural Landscape", "Distance Decay",
+  "Distortion", "Education", "Environmental Determinism", "Formal Region",
+  "Friction of Distance", "Functional Region", "Global Positioning System (GPS)", "Gross National Product",
+  "Inequality", "Informal Sector", "Isoline Map", "Large-Scale Map",
+  "Local Scale", "National Scale", "Pattern", "Periphery",
+  "Plat Map", "Possibilism", "Quaternary Sector", "Quinary Sector",
+  "Semi-Periphery", "Site", "Situation", "Space",
+  "Sustainability", "Time-Space Compression", "Toponym", "Transitional",
+  "Vernacular Region", "World Scale"
+];
+
+let activeInputId = null;
+let timerInterval = null;
+let secondsRemaining = 30 * 60;
+
+function initQuiz() {
+  const form = document.getElementById("quizForm");
+  form.innerHTML = "";
+
+  QUESTIONS_DATA.forEach((q, idx) => {
+    const card = document.createElement("div");
+    card.className = "question-card";
+    card.id = `qCard_${q.id}`;
+    card.innerHTML = `
+      <div class="question-meta">
+        <span>Concept Drill ${idx + 1} of 30</span>
+        <span>${q.standard}</span>
+      </div>
+      <div class="question-text">${q.prompt}</div>
+      <div class="input-row">
+        <input type="text" id="ans_${q.id}" class="answer-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Type or click a term from the Word Bank..." onfocus="setActiveInput(${q.id})" oninput="updateWordUsage()">
+      </div>
+      <div id="fb_${q.id}" class="feedback-box"></div>
+    `;
+    form.appendChild(card);
+  });
+
+  renderWordBank();
+  startTimer();
+}
+
+function renderWordBank() {
+  const countEl = document.getElementById("wordCount");
+  if (countEl) countEl.textContent = WORD_BANK_TERMS.length + " terms";
+  const list = document.getElementById("wordBankList");
+  list.innerHTML = "";
+  WORD_BANK_TERMS.forEach(term => {
+    const span = document.createElement("span");
+    span.className = "word-tag";
+    span.id = `tag_${sanitize(term)}`;
+    span.textContent = term;
+    span.onclick = () => selectWord(term);
+    list.appendChild(span);
+  });
+}
+
+function sanitize(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function setActiveInput(id) {
+  activeInputId = id;
+  document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active-card"));
+  const currentCard = document.getElementById(`qCard_${id}`);
+  if (currentCard) currentCard.classList.add("active-card");
+}
+
+function selectWord(term) {
+  if (!activeInputId) {
+    for (let q of QUESTIONS_DATA) {
+      const input = document.getElementById(`ans_${q.id}`);
+      if (!input.value.trim()) {
+        activeInputId = q.id;
+        break;
+      }
+    }
+  }
+  if (activeInputId) {
+    const input = document.getElementById(`ans_${activeInputId}`);
+    input.value = term;
+    updateWordUsage();
+    const nextQ = QUESTIONS_DATA.find(q => q.id > activeInputId && !document.getElementById(`ans_${q.id}`).value.trim());
+    if (nextQ) {
+      setActiveInput(nextQ.id);
+      document.getElementById(`ans_${nextQ.id}`).focus();
+    }
+  }
+}
+
+function updateWordUsage() {
+  const allValues = QUESTIONS_DATA.map(q => document.getElementById(`ans_${q.id}`).value.trim().toLowerCase());
+  WORD_BANK_TERMS.forEach(term => {
+    const tag = document.getElementById(`tag_${sanitize(term)}`);
+    if (tag) {
+      const isUsed = allValues.some(v => v === term.toLowerCase() || v.includes(term.toLowerCase()));
+      if (isUsed) {
+        tag.classList.add("used");
+      } else {
+        tag.classList.remove("used");
+      }
+    }
+  });
+}
+
+function filterWords() {
+  const q = document.getElementById("searchWords").value.toLowerCase();
+  WORD_BANK_TERMS.forEach(term => {
+    const tag = document.getElementById(`tag_${sanitize(term)}`);
+    if (tag) {
+      tag.style.display = term.toLowerCase().includes(q) ? "inline-block" : "none";
+    }
+  });
+}
+
+function startTimer() {
+  clearInterval(timerInterval);
+  secondsRemaining = 30 * 60;
+  const clock = document.getElementById("timerClock");
+  timerInterval = setInterval(() => {
+    secondsRemaining--;
+    if (secondsRemaining <= 0) {
+      clearInterval(timerInterval);
+      clock.textContent = "00:00";
+      clock.classList.add("timer-warning");
+      alert("Time is up! Submitting your test for grading.");
+      gradeQuiz();
+      return;
+    }
+    const mins = Math.floor(secondsRemaining / 60);
+    const secs = secondsRemaining % 60;
+    clock.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    if (secondsRemaining <= 300) {
+      clock.classList.add("timer-warning");
+    } else {
+      clock.classList.remove("timer-warning");
+    }
+  }, 1000);
+}
+
+function normalize(str) {
+  if (!str) return "";
+  return str.toLowerCase().replace(/[^a-z0-9]/g, "").trim();
+}
+
+function cleanVariants(str) {
+  if (!str) return [];
+  const s = str.trim().toLowerCase();
+  const withoutParens = s.replace(/\(.*?\)/g, "").trim();
+  const insideParensMatch = s.match(/\((.*?)\)/);
+  const insideParens = insideParensMatch ? insideParensMatch[1].trim() : "";
+  return Array.from(new Set([
+    normalize(s),
+    normalize(withoutParens),
+    normalize(insideParens)
+  ])).filter(x => x.length > 0);
+}
+
+function checkMatch(userInput, answersList) {
+  const userVariants = cleanVariants(userInput);
+  for (let u of userVariants) {
+    for (let ans of answersList) {
+      const ansVariants = cleanVariants(ans);
+      for (let a of ansVariants) {
+        if (u === a) return true;
+        if (u.length > 3 && u.replace(/s$/, "") === a.replace(/s$/, "")) return true;
+      }
+    }
+  }
+  return false;
+}
+
+function gradeQuiz() {
+  clearInterval(timerInterval);
+  let correctCount = 0;
+
+  QUESTIONS_DATA.forEach(q => {
+    const input = document.getElementById(`ans_${q.id}`);
+    const card = document.getElementById(`qCard_${q.id}`);
+    const fb = document.getElementById(`fb_${q.id}`);
+    const userVal = normalize(input.value);
+
+    const isCorrect = checkMatch(input.value, q.answers);
+
+    card.classList.remove("correct", "incorrect");
+    fb.classList.remove("correct-fb", "wrong-fb");
+
+    if (isCorrect) {
+      correctCount++;
+      card.classList.add("correct");
+      fb.className = "feedback-box show correct-fb";
+      fb.innerHTML = `<strong>Correct!</strong> ${q.explanation}`;
+    } else {
+      card.classList.add("incorrect");
+      fb.className = "feedback-box show wrong-fb";
+      fb.innerHTML = `<strong>Incorrect.</strong> Correct answer: <u>${q.answers[0].toUpperCase()}</u><br>${q.explanation}`;
+    }
+  });
+
+  const banner = document.getElementById("scoreBanner");
+  const display = document.getElementById("scoreDisplay");
+  const summary = document.getElementById("scoreSummary");
+  banner.classList.add("show");
+  display.textContent = `${correctCount} / ${QUESTIONS_DATA.length} (${Math.round((correctCount / QUESTIONS_DATA.length) * 100)}%)`;
+
+  if (correctCount >= 27) {
+    summary.innerHTML = `<span style="color: #16a34a; font-weight: 700;">Flawless Conceptual Mastery!</span> You have mastered the trickiest AP Human Geography distinctions!`;
+  } else if (correctCount >= 21) {
+    summary.innerHTML = `<span style="color: #c99600; font-weight: 700;">Good Effort!</span> Review the tricky distinctions below, then try again.`;
+  } else {
+    summary.innerHTML = `<span style="color: #dc2626; font-weight: 700;">Needs Review.</span> Review the distinctions in <code>02_TOPIC_NOTES_AND_CONCEPTS.md</code> and retake!`;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function resetQuiz() {
+  if (confirm("Are you sure you want to reset your test and restart the 30-minute timer?")) {
+    document.getElementById("scoreBanner").classList.remove("show");
+    QUESTIONS_DATA.forEach(q => {
+      document.getElementById(`ans_${q.id}`).value = "";
+      document.getElementById(`qCard_${q.id}`).className = "question-card";
+      document.getElementById(`fb_${q.id}`).className = "feedback-box";
+    });
+    activeInputId = null;
+    renderWordBank();
+    startTimer();
+  }
+}
+
+window.onload = initQuiz;
+</script>
+
+</body>
+</html>
