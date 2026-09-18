@@ -365,6 +365,98 @@
       margin-top: 14px;
     }
 
+    /* Enhanced Math & Fraction Styling */
+    .formula-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .math-card {
+      background: white;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .math-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .math-fraction-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .math-lhs {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      min-width: 90px;
+    }
+
+    .math-fraction {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .math-numerator {
+      border-bottom: 2.5px solid #334155;
+      padding: 4px 12px 6px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 0.98rem;
+    }
+
+    .math-denominator {
+      padding: 6px 12px 4px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.98rem;
+      color: #0369a1;
+    }
+
+    .math-multiplier {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .pill-term {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .pill-youth { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+    .pill-elderly { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .pill-workforce { background: #e0f2fe; color: #075985; border: 1px solid #7dd3fc; }
+    .pill-vital { background: #ede9fe; color: #5b21b6; border: 1px solid #c4b5fd; }
+
     .formula-display {
       font-family: monospace;
       background: #0f172a;
@@ -645,22 +737,107 @@
 
         <!-- Official Formula Display -->
         <div class="calc-box">
-          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary);">
-            The Official Formulas (AMSCO p. 101)
+          <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 6px; color: var(--primary);">
+            📐 The Official Formulas (AMSCO p. 101 & 106)
           </h3>
-          <div class="formula-display">
-Total Dependency Ratio =
-  [(Population 0–14 + Population 65+) / (Population 15–64)] * 100
-
-Elderly Dependency Ratio =
-  [(Population 65+) / (Population 15–64)] * 100
-
-Youth Dependency Ratio =
-  [(Population 0–14) / (Population 15–64)] * 100
-          </div>
-          <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
-            <strong>AMSCO Rule:</strong> The denominator is ALWAYS the potential labor force (15–64). Dependents are NEVER divided by the total population!
+          <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 14px;">
+            Clear fraction breakdowns matching the exact College Board scoring criteria:
           </p>
+
+          <div class="formula-stack">
+            <!-- Formula 1: Total Dependency Ratio -->
+            <div class="math-card">
+              <div class="math-card-title">
+                <span>1. Total Dependency Ratio</span>
+              </div>
+              <div class="math-fraction-container">
+                <span class="math-lhs">Total DR =</span>
+                <div class="math-fraction">
+                  <div class="math-numerator">
+                    <span class="pill-term pill-youth">Youth (0–14)</span> + <span class="pill-term pill-elderly">Elderly (65+)</span>
+                  </div>
+                  <div class="math-denominator">
+                    <span class="pill-term pill-workforce">Working-Age Workforce (Ages 15–64)</span>
+                  </div>
+                </div>
+                <span class="math-multiplier">× 100</span>
+              </div>
+            </div>
+
+            <!-- Formula 2: Elderly Dependency Ratio -->
+            <div class="math-card">
+              <div class="math-card-title">
+                <span>2. Elderly Dependency Ratio (Core Topic 2.9 Focus)</span>
+              </div>
+              <div class="math-fraction-container">
+                <span class="math-lhs">Elderly DR =</span>
+                <div class="math-fraction">
+                  <div class="math-numerator">
+                    <span class="pill-term pill-elderly">Elderly Dependents (Ages 65+)</span>
+                  </div>
+                  <div class="math-denominator">
+                    <span class="pill-term pill-workforce">Working-Age Workforce (Ages 15–64)</span>
+                  </div>
+                </div>
+                <span class="math-multiplier">× 100</span>
+              </div>
+            </div>
+
+            <!-- Formula 3: Youth Dependency Ratio -->
+            <div class="math-card">
+              <div class="math-card-title">
+                <span>3. Youth Dependency Ratio (Core Topic 2.3 Focus)</span>
+              </div>
+              <div class="math-fraction-container">
+                <span class="math-lhs">Youth DR =</span>
+                <div class="math-fraction">
+                  <div class="math-numerator">
+                    <span class="pill-term pill-youth">Youth Dependents (Ages 0–14)</span>
+                  </div>
+                  <div class="math-denominator">
+                    <span class="pill-term pill-workforce">Working-Age Workforce (Ages 15–64)</span>
+                  </div>
+                </div>
+                <span class="math-multiplier">× 100</span>
+              </div>
+            </div>
+
+            <!-- Formula 4: NIR & Doubling Time -->
+            <div class="math-card">
+              <div class="math-card-title">
+                <span>4. Natural Increase Rate (NIR) & Rule of 70</span>
+              </div>
+              <div class="math-fraction-container" style="margin-bottom: 8px;">
+                <span class="math-lhs">NIR (%) =</span>
+                <div class="math-fraction">
+                  <div class="math-numerator">
+                    <span class="pill-term pill-vital">CBR</span> − <span class="pill-term pill-vital">CDR</span>
+                  </div>
+                  <div class="math-denominator">
+                    <span>10</span>
+                  </div>
+                </div>
+              </div>
+              <div class="math-fraction-container">
+                <span class="math-lhs">Doubling Time =</span>
+                <div class="math-fraction">
+                  <div class="math-numerator">
+                    <span>70</span>
+                  </div>
+                  <div class="math-denominator">
+                    <span class="pill-term pill-vital">NIR (in %)</span>
+                  </div>
+                </div>
+                <span style="font-size: 0.88rem; font-weight: 600; color: #64748b;">(e.g., if NIR = 1.4%, 70 / 1.4 = 50 Years)</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: #f1f5f9; border-left: 4px solid var(--primary); padding: 12px 14px; border-radius: 0 8px 8px 0; margin-top: 12px;">
+            <p style="font-size: 0.88rem; color: #1e293b; line-height: 1.5;">
+              ⚠️ <strong>Golden College Board Rule:</strong> The denominator is <strong>ALWAYS</strong> the potential labor force (ages 15–64). Dependents are <em>never</em> divided by the total population!
+            </p>
+          </div>
         </div>
       </div>
 
