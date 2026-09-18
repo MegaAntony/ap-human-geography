@@ -624,7 +624,7 @@
     <button class="tab-btn active" onclick="switchTab('categorilla', this)">🦍 Categorilla Simulator</button>
     <button class="tab-btn" onclick="switchTab('math', this)">📊 Pyramids & Math Lab</button>
     <button class="tab-btn" onclick="switchTab('maps', this)">🗺️ World Regions Map Hub</button>
-    <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 10-Question 100% Drill</button>
+    <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 14-Question 100% Drill</button>
     <button class="tab-btn" onclick="switchTab('cheat', this)">⚡ 5-Min Morning Sheet</button>
   </div>
 </header>
@@ -878,6 +878,63 @@
           </div>
         </div>
       </div>
+
+      <!-- Topic 2.1: The 3 Densities -->
+      <div style="margin-top: 28px; border-top: 1px solid var(--border); padding-top: 24px;">
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 8px;">
+          🌾 Topic 2.1: The 3 Population Densities Compared (AMSCO p. 74)
+        </h3>
+        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+          Key concept from Tuesday's lesson: Geographers use three distinct density calculations to assess carrying capacity and pressure on arable land.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+          <div style="background: white; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 16px;">
+            <div style="font-weight: 800; color: var(--primary); margin-bottom: 6px;">1. Arithmetic Density</div>
+            <div class="formula-display" style="font-size: 0.85rem; padding: 6px 10px; margin: 6px 0;">Total Population / Total Land Area</div>
+            <p style="font-size: 0.84rem; color: #475569;">The basic average. <em>Limitation:</em> Conceals uneven internal population clustering.</p>
+          </div>
+          <div style="background: white; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 16px;">
+            <div style="font-weight: 800; color: #059669; margin-bottom: 6px;">2. Physiological Density</div>
+            <div class="formula-display" style="font-size: 0.85rem; padding: 6px 10px; margin: 6px 0;">Total Population / Arable (Farmable) Land</div>
+            <p style="font-size: 0.84rem; color: #475569;">Measures pressure on food-producing land. <em>Case Study:</em> Egypt has a massive physiological density because 95% of citizens live on 3% of land along the Nile.</p>
+          </div>
+          <div style="background: white; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 16px;">
+            <div style="font-weight: 800; color: #d97706; margin-bottom: 6px;">3. Agricultural Density</div>
+            <div class="formula-display" style="font-size: 0.85rem; padding: 6px 10px; margin: 6px 0;">Number of Farmers / Arable (Farmable) Land</div>
+            <p style="font-size: 0.84rem; color: #475569;">Measures economic efficiency. Developed countries (USA) have <strong>low</strong> agricultural density (tractors/combines). Developing countries have <strong>high</strong> density (intensive subsistence labor).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mrs. Knight's SPEED Framework & China's 4-2-1 Trap -->
+      <div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 12px; padding: 18px;">
+          <h4 style="color: #166534; font-size: 1.05rem; font-weight: 800; margin-bottom: 8px;">
+            ⚡ Mrs. Knight's "SPEED" Framework (Monday Lesson)
+          </h4>
+          <p style="font-size: 0.86rem; color: #166534; margin-bottom: 10px;">Used in Forsyth County to categorize geographic impacts across 5 core dimensions:</p>
+          <ul style="font-size: 0.85rem; color: #14532d; padding-left: 18px; line-height: 1.6;">
+            <li><strong>S — Social:</strong> Families, schools, healthcare, sandwich generation.</li>
+            <li><strong>P — Political:</strong> Legislation, voter turnout (gray voting bloc), retirement laws.</li>
+            <li><strong>E — Economic:</strong> Tax base, pension insolvency, labor supply, silver economy.</li>
+            <li><strong>E — Environmental:</strong> Carrying capacity, arable land use, eco-footprints.</li>
+            <li><strong>D — Demographic:</strong> Birth/death rates, sex ratio, age pyramids, dependency.</li>
+          </ul>
+        </div>
+
+        <div style="background: #fdf2f8; border: 1.5px solid #f472b6; border-radius: 12px; padding: 18px;">
+          <h4 style="color: #9d174d; font-size: 1.05rem; font-weight: 800; margin-bottom: 8px;">
+            🇨🇳 China's "4-2-1" Trap & The Sex Ratio (Topic 2.3 & 2.9)
+          </h4>
+          <p style="font-size: 0.86rem; color: #831843; line-height: 1.5; margin-bottom: 8px;">
+            China's former <strong>One-Child Policy (1979–2015)</strong> created two massive demographic crises:
+          </p>
+          <ul style="font-size: 0.85rem; color: #701a75; padding-left: 18px; line-height: 1.6;">
+            <li><strong>The "4-2-1" Trap:</strong> One adult only-child must support <strong>2 parents</strong> and <strong>4 grandparents</strong> with minimal siblings to share the financial burden.</li>
+            <li><strong>Skewed Sex Ratio:</strong> Cultural preference for male heirs led to sex-selective abortions, resulting in ~115 boys per 100 girls and over 30 million unmarried men ("bare branches").</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -985,17 +1042,17 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- TAB 4: 10-QUESTION 100% MASTERY QUIZ       -->
+  <!-- TAB 4: 14-QUESTION 100% MASTERY QUIZ       -->
   <!-- ========================================== -->
   <div id="tab-quiz" class="tab-content">
     <div class="card">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap;">
         <div>
-          <h2 class="card-title" style="margin-bottom: 4px;"><span>🎯</span> 10-Question 100% Mastery Diagnostic</h2>
+          <h2 class="card-title" style="margin-bottom: 4px;"><span>🎯</span> 14-Question 100% Mastery Diagnostic</h2>
           <p style="font-size: 0.92rem; color: var(--text-muted);">Real AP-style stimulus questions designed for tomorrow's exact format.</p>
         </div>
         <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary);" id="quiz-tracker">
-          Score: 0 / 10
+          Score: 0 / 14
         </div>
       </div>
 
@@ -1065,6 +1122,17 @@
             <li><strong>Central Asia:</strong> All the "-stan" countries.</li>
             <li><strong>Polynesia:</strong> Hawaii, New Zealand, Easter Island triangle.</li>
             <li><strong>North Africa:</strong> Grouped with Middle East (Arabic/Islam), NOT Sub-Saharan Africa!</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #059669;">
+          <h4>7. Densities & SPEED (Topic 2.1 & Knight Notes)</h4>
+          <ul>
+            <li><strong>Arithmetic:</strong> Total Pop / Total Land (crude average).</li>
+            <li><strong>Physiological:</strong> Total Pop / Arable Land (High = intense pressure on food, e.g., Egypt Nile).</li>
+            <li><strong>Agricultural:</strong> Farmers / Arable Land (Low in USA due to tractors; High in LDCs due to subsistence).</li>
+            <li><strong>SPEED Model:</strong> <strong>S</strong>ocial, <strong>P</strong>olitical, <strong>E</strong>conomic, <strong>E</strong>nvironmental, <strong>D</strong>emographic.</li>
+            <li><strong>China 4-2-1:</strong> 1 only child supports 2 parents + 4 grandparents; skewed sex ratio (~115 boys / 100 girls).</li>
           </ul>
         </div>
       </div>
@@ -1351,6 +1419,50 @@
       ],
       correct: 1,
       rationale: "<strong>Rule of 70:</strong> Doubling Time = 70 / NIR = 70 / 1.4 = 50 years."
+    },
+    {
+      q: "11. Egypt has an Arithmetic Density of ~105 people/km², but a Physiological Density of over 3,100 people/km². What does this stark divergence reveal to a human geographer?",
+      opts: [
+        "The country has an extraordinarily low crude birth rate with a shrinking youth cohort.",
+        "Almost the entire population is crowded onto the narrow 3% strip of arable land along the Nile River surrounded by uninhabited desert.",
+        "Egyptian agricultural yields are produced exclusively through robotic combines.",
+        "The country's dependency ratio is composed almost entirely of elderly retirees."
+      ],
+      correct: 1,
+      rationale: "<strong>Topic 2.1:</strong> Physiological density measures total population divided strictly by <em>arable (farmable) land</em>. In desert nations like Egypt, arithmetic density hides the extreme spatial concentration of people on the tiny fraction of arable land (AMSCO p. 74)."
+    },
+    {
+      q: "12. Country X has 2 farmers per square kilometer of arable land, while Country Y has 450 farmers per square kilometer of arable land. Which conclusion is best supported by this data?",
+      opts: [
+        "Country X has a much higher infant mortality rate than Country Y.",
+        "Country Y utilizes widespread modern commercial tractors, seed drills, and combines.",
+        "Country X possesses a mechanized, commercial agricultural economy typical of More Developed Countries (MDCs).",
+        "Country Y has achieved Stage 5 of the Demographic Transition Model."
+      ],
+      correct: 2,
+      rationale: "<strong>Agricultural Density:</strong> A <em>low</em> agricultural density (few farmers per unit of arable land) indicates high mechanization and commercial farming (USA, UK), whereas high agricultural density reflects labor-intensive subsistence farming in LDCs."
+    },
+    {
+      q: "13. A human geographer studying East Asia identifies China's '4-2-1 problem' as a looming crisis for social welfare systems. What does this term describe?",
+      opts: [
+        "Four years of college education leading to two years of military service and one year of farming.",
+        "A single working-age adult having to financially and physically support two aging parents and four elderly grandparents.",
+        "A policy requiring four children per rural family, two per suburban family, and one in megacities.",
+        "A ratio of four urban industrial workers to two rural farmers and one government official."
+      ],
+      correct: 1,
+      rationale: "<strong>China's 4-2-1 Trap:</strong> A direct demographic consequence of the 1979–2015 One-Child Policy, where generational family shrinkage leaves a single only-child responsible for two parents and four elderly grandparents with no siblings to share eldercare."
+    },
+    {
+      q: "14. When evaluating the impact of an aging population using Mrs. Knight's 'SPEED' framework, an influx of active senior citizens voting down a municipal public school bond referendum is categorized as:",
+      opts: [
+        "Environmental, because schools occupy open green space.",
+        "Demographic, because age cohorts are being counted on census tracts.",
+        "Political, because organized senior voter turnout directly influences municipal legislation, school budgets, and tax policy.",
+        "Social, because seniors enjoy reading to elementary schoolchildren."
+      ],
+      correct: 2,
+      rationale: "<strong>Mrs. Knight's SPEED Model:</strong> Senior voting patterns (the 'gray voting bloc') influencing government ballot measures, school bonds, tax legislation, and retirement laws fall under the <strong>P (Political)</strong> dimension of SPEED."
     }
   ];
 
@@ -1360,6 +1472,7 @@
   function renderQuiz() {
     const container = document.getElementById('quiz-container');
     container.innerHTML = '';
+    document.getElementById('quiz-tracker').innerText = `Score: 0 / ${quizData.length}`;
 
     quizData.forEach((item, qIndex) => {
       const qEl = document.createElement('div');
@@ -1400,7 +1513,7 @@
     }
 
     rationaleEl.style.display = 'block';
-    document.getElementById('quiz-tracker').innerText = `Score: ${quizScore} / 10`;
+    document.getElementById('quiz-tracker').innerText = `Score: ${quizScore} / ${quizData.length}`;
   }
 
   // Initialize on load
