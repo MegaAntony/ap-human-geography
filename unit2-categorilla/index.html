@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friday Formative Mastery Hub — Aging Population Categorilla & World Regions</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --purple: #7c3aed;
+      --purple-bg: #ede9fe;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: white;
+      padding: 36px 20px 28px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(8px);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      color: #93c5fd;
+      max-width: 760px;
+      margin: 0 auto 18px;
+    }
+
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .tab-btn {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255,255,255,0.22);
+    }
+
+    .tab-btn.active {
+      background: white;
+      color: var(--primary-dark);
+      border-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .main-container {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      padding: 0 16px;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Common Card Styling */
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Section 1: Categorilla Simulator */
+    .categorilla-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .bin-column {
+      border-radius: 12px;
+      padding: 16px;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      border: 2px dashed var(--border);
+      background: #fafafa;
+      transition: all 0.2s ease;
+    }
+
+    .bin-column.bin-1 { border-color: #10b981; background: #f0fdf4; }
+    .bin-column.bin-2 { border-color: #3b82f6; background: #eff6ff; }
+    .bin-column.bin-3 { border-color: #8b5cf6; background: #f5f3ff; }
+    .bin-column.bin-4 { border-color: #ef4444; background: #fef2f2; }
+
+    .bin-header {
+      font-size: 1rem;
+      font-weight: 800;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .bin-1 .bin-header { color: #047857; }
+    .bin-2 .bin-header { color: #1d4ed8; }
+    .bin-3 .bin-header { color: #6d28d9; }
+    .bin-4 .bin-header { color: #b91c1c; }
+
+    .bin-count {
+      font-size: 0.8rem;
+      background: rgba(0,0,0,0.06);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .bin-dropzone {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 280px;
+    }
+
+    .pool-card-container {
+      background: #f1f5f9;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 24px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .pool-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pool-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-height: 80px;
+    }
+
+    .cat-item {
+      background: white;
+      border: 1px solid #cbd5e1;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1e293b;
+      cursor: grab;
+      user-select: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .cat-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      border-color: var(--accent);
+    }
+
+    .cat-item.dragging {
+      opacity: 0.5;
+    }
+
+    .cat-item.correct {
+      border-color: var(--success);
+      background: var(--success-bg);
+      color: #14532d;
+    }
+
+    .cat-item.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-bg);
+      color: #7f1d1d;
+    }
+
+    .quick-assign {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 6px;
+    }
+
+    .qa-btn {
+      border: none;
+      border-radius: 4px;
+      width: 20px;
+      height: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: white;
+    }
+    .qa-1 { background: #10b981; }
+    .qa-2 { background: #3b82f6; }
+    .qa-3 { background: #8b5cf6; }
+    .qa-4 { background: #ef4444; }
+
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-reset {
+      background: #64748b;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-reset:hover { background: #475569; }
+
+    .score-alert {
+      display: none;
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Section 2: Math & Pyramid Lab */
+    .math-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .calc-box {
+      background: #f8fafc;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .input-row {
+      margin-bottom: 14px;
+    }
+
+    .input-row label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .input-row input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .calc-result-box {
+      background: white;
+      border-radius: 10px;
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      margin-top: 14px;
+    }
+
+    .formula-display {
+      font-family: monospace;
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin: 10px 0;
+      overflow-x: auto;
+    }
+
+    .trap-box {
+      background: #fffbeb;
+      border-left: 5px solid #f59e0b;
+      padding: 18px;
+      border-radius: 0 12px 12px 0;
+      margin-top: 20px;
+    }
+
+    /* Section 3: World Regions */
+    .map-grid-portal {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .map-card-link {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .map-card-link:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,0.1);
+    }
+
+    .badge-map {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .badge-closer { background: #dbeafe; color: #1e40af; }
+    .badge-big { background: #dcfce7; color: #15803d; }
+
+    /* Section 4: Quiz */
+    .quiz-item {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .quiz-q {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .quiz-opt {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      cursor: pointer;
+      font-size: 0.93rem;
+      transition: all 0.15s;
+    }
+
+    .quiz-opt:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+    }
+
+    .quiz-opt.selected-correct {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: #14532d;
+      font-weight: 700;
+    }
+
+    .quiz-opt.selected-wrong {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+      color: #7f1d1d;
+      font-weight: 700;
+    }
+
+    .quiz-rationale {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* Section 5: Cheat Sheet */
+    .cheat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .cheat-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .cheat-box h4 {
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .cheat-box ul {
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: #334155;
+    }
+
+    .cheat-box li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Friday Formative Master Hub</div>
+  <h1>Aging Population Categorilla & World Regions</h1>
+  <p>Comprehensive interactive simulator, formula calculator, 20-region map portal, and instant-scoring practice bank for Antony Anish (Grade 9).</p>
+  
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('categorilla')">🦍 Categorilla Simulator</button>
+    <button class="tab-btn" onclick="switchTab('math')">📊 Pyramids & Math Lab</button>
+    <button class="tab-btn" onclick="switchTab('maps')">🗺️ World Regions Map Hub</button>
+    <button class="tab-btn" onclick="switchTab('quiz')">🎯 10-Question 100% Drill</button>
+    <button class="tab-btn" onclick="switchTab('cheat')">⚡ 5-Min Morning Sheet</button>
+  </div>
+</header>
+
+<div class="main-container">
+
+  <!-- ========================================== -->
+  <!-- TAB 1: CATEGORILLA SIMULATOR               -->
+  <!-- ========================================== -->
+  <div id="tab-categorilla" class="tab-content active">
+    <div class="card">
+      <h2 class="card-title"><span>🦍</span> The Aging Population Categorilla Trainer</h2>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 16px;">
+        Sort each term or scenario into the correct analytical category. You can drag and drop or use the quick-assign number buttons (<strong>1 = Causes</strong>, <strong>2 = Economic</strong>, <strong>3 = Social</strong>, <strong>4 = Political/Policy</strong>).
+      </p>
+
+      <!-- Item Pool -->
+      <div class="pool-card-container">
+        <div class="pool-header">
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: #334155;">
+            Unsorted Terms Pool (<span id="pool-count">20</span> remaining)
+          </h3>
+          <div style="display: flex; gap: 8px;">
+            <button class="btn-action" onclick="checkCategorilla()">Check My Score</button>
+            <button class="btn-reset" onclick="resetCategorilla()">Reset All</button>
+          </div>
+        </div>
+        <div class="pool-cards" id="item-pool" ondrop="drop(event, 'pool')" ondragover="allowDrop(event)"></div>
+      </div>
+
+      <div id="categorilla-score" class="score-alert"></div>
+
+      <!-- 4 Target Bins -->
+      <div class="categorilla-grid">
+        <!-- Bin 1 -->
+        <div class="bin-column bin-1" ondrop="drop(event, 'bin1')" ondragover="allowDrop(event)">
+          <div class="bin-header">
+            <span>1. Root Causes</span>
+            <span class="bin-count" id="count-bin1">0</span>
+          </div>
+          <div class="bin-dropzone" id="bin1"></div>
+        </div>
+
+        <!-- Bin 2 -->
+        <div class="bin-column bin-2" ondrop="drop(event, 'bin2')" ondragover="allowDrop(event)">
+          <div class="bin-header">
+            <span>2. Economic Effects</span>
+            <span class="bin-count" id="count-bin2">0</span>
+          </div>
+          <div class="bin-dropzone" id="bin2"></div>
+        </div>
+
+        <!-- Bin 3 -->
+        <div class="bin-column bin-3" ondrop="drop(event, 'bin3')" ondragover="allowDrop(event)">
+          <div class="bin-header">
+            <span>3. Social / Spatial</span>
+            <span class="bin-count" id="count-bin3">0</span>
+          </div>
+          <div class="bin-dropzone" id="bin3"></div>
+        </div>
+
+        <!-- Bin 4 -->
+        <div class="bin-column bin-4" ondrop="drop(event, 'bin4')" ondragover="allowDrop(event)">
+          <div class="bin-header">
+            <span>4. Political & Solutions</span>
+            <span class="bin-count" id="count-bin4">0</span>
+          </div>
+          <div class="bin-dropzone" id="bin4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB 2: MATH & PYRAMIDS LAB                 -->
+  <!-- ========================================== -->
+  <div id="tab-math" class="tab-content">
+    <div class="card">
+      <h2 class="card-title"><span>📊</span> Demographic Math & The Dependency Ratio</h2>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+        The College Board explicitly tests the mathematical relationship between the productive workforce and dependents.
+      </p>
+
+      <div class="math-grid">
+        <!-- Interactive Calculator -->
+        <div class="calc-box">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; color: var(--primary);">
+            Interactive Dependency Calculator
+          </h3>
+          <div class="input-row">
+            <label>Youth Population (Ages 0–14): <span id="val-youth">20</span>%</label>
+            <input type="range" id="input-youth" min="5" max="50" value="20" oninput="updateCalculator()">
+          </div>
+          <div class="input-row">
+            <label>Elderly Population (Ages 65+): <span id="val-elderly">25</span>%</label>
+            <input type="range" id="input-elderly" min="3" max="40" value="25" oninput="updateCalculator()">
+          </div>
+          <div class="input-row">
+            <label>Working-Age Population (Ages 15–64): <strong id="val-workforce" style="color: var(--primary);">55%</strong></label>
+          </div>
+
+          <div class="calc-result-box">
+            <div style="font-size: 0.88rem; color: var(--text-muted);">Total Dependency Ratio:</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);" id="result-total-dr">81.8 per 100</div>
+            <div style="font-size: 0.85rem; margin-top: 6px; color: #475569;" id="result-breakdown">
+              Youth DR: 36.4 | Elderly DR: 45.5
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Formula Display -->
+        <div class="calc-box">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary);">
+            The Official Formulas (AMSCO p. 101)
+          </h3>
+          <div class="formula-display">
+Total Dependency Ratio =
+  [(Population 0–14 + Population 65+) / (Population 15–64)] * 100
+
+Elderly Dependency Ratio =
+  [(Population 65+) / (Population 15–64)] * 100
+
+Youth Dependency Ratio =
+  [(Population 0–14) / (Population 15–64)] * 100
+          </div>
+          <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+            <strong>AMSCO Rule:</strong> The denominator is ALWAYS the potential labor force (15–64). Dependents are NEVER divided by the total population!
+          </p>
+        </div>
+      </div>
+
+      <!-- The Elderly CDR Trap -->
+      <div class="trap-box">
+        <h3 style="color: #b45309; font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">
+          ⚠️ The #1 AP Exam Trap: The "Elderly CDR Trap" (France vs. Bangladesh)
+        </h3>
+        <p style="font-size: 0.95rem; color: #78350f; margin-bottom: 10px;">
+          <strong>Why is France's Crude Death Rate (~9.5 per 1,000) HIGHER than Bangladesh's CDR (~5.5 per 1,000)?</strong>
+        </p>
+        <p style="font-size: 0.92rem; color: #78350f; line-height: 1.6;">
+          <strong>The 100% Score Geographic Explanation:</strong> France is in <strong>Stage 4/5</strong> of the DTM, meaning over <strong>21%</strong> of its entire population is aged 65 and older. Bangladesh is in <strong>Stage 3</strong>, where only <strong>5%</strong> of its population is over 65 and more than half the country is young. Because elderly humans naturally die at higher rates of old age regardless of how modern French hospitals are, France records more deaths per 1,000 citizens each year strictly due to its <strong>older age structure</strong>!
+        </p>
+      </div>
+
+      <!-- Pyramid Visual Models -->
+      <div style="margin-top: 24px;">
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px;">
+          Visual Guide to DTM Pyramids & Anomalies (Topic 2.3)
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+          <div style="background: #f8fafc; border: 1px solid var(--border); padding: 16px; border-radius: 12px;">
+            <h4 style="color: var(--primary); font-size: 1rem; margin-bottom: 6px;">Stage 2 (e.g. Niger)</h4>
+            <p style="font-size: 0.85rem; color: #475569;">Wide triangular base, steep concave sides. High youth dependency. Needs schools, clean water, and infant care.</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid var(--border); padding: 16px; border-radius: 12px;">
+            <h4 style="color: var(--primary); font-size: 1rem; margin-bottom: 6px;">Stage 4 (e.g. USA)</h4>
+            <p style="font-size: 0.85rem; color: #475569;">Box/columnar shape with vertical sides. Stable growth ($TFR \approx 2.1$). Balanced dependency structure.</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid var(--border); padding: 16px; border-radius: 12px;">
+            <h4 style="color: #dc2626; font-size: 1rem; margin-bottom: 6px;">Stage 5 (e.g. Japan)</h4>
+            <p style="font-size: 0.85rem; color: #475569;">Inverted urn/beehive shape. Base is narrower than middle/top cohorts. Sub-replacement fertility ($TFR < 1.4$).</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid var(--border); padding: 16px; border-radius: 12px;">
+            <h4 style="color: #7c3aed; font-size: 1rem; margin-bottom: 6px;">Guest Worker Anomaly</h4>
+            <p style="font-size: 0.85rem; color: #475569;">Massive one-sided male bulge between ages 20–45 (e.g., UAE, Qatar) due to foreign construction migrant labor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB 3: WORLD REGIONS MAP HUB               -->
+  <!-- ========================================== -->
+  <div id="tab-maps" class="tab-content">
+    <div class="card">
+      <h2 class="card-title"><span>🗺️</span> World Regions Map Practice Portals</h2>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+        Direct access to the interactive map engines built specifically for Antony's blank worksheet (<a href="../world-regions/PXL_20260918_014616236.jpg" target="_blank" style="color: var(--primary); font-weight: 600;">view photo</a>).
+      </p>
+
+      <div class="map-grid-portal">
+        <!-- Card 1: Closer Look -->
+        <a href="../world-regions/world_regions_closer_look.html" class="map-card-link">
+          <div>
+            <span class="badge-map badge-closer">23 Regional Sub-Units</span>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">
+              World Regions — A Closer Look
+            </h3>
+            <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin-bottom: 16px;">
+              Exact match for tomorrow's 20-box worksheet. Features click-to-reveal flashcards, high-contrast visual filters, and instant answer keys.
+            </p>
+          </div>
+          <div style="font-weight: 700; color: var(--accent); font-size: 0.92rem;">
+            Launch Interactive Closer Look Simulator →
+          </div>
+        </a>
+
+        <!-- Card 2: Big Picture View -->
+        <a href="../world-regions/world_regions_big_picture.html" class="map-card-link">
+          <div>
+            <span class="badge-map badge-big">10 Macro-Regions + 5 Oceans</span>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #15803d; margin-bottom: 8px;">
+              World Regions — A Big Picture View
+            </h3>
+            <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin-bottom: 16px;">
+              Covers global macro-regions (The Russian Federation, Sub-Saharan Africa, Central America, Oceania) and all five oceans.
+            </p>
+          </div>
+          <div style="font-weight: 700; color: #15803d; font-size: 0.92rem;">
+            Launch Big Picture View Simulator →
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick 23-Subregion Memorizer -->
+      <div style="margin-top: 26px; background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px;">
+          The 23 Sub-Region Mental Map Checklist
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; font-size: 0.88rem;">
+          <div>
+            <strong style="color: var(--primary);">North & Latin America:</strong>
+            <ul style="padding-left: 16px; margin-top: 4px;">
+              <li>Canada</li>
+              <li>United States</li>
+              <li>Central America</li>
+              <li>Caribbean</li>
+              <li>Brazil</li>
+              <li>South America</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color: var(--primary);">Europe & Eurasia:</strong>
+            <ul style="padding-left: 16px; margin-top: 4px;">
+              <li>Western Europe</li>
+              <li>Eastern Europe</li>
+              <li>The Russian Federation</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color: var(--primary);">Asia:</strong>
+            <ul style="padding-left: 16px; margin-top: 4px;">
+              <li>Central Asia (-stans)</li>
+              <li>East Asia (China/Japan)</li>
+              <li>South Asia (India)</li>
+              <li>Southeast Asia (Indochina)</li>
+              <li>Middle East (SW Asia)</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color: var(--primary);">Africa:</strong>
+            <ul style="padding-left: 16px; margin-top: 4px;">
+              <li>North Africa</li>
+              <li>West Africa</li>
+              <li>Central Africa</li>
+              <li>East Africa</li>
+              <li>Southern Africa</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color: var(--primary);">Oceania:</strong>
+            <ul style="padding-left: 16px; margin-top: 4px;">
+              <li>Australia</li>
+              <li>Micronesia (North)</li>
+              <li>Melanesia (Southwest)</li>
+              <li>Polynesia (Giant Triangle)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB 4: 10-QUESTION 100% MASTERY QUIZ       -->
+  <!-- ========================================== -->
+  <div id="tab-quiz" class="tab-content">
+    <div class="card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap;">
+        <div>
+          <h2 class="card-title" style="margin-bottom: 4px;"><span>🎯</span> 10-Question 100% Mastery Diagnostic</h2>
+          <p style="font-size: 0.92rem; color: var(--text-muted);">Real AP-style stimulus questions designed for tomorrow's exact format.</p>
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary);" id="quiz-tracker">
+          Score: 0 / 10
+        </div>
+      </div>
+
+      <div id="quiz-container"></div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB 5: 5-MINUTE MORNING SHEET              -->
+  <!-- ========================================== -->
+  <div id="tab-cheat" class="tab-content">
+    <div class="card">
+      <h2 class="card-title"><span>⚡</span> 5-Minute Morning Review Sheet (Before School)</h2>
+      <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 18px;">
+        Scan these 5 bulleted categories on the bus or at breakfast right before Mrs. Knight's class.
+      </p>
+
+      <div class="cheat-grid">
+        <div class="cheat-box" style="border-left-color: #10b981;">
+          <h4>1. Causes of Aging (Topic 2.9)</h4>
+          <ul>
+            <li><strong>TFR below 2.1:</strong> Replacement level fails because of female careers and urban expenses.</li>
+            <li><strong>Longer life:</strong> Sanitation and antibiotics in LDCs; cardiology and Medicare in MDCs.</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #3b82f6;">
+          <h4>2. Economic Pressures (Topic 2.9)</h4>
+          <ul>
+            <li><strong>Shrinking tax base:</strong> Fewer working-age citizens paying into pensions.</li>
+            <li><strong>Labor deficit:</strong> Shortage of service and healthcare workers.</li>
+            <li><strong>Silver Economy:</strong> Boom in retirement travel and companion robotics.</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #8b5cf6;">
+          <h4>3. Social Realities (Topic 2.9)</h4>
+          <ul>
+            <li><strong>Sandwich Generation:</strong> Adults supporting both elderly parents and dependent kids.</li>
+            <li><strong>School closings:</strong> Kindergarten classrooms converted to senior activity centers.</li>
+            <li><strong>Akiya (Ghost towns):</strong> Abandoned homes in rural Japan and Italy.</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #ef4444;">
+          <h4>4. Political Maneuvers (Topic 2.9)</h4>
+          <ul>
+            <li><strong>Gray Voting Bloc:</strong> Turnout is +30% higher for seniors; they vote against school taxes.</li>
+            <li><strong>Raising Retirement Age:</strong> Governments push retirement from 62 to 64/67.</li>
+            <li><strong>Pronatalism:</strong> Subsidized daycare and cash bonuses for newborns.</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #f59e0b;">
+          <h4>5. Formulas & CDR Trap (Topic 2.3 & 2.4)</h4>
+          <ul>
+            <li><strong>Dependency Ratio:</strong> $(0\text{–}14 + 65+) / (15\text{–}64) \times 100$.</li>
+            <li><strong>CDR Trap:</strong> France has higher CDR than Bangladesh due to age structure, NOT poor hospitals!</li>
+            <li><strong>NIR:</strong> $(CBR - CDR) / 10$.</li>
+            <li><strong>Rule of 70:</strong> Doubling time $= 70 / NIR$.</li>
+          </ul>
+        </div>
+
+        <div class="cheat-box" style="border-left-color: #0284c7;">
+          <h4>6. Map Diagnostic Traps</h4>
+          <ul>
+            <li><strong>Central Asia:</strong> All the "-stan" countries.</li>
+            <li><strong>Polynesia:</strong> Hawaii, New Zealand, Easter Island triangle.</li>
+            <li><strong>North Africa:</strong> Grouped with Middle East (Arabic/Islam), NOT Sub-Saharan Africa!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 AP Human Geography Study Hub • Published to GitHub Pages (MegaAntony/ap-human-geography)</p>
+</footer>
+
+<script>
+  // Navigation Tabs
+  function switchTab(tabId) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    
+    event.currentTarget.classList.add('active');
+    document.getElementById(`tab-${tabId}`).classList.add('active');
+  }
+
+  // ==========================================
+  // CATEGORILLA DATA & LOGIC
+  // ==========================================
+  const categorillaItems = [
+    { id: "c1", text: "Female empowerment & corporate career delays", correctBin: "bin1" },
+    { id: "c2", text: "Total Fertility Rate dropping below 2.1", correctBin: "bin1" },
+    { id: "c3", text: "Widespread municipal water chlorination & vaccines", correctBin: "bin1" },
+    { id: "c4", text: "High cost of housing making urban children economic liabilities", correctBin: "bin1" },
+    { id: "c5", text: "Advanced cardiovascular surgery & oncology therapies", correctBin: "bin1" },
+
+    { id: "e1", text: "Shrinking national payroll tax base", correctBin: "bin2" },
+    { id: "e2", text: "Pay-as-you-go pension system insolvency", correctBin: "bin2" },
+    { id: "e3", text: "Critical labor shortages in retail & agriculture", correctBin: "bin2" },
+    { id: "e4", text: "The 'Silver Economy' leisure & luxury travel boom", correctBin: "bin2" },
+    { id: "e5", text: "Multibillion-dollar investment in eldercare robotics", correctBin: "bin2" },
+
+    { id: "s1", text: "The 'Sandwich Generation' caring for kids & parents", correctBin: "bin3" },
+    { id: "s2", text: "Elementary school closures & pediatric ward downsizings", correctBin: "bin3" },
+    { id: "s3", text: "Millions of abandoned rural ghost homes (Akiya)", correctBin: "bin3" },
+    { id: "s4", text: "Dissolution of traditional multigenerational family homes", correctBin: "bin3" },
+    { id: "s5", text: "Active grandparents providing free full-time childcare", correctBin: "bin3" },
+
+    { id: "p1", text: "Seniors voting against public school property tax bonds", correctBin: "bin4" },
+    { id: "p2", text: "Legally raising the national retirement age from 62 to 67", correctBin: "bin4" },
+    { id: "p3", text: "Government cash baby bonuses & subsidized daycare", correctBin: "bin4" },
+    { id: "p4", text: "Specialized guest-worker visa quotas for foreign nurses", correctBin: "bin4" },
+    { id: "p5", text: "AARP-style senior voting blocs with +30% turnout advantage", correctBin: "bin4" }
+  ];
+
+  function renderCategorillaPool() {
+    const pool = document.getElementById('item-pool');
+    pool.innerHTML = '';
+    
+    categorillaItems.forEach(item => {
+      const el = document.createElement('div');
+      el.className = 'cat-item';
+      el.id = item.id;
+      el.draggable = true;
+      el.ondragstart = drag;
+      el.innerHTML = `
+        <span>${item.text}</span>
+        <span class="quick-assign">
+          <button class="qa-btn qa-1" title="Assign to Root Causes" onclick="quickAssign('${item.id}', 'bin1')">1</button>
+          <button class="qa-btn qa-2" title="Assign to Economic Effects" onclick="quickAssign('${item.id}', 'bin2')">2</button>
+          <button class="qa-btn qa-3" title="Assign to Social / Spatial" onclick="quickAssign('${item.id}', 'bin3')">3</button>
+          <button class="qa-btn qa-4" title="Assign to Political & Policy" onclick="quickAssign('${item.id}', 'bin4')">4</button>
+        </span>
+      `;
+      pool.appendChild(el);
+    });
+    updateCounts();
+  }
+
+  function allowDrop(ev) { ev.preventDefault(); }
+  function drag(ev) { ev.dataTransfer.setData("text", ev.target.id); }
+
+  function drop(ev, targetId) {
+    ev.preventDefault();
+    const itemId = ev.dataTransfer.getData("text");
+    const itemEl = document.getElementById(itemId);
+    
+    if (targetId === 'pool') {
+      document.getElementById('item-pool').appendChild(itemEl);
+    } else {
+      document.getElementById(targetId).appendChild(itemEl);
+    }
+    updateCounts();
+  }
+
+  function quickAssign(itemId, targetBinId) {
+    const itemEl = document.getElementById(itemId);
+    document.getElementById(targetBinId).appendChild(itemEl);
+    updateCounts();
+  }
+
+  function updateCounts() {
+    document.getElementById('pool-count').innerText = document.getElementById('item-pool').children.length;
+    ['bin1', 'bin2', 'bin3', 'bin4'].forEach(bin => {
+      document.getElementById(`count-${bin}`).innerText = document.getElementById(bin).children.length;
+    });
+  }
+
+  function checkCategorilla() {
+    let correct = 0;
+    let total = categorillaItems.length;
+
+    categorillaItems.forEach(item => {
+      const el = document.getElementById(item.id);
+      const parentBin = el.parentElement.id;
+      
+      el.classList.remove('correct', 'incorrect');
+      if (parentBin === item.correctBin) {
+        el.classList.add('correct');
+        correct++;
+      } else {
+        el.classList.add('incorrect');
+      }
+    });
+
+    const alertBox = document.getElementById('categorilla-score');
+    alertBox.style.display = 'block';
+    
+    if (correct === total) {
+      alertBox.style.background = 'var(--success-bg)';
+      alertBox.style.color = '#14532d';
+      alertBox.innerHTML = `🎉 PERFECT SCORE! 20/20 (100%) — You have completely mastered the Aging Population Categorilla!`;
+    } else {
+      alertBox.style.background = 'var(--warning-bg)';
+      alertBox.style.color = '#78350f';
+      alertBox.innerHTML = `Score: ${correct} / ${total} (${Math.round((correct/total)*100)}%). Red cards indicate items in the wrong bin. Review the numbers and reassign!`;
+    }
+  }
+
+  function resetCategorilla() {
+    categorillaItems.forEach(item => {
+      const el = document.getElementById(item.id);
+      el.classList.remove('correct', 'incorrect');
+      document.getElementById('item-pool').appendChild(el);
+    });
+    document.getElementById('categorilla-score').style.display = 'none';
+    updateCounts();
+  }
+
+  // ==========================================
+  // MATH LAB CALCULATOR
+  // ==========================================
+  function updateCalculator() {
+    const youth = parseInt(document.getElementById('input-youth').value);
+    const elderly = parseInt(document.getElementById('input-elderly').value);
+    const workforce = Math.max(10, 100 - (youth + elderly));
+
+    document.getElementById('val-youth').innerText = youth;
+    document.getElementById('val-elderly').innerText = elderly;
+    document.getElementById('val-workforce').innerText = `${workforce}%`;
+
+    const totalDR = (((youth + elderly) / workforce) * 100).toFixed(1);
+    const youthDR = ((youth / workforce) * 100).toFixed(1);
+    const elderlyDR = ((elderly / workforce) * 100).toFixed(1);
+
+    document.getElementById('result-total-dr').innerText = `${totalDR} per 100`;
+    document.getElementById('result-breakdown').innerText = `Youth DR: ${youthDR} | Elderly DR: ${elderlyDR}`;
+  }
+
+  // ==========================================
+  // 10-QUESTION QUIZ DATA & ENGINE
+  // ==========================================
+  const quizData = [
+    {
+      q: "1. France has a life expectancy of 83 years and world-class hospitals. Bangladesh has a life expectancy of 73 years. Why is France's Crude Death Rate (~9.5 per 1,000) significantly HIGHER than Bangladesh's (~5.5 per 1,000)?",
+      opts: [
+        "France has an older age structure with over 21% of citizens over age 65.",
+        "Bangladesh has fewer environmental pollution hazards than Western Europe.",
+        "French hospitals suffer from acute shortages of emergency room doctors.",
+        "Bangladesh has an inverted population pyramid with high elderly dependency."
+      ],
+      correct: 0,
+      rationale: "<strong>Skill 3.D / The CDR Trap:</strong> High Crude Death Rates in MDCs reflect an aged population where millions naturally die of old age each year, not inferior healthcare (AMSCO p. 106)."
+    },
+    {
+      q: "2. If a suburban county has 25 children (ages 0–14), 15 retirees (ages 65+), and 60 working-age adults (ages 15–64), what is its Total Dependency Ratio?",
+      opts: [
+        "40.0 dependents per 100 workers",
+        "66.7 dependents per 100 workers",
+        "25.0 dependents per 100 workers",
+        "150.0 dependents per 100 workers"
+      ],
+      correct: 1,
+      rationale: "<strong>Formula:</strong> [(25 + 15) / 60] * 100 = (40 / 60) * 100 = 66.7 dependents per 100 workers."
+    },
+    {
+      q: "3. What demographic concept explains why Japan's government provides financial subsidies to companies designing automated healthcare robotics?",
+      opts: [
+        "Severe agricultural overpopulation in Honshu",
+        "A critical shortage of working-age caregivers for an expanding elderly cohort",
+        "High teenage fertility rates overwhelming municipal nurseries",
+        "Rapid population expansion in Stage 2 of the Demographic Transition"
+      ],
+      correct: 1,
+      rationale: "With over 29% of its citizens over 65 and a shrinking workforce, Japan invests in robotics to offset nursing labor shortages."
+    },
+    {
+      q: "4. A demographic group of adults aged 42 who are financially providing for their teenage children while also assisting their 82-year-old parents with daily healthcare are described as:",
+      opts: [
+        "The Echo Boom Cohort",
+        "The Replacement Fertility Class",
+        "The Sandwich Generation",
+        "The Potential Labor Reserve"
+      ],
+      correct: 2,
+      rationale: "The 'Sandwich Generation' refers to middle-aged adults squeezed between raising kids and caring for elderly parents."
+    },
+    {
+      q: "5. Why do municipal property tax bond referendums to construct new public elementary schools frequently fail in high-retiree communities?",
+      opts: [
+        "Senior citizens are legally prohibited from voting in local municipal elections.",
+        "Retirees living on fixed incomes vote against tax increases that do not directly benefit them.",
+        "High school students cast absentee ballots against elementary school funding.",
+        "State governments automatically fund 100% of all public school capital projects."
+      ],
+      correct: 1,
+      rationale: "Seniors vote at rates 30% higher than youth; on fixed incomes, they often vote against property taxes for schools they do not use (AMSCO p. 100)."
+    },
+    {
+      q: "6. Which country would exhibit an inverted population pyramid with a narrow base and wide middle-to-top cohorts?",
+      opts: [
+        "Niger (Stage 2)",
+        "Iraq (Stage 2/3)",
+        "Japan (Stage 5)",
+        "Kenya (Stage 2)"
+      ],
+      correct: 2,
+      rationale: "Stage 5 countries (Japan, Italy, Germany) feature inverted urn-shaped pyramids due to prolonged sub-replacement TFR."
+    },
+    {
+      q: "7. Why does the College Board classify North Africa and the Middle East as a shared geographic region (Southwest Asia and North Africa) rather than grouping North Africa with Sub-Saharan Africa?",
+      opts: [
+        "They are physically connected by a single contiguous land bridge.",
+        "They share predominant Arabic linguistic, cultural, and Islamic religious traits across the Sahara.",
+        "They both possess identical total fertility rates above 6.0.",
+        "They share a single supranational currency and central bank."
+      ],
+      correct: 1,
+      rationale: "AP regions are constructed around shared cultural, linguistic, and historical traits, not purely physical continental landmasses."
+    },
+    {
+      q: "8. A population pyramid displays an asymmetrical, bulging cohort exclusively for males aged 25 to 45. What is the most probable geographic cause?",
+      opts: [
+        "A sudden nationwide spike in maternal mortality rates",
+        "In-migration of temporary male guest workers for heavy construction and oil extraction",
+        "Severe wartime casualties disproportionately impacting young females",
+        "A pronatalist policy that only granted cash benefits to newborn boys"
+      ],
+      correct: 1,
+      rationale: "Common in Gulf States (UAE, Qatar), where hundreds of thousands of foreign male migrant workers are hired for construction."
+    },
+    {
+      q: "9. France and Sweden offering heavily subsidized government daycare, extended paid paternity leave, and direct monthly cash bonuses per child are examples of:",
+      opts: [
+        "Antinatalist policies",
+        "Pronatalist policies",
+        "Malthusian preventive checks",
+        "Stage 1 demographic stabilization programs"
+      ],
+      correct: 1,
+      rationale: "Pronatalist policies aim to boost fertility rates back toward the 2.1 replacement level."
+    },
+    {
+      q: "10. In a country where the Natural Increase Rate (NIR) is 1.4%, how long will it take for the total population to double in size (Rule of 70)?",
+      opts: [
+        "35 years",
+        "50 years",
+        "70 years",
+        "100 years"
+      ],
+      correct: 1,
+      rationale: "<strong>Rule of 70:</strong> Doubling Time = 70 / NIR = 70 / 1.4 = 50 years."
+    }
+  ];
+
+  let quizScore = 0;
+  let answeredQuestions = new Set();
+
+  function renderQuiz() {
+    const container = document.getElementById('quiz-container');
+    container.innerHTML = '';
+
+    quizData.forEach((item, qIndex) => {
+      const qEl = document.createElement('div');
+      qEl.className = 'quiz-item';
+      qEl.innerHTML = `
+        <div class="quiz-q">${item.q}</div>
+        <div class="quiz-options" id="opt-group-${qIndex}">
+          ${item.opts.map((opt, oIndex) => `
+            <div class="quiz-opt" onclick="selectAnswer(${qIndex}, ${oIndex})">${opt}</div>
+          `).join('')}
+        </div>
+        <div class="quiz-rationale" id="rationale-${qIndex}"></div>
+      `;
+      container.appendChild(qEl);
+    });
+  }
+
+  function selectAnswer(qIndex, oIndex) {
+    if (answeredQuestions.has(qIndex)) return;
+    answeredQuestions.add(qIndex);
+
+    const q = quizData[qIndex];
+    const optEls = document.getElementById(`opt-group-${qIndex}`).children;
+    const rationaleEl = document.getElementById(`rationale-${qIndex}`);
+
+    if (oIndex === q.correct) {
+      optEls[oIndex].classList.add('selected-correct');
+      quizScore++;
+      rationaleEl.style.background = 'var(--success-bg)';
+      rationaleEl.style.color = '#14532d';
+      rationaleEl.innerHTML = `<strong>CORRECT!</strong> ${q.rationale}`;
+    } else {
+      optEls[oIndex].classList.add('selected-wrong');
+      optEls[q.correct].classList.add('selected-correct');
+      rationaleEl.style.background = 'var(--danger-bg)';
+      rationaleEl.style.color = '#7f1d1d';
+      rationaleEl.innerHTML = `<strong>INCORRECT.</strong> Correct answer: <em>${q.opts[q.correct]}</em><br>${q.rationale}`;
+    }
+
+    rationaleEl.style.display = 'block';
+    document.getElementById('quiz-tracker').innerText = `Score: ${quizScore} / 10`;
+  }
+
+  // Initialize on load
+  window.addEventListener('DOMContentLoaded', () => {
+    renderCategorillaPool();
+    updateCalculator();
+    renderQuiz();
+  });
+</script>
+
+</body>
+</html>
