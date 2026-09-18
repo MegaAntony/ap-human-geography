@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's on Friday's Formatives? — AP Human Geography</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --success: #16a34a;
+      --success-bg: #f0fdf4;
+      --warning: #d97706;
+      --warning-bg: #fefce8;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --shadow: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumb {
+      display: flex;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: white;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      padding: 32px 28px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .badge-pill {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 820px;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: 18px;
+      border: 1.5px solid var(--border);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    .formative-card {
+      border: 2px solid;
+      border-radius: 14px;
+      padding: 20px;
+      background: white;
+    }
+    .formative-1 {
+      border-color: #2563eb;
+      background: linear-gradient(to bottom, #ffffff, #eff6ff);
+    }
+    .formative-2 {
+      border-color: #059669;
+      background: linear-gradient(to bottom, #ffffff, #f0fdf4);
+    }
+
+    .formative-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Canvas Quote Box */
+    .quote-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    /* Tables */
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    .styled-table th, .styled-table td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .styled-table th {
+      background: #f1f5f9;
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+    .styled-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Success Criteria Checklist */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+    .checklist li {
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.94rem;
+    }
+    .check-icon {
+      color: var(--success);
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    /* Trap Cards */
+    .trap-card {
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-left: 5px solid;
+    }
+    .trap-danger {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+      color: #7f1d1d;
+    }
+    .trap-warning {
+      background: var(--warning-bg);
+      border-color: var(--warning);
+      color: #78350f;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: #059669;
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: white;
+      color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="../index.html">← Study Portal Home</a>
+    <span>/</span>
+    <a href="../unit2-categorilla/index.html">Categorilla Hub</a>
+    <span>/</span>
+    <a href="../world-regions/index.html">World Regions Hub</a>
+    <span>/</span>
+    <span>What's on Friday's Assessments?</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="badge-pill">📅 Friday Assessment Briefing • Sept 18, 2026</div>
+    <h1>What Is on Friday's Formatives?</h1>
+    <p class="lead">
+      Everything Antony Anish needs to know for Mrs. Anne Knight's class (Room 1325, Forsyth County Schools). Direct Canvas syllabus alignment, AMSCO textbook reading pages, and the 100% scoring strategy.
+    </p>
+  </header>
+
+  <!-- The 2 Formatives -->
+  <div class="card">
+    <h2><span>🎯</span> The Two Assessments Scheduled for Friday</h2>
+    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 14px;">
+      Forsyth County Schools grades Formative Assessments at <strong>25%</strong> of the overall grade. Scoring 100% on both sets a solid foundation for the Unit 2 Summative (75%).
+    </p>
+
+    <div class="grid-2">
+      <!-- Formative 1 -->
+      <div class="formative-card formative-1">
+        <div class="formative-title" style="color: #1e3a8a;">
+          <span>🦍</span> Formative #1: Aging Population Categorilla
+        </div>
+        <p style="font-size: 0.88rem; color: #1e293b; margin: 8px 0 12px;">
+          <strong>Format:</strong> Concept sorting into 4 analytical bins (20 cards total).
+        </p>
+        <ul style="font-size: 0.84rem; color: #334155; padding-left: 18px; line-height: 1.55;">
+          <li><strong>Bin 1 (Root Causes):</strong> TFR below 2.1, female education/careers, healthcare longevity.</li>
+          <li><strong>Bin 2 (Economic Effects):</strong> Shrinking tax base, pension insolvency, labor shortages, silver economy.</li>
+          <li><strong>Bin 3 (Social / Spatial Shifts):</strong> Sandwich generation, school closures, Akiya ghost towns.</li>
+          <li><strong>Bin 4 (Political Policies):</strong> Gray voting bloc, retirement age hikes, pronatalist baby bonuses.</li>
+        </ul>
+        <div style="margin-top: 14px;">
+          <a href="../unit2-categorilla/index.html" class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;">Launch Categorilla Simulator →</a>
+        </div>
+      </div>
+
+      <!-- Formative 2 -->
+      <div class="formative-card formative-2">
+        <div class="formative-title" style="color: #065f46;">
+          <span>🗺️</span> Formative #2: World Regions Map Formative
+        </div>
+        <p style="font-size: 0.88rem; color: #1e293b; margin: 8px 0 12px;">
+          <strong>Format:</strong> Map identification testing macro regions and the 23 subregions.
+        </p>
+        <ul style="font-size: 0.84rem; color: #334155; padding-left: 18px; line-height: 1.55;">
+          <li><strong>Africa (5):</strong> North, West, Central, East, Southern Africa.</li>
+          <li><strong>Asia (5):</strong> Middle East, Central Asia, South Asia, East Asia, Southeast Asia.</li>
+          <li><strong>Europe (4):</strong> Western, Eastern, Northern, Southern Europe.</li>
+          <li><strong>Americas (4):</strong> US, Canada, Central America, Caribbean, Latin America/Brazil.</li>
+          <li><strong>Oceania (3 island zones):</strong> Polynesia, Micronesia, Melanesia.</li>
+        </ul>
+        <div style="margin-top: 14px;">
+          <a href="../world-regions/index.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Open Map Study Portal →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teacher's Exact Canvas Post -->
+  <div class="card">
+    <h2><span>🏫</span> Official Canvas Class Schedule (Mrs. Anne Knight)</h2>
+    <p style="font-size: 0.92rem; color: var(--text-muted);">
+      Source: Canvas Course 276433 (AP Human Geography Week 7: September 14th–18th).
+    </p>
+
+    <div class="quote-box">
+      <strong>Mrs. Knight's Agenda for Friday, Sept 18:</strong><br>
+      • <strong>Bell Ringer</strong><br>
+      • <strong>Formative Assessment — Aging Population Categorilla</strong><br>
+      &nbsp;&nbsp;<em>"To prepare for this, I recommend reading the AMSCO and making sure you are up to date on your notes."</em><br>
+      • <strong>Topic 2.4 Notes:</strong> Population Dynamics (CBR, CDR, NIR, Doubling Time)<br>
+      • <strong>Homework:</strong> Study for World Regions map formative • ENJOY HOMECOMING!
+    </div>
+
+    <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--primary-dark); margin: 18px 0 8px;">
+      📋 Canvas "Success Criteria" (Tested Competencies):
+    </h3>
+    <ul class="checklist">
+      <li>
+        <span class="check-icon">✓</span>
+        <div><strong>Topic 2.9 (Aging Populations):</strong> I can explain the causes and consequences of an aging population.</div>
+      </li>
+      <li>
+        <span class="check-icon">✓</span>
+        <div><strong>Topic 2.3 (Population Composition):</strong> I can describe elements of population composition and explain ways geographers depict and analyze population composition (age-sex pyramids, sex ratio, dependency ratio).</div>
+      </li>
+      <li>
+        <span class="check-icon">✓</span>
+        <div><strong>Topic 2.1 & 2.2 (Densities & Distribution):</strong> I can define methods geographers use to calculate population density (Arithmetic, Physiological, Agricultural) and explain their impact on society and arable land.</div>
+      </li>
+      <li>
+        <span class="check-icon">✓</span>
+        <div><strong>Topic 2.4 (Population Dynamics):</strong> I can explain factors that account for trends in population growth and decline (CBR, CDR, NIR, Rule of 70).</div>
+      </li>
+      <li>
+        <span class="check-icon">✓</span>
+        <div><strong>Mrs. Knight's SPEED Model:</strong> Categorizing geographic impacts across <strong>S</strong>ocial, <strong>P</strong>olitical, <strong>E</strong>conomic, <strong>E</strong>nvironmental, and <strong>D</strong>emographic dimensions.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- AMSCO Textbook Reading Coordinates -->
+  <div class="card">
+    <h2><span>📖</span> Exact AMSCO Textbook Coordinates</h2>
+    <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 12px;">
+      All formative material comes from <strong>AMSCO Advanced Placement Human Geography (2nd Edition by David Palmer)</strong>:
+    </p>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Topic / Assessment Area</th>
+          <th>Textbook Chapter</th>
+          <th>Exact Pages</th>
+          <th>Key Content to Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>World Regions Formative</strong></td>
+          <td>Topic 1.7 (Unit 1)</td>
+          <td><strong>Pages 44 & 45</strong></td>
+          <td>
+            • <strong>Page 44:</strong> <em>World Regions: A Big Picture View</em> (10 macro regions + 5 oceans)<br>
+            • <strong>Page 45:</strong> <em>World Regions: A Closer Look</em> (The 23 subregions tested)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Aging Population Categorilla</strong></td>
+          <td>Topic 2.9 (Unit 2)</td>
+          <td><strong>Pages 105–109</strong></td>
+          <td>
+            • Falling TFR & medical longevity (Causes)<br>
+            • Pension insolvency & labor shortage (Economic)<br>
+            • Sandwich generation & Akiya ghost towns (Social)<br>
+            • Gray voting bloc & pronatalist policies (Political)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Population Composition & Pyramids</strong></td>
+          <td>Topic 2.3 (Unit 2)</td>
+          <td><strong>Pages 98–104</strong></td>
+          <td>
+            • <strong>Page 101:</strong> Official Dependency Ratio formulas<br>
+            • DTM pyramid shapes (Stages 2, 3, 4, 5)<br>
+            • The Elderly Crude Death Rate (CDR) Trap
+          </td>
+        </tr>
+        <tr>
+          <td><strong>The 3 Population Densities</strong></td>
+          <td>Topic 2.1 (Unit 2)</td>
+          <td><strong>Pages 71–79</strong></td>
+          <td>
+            • <strong>Arithmetic:</strong> Total Pop / Total Land<br>
+            • <strong>Physiological:</strong> Total Pop / Arable Land (Egypt case)<br>
+            • <strong>Agricultural:</strong> Farmers / Arable Land (MDC vs LDC)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Dynamics & Growth</strong></td>
+          <td>Topic 2.4 (Unit 2)</td>
+          <td><strong>Pages 102–104</strong></td>
+          <td>
+            • Natural Increase Rate: $(CBR - CDR) / 10$<br>
+            • Rule of 70: Doubling Time $= 70 / NIR$
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Top 5 Exam Traps -->
+  <div class="card">
+    <h2><span>⚠️</span> Top 5 Traps College Board & Mrs. Knight Test</h2>
+
+    <div class="trap-card trap-danger">
+      <strong>1. The Dependency Ratio Denominator Trap:</strong>
+      <p style="font-size: 0.88rem; margin-top: 4px;">
+        Total Dependency Ratio is $\frac{\text{Youth (0–14)} + \text{Elderly (65+)}}{\text{Working Age (15–64)}} \times 100$. The denominator is <strong>STRICTLY the working-age population (15–64)</strong>, NEVER total population!
+      </p>
+    </div>
+
+    <div class="trap-card trap-danger">
+      <strong>2. The Elderly Crude Death Rate (CDR) Trap:</strong>
+      <p style="font-size: 0.88rem; margin-top: 4px;">
+        France (~9.5 CDR) has a <em>higher</em> death rate than Bangladesh (~5.5 CDR) not because of poor healthcare, but because France has an <strong>aged population structure</strong> (21%+ over 65 vs. 5%).
+      </p>
+    </div>
+
+    <div class="trap-card trap-warning">
+      <strong>3. The North Africa Regional Trap:</strong>
+      <p style="font-size: 0.88rem; margin-top: 4px;">
+        College Board groups North Africa with <strong>Southwest Asia (Middle East)</strong>, NEVER with Sub-Saharan Africa, due to shared Arabic language, Islamic faith, and arid desert landscape.
+      </p>
+    </div>
+
+    <div class="trap-card trap-warning">
+      <strong>4. The Arithmetic vs. Physiological Density Trap:</strong>
+      <p style="font-size: 0.88rem; margin-top: 4px;">
+        A low arithmetic density can hide extreme overcrowding. Egypt's arithmetic density is ~105/km², but its physiological density is over 3,100/km² because 95% of the country is desert and people cluster on the 3% arable strip along the Nile.
+      </p>
+    </div>
+
+    <div class="trap-card trap-warning">
+      <strong>5. China's "4-2-1" Trap & Skewed Sex Ratio:</strong>
+      <p style="font-size: 0.88rem; margin-top: 4px;">
+        A direct result of the One-Child Policy (1979–2015): 1 adult only child supports 2 parents and 4 grandparents with no siblings to share costs, coupled with a skewed ratio of ~115 boys per 100 girls.
+      </p>
+    </div>
+  </div>
+
+  <!-- Direct Links to Interactive Tools -->
+  <div class="card" style="border: 2px solid var(--accent); background: linear-gradient(to bottom, #ffffff, #eff6ff);">
+    <h2><span>🚀</span> Practice Right Now on Your Published Study Hubs</h2>
+    <p style="font-size: 0.94rem; color: #1e3a8a; margin-bottom: 14px;">
+      All simulators and map drillers are interactive, self-grading, and mobile-friendly:
+    </p>
+
+    <div class="btn-group">
+      <a href="../unit2-categorilla/index.html" class="btn btn-primary">🦍 Categorilla 20-Card Simulator</a>
+      <a href="../unit2-categorilla/index.html#math" class="btn btn-primary">📊 Dependency & Density Calculator</a>
+      <a href="../unit2-categorilla/index.html#quiz" class="btn btn-primary">🎯 14-Question Diagnostic Quiz</a>
+      <a href="../unit2-categorilla/index.html#cheat" class="btn btn-outline">⚡ 5-Minute Morning Sheet</a>
+      <a href="../world-regions/world_regions_closer_look.html" class="btn btn-secondary">🗺️ 23-Subregion Map Trainer</a>
+      <a href="../world-regions/world_regions_big_picture.html" class="btn btn-secondary">🌍 Big Picture Macro Map</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 AP Human Geography Study Hub • Forsyth County Schools Curriculum Alignment</p>
+</footer>
+
+</body>
+</html>
