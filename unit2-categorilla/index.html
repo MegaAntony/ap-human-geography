@@ -529,11 +529,11 @@
   <p>Comprehensive interactive simulator, formula calculator, 20-region map portal, and instant-scoring practice bank for Antony Anish (Grade 9).</p>
   
   <div class="nav-tabs">
-    <button class="tab-btn active" onclick="switchTab('categorilla')">🦍 Categorilla Simulator</button>
-    <button class="tab-btn" onclick="switchTab('math')">📊 Pyramids & Math Lab</button>
-    <button class="tab-btn" onclick="switchTab('maps')">🗺️ World Regions Map Hub</button>
-    <button class="tab-btn" onclick="switchTab('quiz')">🎯 10-Question 100% Drill</button>
-    <button class="tab-btn" onclick="switchTab('cheat')">⚡ 5-Min Morning Sheet</button>
+    <button class="tab-btn active" onclick="switchTab('categorilla', this)">🦍 Categorilla Simulator</button>
+    <button class="tab-btn" onclick="switchTab('math', this)">📊 Pyramids & Math Lab</button>
+    <button class="tab-btn" onclick="switchTab('maps', this)">🗺️ World Regions Map Hub</button>
+    <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 10-Question 100% Drill</button>
+    <button class="tab-btn" onclick="switchTab('cheat', this)">⚡ 5-Min Morning Sheet</button>
   </div>
 </header>
 
@@ -902,12 +902,20 @@ Youth Dependency Ratio =
 
 <script>
   // Navigation Tabs
-  function switchTab(tabId) {
+  function switchTab(tabId, btn) {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
     
-    event.currentTarget.classList.add('active');
-    document.getElementById(`tab-${tabId}`).classList.add('active');
+    if (btn) {
+      btn.classList.add('active');
+    } else {
+      const allBtns = Array.from(document.querySelectorAll('.tab-btn'));
+      const targetBtn = allBtns.find(b => b.getAttribute('onclick')?.includes(tabId));
+      if (targetBtn) targetBtn.classList.add('active');
+    }
+    const targetContent = document.getElementById(`tab-${tabId}`);
+    if (targetContent) targetContent.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   // ==========================================
