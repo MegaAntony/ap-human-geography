@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Human Geography — Study & Revision Hub</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #2563eb;
+      --accent: #dc2626;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: white;
+      border-radius: 14px;
+      padding: 32px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-title h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .hero-title p {
+      color: #93c5fd;
+      font-size: 15px;
+    }
+
+    .student-badge {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .student-badge .name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .student-badge .course {
+      font-size: 13px;
+      color: #bfdbfe;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-thumb {
+      background: #f1f5f9;
+      padding: 16px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .card-thumb img {
+      max-width: 100%;
+      height: 170px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .schedule-banner {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      margin-bottom: 30px;
+    }
+
+    .schedule-banner h2 {
+      font-size: 19px;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .schedule-item {
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-light);
+    }
+
+    .schedule-item h4 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .schedule-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Modal for Photo */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      max-width: 95vw;
+      max-height: 95vh;
+      background: white;
+      border-radius: 12px;
+      overflow: auto;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 75vh;
+      border-radius: 6px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 26px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div style="margin-bottom: 16px;">
+    <a href="../index.html" style="text-decoration: none; color: var(--primary); font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; background: white; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+      <span>←</span> Back to Main Portal Dashboard
+    </a>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <div class="hero-title">
+      <h1>AP Human Geography — Study & Revision Hub</h1>
+      <p>Unit 1: Thinking Geographically • World Regional Analysis & Formative Prep</p>
+    </div>
+    <div class="student-badge">
+      <div class="name">Antony Anish</div>
+      <div class="course">AP Human Geography • Mrs. Knight (Room 1325)</div>
+    </div>
+  </div>
+
+  <!-- Main Resource Grid -->
+  <div class="grid">
+    
+    <!-- Card 1: Big Picture View -->
+    <div class="card">
+      <div class="card-thumb">
+        <img src="big_picture_filled.png" alt="Map 1 Big Picture View">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Map 1: A Big Picture View</div>
+        <div class="card-desc">
+          Covers the 10 official macro-regions (continents and distinct cultural realms) plus the 5 major oceans.
+        </div>
+        <div class="card-actions">
+          <a href="world_regions_big_picture.html" class="btn btn-primary">
+            <span>🌐</span> Open Interactive Map
+          </a>
+          <a href="world_regions_big_picture.html" class="btn btn-secondary" onclick="sessionStorage.setItem('mode', 'quiz')">
+            <span>✏️</span> Quiz / Flashcard Mode
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: A Closer Look -->
+    <div class="card">
+      <div class="card-thumb">
+        <img src="closer_look_filled.png" alt="Map 2 A Closer Look">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Map 2: A Closer Look</div>
+        <div class="card-desc">
+          Detailed subregions breakdown (Canada, US, Latin America, Brazil, Europe, Middle East, Asia, and Pacific realms).
+        </div>
+        <div class="card-actions">
+          <a href="world_regions_closer_look.html" class="btn btn-primary">
+            <span>🔍</span> Open Interactive Map
+          </a>
+          <a href="world_regions_closer_look.html" class="btn btn-secondary">
+            <span>✏️</span> Quiz / Flashcard Mode
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Antony's Worksheet Photo -->
+    <div class="card">
+      <div class="card-thumb">
+        <img src="PXL_20260918_014616236.jpg" alt="Antony's Physical Worksheet">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Antony's Original Worksheet Photo</div>
+        <div class="card-desc">
+          High-resolution capture of your physical paper worksheet (both maps) for side-by-side verification.
+        </div>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="openPhotoModal()">
+            <span>📷</span> View Full-Size Photo
+          </button>
+          <a href="AP World Regions Blank.pdf" target="_blank" class="btn btn-secondary">
+            <span>📄</span> Open Original Blank PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Friday Formative & Study Guide Section -->
+  <div class="schedule-banner">
+    <h2><span>📅</span> Friday (Tomorrow) Schedule & Study Checklist</h2>
+    <div class="schedule-grid">
+      <div class="schedule-item">
+        <h4>1. Bell Ringer & 2.4 Notes</h4>
+        <p>Topic 2.4: Population Dynamics (CBR, CDR, TFR, NIR, Doubling Time). Located in AMSCO Chapter 4 (p. 24).</p>
+      </div>
+      <div class="schedule-item" style="border-left-color: #dc2626;">
+        <h4>2. Formative: Aging Population Categorilla</h4>
+        <p>Review <strong>Topic 2.9 (Aging Populations, AMSCO p. 47)</strong> and <strong>Topic 2.3 (Population Pyramids & Dependency Ratio, AMSCO p. 12)</strong>.</p>
+      </div>
+      <div class="schedule-item" style="border-left-color: #16a34a;">
+        <h4>3. World Regions Map Formative</h4>
+        <p>Review both maps above (Big Picture View & A Closer Look) to master the official AP regional classifications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Antony's Photo -->
+<div class="modal-backdrop" id="photoModal" onclick="closePhotoModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="closePhotoModal()">&times;</button>
+    <h3 style="margin-bottom: 12px; color: var(--primary);">Antony's Original Worksheet Photo</h3>
+    <img src="PXL_20260918_014616236.jpg" alt="Antony Anish AP World Regions Worksheet">
+    <p style="margin-top: 14px; font-size: 14px;">
+      <a href="PXL_20260918_014616236.jpg" target="_blank" style="color: var(--primary); font-weight: 600;">Open image directly in full resolution</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  function openPhotoModal() {
+    document.getElementById('photoModal').style.display = 'flex';
+  }
+
+  function closePhotoModal() {
+    document.getElementById('photoModal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

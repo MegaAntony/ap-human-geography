@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Human Geography: World Regions — A Closer Look</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --accent: #dc2626;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #16a34a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      background: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    h1 {
+      font-size: 26px;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      color: var(--text);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .btn:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+
+    .btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px rgba(30, 58, 138, 0.25);
+    }
+
+    .map-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .map-wrapper {
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: white;
+    }
+
+    .map-wrapper img {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+
+    .interactive-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .overlay-box {
+      position: absolute;
+      pointer-events: auto;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #94a3b8;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: #b91c1c;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      line-height: 1.1;
+      padding: 1px;
+    }
+
+    .overlay-box.hidden-answer {
+      background: #fef08a;
+      color: #854d0e;
+      border-color: #ca8a04;
+      font-size: 9px;
+    }
+
+    .overlay-box.hidden-answer::after {
+      content: "?";
+    }
+
+    .overlay-box.hidden-answer:hover {
+      background: #fde047;
+      transform: scale(1.08);
+    }
+
+    .overlay-box.revealed {
+      background: #dcfce7 !important;
+      color: #15803d !important;
+      border-color: #22c55e !important;
+      animation: pop 0.25s ease;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.9); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 14px;
+      font-size: 13px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: #dc2626;
+    }
+
+    .study-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .study-card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    .note-box {
+      margin-top: 20px;
+      padding: 16px;
+      border-left: 4px solid var(--primary);
+      background: #eff6ff;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+    }
+
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      max-width: 95vw;
+      max-height: 95vh;
+      background: white;
+      border-radius: 10px;
+      overflow: auto;
+      padding: 16px;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 6px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: #64748b;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .nav-bar, .controls, .note-box, .modal-backdrop { display: none; }
+      .map-card, .study-card { box-shadow: none; border: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="../index.html" class="nav-link"><span>🏛️</span> Main Portal</a>
+      <a href="index.html" class="nav-link"><span>🏠</span> Regions Hub</a>
+      <a href="world_regions_big_picture.html" class="nav-link"><span>⬅️</span> Map 1: Big Picture View</a>
+    </div>
+    <button class="btn" style="padding: 6px 12px;" onclick="openPhotoModal()">
+      <span>📷</span> View Antony's Worksheet Photo
+    </button>
+  </div>
+
+  <header>
+    <h1>AP Human Geography: World Regions</h1>
+    <p class="subtitle">Unit 1: Thinking Geographically • <strong>A Closer Look</strong> (Subregions)</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn active" id="btn-filled" onclick="setMode('filled')">
+      <span>👁️</span> Show Filled Answers
+    </button>
+    <button class="btn" id="btn-quiz" onclick="setMode('quiz')">
+      <span>✏️</span> Interactive Quiz Mode
+    </button>
+    <button class="btn" id="btn-blank" onclick="setMode('blank')">
+      <span>📄</span> Blank Practice Mode
+    </button>
+    <button class="btn" onclick="window.print()">
+      <span>🖨️</span> Print / Save PDF
+    </button>
+  </div>
+
+  <div class="map-card">
+    <div class="map-wrapper" id="map-wrapper">
+      <img id="map-img" src="closer_look_blank.png" alt="AP World Regions A Closer Look">
+      <div class="interactive-overlay" id="overlay"></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot"></div>
+        <span><strong>Red Labels:</strong> Official AP Subregions & Distinct Cultural Enclaves</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="study-card">
+    <h2><span>📚</span> Official AP Subregions Breakdown (AMSCO p. 45)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subregion</th>
+          <th>Parent Region</th>
+          <th>Distinguishing AP CED Traits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Canada & United States</strong></td>
+          <td>North America</td>
+          <td>Separated along the 49th parallel; shared Anglo-American heritage and high urbanization.</td>
+        </tr>
+        <tr>
+          <td><strong>Latin America</strong></td>
+          <td>The Americas</td>
+          <td>Overarching cultural realm stretching from Mexico through Tierra del Fuego.</td>
+        </tr>
+        <tr>
+          <td><strong>Caribbean</strong></td>
+          <td>Latin America</td>
+          <td>Island subregion with strong African, Spanish, British, and French colonial synthesis.</td>
+        </tr>
+        <tr>
+          <td><strong>Brazil</strong></td>
+          <td>Latin America</td>
+          <td>Highlighted as a distinct subregion because its primary language is Portuguese rather than Spanish.</td>
+        </tr>
+        <tr>
+          <td><strong>Western Europe & Eastern Europe</strong></td>
+          <td>Europe</td>
+          <td>Historically divided by the Cold War Iron Curtain; distinct linguistic (Romance/Germanic vs Slavic) and economic patterns.</td>
+        </tr>
+        <tr>
+          <td><strong>Russia</strong></td>
+          <td>Eurasia</td>
+          <td>Spans 11 time zones across Northern Asia, maintaining dominant cultural and economic influence.</td>
+        </tr>
+        <tr>
+          <td><strong>Central Asia</strong></td>
+          <td>Asia</td>
+          <td>Former Soviet republics ("The Stans"); landlocked, arid/steppe geography, Turkic languages, and Silk Road heritage.</td>
+        </tr>
+        <tr>
+          <td><strong>Middle East (Southwest Asia)</strong></td>
+          <td>Asia / North Africa</td>
+          <td>Crossroads of continents; Arabic language dominance, birthplace of Abrahamic religions, significant petroleum reserves.</td>
+        </tr>
+        <tr>
+          <td><strong>South Asia</strong></td>
+          <td>Asia</td>
+          <td>Indian subcontinent separated by Himalayas; major population cluster, Hinduism/Islam, Hindi/Urdu.</td>
+        </tr>
+        <tr>
+          <td><strong>East Asia</strong></td>
+          <td>Asia</td>
+          <td>China, Japan, Korea, Taiwan; Confucian traditions, massive population agglomeration, economic powerhouse.</td>
+        </tr>
+        <tr>
+          <td><strong>Southeast Asia</strong></td>
+          <td>Asia</td>
+          <td>Mainland Indochina & maritime archipelago (Indonesia, Philippines); cross-cultural crossroads of Indian and Chinese influences.</td>
+        </tr>
+        <tr>
+          <td><strong>North Africa</strong></td>
+          <td>Africa</td>
+          <td>Sahara desert region; linguistically Arabic and predominantly Islamic.</td>
+        </tr>
+        <tr>
+          <td><strong>West, Central, East, & Southern Africa</strong></td>
+          <td>Sub-Saharan Africa</td>
+          <td>4 subregions categorized by geographical location and diverse ethnic/linguistic groupings:
+            <br>• <strong>West Africa:</strong> High population density along Gulf of Guinea.
+            <br>• <strong>Central Africa:</strong> Congo Basin tropical rainforest.
+            <br>• <strong>East Africa:</strong> Great Rift Valley highlands and Swahili coast.
+            <br>• <strong>Southern Africa:</strong> Mineral wealth, temperate southern plateau.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Australia, Polynesia, Micronesia, Melanesia</strong></td>
+          <td>Oceania</td>
+          <td>Australia (mainland continent) plus the three major island subregions of the Pacific Ocean.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <strong>Key Concept — Scale of Analysis:</strong> Notice how changing from "A Big Picture View" to "A Closer Look" represents an increase in map resolution / scale of analysis. Areas that appeared uniform (like Sub-Saharan Africa or Latin America) reveal critical internal diversity when examined up close.
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Antony's Photo -->
+<div class="modal-backdrop" id="photoModal" onclick="closePhotoModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="closePhotoModal()">&times;</button>
+    <h3 style="margin-bottom: 12px; color: var(--primary);">Antony's Original Worksheet Photo</h3>
+    <img src="PXL_20260918_014616236.jpg" alt="Antony Anish AP World Regions Worksheet">
+    <p style="margin-top: 10px; font-size: 13px; color: var(--text-muted);">
+      Reference: <a href="PXL_20260918_014616236.jpg" target="_blank">Open Full-Resolution Image</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  const IMG_W = 641;
+  const IMG_H = 375;
+
+  const boxesData = [
+    { x: 419, y: 97, w: 41, h: 12, text: "Russia" },
+    { x: 154, y: 106, w: 45, h: 14, text: "Canada" },
+    { x: 345, y: 111, w: 33, h: 19, text: "Eastern\nEurope" },
+    { x: 265, y: 121, w: 37, h: 25, text: "Western\nEurope" },
+    { x: 395, y: 123, w: 27, h: 21, text: "Central\nAsia" },
+    { x: 159, y: 133, w: 35, h: 24, text: "United\nStates" },
+    { x: 447, y: 133, w: 37, h: 25, text: "East\nAsia" },
+    { x: 370, y: 149, w: 36, h: 12, text: "Middle East" },
+    { x: 309, y: 155, w: 57, h: 15, text: "North Africa" },
+    { x: 417, y: 156, w: 29, h: 21, text: "South\nAsia" },
+    { x: 211, y: 164, w: 52, h: 14, text: "Caribbean" },
+    { x: 289, y: 177, w: 37, h: 25, text: "West\nAfrica" },
+    { x: 537, y: 179, w: 45, h: 21, text: "Micronesia" },
+    { x: 329, y: 202, w: 33, h: 23, text: "Central\nAfrica" },
+    { x: 381, y: 206, w: 28, h: 21, text: "East\nAfrica" },
+    { x: 422, y: 209, w: 49, h: 21, text: "Southeast\nAsia" },
+    { x: 137, y: 211, w: 37, h: 25, text: "Latin\nAmerica" },
+    { x: 60, y: 222, w: 37, h: 25, text: "Polynesia" },
+    { x: 220, y: 222, w: 41, h: 12, text: "Brazil" },
+    { x: 550, y: 227, w: 57, h: 14, text: "Melanesia" },
+    { x: 298, y: 248, w: 37, h: 25, text: "Southern\nAfrica" },
+    { x: 495, y: 249, w: 41, h: 12, text: "Australia" },
+    { x: 557, y: 258, w: 50, h: 13, text: "Polynesia" }
+  ];
+
+  let currentMode = 'filled';
+  const overlay = document.getElementById('overlay');
+  const mapImg = document.getElementById('map-img');
+
+  function renderOverlay() {
+    overlay.innerHTML = '';
+    
+    if (currentMode === 'blank') {
+      return;
+    }
+
+    boxesData.forEach((box) => {
+      const el = document.createElement('div');
+      el.className = 'overlay-box';
+      
+      el.style.left = `${(box.x / IMG_W) * 100}%`;
+      el.style.top = `${(box.y / IMG_H) * 100}%`;
+      el.style.width = `${(box.w / IMG_W) * 100}%`;
+      el.style.height = `${(box.h / IMG_H) * 100}%`;
+
+      if (currentMode === 'filled') {
+        el.innerText = box.text;
+        el.title = box.text.replace('\n', ' ');
+      } else if (currentMode === 'quiz') {
+        el.classList.add('hidden-answer');
+        el.title = "Click to reveal";
+        el.addEventListener('click', () => {
+          if (el.classList.contains('hidden-answer')) {
+            el.classList.remove('hidden-answer');
+            el.classList.add('revealed');
+            el.innerText = box.text;
+          } else {
+            el.classList.add('hidden-answer');
+            el.classList.remove('revealed');
+            el.innerText = '';
+          }
+        });
+      }
+
+      overlay.appendChild(el);
+    });
+  }
+
+  function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.controls .btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(`btn-${mode}`).classList.add('active');
+
+    if (mode === 'filled') {
+      mapImg.src = 'closer_look_filled.png';
+      overlay.style.display = 'none';
+    } else {
+      mapImg.src = 'closer_look_blank.png';
+      overlay.style.display = 'block';
+      renderOverlay();
+    }
+  }
+
+  function openPhotoModal() {
+    document.getElementById('photoModal').style.display = 'flex';
+  }
+
+  function closePhotoModal() {
+    document.getElementById('photoModal').style.display = 'none';
+  }
+
+  setMode('filled');
+</script>
+
+</body>
+</html>
