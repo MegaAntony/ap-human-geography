@@ -200,6 +200,54 @@
       animation: pop 0.25s ease;
     }
 
+    .overlay-box.active-target {
+      background: #93c5fd !important;
+      color: #1e3a8a !important;
+      border: 2px solid #2563eb !important;
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.8) !important;
+      transform: scale(1.15);
+      z-index: 50;
+      animation: pulse 1s infinite alternate;
+    }
+
+    .overlay-box.incorrect-target {
+      background: #fecaca !important;
+      color: #991b1b !important;
+      border: 2px solid #ef4444 !important;
+      animation: shake 0.3s ease;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 4px rgba(37, 99, 235, 0.6); }
+      100% { box-shadow: 0 0 14px rgba(37, 99, 235, 1); }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      75% { transform: translateX(4px); }
+    }
+
+    .choice-btn {
+      padding: 10px 14px;
+      background: white;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1e293b;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s ease;
+    }
+
+    .choice-btn:hover {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
     @keyframes pop {
       0% { transform: scale(0.9); }
       50% { transform: scale(1.08); }
@@ -342,6 +390,7 @@
       <a href="../index.html" class="nav-link"><span>🏛️</span> Main Portal</a>
       <a href="index.html" class="nav-link"><span>🏠</span> Regions Hub</a>
       <a href="world_regions_big_picture.html" class="nav-link"><span>⬅️</span> Map 1: Big Picture View</a>
+      <a href="World_Regions_Master_Study_Guide.md" class="nav-link" target="_blank"><span>📖</span> Master Study Guide (MD)</a>
     </div>
     <button class="btn" style="padding: 6px 12px;" onclick="openPhotoModal()">
       <span>📷</span> View Antony's Worksheet Photo
@@ -357,8 +406,11 @@
     <button class="btn active" id="btn-filled" onclick="setMode('filled')">
       <span>👁️</span> Show Filled Answers
     </button>
+    <button class="btn" id="btn-practice" onclick="setMode('practice')">
+      <span>🎯</span> Active Practice Test (MCQ)
+    </button>
     <button class="btn" id="btn-quiz" onclick="setMode('quiz')">
-      <span>✏️</span> Interactive Quiz Mode
+      <span>✏️</span> Click-to-Reveal Mode
     </button>
     <button class="btn" id="btn-blank" onclick="setMode('blank')">
       <span>📄</span> Blank Practice Mode
@@ -372,6 +424,29 @@
     <div class="map-wrapper" id="map-wrapper">
       <img id="map-img" src="closer_look_blank.png" alt="AP World Regions A Closer Look">
       <div class="interactive-overlay" id="overlay"></div>
+    </div>
+
+    <!-- Interactive Practice Test Panel -->
+    <div id="practice-panel" style="display:none; margin-top: 18px; padding: 18px; background: #f8fafc; border-radius: 10px; border: 1.5px solid #cbd5e1; text-align: left;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <span style="font-weight: 800; font-size: 15px; color: var(--primary);" id="practice-status">Question 1 of 23</span>
+          <span style="margin-left: 10px; font-size: 13px; color: var(--text-muted);" id="practice-subtext">Identify the highlighted blue box on the map:</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-weight: 700; font-size: 14px; background: white; padding: 5px 12px; border-radius: 6px; border: 1px solid #cbd5e1; color: var(--primary);" id="practice-score">Score: 0 / 23 (0%)</span>
+          <button class="btn" style="padding: 5px 10px; font-size: 12px;" onclick="resetPracticeTest()"><span>🔄</span> Restart</button>
+        </div>
+      </div>
+      <div id="practice-question-card" style="background: white; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+        <div id="practice-prompt" style="font-weight: 700; font-size: 15px; margin-bottom: 12px; color: #1e293b;">
+          Which AP Subregion is highlighted in glowing blue on the map?
+        </div>
+        <div id="practice-choices" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <!-- Dynamically populated choices -->
+        </div>
+        <div id="practice-feedback" style="margin-top: 12px; font-size: 13px; font-weight: 600; min-height: 22px;"></div>
+      </div>
     </div>
 
     <div class="legend">
@@ -494,34 +569,37 @@
   const IMG_H = 375;
 
   const boxesData = [
-    { x: 419, y: 97, w: 41, h: 12, text: "Russia" },
-    { x: 154, y: 106, w: 45, h: 14, text: "Canada" },
-    { x: 345, y: 111, w: 33, h: 19, text: "Eastern\nEurope" },
-    { x: 265, y: 121, w: 37, h: 25, text: "Western\nEurope" },
-    { x: 395, y: 123, w: 27, h: 21, text: "Central\nAsia" },
-    { x: 159, y: 133, w: 35, h: 24, text: "United\nStates" },
-    { x: 447, y: 133, w: 37, h: 25, text: "East\nAsia" },
-    { x: 370, y: 149, w: 36, h: 12, text: "Middle East" },
-    { x: 309, y: 155, w: 57, h: 15, text: "North Africa" },
-    { x: 417, y: 156, w: 29, h: 21, text: "South\nAsia" },
-    { x: 211, y: 164, w: 52, h: 14, text: "Caribbean" },
-    { x: 289, y: 177, w: 37, h: 25, text: "West\nAfrica" },
-    { x: 537, y: 179, w: 45, h: 21, text: "Micronesia" },
-    { x: 329, y: 202, w: 33, h: 23, text: "Central\nAfrica" },
-    { x: 381, y: 206, w: 28, h: 21, text: "East\nAfrica" },
-    { x: 422, y: 209, w: 49, h: 21, text: "Southeast\nAsia" },
-    { x: 137, y: 211, w: 37, h: 25, text: "Latin\nAmerica" },
-    { x: 60, y: 222, w: 37, h: 25, text: "Polynesia" },
-    { x: 220, y: 222, w: 41, h: 12, text: "Brazil" },
-    { x: 550, y: 227, w: 57, h: 14, text: "Melanesia" },
-    { x: 298, y: 248, w: 37, h: 25, text: "Southern\nAfrica" },
-    { x: 495, y: 249, w: 41, h: 12, text: "Australia" },
-    { x: 557, y: 258, w: 50, h: 13, text: "Polynesia" }
+    { id: 0, x: 419, y: 97, w: 41, h: 12, text: "Russia", label: "Russia" },
+    { id: 1, x: 154, y: 106, w: 45, h: 14, text: "Canada", label: "Canada" },
+    { id: 2, x: 345, y: 111, w: 33, h: 19, text: "Eastern\nEurope", label: "Eastern Europe" },
+    { id: 3, x: 265, y: 121, w: 37, h: 25, text: "Western\nEurope", label: "Western Europe" },
+    { id: 4, x: 395, y: 123, w: 27, h: 21, text: "Central\nAsia", label: "Central Asia" },
+    { id: 5, x: 159, y: 133, w: 35, h: 24, text: "United\nStates", label: "United States" },
+    { id: 6, x: 447, y: 133, w: 37, h: 25, text: "East\nAsia", label: "East Asia" },
+    { id: 7, x: 370, y: 149, w: 36, h: 12, text: "Middle East", label: "Middle East" },
+    { id: 8, x: 309, y: 155, w: 57, h: 15, text: "North Africa", label: "North Africa" },
+    { id: 9, x: 417, y: 156, w: 29, h: 21, text: "South\nAsia", label: "South Asia" },
+    { id: 10, x: 211, y: 164, w: 52, h: 14, text: "Caribbean", label: "Caribbean" },
+    { id: 11, x: 289, y: 177, w: 37, h: 25, text: "West\nAfrica", label: "West Africa" },
+    { id: 12, x: 537, y: 179, w: 45, h: 21, text: "Micronesia", label: "Micronesia" },
+    { id: 13, x: 329, y: 202, w: 33, h: 23, text: "Central\nAfrica", label: "Central Africa" },
+    { id: 14, x: 381, y: 206, w: 28, h: 21, text: "East\nAfrica", label: "East Africa" },
+    { id: 15, x: 422, y: 209, w: 49, h: 21, text: "Southeast\nAsia", label: "Southeast Asia" },
+    { id: 16, x: 137, y: 211, w: 37, h: 25, text: "Latin\nAmerica", label: "Latin America" },
+    { id: 17, x: 60, y: 222, w: 37, h: 25, text: "Polynesia", label: "Polynesia" },
+    { id: 18, x: 220, y: 222, w: 41, h: 12, text: "Brazil", label: "Brazil" },
+    { id: 19, x: 550, y: 227, w: 57, h: 14, text: "Melanesia", label: "Melanesia" },
+    { id: 20, x: 298, y: 248, w: 37, h: 25, text: "Southern\nAfrica", label: "Southern Africa" },
+    { id: 21, x: 495, y: 249, w: 41, h: 12, text: "Australia", label: "Australia" },
+    { id: 22, x: 557, y: 258, w: 50, h: 13, text: "Polynesia", label: "Polynesia" }
   ];
 
   let currentMode = 'filled';
+  let activeQuestionIndex = 0;
+  let answeredCorrectly = new Set();
   const overlay = document.getElementById('overlay');
   const mapImg = document.getElementById('map-img');
+  const practicePanel = document.getElementById('practice-panel');
 
   function renderOverlay() {
     overlay.innerHTML = '';
@@ -530,9 +608,10 @@
       return;
     }
 
-    boxesData.forEach((box) => {
+    boxesData.forEach((box, index) => {
       const el = document.createElement('div');
       el.className = 'overlay-box';
+      el.id = `box-${index}`;
       
       el.style.left = `${(box.x / IMG_W) * 100}%`;
       el.style.top = `${(box.y / IMG_H) * 100}%`;
@@ -541,7 +620,7 @@
 
       if (currentMode === 'filled') {
         el.innerText = box.text;
-        el.title = box.text.replace('\n', ' ');
+        el.title = box.label;
       } else if (currentMode === 'quiz') {
         el.classList.add('hidden-answer');
         el.title = "Click to reveal";
@@ -556,23 +635,137 @@
             el.innerText = '';
           }
         });
+      } else if (currentMode === 'practice') {
+        if (answeredCorrectly.has(index)) {
+          el.classList.add('revealed');
+          el.innerText = box.text;
+        } else {
+          el.classList.add('hidden-answer');
+          if (index === activeQuestionIndex) {
+            el.classList.add('active-target');
+          }
+          el.title = `Question #${index + 1}: Click to answer`;
+          el.addEventListener('click', () => {
+            selectActiveQuestion(index);
+          });
+        }
       }
 
       overlay.appendChild(el);
     });
   }
 
+  function selectActiveQuestion(index) {
+    if (answeredCorrectly.has(index)) return;
+    activeQuestionIndex = index;
+    renderOverlay();
+    renderPracticeQuestion();
+  }
+
+  function renderPracticeQuestion() {
+    if (currentMode !== 'practice') return;
+
+    // Check if finished
+    if (answeredCorrectly.size === boxesData.length) {
+      document.getElementById('practice-status').innerText = '🎉 100% Mastery Confirmed!';
+      document.getElementById('practice-prompt').innerHTML = '🏆 <strong>Outstanding Job!</strong> You have successfully identified all 23 official AP Subregions. You are 100% prepared for Mrs. Knight’s map quiz tomorrow!';
+      document.getElementById('practice-choices').innerHTML = `
+        <button class="choice-btn" style="grid-column: 1 / -1; text-align: center; background: #22c55e; color: white; font-size: 16px;" onclick="resetPracticeTest()">
+          🔄 Practice Again / Test Speed
+        </button>
+      `;
+      document.getElementById('practice-feedback').innerHTML = '<span style="color: #16a34a;">Score: 23 / 23 (100%) — Perfect Score!</span>';
+      return;
+    }
+
+    // Ensure activeQuestionIndex is unanswered
+    if (answeredCorrectly.has(activeQuestionIndex)) {
+      for (let i = 0; i < boxesData.length; i++) {
+        if (!answeredCorrectly.has(i)) {
+          activeQuestionIndex = i;
+          break;
+        }
+      }
+      renderOverlay();
+    }
+
+    const currentBox = boxesData[activeQuestionIndex];
+    document.getElementById('practice-status').innerText = `Question ${answeredCorrectly.size + 1} of ${boxesData.length}`;
+    document.getElementById('practice-prompt').innerText = `Which AP Subregion is highlighted in glowing blue on the map? (Box #${activeQuestionIndex + 1})`;
+    document.getElementById('practice-score').innerText = `Score: ${answeredCorrectly.size} / ${boxesData.length} (${Math.round((answeredCorrectly.size / boxesData.length) * 100)}%)`;
+    document.getElementById('practice-feedback').innerHTML = '';
+
+    // Pick 3 distractors
+    const allLabels = Array.from(new Set(boxesData.map(b => b.label))).filter(l => l !== currentBox.label);
+    const shuffledDistractors = allLabels.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const choices = [currentBox.label, ...shuffledDistractors].sort(() => 0.5 - Math.random());
+
+    const choicesContainer = document.getElementById('practice-choices');
+    choicesContainer.innerHTML = '';
+    choices.forEach(choice => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerText = choice;
+      btn.onclick = () => submitAnswer(choice, currentBox);
+      choicesContainer.appendChild(btn);
+    });
+  }
+
+  function submitAnswer(selected, targetBox) {
+    const feedbackEl = document.getElementById('practice-feedback');
+    const boxEl = document.getElementById(`box-${targetBox.id}`);
+
+    if (selected === targetBox.label) {
+      answeredCorrectly.add(targetBox.id);
+      feedbackEl.innerHTML = `<span style="color: #16a34a;">✓ Correct! <strong>${targetBox.label}</strong> correctly identified.</span>`;
+      
+      // Advance to next unanswered
+      setTimeout(() => {
+        for (let i = 0; i < boxesData.length; i++) {
+          if (!answeredCorrectly.has(i)) {
+            activeQuestionIndex = i;
+            break;
+          }
+        }
+        renderOverlay();
+        renderPracticeQuestion();
+      }, 450);
+    } else {
+      if (boxEl) {
+        boxEl.classList.add('incorrect-target');
+        setTimeout(() => boxEl.classList.remove('incorrect-target'), 500);
+      }
+      feedbackEl.innerHTML = `<span style="color: #dc2626;">✗ Incorrect choice: "<strong>${selected}</strong>". Look closely at the map coordinates and try again!</span>`;
+    }
+  }
+
+  function resetPracticeTest() {
+    answeredCorrectly.clear();
+    activeQuestionIndex = 0;
+    renderOverlay();
+    renderPracticeQuestion();
+  }
+
   function setMode(mode) {
     currentMode = mode;
     document.querySelectorAll('.controls .btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(`btn-${mode}`).classList.add('active');
+    const activeBtn = document.getElementById(`btn-${mode}`);
+    if (activeBtn) activeBtn.classList.add('active');
 
     if (mode === 'filled') {
       mapImg.src = 'closer_look_filled.png';
       overlay.style.display = 'none';
+      practicePanel.style.display = 'none';
+    } else if (mode === 'practice') {
+      mapImg.src = 'closer_look_blank.png';
+      overlay.style.display = 'block';
+      practicePanel.style.display = 'block';
+      renderOverlay();
+      renderPracticeQuestion();
     } else {
       mapImg.src = 'closer_look_blank.png';
       overlay.style.display = 'block';
+      practicePanel.style.display = 'none';
       renderOverlay();
     }
   }
