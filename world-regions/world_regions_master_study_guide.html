@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Regions Master Study Guide — AP Human Geography</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- KaTeX for math typesetting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <a href="quiz_action_kit.html" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 border border-brand-200 px-3 py-1.5 rounded-lg transition-colors">
+          <span>←</span> Action Kit
+        </a>
+        <a href="index.html" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 px-2.5 py-1.5 rounded-lg transition-colors">
+          <span>🗺️</span> Regions Hub
+        </a>
+        <a href="../index.html" class="hidden md:inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 px-2.5 py-1.5 rounded-lg transition-colors">
+          <span>🏛️</span> Main Portal
+        </a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="world_regions_closer_look.html" class="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 px-3 py-1.5 rounded-lg shadow-sm transition-all">
+          <span>🎯</span> Take MCQ Test (23 Qs)
+        </a>
+        <a href="World_Regions_Master_Study_Guide.md" target="_blank" class="inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-slate-500 hover:text-slate-800 bg-slate-100 hover:bg-slate-200 px-2.5 py-1.5 rounded-lg transition-colors" title="Raw Markdown File">
+          <span>📄</span> Raw .md
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+    <!-- Hero Banner -->
+    <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-indigo-900 rounded-2xl text-white p-6 sm:p-10 shadow-xl mb-10">
+      <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-100 mb-4 border border-white/20">
+        <span>📖</span> Comprehensive Reference Guide
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-3">
+        AP Human Geography: World Regions Master Study Guide
+      </h1>
+      <p class="text-brand-100 text-sm sm:text-base max-w-3xl leading-relaxed mb-6">
+        Complete spatial breakdown, 4 African quadrants, Asian border divides, top College Board boundary traps, and a 15-question interactive recall drill for Monday's Formative Quiz.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-brand-700/60 text-xs sm:text-sm">
+        <div class="flex items-center gap-2">
+          <span class="text-brand-300">Target:</span>
+          <span class="font-bold text-white">Mrs. Anne Knight • Room 1325</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-brand-300">Curriculum:</span>
+          <span class="font-semibold text-white">AMSCO Topic 1.7 (pp. 44–45)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-brand-300">Category:</span>
+          <span class="font-semibold text-emerald-300">Formative (25% Weight)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Table of Contents -->
+    <nav class="bg-white rounded-xl border border-slate-200 p-5 mb-10 shadow-sm">
+      <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Table of Contents</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm font-semibold">
+        <a href="#section-0" class="text-brand-700 hover:text-brand-900 hover:underline">0. Assessment Scope & Grading Reality</a>
+        <a href="#section-1" class="text-brand-700 hover:text-brand-900 hover:underline">1. Map 1: A Big Picture View (10 Macro)</a>
+        <a href="#section-2" class="text-brand-700 hover:text-brand-900 hover:underline">2. Map 2: A Closer Look (23 Subregions)</a>
+        <a href="#section-3" class="text-brand-700 hover:text-brand-900 hover:underline">3. Deep Focus 1: Vietnam Trap</a>
+        <a href="#section-4" class="text-brand-700 hover:text-brand-900 hover:underline">4. Deep Focus 2: Pakistan Trap</a>
+        <a href="#section-5" class="text-brand-700 hover:text-brand-900 hover:underline">5. Deep Focus 3: African Quadrants</a>
+        <a href="#section-6" class="text-brand-700 hover:text-brand-900 hover:underline">6. Top 5 College Board Traps</a>
+        <a href="#section-7" class="text-emerald-700 hover:text-emerald-900 font-bold hover:underline">7. 15-Question Interactive Recall Drill</a>
+      </div>
+    </nav>
+
+    <!-- Section 0 -->
+    <section id="section-0" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-brand-100 text-brand-800 font-bold flex items-center justify-center text-sm">0</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Assessment Scope & Grading Reality</h2>
+      </div>
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm space-y-4 text-sm sm:text-base leading-relaxed">
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2.5">
+            <span class="text-brand-600 mt-1 font-bold">✓</span>
+            <div><strong>Grade Weight:</strong> Formative Assessment (counts toward the <strong>25% formative grade weight</strong> in Forsyth County Schools).</div>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-brand-600 mt-1 font-bold">✓</span>
+            <div><strong>Core Skill Tested:</strong> Scale of Analysis and Regional Classification (College Board CED Unit 1: <em>Thinking Geographically</em>, Skill 2.A & 2.B).</div>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-brand-600 mt-1 font-bold">✓</span>
+            <div><strong>Assessment Format:</strong>
+              <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-brand-900">Map 1: A Big Picture View</div>
+                  <div class="text-xs text-slate-600 mt-1">10 Macro-Regions + 5 Oceans</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-brand-900">Map 2: A Closer Look</div>
+                  <div class="text-xs text-slate-600 mt-1">23 Specific Subregions</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section id="section-1" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-brand-100 text-brand-800 font-bold flex items-center justify-center text-sm">1</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Map 1: A Big Picture View (10 Macro-Regions & 5 Oceans)</h2>
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm mb-6">
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+          According to AMSCO page 44, geographers establish large world regions based on physical continents combined with shared cultural and linguistic histories.
+        </p>
+
+        <!-- Visual Hierarchy Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <h4 class="font-bold text-blue-900 text-sm uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span>🌎</span> The Americas
+            </h4>
+            <div class="space-y-1.5 text-xs sm:text-sm text-blue-800">
+              <div class="bg-white px-2.5 py-1.5 rounded border border-blue-100 font-medium">North America</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-blue-100 font-medium">Central America</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-blue-100 font-medium">South America</div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+            <h4 class="font-bold text-amber-900 text-sm uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span>🌍</span> Afro-Eurasia
+            </h4>
+            <div class="space-y-1.5 text-xs sm:text-sm text-amber-800">
+              <div class="bg-white px-2.5 py-1.5 rounded border border-amber-100 font-medium">Europe</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-amber-100 font-medium">The Russian Federation</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-amber-100 font-medium">Asia</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-amber-100 font-medium">Africa (North Africa)</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-amber-100 font-medium">Sub-Saharan Africa</div>
+            </div>
+          </div>
+
+          <div class="bg-purple-50/70 border border-purple-200 rounded-xl p-4">
+            <h4 class="font-bold text-purple-900 text-sm uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span>🌏</span> Oceania & Polar
+            </h4>
+            <div class="space-y-1.5 text-xs sm:text-sm text-purple-800">
+              <div class="bg-white px-2.5 py-1.5 rounded border border-purple-100 font-medium">Oceania</div>
+              <div class="bg-white px-2.5 py-1.5 rounded border border-purple-100 font-medium">Antarctica</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 Macro Regions Table -->
+        <h3 class="text-base font-bold text-slate-800 mb-3">The 10 Macro-Regions</h3>
+        <div class="overflow-x-auto rounded-lg border border-slate-200 mb-6">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse">
+            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3 w-12 text-center">#</th>
+                <th class="p-3 w-48">Region Name on Map</th>
+                <th class="p-3">Definition & Distinguishing Characteristics</th>
+                <th class="p-3">Key AP Anchor Points</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">1</td>
+                <td class="p-3 font-bold text-brand-900">North America</td>
+                <td class="p-3">Canada, United States, and Greenland. Anglo-American cultural sphere influenced predominantly by British/French heritage.</td>
+                <td class="p-3 text-amber-700 font-medium">Do NOT include Mexico here on the AP map (Mexico begins Latin America).</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">2</td>
+                <td class="p-3 font-bold text-brand-900">Central America</td>
+                <td class="p-3">Narrow isthmus linking North & South America (Guatemala to Panama). Culturally Latin/Spanish heritage.</td>
+                <td class="p-3">Physically part of the North American continent, but culturally Latin America.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">3</td>
+                <td class="p-3 font-bold text-brand-900">South America</td>
+                <td class="p-3">Continent south of Panama (Colombia to Chile/Argentina).</td>
+                <td class="p-3">Dominated by Spanish language and Roman Catholic faith, except Portuguese Brazil.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">4</td>
+                <td class="p-3 font-bold text-brand-900">Europe</td>
+                <td class="p-3">Eurasian landmass west of the Ural Mountains and Black Sea.</td>
+                <td class="p-3">Highly developed, industrialized, Post-Industrial (DTM Stage 4 & 5).</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">5</td>
+                <td class="p-3 font-bold text-brand-900">The Russian Federation</td>
+                <td class="p-3">Massive transcontinental state spanning Eastern Europe and Northern Asia (Siberia).</td>
+                <td class="p-3">Spans 11 time zones; separates Europe from East Asia.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">6</td>
+                <td class="p-3 font-bold text-brand-900">Asia</td>
+                <td class="p-3">Largest continent, bounded by the Arctic, Pacific, and Indian Oceans.</td>
+                <td class="p-3">High internal diversity; contains over 60% of the human population.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">7</td>
+                <td class="p-3 font-bold text-brand-900">Africa (North Africa)</td>
+                <td class="p-3">Arid zone north of the Sahara desert, culturally linked to Southwest Asia.</td>
+                <td class="p-3">Predominantly Arabic-speaking and Islamic.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">8</td>
+                <td class="p-3 font-bold text-brand-900">Sub-Saharan Africa</td>
+                <td class="p-3">The entire African landmass south of the Sahara desert.</td>
+                <td class="p-3">Distinct cultural, linguistic (Niger-Congo), and demographic realm (high TFR).</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">9</td>
+                <td class="p-3 font-bold text-brand-900">Oceania</td>
+                <td class="p-3">Australia, New Zealand, and thousands of Pacific island chains.</td>
+                <td class="p-3">Encompasses Melanesia, Micronesia, and Polynesia.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 text-center font-bold text-slate-500">10</td>
+                <td class="p-3 font-bold text-brand-900">Antarctica</td>
+                <td class="p-3">Southern polar continent covered by continental glaciers.</td>
+                <td class="p-3">Governed by the Antarctic Treaty; no permanent sovereign human settlements.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 5 Oceans List -->
+        <h3 class="text-base font-bold text-slate-800 mb-3">The 5 Oceans</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <strong class="text-blue-700">1. Arctic Ocean:</strong> Encircles North Pole; borders Canada, Alaska, Russia, Scandinavia.
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <strong class="text-blue-700">2. Atlantic Ocean:</strong> S-shaped basin separating Americas from Europe & Africa.
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <strong class="text-blue-700">3. Pacific Ocean:</strong> Largest/deepest ocean; bordered by "Ring of Fire".
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <strong class="text-blue-700">4. Indian Ocean:</strong> Located between Africa, Indian Subcontinent, and Australia.
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <strong class="text-blue-700">5. Southern Ocean:</strong> Encircles Antarctica south of 60°S latitude.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section-2" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-brand-100 text-brand-800 font-bold flex items-center justify-center text-sm">2</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Map 2: A Closer Look (The 23 Tested Subregions)</h2>
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm mb-6">
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+          When changing scale from global to regional (<em>"A Closer Look"</em>, AMSCO p. 45), regions are split into subregions based on more specific physical and cultural traits.
+        </p>
+
+        <!-- Spatial Schematic Diagram -->
+        <div class="bg-slate-900 text-emerald-400 p-4 rounded-xl font-mono text-xs sm:text-sm overflow-x-auto mb-6 shadow-inner">
+<pre>                           +---------------------------+
+                           |          RUSSIA           |
++--------------------------+-------------+-------------+--------------------------+
+|      WESTERN EUROPE      | EASTERN EUR | CENTRAL ASIA|         EAST ASIA        |
++--------------------------+-------------+-------------+--------------------------+
+|       NORTH AFRICA       | MIDDLE EAST |  SOUTH ASIA |      SOUTHEAST ASIA      |
++--------------------------+-------------+-------------+--------------------------+
+|       WEST AFRICA        | CENT AFRICA | EAST AFRICA |        MICRONESIA        |
++--------------------------+-------------+-------------+--------------------------+
+|     SOUTHERN AFRICA      |             |  AUSTRALIA  |   MELANESIA / POLYNESIA  |
++--------------------------+-------------+-------------+--------------------------+</pre>
+        </div>
+
+        <!-- 23 Subregions Table -->
+        <h3 class="text-base font-bold text-slate-800 mb-3">Complete Subregions Directory & Master Key</h3>
+        <div class="overflow-x-auto rounded-lg border border-slate-200">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse">
+            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3 w-44">Coordinate Region</th>
+                <th class="p-3 w-36">Larger Realm</th>
+                <th class="p-3">Constituent Countries / Landmarks</th>
+                <th class="p-3">High-Yield AP Exam Memory Cue</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">1. Canada</td><td class="p-3 text-slate-600">North America</td><td class="p-3">Canada (Provinces & Arctic Territories)</td><td class="p-3">Bilingual English/French (Quebec).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">2. United States</td><td class="p-3 text-slate-600">North America</td><td class="p-3">Lower 48 States + Alaska + Hawaii</td><td class="p-3">Economic superpower; high immigration destination.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">3. Latin America</td><td class="p-3 text-slate-600">Americas</td><td class="p-3">Mexico, Central America, South America</td><td class="p-3">Spanish language, Roman Catholicism.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">4. Caribbean</td><td class="p-3 text-slate-600">Americas</td><td class="p-3">Cuba, Haiti, DR, Jamaica, Bahamas, PR</td><td class="p-3">Island nations; plantation agricultural history.</td></tr>
+              <tr class="hover:bg-slate-50 bg-amber-50/50"><td class="p-3 font-bold text-amber-900">5. Brazil</td><td class="p-3 text-amber-800">Latin America</td><td class="p-3">Brazil (Amazon Basin & Atlantic Coast)</td><td class="p-3 font-bold text-amber-900">Speaks Portuguese (unlike Spanish Latin America).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">6. Western Europe</td><td class="p-3 text-slate-600">Europe</td><td class="p-3">UK, France, Germany, Spain, Italy, Low Countries</td><td class="p-3">NATO/EU core, post-industrial, Stage 4/5 DTM.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">7. Eastern Europe</td><td class="p-3 text-slate-600">Europe</td><td class="p-3">Poland, Ukraine, Romania, Czechia, Balkans</td><td class="p-3">Historical Soviet/Warsaw Pact influence, Slavic tongues.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">8. Russia</td><td class="p-3 text-slate-600">Eurasia</td><td class="p-3">Russian Federation (European Russia & Siberia)</td><td class="p-3">Transcontinental powerhouse, Ural Mountain divide.</td></tr>
+              <tr class="hover:bg-slate-50 bg-blue-50/50"><td class="p-3 font-bold text-blue-900">9. Central Asia</td><td class="p-3 text-blue-800">Asia</td><td class="p-3">Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan</td><td class="p-3 font-bold text-blue-900">5 post-Soviet republics north of the Himalayas.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">10. Middle East</td><td class="p-3 text-slate-600">Asia/Africa</td><td class="p-3">Saudi Arabia, Iran, Iraq, Israel, Turkey, UAE</td><td class="p-3">Arid climate, crossroads of 3 continents, Abrahamic faiths.</td></tr>
+              <tr class="hover:bg-slate-50 bg-blue-50/50"><td class="p-3 font-bold text-blue-900">11. South Asia</td><td class="p-3 text-blue-800">Asia</td><td class="p-3">India, Pakistan, Bangladesh, Nepal, Bhutan, Sri Lanka</td><td class="p-3 font-bold text-blue-900">Indian Subcontinent, Himalayan barrier (Pakistan is HERE).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">12. East Asia</td><td class="p-3 text-slate-600">Asia</td><td class="p-3">China, Japan, North Korea, South Korea, Taiwan, Mongolia</td><td class="p-3">Sinosphere, Confucian tradition, massive aging.</td></tr>
+              <tr class="hover:bg-slate-50 bg-emerald-50/50"><td class="p-3 font-bold text-emerald-900">13. Southeast Asia</td><td class="p-3 text-emerald-800">Asia</td><td class="p-3">Vietnam, Thailand, Indonesia, Philippines, Malaysia</td><td class="p-3 font-bold text-emerald-900">Indochina + Malay Archipelago (Vietnam is HERE).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">14. North Africa</td><td class="p-3 text-slate-600">Africa</td><td class="p-3">Egypt, Libya, Algeria, Tunisia, Morocco, Sudan</td><td class="p-3">Sahara desert; Arabic and Islam link to Middle East.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">15. West Africa</td><td class="p-3 text-slate-600">Sub-Saharan Africa</td><td class="p-3">Nigeria, Ghana, Senegal, Ivory Coast, Mali</td><td class="p-3 font-semibold text-brand-800">Atlantic bulge on Gulf of Guinea (Anchor: Nigeria).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">16. Central Africa</td><td class="p-3 text-slate-600">Sub-Saharan Africa</td><td class="p-3">DR Congo, Rep of Congo, Cameroon, Gabon</td><td class="p-3 font-semibold text-brand-800">Equatorial Congo rainforest (Anchor: DRC).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">17. East Africa</td><td class="p-3 text-slate-600">Sub-Saharan Africa</td><td class="p-3">Kenya, Ethiopia, Tanzania, Uganda, Rwanda</td><td class="p-3 font-semibold text-brand-800">Great Rift Valley & Horn (Anchors: Kenya, Ethiopia).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">18. Southern Africa</td><td class="p-3 text-slate-600">Sub-Saharan Africa</td><td class="p-3">South Africa, Zimbabwe, Botswana, Namibia</td><td class="p-3 font-semibold text-brand-800">Kalahari & Cape of Good Hope (Anchor: South Africa).</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">19. Australia</td><td class="p-3 text-slate-600">Oceania</td><td class="p-3">Commonwealth of Australia</td><td class="p-3">Arid Outback interior, coastal urban clusters.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">20. Micronesia</td><td class="p-3 text-slate-600">Oceania</td><td class="p-3">Marshall Islands, Micronesia, Palau, Guam</td><td class="p-3">"Small islands" north of equator.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">21. Melanesia</td><td class="p-3 text-slate-600">Oceania</td><td class="p-3">Papua New Guinea, Fiji, Solomon Islands</td><td class="p-3">"Dark islands" north/northeast of Australia.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">22. Polynesia (N/E)</td><td class="p-3 text-slate-600">Oceania</td><td class="p-3">Hawaii, Tuvalu, Kiribati, Cook Islands</td><td class="p-3">"Many islands" northern/eastern vertices.</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-brand-900">23. Polynesia (S/W)</td><td class="p-3 text-slate-600">Oceania</td><td class="p-3">New Zealand, Samoa, Tonga</td><td class="p-3">Southwestern vertex of Polynesian Triangle.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section-3" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-red-100 text-red-800 font-bold flex items-center justify-center text-sm">3</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Deep Focus 1: Southeast Asia vs. East Asia (The Vietnam Trap)</h2>
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm mb-6 space-y-5">
+        <div class="bg-red-50 border-l-4 border-red-600 p-4 rounded-r-lg">
+          <div class="font-bold text-red-900 text-sm sm:text-base flex items-center gap-2">
+            <span>🚨</span> The AP Trap: Do NOT place Vietnam in East Asia!
+          </div>
+          <div class="text-xs sm:text-sm text-red-800 mt-1">
+            Even though Vietnamese culture was heavily influenced by Chinese Confucianism, geographers strictly classify Vietnam as <strong>Southeast Asia</strong> based on its physical location in the Indochinese Peninsula.
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <h4 class="font-bold text-slate-900 mb-2">The Boundary Line</h4>
+            <ul class="space-y-1.5 text-slate-700">
+              <li>• <strong>Physical Boundary:</strong> Southern political border of China (Yunnan & Guangxi) and Gulf of Tonkin.</li>
+              <li>• <strong>East Asia Stops At:</strong> The southern border of China.</li>
+              <li>• <strong>Southeast Asia Starts At:</strong> The northern borders of <strong>Myanmar, Laos, and Vietnam</strong>.</li>
+            </ul>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs sm:text-sm">
+            <h4 class="font-bold text-slate-900 mb-2">Contrast Dimensions</h4>
+            <ul class="space-y-1.5 text-slate-700">
+              <li>• <strong>East Asia:</strong> Mainland + offshore (Japan, Taiwan). Low birth rates (S. Korea $TFR \approx 0.72$).</li>
+              <li>• <strong>Southeast Asia:</strong> Mainland Indochina + Maritime Archipelago (17,000+ islands in Indonesia). Chokepoint: <strong>Strait of Malacca</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section-4" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">4</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Deep Focus 2: Central Asia vs. South Asia (The Pakistan Trap)</h2>
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm mb-6 space-y-5">
+        <div class="bg-amber-50 border-l-4 border-amber-600 p-4 rounded-r-lg">
+          <div class="font-bold text-amber-900 text-sm sm:text-base flex items-center gap-2">
+            <span>⚠️</span> The Pakistan Trap: Do NOT be tricked by the "-stan" suffix!
+          </div>
+          <div class="text-xs sm:text-sm text-amber-800 mt-1">
+            <strong>Pakistan is 100% SOUTH ASIA</strong>. It lies directly in the Indus River Valley on the Indian Subcontinent south of the Himalayas. Central Asia consists exclusively of the 5 post-Soviet republics.
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-lg border border-slate-200">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse">
+            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3 w-40">Dimension</th>
+                <th class="p-3">Central Asia</th>
+                <th class="p-3">South Asia</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-slate-800">The "-stan" Factor</td><td class="p-3">Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan</td><td class="p-3 font-bold text-brand-900">Pakistan is the ONLY South Asian country ending in "-stan"</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-slate-800">Historical Alignment</td><td class="p-3">Former Soviet republics (Russian widely spoken)</td><td class="p-3">British Raj / Commonwealth (English widely spoken)</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-slate-800">Density & Terrain</td><td class="p-3">Very low arithmetic density; arid steppes & deserts</td><td class="p-3">Extreme density (over 1.8 billion people in alluvial river basins)</td></tr>
+              <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-slate-800">Mountain Barrier</td><td class="p-3">North of Himalayas / Hindu Kush</td><td class="p-3 font-bold text-brand-900">South of the Himalayas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section-5" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">5</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Deep Focus 3: Sub-Saharan Africa's 4 Quadrants</h2>
+      </div>
+
+      <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200">
+            <h4 class="font-bold text-emerald-900 text-sm mb-1">1. West Africa (Atlantic Bulge)</h4>
+            <div class="text-xs text-emerald-800 font-semibold mb-2">Anchor: Nigeria (Africa's #1 populous nation, 220M+)</div>
+            <p class="text-xs text-slate-600">Lies along the coast of the Gulf of Guinea. Historic origin of transatlantic slave trade.</p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200">
+            <h4 class="font-bold text-emerald-900 text-sm mb-1">2. Central Africa (Equatorial Core)</h4>
+            <div class="text-xs text-emerald-800 font-semibold mb-2">Anchor: Democratic Republic of the Congo (DRC)</div>
+            <p class="text-xs text-slate-600">Crosses Equator. Dominated by the Congo Basin tropical rainforest and river network.</p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200">
+            <h4 class="font-bold text-emerald-900 text-sm mb-1">3. East Africa (Horn & Rift Valley)</h4>
+            <div class="text-xs text-emerald-800 font-semibold mb-2">Anchors: Ethiopia, Kenya, Tanzania, Uganda</div>
+            <p class="text-xs text-slate-600">Great Rift Valley, Mount Kilimanjaro, African Great Lakes, and Indian Ocean Swahili coast.</p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200">
+            <h4 class="font-bold text-emerald-900 text-sm mb-1">4. Southern Africa (Southern Cone)</h4>
+            <div class="text-xs text-emerald-800 font-semibold mb-2">Anchor: South Africa (plus Botswana, Namibia, Zimbabwe)</div>
+            <p class="text-xs text-slate-600">Temperate southern plateau, Kalahari Desert, Cape of Good Hope, rich mineral deposits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="section-6" class="mb-12 scroll-mt-20">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-800 font-bold flex items-center justify-center text-sm">6</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">The Top 5 College Board & Mrs. Knight Map Traps</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 font-bold text-brand-900 text-sm mb-2">
+            <span class="text-amber-500">★</span> 1. The Brazil Language Trap
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Brazil is distinguished as its own subregion because its official language is <strong>Portuguese</strong>, whereas the rest of Latin America speaks <strong>Spanish</strong>.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 font-bold text-brand-900 text-sm mb-2">
+            <span class="text-amber-500">★</span> 2. Middle East & North Africa Dual Identity
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Frequently grouped together as <strong>MENA</strong> or <strong>SWANA</strong> due to shared <strong>Arabic language</strong>, <strong>Islamic faith</strong>, and arid climate despite occupying two distinct continents.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 font-bold text-brand-900 text-sm mb-2">
+            <span class="text-amber-500">★</span> 3. The Oceania Island Triad
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <strong>Micronesia</strong> (small islands north), <strong>Melanesia</strong> (dark islands northeast of Australia), and <strong>Polynesia</strong> (massive triangle: Hawaii to New Zealand to Easter Island).
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 font-bold text-brand-900 text-sm mb-2">
+            <span class="text-amber-500">★</span> 4. Scale of Analysis Principle (AMSCO p. 45)
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Moving from Map 1 (10 regions) to Map 2 (23 subregions) represents <strong>zooming in the scale of analysis</strong>, revealing internal variation masked at global scale.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm md:col-span-2">
+          <div class="flex items-center gap-2 font-bold text-brand-900 text-sm mb-2">
+            <span class="text-amber-500">★</span> 5. Formal vs. Perceptual Regional Boundaries
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <strong>Formal regions</strong> (countries, states) have legally defined, measurable borders. <strong>Perceptual / Vernacular regions</strong> ("The Middle East", "The South") have <em>fuzzy, debatable transition zones</em> based on cultural perception.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Interactive 15-Question Recall Drill -->
+    <section id="section-7" class="mb-12 scroll-mt-20">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">7</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">15-Question Interactive Recall Drill</h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="toggle-all-btn" onclick="toggleAllAnswers()" class="text-xs sm:text-sm font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 border border-brand-200 px-3 py-1.5 rounded-lg transition-colors">
+            Reveal All Answers
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-emerald-50/70 border border-emerald-200 p-4 rounded-xl text-xs sm:text-sm text-emerald-900 mb-6 flex items-center gap-2">
+        <span>💡</span>
+        <span>Test your recall before Monday's quiz! Click on any question card to reveal the official College Board answer and rationale.</span>
+      </div>
+
+      <div id="drill-grid" class="space-y-3">
+        <!-- Questions injected via JS or static cards -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-8 border-t border-slate-200 text-center text-xs text-slate-500 space-y-2">
+      <p>AP Human Geography Study Kit • Prepared for Antony Anish • Mrs. Knight (Room 1325)</p>
+      <p>Published to GitHub Pages • Repository: <a href="https://github.com/MegaAntony/ap-human-geography" class="text-brand-600 hover:underline">MegaAntony/ap-human-geography</a></p>
+    </footer>
+
+  </main>
+
+  <script>
+    const questions = [
+      {
+        id: 1,
+        q: "Which subregion includes Kazakhstan and Uzbekistan?",
+        a: "Central Asia",
+        r: "Landlocked former Soviet republics north of the Himalayas."
+      },
+      {
+        id: 2,
+        q: "Which subregion includes Pakistan and Bangladesh?",
+        a: "South Asia",
+        r: "Part of the Indian Subcontinent south of the Himalayas."
+      },
+      {
+        id: 3,
+        q: "To which subregion does Vietnam belong?",
+        a: "Southeast Asia",
+        r: "Located on the Indochinese Peninsula, south of China."
+      },
+      {
+        id: 4,
+        q: "What physical barrier separates Central Asia from South Asia?",
+        a: "The Himalayas / Hindu Kush",
+        r: "Massive mountain wall that blocks continental weather and movement."
+      },
+      {
+        id: 5,
+        q: "In which subregion of Africa is Nigeria located?",
+        a: "West Africa",
+        r: "Located on the Gulf of Guinea on the western Atlantic bulge."
+      },
+      {
+        id: 6,
+        q: "In which subregion of Africa is the Democratic Republic of the Congo located?",
+        a: "Central Africa",
+        r: "Equatorial heartland dominated by the Congo River rainforest."
+      },
+      {
+        id: 7,
+        q: "Which African subregion contains Kenya and Ethiopia?",
+        a: "East Africa",
+        r: "The Horn of Africa and Great Rift Valley region."
+      },
+      {
+        id: 8,
+        q: "Why is Brazil treated as a distinct subregion within Latin America?",
+        a: "Portuguese language",
+        r: "Culturally distinct from the surrounding Spanish-speaking states."
+      },
+      {
+        id: 9,
+        q: "Which Pacific subregion includes Hawaii and New Zealand?",
+        a: "Polynesia",
+        r: "Forms the vertices of the Polynesian cultural triangle."
+      },
+      {
+        id: 10,
+        q: "Which island subregion is located directly north of Australia and includes Papua New Guinea?",
+        a: "Melanesia",
+        r: "The southwestern Pacific chain north of Australia."
+      },
+      {
+        id: 11,
+        q: "What term describes regions defined by people's informal feelings, like 'The Middle East'?",
+        a: "Perceptual / Vernacular region",
+        r: "Defined by cultural perception rather than precise legal borders."
+      },
+      {
+        id: 12,
+        q: "Which ocean lies between Africa, South Asia, and Australia?",
+        a: "Indian Ocean",
+        r: "Warm tropical ocean basin."
+      },
+      {
+        id: 13,
+        q: "Which macro-region on the Big Picture map spans 11 time zones across Europe and Asia?",
+        a: "The Russian Federation",
+        r: "Transcontinental federation spanning both continents."
+      },
+      {
+        id: 14,
+        q: "Is Mexico part of North America or Latin America on the AP subregions map?",
+        a: "Latin America",
+        r: "Culturally Latin American, grouped south of the US border."
+      },
+      {
+        id: 15,
+        q: "What geographic concept is illustrated when moving from 10 macro regions to 23 subregions?",
+        a: "Scale of Analysis / Regional Disaggregation",
+        r: "Zooming in reveals internal diversity that global views hide."
+      }
+    ];
+
+    let allRevealed = false;
+
+    function renderQuestions() {
+      const container = document.getElementById('drill-grid');
+      container.innerHTML = questions.map((item) => `
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-300 transition-all cursor-pointer" onclick="toggleAnswer(${item.id})">
+          <div class="p-4 sm:p-5 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">${item.id}</span>
+              <p class="font-semibold text-slate-800 text-sm sm:text-base">${item.q}</p>
+            </div>
+            <span id="chevron-${item.id}" class="text-slate-400 text-sm transition-transform duration-200">▼</span>
+          </div>
+          <div id="answer-${item.id}" class="hidden px-4 pb-4 sm:px-5 sm:pb-5 pt-0 border-t border-slate-100 bg-slate-50/50">
+            <div class="pt-3">
+              <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1">Correct Answer:</div>
+              <div class="font-extrabold text-emerald-900 text-sm sm:text-base mb-1">${item.a}</div>
+              <div class="text-xs sm:text-sm text-slate-600 font-medium">${item.r}</div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleAnswer(id) {
+      const ans = document.getElementById(`answer-${id}`);
+      const chevron = document.getElementById(`chevron-${id}`);
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        chevron.style.transform = 'rotate(180deg)';
+      } else {
+        ans.classList.add('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleAllAnswers() {
+      allRevealed = !allRevealed;
+      const btn = document.getElementById('toggle-all-btn');
+      btn.innerText = allRevealed ? "Hide All Answers" : "Reveal All Answers";
+      questions.forEach(item => {
+        const ans = document.getElementById(`answer-${item.id}`);
+        const chevron = document.getElementById(`chevron-${item.id}`);
+        if (allRevealed) {
+          ans.classList.remove('hidden');
+          chevron.style.transform = 'rotate(180deg)';
+        } else {
+          ans.classList.add('hidden');
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', renderQuestions);
+  </script>
+</body>
+</html>
