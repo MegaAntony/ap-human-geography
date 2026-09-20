@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Regions Map Formative Quiz Action Kit — AP Human Geography</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #2563eb;
+      --primary-dark: #0f172a;
+      --success: #16a34a;
+      --warning: #d97706;
+      --danger: #dc2626;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13.5px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: white;
+      border-radius: 14px;
+      padding: 32px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .hero-title p {
+      color: #bfdbfe;
+      font-size: 14.5px;
+    }
+
+    .student-badge {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 14px 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .student-badge .name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .student-badge .course {
+      font-size: 13px;
+      color: #dbeafe;
+    }
+
+    .intro-card {
+      background: white;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-top: 32px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Study Cards Grid */
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .link-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+    }
+
+    .link-card.primary {
+      border-left: 6px solid var(--success);
+      background: linear-gradient(to right, #f0fdf4, #ffffff 40%);
+    }
+
+    .link-card.highlight {
+      border-left: 6px solid var(--primary-light);
+    }
+
+    .link-card.fiveable {
+      border-left: 6px solid var(--warning);
+      background: linear-gradient(to right, #fffbeb, #ffffff 40%);
+    }
+
+    .link-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .link-card-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .link-card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .link-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+    }
+
+    .tag-green { background: #dcfce7; color: #15803d; }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-amber { background: #fef3c7; color: #b45309; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      width: fit-content;
+      transition: all 0.2s ease;
+    }
+
+    .btn-green {
+      background: var(--success);
+      color: white !important;
+    }
+    .btn-green:hover { background: #15803d; }
+
+    .btn-blue {
+      background: var(--primary);
+      color: white !important;
+    }
+    .btn-blue:hover { background: var(--primary-light); }
+
+    .btn-amber {
+      background: var(--warning);
+      color: white !important;
+    }
+    .btn-amber:hover { background: #b45309; }
+
+    .btn-secondary {
+      background: #f1f5f9;
+      color: #334155 !important;
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { background: #e2e8f0; }
+
+    /* Traps Section */
+    .traps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .trap-box {
+      background: white;
+      border: 1px solid #fecaca;
+      border-left: 6px solid var(--danger);
+      border-radius: 10px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 6px rgba(220, 38, 38, 0.04);
+    }
+
+    .trap-header {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #991b1b;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trap-content {
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .trap-content ul {
+      margin: 8px 0 0 20px;
+    }
+
+    .trap-content li {
+      margin-bottom: 4px;
+    }
+
+    /* Concept Box */
+    .concept-card {
+      background: white;
+      border: 1px solid #bfdbfe;
+      border-left: 6px solid #3b82f6;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(59, 130, 246, 0.04);
+    }
+
+    .concept-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1e40af;
+      margin-bottom: 6px;
+    }
+
+    /* Table */
+    .table-container {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: #334155;
+      font-weight: 800;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Routine Box */
+    .routine-box {
+      background: #f0fdf4;
+      border: 2px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.08);
+    }
+
+    .routine-box h3 {
+      color: #166534;
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .routine-box ol {
+      margin: 0 0 0 22px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .routine-box li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Navigation bar -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-btn">← World Regions Hub</a>
+    <a href="../index.html" class="nav-btn">🏛️ Main Portal Dashboard</a>
+    <a href="world_regions_closer_look.html" class="nav-btn">🎯 Active MCQ Practice</a>
+    <a href="../fiveable/index.html" class="nav-btn">⚡ Fiveable Study Hub</a>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div>
+      <div class="hero-badge">AP Human Geography • Formative Prep</div>
+      <div class="hero-title">
+        <h1>World Regions Map Quiz Action Kit</h1>
+        <p>Mrs. Anne Knight • Room 1325 • Monday, September 21, 2026</p>
+      </div>
+    </div>
+    <div class="student-badge">
+      <div class="name">Antony Anish</div>
+      <div class="course">Formative Assessment (25% Weight)</div>
+    </div>
+  </header>
+
+  <!-- Briefing Intro -->
+  <div class="intro-card">
+    <p>
+      Hi Antony! Here is your complete study briefing and direct live links for Monday's <strong>World Regions Map Formative Quiz</strong>. All interactive quiz engines, blank & filled maps, and cheatsheets are published and accessible on your phone, iPad, or laptop.
+    </p>
+  </div>
+
+  <!-- Direct Live Study Links -->
+  <h2 class="section-title"><span>🚀</span> Direct Live Study Links (GitHub Pages)</h2>
+  <div class="links-grid">
+
+    <!-- Card 1 -->
+    <div class="link-card primary">
+      <div class="link-card-header">
+        <div class="link-card-title">🎯 1. Active MCQ Practice Test (Map 2: A Closer Look)</div>
+        <span class="link-tag tag-green">#1 Must-Do Drill</span>
+      </div>
+      <div class="link-card-desc">
+        Your primary study tool tonight. Tests all <strong>23 official subregions</strong> with instant scoring, color-coded feedback, and detailed boundary rationales until you hit 100% (23/23).
+      </div>
+      <div>
+        <a href="world_regions_closer_look.html" class="btn btn-green">Launch Active MCQ Test →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="link-card highlight">
+      <div class="link-card-header">
+        <div class="link-card-title">🌐 2. Macro-Regions & Oceans (Map 1: A Big Picture View)</div>
+        <span class="link-tag tag-blue">Macro Realms</span>
+      </div>
+      <div class="link-card-desc">
+        Interactive map testing the <strong>10 macro-regions</strong> (continents & cultural realms) and the <strong>5 major oceans</strong> with click-to-reveal flashcard answers.
+      </div>
+      <div>
+        <a href="world_regions_big_picture.html" class="btn btn-blue">Open Big Picture Map →</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="link-card highlight">
+      <div class="link-card-header">
+        <div class="link-card-title">🏛️ 3. World Regions Main Revision Hub</div>
+        <span class="link-tag tag-blue">Central Dashboard</span>
+      </div>
+      <div class="link-card-desc">
+        Central portal linking both interactive maps, Antony's actual in-class paper worksheet photo, and the blank printable PDF.
+      </div>
+      <div>
+        <a href="index.html" class="btn btn-blue">Open Regions Hub →</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="link-card highlight">
+      <div class="link-card-header">
+        <div class="link-card-title">📖 4. Master Study Guide & 15-Question Recall Drill (.md)</div>
+        <span class="link-tag tag-blue">Reference & Drill</span>
+      </div>
+      <div class="link-card-desc">
+        Complete markdown cheat sheet covering the 4 African quadrants, Asian border divides (Pakistan/Vietnam), Top 5 College Board traps, and 15 rapid recall practice questions.
+      </div>
+      <div>
+        <a href="World_Regions_Master_Study_Guide.md" class="btn btn-blue" target="_blank">Read Master Study Guide (.md) →</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="link-card fiveable">
+      <div class="link-card-header">
+        <div class="link-card-title">⚡ 5. Fiveable AP Human Geography Study Hub</div>
+        <span class="link-tag tag-amber">Fiveable Verified</span>
+      </div>
+      <div class="link-card-desc">
+        Official Fiveable Unit 1 review notes, Topic 1.7 Regional Analysis focus, 15+ AP Key Terms glossary, practice questions, and downloadable 2026–2027 PDF one-pager cheatsheets.
+      </div>
+      <div>
+        <a href="../fiveable/index.html" class="btn btn-amber">Open Fiveable Hub →</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="link-card">
+      <div class="link-card-header">
+        <div class="link-card-title">📋 6. Mrs. Knight’s Schedule & Textbook Coordinates</div>
+        <span class="link-tag" style="background: #f1f5f9; color: #475569;">Course Plan</span>
+      </div>
+      <div class="link-card-desc">
+        Official Canvas schedule notes, AMSCO textbook reading coordinates (pp. 44–45), and test tips.
+      </div>
+      <div>
+        <a href="../what-is-on-friday/index.html" class="btn btn-secondary">View Schedule Notes →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Boundary Traps -->
+  <h2 class="section-title"><span>⚠️</span> Top 4 Boundary Traps Tested Tomorrow</h2>
+  <div class="traps-grid">
+
+    <div class="trap-box">
+      <div class="trap-header">
+        <span>🚨</span> TRAP 1: The Vietnam Trap (Southeast Asia vs. East Asia)
+      </div>
+      <div class="trap-content">
+        <strong>The Rule:</strong> East Asia stops at the southern border of China.<br>
+        <strong>Vietnam is strictly SOUTHEAST ASIA:</strong> Even though Vietnam has historical Confucian cultural ties, geographically and on the College Board map, it is part of Mainland Southeast Asia (Indochina).<br>
+        <strong>East Asia:</strong> China, Japan, North Korea, South Korea, Taiwan, Mongolia.<br>
+        <strong>Southeast Asia:</strong> Vietnam, Thailand, Laos, Cambodia, Myanmar, Malaysia, Singapore, Indonesia, Philippines, Brunei, Timor-Leste.
+      </div>
+    </div>
+
+    <div class="trap-box">
+      <div class="trap-header">
+        <span>🚨</span> TRAP 2: The Pakistan Trap (South Asia vs. Central Asia)
+      </div>
+      <div class="trap-content">
+        <strong>The Barrier:</strong> The Himalayan Mountain Range & Hindu Kush physically wall off South Asia.<br>
+        <strong>Pakistan is 100% SOUTH ASIA:</strong> Do not be tricked by the "-stan" suffix! Pakistan lies directly in the Indus River Valley on the Indian Subcontinent.<br>
+        <strong>Central Asia:</strong> Strictly the 5 post-Soviet republics (Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan).<br>
+        <strong>South Asia:</strong> India, Pakistan, Bangladesh, Nepal, Bhutan, Sri Lanka, Maldives.
+      </div>
+    </div>
+
+    <div class="trap-box">
+      <div class="trap-header">
+        <span>🚨</span> TRAP 3: Sub-Saharan Africa’s 4 Quadrants
+      </div>
+      <div class="trap-content">
+        Know the anchor nations for each quadrant on Mrs. Knight’s test:
+        <ul>
+          <li><strong>West Africa:</strong> Atlantic bulge on the Gulf of Guinea (Anchor: Nigeria — Africa's most populous nation).</li>
+          <li><strong>Central Africa:</strong> Equatorial heartland in the Congo Basin rainforest (Anchor: Democratic Republic of the Congo).</li>
+          <li><strong>East Africa:</strong> Horn of Africa, Great Rift Valley, and African Great Lakes (Anchors: Kenya, Ethiopia, Tanzania).</li>
+          <li><strong>Southern Africa:</strong> Southern tip ending at the Cape of Good Hope (Anchor: South Africa).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="trap-box">
+      <div class="trap-header">
+        <span>🚨</span> TRAP 4: The Brazil Enclave in Latin America
+      </div>
+      <div class="trap-content">
+        On Map 2 (A Closer Look), <strong>Brazil</strong> is partitioned as its own distinct subregion separate from the rest of South/Latin America because its official language and colonial heritage is <strong>Portuguese</strong>, while the surrounding countries are Spanish-speaking.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Key Concepts -->
+  <h2 class="section-title"><span>📚</span> Key Concepts (AMSCO p. 45 & Fiveable CED)</h2>
+
+  <div class="concept-card">
+    <div class="concept-title">Scale of Analysis (AMSCO p. 45)</div>
+    <div style="font-size: 14px; color: #334155; line-height: 1.6;">
+      Shifting from Map 1 (10 macro-regions) to Map 2 (23 subregions) <strong>zooms in the scale of analysis</strong>. Zooming in reveals internal cultural, linguistic, and economic variations that broad continental generalizations completely obscure.
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Region Type</th>
+          <th>Defining Characteristic</th>
+          <th>Textbook Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Formal Region</strong><br><span style="font-size: 12px; color: var(--text-muted);">(Uniform)</span></td>
+          <td>Defined by a common, measurable shared trait (cultural, political, or physical) across the entire boundary.</td>
+          <td>State of Georgia, Corn Belt, French-speaking Quebec, Sahara Desert.</td>
+        </tr>
+        <tr>
+          <td><strong>Functional Region</strong><br><span style="font-size: 12px; color: var(--text-muted);">(Nodal)</span></td>
+          <td>Organized around a central focal node with connections and flows decaying over distance (distance decay).</td>
+          <td>Hartsfield-Jackson Atlanta airport flight network, pizza delivery radius, TV broadcast area.</td>
+        </tr>
+        <tr>
+          <td><strong>Perceptual Region</strong><br><span style="font-size: 12px; color: var(--text-muted);">(Vernacular)</span></td>
+          <td>Based on informal cultural feelings and subjective personal identities rather than rigid objective borders.</td>
+          <td>"The Middle East", "The American South", "The Rust Belt", "Dixie".</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Routine Box -->
+  <div class="routine-box">
+    <h3><span>⏱️</span> Antony's 5-Minute Morning Routine</h3>
+    <ol>
+      <li><strong>Tonight / Bus Ride:</strong> Open the <a href="world_regions_closer_look.html" style="color: #15803d; font-weight: 800; text-decoration: underline;">Active MCQ Practice Test</a> on your phone. Play until you score <strong>23 / 23 (100%)</strong>.</li>
+      <li><strong>5 Minutes Before Class:</strong> Re-read the 4 Boundary Traps above (Vietnam = Southeast Asia, Pakistan = South Asia, Nigeria = West Africa, Brazil = Portuguese).</li>
+      <li><strong>During the Quiz:</strong> Read each prompt carefully and nail 100%!</li>
+    </ol>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>AP Human Geography Study Kit • Prepared for Antony Anish • Mrs. Knight (Room 1325)</p>
+    <p style="margin-top: 4px;">GitHub Repository: <a href="https://github.com/MegaAntony/ap-human-geography" style="color: var(--primary-light);">MegaAntony/ap-human-geography</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
