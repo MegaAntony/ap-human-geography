@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiveable AP Human Geography Study Hub — Unit 1 & Regional Analysis</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --primary-light: #2563eb;
+      --accent: #f59e0b;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(0,0,0,0.06), 0 8px 10px -6px rgba(0,0,0,0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 13.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: white;
+      border-radius: 14px;
+      padding: 28px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-title h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .hero-title p {
+      color: #bfdbfe;
+      font-size: 14.5px;
+    }
+
+    .badge-fiv {
+      background: rgba(245, 158, 11, 0.2);
+      border: 1px solid #f59e0b;
+      color: #fbbf24;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Tabs Bar */
+    .tabs-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .tab-btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: #f1f5f9;
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px rgba(30, 58, 138, 0.25);
+    }
+
+    /* Content Cards */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .card-header {
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card-header h2 {
+      font-size: 20px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Callout Alert Boxes */
+    .alert-box {
+      padding: 16px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .alert-info {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary-light);
+      color: #1e3a8a;
+    }
+
+    .alert-warning {
+      background: #fefce8;
+      border-left: 4px solid var(--accent);
+      color: #854d0e;
+    }
+
+    .alert-success {
+      background: #f0fdf4;
+      border-left: 4px solid var(--success);
+      color: #166534;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+      background-color: #f8fafc;
+    }
+
+    /* Accordion Flashcards */
+    .accordion-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .accordion-header {
+      padding: 14px 18px;
+      background: #f8fafc;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.15s ease;
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+    }
+
+    .accordion-body {
+      padding: 16px 18px;
+      display: none;
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      background: white;
+      color: #334155;
+    }
+
+    .accordion-body.open {
+      display: block;
+    }
+
+    /* Key Terms Grid */
+    .terms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .term-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      border-left: 3px solid var(--primary-light);
+      transition: transform 0.15s ease;
+    }
+
+    .term-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .term-name {
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .term-def {
+      font-size: 13.5px;
+      color: #334155;
+    }
+
+    /* PDF Embed Card */
+    .pdf-viewer-card {
+      background: white;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .pdf-header {
+      padding: 14px 18px;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      transition: all 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+
+    .btn-success:hover {
+      background: #15803d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Top Navigation -->
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="../index.html" class="nav-link"><span>🏛️</span> Main Portal</a>
+      <a href="../world-regions/index.html" class="nav-link"><span>🏠</span> Regions Hub</a>
+      <a href="../world-regions/world_regions_closer_look.html" class="nav-link"><span>🎯</span> Active Practice Test</a>
+      <a href="../world-regions/World_Regions_Master_Study_Guide.md" target="_blank" class="nav-link"><span>📖</span> Master Study Guide (.md)</a>
+    </div>
+    <div class="badge-fiv">
+      <span>⚡</span> Verified Fiveable MCP Sync
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <div class="hero">
+    <div class="hero-title">
+      <h1>Fiveable AP Human Geography Study Hub</h1>
+      <p>Unit 1: Thinking Geographically • Topic 1.7 Regional Analysis & Key Terms</p>
+    </div>
+    <div>
+      <a href="Fiveable_Unit_1_Thinking_Geographically.pdf" target="_blank" class="btn btn-success" style="padding: 10px 18px; font-size: 14px;">
+        <span>📄</span> Download Unit 1 Cheatsheet (PDF)
+      </a>
+    </div>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="tabs-bar">
+    <button class="tab-btn active" onclick="switchTab('tab-unit1')">
+      <span>📚</span> Unit 1 Full Study Guide
+    </button>
+    <button class="tab-btn" onclick="switchTab('tab-regions')">
+      <span>🗺️</span> Topic 1.7 Regional Analysis Focus
+    </button>
+    <button class="tab-btn" onclick="switchTab('tab-terms')">
+      <span>🔑</span> AP Key Terms Glossary
+    </button>
+    <button class="tab-btn" onclick="switchTab('tab-practice')">
+      <span>❓</span> Fiveable AP Practice Questions
+    </button>
+    <button class="tab-btn" onclick="switchTab('tab-pdfs')">
+      <span>📑</span> Official Fiveable Cheatsheet PDFs
+    </button>
+  </div>
+
+  <!-- TAB 1: UNIT 1 FULL REVIEW -->
+  <div id="tab-unit1" class="tab-content active">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2><span>🧭</span> Unit 1 Overview & Exam Weighting</h2>
+      </div>
+      <p>Unit 1 accounts for <strong>8–10% of the AP Exam</strong>. It sets up the core spatial vocabulary, data-gathering techniques, and regional frameworks used across every subsequent unit.</p>
+      
+      <div class="alert-box alert-warning">
+        <strong>Fiveable Analytics Snapshot (51,000+ Student Attempts):</strong><br>
+        • Average MCQ Accuracy: <strong>71%</strong><br>
+        • Highest Miss Rates: <strong>Topic 1.3 Power of Data (33% miss rate)</strong>, <strong>Topic 1.7 Regional Analysis (31% miss rate)</strong>, and <strong>Topic 1.6 Scales of Analysis (29% miss rate)</strong>.<br>
+        <em>Focus extra attention on how scale changes data interpretation!</em>
+      </div>
+
+      <h3 style="margin: 20px 0 10px; color: var(--primary);">Unit 1 Topic Breakdown (College Board CED Alignment)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>CED Topic</th>
+            <th>Core Concepts</th>
+            <th>High-Yield Exam Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1.1 Introduction to Maps</strong></td>
+            <td>Reference vs. Thematic Maps, Spatial Patterns, Map Distortion.</td>
+            <td>Projections distort <strong>SADD</strong>: Shape, Area, Distance, or Direction.</td>
+          </tr>
+          <tr>
+            <td><strong>1.2 Geographic Data Collection</strong></td>
+            <td>Fieldwork vs. Geospatial Tech (GIS, GPS, Remote Sensing).</td>
+            <td>Qualitative (interviews/narratives) vs. Quantitative (census data).</td>
+          </tr>
+          <tr>
+            <td><strong>1.3 Power of Geographic Data</strong></td>
+            <td>Personal, business, and governmental spatial decision-making.</td>
+            <td>Redistricting, school zoning, transit planning.</td>
+          </tr>
+          <tr>
+            <td><strong>1.4 Spatial Concepts</strong></td>
+            <td>Absolute vs. Relative Location, Place, Flows, Distance Decay, Time-Space Compression.</td>
+            <td>Technology compresses perceived distance (Time-Space Compression).</td>
+          </tr>
+          <tr>
+            <td><strong>1.5 Human-Environmental Interaction</strong></td>
+            <td>Environmental Determinism vs. Possibilism, Sustainability, Land Use.</td>
+            <td><strong>Possibilism</strong> is the modern standard: humans adapt and innovate.</td>
+          </tr>
+          <tr>
+            <td><strong>1.6 Scales of Analysis</strong></td>
+            <td>Global, Regional, National, and Local scales.</td>
+            <td>Zooming in reveals variations that national averages mask.</td>
+          </tr>
+          <tr>
+            <td><strong>1.7 Regional Analysis</strong></td>
+            <td>Formal, Functional, and Perceptual (Vernacular) regions.</td>
+            <td>Boundaries are <strong>transitional, contested, and overlapping</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Map Projections & Types -->
+    <div class="card">
+      <div class="card-header">
+        <h2><span>🗺️</span> Topic 1.1: Map Types & Distortion Guide</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Map Type</th>
+            <th>How It Works</th>
+            <th>Typical AP Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Choropleth</strong></td>
+            <td>Uses tonal color shading to represent statistical data by area.</td>
+            <td>Population density by country or COVID-19 rates by state.</td>
+          </tr>
+          <tr>
+            <td><strong>Dot Distribution</strong></td>
+            <td>Each dot represents a specific quantity of a phenomenon.</td>
+            <td>Distribution of dairy farms or cholera cases in London.</td>
+          </tr>
+          <tr>
+            <td><strong>Isoline</strong></td>
+            <td>Continuous lines connect points of equal value.</td>
+            <td>Topographic elevation contours, temperature isotherms.</td>
+          </tr>
+          <tr>
+            <td><strong>Cartogram</strong></td>
+            <td>Land areas are intentionally distorted/resized based on a variable.</td>
+            <td>World map where country size reflects total population or GDP.</td>
+          </tr>
+          <tr>
+            <td><strong>Proportional Symbol</strong></td>
+            <td>Symbols (circles, squares) scale in size with data magnitude.</td>
+            <td>City sizes, oil production volumes by port.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert-box alert-info">
+        <strong>The Golden Projection Rule:</strong> No flat map can accurately show spherical Earth without distortion. The <strong>Mercator</strong> projection preserves true compass direction (vital for ship navigation) but massively distorts land size near the poles (Greenland looks bigger than South America).
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TAB 2: TOPIC 1.7 REGIONAL ANALYSIS FOCUS -->
+  <div id="tab-regions" class="tab-content">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2><span>🌐</span> Topic 1.7: The 3 Types of Regions (Detailed Comparison)</h2>
+      </div>
+
+      <p style="margin-bottom: 16px;">
+        Geographers classify regions to make vast amounts of spatial data manageable. The College Board tests your ability to distinguish among the three types:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Region Type</th>
+            <th>Official Fiveable Definition</th>
+            <th>Distinguishing Characteristic</th>
+            <th>Classic Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Formal Region</strong><br><em>(Uniform / Homogenous)</em></td>
+            <td>An area defined by a shared, measurable, uniform characteristic across its entirety.</td>
+            <td><strong>Measurable & definitive</strong>. Boundaries can be legally or scientifically proven.</td>
+            <td>
+              • State of Georgia (legal border)<br>
+              • The Corn Belt (predominant farming)<br>
+              • French-speaking realm of Quebec<br>
+              • Sahara Desert climate zone
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Functional Region</strong><br><em>(Nodal Region)</em></td>
+            <td>An area organized around a central node or focal point with spatial interaction radiating outwards.</td>
+            <td><strong>Tied to connections</strong>. Strength decays as distance increases (distance decay).</td>
+            <td>
+              • Metropolitan Atlanta commuter shed<br>
+              • TV broadcast station radius<br>
+              • Domino's pizza delivery zone<br>
+              • Hartsfield-Jackson airport flight network
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Perceptual Region</strong><br><em>(Vernacular Region)</em></td>
+            <td>An area defined by informal feelings, cultural identity, or sense of place rather than legal boundaries.</td>
+            <td><strong>Subjective & fuzzy</strong>. Varies based on who is drawing the map.</td>
+            <td>
+              • <strong>"The American South"</strong><br>
+              • <strong>"The Middle East"</strong><br>
+              • "Silicon Valley"<br>
+              • "The Rust Belt"
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert-box alert-warning">
+        <strong>⚠️ Crucial Exam Concept — Transitional & Contested Boundaries:</strong><br>
+        Regions do NOT stop abruptly like brick walls. Boundaries fade gradually from one cultural realm into another (e.g., the US–Mexico borderlands where English and Spanish blend). When resources or political power overlap, boundaries become <strong>contested</strong> (e.g., Sudan vs. South Sudan or Kashmir).
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="../world-regions/world_regions_closer_look.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">
+          <span>🎯</span> Test Your Subregions on the Interactive Map →
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TAB 3: KEY TERMS GLOSSARY -->
+  <div id="tab-terms" class="tab-content">
+    <div class="card">
+      <div class="card-header">
+        <h2><span>🔑</span> Official Fiveable AP Key Terms (Unit 1 Glossary)</h2>
+      </div>
+      <p style="margin-bottom: 12px; color: var(--text-muted);">
+        Mastering these definitions guarantees full marks on vocabulary-based stimulus questions:
+      </p>
+
+      <div class="terms-grid">
+        <div class="term-card">
+          <div class="term-name">Absolute Location</div>
+          <div class="term-def">The precise physical position of a place on Earth expressed using coordinates (latitude and longitude) or addresses.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Relative Location</div>
+          <div class="term-def">The position of a place in relation to other landmarks, time, or cost (e.g., "30 miles north of Atlanta").</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Distance Decay</div>
+          <div class="term-def">The geographic principle stating that interaction between two places decreases as the physical distance between them increases.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Time-Space Compression</div>
+          <div class="term-def">The reduction in perceived time and distance between places caused by advancements in transportation (jets, highways) and communication (Internet).</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Formal Region</div>
+          <div class="term-def">An area with a uniform, measurable shared characteristic (language, crop, climate, legal jurisdiction).</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Functional Region</div>
+          <div class="term-def">An area organized around a central focal node with economic, transport, or communication connections.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Perceptual / Vernacular</div>
+          <div class="term-def">An area based on people's cultural perceptions, stereotypes, or mental maps with fuzzy boundaries.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Scale of Analysis</div>
+          <div class="term-def">The geographic level (local, national, regional, global) at which spatial data is aggregated and interpreted.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Environmental Determinism</div>
+          <div class="term-def">The outdated theory that the physical environment and climate strictly dictate human culture and societal success.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Possibilism</div>
+          <div class="term-def">The modern geographic viewpoint that the environment sets limits, but humans possess agency and technology to overcome them.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">GIS (Geographic Information Systems)</div>
+          <div class="term-def">Computer software that captures, stores, layers, and displays multi-source geographic data to reveal complex relationships.</div>
+        </div>
+
+        <div class="term-card">
+          <div class="term-name">Remote Sensing</div>
+          <div class="term-def">The acquisition of data about Earth's surface from satellites or high-altitude aircraft without physical contact.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: PRACTICE QUESTIONS -->
+  <div id="tab-practice" class="tab-content">
+    <div class="card">
+      <div class="card-header">
+        <h2><span>❓</span> Fiveable AP-Style Practice Questions (Active Self-Testing)</h2>
+      </div>
+      <p style="margin-bottom: 16px; color: var(--text-muted);">
+        Click any question card to test yourself before revealing the official Fiveable answer and reasoning:
+      </p>
+
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span>1. Scale Analysis: Amazon Rainforest & Contested Boundaries</span>
+          <span>▼</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Prompt:</strong> The Amazon is an ecological region defined by climate and vegetation. Indigenous groups define vernacular regions by tribal territories, while the Brazilian government frames the area as a national resource region for economic development. How do these competing definitions reflect contested boundaries across scales?</p>
+          <div class="alert-box alert-success" style="margin-top: 10px;">
+            <strong>Answer & Explanation:</strong> Because different stakeholders operate at different scales (local tribal vs. national federal vs. global ecological), their criteria for regional boundaries conflict. What is a sovereign home at the local scale is treated as raw mineral/timber resources at the national scale, creating <strong>contested, overlapping regional boundaries</strong>.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span>2. Functional Regions: University Commuter Shed</span>
+          <span>▼</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Prompt:</strong> A university's daily commuting zone extends 30 kilometers and draws students from local counties, while its research partnerships and recruitment span the entire continent. Which geographic concept best explains why the institution forms different functional regions at different scales?</p>
+          <div class="alert-box alert-success" style="margin-top: 10px;">
+            <strong>Answer & Explanation:</strong> Functional regions are defined by specific flows and nodal connections. At the <strong>local scale</strong>, the university functions as a daily commuter node; at the <strong>continental scale</strong>, it functions as an intellectual/research node. Changing the scale of analysis changes the functional boundary.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span>3. Southeast Asian Manufacturing Across Scales</span>
+          <span>▼</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Prompt:</strong> A Southeast Asian manufacturing network operates factories in Vietnam, coordinates parts supply chains across Thailand and Malaysia, and sells finished electronics in North America. Which concept best explains how this region operates simultaneously across scales?</p>
+          <div class="alert-box alert-success" style="margin-top: 10px;">
+            <strong>Answer & Explanation:</strong> <strong>Multi-Scale Regional Integration</strong>. Economic globalization links local production sites (Vietnam) to regional trade blocs (ASEAN) and global consumer markets (North America), demonstrating that geographic places are nested inside multiple functional regions simultaneously.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span>4. Formal vs. Perceptual: "The Middle East"</span>
+          <span>▼</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Prompt:</strong> Why is "The Middle East" categorized as a perceptual (vernacular) region rather than a formal region?</p>
+          <div class="alert-box alert-success" style="margin-top: 10px;">
+            <strong>Answer & Explanation:</strong> There is no single legal treaty or precise border defining where "The Middle East" begins and ends. Countries like Afghanistan, Turkey, and Sudan are included by some geographers and excluded by others based on subjective cultural, political, or historical viewpoints.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 5: PDF CHEATSHEETS -->
+  <div id="tab-pdfs" class="tab-content">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2><span>📑</span> Download & View Official Fiveable PDF Cheatsheets</h2>
+      </div>
+
+      <!-- PDF 1 -->
+      <div class="pdf-viewer-card">
+        <div class="pdf-header">
+          <div>
+            <strong style="color: var(--primary); font-size: 15px;">Fiveable Unit 1 One-Pager: Thinking Geographically (2026–2027)</strong>
+            <div style="font-size: 12.5px; color: var(--text-muted);">Official concise summary of map types, distortions, scales, and region models.</div>
+          </div>
+          <div>
+            <a href="Fiveable_Unit_1_Thinking_Geographically.pdf" target="_blank" class="btn btn-primary">
+              <span>↗</span> Open PDF Fullscreen
+            </a>
+          </div>
+        </div>
+        <iframe src="Fiveable_Unit_1_Thinking_Geographically.pdf" width="100%" height="450px" style="border: none;"></iframe>
+      </div>
+
+      <!-- PDF 2 -->
+      <div class="pdf-viewer-card">
+        <div class="pdf-header">
+          <div>
+            <strong style="color: var(--primary); font-size: 15px;">Fiveable Master Cheatsheet: Full AP Human Geography Course</strong>
+            <div style="font-size: 12.5px; color: var(--text-muted);">High-density cram sheet covering all 7 AP Units and essential geographic models.</div>
+          </div>
+          <div>
+            <a href="Fiveable_Master_Cheatsheet_AP_Human_Geography.pdf" target="_blank" class="btn btn-primary">
+              <span>↗</span> Open PDF Fullscreen
+            </a>
+          </div>
+        </div>
+        <iframe src="Fiveable_Master_Cheatsheet_AP_Human_Geography.pdf" width="100%" height="450px" style="border: none;"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function switchTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+    const targetTab = document.getElementById(tabId);
+    if (targetTab) {
+      targetTab.classList.add('active');
+    }
+
+    event.currentTarget.classList.add('active');
+  }
+
+  function toggleAccordion(headerEl) {
+    const bodyEl = headerEl.nextElementSibling;
+    const arrow = headerEl.querySelector('span:last-child');
+    if (bodyEl.classList.contains('open')) {
+      bodyEl.classList.remove('open');
+      arrow.innerText = '▼';
+    } else {
+      bodyEl.classList.add('open');
+      arrow.innerText = '▲';
+    }
+  }
+</script>
+
+</body>
+</html>
