@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 2 AP Classroom MCQ Mastery Hub (Topics 2.1–2.4, 2.9)</title>
+  <style>
+    :root {
+      --primary: #006699;
+      --primary-dark: #004d73;
+      --primary-light: #e6f3f8;
+      --accent: #2b7a78;
+      --dark: #1b263b;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --correct-bg: #dcfce7;
+      --correct-border: #16a34a;
+      --correct-text: #166534;
+      --wrong-bg: #fee2e2;
+      --wrong-border: #dc2626;
+      --wrong-text: #991b1b;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      background-color: #ffffff;
+      border-right: 1px solid var(--border);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      z-index: 100;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+
+    .book-tag {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      line-height: 1.3;
+    }
+
+    .nav-sections {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      padding: 0 0.5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topic-filter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid transparent;
+      background: transparent;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .topic-filter-btn:hover {
+      background-color: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .topic-filter-btn.active {
+      background-color: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .topic-count {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.06);
+    }
+
+    .topic-filter-btn.active .topic-count {
+      background: rgba(255,255,255,0.25);
+      color: #ffffff;
+    }
+
+    /* Jump Grid */
+    .jump-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.35rem;
+      padding: 0 0.25rem;
+    }
+
+    .jump-btn {
+      aspect-ratio: 1;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      border-radius: 0.375rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+      color: var(--text-muted);
+    }
+
+    .jump-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background-color: var(--primary-light);
+    }
+
+    .jump-btn.active {
+      outline: 2px solid var(--primary);
+      outline-offset: 1px;
+    }
+
+    .jump-btn.correct {
+      background-color: var(--correct-bg);
+      border-color: var(--correct-border);
+      color: var(--correct-text);
+    }
+
+    .jump-btn.wrong {
+      background-color: var(--wrong-bg);
+      border-color: var(--wrong-border);
+      color: var(--wrong-text);
+    }
+
+    .jump-btn.flagged {
+      position: relative;
+    }
+
+    .jump-btn.flagged::after {
+      content: '★';
+      position: absolute;
+      top: -3px;
+      right: 1px;
+      font-size: 9px;
+      color: #eab308;
+    }
+
+    /* Score Card in Sidebar */
+    .score-summary {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .score-bar-bg {
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .score-bar-fill {
+      height: 100%;
+      background: var(--correct-border);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* Main Content Area */
+    .main-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    /* Top Global Header */
+    .top-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .header-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.375rem;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      transition: all 0.15s ease;
+    }
+
+    .header-link:hover {
+      background: var(--primary-light);
+    }
+
+    .mode-switch {
+      display: flex;
+      background: #f1f5f9;
+      border-radius: 0.5rem;
+      padding: 0.2rem;
+      gap: 0.2rem;
+    }
+
+    .mode-btn {
+      border: none;
+      background: transparent;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      color: #475569;
+      transition: all 0.15s ease;
+    }
+
+    .mode-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Test Container */
+    .test-content {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* Cheat Sheet Drawer */
+    .cheat-drawer {
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      border: 1.5px solid #93c5fd;
+      border-radius: 0.875rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+    }
+
+    .cheat-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .cheat-drawer-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #1e40af;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cheat-body {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #bfdbfe;
+      display: none;
+      font-size: 0.875rem;
+      color: #1e3a8a;
+      line-height: 1.6;
+    }
+
+    .cheat-body.open {
+      display: block;
+    }
+
+    .cheat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .cheat-card {
+      background: #ffffff;
+      border: 1px solid #bfdbfe;
+      border-radius: 0.5rem;
+      padding: 0.85rem;
+      font-size: 0.8125rem;
+    }
+
+    .cheat-card strong {
+      color: #1e3a8a;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Question Card */
+    .q-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 0.875rem;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      transition: border-color 0.2s ease;
+    }
+
+    .q-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 0.75rem;
+    }
+
+    .q-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.375rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .pill-num { background: var(--dark); color: #ffffff; }
+    .pill-skill { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .pill-topic { background: #f1f5f9; color: #475569; }
+
+    .amsco-box {
+      font-size: 0.78rem;
+      color: #0f766e;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 0.35rem 0.7rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* 8th Grade Hint Button */
+    .hint-container {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 0.5rem;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.85rem;
+    }
+
+    .hint-toggle-btn {
+      background: none;
+      border: none;
+      color: #b45309;
+      font-weight: 700;
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hint-text {
+      margin-top: 0.4rem;
+      color: #92400e;
+      display: none;
+      line-height: 1.5;
+    }
+
+    .hint-text.open {
+      display: block;
+    }
+
+    /* Stimulus Container */
+    .stimulus-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-left: 4px solid #64748b;
+      padding: 1rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .stimulus-img {
+      max-width: 100%;
+      max-height: 380px;
+      object-fit: contain;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+    }
+
+    .stimulus-caption {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+    }
+
+    .stimulus-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      background: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .stimulus-table th, .stimulus-table td {
+      border: 1px solid #cbd5e1;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .stimulus-table th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .q-prompt {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    /* Options */
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.25rem;
+    }
+
+    .opt-btn {
+      width: 100%;
+      text-align: left;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 0.6rem;
+      padding: 0.85rem 1rem;
+      font-size: 0.9375rem;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      transition: all 0.15s ease;
+      line-height: 1.45;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background-color: var(--primary-light);
+    }
+
+    .opt-letter {
+      font-weight: 800;
+      color: var(--primary);
+      min-width: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .opt-btn.correct {
+      background-color: var(--correct-bg) !important;
+      border-color: var(--correct-border) !important;
+      color: var(--correct-text) !important;
+      font-weight: 600;
+    }
+
+    .opt-btn.wrong {
+      background-color: var(--wrong-bg) !important;
+      border-color: var(--wrong-border) !important;
+      color: var(--wrong-text) !important;
+      text-decoration: line-through;
+    }
+
+    /* Explanation Box */
+    .explanation-card {
+      display: none;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.6rem;
+      padding: 1.1rem;
+      margin-top: 0.5rem;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .explanation-card.open {
+      display: flex;
+    }
+
+    .exp-title {
+      font-weight: 800;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .exp-summary {
+      background: #ffffff;
+      border-left: 4px solid var(--correct-border);
+      padding: 0.65rem 0.85rem;
+      border-radius: 0 4px 4px 0;
+      color: var(--correct-text);
+      font-weight: 500;
+    }
+
+    .distractor-breakdown {
+      margin-top: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      color: #475569;
+    }
+
+    .distractor-item {
+      background: #ffffff;
+      padding: 0.45rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .distractor-item strong {
+      color: #dc2626;
+    }
+
+    /* Bottom Action Bar */
+    .action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+    }
+
+    .flag-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.75rem;
+      border-radius: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .flag-btn.active {
+      background: #fef9c3;
+      border-color: #facc15;
+      color: #854d0e;
+    }
+
+    .nav-btn-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .nav-btn {
+      background: var(--dark);
+      color: #ffffff;
+      border: none;
+      padding: 0.45rem 1rem;
+      border-radius: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      background: var(--primary);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    /* Score Report Modal */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      max-width: 580px;
+      width: 100%;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      text-align: center;
+    }
+
+    .modal-score {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .topic-breakdown-list {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin: 0.75rem 0;
+    }
+
+    .topic-breakdown-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.75rem;
+      background: #f8fafc;
+      border-radius: 0.375rem;
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { width: 100%; height: auto; position: static; }
+      .jump-grid { grid-template-columns: repeat(10, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar Navigator -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-badge">
+        <span>🗺️</span> AP Human Geography
+      </div>
+      <div class="book-tag">
+        <strong>Unit 2 Formative Quiz Simulator</strong><br>
+        Standards: 2.1, 2.2, 2.3, 2.4, 2.9 (20 Qs on AP Classroom)<br>
+        Mrs. Anne Knight • Room 1325
+      </div>
+    </div>
+
+    <div class="nav-sections">
+      <!-- Mode Switcher -->
+      <div>
+        <div class="section-title">Testing Mode</div>
+        <div class="mode-switch">
+          <button id="btn-mode-tutor" class="mode-btn active" onclick="setMode('tutor')">💡 Tutor Mode</button>
+          <button id="btn-mode-exam" class="mode-btn" onclick="setMode('exam')">⏱️ Exam (20 Qs)</button>
+        </div>
+      </div>
+
+      <!-- Topic Filter -->
+      <div>
+        <div class="section-title">Standards Filter</div>
+        <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+          <button class="topic-filter-btn active" onclick="filterTopic('all', this)">
+            <span>All Master Questions</span>
+            <span class="topic-count" id="count-all">35</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.1', this)">
+            <span>Topic 2.1: Densities & Clusters</span>
+            <span class="topic-count">7</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.2', this)">
+            <span>Topic 2.2: Distribution Impacts</span>
+            <span class="topic-count">6</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.3', this)">
+            <span>Topic 2.3: Pyramids & Cohorts</span>
+            <span class="topic-count">8</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.4', this)">
+            <span>Topic 2.4: Growth Rates & Doubling</span>
+            <span class="topic-count">7</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.9', this)">
+            <span>Topic 2.9: Aging & Gray Power</span>
+            <span class="topic-count">7</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Score Progress -->
+      <div>
+        <div class="section-title">Performance Progress</div>
+        <div class="score-summary">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
+            <span id="score-text">0 / 0 Completed</span>
+            <span id="score-pct">0%</span>
+          </div>
+          <div class="score-bar-bg">
+            <div id="score-bar" class="score-bar-fill"></div>
+          </div>
+          <button id="btn-retake-missed" onclick="retakeMissed()" style="display: none; font-size: 0.75rem; font-weight: 700; color: #dc2626; background: #fee2e2; border: 1px solid #fca5a5; padding: 0.35rem; border-radius: 4px; cursor: pointer; margin-top: 0.25rem;">
+            🔄 Retake Missed Questions
+          </button>
+        </div>
+      </div>
+
+      <!-- Question Jump Grid -->
+      <div>
+        <div class="section-title">
+          <span>Question Navigator</span>
+          <span id="timer-display" style="font-family: var(--font-mono); color: var(--primary); font-weight: 700;">--:--</span>
+        </div>
+        <div id="jump-grid" class="jump-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Question View -->
+  <div class="main-wrapper">
+    <!-- Top Global Header -->
+    <header class="top-header">
+      <div class="header-links">
+        <a href="../index.html" class="header-link">🏛️ Main Portal</a>
+        <a href="../world-regions/quiz_action_kit.html" class="header-link">🚀 World Regions Quiz</a>
+        <a href="../unit2-categorilla/index.html" class="header-link">🦍 Aging Categorilla</a>
+        <a href="../fiveable/index.html" class="header-link">⚡ Fiveable Unit 2 Hub</a>
+      </div>
+      <button onclick="toggleCheatSheet()" style="background: #1e3a8a; color: #ffffff; font-weight: 700; font-size: 0.8rem; padding: 0.4rem 0.85rem; border-radius: 6px; border: none; cursor: pointer;">
+        📖 8th-Grade Cheat Sheet Drawer
+      </button>
+    </header>
+
+    <!-- Test Content Area -->
+    <main class="test-content">
+
+      <!-- Collapsible 8th Grade Cheat Sheet Drawer -->
+      <div class="cheat-drawer">
+        <div class="cheat-drawer-header" onclick="toggleCheatSheet()">
+          <div class="cheat-drawer-title">
+            <span>💡</span> 8th-Grade Quick Cheat Sheet: The 5 Big Ideas Made Simple
+          </div>
+          <span id="cheat-chevron" style="color: #1e40af; font-weight: bold;">▼</span>
+        </div>
+        <div id="cheat-body" class="cheat-body">
+          <p style="margin-bottom: 0.5rem;">
+            Here are simple everyday analogies to help you master these 5 topics with 100% confidence:
+          </p>
+          <div class="cheat-grid">
+            <div class="cheat-card">
+              <strong>1. The 3 Densities (Pizza & Farm Analogy)</strong>
+              • <em>Arithmetic</em>: Total people divided by total land (general crowding).<br>
+              • <em>Physiological</em>: People divided by <strong>farmable (arable) land</strong>. (High = high food pressure on soil, like Egypt!).<br>
+              • <em>Agricultural</em>: <strong>Farmers</strong> divided by farmable land. (MDCs have low agricultural density because they use tractors!).
+            </div>
+            <div class="cheat-card">
+              <strong>2. Carrying Capacity (The Island Backpack)</strong>
+              The max number of people an area can support before nature breaks down. Exceeding it in dry places like the Sahel causes overgrazing and desertification (soil turning to sand).
+            </div>
+            <div class="cheat-card">
+              <strong>3. Population Pyramids (Shapes)</strong>
+              • <em>Triangle (Wide Base)</em> = Stage 2 (Lots of babies, high youth dependency, e.g. Niger).<br>
+              • <em>Column / Box</em> = Stage 4 (Balanced families, e.g. USA).<br>
+              • <em>Inverted (Narrow Base)</em> = Stage 5 (Few babies, lots of grandparents, e.g. Japan).<br>
+              • <em>Male 20–49 Bulge</em> = <strong>Foreign guest workers</strong> (UAE / Qatar).
+            </div>
+            <div class="cheat-card">
+              <strong>4. NIR & Doubling Time Formulas</strong>
+              • $\text{NIR (\%)} = \frac{\text{CBR} - \text{CDR}}{10}$ *(NEVER include immigrants!)*<br>
+              • $\text{Doubling Time} = \frac{70}{\text{NIR}}$ *(Rule of 70)*<br>
+              • Replacement TFR = <strong>2.1</strong> *(the 0.1 replaces babies who don't survive to adulthood)*.
+            </div>
+            <div class="cheat-card">
+              <strong>5. The France vs. Bangladesh CDR Trap</strong>
+              Why does rich France have a higher death rate than developing Bangladesh? <strong>Age, NOT healthcare!</strong> Bangladesh has a super young median age (few old people to die). France has lots of elderly people over 75.
+            </div>
+            <div class="cheat-card">
+              <strong>6. Dependency Ratio Formula</strong>
+              $$\frac{\text{Young (<15)} + \text{Old (65+)}}{\text{Working Adults (15–64)}} \times 100$$
+              Non-working dependents on top; productive workers on the bottom!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Question Container -->
+      <div id="q-container">
+        <!-- Rendered by JS -->
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Score Report Modal -->
+  <div id="modal-report" class="modal-backdrop">
+    <div class="modal-card">
+      <div style="font-size: 1.1rem; font-weight: 800; color: var(--dark);">
+        🎯 Unit 2 AP Classroom Exam Result
+      </div>
+      <div class="modal-score" id="modal-score-val">100%</div>
+      <p id="modal-score-msg" style="font-size: 0.95rem; color: var(--text-muted);"></p>
+
+      <div class="topic-breakdown-list" id="modal-breakdown">
+        <!-- Injected by JS -->
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 0.5rem;">
+        <button class="nav-btn" style="background: var(--primary);" onclick="closeModal()">Review Answers</button>
+        <button class="nav-btn" style="background: #16a34a;" onclick="restartExam()">Restart Simulation</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // 35 MASTER COLLEGE BOARD AP LEVEL QUESTIONS
+    // ==========================================
+    const MASTER_QUESTIONS = [
+      // TOPIC 2.1: Densities & Distribution (7 Questions)
+      {
+        id: "2.1-Q01",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 3.B",
+        skillDesc: "Describe spatial patterns of data in maps.",
+        amsco: "Chapter 3, pp. 53–59: Physical Settlement Factors & The Ecumene",
+        hint: "Think about weather and seasons! Where is there the most flat land with moderate rainfall and neither freezing glaciers nor scorching deserts?",
+        stimulus: {
+          type: "image",
+          src: "assets/map_world_population_distribution.png",
+          caption: "Figure 2.1: Global dot-density map of human population distribution."
+        },
+        prompt: "Which generalization regarding human settlement patterns is most directly supported by the global population distribution map above?",
+        options: [
+          { id: "A", text: "Human populations are distributed symmetrically across both the Northern and Southern Hemispheres." },
+          { id: "B", text: "The overwhelming majority of humanity resides in the midlatitude regions between 20°N and 60°N." },
+          { id: "C", text: "High-elevation alpine zones contain the highest arithmetic densities due to natural mountain defenses." },
+          { id: "D", text: "Arid interior deserts support dense rural agrarian populations along intermittent seasonal streams." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Almost 90% of all humans live north of the equator in the 'midlatitudes' (between 20°N and 60°N). This is where the biggest continents are, with temperate seasons, fertile farmland, and fresh river water.",
+          distractors: {
+            A: "Symmetrical distribution is completely false; only ~10% of the world's population lives in the Southern Hemisphere.",
+            C: "High alpine mountains suffer from thin air, severe cold, and steep rocky slopes, making them sparsely populated non-ecumene.",
+            D: "Arid deserts (like the Sahara or Australian Outback) lack water and cannot support dense agricultural populations."
+          }
+        }
+      },
+      {
+        id: "2.1-Q02",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 3.D",
+        skillDesc: "Analyze and summarize numerical density data.",
+        amsco: "Chapter 3, pp. 53–59: Methods of Calculating Population Density",
+        hint: "Look at the formula: Physiological Density = People divided by ARABLE (farmable) land. If this number is super high, it means the country has very little farmable land to feed its people!",
+        stimulus: {
+          type: "image",
+          src: "assets/diagram_density_comparison_egypt.png",
+          caption: "Figure 2.2: Egypt Arithmetic Density (226/sq. mi.) vs. Physiological Density (8,078/sq. mi.)."
+        },
+        prompt: "Based on the comparison of Egypt's arithmetic density (226/sq. mi.) and physiological density (8,078/sq. mi.), which conclusion must be true?",
+        options: [
+          { id: "A", text: "Egypt produces more agricultural exports than any other nation in the African continent." },
+          { id: "B", text: "Egypt possesses an exceptionally low percentage of arable land relative to its total area." },
+          { id: "C", text: "The majority of Egypt's domestic labor force is employed in commercial manufacturing." },
+          { id: "D", text: "Egypt has experienced rapid demographic decline due to below-replacement fertility." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Egypt's total land is huge (mostly desert), but over 97% cannot be farmed. Because its people are crowded into the tiny 3% strip of farmable soil along the Nile River, its physiological density is over 8,000 people per farmable square mile!",
+          distractors: {
+            A: "High physiological density means intense domestic food pressure, not abundant food exports.",
+            C: "Density metrics measure spatial relationships between people and land; they do not reveal employment industry percentages.",
+            D: "Egypt has a youthful, rapidly growing population with an NIR well above zero."
+          }
+        }
+      },
+      {
+        id: "2.1-Q03",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 1.B",
+        skillDesc: "Explain geographic concepts and models.",
+        amsco: "Chapter 3, pp. 53–59: Agricultural Density and Economic Development",
+        hint: "Tractors vs. Sickles! Does a rich country need millions of people digging dirt with hand shovels, or do a few farmers with giant tractors do the work?",
+        stimulus: null,
+        prompt: "Why do More Developed Countries (MDCs) like Canada and the United States exhibit substantially lower agricultural densities than Less Developed Countries (LDCs) like Bangladesh?",
+        options: [
+          { id: "A", text: "MDCs possess significantly smaller total acreages of arable agricultural land than developing nations." },
+          { id: "B", text: "Commercial farmers in MDCs utilize mechanized capital equipment, requiring fewer workers per farm unit." },
+          { id: "C", text: "Citizens in MDCs consume primarily synthetic laboratory food rather than domestically farmed crops." },
+          { id: "D", text: "Government mandates in MDCs prohibit rural youth from engaging in agricultural occupations." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Agricultural density is (Farmers ÷ Farmable Land). In MDCs, modern combines and tractors allow just 1 or 2 farmers to manage thousands of acres. In LDCs, farming is manual subsistence labor, so millions of farmers work the soil.",
+          distractors: {
+            A: "Canada and the US possess vast fertile plains far larger than Bangladesh.",
+            C: "MDC citizens eat crops grown on real farmland, not synthetic lab food.",
+            D: "There are no laws banning rural youth from farming; mechanization naturally freed up workers for city factory and service jobs."
+          }
+        }
+      },
+      {
+        id: "2.1-Q04",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 2.B",
+        skillDesc: "Explain spatial relationships across geographic realms.",
+        amsco: "Chapter 3, pp. 53–59: Major Global Population Clusters",
+        hint: "Where did the Industrial Revolution start? People moved to cities near coal mines and factories, not river farms.",
+        stimulus: null,
+        prompt: "Which of the following characteristics distinguishes the European population cluster from the East Asian and South Asian population clusters?",
+        options: [
+          { id: "A", text: "European settlement concentrated along subarctic river basins to exploit seasonal timber reserves." },
+          { id: "B", text: "European settlement clustered near historical coal and mineral deposits of the Industrial Revolution." },
+          { id: "C", text: "European populations are predominantly rural subsistence farmers cultivating intensive grain crops." },
+          { id: "D", text: "European cities are distributed uniformly across alpine elevations to escape coastal flooding." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "While Asian population clusters formed in fertile river plains (Yangtze, Ganges) to grow rice and wheat, Europe's population clustered in urban factory centers near coal and iron fields (Britain, Germany, Belgium).",
+          distractors: {
+            A: "European population centers are in temperate midlatitudes, not freezing subarctic basins.",
+            C: "Europe is over 75% urbanized with post-industrial service economies, not rural subsistence farming.",
+            D: "European cities are located along lowlands, rivers, and coastal ports, not atop mountain peaks."
+          }
+        }
+      },
+      {
+        id: "2.1-Q05",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 1.A",
+        skillDesc: "Identify and define geographic concepts.",
+        amsco: "Chapter 3, pp. 53–59: Arithmetic Density Misconceptions",
+        hint: "Think about Singapore or the Netherlands. They are tiny and super crowded, but are their people starving? No, they are rich trade hubs!",
+        stimulus: null,
+        prompt: "Which statement best exposes the primary limitation of relying exclusively on arithmetic density to evaluate a nation's standard of living?",
+        options: [
+          { id: "A", text: "Arithmetic density exaggerates population pressure by excluding coastal island territories from national land totals." },
+          { id: "B", text: "Arithmetic density is a crude average that reveals nothing about land quality, soil fertility, or wealth distribution." },
+          { id: "C", text: "Arithmetic density calculations fluctuate monthly based on seasonal international tourist arrivals." },
+          { id: "D", text: "Arithmetic density can only be calculated for sovereign member states belonging to the United Nations." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Arithmetic density is just (Total People ÷ Total Land). A country can have a huge arithmetic density (like Singapore or the Netherlands) but be wealthy and well-fed because it trades. It doesn't tell you if the land is prime farmland or barren rocks.",
+          distractors: {
+            A: "Arithmetic density includes all sovereign territorial land, including islands.",
+            C: "Demographers calculate density using permanent census resident data, not temporary monthly vacationers.",
+            D: "Density can be computed for any geographic unit (cities, counties, non-UN territories)."
+          }
+        }
+      },
+      {
+        id: "2.1-Q06",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 2.A",
+        skillDesc: "Describe spatial patterns and processes.",
+        amsco: "Chapter 3, pp. 53–59: Urban Sprawl and Arable Land",
+        hint: "When suburbs expand and build new shopping malls and subdivisions, what happens to the prime farmland around the city?",
+        stimulus: null,
+        prompt: "When rapid urban suburbanization expands around a metropolitan area located on an alluvial river floodplain, what is the most direct consequence on local population density metrics?",
+        options: [
+          { id: "A", text: "Physiological density increases because highly productive arable land is permanently converted into asphalt and housing." },
+          { id: "B", text: "Agricultural density increases because factory workers must cultivate home vegetable gardens to survive." },
+          { id: "C", text: "Arithmetic density declines to near zero as city boundaries expand across county borders." },
+          { id: "D", text: "Carrying capacity doubles because concrete surfaces retain rainwater for municipal irrigation." }
+        ],
+        correct: "A",
+        explanation: {
+          eli8: "When cities pave over farms to build subdivisions, the amount of arable (farmable) land shrinks. Because the denominator in Physiological Density (Arable Land) gets smaller, physiological density shoots up!",
+          distractors: {
+            B: "Suburban commuters work office and retail jobs, not subsistence farming.",
+            C: "Urban expansion concentrates thousands of residents per square mile, increasing density.",
+            D: "Paving over farmland reduces natural water recharge and decreases biological carrying capacity."
+          }
+        }
+      },
+      {
+        id: "2.1-Q07",
+        topic: "Topic 2.1",
+        topicName: "Population Distribution & Density",
+        skill: "Skill 1.B",
+        skillDesc: "Explain geographic concepts and relationships.",
+        amsco: "Chapter 3, pp. 53–59: Measuring Carrying Capacity Pressures",
+        hint: "Which specific density compares mouths to feed against the soil that actually grows the food?",
+        stimulus: null,
+        prompt: "Which demographic metric provides the most accurate indicator of potential environmental strain and food security pressure placed upon domestic farmland?",
+        options: [
+          { id: "A", text: "Arithmetic density measuring crude population per total territorial square mile." },
+          { id: "B", text: "Physiological density measuring total human population per square mile of arable land." },
+          { id: "C", text: "Agricultural density measuring active farm laborers per unit of grazing pasture." },
+          { id: "D", text: "Total dependency ratio comparing infant births against elderly mortality rates." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Physiological density specifically answers: 'How many people must each acre of farmable land feed?' If a nation has 4,000 people per arable square mile, its farmland is under severe strain.",
+          distractors: {
+            A: "Arithmetic density includes useless land (deserts, mountains, glaciers) that can never grow food.",
+            C: "Agricultural density measures how many farmers work the land (mechanization), not total population food demand.",
+            D: "The dependency ratio measures age structure, not agricultural land pressure."
+          }
+        }
+      },
+
+      // TOPIC 2.2: Consequences of Distribution (6 Questions)
+      {
+        id: "2.2-Q01",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 2.B",
+        skillDesc: "Explain spatial relationships between human settlement and environmental systems.",
+        amsco: "Chapter 3, pp. 60–64: Carrying Capacity and Desertification",
+        hint: "Picture an elevator with a max load of 1,000 lbs. If you pack 3,000 lbs in it, the elevator breaks! In dry grasslands like the Sahel, packing too many cows strips the grass and creates a desert.",
+        stimulus: {
+          type: "image",
+          src: "assets/map_sahel_natural_increase_rates.png",
+          caption: "Figure 2.3: Natural increase and arid ecological zones in the African Sahel."
+        },
+        prompt: "When human population growth and livestock herds in the semi-arid African Sahel exceed the region's environmental carrying capacity, what is the most immediate ecological outcome?",
+        options: [
+          { id: "A", text: "Rapid expansion of permanent inland freshwater wetlands through soil water retention." },
+          { id: "B", text: "Overgrazing and vegetation loss resulting in topsoil degradation and accelerated desertification." },
+          { id: "C", text: "Stabilization of local aquifer levels due to diminished commercial industrial extraction." },
+          { id: "D", text: "Universal transition of pastoral nomadic populations into commercial agribusiness." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Carrying capacity is nature's maximum limit. When too many people and cattle crowd fragile dry grasslands, the animals eat all the grass roots, wind blows the topsoil away, and the land turns into barren Sahara desert (desertification).",
+          distractors: {
+            A: "Arid regions lose water; they do not form lush wetlands when carrying capacity is exceeded.",
+            C: "Overpopulation depletes aquifers through excessive water pumping for human and animal survival.",
+            D: "Environmental collapse leads to poverty and refugee migration, not wealthy agribusiness."
+          }
+        }
+      },
+      {
+        id: "2.2-Q02",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 1.D",
+        skillDesc: "Describe geographic processes and political consequences.",
+        amsco: "Chapter 3, pp. 60–64: Political Impacts: Reapportionment & Redistricting",
+        hint: "Every 10 years, the US census counts everyone. If millions of people move from New York to Georgia and Florida, who gets more seats in Congress?",
+        stimulus: null,
+        prompt: "In democratic republics like the United States, significant internal population shifts from rural regions to metropolitan sunbelt centers directly cause which political process?",
+        options: [
+          { id: "A", text: "Automatic dissolution of state municipal borders and conversion into federal territories." },
+          { id: "B", text: "Reapportionment and redistricting of legislative seats to ensure equal population representation." },
+          { id: "C", text: "Mandatory equal division of congressional funding across every geographical county regardless of size." },
+          { id: "D", text: "Immediate revocation of voting rights for citizens residing in sparsely populated agricultural sectors." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In America, Congress seats are based on population. When people pack up and move from the cold Northeast to the warm Sunbelt (like Georgia, Texas, Florida), those growing states gain more seats in Congress (reapportionment).",
+          distractors: {
+            A: "State borders are constitutionally permanent; shifting populations does not dissolve states.",
+            C: "Democratic representation is based on people, not equal square miles of empty dirt.",
+            D: "All citizens retain constitutional voting rights regardless of where they reside."
+          }
+        }
+      },
+      {
+        id: "2.2-Q03",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 2.C",
+        skillDesc: "Explain spatial outcomes and public service allocation.",
+        amsco: "Chapter 3, pp. 60–64: Social and Economic Service Provision",
+        hint: "Where would you build a giant Level 1 Trauma Hospital: in the middle of an empty forest, or at a highway crossroads near where 500,000 people live?",
+        stimulus: null,
+        prompt: "A county government decides to construct two new regional high schools and an emergency trauma hospital. Which spatial principle best explains why these facilities are clustered along major highway intersections near urban centers?",
+        options: [
+          { id: "A", text: "Placing public service nodes to maximize accessibility for high population densities and minimize distance decay." },
+          { id: "B", text: "Complying with environmental determinism mandates that forbid building schools below 500 feet elevation." },
+          { id: "C", text: "Equalizing municipal construction costs across sparsely settled wilderness tracts." },
+          { id: "D", text: "Preventing suburban residents from commuting to neighboring municipal school districts." }
+        ],
+        correct: "A",
+        explanation: {
+          eli8: "Schools and trauma centers are 'service nodes'. Governments build them where density is high and roads intersect so the maximum number of people can reach them quickly without long travel times (minimizing distance decay).",
+          distractors: {
+            B: "Environmental determinism is an outdated philosophy and has nothing to do with building codes.",
+            C: "Building expensive hospitals in empty wilderness would waste public tax dollars on facilities nobody can reach.",
+            D: "Facilities are built to serve population clusters, not create jurisdictional roadblocks."
+          }
+        }
+      },
+      {
+        id: "2.2-Q04",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 1.D",
+        skillDesc: "Describe geographic processes.",
+        amsco: "Chapter 3, pp. 60–64: Ecological Footprints in Dense Clusters",
+        hint: "Think about groundwater. If a city of 5 million people pumps water out of the ground faster than rain can refill it, what happens to the underground aquifer?",
+        stimulus: null,
+        prompt: "Which environmental consequence is most commonly associated with dense megalopolitan population clusters situated in coastal or arid environments?",
+        options: [
+          { id: "A", text: "Accelerated volcanic subduction along continental plate margins." },
+          { id: "B", text: "Groundwater aquifer depletion and saltwater intrusion into municipal wells." },
+          { id: "C", text: "Rapid expansion of prime agricultural soils through urban storm runoff." },
+          { id: "D", text: "Universal decline in atmospheric greenhouse gas concentrations." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Dense cities (like Los Angeles, Mexico City, or Jakarta) pump massive amounts of freshwater from deep underground. Pumping too fast empties the aquifer and allows ocean saltwater to seep into drinking wells.",
+          distractors: {
+            A: "Tectonic plate movements are deep geological forces unaffected by human population density.",
+            C: "Urban storm runoff contains petroleum pollutants and erodes soil; it does not create prime farmland.",
+            D: "Dense urban clusters with heavy vehicle traffic and energy demands generate high emissions, not lower ones."
+          }
+        }
+      },
+      {
+        id: "2.2-Q05",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 2.B",
+        skillDesc: "Explain spatial relationships.",
+        amsco: "Chapter 3, pp. 60–64: Rural Depopulation and Infrastructure Strain",
+        hint: "If young people leave a small farm town to move to Atlanta, who is left behind to pay taxes for the local hospital and school?",
+        stimulus: null,
+        prompt: "Sparsely populated rural counties in the American Great Plains frequently face which significant infrastructural challenge?",
+        options: [
+          { id: "A", text: "Severe housing shortages caused by relentless international guest-worker immigration." },
+          { id: "B", text: "High per-capita costs to maintain hospitals, high-speed broadband, and schools due to a small tax base." },
+          { id: "C", text: "Massive urban traffic congestion requiring mandatory high-occupancy toll lanes." },
+          { id: "D", text: "Excessive industrial air pollution exceeding World Health Organization thresholds." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "When towns have very few people spread across huge distances, each taxpayer must pay a lot more money to keep local hospitals open, pave long rural roads, and run school buses.",
+          distractors: {
+            A: "Depopulating rural counties suffer from abandoned vacant houses, not housing shortages.",
+            C: "Traffic congestion is an urban problem; Great Plains farm roads have virtually zero traffic.",
+            D: "Rural agricultural regions have clean air and lack dense heavy manufacturing."
+          }
+        }
+      },
+      {
+        id: "2.2-Q06",
+        topic: "Topic 2.2",
+        topicName: "Consequences of Population Distribution",
+        skill: "Skill 1.D",
+        skillDesc: "Explain geographic concepts.",
+        amsco: "Chapter 3, pp. 60–64: Defining Carrying Capacity",
+        hint: "What is the exact definition of carrying capacity on the AP exam?",
+        stimulus: null,
+        prompt: "In human geography, the concept of **carrying capacity** is best defined as:",
+        options: [
+          { id: "A", text: "The total physical tonnage of freight a nation's interstate railway network can transport annually." },
+          { id: "B", text: "The maximum population size an environmental ecosystem can sustainably support without permanent degradation." },
+          { id: "C", text: "The statutory limit on foreign immigrant admissions established by federal immigration courts." },
+          { id: "D", text: "The arithmetic ratio comparing active agricultural laborers against total domestic tractor horsepower." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Carrying capacity is the maximum number of living things (humans or animals) that an environment's water, soil, and food can support forever without ruining the ecosystem.",
+          distractors: {
+            A: "That is cargo freight logistics, not demographic carrying capacity.",
+            C: "That is an immigration policy quota, not an ecological boundary.",
+            D: "That is agricultural mechanization, not carrying capacity."
+          }
+        }
+      },
+
+      // TOPIC 2.3: Population Composition & Pyramids (8 Questions)
+      {
+        id: "2.3-Q01",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.A",
+        skillDesc: "Identify data and anomalies presented in population pyramids.",
+        amsco: "Chapter 3, pp. 65–70: Guest Worker Pyramids & Sex Ratios",
+        hint: "Look at the middle: Why are there suddenly 3 times more men aged 20–49 than women? Did someone import male construction and oil workers?",
+        stimulus: {
+          type: "image",
+          src: "assets/pyramid_uae_practice.png",
+          caption: "Figure 2.4: Age-sex population pyramid for the United Arab Emirates (UAE)."
+        },
+        prompt: "Which statement best accounts for the dramatic demographic anomaly visible in the 20–49 age cohorts on the population pyramid of the United Arab Emirates?",
+        options: [
+          { id: "A", text: "A sudden post-war baby boom produced massive symmetrical population spikes across both genders." },
+          { id: "B", text: "A massive influx of male guest workers migrated to the country for employment in construction and petroleum extraction." },
+          { id: "C", text: "Maternal mortality rates skyrocketed, permanently decimating the adult female demographic." },
+          { id: "D", text: "National legal decrees strictly prohibited female citizens from residing in metropolitan urban centers." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In Persian Gulf oil countries like the UAE and Qatar, foreign male contract workers (from India, Pakistan, Philippines) arrive to build skyscrapers and drill oil. That creates a giant lopsided bulge on the MALE side between ages 20 and 49!",
+          distractors: {
+            A: "A baby boom creates a balanced bulge on BOTH sides starting at age 0, not just adult males.",
+            C: "The female bars are completely normal and steady; the anomaly is an excess of men, not dead women.",
+            D: "Female residents live normally; the lopsided ratio is strictly caused by male guest-worker visas."
+          }
+        }
+      },
+      {
+        id: "2.3-Q02",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.B",
+        skillDesc: "Describe demographic data in population pyramids.",
+        amsco: "Chapter 3, pp. 65–70: Stage 2 Expansive Pyramids",
+        hint: "Wide base = tons of babies. Narrow top = people die young. Which stage of development is this?",
+        stimulus: {
+          type: "image",
+          src: "assets/pyramid_niger_stage2.png",
+          caption: "Figure 2.5: Population pyramid for Niger (Sub-Saharan Africa)."
+        },
+        prompt: "The broad triangular base and rapidly tapering apex of Niger's population pyramid indicates that the nation faces which primary infrastructural challenge?",
+        options: [
+          { id: "A", text: "Constructing specialized geriatric memory care hospitals and funding national pension solvency." },
+          { id: "B", text: "Building primary schools, providing pediatric immunizations, and funding maternal clinics for a high youth dependency cohort." },
+          { id: "C", text: "Managing an acute labor shortage caused by prolonged below-replacement fertility." },
+          { id: "D", text: "Converting vacant elementary schools into adult vocational training institutes." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Niger has an 'expansive' pyramid with a huge base (lots of babies born every year). Over 50% of the country is under age 15! Niger's biggest challenge is building elementary schools, childhood vaccine clinics, and clean water.",
+          distractors: {
+            A: "Niger has very few elderly citizens (narrow top); geriatric care is a Stage 5 problem (Japan), not Stage 2.",
+            C: "Niger has millions of young people entering the workforce, not labor shortages.",
+            D: "Niger has severe classroom shortages; it is building schools, not closing them."
+          }
+        }
+      },
+      {
+        id: "2.3-Q03",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.A",
+        skillDesc: "Identify data in visual demographic models.",
+        amsco: "Chapter 3, pp. 65–70: Stage 4 vs. Stage 5 Pyramids",
+        hint: "Look at Japan's pyramid: The bottom (babies) is way narrower than the middle (grandparents). That looks like an upside-down cone!",
+        stimulus: {
+          type: "image",
+          src: "assets/pyramids_france_japan_dtm.png",
+          caption: "Figure 2.6: Population pyramids for France (Stage 4) and Japan (Stage 5)."
+        },
+        prompt: "A population pyramid displaying a constrictive profile—where the base (ages 0–14) is distinctly narrower than the middle cohorts (ages 40–59)—indicates that the country is:",
+        options: [
+          { id: "A", text: "Experiencing rapid natural population increase driven by traditional agricultural family models." },
+          { id: "B", text: "Undergoing demographic contraction with a Total Fertility Rate well below the 2.1 replacement threshold." },
+          { id: "C", text: "Suffering from high infant mortality rates caused by failures in municipal water sanitation." },
+          { id: "D", text: "Exhibiting high youth dependency ratios that overwhelm secondary education budgets." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "When the bottom of the pyramid shrinks, it means couples are having very few children (TFR around 1.3 or lower, like Japan or Italy). As fewer babies are born, the population shrinks and ages.",
+          distractors: {
+            A: "A shrinking base means population decline, not rapid increase.",
+            C: "Japan has one of the world's lowest infant mortality rates and cleanest water systems.",
+            D: "A narrow base means LOW youth dependency and HIGH elderly dependency."
+          }
+        }
+      },
+      {
+        id: "2.3-Q04",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.D",
+        skillDesc: "Calculate and summarize demographic ratios.",
+        amsco: "Chapter 3, pp. 65–70: The Dependency Ratio Formula",
+        hint: "Formula: Dependents (Under 15 + Over 64) divided by Workers (15 to 64), multiplied by 100!",
+        stimulus: {
+          type: "table",
+          headers: ["Age Cohort", "Population"],
+          rows: [
+            ["Youth Dependents (0–14)", "20,000,000"],
+            ["Working-Age Cohort (15–64)", "60,000,000"],
+            ["Elderly Dependents (65+)", "10,000,000"]
+          ],
+          caption: "Table 2.1: Demographic Cohort Distribution for Country K."
+        },
+        prompt: "Using the cohort data in Table 2.1, what is the Dependency Ratio for Country K?",
+        options: [
+          { id: "A", text: "30.0" },
+          { id: "B", text: "50.0" },
+          { id: "C", text: "66.7" },
+          { id: "D", text: "150.0" }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Step 1: Add up all the non-workers: 20M young + 10M elderly = 30M dependents.\nStep 2: Divide by workers: 30M ÷ 60M = 0.50.\nStep 3: Multiply by 100 = 50.0! (Meaning every 100 workers support 50 dependents).",
+          distractors: {
+            A: "30.0 mistakenly only counted youth dependents (20M/60M = 33) or only elderly.",
+            C: "66.7 inverted the fraction (60M / 30M = 200) or made an arithmetic miscalculation.",
+            D: "150.0 divided workers by dependents, which is the reverse of the formula."
+          }
+        }
+      },
+      {
+        id: "2.3-Q05",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.C",
+        skillDesc: "Explain patterns in demographic composition.",
+        amsco: "Chapter 3, pp. 65–70: Local Scale Pyramid Anomalies: College Towns",
+        hint: "What happens in a town like Athens, GA, where 35,000 college students arrive in August? Which age cohort pops out?",
+        stimulus: null,
+        prompt: "A population pyramid plotted at the local municipal scale for a university town (such as Athens, Georgia, or Ann Arbor, Michigan) will typically display which visual characteristic?",
+        options: [
+          { id: "A", text: "A wide symmetrical base spanning ages 0 to 4 caused by high municipal fertility rates." },
+          { id: "B", text: "A dramatic, symmetrical bulge on both male and female sides in the 18–24 age cohorts." },
+          { id: "C", text: "An acute deficit of female residents across all cohorts between ages 25 and 64." },
+          { id: "D", text: "A top-heavy mushroom apex in cohorts aged 80 and above caused by retirement migration." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "College towns are packed with 18-to-24-year-old undergraduate and graduate students of both sexes. When you graph the city's pyramid, the 18–24 cohort sticks out like wings!",
+          distractors: {
+            A: "College students rarely have large families while in school; the infant base remains small.",
+            C: "College campuses are balanced or majority female; there is no female deficit.",
+            D: "Top-heavy retirement pyramids appear in Florida or Arizona, not college towns."
+          }
+        }
+      },
+      {
+        id: "2.3-Q06",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.A",
+        skillDesc: "Identify structural components of pyramids.",
+        amsco: "Chapter 3, pp. 65–70: Anatomy of an Age-Sex Graph",
+        hint: "Who goes on the left and who goes on the right on EVERY College Board pyramid?",
+        stimulus: null,
+        prompt: "On all standard demographic population pyramids evaluated on the AP exam, how are biological sexes and age cohorts conventionally arranged?",
+        options: [
+          { id: "A", text: "Females are plotted on the left horizontal axis, males on the right, with oldest cohorts at the base." },
+          { id: "B", text: "Males are plotted on the left horizontal axis, females on the right, with youngest cohorts at the base." },
+          { id: "C", text: "Total population is plotted vertically on the Y-axis, while age cohorts are plotted on the X-axis." },
+          { id: "D", text: "Working cohorts are plotted on the left, while dependent cohorts are plotted on the right." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Remember the universal rule: MALES on the LEFT, FEMALES on the RIGHT. Age goes vertically from babies (0–4) at the bottom to elders (85+) at the top.",
+          distractors: {
+            A: "Females are on the right, and youngest cohorts are at the base.",
+            C: "Age cohorts are always on the vertical Y-axis.",
+            D: "Sexes are split left/right, not working vs. dependent cohorts."
+          }
+        }
+      },
+      {
+        id: "2.3-Q07",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 3.C",
+        skillDesc: "Explain demographic shocks in pyramids.",
+        amsco: "Chapter 3, pp. 65–70: Historical Shocks & War Indentations",
+        hint: "When a country fights a devastating war, who gets drafted and killed in combat? Which side of the pyramid gets a dent?",
+        stimulus: null,
+        prompt: "A sharp horizontal indentation or 'pinch' visible exclusively on the male side between ages 20 and 35 on a historical population pyramid is most likely the direct result of:",
+        options: [
+          { id: "A", text: "A peacetime flu epidemic that selectively affected pediatric cohorts." },
+          { id: "B", text: "Heavy military combat casualties suffered during a major war twenty years prior." },
+          { id: "C", text: "The introduction of automated factory machinery that displaced female office workers." },
+          { id: "D", text: "Government tax credits offered exclusively to married couples without children." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Wars historically drafted young men aged 18–30. When hundreds of thousands died in combat (like in Germany or Russia during WWII), that male age cohort shrank permanently, leaving a deep indentation in the pyramid.",
+          distractors: {
+            A: "Flu epidemics affect both sexes equally, especially infants and the elderly.",
+            C: "Factory automation doesn't kill people; it shifts employment.",
+            D: "Tax credits affect birth rates at the base (0–4), not young adult males exclusively."
+          }
+        }
+      },
+      {
+        id: "2.3-Q08",
+        topic: "Topic 2.3",
+        topicName: "Population Composition & Pyramids",
+        skill: "Skill 1.B",
+        skillDesc: "Explain concepts and consequences.",
+        amsco: "Chapter 3, pp. 65–70: Stationary Columnar Pyramids",
+        hint: "If a pyramid looks like a rectangular building or column, what does that say about birth rates and death rates?",
+        stimulus: null,
+        prompt: "A population pyramid characterized by vertical, columnar walls from age 0 to age 60 (Stage 4 DTM) indicates which demographic reality?",
+        options: [
+          { id: "A", text: "The nation is experiencing exponential J-curve population growth." },
+          { id: "B", text: "Birth rates and death rates are roughly equal, resulting in Zero Population Growth (ZPG)." },
+          { id: "C", text: "Emigration exceeds domestic live births by a factor of three." },
+          { id: "D", text: "Infant mortality rates have risen to unprecedented historical levels." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "When birth rates drop to match death rates (TFR around 2.1), each new generation is roughly the same size as the previous one. The pyramid stops being a triangle and becomes a straight vertical column (Stage 4, like the US or France).",
+          distractors: {
+            A: "A J-curve produces a sharp triangle with an expanding base, not a straight column.",
+            C: "A columnar pyramid represents balanced natural replacement, not mass emigration.",
+            D: "Stage 4 nations have world-class hospitals with very low infant mortality."
+          }
+        }
+      },
+
+      // TOPIC 2.4: Dynamics of Growth & Doubling Time (7 Questions)
+      {
+        id: "2.4-Q01",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 3.D",
+        skillDesc: "Calculate demographic rates.",
+        amsco: "Chapter 4, pp. 75–80: Calculating the Natural Increase Rate (NIR)",
+        hint: "Formula: NIR = (CBR - CDR) / 10. Subtract the two numbers, then move the decimal point one spot to the left!",
+        stimulus: null,
+        prompt: "Country M reports a Crude Birth Rate (CBR) of 34 per 1,000 and a Crude Death Rate (CDR) of 9 per 1,000. What is its Natural Increase Rate (NIR)?",
+        options: [
+          { id: "A", text: "25.0%" },
+          { id: "B", text: "4.3%" },
+          { id: "C", text: "2.5%" },
+          { id: "D", text: "0.25%" }
+        ],
+        correct: "C",
+        explanation: {
+          eli8: "CBR is 34, CDR is 9.\n34 - 9 = 25 per 1,000.\nTo convert to a percentage (per 100), divide by 10: 25 ÷ 10 = 2.5%! (Stage 2 rapid growth).",
+          distractors: {
+            A: "25.0% forgot to divide by 10 (that is 25 per 1,000, not 25 percent!).",
+            B: "4.3% mistakenly divided 34 by 9.",
+            D: "0.25% divided by 100 instead of 10."
+          }
+        }
+      },
+      {
+        id: "2.4-Q02",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 3.D",
+        skillDesc: "Apply the Rule of 70 to calculate doubling time.",
+        amsco: "Chapter 4, pp. 75–80: The Rule of 70 and Doubling Time",
+        hint: "Rule of 70: Doubling Time = 70 / NIR. Just divide 70 by the NIR number!",
+        stimulus: null,
+        prompt: "If Country M maintains a constant Natural Increase Rate of 2.5%, approximately how many years will it take for its population to double in size?",
+        options: [
+          { id: "A", text: "17.5 years" },
+          { id: "B", text: "28.0 years" },
+          { id: "C", text: "70.0 years" },
+          { id: "D", text: "175.0 years" }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "The Rule of 70 is simple: Doubling Time = 70 ÷ NIR.\n70 ÷ 2.5 = 28 years! In just 28 years, Country M will have twice as many people.",
+          distractors: {
+            A: "17.5 is 70 ÷ 4, or 2.5 x 7.",
+            C: "70.0 years would only happen if NIR were 1.0% (70 ÷ 1 = 70).",
+            D: "175.0 is 70 x 2.5, which is multiplication instead of division."
+          }
+        }
+      },
+      {
+        id: "2.4-Q03",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 1.B",
+        skillDesc: "Explain concepts and avoid traps.",
+        amsco: "Chapter 4, pp. 75–80: The Demographic Accounting Equation",
+        hint: "TRAP ALERT: Does NATURAL Increase Rate ever care about immigrants? NO! Natural means only births and deaths!",
+        stimulus: null,
+        prompt: "A demographer is tasked with calculating the Natural Increase Rate (NIR) for Country R. The country records 15 births per 1,000, 7 deaths per 1,000, and admits 50,000 foreign immigrants. How should the immigrant figure be incorporated into the NIR calculation?",
+        options: [
+          { id: "A", text: "The immigrants must be added directly to the Crude Birth Rate before dividing by ten." },
+          { id: "B", text: "The immigrants must be subtracted from the Crude Death Rate to reflect economic growth." },
+          { id: "C", text: "The immigrants must be completely excluded because NIR measures population change exclusively from births and deaths." },
+          { id: "D", text: "The immigrants must be converted into an annual percentage and multiplied by the Rule of 70." }
+        ],
+        correct: "C",
+        explanation: {
+          eli8: "DO NOT TOUCH MIGRATION! 'Natural' Increase strictly counts nature: births minus deaths. If you want total growth including immigrants, that's called the 'Demographic Accounting Equation', not NIR.",
+          distractors: {
+            A: "Immigrants are living people who crossed a border; they are not newborn infants.",
+            B: "Immigrants have nothing to do with death rates.",
+            D: "You never multiply immigration into the Rule of 70."
+          }
+        }
+      },
+      {
+        id: "2.4-Q04",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 1.A",
+        skillDesc: "Define key demographic measures.",
+        amsco: "Chapter 4, pp. 75–80: Total Fertility Rate and Replacement Level",
+        hint: "Two parents need two children to replace them. Why is the replacement level 2.1 instead of an even 2.0?",
+        stimulus: null,
+        prompt: "Demographers recognize a Total Fertility Rate (TFR) of 2.1 as 'replacement-level fertility.' What is the specific demographic purpose of the additional 0.1 in this benchmark?",
+        options: [
+          { id: "A", text: "It compensates for the biological fact that slightly more male infants are conceived than female infants." },
+          { id: "B", text: "It compensates for childhood and infant mortality before individuals reach their reproductive childbearing years." },
+          { id: "C", text: "It accounts for mandatory federal immigration quotas established in international treaties." },
+          { id: "D", text: "It reflects the global statistical frequency of multiple births (twins and triplets)." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "If every couple has exactly 2 children, that replaces mom and dad. But sadly, some children die from illness or accidents before growing up and having their own kids. The extra 0.1 makes sure the population stays stable.",
+          distractors: {
+            A: "While slightly more boys are born naturally (105 boys to 100 girls), the 0.1 is specifically calibrated for mortality prior to reproductive maturity.",
+            C: "Replacement fertility is a biological measure, not a legal immigration quota.",
+            D: "Twins are already included in total child counts."
+          }
+        }
+      },
+      {
+        id: "2.4-Q05",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 1.B",
+        skillDesc: "Explain vital statistics.",
+        amsco: "Chapter 4, pp. 75–80: Infant Mortality Rate as a Development Indicator",
+        hint: "Who is the most fragile person in any town? A newborn baby under 1 year old. If a town has dirty water, no doctors, or bad food, babies get sick first.",
+        stimulus: null,
+        prompt: "Why is the Infant Mortality Rate (IMR) universally considered by social scientists to be the most sensitive single metric of a country’s healthcare quality and public sanitation?",
+        options: [
+          { id: "A", text: "Infants are the sole demographic cohort that contributes to national gross domestic product calculations." },
+          { id: "B", text: "Infants under one year are the most physically vulnerable to water contamination, malnutrition, and lack of pediatric clinics." },
+          { id: "C", text: "Infant mortality is the only statistic used by the College Board to classify stages of the Demographic Transition Model." },
+          { id: "D", text: "Infant mortality rates automatically double whenever a nation experiences industrial urbanization." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Babies under 1 year old have tiny immune systems. If a country lacks clean tap water, vaccines, and trained doctors, babies die. That's why low IMR proves a country has modern hospitals and sanitation.",
+          distractors: {
+            A: "Infants do not work or contribute directly to GDP.",
+            C: "The DTM is based on CBR and CDR, not IMR.",
+            D: "Industrial urbanization and sanitation CAUSE infant mortality to drop, not double."
+          }
+        }
+      },
+      {
+        id: "2.4-Q06",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 3.A",
+        skillDesc: "Identify trends in historical growth graphs.",
+        amsco: "Chapter 4, pp. 75–80: Historical Population Growth and The J-Curve",
+        hint: "What happened around 1750? The Industrial Revolution brought steam power, clean water, soap, and food canning. Death rates fell off a cliff!",
+        stimulus: null,
+        prompt: "What primary historical catalyst caused global human population growth to transition from a flat, near-zero horizontal line to an exponential 'J-curve' around 1750?",
+        options: [
+          { id: "A", text: "The invention of agricultural irrigation in ancient Mesopotamia." },
+          { id: "B", text: "The Industrial and Medical Revolutions, which dramatically reduced crude death rates while birth rates remained high." },
+          { id: "C", text: "Universal government enforcement of pronatalist tax credits across all colonized territories." },
+          { id: "D", text: "A sudden worldwide spike in the human Total Fertility Rate exceeding 8.0 children per woman." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "For thousands of years, birth rates and death rates were both super high (plagues, famines). Around 1750, the Industrial Revolution brought soap, clean sewers, steam transport, and medicine. Death rates crashed, but families kept having lots of babies—triggering the exponential J-curve!",
+          distractors: {
+            A: "Mesopotamia occurred 5,000+ years ago, long before the 1750 Industrial Revolution J-curve.",
+            C: "There were no universal pronatalist tax credits in 1750.",
+            D: "Fertility rates did not jump; death rates fell!"
+          }
+        }
+      },
+      {
+        id: "2.4-Q07",
+        topic: "Topic 2.4",
+        topicName: "Dynamics of Population Growth",
+        skill: "Skill 3.D",
+        skillDesc: "Calculate doubling time and interpret zero growth.",
+        amsco: "Chapter 4, pp. 75–80: Negative NIR and Doubling Time",
+        hint: "If a country has a negative NIR (like -0.3%), will its population ever double? Of course not, it's shrinking!",
+        stimulus: null,
+        prompt: "Country J reports a Crude Birth Rate of 8 per 1,000 and a Crude Death Rate of 11 per 1,000. Based on these vital rates, what is its projected doubling time?",
+        options: [
+          { id: "A", text: "23.3 years" },
+          { id: "B", text: "70.0 years" },
+          { id: "C", text: "233.3 years" },
+          { id: "D", text: "The population is declining and will never double under current rates." }
+        ],
+        correct: "D",
+        explanation: {
+          eli8: "CBR is 8, CDR is 11.\nNIR = (8 - 11) ÷ 10 = -0.3%.\nBecause the NIR is negative, the population is shrinking every year (like in Japan or Italy). A shrinking population will NEVER double!",
+          distractors: {
+            A: "23.3 is 70 ÷ 3, ignoring the negative sign.",
+            B: "70 years requires an NIR of +1.0%.",
+            C: "233.3 is 70 ÷ 0.3, ignoring the fact that negative growth means contraction, not expansion."
+          }
+        }
+      },
+
+      // TOPIC 2.9: Aging Populations (7 Questions)
+      {
+        id: "2.9-Q01",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 3.C",
+        skillDesc: "Explain demographic paradoxes and data anomalies.",
+        amsco: "Chapter 4, pp. 102–107: The France vs. Bangladesh CDR Paradox",
+        hint: "THE #1 TRAP IN AP HUMAN GEOGRAPHY! Bangladesh has worse hospitals, so why is its death rate LOWER than rich France? Think: How old is the average person in each country?",
+        stimulus: null,
+        prompt: "France possesses world-class medical facilities yet records a Crude Death Rate of approximately 9.5 per 1,000, whereas Bangladesh records a Crude Death Rate of only 5.5 per 1,000. What demographic factor accounts for this apparent paradox?",
+        options: [
+          { id: "A", text: "France experiences higher rates of tropical epidemic infectious disease than Bangladesh." },
+          { id: "B", text: "Bangladesh has an overwhelmingly young median population age, so a very small percentage of its citizens are elderly and at risk of dying." },
+          { id: "C", text: "Public sanitation and potable water systems in France have deteriorated significantly in recent decades." },
+          { id: "D", text: "Bangladesh enforces mandatory emigration quotas for all citizens reaching age sixty." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Do not fall for the trap! Bangladesh has a median age of ~27. Almost everyone is young, so very few people die of old age. France has a median age over 42, with over 21% of its population over age 65. Even with the best hospitals on Earth, elderly people eventually die of natural old age!",
+          distractors: {
+            A: "Tropical diseases occur in equatorial developing countries like Bangladesh, not temperate Europe.",
+            C: "France has world-class municipal sanitation and water.",
+            D: "No country deports its elderly citizens; that is fictitious."
+          }
+        }
+      },
+      {
+        id: "2.9-Q02",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 1.C",
+        skillDesc: "Explain economic consequences of demographic change.",
+        amsco: "Chapter 4, pp. 102–107: Economic Strains of an Aging Population",
+        hint: "Picture a family dinner: If 4 working adults pay for 1 retired grandparent, it's easy. But if only 1 working adult has to pay for 3 retired grandparents, what happens to their paycheck?",
+        stimulus: null,
+        prompt: "Which of the following is the most immediate fiscal and economic challenge faced by Stage 5 countries experiencing rapid population aging?",
+        options: [
+          { id: "A", text: "Severe overcrowding in municipal public elementary schools requiring double-shift classes." },
+          { id: "B", text: "Depletion of national social security pension funds and higher tax burdens placed upon a shrinking labor force." },
+          { id: "C", text: "Rampant inflation driven by uncontrolled consumer borrowing among teenage cohorts." },
+          { id: "D", text: "Severe shortages of agricultural farmland caused by elderly retirement communes." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "When the birth rate stays low for decades, the working-age tax base shrinks. Meanwhile, millions of seniors retire and live into their 80s and 90s, drawing pensions and Medicare. Fewer workers must pay higher taxes to fund them.",
+          distractors: {
+            A: "Stage 5 countries face empty classrooms and school closures, not overcrowding.",
+            C: "Teenage cohorts are shrinking, so consumer demand in youth sectors drops.",
+            D: "Retirees do not buy up farmland; they move into assisted living or urban apartments."
+          }
+        }
+      },
+      {
+        id: "2.9-Q03",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 1.C",
+        skillDesc: "Explain political processes and voting demographics.",
+        amsco: "Chapter 4, pp. 102–107: Gray Power and Public Spending",
+        hint: "Who votes more: 18-year-old college students or 72-year-old grandparents? Grandparents! So who do politicians listen to?",
+        stimulus: null,
+        prompt: "In aging democracies like Japan, Italy, and the United States, how does the phenomenon of 'Gray Power' typically influence government legislative spending?",
+        options: [
+          { id: "A", text: "High voter turnout among senior citizens pressures lawmakers to protect pensions and healthcare over youth education funding." },
+          { id: "B", text: "Elderly interest groups lobby aggressively to eliminate all mandatory workplace retirement safety standards." },
+          { id: "C", text: "Senior voters consistently support ballot measures that raise local residential property taxes to expand high schools." },
+          { id: "D", text: "Aging voting blocs demand the immediate termination of national immigration guest-worker programs." }
+        ],
+        correct: "A",
+        explanation: {
+          eli8: "'Gray Power' means senior citizens vote at the highest rates of any age group. Politicians know that if they touch Social Security or Medicare, seniors will vote them out! Therefore, money flows to healthcare and pensions rather than universities.",
+          distractors: {
+            B: "Seniors lobby for healthcare benefits, not eliminating workplace safety.",
+            C: "Seniors on fixed pensions frequently vote AGAINST school property taxes because they have no school-age kids.",
+            D: "Aging nations often expand guest-worker visas to find caregivers for nursing homes."
+          }
+        }
+      },
+      {
+        id: "2.9-Q04",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 1.B",
+        skillDesc: "Explain government population policies.",
+        amsco: "Chapter 4, pp. 102–107: Pronatalist Policies in Stage 5",
+        hint: "'Pro' means in favor of; 'Natal' means birth. What policies encourage couples to have more babies?",
+        stimulus: null,
+        prompt: "To counteract shrinking labor forces and below-replacement fertility, governments in Stage 5 nations frequently implement **pronatalist policies**, such as:",
+        options: [
+          { id: "A", text: "Levying heavy progressive income surcharges on families that have more than two children." },
+          { id: "B", text: "Offering subsidized public daycare, generous paid parental leave, and cash child allowances." },
+          { id: "C", text: "Mandating that all married couples adopt children from foreign developing nations." },
+          { id: "D", text: "Lowering the legal age of marriage while restricting female enrollment in universities." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "'Pronatalist' means pro-birth. Countries like France, Sweden, and South Korea give parents cash bonuses, free daycare, and months of paid maternity/paternity leave so having babies doesn't ruin a mother's career.",
+          distractors: {
+            A: "Taxing big families is an antinatalist policy (like China's old One-Child Policy).",
+            C: "Adoption mandates are fictional and do not increase the domestic natural birth rate.",
+            D: "Restricting women's rights violates modern democratic constitutions and does not solve post-industrial aging."
+          }
+        }
+      },
+      {
+        id: "2.9-Q05",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 2.A",
+        skillDesc: "Describe spatial patterns in aging populations.",
+        amsco: "Chapter 4, pp. 102–107: Retirement Migration to the Sunbelt",
+        hint: "When grandparents retire, do they want to shovel snow in Minnesota, or sit by the beach in Florida and Arizona?",
+        stimulus: null,
+        prompt: "Within the United States, retirement migration has produced a disproportionately high median age and elderly dependency ratio in which geographic region?",
+        options: [
+          { id: "A", text: "The industrial Rust Belt cities surrounding the Great Lakes." },
+          { id: "B", text: "Warm, low-tax Sunbelt destinations such as Florida, Arizona, and the North Georgia mountains." },
+          { id: "C", text: "High-altitude subarctic mining communities in interior Alaska." },
+          { id: "D", text: "Corn Belt agricultural counties across Iowa and southern Minnesota." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Retirees migrate from cold northern states to sunny, warm, low-tax areas in the 'Sunbelt' (Florida, Arizona, North Georgia). This creates retirement hotspots with huge hospitals, golf courses, and assisted living communities.",
+          distractors: {
+            A: "Rust Belt cities lose retirees due to cold winters and declining industrial economies.",
+            C: "Seniors avoid extreme subarctic cold and isolation in Alaska.",
+            D: "Corn Belt farming counties have shrinking populations as youth migrate to cities."
+          }
+        }
+      },
+      {
+        id: "2.9-Q06",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 1.C",
+        skillDesc: "Describe social consequences of aging societies.",
+        amsco: "Chapter 4, pp. 102–107: Social Pressures: The Sandwich Generation",
+        hint: "Think about bread and meat in a sandwich! A 45-year-old mom is stuck in the middle caring for her teenagers AND caring for her 80-year-old parents!",
+        stimulus: null,
+        prompt: "In sociological demography, the term **'Sandwich Generation'** describes working-age adults who face the simultaneous dual burden of:",
+        options: [
+          { id: "A", text: "Working two full-time commercial service jobs while managing agricultural farms." },
+          { id: "B", text: "Caring for their own dependent young children while simultaneously supporting aging elderly parents." },
+          { id: "C", text: "Paying property taxes in two distinct municipal school districts due to seasonal commuting." },
+          { id: "D", text: "Navigating between legal citizenship and international guest-worker visa restrictions." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In aging societies, middle-aged adults (ages 40–55) are caught in the middle: they must pay for their kids' college while simultaneously driving their elderly parents to doctor visits and paying for eldercare. They are squeezed in the middle like a sandwich!",
+          distractors: {
+            A: "That is holding multiple jobs, not demographic sandwich generation.",
+            C: "Dual property taxes is a real estate issue, not a demographic cohort burden.",
+            D: "That relates to immigration status, not family caregiving."
+          }
+        }
+      },
+      {
+        id: "2.9-Q07",
+        topic: "Topic 2.9",
+        topicName: "Aging Populations & Dependency",
+        skill: "Skill 2.B",
+        skillDesc: "Explain demographic solutions to labor deficits.",
+        amsco: "Chapter 4, pp. 102–107: Immigration and Eldercare Robotics",
+        hint: "Japan doesn't like mass immigration. So who is going to lift seniors out of bed in Tokyo nursing homes? High-tech robots!",
+        stimulus: null,
+        prompt: "Faced with an elderly dependency ratio where over 29% of its citizens are aged 65 or older and cultural resistance to large-scale permanent immigration, Japan has responded primarily by:",
+        options: [
+          { id: "A", text: "Reverting to rural subsistence agriculture to boost rural birth rates." },
+          { id: "B", text: "Pioneering eldercare robotics, raising the retirement age, and consolidating depopulated rural municipalities." },
+          { id: "C", text: "Mandating that all citizens retire at age 50 to open jobs for teenagers." },
+          { id: "D", text: "Outlawing the construction of private assisted living facilities." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Japan is the most aged country on Earth (>29% seniors). Because it prefers not to accept mass immigration, Japan builds nursing robots, raises the retirement age past 70, and uses automation to keep factories running.",
+          distractors: {
+            A: "Japan is a high-tech industrialized powerhouse; it is not abandoning technology for subsistence farming.",
+            C: "Lowering retirement to 50 would bankrupt the pension system overnight!",
+            D: "Japan is rapidly building specialized eldercare facilities, not outlawing them."
+          }
+        }
+      }
+    ];
+
+    // ==========================================
+    // APPLICATION STATE & CONTROLLER
+    // ==========================================
+    let currentQuestions = [...MASTER_QUESTIONS];
+    let activeQuestionIndex = 0;
+    let userAnswers = {}; // { qId: 'A' }
+    let flaggedQuestions = new Set();
+    let currentMode = 'tutor'; // 'tutor' or 'exam'
+    let timerInterval = null;
+    let timeRemaining = 25 * 60; // 25 mins for 20 Qs
+
+    // DOM Elements
+    const qContainer = document.getElementById('q-container');
+    const jumpGrid = document.getElementById('jump-grid');
+    const timerDisplay = document.getElementById('timer-display');
+    const scoreText = document.getElementById('score-text');
+    const scorePct = document.getElementById('score-pct');
+    const scoreBar = document.getElementById('score-bar');
+    const btnRetake = document.getElementById('btn-retake-missed');
+
+    // Init
+    function init() {
+      document.getElementById('count-all').innerText = MASTER_QUESTIONS.length;
+      renderJumpGrid();
+      renderQuestion(0);
+      updateScoreSummary();
+    }
+
+    // Toggle Cheat Sheet
+    function toggleCheatSheet() {
+      const body = document.getElementById('cheat-body');
+      const chevron = document.getElementById('cheat-chevron');
+      if (body.classList.contains('open')) {
+        body.classList.remove('open');
+        chevron.innerText = '▼';
+      } else {
+        body.classList.add('open');
+        chevron.innerText = '▲';
+      }
+    }
+
+    // Mode Switch
+    function setMode(mode) {
+      currentMode = mode;
+      document.getElementById('btn-mode-tutor').classList.toggle('active', mode === 'tutor');
+      document.getElementById('btn-mode-exam').classList.toggle('active', mode === 'exam');
+
+      if (mode === 'exam') {
+        // Randomly pick 20 questions proportionally
+        const sampled = sampleExam20();
+        currentQuestions = sampled;
+        userAnswers = {};
+        flaggedQuestions.clear();
+        timeRemaining = 25 * 60;
+        startTimer();
+      } else {
+        stopTimer();
+        timerDisplay.innerText = '--:--';
+        currentQuestions = [...MASTER_QUESTIONS];
+      }
+
+      renderJumpGrid();
+      renderQuestion(0);
+      updateScoreSummary();
+    }
+
+    function sampleExam20() {
+      // Pick 4 from 2.1, 3 from 2.2, 5 from 2.3, 4 from 2.4, 4 from 2.9
+      const pool = { '2.1': [], '2.2': [], '2.3': [], '2.4': [], '2.9': [] };
+      MASTER_QUESTIONS.forEach(q => {
+        const top = q.topic.replace('Topic ', '');
+        if (pool[top]) pool[top].push(q);
+      });
+
+      const pickRandom = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
+      return [
+        ...pickRandom(pool['2.1'], 4),
+        ...pickRandom(pool['2.2'], 3),
+        ...pickRandom(pool['2.3'], 5),
+        ...pickRandom(pool['2.4'], 4),
+        ...pickRandom(pool['2.9'], 4)
+      ];
+    }
+
+    // Filter by Topic
+    function filterTopic(topic, btn) {
+      document.querySelectorAll('.topic-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      if (topic === 'all') {
+        currentQuestions = [...MASTER_QUESTIONS];
+      } else {
+        currentQuestions = MASTER_QUESTIONS.filter(q => q.topic.includes(topic));
+      }
+
+      renderJumpGrid();
+      renderQuestion(0);
+      updateScoreSummary();
+    }
+
+    // Render Question
+    function renderQuestion(index) {
+      activeQuestionIndex = index;
+      const q = currentQuestions[index];
+      if (!q) return;
+
+      const isAnswered = userAnswers[q.id] !== undefined;
+      const selected = userAnswers[q.id];
+      const isFlagged = flaggedQuestions.has(q.id);
+
+      let stimulusHtml = '';
+      if (q.stimulus) {
+        if (q.stimulus.type === 'image') {
+          stimulusHtml = `
+            <div class="stimulus-box">
+              <img src="${q.stimulus.src}" alt="${q.stimulus.caption}" class="stimulus-img">
+              <div class="stimulus-caption">${q.stimulus.caption}</div>
+            </div>
+          `;
+        } else if (q.stimulus.type === 'table') {
+          const rows = q.stimulus.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
+          stimulusHtml = `
+            <div class="stimulus-box">
+              <table class="stimulus-table">
+                <thead><tr>${q.stimulus.headers.map(h => `<th>${h}</th>`).join('')}</tr></thead>
+                <tbody>${rows}</tbody>
+              </table>
+              <div class="stimulus-caption">${q.stimulus.caption}</div>
+            </div>
+          `;
+        }
+      }
+
+      const optionsHtml = q.options.map(opt => {
+        let optClass = 'opt-btn';
+        if (currentMode === 'tutor' && isAnswered) {
+          if (opt.id === q.correct) optClass += ' correct';
+          else if (opt.id === selected) optClass += ' wrong';
+        } else if (currentMode === 'exam' && isAnswered && opt.id === selected) {
+          optClass += ' correct'; // Highlight selected in exam
+        }
+        return `
+          <button class="${optClass}" onclick="handleOptionSelect('${q.id}', '${opt.id}')" ${currentMode === 'tutor' && isAnswered ? 'disabled' : ''}>
+            <span class="opt-letter">${opt.id}</span>
+            <span>${opt.text}</span>
+          </button>
+        `;
+      }).join('');
+
+      let explanationHtml = '';
+      if (currentMode === 'tutor' && isAnswered) {
+        const dists = Object.entries(q.explanation.distractors).map(([key, why]) => `
+          <div class="distractor-item">
+            <strong>Why (${key}) is a trap:</strong> ${why}
+          </div>
+        `).join('');
+
+        explanationHtml = `
+          <div class="explanation-card open">
+            <div class="exp-title"><span>💡</span> 8th-Grade Core Takeaway:</div>
+            <div class="exp-summary">${q.explanation.eli8}</div>
+            <div class="exp-title" style="margin-top: 0.35rem;"><span>⚠️</span> AP Distractor Trap Teardown:</div>
+            <div class="distractor-breakdown">${dists}</div>
+          </div>
+        `;
+      }
+
+      qContainer.innerHTML = `
+        <div class="q-card">
+          <div class="q-meta-row">
+            <div class="q-badges">
+              <span class="pill pill-num">Question ${index + 1} of ${currentQuestions.length}</span>
+              <span class="pill pill-skill">${q.skill}</span>
+              <span class="pill pill-topic">${q.topic}</span>
+            </div>
+            <div class="amsco-box">
+              <span>📚 AMSCO:</span> ${q.amsco}
+            </div>
+          </div>
+
+          <!-- 8th Grade Hint Box -->
+          <div class="hint-container">
+            <button class="hint-toggle-btn" onclick="toggleHint('hint-${q.id}')">
+              <span>💡</span> Need an 8th-Grade Hint? (Click to reveal)
+            </button>
+            <div id="hint-${q.id}" class="hint-text">
+              ${q.hint}
+            </div>
+          </div>
+
+          ${stimulusHtml}
+
+          <div class="q-prompt">${q.prompt}</div>
+
+          <div class="options-grid">
+            ${optionsHtml}
+          </div>
+
+          ${explanationHtml}
+
+          <div class="action-bar">
+            <button class="flag-btn ${isFlagged ? 'active' : ''}" onclick="toggleFlag('${q.id}')">
+              <span>★</span> ${isFlagged ? 'Flagged for Review' : 'Flag Question'}
+            </button>
+            <div class="nav-btn-group">
+              <button class="nav-btn" onclick="renderQuestion(${index - 1})" ${index === 0 ? 'disabled' : ''}>← Prev</button>
+              ${index === currentQuestions.length - 1 && currentMode === 'exam' 
+                ? `<button class="nav-btn" style="background: #16a34a;" onclick="submitExam()">Submit Exam 🚀</button>` 
+                : `<button class="nav-btn" onclick="renderQuestion(${index + 1})" ${index === currentQuestions.length - 1 ? 'disabled' : ''}>Next →</button>`}
+            </div>
+          </div>
+        </div>
+      `;
+
+      updateJumpGridHighlight();
+    }
+
+    function toggleHint(id) {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('open');
+    }
+
+    function handleOptionSelect(qId, optId) {
+      userAnswers[qId] = optId;
+      renderQuestion(activeQuestionIndex);
+      renderJumpGrid();
+      updateScoreSummary();
+    }
+
+    function toggleFlag(qId) {
+      if (flaggedQuestions.has(qId)) flaggedQuestions.delete(qId);
+      else flaggedQuestions.add(qId);
+      renderQuestion(activeQuestionIndex);
+      renderJumpGrid();
+    }
+
+    // Jump Grid
+    function renderJumpGrid() {
+      jumpGrid.innerHTML = currentQuestions.map((q, idx) => {
+        const isAns = userAnswers[q.id] !== undefined;
+        const isFlag = flaggedQuestions.has(q.id);
+        let cls = 'jump-btn';
+
+        if (idx === activeQuestionIndex) cls += ' active';
+        if (isFlag) cls += ' flagged';
+
+        if (currentMode === 'tutor' && isAns) {
+          cls += userAnswers[q.id] === q.correct ? ' correct' : ' wrong';
+        } else if (currentMode === 'exam' && isAns) {
+          cls += ' correct';
+        }
+
+        return `<button class="${cls}" onclick="renderQuestion(${idx})">${idx + 1}</button>`;
+      }).join('');
+    }
+
+    function updateJumpGridHighlight() {
+      document.querySelectorAll('.jump-btn').forEach((b, idx) => {
+        b.classList.toggle('active', idx === activeQuestionIndex);
+      });
+    }
+
+    // Score Summary
+    function updateScoreSummary() {
+      const total = currentQuestions.length;
+      const answeredKeys = Object.keys(userAnswers).filter(k => currentQuestions.some(q => q.id === k));
+      const answeredCount = answeredKeys.length;
+
+      let correctCount = 0;
+      let incorrectCount = 0;
+
+      answeredKeys.forEach(k => {
+        const q = currentQuestions.find(item => item.id === k);
+        if (q) {
+          if (userAnswers[k] === q.correct) correctCount++;
+          else incorrectCount++;
+        }
+      });
+
+      const pct = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+      scoreText.innerText = `${correctCount} / ${answeredCount} Correct`;
+      scorePct.innerText = `${pct}%`;
+      scoreBar.style.width = `${pct}%`;
+
+      btnRetake.style.display = (incorrectCount > 0 && currentMode === 'tutor') ? 'block' : 'none';
+    }
+
+    // Retake Missed
+    function retakeMissed() {
+      const missed = currentQuestions.filter(q => userAnswers[q.id] !== undefined && userAnswers[q.id] !== q.correct);
+      if (missed.length === 0) return;
+
+      currentQuestions = missed;
+      missed.forEach(q => delete userAnswers[q.id]);
+      renderJumpGrid();
+      renderQuestion(0);
+      updateScoreSummary();
+    }
+
+    // Timer (Exam Mode)
+    function startTimer() {
+      stopTimer();
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        timeRemaining--;
+        if (timeRemaining <= 0) {
+          stopTimer();
+          submitExam();
+        }
+        updateTimerDisplay();
+      }, 1000);
+    }
+
+    function stopTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timeRemaining / 60);
+      const s = timeRemaining % 60;
+      timerDisplay.innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    // Submit Exam
+    function submitExam() {
+      stopTimer();
+      let score = 0;
+      const breakdown = { '2.1': { c: 0, t: 0 }, '2.2': { c: 0, t: 0 }, '2.3': { c: 0, t: 0 }, '2.4': { c: 0, t: 0 }, '2.9': { c: 0, t: 0 } };
+
+      currentQuestions.forEach(q => {
+        const top = q.topic.replace('Topic ', '');
+        if (!breakdown[top]) breakdown[top] = { c: 0, t: 0 };
+        breakdown[top].t++;
+        if (userAnswers[q.id] === q.correct) {
+          score++;
+          breakdown[top].c++;
+        }
+      });
+
+      const pct = Math.round((score / currentQuestions.length) * 100);
+      document.getElementById('modal-score-val').innerText = `${pct}% (${score}/${currentQuestions.length})`;
+      document.getElementById('modal-score-msg').innerText = pct >= 85 
+        ? "🌟 Outstanding! You are operating at College Board 5 Standard!" 
+        : "Good practice! Review the standard breakdown below and re-test weak spots.";
+
+      const bdHtml = Object.entries(breakdown).map(([top, val]) => {
+        const tPct = val.t > 0 ? Math.round((val.c / val.t) * 100) : 0;
+        return `
+          <div class="topic-breakdown-item">
+            <span><strong>Topic ${top}</strong></span>
+            <span style="font-weight: 700; color: ${tPct >= 80 ? '#16a34a' : '#dc2626'}">${val.c} / ${val.t} (${tPct}%)</span>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('modal-breakdown').innerHTML = bdHtml;
+      document.getElementById('modal-report').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal-report').style.display = 'none';
+      // Switch to tutor mode so student can review answers
+      currentMode = 'tutor';
+      document.getElementById('btn-mode-tutor').classList.add('active');
+      document.getElementById('btn-mode-exam').classList.remove('active');
+      renderQuestion(0);
+      renderJumpGrid();
+    }
+
+    function restartExam() {
+      document.getElementById('modal-report').style.display = 'none';
+      setMode('exam');
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
