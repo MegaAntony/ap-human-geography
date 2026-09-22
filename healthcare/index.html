@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to Healthcare — Student Mastery Hub | Antony Anish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .slide-active { display: block; animation: fadeIn 0.25s ease-in-out; }
+    .slide-inactive { display: none; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased">
+
+  <!-- Top Navigation & Breadcrumbs -->
+  <nav class="border-b border-slate-800 bg-slate-900/90 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <a href="../index.html" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-md border border-slate-700 transition flex items-center space-x-1">
+          <i class="fa-solid fa-arrow-left"></i><span>Main Hub</span>
+        </a>
+        <div class="h-4 w-[1px] bg-slate-700"></div>
+        <div class="flex items-center space-x-2">
+          <span class="p-1.5 bg-rose-500/20 text-rose-400 rounded-md text-sm"><i class="fa-solid fa-staff-snake"></i></span>
+          <span class="text-sm font-bold text-white">Intro to Healthcare</span>
+          <span class="hidden sm:inline-block text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded">Course 276503</span>
+        </div>
+      </div>
+
+      <!-- Quick External Links -->
+      <div class="flex items-center space-x-2">
+        <a href="https://forsyth.instructure.com/courses/276503" target="_blank" class="text-xs bg-rose-600 hover:bg-rose-500 text-white font-semibold px-3 py-1.5 rounded-lg transition flex items-center space-x-1.5 shadow-sm shadow-rose-900/40">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Canvas Course</span>
+        </a>
+        <a href="https://forsyth.studentsupporttime.com/#!/app/dashboard" target="_blank" class="hidden md:flex text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition items-center space-x-1">
+          <i class="fa-solid fa-clock"></i><span>SST</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header Banner -->
+  <section class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-900/60 to-slate-950 py-8 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div class="space-y-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-teal-500/20 text-teal-300 border border-teal-500/30">
+            Week of Sept 21 – Sept 25 (Pre-Fall Break)
+          </span>
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            Unit 3: Healthcare Careers
+          </span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Intro to Healthcare Command Center</h1>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Teacher: <strong>Mrs. Morgan Upchurch</strong> (Room #406 • <a href="mailto:f45629@forsyth.k12.ga.us" class="text-teal-400 hover:underline">f45629@forsyth.k12.ga.us</a>) • South Forsyth High School
+        </p>
+      </div>
+
+      <!-- Quick Action Cards Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <a href="#weekly-plan" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 p-3 rounded-xl transition text-center space-y-1 block">
+          <i class="fa-regular fa-calendar text-teal-400 text-base"></i>
+          <p class="text-xs font-bold text-white">Weekly Plan</p>
+          <p class="text-[10px] text-slate-400">9/21 – 9/25</p>
+        </a>
+        <a href="#virtual-shadow" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 p-3 rounded-xl transition text-center space-y-1 block">
+          <i class="fa-solid fa-video text-amber-400 text-base"></i>
+          <p class="text-xs font-bold text-white">Virtual Shadow</p>
+          <p class="text-[10px] text-amber-400 font-semibold">Due Fri 11:59 PM</p>
+        </a>
+        <a href="#summative-project" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 p-3 rounded-xl transition text-center space-y-1 col-span-2 sm:col-span-1 block">
+          <i class="fa-solid fa-person-chalkboard text-rose-400 text-base"></i>
+          <p class="text-xs font-bold text-white">Career Project</p>
+          <p class="text-[10px] text-slate-400">100 Pts Summative</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-10">
+
+    <!-- SECTION 1: TOP WEEKLY AGENDA & IMMEDIATE ACTIONS -->
+    <section id="weekly-plan" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center space-x-2">
+            <span class="text-teal-400"><i class="fa-solid fa-calendar-day"></i></span>
+            <span>This Week's Daily Roadmap (Sept 21 – Sept 25)</span>
+          </h2>
+          <p class="text-xs text-slate-400">What is posted at the top of Mrs. Upchurch's Canvas course home page.</p>
+        </div>
+      </div>
+
+      <!-- Weekly Schedule Table Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+        <!-- Monday -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Monday (9/21)</span>
+              <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">Completed</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Med Term Monday</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">• Vocabulary Set #2 practice<br>• In-class Blooket session</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800 space-y-1">
+            <a href="https://dashboard.blooket.com/set/6aac067bf19795742e8e22b8" target="_blank" class="text-[11px] text-teal-400 hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-gamepad"></i><span>Play Blooket Set #2</span>
+            </a>
+            <a href="https://docs.google.com/presentation/d/108KCOCCWalHIQANh3wzRY6wrVSjhu7Ui0gg_wxYNUAg/edit" target="_blank" class="text-[11px] text-slate-400 hover:text-white flex items-center space-x-1">
+              <i class="fa-solid fa-file-powerpoint"></i><span>Med Term Slides</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="bg-slate-900 border-2 border-teal-500/50 rounded-xl p-4 flex flex-col justify-between space-y-3 shadow-lg shadow-teal-950/20">
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Tuesday (9/22)</span>
+              <span class="text-[10px] bg-teal-500/20 text-teal-300 px-1.5 py-0.5 rounded font-bold">TODAY</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Pathful Quizzes</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">• Log into ClassLink ➔ Pathful<br>• Explore survey results<br>• Narrow down top 2–3 careers</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800 space-y-1">
+            <a href="https://docs.google.com/presentation/d/150wduppXmEzB7fbV7DAp8vSNld3HMmER8BTqYaPVg4o/edit" target="_blank" class="text-[11px] text-teal-300 hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i><span>Healthcare Career Slides</span>
+            </a>
+            <span class="text-[10px] text-slate-400 italic">Pick Biomedical Engineer!</span>
+          </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Wednesday (9/23)</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded">Unlocks 12am</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Virtual Job Shadow</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">• Watch Pathful shadow video<br>• Complete reflection sheet<br>• Prepare Google Doc link</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800">
+            <a href="https://forsyth.instructure.com/courses/276503/assignments/915698" target="_blank" class="text-[11px] text-amber-400 hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-link"></i><span>Assignment 915698</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Thursday (9/24)</span>
+              <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">In Class</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Project Kickoff</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">• Launch Career Plan Project<br>• Draft 9-slide deck outline<br>• Plan business casual outfit</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800">
+            <a href="https://forsyth.instructure.com/courses/276503/assignments/915697" target="_blank" class="text-[11px] text-indigo-400 hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-link"></i><span>Summative Project</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-400">Friday (9/25)</span>
+              <span class="text-[10px] bg-rose-500/20 text-rose-300 px-1.5 py-0.5 rounded font-bold">DEADLINE</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Fall Break Begins!</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">• Submit Virtual Shadow link by <strong>11:59 PM EDT</strong><br>• Relax over Fall Break</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800">
+            <span class="text-[10px] text-rose-300 font-semibold">100 Pts Formative Due</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: VIRTUAL SHADOW REFLECTION TOOLKIT -->
+    <section id="virtual-shadow" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center space-x-2">
+            <span class="text-amber-400"><i class="fa-solid fa-clipboard-check"></i></span>
+            <span>Virtual Shadow Reflection Submission Kit</span>
+          </h2>
+          <p class="text-xs text-slate-400">Unlocks Wednesday at 12:00 AM • Due Friday, Sept 25 at 11:59 PM EDT (100 Points)</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="copyWorksheet()" class="text-xs bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg transition flex items-center space-x-1.5">
+            <i class="fa-regular fa-copy"></i>
+            <span id="copyBtnText">Copy Template for Google Docs</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
+        <div class="flex items-center justify-between bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div>
+            <h3 class="text-sm font-bold text-white">Pre-Formatted Career: Biomedical Engineer</h3>
+            <p class="text-xs text-slate-400">Biotechnology Research & Development Pathway • South Forsyth High School</p>
+          </div>
+          <a href="https://forsyth.instructure.com/courses/276503/assignments/915698" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center space-x-1">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i><span>Open Canvas Assignment</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <h4 class="font-bold text-teal-300 uppercase tracking-wider">Part 1: Profile & Daily Tasks</h4>
+            <p class="text-slate-300"><strong>Role:</strong> Applies engineering, biology, and medical principles to design and test life-saving devices, prosthetics, and surgical robots.</p>
+            <p class="text-slate-300"><strong>5 Tasks:</strong> 1) Surgeon clinical consults; 2) 3D CAD modeling (SolidWorks); 3) Biocompatibility lab testing; 4) Zero-tolerance machine calibration; 5) FDA risk documentation.</p>
+            <p class="text-slate-300"><strong>Setting:</strong> Research cleanrooms, computing labs, and hospital surgical suites. High accountability for human life.</p>
+          </div>
+
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <h4 class="font-bold text-teal-300 uppercase tracking-wider">Part 2: Education & Teamwork</h4>
+            <p class="text-slate-300"><strong>Degree:</strong> 4-Year B.S. in Biomedical Engineering (Georgia Tech top program); M.S./Ph.D. for research directors.</p>
+            <p class="text-slate-300"><strong>Licensing:</strong> Fundamentals of Engineering (FE/EIT) exam followed by Georgia PE license.</p>
+            <p class="text-slate-300"><strong>Teamwork:</strong> Collaborates with surgeons, nurses, IT specialists, and safety officers to ensure seamless clinical use.</p>
+          </div>
+
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <h4 class="font-bold text-teal-300 uppercase tracking-wider">Part 3: Pros, Cons & Surprises</h4>
+            <p class="text-slate-300"><strong>Pros:</strong> Massive patient impact (saving thousands of lives at once); exciting work with AI & bionics; high salaries ($65k start ➔ $162k senior).</p>
+            <p class="text-slate-300"><strong>Cons:</strong> Demanding college math/science curriculum; 3–7 year FDA clinical trial wait times; high liability.</p>
+            <p class="text-slate-300"><strong>Surprise:</strong> Engineers scrub directly into hospital operating rooms to watch surgeons test devices in real time.</p>
+          </div>
+
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <h4 class="font-bold text-teal-300 uppercase tracking-wider">Part 4: Antony's 3 High School Steps</h4>
+            <p class="text-slate-300"><strong>Step 1:</strong> Complete SFHS Healthcare Science pathway + AP Biology, AP Chemistry, and AP Calculus.</p>
+            <p class="text-slate-300"><strong>Step 2:</strong> Compete in SFHS HOSA (Medical Innovation, Biomedical Debate) leveraging international 1st place distinction.</p>
+            <p class="text-slate-300"><strong>Step 3:</strong> 50+ hours of hospital volunteering and clinical shadowing at Northside Hospital Forsyth or Emory Johns Creek.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SUMMATIVE CAREER PROJECT & INTERACTIVE SLIDE TIMER -->
+    <section id="summative-project" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center space-x-2">
+            <span class="text-rose-400"><i class="fa-solid fa-chalkboard-user"></i></span>
+            <span>Healthcare Careers Summative Project Rehearsal Studio</span>
+          </h2>
+          <p class="text-xs text-slate-400">Due Thursday, Oct 8 at 4:00 PM • In-Class Presentation in Business Casual (100 Points)</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-xs font-bold px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-lg">
+            Target: 2:45 – 3:30 min
+          </span>
+        </div>
+      </div>
+
+      <!-- Presentation Studio Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- Slide Canvas (8 Cols) -->
+        <div class="lg:col-span-8 space-y-3">
+          <!-- Slide Navigation Bar -->
+          <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <button onclick="changeSlide(-1)" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs font-semibold text-white transition flex items-center space-x-1">
+                <i class="fa-solid fa-chevron-left"></i><span>Prev</span>
+              </button>
+              <span id="slideIndicator" class="text-xs font-bold text-teal-400 px-3 py-1 bg-slate-950 rounded-md border border-slate-800">Slide 1 of 9</span>
+              <button onclick="changeSlide(1)" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs font-semibold text-white transition flex items-center space-x-1">
+                <span>Next</span><i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <select id="slideSelect" onchange="goToSlide(parseInt(this.value))" class="bg-slate-950 border border-slate-800 text-xs rounded-lg px-2.5 py-1 text-slate-200">
+              <option value="1">1. Title Slide</option>
+              <option value="2">2. Career Overview</option>
+              <option value="3">3. 5 Daily Tasks</option>
+              <option value="4">4. Education & Salary</option>
+              <option value="5">5. Work Setting</option>
+              <option value="6">6. Pros & Cons</option>
+              <option value="7">7. High School Internships</option>
+              <option value="8">8. Personal 3-Step Plan</option>
+              <option value="9">9. Works Cited</option>
+            </select>
+          </div>
+
+          <!-- Slide Frame Container -->
+          <div id="slideDisplay" class="bg-slate-950 border-2 border-slate-800 rounded-2xl p-6 sm:p-8 min-h-[420px] shadow-2xl relative flex flex-col justify-between">
+            <!-- Slide 1 -->
+            <div id="slide-1" class="slide-active space-y-6">
+              <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-300 border border-teal-500/30 uppercase tracking-wide">
+                Biotechnology R&D Pathway
+              </div>
+              <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Biomedical Engineering:<br><span class="text-teal-400">Designing the Future of Medicine</span></h3>
+              <p class="text-slate-400 text-sm max-w-xl">Healthcare Science Career Exploration & Research Presentation</p>
+              <div class="pt-6 border-t border-slate-800 flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full bg-teal-600/30 border border-teal-500 flex items-center justify-center text-teal-300 font-bold text-lg">AA</div>
+                <div>
+                  <p class="font-bold text-white text-sm">Antony Anish</p>
+                  <p class="text-xs text-slate-400">Intro to Healthcare • Mrs. Upchurch • South Forsyth High School</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div id="slide-2" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-dna text-teal-400 mr-2"></i>Career Profile & Description</h4>
+                <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Biotechnology Pathway</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <h5 class="text-xs font-bold text-teal-300 uppercase tracking-wider">Mission Statement</h5>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Applies engineering principles and medical science to design, build, and test life-saving devices, diagnostic equipment, and artificial organs that improve patient recovery and quality of life.
+                  </p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <h5 class="text-xs font-bold text-teal-300 uppercase tracking-wider">Key Specializations</h5>
+                  <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                    <li>Bionic prosthetics and neural interfaces</li>
+                    <li>Robotic-assisted surgical systems (e.g. DaVinci)</li>
+                    <li>Cardiovascular pacemakers & stent design</li>
+                    <li>3D biocompatible tissue scaffolds</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div id="slide-3" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-list-check text-teal-400 mr-2"></i>A Typical Day (5 Responsibilities)</h4>
+                <span class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded font-bold border border-amber-500/30">Mandatory Topic</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-start space-x-3">
+                  <span class="text-teal-400 font-extrabold text-sm">1</span>
+                  <div>
+                    <h5 class="text-xs font-bold text-white">Surgical Collaboration</h5>
+                    <p class="text-[11px] text-slate-400">Consults directly with surgeons in hospitals to understand clinical requirements.</p>
+                  </div>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-start space-x-3">
+                  <span class="text-teal-400 font-extrabold text-sm">2</span>
+                  <div>
+                    <h5 class="text-xs font-bold text-white">3D CAD Modeling</h5>
+                    <p class="text-[11px] text-slate-400">Designs prosthetic joints and device prototypes using SolidWorks.</p>
+                  </div>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-start space-x-3">
+                  <span class="text-teal-400 font-extrabold text-sm">3</span>
+                  <div>
+                    <h5 class="text-xs font-bold text-white">Biocompatibility Lab Tests</h5>
+                    <p class="text-[11px] text-slate-400">Performs stress and immune tests to guarantee tissue compatibility.</p>
+                  </div>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-start space-x-3">
+                  <span class="text-teal-400 font-extrabold text-sm">4</span>
+                  <div>
+                    <h5 class="text-xs font-bold text-white">Hardware Calibration</h5>
+                    <p class="text-[11px] text-slate-400">Calibrates hospital MRI machines, CT scanners, and surgical arms.</p>
+                  </div>
+                </div>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 flex items-start space-x-3 sm:col-span-2">
+                  <span class="text-teal-400 font-extrabold text-sm">5</span>
+                  <div>
+                    <h5 class="text-xs font-bold text-white">FDA Risk Analysis & Documentation</h5>
+                    <p class="text-[11px] text-slate-400">Drafts clinical trial reports and Design History Files for federal safety approvals.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div id="slide-4" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-graduation-cap text-teal-400 mr-2"></i>Education, Credentials & Salary</h4>
+                <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded font-bold border border-emerald-500/30">BLS 2026 Data</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <h5 class="text-xs font-bold text-teal-300 uppercase">Degree & Licensing</h5>
+                  <ul class="text-xs text-slate-300 space-y-1.5">
+                    <li><strong class="text-white">Minimum Degree:</strong> Bachelor of Science (B.S.) in Biomedical Engineering (4 yrs).</li>
+                    <li><strong class="text-white">Top GA School:</strong> Georgia Tech (ranked #1/2 nationally).</li>
+                    <li><strong class="text-white">Licensure in GA:</strong> FE/EIT Exam ➔ Georgia Professional Engineer (PE) License.</li>
+                  </ul>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-3">
+                  <h5 class="text-xs font-bold text-teal-300 uppercase">Earning Comparison</h5>
+                  <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">Starting Salary (Entry):</span>
+                    <span class="text-xs font-bold text-teal-400">$65,400 – $78,200</span>
+                  </div>
+                  <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 flex justify-between items-center">
+                    <span class="text-xs text-slate-400">Experienced (Senior/Lead):</span>
+                    <span class="text-xs font-bold text-emerald-400">$135,800 – $162,500+</span>
+                  </div>
+                  <p class="text-[11px] text-slate-400 italic">Projected 10-year job growth: 10% (faster than average).</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div id="slide-5" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-hospital-user text-teal-400 mr-2"></i>Workplace Environment & Team Culture</h4>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center space-y-2">
+                  <i class="fa-solid fa-flask-vial text-2xl text-teal-400"></i>
+                  <h5 class="text-xs font-bold text-white">Settings</h5>
+                  <p class="text-[11px] text-slate-300">Cleanrooms, biomedical device R&D labs, and hospital surgical suites.</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center space-y-2">
+                  <i class="fa-solid fa-gauge-high text-2xl text-amber-400"></i>
+                  <h5 class="text-xs font-bold text-white">Stress Level</h5>
+                  <p class="text-[11px] text-slate-300">High accountability. Stress stems from zero-error tolerances and strict FDA timelines.</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center space-y-2">
+                  <i class="fa-solid fa-users text-2xl text-indigo-400"></i>
+                  <h5 class="text-xs font-bold text-white">Healthcare Team</h5>
+                  <p class="text-[11px] text-slate-300">Surgeons, surgical techs, IT specialists, nurses, and FDA compliance auditors.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div id="slide-6" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-scale-balanced text-teal-400 mr-2"></i>Benefits & Challenges (3 Pros & 3 Cons)</h4>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="bg-emerald-950/30 border border-emerald-500/30 p-4 rounded-xl space-y-2">
+                  <h5 class="text-xs font-bold text-emerald-400 flex items-center space-x-1.5"><i class="fa-solid fa-circle-check"></i><span>PROS (Benefits)</span></h5>
+                  <ul class="text-xs text-slate-300 space-y-2">
+                    <li>✔ <strong>Massive Patient Impact:</strong> One single innovation can help hundreds of thousands of patients worldwide.</li>
+                    <li>✔ <strong>High-Tech Frontier:</strong> Daily hands-on work with surgical robotics, bionics, and AI medicine.</li>
+                    <li>✔ <strong>Strong Job Security & Pay:</strong> High starting wages with rapid industry expansion in Georgia.</li>
+                  </ul>
+                </div>
+                <div class="bg-rose-950/30 border border-rose-500/30 p-4 rounded-xl space-y-2">
+                  <h5 class="text-xs font-bold text-rose-400 flex items-center space-x-1.5"><i class="fa-solid fa-circle-xmark"></i><span>CONS (Challenges)</span></h5>
+                  <ul class="text-xs text-slate-300 space-y-2">
+                    <li>✖ <strong>Demanding Degree:</strong> Grueling coursework in advanced calculus, physics, and organic chemistry.</li>
+                    <li>✖ <strong>Lengthy FDA Timelines:</strong> Medical device approvals can take 3 to 7 years of clinical trials.</li>
+                    <li>✖ <strong>High Liability:</strong> Zero tolerance for product defects when human life depends on your device.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div id="slide-7" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-school text-teal-400 mr-2"></i>High School Internships & Opportunities</h4>
+                <span class="text-xs bg-indigo-500/20 text-indigo-300 px-2.5 py-1 rounded font-bold border border-indigo-500/30">South Forsyth Specific</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <span class="text-xs font-bold text-indigo-400 uppercase">SFHS HOSA</span>
+                  <h5 class="text-xs font-bold text-white">Competitive Events</h5>
+                  <p class="text-[11px] text-slate-300">Compete in <em>Medical Innovation</em>, <em>Biomedical Debate</em>, and <em>Health Career Display</em>.</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <span class="text-xs font-bold text-teal-400 uppercase">Local Hospitals</span>
+                  <h5 class="text-xs font-bold text-white">Clinical Volunteering</h5>
+                  <p class="text-[11px] text-slate-300">Student volunteer programs at <strong>Northside Hospital Forsyth</strong> and <strong>Emory Johns Creek</strong>.</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                  <span class="text-xs font-bold text-amber-400 uppercase">Summer STEM</span>
+                  <h5 class="text-xs font-bold text-white">Georgia Tech Academy</h5>
+                  <p class="text-[11px] text-slate-300">Bioengineering summer intensives in Atlanta for 3D printing and CAD modeling.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div id="slide-8" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-bullseye text-teal-400 mr-2"></i>Why This Career & My 3-Step Plan</h4>
+              </div>
+              <div class="p-3.5 bg-slate-900 rounded-xl border border-slate-800">
+                <p class="text-xs text-slate-300 italic">
+                  "This career inspires me because it unites my natural passion for biological sciences and advanced mathematics with hands-on engineering to build tangible medical technology that saves human lives."
+                </p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                  <span class="text-teal-400 font-bold text-xs">Step 1: Classes</span>
+                  <p class="text-[11px] text-slate-300 mt-1">Complete SFHS Healthcare pathway alongside Honors/AP Biology and AP Calculus.</p>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                  <span class="text-teal-400 font-bold text-xs">Step 2: HOSA Leadership</span>
+                  <p class="text-[11px] text-slate-300 mt-1">Lead competitive teams in SFHS HOSA engineering and biotechnology events.</p>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                  <span class="text-teal-400 font-bold text-xs">Step 3: Hospital Hours</span>
+                  <p class="text-[11px] text-slate-300 mt-1">Complete 50+ hours of clinical volunteering and shadowing at Northside Forsyth / Emory.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div id="slide-9" class="slide-inactive space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h4 class="text-xl font-bold text-white"><i class="fa-solid fa-book-bookmark text-teal-400 mr-2"></i>Works Cited & References</h4>
+                <span class="text-xs bg-rose-500/20 text-rose-300 px-2.5 py-1 rounded font-bold border border-rose-500/30">Mandatory Last Slide</span>
+              </div>
+              <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                <li class="p-2 bg-slate-900 rounded-lg border border-slate-800">
+                  <strong>U.S. Bureau of Labor Statistics (BLS).</strong> (2026). <em>Bioengineers and Biomedical Engineers: Occupational Outlook Handbook</em>.
+                </li>
+                <li class="p-2 bg-slate-900 rounded-lg border border-slate-800">
+                  <strong>Georgia Department of Education (GaDOE).</strong> (2025). <em>Healthcare Science Career Pathway Standards: Biotechnology R&D</em>.
+                </li>
+                <li class="p-2 bg-slate-900 rounded-lg border border-slate-800">
+                  <strong>National Institute of Biomedical Imaging and Bioengineering (NIBIB).</strong> (2025). <em>Science Topics: Biomedical Engineering</em>. NIH.
+                </li>
+                <li class="p-2 bg-slate-900 rounded-lg border border-slate-800">
+                  <strong>Biomedical Engineering Society (BMES).</strong> (2026). <em>Ethics, Standards, and Professional Guidelines for Bioengineers</em>.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer -->
+            <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-500">
+              <span>Intro to Healthcare — Mrs. Upchurch</span>
+              <span>Antony Anish • South Forsyth High School</span>
+            </div>
+          </div>
+
+          <!-- Spoken Script Display -->
+          <div class="bg-slate-900 rounded-xl p-4 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-400 flex items-center space-x-1.5">
+                <i class="fa-solid fa-microphone"></i>
+                <span id="speechHeader">Speaker Script for Slide 1 (Approx 20 sec)</span>
+              </span>
+              <span class="text-[11px] text-slate-400">Target pacing: ~130 words per minute</span>
+            </div>
+            <p id="speechScript" class="text-xs text-slate-200 leading-relaxed italic bg-slate-950 p-3 rounded-lg border border-slate-800">
+              "Good morning Mrs. Upchurch and classmates. My name is Antony Anish, and today I’m excited to present my healthcare career exploration on Biomedical Engineering—a field that connects the power of engineering innovation directly with life-saving patient care."
+            </p>
+          </div>
+        </div>
+
+        <!-- Timer & Notecard Studio Sidebar (4 Cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <!-- Stopwatch Timer -->
+          <div class="bg-slate-900 rounded-xl p-5 border border-slate-800 space-y-4 shadow-xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+                <i class="fa-solid fa-stopwatch text-teal-400"></i>
+                <span>Practice Speech Timer</span>
+              </h4>
+              <span id="timerStatusBadge" class="text-[11px] px-2 py-0.5 rounded font-bold bg-slate-800 text-slate-300">Ready</span>
+            </div>
+
+            <div class="text-center py-2">
+              <div id="timerDisplay" class="text-5xl font-black font-mono tracking-wider text-slate-200">00:00</div>
+              <p id="timerMessage" class="text-xs text-slate-400 mt-2">Target: 2:45 to 3:30 (Rubric requires 2+ min)</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2">
+              <button onclick="startTimer()" class="py-2 bg-teal-600 hover:bg-teal-500 rounded-lg text-xs font-bold text-white transition flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-play"></i><span>Start</span>
+              </button>
+              <button onclick="pauseTimer()" class="py-2 bg-amber-600 hover:bg-amber-500 rounded-lg text-xs font-bold text-white transition flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-pause"></i><span>Pause</span>
+              </button>
+              <button onclick="resetTimer()" class="py-2 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs font-bold text-slate-200 transition flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-rotate-left"></i><span>Reset</span>
+              </button>
+            </div>
+
+            <!-- Visual Timing Range Bar -->
+            <div class="pt-2 border-t border-slate-800 space-y-1.5">
+              <div class="flex justify-between text-[10px] text-slate-400">
+                <span>0:00 (5 pts)</span>
+                <span class="text-teal-400 font-bold">2:00 (Full 20 pts)</span>
+                <span>5:00 (Cap)</span>
+              </div>
+              <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden flex">
+                <div class="bg-rose-500 h-full w-[20%]"></div>
+                <div class="bg-amber-500 h-full w-[20%]"></div>
+                <div class="bg-emerald-500 h-full w-[60%]"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Physical 3x5 Notecard Cue Box -->
+          <div class="bg-slate-900 rounded-xl p-5 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+                <i class="fa-solid fa-id-card text-amber-400"></i>
+                <span>3x5 Handheld Card Cue</span>
+              </h4>
+              <span id="notecardBadge" class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-bold">Card 1</span>
+            </div>
+
+            <div id="notecardContent" class="bg-amber-100 text-slate-900 p-4 rounded-lg font-mono text-xs shadow-inner space-y-1.5">
+              <p class="font-bold border-b border-amber-300 pb-1">CARD 1 (Slides 1–4):</p>
+              <p>• INTRO: Antony Anish | Biomedical Eng (Biotech)</p>
+              <p>• MISSION: Connect engineering + biology for lives</p>
+              <p>• 5 TASKS: Surgeon consult, 3D CAD model, lab stress test, machine calibrate, FDA risks</p>
+              <p>• SCHOOL: 4-yr B.S. GA Tech; FE/PE Georgia license</p>
+              <p>• SALARY: $65k-$78k start ➔ $135k-$162k senior</p>
+            </div>
+
+            <p class="text-[11px] text-slate-400 italic">
+              Tip: Glance only at keywords. Keep eyes scanning left, center, and right walls for maximum eye contact!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: MEDICAL TERMINOLOGY & BLOOKET PRACTICE -->
+    <section id="med-term" class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center space-x-2">
+            <span class="text-indigo-400"><i class="fa-solid fa-spell-check"></i></span>
+            <span>Medical Terminology (Set #2)</span>
+          </h2>
+          <p class="text-xs text-slate-400">Vocab mastery and active Blooket sets for Mrs. Upchurch's quizzes.</p>
+        </div>
+        <a href="https://dashboard.blooket.com/set/6aac067bf19795742e8e22b8" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-3 py-1.5 rounded-lg transition flex items-center space-x-1.5">
+          <i class="fa-solid fa-play"></i><span>Play Live Blooket</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+        <a href="https://dashboard.blooket.com/set/6aac067bf19795742e8e22b8" target="_blank" class="p-4 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition block space-y-1">
+          <span class="text-xs font-bold text-teal-400 uppercase tracking-wider">Interactive Game</span>
+          <h4 class="text-sm font-bold text-white">Blooket Set #2</h4>
+          <p class="text-xs text-slate-400">Official weekly Blooket game link from Canvas.</p>
+        </a>
+
+        <a href="https://docs.google.com/presentation/d/108KCOCCWalHIQANh3wzRY6wrVSjhu7Ui0gg_wxYNUAg/edit" target="_blank" class="p-4 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition block space-y-1">
+          <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Teacher Deck</span>
+          <h4 class="text-sm font-bold text-white">Med Term Google Slides</h4>
+          <p class="text-xs text-slate-400">Prefixes, roots, suffixes, and clinical abbreviations.</p>
+        </a>
+
+        <div class="p-4 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Quiz #1 Score</span>
+          <h4 class="text-sm font-bold text-white">100 / 100</h4>
+          <p class="text-xs text-slate-400">Full marks earned on Medical Terminology Quiz #1.</p>
+        </div>
+
+        <div class="p-4 bg-slate-900 border border-slate-800 rounded-xl space-y-1">
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Coming Up</span>
+          <h4 class="text-sm font-bold text-white">Med Term Quiz #2</h4>
+          <p class="text-xs text-slate-400">Focus on body systems and surgical root terms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CANVAS TO-DO & GRADEBOOK TRACKER -->
+    <section id="tracker" class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center space-x-2">
+            <span class="text-emerald-400"><i class="fa-solid fa-list-check"></i></span>
+            <span>Canvas Gradebook & Action Tracker</span>
+          </h2>
+          <p class="text-xs text-slate-400">Live synchronization with your official Canvas enrollments.</p>
+        </div>
+        <a href="https://forsyth.instructure.com/courses/276503/grades" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center space-x-1">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Official Grades</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Recent 100% Scores -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3">
+          <h3 class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center space-x-1.5">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Completed & Graded (Strong Foundation)</span>
+          </h3>
+          <ul class="text-xs space-y-2 text-slate-300">
+            <li class="flex justify-between border-b border-slate-800/60 pb-1.5"><span>0.1 Academic Integrity Originality</span><strong class="text-emerald-400">100 / 100</strong></li>
+            <li class="flex justify-between border-b border-slate-800/60 pb-1.5"><span>0.2 Academic Dishonesty Quiz</span><strong class="text-emerald-400">100 / 100</strong></li>
+            <li class="flex justify-between border-b border-slate-800/60 pb-1.5"><span>Writing an Email Assignment</span><strong class="text-emerald-400">100 / 100</strong></li>
+            <li class="flex justify-between border-b border-slate-800/60 pb-1.5"><span>Body Mechanics in Action</span><strong class="text-emerald-400">100 / 100</strong></li>
+            <li class="flex justify-between border-b border-slate-800/60 pb-1.5"><span>Workplace Safety Activity</span><strong class="text-emerald-400">100 / 100</strong></li>
+            <li class="flex justify-between"><span>Medical Terminology Quiz #1</span><strong class="text-emerald-400">100 / 100</strong></li>
+          </ul>
+        </div>
+
+        <!-- Pending / Action Items -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3">
+          <h3 class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center space-x-1.5">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Action & Follow-Up Items</span>
+          </h3>
+          <div class="space-y-2.5 text-xs text-slate-300">
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="flex justify-between font-bold text-white mb-0.5">
+                <span>Virtual Shadow Reflection</span>
+                <span class="text-amber-400">Due Sept 25 (11:59 PM)</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Unlocks Wed 12am. Submit Google Doc link before Fall Break.</p>
+            </div>
+
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="flex justify-between font-bold text-white mb-0.5">
+                <span>Safety Codes and Labels Flyer</span>
+                <span class="text-rose-400">Ask Teacher</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Flagged on Canvas To-Do. Verify with Mrs. Upchurch if paper copy was counted.</p>
+            </div>
+
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800">
+              <div class="flex justify-between font-bold text-white mb-0.5">
+                <span>Healthcare Careers Summative</span>
+                <span class="text-indigo-400">Due Oct 8 (4:00 PM)</span>
+              </div>
+              <p class="text-[11px] text-slate-400">Major 100-pt summative. 9 slides + 3-5 min presentation in business casual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 sm:px-6 text-center text-xs text-slate-500">
+    <p>Antony Anish • Grade 9 • South Forsyth High School • Class of 2030</p>
+    <p class="mt-1">Healthcare Science Pathway • Course 276503 (Mrs. Morgan Upchurch)</p>
+  </footer>
+
+  <!-- Hidden text for copy button -->
+  <textarea id="hiddenWorksheetText" class="hidden"># Intro to Healthcare: Virtual Job Shadow Reflection
+
+Student Name: Antony Anish
+Grade: 9th Grade (Class of 2030)
+School: South Forsyth High School
+Course: Introduction to Healthcare
+Teacher: Mrs. Morgan Upchurch (Room #406)
+Date: September 23, 2026
+Career Shadowed: Biomedical Engineer
+Health Science Pathway: Biotechnology Research & Development
+
+Part 1: Career Profile & Daily Realities
+1. What is the job title and general role of this healthcare professional?
+A Biomedical Engineer applies principles of engineering, biology, and healthcare medicine to design, test, and develop life-saving medical devices, diagnostic software, artificial organs, and robotic surgical systems. They bridge the gap between engineering technology and clinical medicine to solve critical patient care problems.
+
+2. Describe at least 4-5 specific daily tasks you observed during the virtual shadow:
+- Task 1: Meeting with physicians and surgical teams to identify clinical needs and patient limitations in operating rooms.
+- Task 2: Designing 3D computer-aided design (CAD) models of prosthetic devices and surgical implants.
+- Task 3: Conducting stress, fatigue, and biocompatibility testing on prototype medical equipment in a laboratory.
+- Task 4: Troubleshooting and calibrating hospital biomedical hardware to ensure compliance with strict FDA and electrical safety standards.
+- Task 5: Documenting test protocols, clinical trial data, and engineering risk analyses for safety regulatory bodies.
+
+3. What is the work environment like? Is it fast-paced, high-stress, lab-based, or collaborative?
+The work environment is a dynamic hybrid of sterile research laboratories, computer design stations, and active clinical hospital settings. While not emergency-driven like an ER trauma bay, it is a high-responsibility, highly collaborative environment because medical device failures directly impact human life. Engineers work closely with multidisciplinary teams including surgeons, nurses, quality control inspectors, and software developers.
+
+Part 2: Educational Pathway & Required Credentials
+4. What degree and formal education are required for entry and advancement in this career?
+Entry-level positions require a minimum of a Bachelor of Science (B.S.) in Biomedical Engineering (4 years). For research, high-level device development, or university teaching, a Master of Science (M.S.) or Ph.D. (an additional 2 to 5 years) is commonly required.
+
+5. What professional credentials, licensing, or certifications are needed?
+Engineers often sit for the Fundamentals of Engineering (FE) exam upon graduation to earn Engineer-in-Training (EIT) status, followed by the Principles and Practice of Engineering (PE) exam for state licensure. In clinical hospital roles, certification as a Certified Biomedical Equipment Technician (CBET) or Certified Clinical Engineer (CCE) is highly valued.
+
+Part 3: Teamwork & Patient Impact
+6. How does this professional collaborate with other members of the healthcare team?
+Biomedical engineers do not work in isolation. They maintain constant communication with doctors and nurses who provide direct feedback on how devices perform with real patients. They also collaborate with hospital IT specialists on EHR (Electronic Health Record) integration and hospital safety officers to prevent electrical hazards and infections.
+
+7. How does their work directly impact patient outcomes and recovery?
+Their innovations directly restore patient mobility, eliminate chronic pain, and extend lifespans. For example, designing an ultra-precise robotic surgical arm allows surgeons to operate with sub-millimeter precision, leading to smaller incisions, faster patient recovery, and significantly reduced infection risks.
+
+Part 4: Pros, Cons & Surprises
+8. What are the top 2-3 benefits or rewards associated with this career?
+- Benefit 1: Deep personal fulfillment knowing that devices you engineer save thousands of lives worldwide.
+- Benefit 2: Working on cutting-edge technological frontiers, including AI diagnostics, 3D bioprinting, and bionic prosthetics.
+- Benefit 3: Strong financial compensation and excellent long-term career growth in a rapidly expanding sector.
+
+9. What are the top 2-3 challenges or drawbacks?
+- Challenge 1: Lengthy regulatory approval cycles (getting FDA approval for a new medical device can take 3 to 7 years).
+- Challenge 2: High academic rigor in college requiring difficult courses in calculus, differential equations, organic chemistry, and biomechanics.
+- Challenge 3: High liability and pressure to guarantee zero defects in life-sustaining equipment.
+
+10. What was one unexpected fact or detail you learned from the video?
+I was surprised to learn how much time biomedical engineers spend directly inside hospital operating rooms observing active surgeries. Rather than staying in a remote office, they scrub into surgical suites alongside doctors to observe exactly how tools handle in a surgeon's hands and identify real-time ergonomic challenges.
+
+Part 5: Personal Reflection & High School Action Plan
+11. Does this career align with your personal interests and career goals? Why or why not?
+Yes, this career aligns exceptionally well with my strengths. As a student passionate about biology, advanced mathematics (AP Precalculus), and software technology, biomedical engineering allows me to combine technical problem-solving with meaningful patient care. It connects my interest in healthcare sciences with hands-on innovation.
+
+12. Identify at least 3 concrete steps you can take during high school at South Forsyth to prepare for this pathway:
+- Step 1: Complete the Healthcare Science pathway at South Forsyth High School while taking rigorous STEM coursework including Honors/AP Biology, AP Chemistry, AP Physics, and AP Calculus.
+- Step 2: Actively participate and compete in SFHS HOSA in engineering and technical events (such as Medical Innovation or Biomedical Debate), building on my prior international HOSA competition experience.
+- Step 3: Apply for student volunteer opportunities at local hospitals like Northside Hospital Forsyth or Emory Johns Creek to observe clinical workflows and shadow healthcare professionals.
+</textarea>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 9;
+
+    const scripts = {
+      1: "Good morning Mrs. Upchurch and classmates. My name is Antony Anish, and today I’m excited to present my healthcare career exploration on Biomedical Engineering—a field that connects the power of engineering innovation directly with life-saving patient care.",
+      2: "Biomedical engineers operate within the Biotechnology Research and Development pathway. Unlike physicians who treat patients one-on-one, biomedical engineers build the high-tech instruments that physicians rely on every day. From robotic surgical arms to 3D-bioprinted tissue implants, their work revolutionizes how healthcare is delivered.",
+      3: "On any typical day, a biomedical engineer performs five essential tasks: First, collaborating with surgeons to discover what tools they need. Second, designing prototypes using 3D CAD modeling. Third, stress-testing biomaterials to ensure they don't cause adverse immune reactions. Fourth, calibrating hospital equipment to strict safety standards. And fifth, completing rigorous risk analyses for FDA approval.",
+      4: "To enter this career, you need a 4-year Bachelor of Science in Biomedical Engineering from an accredited university like Georgia Tech. Engineers can earn their Professional Engineer license through the state of Georgia. Financially, starting salaries begin around $65,000 to $78,000, while established senior engineers earn upwards of $140,000 to $160,000 annually, with jobs growing 10% over the next decade.",
+      5: "Biomedical engineers work in high-tech research labs, manufacturing cleanrooms, and directly inside university hospitals. While the daily pace is more methodical than an ER, the stress comes from zero-error accountability—because if a cardiac pacemaker or surgical robot fails, human lives are on the line. Teamwork with surgeons and clinicians is constant.",
+      6: "Evaluating the pros and cons: On the positive side, you have exponential patient impact, exciting work on cutting-edge bionic technologies, and excellent job stability. However, the challenges include grueling undergraduate STEM coursework, multi-year FDA approval timelines, and high professional liability.",
+      7: "As high school students at South Forsyth, there are real opportunities we can pursue right now. Through SFHS HOSA, we can compete in events like Medical Innovation and Biomedical Debate. We can also volunteer locally at Northside Hospital Forsyth or Emory Johns Creek to observe medical technology in real clinical environments.",
+      8: "This career inspires me because it combines my passion for biology and math with tangible engineering that restores human lives. My three steps starting today are: First, completing the SFHS Healthcare pathway alongside advanced AP sciences. Second, leading competitive teams in SFHS HOSA. And third, completing clinical volunteer hours at local hospitals to understand patient care from the ground up.",
+      9: "All data, wage statistics, and educational requirements in this presentation were researched using the U.S. Bureau of Labor Statistics, the Georgia Department of Education, and the National Institutes of Health. Thank you, and I’m ready to take any questions!"
+    };
+
+    const notecardTexts = {
+      1: `<p class="font-bold border-b border-amber-300 pb-1">CARD 1 (Slides 1–4):</p>
+          <p>• INTRO: Antony Anish | Biomedical Eng (Biotech)</p>
+          <p>• MISSION: Connect engineering + biology for lives</p>
+          <p>• 5 TASKS: Surgeon consult, 3D CAD model, lab stress test, machine calibrate, FDA risks</p>
+          <p>• SCHOOL: 4-yr B.S. GA Tech; FE/PE Georgia license</p>
+          <p>• SALARY: $65k-$78k start ➔ $135k-$162k senior</p>`,
+      2: `<p class="font-bold border-b border-amber-300 pb-1">CARD 2 (Slides 5–9):</p>
+          <p>• SETTING: Labs, cleanrooms, hospital surgical suites</p>
+          <p>• STRESS: Zero-error accountability for patient life</p>
+          <p>• PROS/CONS: Exponential impact vs 3-7 yr FDA waits</p>
+          <p>• HIGH SCHOOL: SFHS HOSA (Med Innovation), Northside/Emory</p>
+          <p>• 3 STEPS: Healthcare + AP Science, HOSA leadership, 50h volunteering</p>
+          <p>• CLOSE: BLS/GaDOE sources. Questions?</p>`
+    };
+
+    function showSlide(num) {
+      for (let i = 1; i <= totalSlides; i++) {
+        const el = document.getElementById(`slide-${i}`);
+        if (el) {
+          el.className = (i === num) ? 'slide-active space-y-4' : 'slide-inactive';
+        }
+      }
+      document.getElementById('slideIndicator').innerText = `Slide ${num} of ${totalSlides}`;
+      document.getElementById('slideSelect').value = num;
+      document.getElementById('speechHeader').innerText = `Speaker Script for Slide ${num} (Approx ${num === 1 ? '20' : num === 9 ? '15' : '30'} sec)`;
+      document.getElementById('speechScript').innerText = scripts[num];
+
+      if (num <= 4) {
+        document.getElementById('notecardBadge').innerText = 'Card 1';
+        document.getElementById('notecardContent').innerHTML = notecardTexts[1];
+      } else {
+        document.getElementById('notecardBadge').innerText = 'Card 2';
+        document.getElementById('notecardContent').innerHTML = notecardTexts[2];
+      }
+    }
+
+    function changeSlide(delta) {
+      currentSlide += delta;
+      if (currentSlide < 1) currentSlide = 1;
+      if (currentSlide > totalSlides) currentSlide = totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function goToSlide(num) {
+      currentSlide = num;
+      showSlide(currentSlide);
+    }
+
+    // Keyboard Arrow Controls
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') changeSlide(1);
+      if (e.key === 'ArrowLeft') changeSlide(-1);
+    });
+
+    // Practice Timer Logic
+    let timerSeconds = 0;
+    let timerInterval = null;
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60).toString().padStart(2, '0');
+      const s = (sec % 60).toString().padStart(2, '0');
+      return `${m}:${s}`;
+    }
+
+    function updateTimerUI() {
+      const display = document.getElementById('timerDisplay');
+      const badge = document.getElementById('timerStatusBadge');
+      display.innerText = formatTime(timerSeconds);
+
+      if (timerSeconds < 120) {
+        display.className = 'text-5xl font-black font-mono tracking-wider text-rose-400';
+        badge.className = 'text-[11px] px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300';
+        badge.innerText = 'Under 2 Min (-5 to -15 pts)';
+      } else if (timerSeconds <= 270) {
+        display.className = 'text-5xl font-black font-mono tracking-wider text-emerald-400';
+        badge.className = 'text-[11px] px-2 py-0.5 rounded font-bold bg-emerald-500/20 text-emerald-300';
+        badge.innerText = 'Full Marks Zone (20/20)';
+      } else if (timerSeconds <= 300) {
+        display.className = 'text-5xl font-black font-mono tracking-wider text-amber-400';
+        badge.className = 'text-[11px] px-2 py-0.5 rounded font-bold bg-amber-500/20 text-amber-300';
+        badge.innerText = 'Approaching 5m Limit';
+      } else {
+        display.className = 'text-5xl font-black font-mono tracking-wider text-rose-500 animate-pulse';
+        badge.className = 'text-[11px] px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300';
+        badge.innerText = 'Over 5 Min Limit';
+      }
+    }
+
+    function startTimer() {
+      if (timerInterval) return;
+      timerInterval = setInterval(() => {
+        timerSeconds++;
+        updateTimerUI();
+      }, 1000);
+    }
+
+    function pauseTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+    }
+
+    function resetTimer() {
+      pauseTimer();
+      timerSeconds = 0;
+      updateTimerUI();
+      document.getElementById('timerDisplay').className = 'text-5xl font-black font-mono tracking-wider text-slate-200';
+      document.getElementById('timerStatusBadge').className = 'text-[11px] px-2 py-0.5 rounded font-bold bg-slate-800 text-slate-300';
+      document.getElementById('timerStatusBadge').innerText = 'Ready';
+    }
+
+    function copyWorksheet() {
+      const text = document.getElementById('hiddenWorksheetText').value;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copyBtnText');
+        btn.innerText = 'Copied to Clipboard!';
+        setTimeout(() => { btn.innerText = 'Copy Template for Google Docs'; }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
