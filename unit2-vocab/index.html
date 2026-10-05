@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 2 Vocabulary Summative Mastery Portal — AP Human Geography</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --primary-light: #eff6ff;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --amber: #d97706;
+      --amber-light: #fef3c7;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --purple: #7c3aed;
+      --purple-light: #ede9fe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-nav {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      background: var(--primary-light);
+      border-color: #bfdbfe;
+      color: var(--accent);
+    }
+
+    .nav-btn.primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .nav-btn.primary:hover {
+      background: var(--accent);
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+      color: #ffffff;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.25) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .exam-date-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #f59e0b;
+      color: #78350f;
+      padding: 0.45rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+      border: 2px solid #fbbf24;
+      animation: pulseGlow 2.5s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    .hero-banner h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-banner p {
+      font-size: 1.1rem;
+      color: #bfdbfe;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .hero-stat-card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0.75rem;
+      padding: 0.6rem 1.2rem;
+      min-width: 140px;
+    }
+
+    .stat-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #93c5fd;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Mode Selector Tabs */
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 2px solid var(--border);
+      background: #ffffff;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.25);
+    }
+
+    /* Views */
+    .study-view {
+      display: none;
+    }
+
+    .study-view.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Search & Filter Controls */
+    .controls-panel {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      position: relative;
+      min-width: 260px;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      border: 1.5px solid var(--border);
+      border-radius: 0.6rem;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-input-wrap input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .category-pills {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .cat-pill {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      padding: 0.35rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .cat-pill:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .cat-pill.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    /* Cards Grid (Glossary View) */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .vocab-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.25rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .vocab-card:hover {
+      border-color: #93c5fd;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .vocab-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .vocab-term {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .badge-cat {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 0.35rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .cat-rates { background: #dbeafe; color: #1e40af; }
+    .cat-densities { background: #dcfce7; color: #166534; }
+    .cat-pyramids { background: #ede9fe; color: #6b21a8; }
+    .cat-models { background: #ffedd5; color: #9a3412; }
+    .cat-policies { background: #fce7f3; color: #9d174d; }
+    .cat-migration { background: #e0f2fe; color: #0369a1; }
+
+    .vocab-def {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .vocab-context {
+      background: #f8fafc;
+      border-left: 3px solid var(--accent);
+      padding: 0.6rem 0.85rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      font-size: 0.83rem;
+      color: #334155;
+    }
+
+    .vocab-example {
+      font-size: 0.82rem;
+      color: #0369a1;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 0.45rem 0.75rem;
+      border-radius: 0.4rem;
+    }
+
+    .vocab-formula {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #b45309;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      padding: 0.4rem 0.7rem;
+      border-radius: 0.4rem;
+    }
+
+    /* Flashcard View */
+    .flashcard-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .flashcard-progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+
+    .flashcard-progress-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .flashcard-stats-text {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .flashcard {
+      width: 100%;
+      min-height: 340px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      text-align: center;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .flashcard.flipped .flashcard-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flashcard-front, .flashcard-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 1.25rem;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--border);
+      background: #ffffff;
+    }
+
+    .flashcard-back {
+      transform: rotateY(180deg);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      text-align: left;
+      align-items: flex-start;
+      gap: 0.85rem;
+      overflow-y: auto;
+    }
+
+    .flashcard-front .card-term {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+    }
+
+    .card-prompt-hint {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .flashcard-controls {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .fc-btn {
+      padding: 0.75rem 1.4rem;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1.5px solid var(--border);
+      background: #ffffff;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+    }
+
+    .fc-btn:hover {
+      background: var(--bg);
+    }
+
+    .fc-btn.mastered {
+      background: var(--green-light);
+      border-color: #86efac;
+      color: #166534;
+    }
+
+    .fc-btn.needs-work {
+      background: var(--red-light);
+      border-color: #fca5a5;
+      color: #991b1b;
+    }
+
+    /* Quiz Simulator View */
+    .quiz-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+
+    .quiz-question-box {
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-prompt {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .quiz-opt-btn {
+      text-align: left;
+      padding: 1rem 1.25rem;
+      border: 1.5px solid var(--border);
+      border-radius: 0.75rem;
+      background: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: var(--primary-light);
+    }
+
+    .quiz-opt-btn.correct {
+      background: var(--green-light) !important;
+      border-color: var(--green) !important;
+      color: #166534 !important;
+      font-weight: 700;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: var(--red-light) !important;
+      border-color: var(--red) !important;
+      color: #991b1b !important;
+      text-decoration: line-through;
+    }
+
+    .quiz-feedback {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 1.2rem;
+      border-radius: 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    /* Confusing Pairs View */
+    .pairs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .pair-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pair-header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #ffffff;
+      padding: 1rem 1.25rem;
+      font-size: 1.1rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pair-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pair-col {
+      padding: 1.25rem;
+    }
+
+    .pair-col:first-child {
+      border-right: 1px solid var(--border);
+      background: #f8fafc;
+    }
+
+    .pair-term-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .pair-takeaway {
+      padding: 1rem 1.25rem;
+      background: #fffbeb;
+      border-top: 1px solid #fde68a;
+      font-size: 0.85rem;
+      color: #92400e;
+      line-height: 1.5;
+    }
+
+    /* Print Styles */
+    @media print {
+      .top-nav, .hero-banner, .tab-container, .controls-panel, .flashcard-wrapper, .quiz-container { display: none !important; }
+      .study-view { display: block !important; }
+      .vocab-grid { display: block !important; }
+      .vocab-card { page-break-inside: avoid; margin-bottom: 1rem; border: 1px solid #ccc; }
+    }
+
+    @media (max-width: 768px) {
+      .pairs-grid { grid-template-columns: 1fr; }
+      .pair-comparison { grid-template-columns: 1fr; }
+      .pair-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-banner h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="top-nav">
+    <a href="../index.html" class="nav-brand">
+      <span>🗺️</span> AP Human Geography
+    </a>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-btn">← Master Hub</a>
+      <a href="../migration-one-pager/index.html" class="nav-btn">Migration One-Pager (10/13)</a>
+      <a href="../unit2-frq/index.html" class="nav-btn">FRQ Formative (10/20)</a>
+      <a href="#glossary" class="nav-btn primary">Vocab Summative (10/23)</a>
+      <a href="../unit2-mcq/index.html" class="nav-btn">MCQ Summative (10/28–29)</a>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero-banner">
+    <div class="exam-date-pill">
+      📅 In-Class Major Exam: Friday, October 23, 2026
+    </div>
+    <h1>Unit 2 Vocabulary Summative Mastery Portal</h1>
+    <p>Comprehensive interactive mastery suite covering all 72 key terms across Topics 2.1–2.12 (Population & Migration Patterns and Processes) for Mrs. Knight's class (Room 1325).</p>
+    
+    <div class="hero-stats">
+      <div class="hero-stat-card">
+        <div class="stat-number">72</div>
+        <div class="stat-label">Master Terms</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-number">6</div>
+        <div class="stat-label">Core Domains</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Aligned to Standards</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-number">Oct 23</div>
+        <div class="stat-label">Exam Date</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main App Container -->
+  <main class="container">
+
+    <!-- Mode Selector Tabs -->
+    <div class="tab-container">
+      <button class="tab-btn active" onclick="switchTab('glossary')">
+        📖 Master Glossary (72 Terms)
+      </button>
+      <button class="tab-btn" onclick="switchTab('flashcards')">
+        🗂️ Interactive 3D Flashcards
+      </button>
+      <button class="tab-btn" onclick="switchTab('quiz')">
+        ⏱️ Vocab Exam Simulator
+      </button>
+      <button class="tab-btn" onclick="switchTab('pairs')">
+        ⚖️ High-Yield Confusing Pairs
+      </button>
+    </div>
+
+    <!-- VIEW 1: MASTER GLOSSARY -->
+    <section id="view-glossary" class="study-view active">
+      <div class="controls-panel">
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="glossary-search" placeholder="Search any term, formula, theorist, or definition..." oninput="filterGlossary()">
+          </div>
+          <button class="nav-btn" onclick="window.print()">🖨️ Print Study Sheet</button>
+        </div>
+        <div class="category-pills">
+          <button class="cat-pill active" onclick="filterCategory('all', this)">All (72)</button>
+          <button class="cat-pill" onclick="filterCategory('densities', this)">Densities & Capacity</button>
+          <button class="cat-pill" onclick="filterCategory('rates', this)">Demographic Rates & Formulas</button>
+          <button class="cat-pill" onclick="filterCategory('pyramids', this)">Pyramids & Dependency</button>
+          <button class="cat-pill" onclick="filterCategory('models', this)">DTM, ETM & Theorists</button>
+          <button class="cat-pill" onclick="filterCategory('policies', this)">Policies & Women</button>
+          <button class="cat-pill" onclick="filterCategory('migration', this)">Migration Types & Laws</button>
+        </div>
+      </div>
+
+      <div id="vocab-grid" class="vocab-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- VIEW 2: FLASHCARDS -->
+    <section id="view-flashcards" class="study-view">
+      <div class="flashcard-wrapper">
+        <div class="flashcard-stats-text">
+          <span id="fc-counter">Card 1 of 72</span>
+          <span id="fc-mastered-count">Mastered: 0 | Needs Work: 0</span>
+        </div>
+        <div class="flashcard-progress-bar">
+          <div id="fc-progress" class="flashcard-progress-fill"></div>
+        </div>
+
+        <div class="flashcard" id="active-card" onclick="flipCard()">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span id="card-cat-badge" class="badge-cat cat-rates" style="margin-bottom: 1rem;">Category</span>
+              <div class="card-term" id="fc-term">Loading...</div>
+              <div class="card-prompt-hint">💡 Tap or Click to Flip for Definition & AP Tips</div>
+            </div>
+            <div class="flashcard-back">
+              <div style="font-weight: 800; font-size: 1.15rem; color: var(--primary);" id="fc-back-term">Term</div>
+              <div id="fc-def" style="font-size: 0.95rem; line-height: 1.55;">Definition</div>
+              <div class="vocab-formula" id="fc-formula" style="display: none;">Formula</div>
+              <div class="vocab-context" id="fc-tip"><strong>AP Exam Context:</strong> Context tip</div>
+              <div class="vocab-example" id="fc-example"><strong>Real Example:</strong> Example</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard-controls">
+          <button class="fc-btn" onclick="prevCard()">← Previous</button>
+          <button class="fc-btn needs-work" onclick="markCard(false)">⚠️ Needs Review</button>
+          <button class="fc-btn mastered" onclick="markCard(true)">✅ Mastered</button>
+          <button class="fc-btn" onclick="nextCard()">Next →</button>
+          <button class="fc-btn" onclick="shuffleCards()">🔀 Shuffle</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: VOCAB QUIZ SIMULATOR -->
+    <section id="view-quiz" class="study-view">
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <div>
+            <h2 style="font-size: 1.3rem; font-weight: 800; color: var(--primary-dark);">Unit 2 Active Vocab Recall Simulator</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Timed active-recall scenario matching for the Oct 23 Summative</p>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 1.1rem; font-weight: 800; color: var(--accent);" id="quiz-progress-text">Q 1 of 20</div>
+            <div style="font-size: 0.85rem; color: var(--green); font-weight: 700;" id="quiz-score-badge">Score: 0 / 0</div>
+          </div>
+        </div>
+
+        <div id="quiz-active-area">
+          <div class="quiz-question-box">
+            <div class="quiz-prompt" id="quiz-prompt-text">Loading question prompt...</div>
+            <div class="quiz-options" id="quiz-options-list">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+          <div class="quiz-feedback" id="quiz-feedback-box"></div>
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <button id="btn-next-quiz" class="nav-btn primary" onclick="nextQuizQuestion()" style="display: none; padding: 0.65rem 1.5rem; font-size: 0.95rem;">
+              Next Question →
+            </button>
+          </div>
+        </div>
+
+        <div id="quiz-completed-area" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏆</div>
+          <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.5rem;">Vocab Exam Simulation Complete!</h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;" id="quiz-final-score-text">You scored 19 / 20 (95%)</p>
+          <div style="display: flex; justify-content: center; gap: 1rem;">
+            <button class="nav-btn primary" onclick="startQuiz()">🔄 Retake New 20 Questions</button>
+            <button class="nav-btn" onclick="switchTab('glossary')">📖 Review Full Glossary</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: CONFUSING PAIRS -->
+    <section id="view-pairs" class="study-view">
+      <div style="margin-bottom: 1.5rem; text-align: center;">
+        <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.4rem;">High-Yield Distinction Traps (Common Exam Pitfalls)</h2>
+        <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto;">College Board and Mrs. Knight frequently test these specific paired contrasts on Unit 2 summatives to catch students confusing similar definitions.</p>
+      </div>
+
+      <div class="pairs-grid">
+        <!-- Pair 1: Arithmetic vs Physiological vs Agricultural -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🌾</span> The Three Densities Compared
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Arithmetic Density</div>
+              <p style="font-size: 0.88rem; margin-bottom: 0.5rem;"><strong>Formula:</strong> Total Population ÷ Total Land Area</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Crude density. Doesn't account for whether land is habitable, arable, desert, or mountain.</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">Physiological Density</div>
+              <p style="font-size: 0.88rem; margin-bottom: 0.5rem;"><strong>Formula:</strong> Total Population ÷ <em>Arable (Farmable)</em> Land</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Reveals true nutritional carrying capacity pressure. (e.g., Egypt: low arithmetic, extreme physiological).</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Agricultural density (Farmers ÷ Arable Land) reflects <em>technological development</em> (mechanized MDCs have very low numbers), whereas physiological density reflects <em>food strain</em> on arable soil.
+          </div>
+        </div>
+
+        <!-- Pair 2: Refugees vs IDPs vs Asylum Seekers -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🛡️</span> Refugee vs. IDP vs. Asylum Seeker
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Refugee</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Crossed an <strong>international border</strong> due to armed conflict, persecution, or well-founded fear. Protected by 1951 UN Convention.</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">IDP (Internally Displaced)</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Fled the exact same threats (war, violence) but <strong>remains inside their home country's borders</strong>. Has NO international legal protection.</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Did they cross a recognized international boundary? Yes = Refugee; No = Internally Displaced Person (IDP). An Asylum Seeker is someone actively awaiting official legal refugee status determination.
+          </div>
+        </div>
+
+        <!-- Pair 3: Intervening Obstacle vs Intervening Opportunity -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🚧</span> Intervening Obstacle vs. Opportunity
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Intervening Obstacle</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">A <strong>barrier</strong> (environmental like oceans/mountains, or political/legal like visa quotas, walls, detention) that blocks or complicates migration.</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">Intervening Opportunity</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">A <strong>favorable feature</strong> encountered along the migration route (e.g., job offer, cheaper housing, good farmland) that convinces the migrant to settle early.</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Obstacles <em>stop/slow</em> movement against the migrant's will; Opportunities <em>entice</em> the migrant to willingly stop before their intended final destination.
+          </div>
+        </div>
+
+        <!-- Pair 4: Malthus vs Boserup -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🍞</span> Malthus (Pessimist) vs. Boserup (Cornucopian)
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Thomas Malthus (1798)</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Population grows <em>exponentially</em> (1, 2, 4, 8, 16) while food grows <em>arithmetically</em> (1, 2, 3, 4, 5). Inevitable crisis, starvation, and misery.</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">Ester Boserup (1965)</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">"Necessity is the mother of invention." Population growth forces agricultural intensification, mechanization, fertilizers, and higher yields.</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Malthus viewed population as a doom clock; Boserup viewed population density as the ultimate catalyst for human agricultural innovation (Green Revolution proved Boserup right).
+          </div>
+        </div>
+
+        <!-- Pair 5: Step Migration vs Chain Migration -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🪜</span> Step Migration vs. Chain Migration
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Step Migration</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Movement occurring in <strong>gradual hierarchical stages</strong>: rural farm → village → small market town → regional city → national metropolis.</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">Chain Migration</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Movement of people to a specific destination because <strong>family members, relatives, or villagers previously migrated there</strong> (creates ethnic enclaves).</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Step migration is about the <em>spatial trajectory stages</em>; Chain migration is about the <em>social kinship network</em> pulling people to the same neighborhood.
+          </div>
+        </div>
+
+        <!-- Pair 6: Pronatalist vs Antinatalist Policies -->
+        <div class="pair-card">
+          <div class="pair-header">
+            <span>🍼</span> Pronatalist vs. Antinatalist Policies
+          </div>
+          <div class="pair-comparison">
+            <div class="pair-col">
+              <div class="pair-term-title">Pronatalist Policy</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Government policies designed to <strong>boost fertility</strong> in Stage 5 aging nations (e.g., France "Carte Famille Nombreuse", cash bonuses, subsidized childcare).</p>
+            </div>
+            <div class="pair-col">
+              <div class="pair-term-title">Antinatalist Policy</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Government policies designed to <strong>curb fertility</strong> in Stage 2 high-growth nations (e.g., China's 1979 One-Child Policy, free sterilization camps in India).</p>
+            </div>
+          </div>
+          <div class="pair-takeaway">
+            <strong>🎯 Key Exam Distinguisher:</strong> Pronatalist = Pro-birth (combats graying population and labor shortages); Antinatalist = Anti-birth (combats resource depletion and overpopulation).
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Master Vocabulary Dataset (72 terms across Topics 2.1 - 2.12)
+    const MASTER_VOCAB = [
+      {
+        id: 1,
+        term: "Arithmetic Density",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: "Total Population ÷ Total Land Area",
+        def: "The total number of people divided by the total land area. It is the most common and crude density measurement.",
+        tip: "Used to compare conditions across countries, but masks huge regional variations and tells you nothing about land quality or arable carrying capacity.",
+        example: "The United States has an arithmetic density of ~36 people per km², but Egypt has ~103 people per km²."
+      },
+      {
+        id: 2,
+        term: "Physiological Density",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: "Total Population ÷ Arable Land Area",
+        def: "The number of people supported by a unit area of arable (farmable) land.",
+        tip: "A high physiological density means severe pressure on farmable land and greater risk of food insecurity. Compare with arithmetic density to identify uninhabitable land.",
+        example: "Egypt's physiological density exceeds 3,500 people per km² of arable land because 95% of its population lives crammed along the Nile River corridor."
+      },
+      {
+        id: 3,
+        term: "Agricultural Density",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: "Number of Farmers ÷ Arable Land Area",
+        def: "The ratio of the number of farmers to the total amount of arable land.",
+        tip: "Economic indicator! Low agricultural density means high mechanization and commercial farming (MDCs). High agricultural density indicates labor-intensive subsistence agriculture (LDCs).",
+        example: "The US and Canada have very low agricultural densities (1-2 farmers/km²), while Bangladesh and Uganda have very high densities."
+      },
+      {
+        id: 4,
+        term: "Ecumene",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: null,
+        def: "The portion of Earth's surface permanently occupied by human settlement.",
+        tip: "Over historical time, the ecumene has expanded dramatically due to air conditioning, desalinization, irrigation, and terrace farming.",
+        example: "Coastal plains and temperate river valleys form the core ecumene, while Antarctica and the Sahara represent the non-ecumene."
+      },
+      {
+        id: 5,
+        term: "Carrying Capacity",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: null,
+        def: "The maximum population size of a species that an environment can sustain indefinitely, given available food, water, habitat, and technology.",
+        tip: "Carrying capacity is NOT fixed—it can be raised through technological innovation (e.g., Green Revolution, GMOs, fertilizers) or lowered through ecological degradation.",
+        example: "Overgrazing in the Sahel has degraded soil quality, lowering the region's carrying capacity and driving environmental migration."
+      },
+      {
+        id: 6,
+        term: "Overpopulation",
+        category: "densities",
+        catName: "Densities & Capacity",
+        formula: null,
+        def: "A condition where the number of people exceeds the carrying capacity of an area and its available resources.",
+        tip: "Overpopulation is NOT determined by raw population numbers or high arithmetic density; it is a relationship between population size and resource consumption capacity.",
+        example: "A small island country with 50,000 residents can be severely overpopulated if it has zero freshwater and degraded soil."
+      },
+      {
+        id: 7,
+        term: "Crude Birth Rate (CBR)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "(Total Live Births ÷ Total Population) × 1,000",
+        def: "The total number of live births in a year for every 1,000 people alive in the society.",
+        tip: "CBR > 30 is typical of DTM Stage 2 (Sub-Saharan Africa); CBR < 10 is typical of DTM Stage 4/5 (Japan, Germany).",
+        example: "Niger has a CBR over 45 per 1,000, whereas Italy and Japan have CBRs around 7 per 1,000."
+      },
+      {
+        id: 8,
+        term: "Crude Death Rate (CDR)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "(Total Deaths ÷ Total Population) × 1,000",
+        def: "The total number of deaths in a year for every 1,000 people alive in the society.",
+        tip: "Surprise exam trap: Developed countries in Stage 4/5 (e.g., Denmark, Japan) often have HIGHER CDRs than developing nations in Stage 3 because of their large elderly cohorts!",
+        example: "Bulgaria has a CDR of ~15 due to an elderly population, while young Jordan has a CDR of ~4."
+      },
+      {
+        id: 9,
+        term: "Natural Increase Rate (NIR / RNI)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "NIR (%) = (CBR - CDR) ÷ 10",
+        def: "The percentage by which a population grows in a year, computed as Crude Birth Rate minus Crude Death Rate, excluding net migration.",
+        tip: "Always remember: NIR excludes migration! Peak world NIR occurred in the late 1960s at 2.2%; currently it is ~1.0%.",
+        example: "If a country has CBR = 25 and CDR = 5, its NIR is (25 - 5) / 10 = 2.0%."
+      },
+      {
+        id: 10,
+        term: "Total Fertility Rate (TFR)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "Average births per woman (ages 15–49)",
+        def: "The average number of children a woman will have throughout her childbearing years.",
+        tip: "Crucial benchmark: 2.1 is replacement fertility level. TFR below 2.1 leads to eventual population decline without immigration.",
+        example: "South Korea holds the world's lowest TFR at ~0.72, while Somalia and Niger exceed 6.0."
+      },
+      {
+        id: 11,
+        term: "Replacement Level Fertility",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "TFR ≈ 2.1 children per woman",
+        def: "The total fertility rate at which a population exactly replaces itself from one generation to the next without migration.",
+        tip: "Why 2.1 instead of 2.0? The extra 0.1 accounts for infant and child mortality before reaching reproductive age.",
+        example: "The United States (TFR ~1.66) and Western Europe are below replacement level and rely on net in-migration for workforce stability."
+      },
+      {
+        id: 12,
+        term: "Infant Mortality Rate (IMR)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "(Deaths of infants < 1 yr ÷ Live Births) × 1,000",
+        def: "The total number of deaths in a year among infants under one year of age for every 1,000 live births.",
+        tip: "The single best demographic indicator of a country's overall healthcare system, prenatal care, and maternal sanitation.",
+        example: "Singapore and Japan have IMRs below 2 per 1,000, while Afghanistan and Sierra Leone exceed 60."
+      },
+      {
+        id: 13,
+        term: "Maternal Mortality Rate (MMR)",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "Maternal deaths per 100,000 live births",
+        def: "The annual number of female deaths per 100,000 live births from any cause related to or aggravated by pregnancy or its management.",
+        tip: "Note the denominator is 100,000 live births (NOT 1,000!). Tracks gender inequality and access to emergency obstetric care.",
+        example: "Sub-Saharan Africa averages over 500 per 100,000, compared to under 10 in Western Europe."
+      },
+      {
+        id: 14,
+        term: "Doubling Time",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: "Doubling Time (years) = 70 ÷ NIR (%)",
+        def: "The number of years needed to double a population, assuming a constant rate of natural increase.",
+        tip: "Always use the Rule of 70! If NIR is 2%, doubling time is 70 / 2 = 35 years. If NIR is 3.5%, doubling time is 20 years.",
+        example: "A country growing at 1% NIR will take 70 years to double its population."
+      },
+      {
+        id: 15,
+        term: "Life Expectancy",
+        category: "rates",
+        catName: "Rates & Formulas",
+        formula: null,
+        def: "The average number of years a newborn infant can expect to live, assuming current mortality levels remain constant.",
+        tip: "Heavily influenced by Infant Mortality Rate (high infant deaths pull down the statistical average dramatically).",
+        example: "Monaco and Japan have life expectancies exceeding 85 years, while Chad and Central African Republic are around 54 years."
+      },
+      {
+        id: 16,
+        term: "Population Pyramid",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: "Age cohorts (Y-axis) vs Males/Females (X-axis)",
+        def: "A bar graph that displays the distribution of a population by age cohorts (typically 5-year intervals) and gender.",
+        tip: "Shape diagnostics: Wide base = rapid growth (Stage 2); Straight sides/box = stable (Stage 4); Narrow base/inverted = aging/shrinking (Stage 5).",
+        example: "Nigeria has an expansive pyramid; France has a stationary column; Japan has a constrictive urn."
+      },
+      {
+        id: 17,
+        term: "Cohort",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: null,
+        def: "A population group unified by a specific common demographic characteristic, usually a 5-year age bracket (e.g., ages 15–19).",
+        tip: "Watch for historical anomalies in cohorts: indentations reflect wars, pandemics, or famines; bulges reflect baby booms or guest worker inflows.",
+        example: "The US Baby Boom cohort (born 1946–1964) is currently causing a massive bulge in the 60–78 age brackets."
+      },
+      {
+        id: 18,
+        term: "Dependency Ratio",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: "((Dependents <15 + Dependents >64) ÷ Working Age 15–64) × 100",
+        def: "The number of people who are too young or too old to work, compared to the number of people in their productive working years.",
+        tip: "A ratio of 75 means there are 75 dependents for every 100 working-age individuals. Highlights fiscal strain on taxes and services.",
+        example: "Uganda faces extreme youth dependency (50% under 15), while Japan faces extreme elderly dependency."
+      },
+      {
+        id: 19,
+        term: "Sex Ratio",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: "(Number of Males ÷ Number of Females) × 100",
+        def: "The number of males per 100 females in a population.",
+        tip: "Natural biological ratio at birth is ~105 boys to 100 girls. Skewed ratios (>115) indicate cultural son-preference, female feticide, or selective labor migration.",
+        example: "Qatar and UAE have sex ratios over 250 in the 25–45 age groups due to male guest workers in construction; China has skewed youth ratios from the One-Child Policy."
+      },
+      {
+        id: 20,
+        term: "Demographic Momentum",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: null,
+        def: "The tendency for growing populations to continue growing after a fertility decline because of their young age distribution.",
+        tip: "Even if TFR drops to 2.1 overnight, the population will expand for decades as the enormous youth cohort matures into parenthood.",
+        example: "Although China's fertility rate dropped below replacement in the 1990s, its total population continued growing until 2022."
+      },
+      {
+        id: 21,
+        term: "Graying Population",
+        category: "pyramids",
+        catName: "Pyramids & Dependency",
+        formula: null,
+        def: "An increase in the proportion of elderly individuals in a population, caused by falling birth rates and rising life expectancies.",
+        tip: "Leads to 'Gray Power'—shifting political priorities toward pensions, healthcare, and elder services, with labor shortages and economic stagnation.",
+        example: "Japan, Italy, and South Korea are the world's most rapidly graying societies."
+      },
+      {
+        id: 22,
+        term: "Demographic Transition Model (DTM)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "5-Stage Model of CBR, CDR, NIR",
+        def: "A model consisting of 5 stages that illustrates the shift from high birth and death rates to low birth and death rates as a country industrializes.",
+        tip: "No country is currently in Stage 1! All modern nations are in Stages 2 through 5. DTM does NOT account for migration.",
+        example: "Stage 2: Afghanistan, Niger; Stage 3: Mexico, India; Stage 4: USA, China; Stage 5: Japan, Germany."
+      },
+      {
+        id: 23,
+        term: "DTM Stage 1 (Low Growth)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "High CBR + High CDR = Very Low/Zero NIR",
+        def: "Pre-industrial stage where birth and death rates fluctuate at high levels, keeping population virtually static.",
+        tip: "Caused by unpredictable food supply, pestilence, and lack of medicine. Associated with the Agricultural/Neolithic Revolution.",
+        example: "Historical human society prior to 1750. No nation is currently in Stage 1."
+      },
+      {
+        id: 24,
+        term: "DTM Stage 2 (High Growth)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "High CBR + Plunging CDR = Very High NIR",
+        def: "Early industrial transition stage characterized by a rapid drop in death rates while birth rates stay high, causing explosive population growth.",
+        tip: "Europe entered via the Industrial Revolution (1750); Africa, Asia, and Latin America entered via the mid-20th century Medical Revolution.",
+        example: "Mali, South Sudan, Yemen, and Uganda are classic Stage 2 countries."
+      },
+      {
+        id: 25,
+        term: "DTM Stage 3 (Moderate Growth)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Plunging CBR + Low CDR = Slowing NIR",
+        def: "Late industrial transition stage where birth rates drop sharply due to urbanization, female education, and contraception, while death rates continue to decline slowly.",
+        tip: "Key cultural shift: Children become economic liabilities in urban apartments rather than farm labor assets.",
+        example: "India, Mexico, Brazil, Vietnam, and Colombia."
+      },
+      {
+        id: 26,
+        term: "DTM Stage 4 (Low Growth)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Low CBR + Low CDR = Zero/Near Zero NIR",
+        def: "Post-industrial stage characterized by low, roughly equal birth and death rates, achieving Zero Population Growth (ZPG).",
+        tip: "TFR hovers at or slightly below replacement level (2.1). Characterized by high female workforce participation and service economies.",
+        example: "United States, United Kingdom, France, China, Canada, Australia."
+      },
+      {
+        id: 27,
+        term: "DTM Stage 5 (Decline)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Very Low CBR < Low CDR = Negative NIR",
+        def: "Proposed final stage of the DTM where birth rates fall substantially below death rates, resulting in natural population contraction.",
+        tip: "Inverted pyramid (constrictive). Poses major fiscal crises for pension systems and requires pronatalist policies or guest worker programs.",
+        example: "Japan, Italy, Germany, Bulgaria, Ukraine, South Korea."
+      },
+      {
+        id: 28,
+        term: "Zero Population Growth (ZPG)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "CBR = CDR (NIR = 0)",
+        def: "A decline of the total fertility rate to the point where the natural increase rate equals zero.",
+        tip: "Defined by demographer E.G. Notestein; often corresponds to a TFR of approximately 2.1 in developed societies.",
+        example: "Many European nations have reached ZPG naturally in Stage 4."
+      },
+      {
+        id: 29,
+        term: "Epidemiological Transition Model (ETM)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Abdel Omran's 5 Health Stages",
+        def: "A model that identifies distinctive health threats and causes of death at each stage of the Demographic Transition Model.",
+        tip: "Transitions from infectious diseases (cholera, plague) in Stages 1–2 to chronic degenerative lifestyle diseases (heart disease, cancer) in Stages 3–4.",
+        example: "Stage 2: Cholera outbreak in London mapped by John Snow; Stage 4: Cardiovascular bypass surgery."
+      },
+      {
+        id: 30,
+        term: "ETM Stage 1 (Pestilence & Famine)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Infectious & parasitic epidemics",
+        def: "High mortality caused by infectious and parasitic diseases, along with crop failures and malnutrition.",
+        tip: "The Black Death (Bubonic Plague) in 14th-century Europe killed half the population in some regions.",
+        example: "Pre-modern epidemics and regional famine deaths."
+      },
+      {
+        id: 31,
+        term: "ETM Stage 2 (Receding Pandemics)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Sanitation & clean water infrastructure",
+        def: "Pandemics decline rapidly due to improved urban sanitation, clean chlorinated water, better nutrition, and medical discoveries.",
+        tip: "Dr. John Snow's 1854 SoHo London cholera GIS-style map proved waterborne transmission, leading to modern municipal sewage.",
+        example: "Eradication of mass cholera and smallpox epidemics during the Industrial Revolution."
+      },
+      {
+        id: 32,
+        term: "ETM Stage 3 (Degenerative Diseases)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Chronic lifestyle illnesses",
+        def: "A drop in deaths from infectious diseases and a rise in chronic disorders associated with aging.",
+        tip: "Main causes of mortality become cardiovascular disease, cancer, and chronic respiratory illness.",
+        example: "Heart disease and lung cancer prevalent in middle-income and emerging economies."
+      },
+      {
+        id: 33,
+        term: "ETM Stage 4 (Delayed Degenerative)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Medical interventions extend old age",
+        def: "Major degenerative causes of death linger, but life expectancy is extended through advanced surgeries, drugs, and preventative care.",
+        tip: "Chemotherapy, stents, pacemakers, and dietary adjustments delay cardiovascular mortality until very advanced ages.",
+        example: "Modern healthcare systems in Western Europe, the US, and Japan."
+      },
+      {
+        id: 34,
+        term: "ETM Stage 5 (Reemergence of Pathogens)",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Evolution, Poverty, Globalization",
+        def: "A hypothetical stage marked by the resurgence of infectious diseases due to antibiotic resistance, poverty pockets, and rapid global travel.",
+        tip: "Three driving mechanisms: Evolution (superbugs/MRSA), Poverty (tuberculosis in slums), Connectivity (air travel spreading SARS/COVID-19).",
+        example: "Multidrug-resistant tuberculosis (MDR-TB) and COVID-19 pandemic spread."
+      },
+      {
+        id: 35,
+        term: "Thomas Malthus",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "Exponential Pop vs Arithmetic Food",
+        def: "English cleric who published 'An Essay on the Principle of Population' (1798), arguing population grows faster than food production.",
+        tip: "Malthus predicted catastrophic famine ('Malthusian Catastrophe') unless checked by 'positive checks' (war, famine, plague) or 'preventive checks' (moral restraint).",
+        example: "Malthus failed to foresee the Agricultural & Green Revolutions that multiplied crop yields exponentially."
+      },
+      {
+        id: 36,
+        term: "Neo-Malthusians",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: null,
+        def: "Modern scholars who adapt Malthus's warnings, arguing population growth will deplete non-food resources like clean water, fossil fuels, and clean air.",
+        tip: "Notable author: Paul Ehrlich ('The Population Bomb', 1968). They emphasize environmental degradation and global resource wars.",
+        example: "Conflicts over freshwater in the Middle East and Nile Basin (GERD dam tensions)."
+      },
+      {
+        id: 37,
+        term: "Ester Boserup",
+        category: "models",
+        catName: "DTM, ETM & Theorists",
+        formula: "'Necessity is the mother of invention'",
+        def: "Danish agricultural economist who posited that population growth stimulates technological innovation and agricultural intensification.",
+        tip: "Direct anti-Malthusian theory! As population density rises, farmers adopt new tools, multicropping, irrigation, and fertilizers to increase yields.",
+        example: "The Green Revolution (Norman Borlaug) developing high-yield dwarf wheat and rice saved an estimated 1 billion people from starvation."
+      },
+      {
+        id: 38,
+        term: "Pronatalist Policy",
+        category: "policies",
+        catName: "Policies & Women",
+        formula: "Pro-birth government incentives",
+        def: "A government policy designed to encourage citizens to have more children and increase the national birth rate.",
+        tip: "Adopted by Stage 5 countries facing labor shortages and aging populations. Tactics: baby bonuses, subsidized childcare, paid parental leave, tax credits.",
+        example: "France's 'Code de la Famille' (generous stipends and subsidized daycares); Russia's Maternity Capital program."
+      },
+      {
+        id: 39,
+        term: "Antinatalist Policy",
+        category: "policies",
+        catName: "Policies & Women",
+        formula: "Anti-birth government restrictions",
+        def: "A government policy designed to discourage citizens from having children to curb rapid population growth.",
+        tip: "Adopted by Stage 2 countries with high growth rates. Tactics: mandatory limits, family planning education, subsidized contraception, sterilizations.",
+        example: "China's One-Child Policy (1979–2015), which used steep fines and forced abortions; India's 1970s sterilization camps."
+      },
+      {
+        id: 40,
+        term: "One-Child Policy",
+        category: "policies",
+        catName: "Policies & Women",
+        formula: "China (1979–2015)",
+        def: "China's national antinatalist program restricting urban couples to a single child to prevent economic disaster.",
+        tip: "Unintended consequences: massive gender imbalance (sex ratio ~118 boys to 100 girls), 4-2-1 elderly burden, and a shrinking workforce.",
+        example: "China transitioned to a Two-Child Policy in 2016 and a Three-Child Policy in 2021."
+      },
+      {
+        id: 41,
+        term: "Female Empowerment",
+        category: "policies",
+        catName: "Policies & Women",
+        formula: null,
+        def: "The advancement of women's social, economic, educational, and political rights and access.",
+        tip: "The single most effective factor in reducing Total Fertility Rate globally! Educated women enter the formal workforce, delay marriage, and use family planning.",
+        example: "In Bangladesh, microfinance loans (Grameen Bank) and female schooling cut TFR from 6.3 in 1975 to ~2.0 today."
+      },
+      {
+        id: 42,
+        term: "Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "A permanent relocation of individuals from one geographic location to another.",
+        tip: "Distinguish from circulation (short-term repetitive movements like daily commuting) and transhumance (seasonal pastoralist movement).",
+        example: "Moving from Mexico to Dallas permanently for employment is migration."
+      },
+      {
+        id: 43,
+        term: "Emigration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Migration FROM a place (Out-migration)",
+        def: "Movement of individuals out of their native country or home region.",
+        tip: "Mnemonic: Emigration = Exit (leaving your origin).",
+        example: "Over 7 million Venezuelans have emigrated from Venezuela since 2015 due to economic collapse."
+      },
+      {
+        id: 44,
+        term: "Immigration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Migration TO a place (In-migration)",
+        def: "Movement of individuals into a new country or region to settle permanently.",
+        tip: "Mnemonic: Immigration = In (entering your destination).",
+        example: "Over 1 million immigrants settle legally in the United States each year."
+      },
+      {
+        id: 45,
+        term: "Net Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Immigrants - Emigrants (per 1,000)",
+        def: "The difference between the number of immigrants and the number of emigrants in a given area.",
+        tip: "If Immigrants > Emigrants = Net in-migration (positive). If Emigrants > Immigrants = Net out-migration (negative).",
+        example: "The United States, Canada, and Germany experience high positive net migration."
+      },
+      {
+        id: 46,
+        term: "Push Factor",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Factors that induce leaving",
+        def: "Adverse conditions that encourage or force people to leave their current homeland.",
+        tip: "Categories: Economic (unemployment), Political (war, persecution), Environmental (drought, flooding), Social (religious intolerance).",
+        example: "Civil war in Syria, lack of jobs in rural Guatemala, Hurricane Maria in Puerto Rico."
+      },
+      {
+        id: 47,
+        term: "Pull Factor",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Factors that attract arrival",
+        def: "Attractive conditions that draw people to settle in a specific new destination.",
+        tip: "Economic opportunity is historically the strongest and most pervasive pull factor for long-distance voluntary migrants.",
+        example: "Higher wages in the US tech sector, political freedom, quality universities, temperate climate (Sun Belt)."
+      },
+      {
+        id: 48,
+        term: "Lee's Migration Model",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Origin Push → Obstacles → Destination Pull",
+        def: "Everett Lee's conceptual model showing how push factors at origin, pull factors at destination, and intervening obstacles dictate migration decisions.",
+        tip: "Highlights that personal perceptions and intervening barriers (distance, physical features, borders) mediate the push-pull equation.",
+        example: "A migrant wants to leave Caracas (pushed) for Miami (pulled) but must navigate dangerous Darién Gap jungles and visa denials."
+      },
+      {
+        id: 49,
+        term: "Ravenstein's Laws of Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "E.G. Ravenstein (1885)",
+        def: "A set of empirical demographic principles governing migratory patterns and behaviors.",
+        tip: "Core laws: 1) Most migrants move short distances; 2) Long-distance migrants head to major urban centers; 3) Migration occurs in steps; 4) Rural folks migrate more than city dwellers; 5) Young single adults migrate more than families; 6) Economic reasons dominate.",
+        example: "Young adults moving from small Kansas farming towns to Chicago or Dallas fits Ravenstein's laws."
+      },
+      {
+        id: 50,
+        term: "Distance Decay",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "The principle that interaction and spatial movement between two places decreases as the physical distance between them increases.",
+        tip: "Directly explains Ravenstein's law that most migrants move short distances—closer destinations have lower costs, fewer risks, and familiar info.",
+        example: "More Mexicans migrate to Texas and California than to Maine or North Dakota."
+      },
+      {
+        id: 51,
+        term: "Gravity Model",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "(Pop A × Pop B) ÷ (Distance)²",
+        def: "A mathematical model stating that spatial interaction (migration, trade) between two cities is directly related to their population sizes and inversely related to the square of their distance.",
+        tip: "Predicts that huge metropolitan hubs (New York, London, Tokyo) exert an immense gravitational pull on migrants despite distance.",
+        example: "A migrant in upstate New York is far more likely to move to New York City than to nearby small towns like Utica."
+      },
+      {
+        id: 52,
+        term: "Intervening Obstacle",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "An environmental, physical, financial, or political barrier that hinders or halts migration.",
+        tip: "Historically, physical obstacles (oceans, mountains, deserts) dominated. Today, political obstacles (visas, passports, border enforcement, detention) are primary.",
+        example: "The Mediterranean Sea crossings, the Sonoran Desert, or strict immigration quota laws."
+      },
+      {
+        id: 53,
+        term: "Intervening Opportunity",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "An environmental or cultural feature of the landscape that helps or attracts a migrant, convincing them to settle before reaching their original planned destination.",
+        tip: "Distinguish from obstacle! An opportunity is beneficial—a job offer along the way that makes continuing further unnecessary.",
+        example: "A migrant heading from West Virginia to New York City stops in Philadelphia because they land a great manufacturing job there."
+      },
+      {
+        id: 54,
+        term: "Voluntary Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "Permanent movement undertaken by personal choice, typically motivated by economic advancement or lifestyle improvement.",
+        tip: "Even if economic desperation exists, demographers classify it as voluntary if the migrant has personal discretion over destination and timing.",
+        example: "A software engineer moving from India to Silicon Valley on an H-1B visa."
+      },
+      {
+        id: 55,
+        term: "Forced Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "Permanent movement compelled by cultural, political, or catastrophic environmental factors.",
+        tip: "Migrants have zero viable choice; staying implies death, severe violence, enslavement, or persecution.",
+        example: "The Transatlantic Slave Trade (12+ million Africans kidnapped); Trail of Tears; Rohingya fleeing genocide in Myanmar."
+      },
+      {
+        id: 56,
+        term: "Refugee",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Crossed international border",
+        def: "Someone who has been forced to flee their country because of persecution, war, or violence, and has crossed an international border.",
+        tip: "Legal status defined by the 1951 UN Refugee Convention. They cannot be returned against their will to a dangerous country (non-refoulement).",
+        example: "Over 6 million Syrians fleeing civil war into Turkey, Lebanon, Jordan, and Europe."
+      },
+      {
+        id: 57,
+        term: "Internally Displaced Person (IDP)",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Remained within homeland",
+        def: "An individual forced to flee home for the same reasons as a refugee, but who remains within their native country's borders.",
+        tip: "No international legal protections under the UN Refugee Convention because their own government retains sovereign jurisdiction.",
+        example: "Millions of Ukrainians displaced from frontline eastern combat zones to western cities like Lviv."
+      },
+      {
+        id: 58,
+        term: "Asylum Seeker",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Awaiting legal recognition",
+        def: "Someone who has migrated to another country in hope of being recognized and granted official status as a refugee.",
+        tip: "If their claim is legally approved, they gain refugee status; if rejected, they can be deported.",
+        example: "Central American migrants presenting themselves at the US southern port of entry to request asylum hearings."
+      },
+      {
+        id: 59,
+        term: "Transnational Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "A process of movement in which international migrants maintain active social, economic, cultural, and political ties spanning multiple countries.",
+        tip: "Facilitated by modern jet travel, internet, smartphones, and global banking. Migrants hold dual citizenship and invest in hometown projects.",
+        example: "Mexican immigrants living in Chicago who own businesses in Michoacán and vote in both US and Mexican elections."
+      },
+      {
+        id: 60,
+        term: "Transhumance",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Seasonal highland/lowland movement",
+        def: "The seasonal periodic movement of pastoral herders and livestock between mountains in summer and lowland valleys in winter.",
+        tip: "Not permanent migration! This is cyclical pastoral nomadic circulation.",
+        example: "Shepherds in the Swiss Alps or pastoralists in the Himalayas moving yaks with seasonal pastures."
+      },
+      {
+        id: 61,
+        term: "Internal Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: null,
+        def: "Permanent movement within the borders of the same country.",
+        tip: "Much more common than international migration due to lack of visa requirements, shared language, and lower moving costs.",
+        example: "Moving from Ohio to Texas, or from rural Henan to Shanghai."
+      },
+      {
+        id: 62,
+        term: "Interregional Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Between distinct regions",
+        def: "Permanent movement from one geographic region of a country to another region of the same country.",
+        tip: "Major US examples: Historical westward expansion, Great Migration (rural South to northern cities 1916–1970), and modern Sun Belt migration.",
+        example: "Moving from the Rust Belt (Detroit) to the Sun Belt (Phoenix) for warm climate and aerospace jobs."
+      },
+      {
+        id: 63,
+        term: "Intraregional Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Within the same region",
+        def: "Permanent movement within the same geographic region of a country.",
+        tip: "Developing world: predominantly rural-to-urban. Developed world: predominantly urban-to-suburban (suburbanization) or to rural (counterurbanization).",
+        example: "A family moving from downtown Atlanta to suburban Alpharetta for better schools and larger yards."
+      },
+      {
+        id: 64,
+        term: "Chain Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Family / social kinship network",
+        def: "Migration of people to a specific location because relatives or members of the same nationality previously migrated there.",
+        tip: "Directly creates ethnic enclaves and distinctive neighborhood cultural landscapes (Little Italy, Koreatown).",
+        example: "Pioneering migrants from a single village in Jalisco, Mexico sponsor brothers, cousins, and neighbors to settle in the same Chicago neighborhood."
+      },
+      {
+        id: 65,
+        term: "Step Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Gradual hierarchical increments",
+        def: "Migration to a distant destination that occurs in stages or incremental steps.",
+        tip: "Follows urban hierarchy: farm → agricultural hamlet → regional town → metropolitan capital.",
+        example: "A peasant farmer moves first to a nearby market village, saves money, moves to a provincial capital, and eventually moves to São Paulo."
+      },
+      {
+        id: 66,
+        term: "Guest Worker",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Temporary legal labor contract",
+        def: "A legal immigrant who is permitted to work temporarily in a host country, typically in low-wage agriculture, construction, or domestic service.",
+        tip: "Historically expected to return home; frequently establish permanent communities. Crucial source of remittances.",
+        example: "Turkish 'Gastarbeiter' in post-WWII West Germany; South Asian (Indian, Nepali, Filipino) construction workers in Dubai and Qatar."
+      },
+      {
+        id: 67,
+        term: "Remittance",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Financial transfers to homeland",
+        def: "Money transferred by foreign migrant workers back to family, relatives, and friends in their country of origin.",
+        tip: "Exceeds official foreign development aid for many countries! Fuels local origin-country economies (housing, schooling, healthcare).",
+        example: "Remittances account for over 20% of GDP in El Salvador, Honduras, and Nepal."
+      },
+      {
+        id: 68,
+        term: "Brain Drain",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Loss of educated professionals",
+        def: "Large-scale emigration of talented, highly educated, and skilled individuals (doctors, engineers, scientists) from developing to developed countries.",
+        tip: "Origin countries suffer depleted human capital and shortages of medical doctors and engineers, while host countries gain immediate skilled labor.",
+        example: "Ghanaian physicians emigrating to the UK NHS; Indian software engineers moving to Silicon Valley."
+      },
+      {
+        id: 69,
+        term: "Counterurbanization",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Urban to rural lifestyle shift",
+        def: "Net migration from urban and suburban areas to rural communities in highly developed nations.",
+        tip: "Enabled by remote telecommuting, high-speed broadband, interstate highways, and search for low stress and natural amenities.",
+        example: "Families leaving San Francisco to live on ranches in Idaho or Montana during and after 2020."
+      },
+      {
+        id: 70,
+        term: "Xenophobia",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Prejudice against foreigners",
+        def: "An unreasonable fear, hatred, or prejudice against foreigners, immigrants, or people from other cultures.",
+        tip: "Often surges during economic recessions when immigrants are scapegoated for wage suppression, crime, or cultural erosion.",
+        example: "Anti-immigrant political party rhetoric in European nations experiencing large inflows of asylum seekers."
+      },
+      {
+        id: 71,
+        term: "Ethnic Enclave",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "Concentrated cultural neighborhood",
+        def: "A neighborhood, district, or area with a high concentration of an ethnic minority group and distinct cultural landscape.",
+        tip: "Formed via chain migration; provides new arrivals with familiar language, ethnic food, banking, employment, and social safety nets.",
+        example: "Chinatown in San Francisco; Little Havana in Miami; Little India in Edison, New Jersey."
+      },
+      {
+        id: 72,
+        term: "Sun Belt Migration",
+        category: "migration",
+        catName: "Migration & Laws",
+        formula: "US Rust Belt → Sun Belt shift",
+        def: "A major US interregional migration shift since 1970 from northern industrial states (Rust Belt) to the South and Southwest.",
+        tip: "Key pull factors: Air conditioning, defense and aerospace industry jobs, cheaper non-union labor, lower taxes, and warm climate.",
+        example: "Massive population growth in Texas, Florida, Arizona, Georgia, and North Carolina, with political shifts in congressional reapportionment."
+      }
+    ];
+
+    // Quiz Questions Data (20 active recall test items)
+    const QUIZ_QUESTIONS = [
+      {
+        q: "Egypt has an arithmetic density of ~103 people/km², but its physiological density exceeds 3,500 people/km² of arable land. What does this dramatic disparity reveal?",
+        options: [
+          "Egypt's agricultural sector is heavily mechanized with very few farmers.",
+          "Almost the entire population is crammed into a tiny fraction of arable land along the Nile, creating severe food-supply pressure.",
+          "Egypt has exceeded its total ecumene and is undergoing rapid counterurbanization.",
+          "Egypt is in Stage 5 of the Demographic Transition Model with an inverted pyramid."
+        ],
+        answer: 1,
+        exp: "Physiological density measures population per unit of arable (farmable) land. When physiological density is vastly higher than arithmetic density, it means farmable land is very scarce and human settlement is extremely concentrated on it (like Egypt's Nile Valley)."
+      },
+      {
+        q: "If Country X has a Crude Birth Rate (CBR) of 32 per 1,000 and a Crude Death Rate (CDR) of 8 per 1,000, what is its Natural Increase Rate (NIR) and approximate doubling time?",
+        options: [
+          "NIR = 2.4%; Doubling Time = ~29 years",
+          "NIR = 4.0%; Doubling Time = ~17.5 years",
+          "NIR = 24%; Doubling Time = ~3 years",
+          "NIR = 0.24%; Doubling Time = ~290 years"
+        ],
+        answer: 0,
+        exp: "NIR (%) = (CBR - CDR) / 10 = (32 - 8) / 10 = 24 / 10 = 2.4%. Using the Rule of 70: Doubling Time = 70 / 2.4 ≈ 29.17 years."
+      },
+      {
+        q: "Which demographic event triggered Western European nations to transition from Stage 1 to Stage 2 of the Demographic Transition Model around 1750?",
+        options: [
+          "The Green Revolution introducing high-yield dwarf grains.",
+          "The Medical Revolution distributing antibiotics to developing colonies.",
+          "The Industrial Revolution generating unprecedented wealth, factory sanitation, and food transport.",
+          "The implementation of strict national antinatalist family caps."
+        ],
+        answer: 2,
+        exp: "Western Europe and North America entered Stage 2 in the late 18th century as a result of the Industrial Revolution. In contrast, developing nations in Africa, Asia, and Latin America entered Stage 2 in the mid-20th century due to the Medical Revolution."
+      },
+      {
+        q: "A country has a population pyramid with a very narrow base (ages 0–14) and a heavy bulge in the upper cohorts (ages 60+). Which challenge will this country most acutely confront?",
+        options: [
+          "Overcrowded pediatric clinics and an urgent demand for new elementary schools.",
+          "Severe labor shortages, soaring pension and geriatric healthcare costs, and a high elderly dependency ratio.",
+          "Hyper-rapid urban migration and high rates of female maternal mortality.",
+          "A massive baby echo causing an immediate population explosion."
+        ],
+        answer: 1,
+        exp: "A constrictive pyramid (narrow base, wide top) represents Stage 4/5 aging societies (e.g., Japan, Italy). The shrinking working-age group must support an expanding retired cohort, causing fiscal strain on pensions and geriatric care."
+      },
+      {
+        q: "What is the critical distinction between an Internally Displaced Person (IDP) and a Refugee under international humanitarian law?",
+        options: [
+          "Refugees flee for economic opportunities, whereas IDPs flee for religious freedom.",
+          "IDPs have crossed an international border, whereas refugees remain within their home province.",
+          "Refugees have crossed an international recognized border and receive legal protection under the 1951 UN Convention, whereas IDPs remain within their home country.",
+          "Asylum seekers become IDPs once their legal appeals are rejected."
+        ],
+        answer: 2,
+        exp: "Both flee armed conflict and persecution, but refugees cross an international border and receive legal protections under the UN Refugee Convention. IDPs remain inside their country and have no international legal status."
+      },
+      {
+        q: "A family leaves a war-torn village in eastern Syria intending to reach Germany. Upon arriving in Istanbul, Turkey, the father secures well-paying employment in a textile plant, and the family decides to settle permanently in Istanbul. In migration theory, what does Istanbul represent?",
+        options: [
+          "An Intervening Obstacle",
+          "An Intervening Opportunity",
+          "A Transhumance Corridor",
+          "An Antinatalist Buffer"
+        ],
+        answer: 1,
+        exp: "An intervening opportunity is a positive environmental, economic, or cultural factor encountered en route that entices the migrant to settle willingly before reaching the original intended destination."
+      },
+      {
+        q: "Which agricultural economist famously countered Thomas Malthus's catastrophic predictions by asserting that population growth stimulates technological innovation and agricultural intensification ('necessity is the mother of invention')?",
+        options: [
+          "Abdel Omran",
+          "Ernst Georg Ravenstein",
+          "Ester Boserup",
+          "Everett Lee"
+        ],
+        answer: 2,
+        exp: "Ester Boserup challenged Malthusian pessimism by showing that rising population density compels farmers to adopt new technology, multicropping, irrigation, and fertilizers to intensify land productivity."
+      },
+      {
+        q: "Which policy is a classic example of a Pronatalist strategy adopted by a government?",
+        options: [
+          "Providing tax credits, heavily subsidized universal daycare, and extended paid maternal leave for families having three or more children.",
+          "Imposing steep financial penalties on urban couples having more than one child.",
+          "Running state-sponsored sterilization camps in rural agrarian districts.",
+          "Establishing strict national visa quotas to curtail immigration."
+        ],
+        answer: 0,
+        exp: "Pronatalist policies encourage births through financial incentives, childcare subsidies, and parental leave (e.g., France's 'Code de la Famille' and Russia's Maternity Capital)."
+      },
+      {
+        q: "According to E.G. Ravenstein's historical Laws of Migration, which demographic cohort is most likely to undertake long-distance international migration?",
+        options: [
+          "Multi-generational families with elderly grandparents.",
+          "Young single adult males seeking economic employment.",
+          "Retired couples seeking warm coastal climates.",
+          "Rural mothers accompanied by several preschool children."
+        ],
+        answer: 1,
+        exp: "Ravenstein identified that long-distance migrants are historically predominantly young single adults seeking economic jobs, who face fewer familial commitments holding them back."
+      },
+      {
+        q: "Money transferred by foreign migrant workers back to their families in their origin country is called:",
+        options: [
+          "A Tariffs",
+          "Brain Drain",
+          "Remittances",
+          "Capital Gains"
+        ],
+        answer: 2,
+        exp: "Remittances are financial transfers sent home by international migrants. They represent an enormous share of GDP in countries like El Salvador, Haiti, and Nepal, often exceeding official foreign aid."
+      },
+      {
+        q: "What does the Epidemiological Transition Model predict as a society advances from Stage 2 into Stage 3 and 4?",
+        options: [
+          "Infectious diseases like cholera and tuberculosis will surge rapidly.",
+          "Deaths from infectious and waterborne diseases drop sharply, while chronic degenerative diseases like heart disease and cancer rise.",
+          "Maternal and infant mortality rates will increase due to urban overcrowding.",
+          "Life expectancy will drop as famines become more persistent."
+        ],
+        answer: 1,
+        exp: "Omran's ETM shows a shift from infectious, pandemic diseases (Stage 1 & 2) to chronic degenerative diseases of aging and lifestyle (Stage 3 & 4), such as cardiovascular disease and cancer."
+      },
+      {
+        q: "The movement of pastoral herders and their livestock between summer mountain pastures and winter lowland valleys is known as:",
+        options: [
+          "Step Migration",
+          "Chain Migration",
+          "Transhumance",
+          "Counterurbanization"
+        ],
+        answer: 2,
+        exp: "Transhumance is seasonal periodic circulation of livestock and pastoralists between different elevations (highlands in summer, lowlands in winter)."
+      },
+      {
+        q: "A high Agricultural Density (large number of farmers per unit of arable land) typically indicates that a country:",
+        options: [
+          "Has an advanced, highly mechanized commercial farming system.",
+          "Relies heavily on labor-intensive subsistence agriculture with low levels of technological mechanization.",
+          "Is in Stage 4 of the Demographic Transition Model with zero population growth.",
+          "Has an extremely high elderly dependency ratio."
+        ],
+        answer: 1,
+        exp: "Agricultural density measures farmers ÷ arable land. When this number is high, many human laborers are needed to farm the land by hand, indicating subsistence agriculture in less-developed countries."
+      },
+      {
+        q: "The large-scale emigration of doctors, software engineers, and university professors from developing nations to affluent Western countries is termed:",
+        options: [
+          "Chain Migration",
+          "Brain Drain",
+          "Transnationalism",
+          "Ethnic Enclave"
+        ],
+        answer: 1,
+        exp: "Brain drain is the loss of highly skilled, educated human capital from developing nations to developed economies offering higher salaries and modern research facilities."
+      },
+      {
+        q: "What demographic phenomenon explains why a country's population continues to grow for several decades even after its Total Fertility Rate drops to replacement level (2.1)?",
+        options: [
+          "Epidemiological Reemergence",
+          "Demographic Momentum",
+          "Counterurbanization",
+          "Malthusian Retraction"
+        ],
+        answer: 1,
+        exp: "Demographic momentum occurs because a large historical base of young people (from previously high fertility) enters their childbearing years, generating absolute population growth even with low individual fertility."
+      },
+      {
+        q: "Which pair of factors best represents an economic push factor and an environmental pull factor?",
+        options: [
+          "Push: High tech wages; Pull: Civil war in homeland",
+          "Push: Factory plant closure and severe local unemployment; Pull: Warm climate and scenic coastal amenities",
+          "Push: Freedom of speech; Pull: Hurricane destroying local infrastructure",
+          "Push: Excellent university system; Pull: Severe drought destroying crops"
+        ],
+        answer: 1,
+        exp: "Factory closures and unemployment are economic conditions driving people away (push); warm climate and natural amenities attract people to a new region (pull)."
+      },
+      {
+        q: "Why did Thomas Malthus argue that human population would inevitably collapse into catastrophic famine?",
+        options: [
+          "He believed agricultural land would convert entirely into urban housing developments.",
+          "He calculated that population grows exponentially (geometrically) while food production increases only arithmetically.",
+          "He predicted climate change would eradicate all arable soil by 1900.",
+          "He argued that women in industrial cities would refuse to bear children."
+        ],
+        answer: 1,
+        exp: "Malthus stated population grows exponentially (1, 2, 4, 8, 16...) while food output expands arithmetically (1, 2, 3, 4, 5...), leading inevitably to a crisis point."
+      },
+      {
+        q: "A migrant moves from a rural farming village to a nearby market town, then two years later moves to a regional city, and finally settles in the national capital. This multi-stage journey illustrates:",
+        options: [
+          "Transhumance",
+          "Step Migration",
+          "Chain Migration",
+          "Forced Relocation"
+        ],
+        answer: 1,
+        exp: "Step migration is movement that occurs in a series of shorter, incremental stages up the urban settlement hierarchy."
+      },
+      {
+        q: "Which benchmark fertility rate is necessary for a developed society's population to maintain generational replacement without relying on immigration?",
+        options: [
+          "1.5 children per woman",
+          "2.1 children per woman",
+          "3.0 children per woman",
+          "0.8 children per woman"
+        ],
+        answer: 1,
+        exp: "Replacement level fertility is approximately 2.1 children per woman in developed nations (the extra 0.1 accounts for childhood mortality)."
+      },
+      {
+        q: "What spatial model predicts that migration and social interaction between two cities is directly proportional to the product of their population sizes and inversely proportional to the square of their distance?",
+        options: [
+          "Demographic Transition Model",
+          "Gravity Model",
+          "Epidemiological Model",
+          "Boserup Agricultural Model"
+        ],
+        answer: 1,
+        exp: "The Gravity Model (adapted from Newton's law of universal gravitation) predicts that larger cities pull more migrants, but increasing distance weakens that pull."
+      }
+    ];
+
+    // State Variables
+    let currentCategory = 'all';
+    let currentFCIndex = 0;
+    let flashcardList = [...MASTER_VOCAB];
+    let cardMastered = new Set();
+    let cardNeedsWork = new Set();
+
+    let quizIndex = 0;
+    let quizScore = 0;
+    let quizAnswered = false;
+
+    // Initialize Page
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGlossary();
+      initFlashcards();
+      startQuiz();
+    });
+
+    // Tab Switching
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.study-view').forEach(v => v.classList.remove('active'));
+
+      const targetBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+      if (targetBtn) targetBtn.classList.add('active');
+
+      const targetView = document.getElementById(`view-${tabId}`);
+      if (targetView) targetView.classList.add('active');
+      window.scrollTo({ top: 400, behavior: 'smooth' });
+    }
+
+    // GLOSSARY FUNCTIONS
+    function renderGlossary() {
+      const grid = document.getElementById('vocab-grid');
+      const searchVal = (document.getElementById('glossary-search').value || '').toLowerCase().trim();
+
+      const filtered = MASTER_VOCAB.filter(item => {
+        const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+        const matchesSearch = !searchVal || 
+          item.term.toLowerCase().includes(searchVal) ||
+          item.def.toLowerCase().includes(searchVal) ||
+          (item.formula && item.formula.toLowerCase().includes(searchVal)) ||
+          item.tip.toLowerCase().includes(searchVal) ||
+          item.example.toLowerCase().includes(searchVal);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: #ffffff; border-radius: 1rem; border: 1px solid var(--border);">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
+            <h3 style="color: var(--primary-dark); margin-bottom: 0.5rem;">No matching vocabulary terms found</h3>
+            <p style="color: var(--text-muted);">Try adjusting your search query or reset the category filter.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        let catClass = 'cat-rates';
+        if (item.category === 'densities') catClass = 'cat-densities';
+        else if (item.category === 'pyramids') catClass = 'cat-pyramids';
+        else if (item.category === 'models') catClass = 'cat-models';
+        else if (item.category === 'policies') catClass = 'cat-policies';
+        else if (item.category === 'migration') catClass = 'cat-migration';
+
+        return `
+          <div class="vocab-card" id="term-${item.id}">
+            <div class="vocab-header">
+              <span class="vocab-term">${item.term}</span>
+              <span class="badge-cat ${catClass}">${item.catName}</span>
+            </div>
+            ${item.formula ? `<div class="vocab-formula">📐 ${item.formula}</div>` : ''}
+            <div class="vocab-def">${item.def}</div>
+            <div class="vocab-context">
+              <strong>🎯 AP Exam Tip:</strong> ${item.tip}
+            </div>
+            <div class="vocab-example">
+              <strong>🌍 Case Example:</strong> ${item.example}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      renderGlossary();
+    }
+
+    function filterGlossary() {
+      renderGlossary();
+    }
+
+    // FLASHCARD FUNCTIONS
+    function initFlashcards() {
+      flashcardList = [...MASTER_VOCAB];
+      currentFCIndex = 0;
+      updateFlashcardView();
+    }
+
+    function updateFlashcardView() {
+      const card = flashcardList[currentFCIndex];
+      const fcElem = document.getElementById('active-card');
+      fcElem.classList.remove('flipped');
+
+      document.getElementById('fc-counter').innerText = `Card ${currentFCIndex + 1} of ${flashcardList.length}`;
+      document.getElementById('fc-mastered-count').innerText = `Mastered: ${cardMastered.size} | Needs Work: ${cardNeedsWork.size}`;
+      
+      const pct = ((currentFCIndex + 1) / flashcardList.length) * 100;
+      document.getElementById('fc-progress').style.width = `${pct}%`;
+
+      document.getElementById('fc-term').innerText = card.term;
+      document.getElementById('fc-back-term').innerText = card.term;
+      document.getElementById('fc-def').innerText = card.def;
+
+      const badge = document.getElementById('card-cat-badge');
+      badge.innerText = card.catName;
+      badge.className = `badge-cat cat-${card.category}`;
+
+      const formulaElem = document.getElementById('fc-formula');
+      if (card.formula) {
+        formulaElem.style.display = 'block';
+        formulaElem.innerText = `📐 Formula: ${card.formula}`;
+      } else {
+        formulaElem.style.display = 'none';
+      }
+
+      document.getElementById('fc-tip').innerHTML = `<strong>🎯 AP Exam Context:</strong> ${card.tip}`;
+      document.getElementById('fc-example').innerHTML = `<strong>🌍 Real Example:</strong> ${card.example}`;
+    }
+
+    function flipCard() {
+      const card = document.getElementById('active-card');
+      card.classList.toggle('flipped');
+    }
+
+    function nextCard() {
+      if (currentFCIndex < flashcardList.length - 1) {
+        currentFCIndex++;
+        updateFlashcardView();
+      } else {
+        alert("You've reached the last flashcard! Great job reviewing.");
+      }
+    }
+
+    function prevCard() {
+      if (currentFCIndex > 0) {
+        currentFCIndex--;
+        updateFlashcardView();
+      }
+    }
+
+    function markCard(mastered) {
+      const termId = flashcardList[currentFCIndex].id;
+      if (mastered) {
+        cardMastered.add(termId);
+        cardNeedsWork.delete(termId);
+      } else {
+        cardNeedsWork.add(termId);
+        cardMastered.delete(termId);
+      }
+      nextCard();
+    }
+
+    function shuffleCards() {
+      for (let i = flashcardList.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [flashcardList[i], flashcardList[j]] = [flashcardList[j], flashcardList[i]];
+      }
+      currentFCIndex = 0;
+      updateFlashcardView();
+    }
+
+    // QUIZ SIMULATOR FUNCTIONS
+    function startQuiz() {
+      quizIndex = 0;
+      quizScore = 0;
+      document.getElementById('quiz-active-area').style.display = 'block';
+      document.getElementById('quiz-completed-area').style.display = 'none';
+      renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+      quizAnswered = false;
+      const q = QUIZ_QUESTIONS[quizIndex];
+      document.getElementById('quiz-prompt-text').innerText = `${quizIndex + 1}. ${q.q}`;
+      document.getElementById('quiz-progress-text').innerText = `Q ${quizIndex + 1} of ${QUIZ_QUESTIONS.length}`;
+      document.getElementById('quiz-score-badge').innerText = `Score: ${quizScore} / ${quizIndex}`;
+      document.getElementById('btn-next-quiz').style.display = 'none';
+
+      const fb = document.getElementById('quiz-feedback-box');
+      fb.style.display = 'none';
+      fb.className = 'quiz-feedback';
+
+      const optContainer = document.getElementById('quiz-options-list');
+      const letters = ['A', 'B', 'C', 'D'];
+      optContainer.innerHTML = q.options.map((opt, i) => `
+        <button class="quiz-opt-btn" onclick="selectQuizAnswer(${i}, this)">
+          <strong style="color: var(--primary); min-width: 1.5rem;">${letters[i]}.</strong>
+          <span>${opt}</span>
+        </button>
+      `).join('');
+    }
+
+    function selectQuizAnswer(selectedIndex, btn) {
+      if (quizAnswered) return;
+      quizAnswered = true;
+
+      const q = QUIZ_QUESTIONS[quizIndex];
+      const allBtns = document.querySelectorAll('.quiz-opt-btn');
+      const fb = document.getElementById('quiz-feedback-box');
+
+      allBtns.forEach((b, i) => {
+        b.disabled = true;
+        if (i === q.answer) {
+          b.classList.add('correct');
+        } else if (i === selectedIndex) {
+          b.classList.add('wrong');
+        }
+      });
+
+      if (selectedIndex === q.answer) {
+        quizScore++;
+        fb.style.display = 'block';
+        fb.style.background = '#dcfce7';
+        fb.style.color = '#166534';
+        fb.style.border = '1px solid #86efac';
+        fb.innerHTML = `<strong>✅ Correct!</strong> ${q.exp}`;
+      } else {
+        fb.style.display = 'block';
+        fb.style.background = '#fee2e2';
+        fb.style.color = '#991b1b';
+        fb.style.border = '1px solid #fca5a5';
+        fb.innerHTML = `<strong>❌ Incorrect.</strong> ${q.exp}`;
+      }
+
+      document.getElementById('quiz-score-badge').innerText = `Score: ${quizScore} / ${quizIndex + 1}`;
+      document.getElementById('btn-next-quiz').style.display = 'inline-block';
+    }
+
+    function nextQuizQuestion() {
+      if (quizIndex < QUIZ_QUESTIONS.length - 1) {
+        quizIndex++;
+        renderQuizQuestion();
+      } else {
+        showQuizResults();
+      }
+    }
+
+    function showQuizResults() {
+      document.getElementById('quiz-active-area').style.display = 'none';
+      document.getElementById('quiz-completed-area').style.display = 'block';
+      const pct = Math.round((quizScore / QUIZ_QUESTIONS.length) * 100);
+      document.getElementById('quiz-final-score-text').innerText = `You scored ${quizScore} out of ${QUIZ_QUESTIONS.length} (${pct}%).`;
+    }
+  </script>
+</body>
+</html>

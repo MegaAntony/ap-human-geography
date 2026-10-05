@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 2 AP Classroom MCQ Mastery Hub (Topics 2.1–2.4, 2.9)</title>
+  <title>Unit 2 AP Human Geography MCQ Summative Exam Simulator (Topics 2.1–2.12)</title>
   <style>
     :root {
       --primary: #006699;
@@ -737,8 +737,9 @@
         <span>🗺️</span> AP Human Geography
       </div>
       <div class="book-tag">
-        <strong>Unit 2 Formative Quiz Simulator</strong><br>
-        Standards: 2.1, 2.2, 2.3, 2.4, 2.9 (20 Qs on AP Classroom)<br>
+        <strong style="color: #b45309; font-size: 0.85rem;">Major MCQ Summative Simulator</strong><br>
+        <span style="color: #1e40af; font-weight: 800;">Wed Oct 28 & Thu Oct 29, 2026</span><br>
+        Standards: Topics 2.1–2.12 (Full Unit 2)<br>
         Mrs. Anne Knight • Room 1325
       </div>
     </div>
@@ -759,7 +760,7 @@
         <div style="display: flex; flex-direction: column; gap: 0.25rem;">
           <button class="topic-filter-btn active" onclick="filterTopic('all', this)">
             <span>All Master Questions</span>
-            <span class="topic-count" id="count-all">35</span>
+            <span class="topic-count" id="count-all">53</span>
           </button>
           <button class="topic-filter-btn" onclick="filterTopic('2.1', this)">
             <span>Topic 2.1: Densities & Clusters</span>
@@ -777,9 +778,37 @@
             <span>Topic 2.4: Growth Rates & Doubling</span>
             <span class="topic-count">7</span>
           </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.5', this)">
+            <span>Topic 2.5: Demographic Transition</span>
+            <span class="topic-count">3</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.6', this)">
+            <span>Topic 2.6: Malthusian Theory</span>
+            <span class="topic-count">3</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.7', this)">
+            <span>Topic 2.7: Population Policies</span>
+            <span class="topic-count">2</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.8', this)">
+            <span>Topic 2.8: Women & Demographics</span>
+            <span class="topic-count">2</span>
+          </button>
           <button class="topic-filter-btn" onclick="filterTopic('2.9', this)">
             <span>Topic 2.9: Aging & Gray Power</span>
             <span class="topic-count">7</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.10', this)">
+            <span>Topic 2.10: Causes of Migration</span>
+            <span class="topic-count">3</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.11', this)">
+            <span>Topic 2.11: Forced vs Voluntary</span>
+            <span class="topic-count">3</span>
+          </button>
+          <button class="topic-filter-btn" onclick="filterTopic('2.12', this)">
+            <span>Topic 2.12: Effects of Migration</span>
+            <span class="topic-count">2</span>
           </button>
         </div>
       </div>
@@ -819,10 +848,11 @@
     <!-- Top Global Header -->
     <header class="top-header">
       <div class="header-links">
-        <a href="../index.html" class="header-link">🏛️ Main Portal</a>
-        <a href="../world-regions/quiz_action_kit.html" class="header-link">🚀 World Regions Quiz</a>
-        <a href="../unit2-categorilla/index.html" class="header-link">🦍 Aging Categorilla</a>
-        <a href="../fiveable/index.html" class="header-link">⚡ Fiveable Unit 2 Hub</a>
+        <a href="../index.html" class="header-link">🏛️ Master Hub</a>
+        <a href="../migration-one-pager/index.html" class="header-link">📄 One-Pager (10/13)</a>
+        <a href="../unit2-frq/index.html" class="header-link">✍️ FRQ Formative (10/20)</a>
+        <a href="../unit2-vocab/index.html" class="header-link">📖 Vocab Summative (10/23)</a>
+        <a href="#active" class="header-link" style="color: var(--primary); font-weight: 800; border-bottom: 2px solid var(--primary);">⏱️ MCQ Summative (10/28–29)</a>
       </div>
       <button onclick="toggleCheatSheet()" style="background: #1e3a8a; color: #ffffff; font-weight: 700; font-size: 0.8rem; padding: 0.4rem 0.85rem; border-radius: 6px; border: none; cursor: pointer;">
         📖 8th-Grade Cheat Sheet Drawer
@@ -831,6 +861,22 @@
 
     <!-- Test Content Area -->
     <main class="test-content">
+
+      <!-- Major Summative Exam Banner -->
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; padding: 1.25rem 1.5rem; border-radius: 0.875rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.15); border: 1px solid #3b82f6;">
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 0.4rem; background: #f59e0b; color: #78350f; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; padding: 0.25rem 0.75rem; border-radius: 999px; margin-bottom: 0.4rem; letter-spacing: 0.04em;">
+            📅 Major Written Summative Exam: Wednesday, Oct 28 & Thursday, Oct 29, 2026 (Block Days)
+          </div>
+          <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.25rem; letter-spacing: -0.01em;">Unit 2 Comprehensive MCQ Summative Simulator</h2>
+          <p style="font-size: 0.85rem; color: #bfdbfe;">Mastering all 12 Standards across Topics 2.1–2.12 (Population & Migration Patterns and Processes)</p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="../unit2-vocab/index.html" style="background: rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.8rem; padding: 0.45rem 0.85rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.15s ease;">📖 Vocab Exam (10/23)</a>
+          <a href="../unit2-frq/index.html" style="background: rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.8rem; padding: 0.45rem 0.85rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.15s ease;">✍️ FRQ Formative (10/20)</a>
+          <a href="../migration-one-pager/index.html" style="background: rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.8rem; padding: 0.45rem 0.85rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.15s ease;">📄 One Pager (10/13)</a>
+        </div>
+      </div>
 
       <!-- Collapsible 8th Grade Cheat Sheet Drawer -->
       <div class="cheat-drawer">
@@ -1865,6 +1911,480 @@
             D: "Japan is rapidly building specialized eldercare facilities, not outlawing them."
           }
         }
+      },
+      // TOPIC 2.5: The Demographic Transition Model (3 Questions)
+      {
+        id: "2.5-Q01",
+        topic: "Topic 2.5",
+        topicName: "The Demographic Transition Model",
+        skill: "Skill 2.A",
+        skillDesc: "Describe demographic concepts and models.",
+        amsco: "Chapter 4, pp. 75–82: Stages of the Demographic Transition",
+        hint: "What caused death rates to collapse in Europe in 1750 vs developing nations in the mid-1900s? Europe had steam power and sanitation; Africa and Asia received modern antibiotics and DDT!",
+        stimulus: null,
+        prompt: "Which factor explains why late 18th-century Great Britain transitioned from Stage 1 into Stage 2 of the Demographic Transition Model, whereas countries in Sub-Saharan Africa and Latin America did not transition into Stage 2 until the mid-20th century?",
+        options: [
+          { id: "A", text: "Great Britain implemented nationwide family planning programs to lower its Crude Birth Rate." },
+          { id: "B", text: "Great Britain entered Stage 2 via the wealth and sanitation improvements of the Industrial Revolution, while developing nations transitioned due to the diffusion of medical technology from the Medical Revolution." },
+          { id: "C", text: "Great Britain was compelled to transition due to massive net in-migration from neighboring European nations." },
+          { id: "D", text: "Developing nations reached Stage 2 after achieving replacement level fertility and zero population growth." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Britain pioneered the Industrial Revolution (factories, steam power, cleaner piped water, higher farm output) in the late 1700s, which dropped its death rate. In contrast, Africa, Asia, and Latin America didn't drop death rates until the 1950s Medical Revolution (penicillin, vaccines, DDT to kill malaria mosquitoes).",
+          distractors: {
+            A: "Lowering CBR moves a country into Stage 3, not Stage 2! Stage 2 is driven by plunging death rates.",
+            C: "The DTM model only measures natural increase (births minus deaths); it explicitly ignores migration.",
+            D: "Replacement fertility happens in Stage 4, not Stage 2."
+          }
+        }
+      },
+      {
+        id: "2.5-Q02",
+        topic: "Topic 2.5",
+        topicName: "The Demographic Transition Model",
+        skill: "Skill 5.A",
+        skillDesc: "Identify and explain patterns in demographic transition.",
+        amsco: "Chapter 4, pp. 78–80: Stage 3 Declining Birth Rates",
+        hint: "On a farm, kids are free labor (assets). In a small city apartment, kids are expensive mouths to feed (liabilities)!",
+        stimulus: null,
+        prompt: "What cultural and economic transformation is the primary driver behind the sharp decline in Crude Birth Rate (CBR) characteristic of Stage 3 in the Demographic Transition Model?",
+        options: [
+          { id: "A", text: "A severe outbreak of infectious pandemic diseases that dramatically raises child mortality." },
+          { id: "B", text: "Urbanization and industrial employment, where children transition from economic labor assets on farms to financial liabilities in cities, alongside increased female literacy." },
+          { id: "C", text: "Massive emigration of young adult males seeking guest worker positions abroad." },
+          { id: "D", text: "A resurgence of agricultural subsistence farming requiring larger multi-generational families." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In Stage 3, as families move from farms into cities, kids can't plow fields anymore—instead, parents have to pay for schooling, clothing, and city housing. Plus, women get more education and enter jobs, leading to smaller family sizes and plunging birth rates.",
+          distractors: {
+            A: "Outbreaks raise death rates, not lower birth rates; disease epidemics define Stage 1/2.",
+            C: "Emigration does not cause the fundamental generational drop in national TFR and CBR.",
+            D: "Subsistence farming drives high birth rates in Stage 2, not low birth rates in Stage 3."
+          }
+        }
+      },
+      {
+        id: "2.5-Q03",
+        topic: "Topic 2.5",
+        topicName: "The Demographic Transition Model",
+        skill: "Skill 2.B",
+        skillDesc: "Explain demographic trends in post-transition societies.",
+        amsco: "Chapter 4, pp. 81–83: Proposed Stage 5 and Population Decline",
+        hint: "What happens when CBR drops below CDR? The population shrinks naturally!",
+        stimulus: null,
+        prompt: "Which demographic condition characterizes a society in proposed Stage 5 of the Demographic Transition Model, such as modern Japan or Germany?",
+        options: [
+          { id: "A", text: "A high Crude Birth Rate paired with a plunging Infant Mortality Rate, producing rapid doubling times." },
+          { id: "B", text: "A Total Fertility Rate well below replacement level (2.1), where Crude Death Rates exceed Crude Birth Rates resulting in negative natural increase." },
+          { id: "C", text: "A stationary pyramid with perfectly vertical straight sides across all cohorts from ages 0 to 80." },
+          { id: "D", text: "A youth dependency ratio exceeding 65% with severe shortages of primary school classrooms." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In Stage 5, death rates stay slightly elevated because of a giant elderly population, while birth rates drop so low that more people die each year than are born. This causes a negative NIR and a naturally shrinking population.",
+          distractors: {
+            A: "High CBR and rapid doubling describe Stage 2, not Stage 5.",
+            C: "Straight vertical sides describe Stage 4 (stable/ZPG), not Stage 5 (constrictive/inverted).",
+            D: "High youth dependency is a Stage 2 problem (like Niger); Stage 5 has an elderly dependency crisis."
+          }
+        }
+      },
+      // TOPIC 2.6: Malthusian Theory & Critiques (3 Questions)
+      {
+        id: "2.6-Q01",
+        topic: "Topic 2.6",
+        topicName: "Malthusian Theory",
+        skill: "Skill 2.C",
+        skillDesc: "Compare theories of population growth.",
+        amsco: "Chapter 4, pp. 84–87: Malthus vs. Boserup and Cornucopians",
+        hint: "Malthus said food grows like 1, 2, 3, 4, 5 (linear), but people grow like 1, 2, 4, 8, 16 (exponential). What did he forget about science?",
+        stimulus: null,
+        prompt: "Which key development in global agriculture served as the most significant empirical refutation of Thomas Malthus's 1798 prediction of inevitable worldwide famine?",
+        options: [
+          { id: "A", text: "The expansion of subsistence transhumance across the Sahara desert." },
+          { id: "B", text: "The Green Revolution, which utilized high-yield hybrid seeds, chemical fertilizers, mechanization, and advanced irrigation to expand food yields exponentially." },
+          { id: "C", text: "The implementation of universal antinatalist one-child limits across European nations." },
+          { id: "D", text: "A global shift toward local foraging and organic polyculture farming." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Malthus thought farm production could only grow slowly in a straight line (arithmetically). But human ingenuity and the Green Revolution (Norman Borlaug) multiplied crop yields massively through dwarf wheat, synthetic nitrogen fertilizer, and tractors, feeding billions more people.",
+          distractors: {
+            A: "Transhumance produces very low yields and cannot feed billions.",
+            C: "European nations never instituted one-child policies; Europe's birth rates fell voluntarily.",
+            D: "Foraging produces the lowest carrying capacity of any food system on Earth."
+          }
+        }
+      },
+      {
+        id: "2.6-Q02",
+        topic: "Topic 2.6",
+        topicName: "Malthusian Theory",
+        skill: "Skill 2.B",
+        skillDesc: "Explain modern perspectives on resource depletion.",
+        amsco: "Chapter 4, pp. 85–86: Neo-Malthusian Perspective",
+        hint: "Neo-Malthusians worry about things you CANNOT just plant more of in a greenhouse: fresh groundwater, oil, and clean air!",
+        stimulus: null,
+        prompt: "How do contemporary Neo-Malthusians adapt Thomas Malthus's original 18th-century thesis to address 21st-century global sustainability challenges?",
+        options: [
+          { id: "A", text: "They argue that global food production is declining while birth rates in Western Europe are reaching historic peaks." },
+          { id: "B", text: "They broaden the scope of scarcity beyond food to non-renewable resources, warning that rapid population growth will exhaust clean water aquifers, fossil fuels, and clean air, triggering geopolitical conflicts." },
+          { id: "C", text: "They assert that human technology will effortlessly solve all ecological limits without any government policy interventions." },
+          { id: "D", text: "They claim that population growth has zero relationship to environmental degradation or climate stress." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Neo-Malthusians say: 'Sure, we figured out how to grow lots of grain, but what about clean drinking water, topsoil, lithium, and clean air?' They warn that billions of consumers will drain irreplaceable planet resources and cause resource wars.",
+          distractors: {
+            A: "Food output has grown and Europe has historically low birth rates.",
+            C: "Saying technology will solve everything is Cornucopian theory (Boserup/Simon), the exact opposite of Neo-Malthusianism!",
+            D: "Neo-Malthusians argue population pressure is directly linked to environmental destruction."
+          }
+        }
+      },
+      {
+        id: "2.6-Q03",
+        topic: "Topic 2.6",
+        topicName: "Malthusian Theory",
+        skill: "Skill 2.C",
+        skillDesc: "Explain Ester Boserup's thesis on population density.",
+        amsco: "Chapter 4, p. 86: Boserup's Hypothesis of Agricultural Intensification",
+        hint: "Who said 'Necessity is the mother of invention'? When land gets crowded, humans invent better tools!",
+        stimulus: null,
+        prompt: "Which statement best encapsulates Ester Boserup's theoretical challenge to Malthusian population theory?",
+        options: [
+          { id: "A", text: "High population density inevitably exceeds carrying capacity and causes widespread societal collapse." },
+          { id: "B", text: "Population growth acts as a positive stimulus for agricultural innovation, compelling farmers to adopt more intensive land-use techniques and technology to increase food output." },
+          { id: "C", text: "Governments must implement strict antinatalist birth limits to preserve arable soil quality." },
+          { id: "D", text: "Food production grows arithmetically regardless of human technological investments." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Boserup argued that population density is not a curse, but a catalyst. When more people live on the land, farmers are forced to invent better irrigation, terrace mountainsides, rotate crops, and produce far more food per acre.",
+          distractors: {
+            A: "This is Malthus's view, not Boserup's.",
+            C: "Boserup did not advocate antinatalist limits; she believed humans adapt.",
+            D: "Boserup rejected the arithmetic growth limit, showing output expands dynamically with human ingenuity."
+          }
+        }
+      },
+      // TOPIC 2.7: Population Policies (2 Questions)
+      {
+        id: "2.7-Q01",
+        topic: "Topic 2.7",
+        topicName: "Population Policies",
+        skill: "Skill 5.B",
+        skillDesc: "Explain the demographic consequences of government policies.",
+        amsco: "Chapter 5, pp. 95–99: Antinatalist Policies: Case Study of China",
+        hint: "Think about what happened in China between 1979 and 2015: families favored boys, and now there is only 1 adult child to care for 2 parents and 4 grandparents!",
+        stimulus: null,
+        prompt: "Which long-term unintended demographic consequences resulted from China's strict enforcement of its antinatalist One-Child Policy between 1979 and 2015?",
+        options: [
+          { id: "A", text: "An oversupply of pediatric facilities and an immediate surge in the youth dependency ratio." },
+          { id: "B", text: "A deeply skewed sex ratio favoring males (due to cultural son-preference) and an emerging '4-2-1' elderly dependency crisis with a shrinking working-age labor force." },
+          { id: "C", text: "A massive shift from urban living to rural subsistence agriculture." },
+          { id: "D", text: "The total elimination of all internal migration and rural-to-urban resettlement." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Because traditional families wanted a male heir, sex-selective abortions led to over 30 million more men than women in China. Additionally, the '4-2-1 problem' means one single child is financially responsible for two parents and four elderly grandparents!",
+          distractors: {
+            A: "Youth dependency dropped drastically, leaving empty schools, not an oversupply.",
+            C: "China experienced the greatest rural-to-urban industrial migration in human history during this time.",
+            D: "Internal migration boomed as hundreds of millions moved to coastal factory cities."
+          }
+        }
+      },
+      {
+        id: "2.7-Q02",
+        topic: "Topic 2.7",
+        topicName: "Population Policies",
+        skill: "Skill 2.A",
+        skillDesc: "Identify and explain pronatalist policies.",
+        amsco: "Chapter 5, pp. 99–103: Pronatalist Policies in Aging Societies",
+        hint: "If your country is running out of workers and has lots of elderly people, what will the government give families to have more babies? Cash, daycare, and time off work!",
+        stimulus: null,
+        prompt: "Why have governments in Stage 5 countries such as France, South Korea, and Russia instituted aggressive pronatalist policies, and what incentives do they typically provide?",
+        options: [
+          { id: "A", text: "To combat severe youth overpopulation by restricting secondary school admissions." },
+          { id: "B", text: "To reverse below-replacement fertility and elderly dependency by offering cash baby bonuses, subsidized childcare, and extensive paid parental leave." },
+          { id: "C", text: "To encourage rural-to-urban step migration through government-subsidized factory dormitories." },
+          { id: "D", text: "To reduce maternal mortality rates by outlawing private medical insurance." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Stage 5 nations face economic decline because not enough babies are born to replace retiring workers. To encourage couples to have kids, governments offer cash allowances, nearly free public daycare, and months of paid maternity/paternity leave.",
+          distractors: {
+            A: "Stage 5 countries suffer from a deficit of children, not overpopulation!",
+            C: "Subsidized factory dorms are an industrial labor policy, not a pronatalist fertility policy.",
+            D: "Pronatalist policies focus on family assistance, not dismantling health insurance."
+          }
+        }
+      },
+      // TOPIC 2.8: Women and Demographic Change (2 Questions)
+      {
+        id: "2.8-Q01",
+        topic: "Topic 2.8",
+        topicName: "Women & Demographic Change",
+        skill: "Skill 5.C",
+        skillDesc: "Explain the relationship between female education and demographic trends.",
+        amsco: "Chapter 5, pp. 104–108: Female Empowerment and Fertility",
+        hint: "What happens when girls complete high school and college? They marry later, pursue careers, and have fewer children!",
+        stimulus: null,
+        prompt: "Social science research universally demonstrates that the single most effective catalyst for lowering a country's Total Fertility Rate (TFR) and Infant Mortality Rate (IMR) is:",
+        options: [
+          { id: "A", text: "Increasing military spending to secure national borders against irregular migration." },
+          { id: "B", text: "Expanding female access to secondary education, economic employment, and healthcare reproductive services." },
+          { id: "C", text: "Mandating compulsory agricultural labor for all rural citizens." },
+          { id: "D", text: "Raising the retirement age for elderly workers to age 75." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "When girls stay in school and gain access to jobs and healthcare, they delay marriage, understand nutrition and sanitation better (lowering baby deaths), and choose to have fewer, healthier children. This is the #1 driver of demographic transition globally.",
+          distractors: {
+            A: "Military budgets have no direct positive correlation with lowered fertility or infant health.",
+            C: "Compulsory farm labor keeps fertility high because families need child field hands.",
+            D: "Retirement age adjustments impact pensions, not female fertility."
+          }
+        }
+      },
+      {
+        id: "2.8-Q02",
+        topic: "Topic 2.8",
+        topicName: "Women & Demographic Change",
+        skill: "Skill 3.A",
+        skillDesc: "Interpret demographic health metrics.",
+        amsco: "Chapter 5, pp. 107–109: Maternal Mortality and Global Healthcare Gaps",
+        hint: "Notice the denominator! MMR is measured per 100,000 live births (not 1,000), and it reveals whether pregnant mothers can get emergency medical care.",
+        prompt: "Which conclusion regarding the Maternal Mortality Rate (MMR) is most accurate from an AP Human Geography spatial analysis perspective?",
+        options: [
+          { id: "A", text: "MMR is identical across all DTM stages because biological risks during childbirth cannot be mitigated by infrastructure." },
+          { id: "B", text: "MMR is vastly higher in less-developed peripheral regions (often >500 per 100,000 live births) due to lack of trained obstetric attendants, clean water, and emergency surgical care." },
+          { id: "C", text: "MMR is calculated per 1,000 women and tracks only deaths from non-pregnancy-related chronic degenerative diseases." },
+          { id: "D", text: "Countries with the highest female workforce participation consistently experience the highest maternal mortality rates." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In wealthy countries, MMR is under 10 deaths per 100,000 live births because hospitals have antibiotics, blood transfusions, and surgeons. In peripheral rural areas of Sub-Saharan Africa or South Asia, lack of clinics and emergency transport causes MMR to exceed 500.",
+          distractors: {
+            A: "Modern medical infrastructure cuts maternal deaths by more than 98%.",
+            C: "MMR is per 100,000 live births (not 1,000), and specifically tracks pregnancy/childbirth causes.",
+            D: "Female workforce participation correlates with lower maternal mortality, not higher."
+          }
+        }
+      },
+      // TOPIC 2.10: Causes of Migration (3 Questions)
+      {
+        id: "2.10-Q01",
+        topic: "Topic 2.10",
+        topicName: "Causes of Migration",
+        skill: "Skill 2.B",
+        skillDesc: "Categorize push and pull factors in migration corridors.",
+        amsco: "Chapter 6, pp. 115–122: Push and Pull Factors across Spatial Scales",
+        hint: "Push = reason to EXIT origin. Pull = reason to ENTER destination. Economic pull factors are historically the strongest for voluntary movers!",
+        stimulus: null,
+        prompt: "Which pair of conditions correctly exemplifies an economic push factor paired with an environmental pull factor?",
+        options: [
+          { id: "A", text: "Push: War and political persecution; Pull: High tech engineering salaries in Silicon Valley" },
+          { id: "B", text: "Push: Factory automation leading to chronic local unemployment; Pull: Warm Mediterranean climate and scenic coastal topography" },
+          { id: "C", text: "Push: Prolonged regional drought and desertification; Pull: Religious tolerance and freedom of assembly" },
+          { id: "D", text: "Push: Low physiological density; Pull: Strict government immigration quotas" }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "A factory closing and taking away jobs is an economic push (driving you to leave). Sunny weather, warm beaches, and mild winters are environmental pulls (attracting you to move there, like retirees moving to Florida or Arizona).",
+          distractors: {
+            A: "War is a political/forced push; high tech salaries are an economic pull.",
+            C: "Drought is an environmental push; religious freedom is a cultural/political pull.",
+            D: "Quotas are political intervening obstacles, not pull factors."
+          }
+        }
+      },
+      {
+        id: "2.10-Q02",
+        topic: "Topic 2.10",
+        topicName: "Causes of Migration",
+        skill: "Skill 2.A",
+        skillDesc: "Apply Ravenstein's Laws of Migration to spatial movement.",
+        amsco: "Chapter 6, pp. 120–123: Ravenstein's Laws and Distance Decay",
+        hint: "Ravenstein observed: Most people only move a short distance because of distance decay. But if they DO make a huge move across the country, where do they go? Big booming cities with lots of jobs!",
+        stimulus: null,
+        prompt: "According to E.G. Ravenstein's classic Laws of Migration, what spatial destination pattern is most characteristic of long-distance migrants?",
+        options: [
+          { id: "A", text: "Long-distance migrants preferentially settle in isolated rural hamlets to acquire cheap farmland." },
+          { id: "B", text: "Long-distance migrants overwhelmingly gravitate toward major metropolitan centers of commerce and industry." },
+          { id: "C", text: "Long-distance migrants avoid urban areas due to strict municipal housing ordinances." },
+          { id: "D", text: "Long-distance migrants move strictly in seasonal highland-to-lowland cyclical patterns." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Ravenstein's Law #2: Long-distance migrants head to major economic hubs (like New York, London, Chicago, or Tokyo) because big cities have diverse job markets and established immigrant support networks.",
+          distractors: {
+            A: "Long-distance migrants head to big cities, not isolated farming hamlets.",
+            C: "Cities are the primary magnets for long-distance movers.",
+            D: "Highland-lowland cycling describes transhumance, not general migration."
+          }
+        }
+      },
+      {
+        id: "2.10-Q03",
+        topic: "Topic 2.10",
+        topicName: "Causes of Migration",
+        skill: "Skill 2.C",
+        skillDesc: "Explain the Gravity Model of migration interaction.",
+        amsco: "Chapter 6, pp. 122–124: The Gravity Model of Spatial Interaction",
+        hint: "Gravity Model: Interaction = (Pop A × Pop B) / (Distance)². Big cities have giant gravitational pulls on migrants!",
+        stimulus: null,
+        prompt: "How does the Gravity Model of spatial interaction explain why a job-seeker in upstate New York is more likely to migrate 200 miles to New York City than 25 miles to the smaller city of Utica?",
+        options: [
+          { id: "A", text: "Utica has a higher physiological density than New York City." },
+          { id: "B", text: "The enormous economic gravitational pull and population size of New York City easily overcomes the friction of distance compared to a much smaller regional town." },
+          { id: "C", text: "New York City has zero intervening obstacles along its transit routes." },
+          { id: "D", text: "Utica enforces antinatalist migration restrictions against internal migrants." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "The Gravity Model shows that bigger cities exert a massive 'gravitational pull' on people, goods, and ideas. Even though NYC is further away than Utica, NYC's 8 million people and huge job market make it far more attractive.",
+          distractors: {
+            A: "Physiological density of arable land is not the driving factor in urban migration.",
+            C: "Tolls, traffic, and high living costs are significant obstacles in NYC.",
+            D: "Utica has no such restrictions; US citizens have constitutional freedom of movement."
+          }
+        }
+      },
+      // TOPIC 2.11: Forced vs Voluntary Migration (3 Questions)
+      {
+        id: "2.11-Q01",
+        topic: "Topic 2.11",
+        topicName: "Forced vs Voluntary Migration",
+        skill: "Skill 5.A",
+        skillDesc: "Distinguish legal and spatial classifications of displaced populations.",
+        amsco: "Chapter 7, pp. 131–137: Refugees, IDPs, and Asylum Seekers",
+        hint: "Did the displaced person cross an internationally recognized border? Yes = Refugee (UN protected). No = Internally Displaced Person (no international protection).",
+        stimulus: null,
+        prompt: "What is the defining geographic and legal distinction between a Refugee and an Internally Displaced Person (IDP)?",
+        options: [
+          { id: "A", text: "Refugees flee economic distress, while IDPs flee strictly environmental disasters." },
+          { id: "B", text: "Refugees have crossed an international border to escape persecution or armed conflict and receive protection under the 1951 UN Convention, whereas IDPs have fled for similar reasons but remain inside their native country's borders without international legal status." },
+          { id: "C", text: "IDPs are granted automatic citizenship in foreign countries, while refugees are deported immediately upon arrival." },
+          { id: "D", text: "Refugees are voluntary seasonal migrants, while IDPs are compelled to move by employer contracts." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Both flee war and terror. But a refugee crosses an international boundary (like a Ukrainian entering Poland) and gets international legal rights. An IDP stays within their own borders (like a Ukrainian fleeing from Kharkiv to Lviv) and must still answer to their own government.",
+          distractors: {
+            A: "Neither refugees nor IDPs are economic migrants; fleeing poverty does not qualify under UN refugee conventions.",
+            C: "IDPs are inside their home country and receive no foreign citizenship.",
+            D: "Both are forced displaced persons, not voluntary seasonal workers!"
+          }
+        }
+      },
+      {
+        id: "2.11-Q02",
+        topic: "Topic 2.11",
+        topicName: "Forced vs Voluntary Migration",
+        skill: "Skill 2.A",
+        skillDesc: "Identify types of voluntary migration.",
+        amsco: "Chapter 7, pp. 138–142: Step Migration and Hierarchical Movement",
+        hint: "Notice the stages: farm → market village → regional town → giant metropolis! Moving up the urban ladder step by step!",
+        stimulus: null,
+        prompt: "A subsistence farmer in rural Peru moves first to a nearby agricultural market town, saves money for two years, relocates to the regional provincial capital of Cusco, and ultimately moves to a manufacturing job in metropolitan Lima. This spatial pattern is an example of:",
+        options: [
+          { id: "A", text: "Transhumance" },
+          { id: "B", text: "Step Migration" },
+          { id: "C", text: "Counterurbanization" },
+          { id: "D", text: "Forced Internment" }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Step migration occurs in incremental stages up the urban hierarchy (from farm to town to regional city to national capital). Each step allows the migrant to build skills, adapt culturally, and save money for the next leg.",
+          distractors: {
+            A: "Transhumance is seasonal livestock movement between mountains and valleys.",
+            C: "Counterurbanization is leaving big cities to live in rural tranquility.",
+            D: "This journey was voluntary economic advancement, not forced internment."
+          }
+        }
+      },
+      {
+        id: "2.11-Q03",
+        topic: "Topic 2.11",
+        topicName: "Forced vs Voluntary Migration",
+        skill: "Skill 2.B",
+        skillDesc: "Analyze seasonal and contractual migration systems.",
+        amsco: "Chapter 7, pp. 140–144: Guest Worker Programs & Transhumance",
+        hint: "Guest workers get temporary legal work permits in foreign countries and send cash (remittances) home, but often lack permanent citizenship rights.",
+        stimulus: null,
+        prompt: "Which characteristic accurately describes modern guest worker migration flows, such as South Asian laborers in the Persian Gulf states (UAE, Qatar, Saudi Arabia)?",
+        options: [
+          { id: "A", text: "Workers are granted full permanent citizenship and voting rights upon arrival." },
+          { id: "B", text: "Workers are predominantly young males on temporary legal labor contracts who send substantial financial remittances home, but face restricted pathways to permanent settlement." },
+          { id: "C", text: "The flow is dominated by elderly retirees moving for warm climate amenities." },
+          { id: "D", text: "Workers are required to purchase commercial agricultural land in the host nation." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "In the Persian Gulf, millions of young men from India, Pakistan, and Nepal build skyscrapers and stadiums on temporary visas. They send billions of dollars in remittances home, but cannot vote, buy land, or bring families permanently.",
+          distractors: {
+            A: "Gulf states do not grant citizenship to guest workers.",
+            C: "Guest workers are young working-age laborers, not retirees.",
+            D: "Guest workers in the Gulf work in construction and service, not private farmland ownership."
+          }
+        }
+      },
+      // TOPIC 2.12: Effects of Migration (2 Questions)
+      {
+        id: "2.12-Q01",
+        topic: "Topic 2.12",
+        topicName: "Effects of Migration",
+        skill: "Skill 5.B",
+        skillDesc: "Explain economic and demographic consequences of migration on origin countries.",
+        amsco: "Chapter 7, pp. 145–150: Brain Drain vs. Remittance Inflows",
+        hint: "Brain Drain takes away doctors and engineers (hurting origin countries), but remittances send billions in cash directly to families (helping local economies)!",
+        stimulus: null,
+        prompt: "What dual economic impacts does large-scale international emigration typically exert on developing origin countries?",
+        options: [
+          { id: "A", text: "It causes immediate deflation while totally eliminating all national foreign aid dependence." },
+          { id: "B", text: "It infuses the origin economy with vital financial remittances that support local consumption, but simultaneously inflicts 'brain drain' by depriving the country of educated doctors, engineers, and educators." },
+          { id: "C", text: "It forces the origin country to transition directly from Stage 2 to Stage 5 of the Demographic Transition Model." },
+          { id: "D", text: "It eliminates the elderly dependency ratio in rural villages." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "It's a double-edged sword: Remittance cash sent home feeds families, builds houses, and funds local businesses (often making up 15-25% of GDP!). But losing doctors and scientists ('brain drain') leaves the home country struggling for professional talent.",
+          distractors: {
+            A: "Remittances do not eliminate foreign aid or guarantee deflation.",
+            C: "The DTM measures birth and death rates, not migration shifts.",
+            D: "Emigration of working-age youths often worsens elderly dependency in origin villages!"
+          }
+        }
+      },
+      {
+        id: "2.12-Q02",
+        topic: "Topic 2.12",
+        topicName: "Effects of Migration",
+        skill: "Skill 2.A",
+        skillDesc: "Explain chain migration and cultural landscape creation.",
+        amsco: "Chapter 7, pp. 148–151: Chain Migration and Ethnic Enclaves",
+        hint: "Why do people from the same hometown cluster in Chinatowns or Little Italy? Family connections sponsor relatives and provide familiar comfort!",
+        stimulus: null,
+        prompt: "How does the process of chain migration directly contribute to the formation and persistence of ethnic enclaves in major destination cities?",
+        options: [
+          { id: "A", text: "By dispersing immigrants evenly across all suburban census tracts to encourage rapid assimilation." },
+          { id: "B", text: "By enabling pioneering migrants to sponsor relatives, friends, and villagers to settle in the same neighborhood, creating clusters with shared language, ethnic businesses, and cultural landscapes." },
+          { id: "C", text: "By legally prohibiting immigrants from purchasing residential real estate outside designated zones." },
+          { id: "D", text: "By forcing all new arrivals to adopt rural transhumance livelihoods." }
+        ],
+        correct: "B",
+        explanation: {
+          eli8: "Chain migration is like a social chain: early migrants write home, help cousins and neighbors find apartments, get jobs, and open markets with familiar spices and language. This creates vibrant enclaves like Chinatown or Little Havana.",
+          distractors: {
+            A: "Chain migration concentrates people in specific neighborhoods; it does not disperse them evenly.",
+            C: "Ethnic enclaves form through social networks and affordability, not modern municipal zoning laws.",
+            D: "Enclaves are dense urban neighborhoods, not rural livestock grazing zones."
+          }
+        }
       }
     ];
 
@@ -1935,21 +2455,9 @@
     }
 
     function sampleExam20() {
-      // Pick 4 from 2.1, 3 from 2.2, 5 from 2.3, 4 from 2.4, 4 from 2.9
-      const pool = { '2.1': [], '2.2': [], '2.3': [], '2.4': [], '2.9': [] };
-      MASTER_QUESTIONS.forEach(q => {
-        const top = q.topic.replace('Topic ', '');
-        if (pool[top]) pool[top].push(q);
-      });
-
-      const pickRandom = (arr, n) => arr.sort(() => 0.5 - Math.random()).slice(0, n);
-      return [
-        ...pickRandom(pool['2.1'], 4),
-        ...pickRandom(pool['2.2'], 3),
-        ...pickRandom(pool['2.3'], 5),
-        ...pickRandom(pool['2.4'], 4),
-        ...pickRandom(pool['2.9'], 4)
-      ];
+      // Randomly sample 20 balanced questions across Topics 2.1 - 2.12
+      const shuffled = [...MASTER_QUESTIONS].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, 20);
     }
 
     // Filter by Topic

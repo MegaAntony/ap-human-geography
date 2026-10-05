@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Human Geography - Study & Exam Practice Portal</title>
+    <title>AP Human Geography — Master Study & Assessment Portal</title>
     <style>
         :root {
             --primary: #1e3a8a;
             --primary-dark: #0f172a;
-            --accent: #3b82f6;
+            --primary-light: #eff6ff;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --amber: #d97706;
+            --amber-light: #fef3c7;
+            --green: #16a34a;
+            --green-light: #dcfce7;
+            --purple: #7c3aed;
+            --purple-light: #ede9fe;
+            --red: #dc2626;
+            --red-light: #fee2e2;
+            --teal: #0f766e;
+            --teal-light: #ccfbf1;
             --bg: #f8fafc;
+            --card-bg: #ffffff;
             --border: #e2e8f0;
-            --shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         * {
@@ -23,52 +40,198 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
-            color: #1e293b;
+            color: var(--text-main);
             line-height: 1.6;
-            padding: 40px 20px;
+            padding: 40px 20px 80px;
         }
 
         .container {
-            max-width: 1080px;
+            max-width: 1140px;
             margin: 0 auto;
         }
 
+        /* Header */
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+        }
+
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
         }
 
         .badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: #dbeafe;
             color: var(--primary);
-            padding: 6px 16px;
+            padding: 5px 14px;
             border-radius: 9999px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 12px;
+        }
+
+        .badge-teacher {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .badge-course {
+            background: #fef3c7;
+            color: #92400e;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             font-weight: 800;
             color: var(--primary-dark);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
         }
 
         p.subtitle {
             font-size: 1.1rem;
-            color: #64748b;
-            max-width: 680px;
+            color: var(--text-muted);
+            max-width: 760px;
             margin: 0 auto;
         }
 
+        /* October Master Assessment Timeline Banner */
+        .timeline-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 70%, #2563eb 100%);
+            border-radius: 18px;
+            padding: 26px 24px;
+            color: white;
+            margin-bottom: 36px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 14px;
+        }
+
+        .timeline-title-group h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .timeline-title-group p {
+            font-size: 0.88rem;
+            color: #bfdbfe;
+            margin-top: 3px;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+            gap: 16px;
+        }
+
+        .timeline-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 14px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+
+        .timeline-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .timeline-date-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .pill-gold { background: #fef3c7; color: #92400e; }
+        .pill-blue { background: #dbeafe; color: #1e40af; }
+        .pill-purple { background: #ede9fe; color: #6b21a8; }
+        .pill-emerald { background: #d1fae5; color: #065f46; }
+
+        .timeline-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            line-height: 1.35;
+        }
+
+        .timeline-card p {
+            font-size: 0.82rem;
+            color: #e2e8f0;
+            margin-bottom: 14px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .timeline-card .btn-card {
+            background: #ffffff;
+            color: var(--primary-dark);
+            text-decoration: none;
+            text-align: center;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.82rem;
+            transition: all 0.15s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .timeline-card .btn-card:hover {
+            background: #dbeafe;
+            color: var(--primary);
+        }
+
+        /* Section Titles */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Portal Grid */
         .portal-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
             margin-bottom: 40px;
         }
 
@@ -76,8 +239,8 @@
             background: white;
             border-radius: 18px;
             border: 1.5px solid var(--border);
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            padding: 30px 24px;
+            box-shadow: var(--shadow-sm);
+            padding: 26px 22px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -85,27 +248,26 @@
         }
 
         .portal-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
         }
 
         .card-icon {
-            font-size: 2.3rem;
-            margin-bottom: 14px;
+            font-size: 2.2rem;
+            margin-bottom: 12px;
         }
 
         .card-title {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--primary-dark);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .card-desc {
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             color: #475569;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             line-height: 1.6;
             flex-grow: 1;
         }
@@ -114,66 +276,34 @@
             display: block;
             text-align: center;
             text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 10px;
+            padding: 11px 16px;
+            border-radius: 9px;
             font-weight: 700;
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             transition: all 0.2s ease;
         }
 
-        .btn-study {
-            background: #4338ca;
-            color: white;
-        }
-        .btn-study:hover {
-            background: #3730a3;
-            box-shadow: 0 4px 12px rgba(67, 56, 202, 0.3);
-        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
 
-        .btn-mcq {
-            background: var(--primary);
-            color: white;
-        }
-        .btn-mcq:hover {
-            background: #1d4ed8;
-            box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
-        }
+        .btn-amber { background: var(--amber); color: white; }
+        .btn-amber:hover { background: #b45309; }
 
-        .btn-frq {
-            background: #0f766e;
-            color: white;
-        }
-        .btn-frq:hover {
-            background: #115e59;
-            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
-        }
+        .btn-teal { background: var(--teal); color: white; }
+        .btn-teal:hover { background: #0f766e; }
 
-        .btn-vocab {
-            background: #d97706;
-            color: white;
-        }
-        .btn-vocab:hover {
-            background: #b45309;
-            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
-        }
+        .btn-purple { background: var(--purple); color: white; }
+        .btn-purple:hover { background: #6b21a8; }
 
-        .btn-hub {
-            background: #0284c7;
-            color: white;
-        }
-        .btn-hub:hover {
-            background: #0369a1;
-            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
-        }
+        .btn-green { background: var(--green); color: white; }
+        .btn-green:hover { background: #15803d; }
 
-        .btn-map {
-            background: #dc2626;
-            color: white;
+        .btn-outline {
+            background: white;
+            color: var(--primary);
+            border: 1.5px solid var(--primary);
         }
-        .btn-map:hover {
-            background: #b91c1c;
-            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
-        }
+        .btn-outline:hover { background: var(--primary-light); }
 
         footer {
             text-align: center;
@@ -182,174 +312,219 @@
             border-top: 1px solid var(--border);
             padding-top: 24px;
         }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 1.8rem; }
+            .timeline-section { padding: 18px 16px; }
+            .timeline-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <div class="badge">AP® Human Geography Study Portal</div>
-        <h1>Exam 001 Preparation Dashboard</h1>
-        <p class="subtitle">Complete interactive concept study guides, multiple choice question mastery banks, and FRQ scoring frameworks.</p>
+        <div class="badge-row">
+            <span class="badge">AP® Human Geography</span>
+            <span class="badge badge-teacher">Mrs. Anne Knight • Room 1325</span>
+            <span class="badge badge-course">Course 276433</span>
+        </div>
+        <h1>Master Study & Assessment Hub</h1>
+        <p class="subtitle">Complete localized interactive revision portals, one-pager blueprints, free-response scoring rubrics, flashcard runners, and full College Board MCQ simulators.</p>
     </header>
 
-    <div style="background: #eff6ff; border: 2px solid #3b82f6; border-radius: 14px; padding: 16px 20px; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
-        <div>
-            <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 4px;">
-                <span style="background: #dc2626; color: white; padding: 3px 8px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">This Week's Assessments</span>
-                <span style="background: #16a34a; color: white; padding: 3px 8px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">Mrs. Knight (Room 1325)</span>
+    <!-- OCTOBER 2026 MASTER ASSESSMENT TIMELINE BANNER -->
+    <section class="timeline-section">
+        <div class="timeline-header">
+            <div class="timeline-title-group">
+                <h2><span>📅</span> October 2026 Master Assessment Timeline</h2>
+                <p>Four major Unit 2 milestones scheduled in Canvas — all study materials fully built and ready:</p>
             </div>
-            <strong style="color: #1e3a8a; font-size: 1.02rem;">Tue: World Regions Map Quiz • Wed/Thu: Unit 2 MCQ Quiz (2.1–2.4, 2.9)</strong>
-            <p style="font-size: 0.88rem; color: #475569; margin-top: 4px;">AP Classroom 20-question quiz simulator, 8th-grade hints, 4 boundary traps, and 100% mastery portals.</p>
+            <div style="font-size: 0.78rem; font-weight: 700; background: rgba(255,255,255,0.15); padding: 5px 12px; border-radius: 9999px; letter-spacing: 0.05em; text-transform: uppercase;">
+                Unit 2: Population & Migration
+            </div>
         </div>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <a href="unit2-mcq/index.html" class="btn" style="background: #006699; color: white; padding: 9px 16px; font-size: 0.88rem; font-weight: 800; border-radius: 8px; text-decoration: none; white-space: nowrap;">Unit 2 MCQ Simulator 🎯</a>
-            <a href="world-regions/quiz_action_kit.html" class="btn" style="background: #16a34a; color: white; padding: 9px 16px; font-size: 0.88rem; font-weight: 800; border-radius: 8px; text-decoration: none; white-space: nowrap;">World Regions Kit 🚀</a>
-        </div>
-    </div>
 
-    <div class="portal-grid">
-        <!-- Unit 2 MCQ Quiz (2.1–2.4, 2.9) Priority Card -->
-        <div class="portal-card" style="border: 2.5px solid #006699; background: linear-gradient(to bottom, #ffffff, #e6f3f8); box-shadow: 0 10px 25px -5px rgba(0, 102, 153, 0.2);">
-            <div>
-                <div style="display: flex; gap: 6px; align-items: center; margin-bottom: 8px;">
-                    <span style="display: inline-block; background: #dc2626; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Wed / Thu Quiz</span>
-                    <span style="display: inline-block; background: #006699; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">AP Classroom</span>
+        <div class="timeline-grid">
+            <!-- Milestone 1 -->
+            <div class="timeline-card">
+                <div>
+                    <span class="timeline-date-pill pill-gold">📅 Tue, Oct 13, 2026</span>
+                    <h3>Migration One Pager</h3>
+                    <p>6-Zone architectural blueprint, Push/Pull matrix, Ravenstein's laws, case studies (Syria, Venezuela, Great Migration), and full rubric checklist.</p>
                 </div>
-                <div class="card-icon">🎯</div>
-                <h2 class="card-title" style="color: #004d73;">Unit 2 MCQ Quiz Simulator (2.1–2.4, 2.9)</h2>
+                <a href="migration-one-pager/index.html" class="btn-card">Launch One-Pager Hub 📄</a>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-card">
+                <div>
+                    <span class="timeline-date-pill pill-blue">📅 Tue, Oct 20, 2026</span>
+                    <h3>FRQ Formative Assessment</h3>
+                    <p>In-class Free-Response test. Task verb mastery guide (Identify, Describe, Explain), plus 4 model practice FRQs with full 7/7 scoring rubrics.</p>
+                </div>
+                <a href="unit2-frq/index.html" class="btn-card">Launch FRQ Hub ✍️</a>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-card">
+                <div>
+                    <span class="timeline-date-pill pill-purple">📅 Fri, Oct 23, 2026</span>
+                    <h3>Unit 2 Vocab Summative</h3>
+                    <p>Major in-class vocabulary exam. 72 master terms across 6 domains, interactive 3D flashcards, 20-Q exam simulator, and high-yield confusing pair breakdowns.</p>
+                </div>
+                <a href="unit2-vocab/index.html" class="btn-card">Launch Vocab Portal 📖</a>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="timeline-card">
+                <div>
+                    <span class="timeline-date-pill pill-emerald">📅 Wed & Thu, Oct 28–29</span>
+                    <h3>Unit 2 MCQ Summative</h3>
+                    <p>Major Block Day written summative covering all 12 standards (Topics 2.1–2.12). 53 AP-style master questions, 8th-grade hints, and timed 20-Q simulation.</p>
+                </div>
+                <a href="unit2-mcq/index.html" class="btn-card">Launch MCQ Simulator ⏱️</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIORITY UNIT 2 STUDY HUBS -->
+    <h2 class="section-heading"><span>🎯</span> Priority Unit 2 Assessment Hubs</h2>
+    <div class="portal-grid">
+
+        <!-- 1. Migration One Pager Card -->
+        <div class="portal-card" style="border: 2px solid #d97706; background: linear-gradient(to bottom, #ffffff, #fffbeb);">
+            <div>
+                <span class="badge" style="background: #fef3c7; color: #92400e; margin-bottom: 8px;">Due Tuesday, Oct 13, 2026</span>
+                <div class="card-icon">📄</div>
+                <h2 class="card-title" style="color: #92400e;">Migration One Pager Master Blueprint</h2>
                 <p class="card-desc">
-                    Comprehensive 35-question master bank with 8th-grade hints, cheat-sheet drawer, and timed 20-question AP Classroom exam simulation. Covers Densities, Carrying Capacity, Pyramids, NIR / Doubling Time, and Aging Societies.
+                    Comprehensive A3 layout blueprint with 6 required visual zones: 1) Central Thematic Visual & Title, 2) Ravenstein's 6 Laws of Migration, 3) 4-Quadrant Push/Pull Matrix, 4) Dual Case Study Corridors (Syria & Venezuela), 5) Consequences T-Chart (Remittances vs. Brain Drain), and 6) High-Yield Vocabulary Anchor Corner.
                 </p>
             </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
-                <a href="unit2-mcq/index.html" class="btn" style="background: #006699; color: white; font-weight: 800; flex: 1; text-align: center;">Launch MCQ Hub (35 Qs) 🚀</a>
-                <a href="unit2-categorilla/index.html" class="btn" style="background: white; color: #006699; border: 1.5px solid #006699; font-weight: 700; text-align: center;">Categorilla 🦍</a>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="migration-one-pager/index.html" class="btn btn-amber" style="flex: 1;">Launch One-Pager Studio →</a>
             </div>
         </div>
 
-        <!-- Friday Formative & Categorilla Portal (Priority Highlight) -->
-        <div class="portal-card" style="border: 2px solid #2563eb; background: linear-gradient(to bottom, #ffffff, #eff6ff); box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.15);">
+        <!-- 2. FRQ Formative Card -->
+        <div class="portal-card" style="border: 2px solid #0f766e; background: linear-gradient(to bottom, #ffffff, #f0fdfa);">
             <div>
-                <span style="display: inline-block; background: #2563eb; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Interactive Simulator</span>
+                <span class="badge" style="background: #ccfbf1; color: #0f766e; margin-bottom: 8px;">In-Class Test: Tuesday, Oct 20, 2026</span>
+                <div class="card-icon">✍️</div>
+                <h2 class="card-title" style="color: #115e59;">Unit 2 FRQ Formative Mastery Hub</h2>
+                <p class="card-desc">
+                    Free Response Question preparation engine featuring the AP Task Verb Matrix (Identify vs. Describe vs. Explain), time management protocols (25 mins per question), and 4 complete practice FRQs with diagrams, sample data tables, and 7-point model scoring rubrics.
+                </p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="unit2-frq/index.html" class="btn btn-teal" style="flex: 1;">Launch FRQ Mastery Hub →</a>
+            </div>
+        </div>
+
+        <!-- 3. Vocabulary Summative Card -->
+        <div class="portal-card" style="border: 2px solid #7c3aed; background: linear-gradient(to bottom, #ffffff, #faf5ff);">
+            <div>
+                <span class="badge" style="background: #ede9fe; color: #6b21a8; margin-bottom: 8px;">In-Class Major Exam: Friday, Oct 23, 2026</span>
+                <div class="card-icon">📖</div>
+                <h2 class="card-title" style="color: #6b21a8;">Unit 2 Vocabulary Summative Portal</h2>
+                <p class="card-desc">
+                    Comprehensive interactive vocabulary suite for all 72 key terms across Topics 2.1–2.12. Includes live search, 3D interactive flashcards with shuffle & progress tracking, 20-question active-recall exam simulator, and high-yield confusing pair breakdowns (Refugee vs. IDP, Malthus vs. Boserup, Step vs. Chain).
+                </p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="unit2-vocab/index.html" class="btn btn-purple" style="flex: 1;">Launch Vocab Portal (72 Terms) →</a>
+            </div>
+        </div>
+
+        <!-- 4. MCQ Summative Simulator Card -->
+        <div class="portal-card" style="border: 2px solid #1e3a8a; background: linear-gradient(to bottom, #ffffff, #eff6ff);">
+            <div>
+                <span class="badge" style="background: #dbeafe; color: #1e40af; margin-bottom: 8px;">Major Exam: Wed Oct 28 & Thu Oct 29, 2026</span>
+                <div class="card-icon">🎯</div>
+                <h2 class="card-title" style="color: #1e3a8a;">Unit 2 MCQ Summative Simulator</h2>
+                <p class="card-desc">
+                    Full-unit AP multiple choice test simulator covering Topics 2.1 through 2.12 (Densities, Pyramids, NIR, DTM, Malthus, Policies, Migration Causes/Types/Effects). Features 53 master questions, tutor vs. timed exam mode, 8th-grade hints, and collapsible cheat sheet.
+                </p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="unit2-mcq/index.html" class="btn btn-primary" style="flex: 1;">Launch MCQ Simulator (53 Qs) →</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ADDITIONAL REVISION & COURSE TOOLS -->
+    <h2 class="section-heading"><span>📚</span> Additional Course & Review Tools</h2>
+    <div class="portal-grid">
+
+        <!-- Aging Population Categorilla Portal -->
+        <div class="portal-card">
+            <div>
                 <div class="card-icon">🦍</div>
                 <h2 class="card-title">Aging Population Categorilla Hub</h2>
                 <p class="card-desc">
-                    Comprehensive interactive Categorilla sorting simulator (20 terms, 4 analytical bins), live Dependency Ratio calculator, 3 Densities, AP trap guides (France vs. Bangladesh CDR trap), and 14-question mastery quiz for Topic 2.9 & 2.3.
+                    Interactive Categorilla sorting simulator (20 terms, 4 analytical bins), live Dependency Ratio calculator, 3 Densities formula cards, and the France vs. Bangladesh CDR trap guide.
                 </p>
             </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
-                <a href="unit2-categorilla/index.html" class="btn" style="background: #1d4ed8; color: white; font-weight: 800; flex: 1; text-align: center;">Launch Categorilla Hub →</a>
-                <a href="what-is-on-friday/index.html" class="btn" style="background: white; color: #1d4ed8; border: 1.5px solid #1d4ed8; font-weight: 700; text-align: center;">Exam Briefing ℹ️</a>
-            </div>
-        </div>
-
-        <!-- Concept Study Guides Portal -->
-        <div class="portal-card">
-            <div>
-                <div class="card-icon">📖</div>
-                <h2 class="card-title">Concept Study Guides</h2>
-                <p class="card-desc">
-                    Comprehensive concept-by-concept guides with definitions, simple-term explanations, visual models, comparative tables, and interactive flashcard checkpoints for all 6 exam topics.
-                </p>
-            </div>
-            <a href="exam-001-study-guide/index.html" class="btn btn-study">Explore Study Guides →</a>
-        </div>
-
-        <!-- MCQ Portal -->
-        <div class="portal-card">
-            <div>
-                <div class="card-icon">🎯</div>
-                <h2 class="card-title">MCQ Practice Portal</h2>
-                <p class="card-desc">
-                    240 high-yield multiple choice questions covering Topics 1.1, 1.2, 1.3, 7.2, 7.3, and 7.5. Features real-time scoring, randomized option lengths (no guessing heuristics), and in-depth rationales.
-                </p>
-            </div>
-            <a href="exam-001-mcq/index.html" class="btn btn-mcq">Launch MCQ Practice (240 Qs) →</a>
-        </div>
-
-        <!-- FRQ Portal -->
-        <div class="portal-card">
-            <div>
-                <div class="card-icon">📝</div>
-                <h2 class="card-title">FRQ Study Guides</h2>
-                <p class="card-desc">
-                    In-depth free-response question frameworks, task verb rubrics (Identify, Define, Describe, Explain), model responses, and spatial concepts for all core Exam 001 topics.
-                </p>
-            </div>
-            <a href="exam-001/index.html" class="btn btn-frq">Launch FRQ Guides →</a>
-        </div>
-
-        <!-- Vocabulary Simulator Portal -->
-        <div class="portal-card">
-            <div>
-                <div class="card-icon">🔤</div>
-                <h2 class="card-title">Vocabulary Simulator Hub</h2>
-                <p class="card-desc">
-                    120 high-yield fill-in-the-blank vocabulary questions across 4 timed simulations (Core Definitions, Complementary Terms, Real-World Scenarios, Conceptual Traps) with interactive word banks and instant rationales.
-                </p>
-            </div>
-            <a href="vocabRunner/index.html" class="btn btn-vocab">Launch Vocab Hub (120 Qs) →</a>
-        </div>
-
-        <!-- MCQ Exam Mastery Hub Portal (Week Sept 7) -->
-        <div class="portal-card">
-            <div>
-                <div class="card-icon">📊</div>
-                <h2 class="card-title">MCQ Exam Mastery Hub</h2>
-                <p class="card-desc">
-                    Interactive College Board & AMSCO test simulator featuring 10 single-topic exams (1.1–1.7, 7.2, 7.3, 7.5) and 3 comprehensive cross-unit diagnostic simulations with visual stimulus questions and textbook page citations.
-                </p>
-            </div>
-            <a href="week-sept7/mcq/index.html" class="btn btn-hub">Launch MCQ Mastery Hub →</a>
+            <a href="unit2-categorilla/index.html" class="btn btn-primary">Launch Categorilla Hub →</a>
         </div>
 
         <!-- World Regions Map Practice Hub Portal -->
-        <div class="portal-card" style="border: 2px solid #16a34a; background: linear-gradient(to bottom, #ffffff, #f0fdf4);">
+        <div class="portal-card" style="border: 1.5px solid #16a34a;">
             <div>
-                <span style="display: inline-block; background: #dc2626; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Monday (9/21) Formative</span>
                 <div class="card-icon">🗺️</div>
-                <h2 class="card-title">World Regions Map Quiz & Action Kit</h2>
+                <h2 class="card-title">World Regions Map Hub & Action Kit</h2>
                 <p class="card-desc">
-                    Interactive College Board map practice for "A Big Picture View" (10 macro-regions) and "A Closer Look" (23 subregions). Includes the Monday Quiz Action Kit, active MCQ test engine, 4 boundary trap breakdowns, and master study guides.
+                    Interactive College Board map practice for "A Big Picture View" (10 macro-regions) and "A Closer Look" (23 subregions). Includes the Quiz Action Kit and 4 boundary trap breakdowns.
                 </p>
             </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
-                <a href="world-regions/quiz_action_kit.html" class="btn" style="background: #16a34a; color: white; font-weight: 800; flex: 1; text-align: center;">Quiz Action Kit 🚀</a>
-                <a href="world-regions/index.html" class="btn" style="background: white; color: #16a34a; border: 1.5px solid #16a34a; font-weight: 700; text-align: center;">Regions Hub 🗺️</a>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="world-regions/quiz_action_kit.html" class="btn btn-green" style="flex: 1;">Quiz Action Kit 🚀</a>
+                <a href="world-regions/index.html" class="btn btn-outline">Regions Hub 🗺️</a>
             </div>
         </div>
 
-        <!-- Fiveable AP Study Hub (Unit 1 & Regional Analysis) -->
-        <div class="portal-card" style="border: 2px solid #f59e0b; background: linear-gradient(to bottom, #ffffff, #fffbeb);">
+        <!-- Fiveable AP Study Hub -->
+        <div class="portal-card" style="border: 1.5px solid #f59e0b;">
             <div>
                 <div class="card-icon">⚡</div>
                 <h2 class="card-title" style="color: #b45309;">Fiveable AP Study Hub</h2>
                 <p class="card-desc">
-                    Official Fiveable verified study guides, Unit 1 review notes, Topic 1.7 Regional Analysis focus, 15+ AP Key Terms, interactive practice questions, and downloadable 2026–2027 PDF one-pager cheatsheets.
+                    Official Fiveable verified study guides, Unit 1 review notes, Topic 1.7 Regional Analysis focus, 15+ AP Key Terms, interactive practice questions, and downloadable PDF one-pager cheatsheets.
                 </p>
             </div>
-            <a href="fiveable/index.html" class="btn" style="background: #f59e0b; color: white; font-weight: 800; text-align: center;">Launch Fiveable Hub →</a>
+            <a href="fiveable/index.html" class="btn btn-amber">Launch Fiveable Hub →</a>
+        </div>
+
+        <!-- Concept Study Guides Portal (Unit 1 & Foundations) -->
+        <div class="portal-card">
+            <div>
+                <div class="card-icon">📖</div>
+                <h2 class="card-title">Unit 1 Concept Study Guides</h2>
+                <p class="card-desc">
+                    Comprehensive concept-by-concept guides with definitions, simple-term explanations, visual models, comparative tables, and interactive flashcard checkpoints for all 6 exam topics.
+                </p>
+            </div>
+            <a href="exam-001-study-guide/index.html" class="btn btn-outline">Explore Unit 1 Guides →</a>
         </div>
 
         <!-- Intro to Healthcare (Course 276503) -->
-        <div class="portal-card" style="border: 2px solid #e11d48; background: linear-gradient(to bottom, #ffffff, #fff1f2);">
+        <div class="portal-card" style="border: 1.5px solid #e11d48;">
             <div>
                 <div style="display: flex; gap: 6px; align-items: center; margin-bottom: 8px;">
-                    <span style="display: inline-block; background: #e11d48; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Unit 3</span>
+                    <span style="display: inline-block; background: #e11d48; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Course 276503</span>
                     <span style="display: inline-block; background: #0f172a; color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Mrs. Upchurch (406)</span>
                 </div>
                 <div class="card-icon">🩺</div>
                 <h2 class="card-title" style="color: #9f1239;">Intro to Healthcare Command Hub</h2>
                 <p class="card-desc">
-                    Comprehensive study portal for Course 276503. Features the Week of 9/21–9/25 daily roadmap, Friday's Virtual Shadow Reflection Google Doc kit, Medical Terminology Set #2 Blooket practice, and the 100-point Healthcare Careers Summative Project with an interactive live speech timer.
+                    Comprehensive study portal for Course 276503. Features daily roadmaps, Virtual Shadow Reflection kit, Medical Terminology Set #2 Blooket practice, and the Healthcare Careers Summative Project with an interactive live speech timer.
                 </p>
             </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
-                <a href="healthcare/index.html" class="btn" style="background: #e11d48; color: white; font-weight: 800; flex: 1; text-align: center;">Healthcare Hub 🩺</a>
-                <a href="https://forsyth.instructure.com/courses/276503" target="_blank" class="btn" style="background: white; color: #e11d48; border: 1.5px solid #e11d48; font-weight: 700; text-align: center;">Canvas Course ↗</a>
-            </div>
+            <a href="healthcare/index.html" class="btn" style="background: #e11d48; color: white; font-weight: 700;">Healthcare Hub 🩺</a>
         </div>
+
     </div>
 
     <footer>
