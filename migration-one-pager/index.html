@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Migration One Pager — Master Toolkit & Blueprint | AP Human Geography</title>
+  <title>Migration One Pager — Master Studio & Complete Blueprint | AP Human Geography</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
     code, pre { font-family: 'JetBrains Mono', monospace; }
+    .tab-btn.active {
+      background-color: #f59e0b;
+      color: #0f172a;
+      font-weight: 800;
+    }
+    @media print {
+      header, .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .print-card { border: 1px solid #ccc !important; break-inside: avoid; }
+    }
   </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-slate-950">
 
-  <!-- HEADER -->
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+  <!-- TOP NAVIGATION HEADER -->
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <a href="../index.html" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center text-slate-950 font-black text-lg shadow-lg shadow-amber-500/20 hover:scale-105 transition">
           <i class="fa-solid fa-map-location-dot"></i>
         </a>
         <div>
-          <a href="../index.html" class="text-lg font-black tracking-tight text-white hover:text-amber-400 transition">Migration One Pager Toolkit</a>
-          <p class="text-xs text-slate-400 font-medium">AP Human Geography • Mrs. Knight • Unit 2 (Topics 2.10 – 2.12)</p>
+          <div class="flex items-center gap-2">
+            <a href="../index.html" class="text-base sm:text-lg font-black tracking-tight text-white hover:text-amber-400 transition">Migration One-Pager Master Studio</a>
+            <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase">Unit 2 High-Yield</span>
+          </div>
+          <p class="text-xs text-slate-400 font-medium">Mrs. Anne Knight • South Forsyth High School • Topics 2.10 – 2.12</p>
         </div>
       </div>
-      <div class="flex items-center gap-2.5">
-        <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+      <div class="flex items-center gap-2 sm:gap-3">
+        <span class="bg-rose-500/20 text-rose-300 border border-rose-500/40 text-xs font-bold px-3 py-1.5 rounded-xl hidden md:flex items-center gap-1.5 shadow-sm">
           <i class="fa-solid fa-calendar-check text-[11px]"></i> Due: Tuesday, Oct 13, 2026
         </span>
-        <a href="../index.html" class="text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-2 rounded-xl border border-slate-700 transition flex items-center gap-1.5">
+        <button onclick="window.print()" class="text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-2 rounded-xl border border-slate-700 transition flex items-center gap-1.5 no-print">
+          <i class="fa-solid fa-print text-amber-400"></i> Print / PDF
+        </button>
+        <a href="../index.html" class="text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-2 rounded-xl border border-slate-700 transition flex items-center gap-1.5 no-print">
           <i class="fa-solid fa-house text-emerald-400"></i> Portal Home
         </a>
       </div>
@@ -38,213 +54,507 @@
   </header>
 
   <!-- MAIN CONTAINER -->
-  <main class="max-w-6xl mx-auto px-6 py-10 flex-1 w-full space-y-10">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex-1 w-full space-y-8">
 
-    <!-- HERO BANNER -->
-    <div class="bg-gradient-to-r from-amber-950/80 via-slate-900 to-orange-950/80 border-2 border-amber-500/50 rounded-3xl p-7 md:p-8 shadow-2xl relative overflow-hidden">
-      <div class="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="space-y-4 max-w-3xl relative z-10">
+    <!-- HERO NOTIFICATION BANNER -->
+    <div class="bg-gradient-to-r from-amber-950/90 via-slate-900 to-orange-950/80 border-2 border-amber-500/60 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-16 -top-16 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="space-y-4 max-w-4xl relative z-10">
         <div class="flex flex-wrap items-center gap-2">
           <span class="bg-rose-500 text-white text-[11px] px-3 py-1 rounded-full font-black uppercase tracking-wider flex items-center gap-1.5 shadow-md shadow-rose-500/30">
-            <i class="fa-solid fa-clock text-[10px]"></i> Project Deadline: Tuesday, October 13, 2026
+            <i class="fa-solid fa-clock text-[10px]"></i> Hand-In Deadline: Tuesday, October 13, 2026
           </span>
           <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold">
-            Formative Assessment
+            Formative Visual Assessment
           </span>
           <span class="bg-slate-800 text-slate-300 border border-slate-700 text-xs px-3 py-1 rounded-full font-semibold">
-            Unit 2: Topics 2.10, 2.11 &amp; 2.12
+            Unlined 8.5" × 11" Paper
           </span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
-          Migration One Pager: Complete Visual Blueprint &amp; Requirements
-        </h2>
-        <p class="text-slate-300 text-sm leading-relaxed">
-          A "One Pager" is a single-page visual synthesis of a major unit topic. It combines geographic vocabulary, central quotes, push/pull factor diagrams, Ravenstein's laws, map migration corridors, and real-world case studies on an unlined sheet of paper.
+        <h1 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+          Complete Migration One-Pager Toolkit &amp; Ready-to-Write Dossier
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Everything you need to craft an <strong>A+ Migration One-Pager</strong> on unlined paper. Contains exact, word-for-word text blocks for all 6 mandatory zones, 3 verified real-world case studies (including local Georgia focus in Clarkston), Ravenstein's 7 Laws, Wilbur Zelinsky's Migration Transition, and pre-submission rubric checklist.
         </p>
       </div>
     </div>
 
-    <!-- 6-ZONE ONE PAGER ARCHITECTURE BLUEPRINT -->
-    <div class="space-y-6">
-      <div class="flex items-center gap-2.5">
-        <div class="w-8 h-8 rounded-lg bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold text-sm">
-          <i class="fa-solid fa-shapes"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-white tracking-tight">The 6 Mandatory One-Pager Zones</h3>
-          <p class="text-xs text-slate-400">Organize your paper into these 6 structural sections for full credit</p>
-        </div>
-      </div>
+    <!-- INTERACTIVE TAB NAVIGATION -->
+    <div class="flex flex-wrap gap-2 p-1.5 bg-slate-950/80 border border-slate-800 rounded-2xl no-print">
+      <button onclick="switchTab('layout')" id="tab-btn-layout" class="tab-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-layer-group"></i> 1. Visual Layout &amp; Sheet Blueprint
+      </button>
+      <button onclick="switchTab('content')" id="tab-btn-content" class="tab-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-pen-nib"></i> 2. Ready-to-Write Zone Text
+      </button>
+      <button onclick="switchTab('casestudies')" id="tab-btn-casestudies" class="tab-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-globe"></i> 3. Detailed Case Studies &amp; Maps
+      </button>
+      <button onclick="switchTab('theory')" id="tab-btn-theory" class="tab-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-scale-balanced"></i> 4. Ravenstein &amp; Zelinsky Models
+      </button>
+      <button onclick="switchTab('checklist')" id="tab-btn-checklist" class="tab-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-list-check"></i> 5. Mrs. Knight Rubric Checklist
+      </button>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-        <!-- Zone 1 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
+    <!-- ========================================== -->
+    <!-- TAB 1: VISUAL LAYOUT & SHEET BLUEPRINT     -->
+    <!-- ========================================== -->
+    <div id="tab-layout" class="tab-content space-y-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+        <div class="flex items-center justify-between flex-wrap gap-3 border-b border-slate-800 pb-4">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">Zone 1 • Center</span>
-              <i class="fa-solid fa-crosshairs text-amber-400 text-sm"></i>
-            </div>
-            <h4 class="text-base font-bold text-white mb-2">Central Symbolic Image &amp; Title</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              A large, central illustration that represents your chosen migration topic (e.g., luggage with passport stamps, a migrant border path, or a divided globe). A prominent title with essential thematic typography.
-            </p>
+            <h2 class="text-xl font-black text-white flex items-center gap-2">
+              <i class="fa-solid fa-border-all text-amber-400"></i> Physical Paper Layout Grid (8.5" × 11")
+            </h2>
+            <p class="text-xs text-slate-400">Recommended spatial allocation so your one-pager is balanced, colorful, and contains zero blank space.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-amber-400/90 font-semibold">
-            Tip: Must be colored and hand-drawn (no white space left unfilled).
+          <span class="text-xs font-semibold px-3 py-1 bg-amber-500/20 text-amber-300 rounded-lg border border-amber-500/30">
+            Outer Border: Thematic Quotes &amp; Icons
+          </span>
+        </div>
+
+        <!-- MOCKUP CANVAS OF THE PAPER -->
+        <div class="border-4 border-dashed border-amber-500/40 rounded-2xl p-4 sm:p-6 bg-slate-900/90 relative shadow-inner">
+          <div class="text-center pb-3 border-b border-slate-800 text-xs font-bold tracking-widest text-amber-400 uppercase">
+            ⬆ TOP BORDER: "Most migrants move short distances for economic reasons" ⬆
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 py-4">
+            
+            <!-- TOP LEFT: ZONE 2 (RAVENSTEIN) -->
+            <div class="md:col-span-4 bg-sky-950/40 border border-sky-500/40 rounded-xl p-4 space-y-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-sky-500/20 text-sky-300">Zone 2 • Top-Left</span>
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-scale-balanced text-sky-400"></i> Ravenstein's Laws
+              </h3>
+              <p class="text-xs text-slate-300">Draw distance decay curve, city gravity arrow, and note young adult single male labor trend.</p>
+            </div>
+
+            <!-- TOP CENTER: ZONE 1 (TITLE & CENTER SYMBOL) -->
+            <div class="md:col-span-4 bg-amber-950/40 border-2 border-amber-500 rounded-xl p-4 text-center space-y-2 flex flex-col justify-center items-center">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300">Zone 1 • Center Core</span>
+              <h3 class="text-base font-black text-amber-400 uppercase tracking-wider">
+                MIGRATION: PUSH, PULL &amp; IMPACT
+              </h3>
+              <div class="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-2xl">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <p class="text-[11px] text-slate-300">Large symbolic illustration (passport with visas, divided globe, or border bridge).</p>
+            </div>
+
+            <!-- TOP RIGHT: ZONE 3 (PUSH & PULL T-CHART) -->
+            <div class="md:col-span-4 bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 space-y-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Zone 3 • Top-Right</span>
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-arrows-split-up-and-left text-emerald-400"></i> Push vs. Pull Matrix
+              </h3>
+              <p class="text-xs text-slate-300">4-way split: Economic (#1), Political, Environmental, Social + Intervening Obstacles.</p>
+            </div>
+
+            <!-- BOTTOM LEFT: ZONE 4 (VOCABULARY) -->
+            <div class="md:col-span-4 bg-purple-950/40 border border-purple-500/40 rounded-xl p-4 space-y-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">Zone 4 • Bottom-Left</span>
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-book-bookmark text-purple-400"></i> Essential Vocabulary
+              </h3>
+              <p class="text-xs text-slate-300">5+ core terms: Refugee, IDP, Asylum Seeker, Chain Migration, Step Migration, Transhumance.</p>
+            </div>
+
+            <!-- BOTTOM CENTER: ZONE 5 (CASE STUDY & SKETCH MAP) -->
+            <div class="md:col-span-4 bg-rose-950/40 border border-rose-500/40 rounded-xl p-4 space-y-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-rose-500/20 text-rose-300">Zone 5 • Bottom-Center</span>
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-route text-rose-400"></i> Corridor Sketch Map
+              </h3>
+              <p class="text-xs text-slate-300">Mini-map sketch with origin &amp; destination arrows (e.g., Syria ➔ Germany or US Great Migration).</p>
+            </div>
+
+            <!-- BOTTOM RIGHT: ZONE 6 (CONSEQUENCES) -->
+            <div class="md:col-span-4 bg-teal-950/40 border border-teal-500/40 rounded-xl p-4 space-y-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-teal-500/20 text-teal-300">Zone 6 • Bottom-Right</span>
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-money-bill-transfer text-teal-400"></i> Dual Consequences
+              </h3>
+              <p class="text-xs text-slate-300">Origin: Remittances (+) vs. Brain Drain (-). Destination: Labor (+) vs. Cultural Xenophobia (-).</p>
+            </div>
+
+          </div>
+
+          <div class="text-center pt-3 border-t border-slate-800 text-xs font-bold tracking-widest text-amber-400 uppercase">
+            ⬇ BOTTOM BORDER: "Refugees cross international boundaries; IDPs remain within borders" ⬇
           </div>
         </div>
 
-        <!-- Zone 2 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">Zone 2 • Theory</span>
-              <i class="fa-solid fa-scale-balanced text-sky-400 text-sm"></i>
+        <!-- 4 BORDER QUOTE OPTIONS -->
+        <div class="space-y-3 pt-2">
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider text-slate-400">Recommended Quotes for Your Paper's Decorative Border:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl text-slate-300 flex items-start gap-2">
+              <span class="text-amber-400 font-bold">1.</span>
+              <span><em>"Economic opportunity is the paramount global driver; people move toward capital and jobs."</em></span>
             </div>
-            <h4 class="text-base font-bold text-white mb-2">Ravenstein's Laws of Migration</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Include at least 3 of E.G. Ravenstein's laws illustrated with icons:
-            </p>
-            <ul class="text-xs text-slate-400 list-disc pl-4 space-y-1 mt-2">
-              <li>Most migrants travel short distances (Distance Decay).</li>
-              <li>Migrants traveling long distances head to major urban centers.</li>
-              <li>Rural residents are more likely to migrate than urban residents.</li>
-              <li>Adults migrate more than families with children.</li>
-            </ul>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-sky-400/90 font-semibold">
-            Key Term: Gravity Model &amp; Distance Decay
-          </div>
-        </div>
-
-        <!-- Zone 3 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Zone 3 • Drivers</span>
-              <i class="fa-solid fa-arrows-split-up-and-left text-emerald-400 text-sm"></i>
+            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl text-slate-300 flex items-start gap-2">
+              <span class="text-amber-400 font-bold">2.</span>
+              <span><em>"E.G. Ravenstein (1885): Most migrants travel short distances; long-distance migrants seek large cities."</em></span>
             </div>
-            <h4 class="text-base font-bold text-white mb-2">Push vs. Pull Factors T-Chart</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Clear visual comparison of conditions inducing migration across 4 categories:
-            </p>
-            <div class="text-xs text-slate-300 space-y-1 mt-2">
-              <p>• <strong>Economic:</strong> Poverty/unemployment (push) vs. Jobs/high wages (pull).</p>
-              <p>• <strong>Social/Cultural:</strong> Religious persecution vs. Freedom.</p>
-              <p>• <strong>Political:</strong> War, tyranny vs. Political stability.</p>
-              <p>• <strong>Environmental:</strong> Drought, famine, flooding vs. Safe climate.</p>
+            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl text-slate-300 flex items-start gap-2">
+              <span class="text-amber-400 font-bold">3.</span>
+              <span><em>"Remittances sustain origin households; Brain Drain deprives developing nations of critical talent."</em></span>
             </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-emerald-400/90 font-semibold">
-            Include: Intervening Obstacles vs. Opportunities
-          </div>
-        </div>
-
-        <!-- Zone 4 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">Zone 4 • Vocab</span>
-              <i class="fa-solid fa-book-bookmark text-purple-400 text-sm"></i>
+            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl text-slate-300 flex items-start gap-2">
+              <span class="text-amber-400 font-bold">4.</span>
+              <span><em>"Forced migrants flee war and persecution; voluntary migrants exercise economic agency."</em></span>
             </div>
-            <h4 class="text-base font-bold text-white mb-2">Essential Vocabulary Corner</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Integrate at least 5 core terms with your own concise definitions:
-            </p>
-            <div class="text-xs text-slate-400 space-y-1 mt-2">
-              <p>• <strong>Refugee:</strong> Forced to migrate across international borders due to armed conflict/persecution.</p>
-              <p>• <strong>IDP (Internally Displaced Person):</strong> Forced to flee like a refugee but has not crossed an international boundary.</p>
-              <p>• <strong>Chain Migration:</strong> Migration of people to a location because relatives or members of same nationality previously migrated there.</p>
-              <p>• <strong>Step Migration:</strong> Migration in stages (e.g., farm &rarr; village &rarr; small town &rarr; big city).</p>
-              <p>• <strong>Transhumance:</strong> Seasonal migration of pastoralists.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-purple-400/90 font-semibold">
-            Highlight: Distinction between Refugee vs. IDP vs. Asylum Seeker
-          </div>
-        </div>
-
-        <!-- Zone 5 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">Zone 5 • Case Study</span>
-              <i class="fa-solid fa-globe text-rose-400 text-sm"></i>
-            </div>
-            <h4 class="text-base font-bold text-white mb-2">Real-World Migration Corridor</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Illustrate a historical or contemporary migration flow on a sketch map:
-            </p>
-            <ul class="text-xs text-slate-400 list-disc pl-4 space-y-1 mt-2">
-              <li><strong>Syrian Civil War:</strong> Forced refugee stream to Turkey &amp; Europe.</li>
-              <li><strong>Venezuela Exodus:</strong> Economic hyperinflation to Colombia/US.</li>
-              <li><strong>Great Migration (US 1916–1970):</strong> African Americans leaving rural South for Northern industrial cities.</li>
-              <li><strong>Guest Workers (Gulf States):</strong> South Asians moving to UAE/Qatar for construction.</li>
-            </ul>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-rose-400/90 font-semibold">
-            Illustrate: Origin, Destination &amp; Flow Arrow
-          </div>
-        </div>
-
-        <!-- Zone 6 -->
-        <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between shadow-md hover:border-amber-500/40 transition">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-teal-500/20 text-teal-300 border border-teal-500/30">Zone 6 • Impacts</span>
-              <i class="fa-solid fa-money-bill-transfer text-teal-400 text-sm"></i>
-            </div>
-            <h4 class="text-base font-bold text-white mb-2">Consequences: Origin vs. Destination</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Show the two-way impacts of migration:
-            </p>
-            <div class="text-xs text-slate-300 space-y-1 mt-2">
-              <p>• <strong>Impact on Origin:</strong> Remittances (financial transfers sent back), loss of working-age population, <em>Brain Drain</em> (loss of educated professionals).</p>
-              <p>• <strong>Impact on Destination:</strong> Low-cost labor, cultural diversification, potential anti-immigrant sentiment/xenophobia, population stabilization in aging societies.</p>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] text-teal-400/90 font-semibold">
-            Essential Concept: Remittance dependency &amp; Brain Drain
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- PRE-SUBMISSION CHECKLIST -->
-    <div class="bg-slate-800/50 border border-slate-700 rounded-3xl p-6 sm:p-8">
-      <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-        <i class="fa-solid fa-list-check text-emerald-400"></i> Pre-Submission Rubric Checklist (Due Oct 13)
-      </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-        <div class="space-y-2.5">
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>Unlined paper used:</strong> Complete project created on 8.5x11 white cardstock or printer paper (no notebook lines).</span>
-          </label>
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>Color &amp; Visuals:</strong> No large empty white spaces; purposeful use of color to distinguish categories.</span>
-          </label>
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>Thematic Border:</strong> Border decorated with migration-related symbols or quotes (e.g., compass arrows, footprints).</span>
-          </label>
+    <!-- ========================================== -->
+    <!-- TAB 2: READY-TO-WRITE ZONE TEXT           -->
+    <!-- ========================================== -->
+    <div id="tab-content" class="tab-content hidden space-y-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-8">
+        <div>
+          <h2 class="text-xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-pen-fancy text-amber-400"></i> Direct Copy Content Blocks
+          </h2>
+          <p class="text-xs text-slate-400">Use these exact bullet points and definitions directly on your hand-drawn one-pager sheet.</p>
         </div>
-        <div class="space-y-2.5">
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>All 6 Zones Covered:</strong> Center symbol, Ravenstein's laws, Push/Pull chart, Vocab terms, Case study corridor, and Consequences.</span>
-          </label>
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>Academic Rigor:</strong> Accurate AP Human Geography terminology (remittances, brain drain, intervening obstacles, forced vs. voluntary).</span>
-          </label>
-          <label class="flex items-start gap-2 text-slate-300">
-            <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500">
-            <span><strong>Name &amp; Period:</strong> Cleanly written on back or lower corner as requested by Mrs. Knight.</span>
-          </label>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- CARD 1: RAVENSTEIN'S LAWS (ZONE 2) -->
+          <div class="bg-slate-900/90 border border-sky-500/40 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase text-sky-400 tracking-wider">Zone 2 • Theory Content</span>
+              <span class="text-xs bg-sky-500/20 text-sky-300 px-2.5 py-0.5 rounded-full font-bold">Ravenstein's Laws</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">What to write for Ravenstein's Laws:</h3>
+            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+              <li><strong>Distance Decay Principle:</strong> The majority of migrants travel only short distances within their own country. Interaction drops as distance grows.</li>
+              <li><strong>Urban Gravitation:</strong> Migrants traveling longer distances disproportionately move to major commercial and industrial cities (Gravity Model).</li>
+              <li><strong>Step Migration:</strong> Long-distance moves occur incrementally: farm ➔ village ➔ small town ➔ metropolis.</li>
+              <li><strong>Rural to Urban Flow:</strong> Historically, rural agricultural populations are far more mobile than urban citizens.</li>
+              <li><strong>Counter-Migration Streams:</strong> Every primary migration flow produces a compensating counter-stream (e.g., return migration).</li>
+              <li><strong>Demographics:</strong> Historically, young single adult males migrate internationally for work, whereas families move internally.</li>
+            </ul>
+            <div class="p-3 bg-sky-950/40 border border-sky-500/30 rounded-xl text-xs text-sky-300">
+              <strong>Visual Drawing Tip:</strong> Sketch a downward curved line labeled <em>"Distance Decay"</em> next to a small sketch of a skyscraper city with arrows pointing toward it.
+            </div>
+          </div>
+
+          <!-- CARD 2: PUSH VS PULL MATRIX (ZONE 3) -->
+          <div class="bg-slate-900/90 border border-emerald-500/40 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase text-emerald-400 tracking-wider">Zone 3 • Drivers Content</span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">4-Category T-Chart</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">What to write for Push vs. Pull Factors:</h3>
+            <div class="text-xs space-y-2.5 text-slate-300">
+              <div class="border-l-2 border-emerald-500 pl-3">
+                <strong class="text-white">1. Economic Factors (#1 Global Driver):</strong><br>
+                • <em>Push:</em> Factory closures, hyperinflation (Venezuela), lack of job prospects, deep poverty.<br>
+                • <em>Pull:</em> Labor shortages, higher wage potential, industrial/tech opportunities.
+              </div>
+              <div class="border-l-2 border-emerald-500 pl-3">
+                <strong class="text-white">2. Political Factors:</strong><br>
+                • <em>Push:</em> Armed civil war, totalitarian rule, religious/ethnic persecution, denial of liberties.<br>
+                • <em>Pull:</em> Democratic stability, rule of law, fair trials, asylum protection.
+              </div>
+              <div class="border-l-2 border-emerald-500 pl-3">
+                <strong class="text-white">3. Social / Cultural Factors:</strong><br>
+                • <em>Push:</em> Discrimination, rigid caste systems, gender oppression.<br>
+                • <em>Pull:</em> Established ethnic enclaves, family sponsorship (Chain Migration), university hubs.
+              </div>
+              <div class="border-l-2 border-emerald-500 pl-3">
+                <strong class="text-white">4. Environmental Factors:</strong><br>
+                • <em>Push:</em> Desertification (Sahel), crop failure (Irish Potato Famine), rising sea levels (Tuvalu).<br>
+                • <em>Pull:</em> Temperate sunny climates (US Sunbelt), fertile land, safe freshwater access.
+              </div>
+            </div>
+            <div class="p-3 bg-emerald-950/40 border border-emerald-500/30 rounded-xl text-xs text-emerald-300">
+              <strong>Spatial Nuance:</strong> Define <em>Intervening Obstacle</em> (mountain, desert, visa barrier) vs. <em>Intervening Opportunity</em> (finding a great job halfway to your destination).
+            </div>
+          </div>
+
+          <!-- CARD 3: VOCABULARY BANK (ZONE 4) -->
+          <div class="bg-slate-900/90 border border-purple-500/40 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase text-purple-400 tracking-wider">Zone 4 • Core Vocab</span>
+              <span class="text-xs bg-purple-500/20 text-purple-300 px-2.5 py-0.5 rounded-full font-bold">6 Essential AP Terms</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">What to write in your Vocab Corner:</h3>
+            <ul class="text-xs text-slate-300 space-y-2 list-disc pl-4">
+              <li><strong>Refugee (UN 1951):</strong> A person forced to flee their home country across an <em>international border</em> due to well-founded fear of persecution or armed conflict.</li>
+              <li><strong>Internally Displaced Person (IDP):</strong> A person forced to flee their home due to conflict or disaster who remains <em>within their own nation's borders</em> (lacks international treaty rights).</li>
+              <li><strong>Asylum Seeker:</strong> A migrant who has crossed an international border and formally filed a legal petition for refugee status, awaiting adjudication.</li>
+              <li><strong>Chain Migration:</strong> The migration of people to a specific community because relatives, friends, or members of the same nationality previously settled there.</li>
+              <li><strong>Step Migration:</strong> Long-distance movement accomplished through a series of shorter stages or intermediary towns.</li>
+              <li><strong>Transhumance:</strong> The seasonal cyclic movement of pastoralists and livestock between high summer mountain pastures and lowland winter valleys.</li>
+            </ul>
+            <div class="p-3 bg-purple-950/40 border border-purple-500/30 rounded-xl text-xs text-purple-300">
+              <strong>High-Yield Distinction:</strong> Mrs. Knight and the AP Exam always test whether you know that a <em>Refugee</em> crosses an international border while an <em>IDP</em> stays inside the country.
+            </div>
+          </div>
+
+          <!-- CARD 4: CONSEQUENCES MATRIX (ZONE 6) -->
+          <div class="bg-slate-900/90 border border-teal-500/40 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase text-teal-400 tracking-wider">Zone 6 • Geographic Impact</span>
+              <span class="text-xs bg-teal-500/20 text-teal-300 px-2.5 py-0.5 rounded-full font-bold">Origin vs. Destination</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">What to write for Consequences:</h3>
+            <div class="text-xs space-y-3 text-slate-300">
+              <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                <span class="text-amber-400 font-bold uppercase text-[11px] block mb-1">Impacts on Origin Country (Sending):</span>
+                <p>• <strong>Positive:</strong> Massive inflow of <em>Remittances</em> (cash sent back to families, fueling local retail and construction); reduced domestic unemployment.</p>
+                <p class="mt-1">• <strong>Negative:</strong> <em>Brain Drain</em> (loss of educated doctors, engineers, teachers); aging and skewed sex ratios left in rural communities.</p>
+              </div>
+              <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                <span class="text-teal-400 font-bold uppercase text-[11px] block mb-1">Impacts on Destination Country (Receiving):</span>
+                <p>• <strong>Positive:</strong> Influx of young working-age labor offsets declining birth rates in aging societies (Stage 4/5 DTM); cultural diffusion and tax generation.</p>
+                <p class="mt-1">• <strong>Negative:</strong> Initial strains on schooling and public infrastructure; potential cultural friction, political polarization, or <em>Xenophobia</em>.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: DETAILED CASE STUDIES & MAPS        -->
+    <!-- ========================================== -->
+    <div id="tab-casestudies" class="tab-content hidden space-y-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+        <div>
+          <h2 class="text-xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-map-marked-alt text-amber-400"></i> Zone 5 Corridor Options: 3 Verified Case Studies
+          </h2>
+          <p class="text-xs text-slate-400">Pick any ONE of these three migration streams to illustrate on your paper's sketch map.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- CASE STUDY 1: SYRIA -->
+          <div class="bg-slate-900 border-2 border-rose-500/40 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-rose-500/20 text-rose-300">Option A • Forced International</span>
+              <h3 class="text-base font-bold text-white">The Syrian Civil War Refugee Crisis (2011–Present)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong>Causes:</strong> Violent armed civil conflict, government shelling, and extremist violence created the 21st century's largest forced displacement crisis.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 bg-slate-950 p-3 rounded-xl border border-slate-800">
+                <p>• <strong>Origin:</strong> Syrian Arab Republic (Damascus, Aleppo).</p>
+                <p>• <strong>Destinations:</strong> Turkey (3.6M+), Jordan, Lebanon, Germany, Sweden.</p>
+                <p>• <strong>Scale:</strong> 6.6 Million external refugees; 6.7 Million internal IDPs.</p>
+                <p>• <strong>Obstacles:</strong> Mediterranean sea crossings, razor-wire EU border walls.</p>
+              </div>
+            </div>
+            <div class="text-[11px] text-rose-400 font-semibold pt-2 border-t border-slate-800">
+              ✏️ <strong>Sketch Map Guide:</strong> Draw Middle East map with arrows from Syria into Turkey and across Mediterranean to Germany.
+            </div>
+          </div>
+
+          <!-- CASE STUDY 2: US GREAT MIGRATION -->
+          <div class="bg-slate-900 border-2 border-amber-500/40 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300">Option B • Voluntary Internal</span>
+              <h3 class="text-base font-bold text-white">The U.S. Great Migration (1916–1970)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong>Causes:</strong> Over 6 million African Americans relocated from the rural South to urban industrial centers of the North, Midwest, and West.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 bg-slate-950 p-3 rounded-xl border border-slate-800">
+                <p>• <strong>Push Factors:</strong> Jim Crow segregation laws, racial violence, sharecropping debt, and boll weevil crop destruction.</p>
+                <p>• <strong>Pull Factors:</strong> High-wage WWI/WWII factory jobs, industrial labor demand, voting rights, and cultural expression.</p>
+                <p>• <strong>Destinations:</strong> Chicago, Detroit, New York, Philadelphia.</p>
+                <p>• <strong>Impact:</strong> Harlem Renaissance, Chicago South Side cultural explosion.</p>
+              </div>
+            </div>
+            <div class="text-[11px] text-amber-400 font-semibold pt-2 border-t border-slate-800">
+              ✏️ <strong>Sketch Map Guide:</strong> Draw outline of US map with arrows rising from Alabama, Mississippi, and Georgia up toward Chicago, Detroit, and New York.
+            </div>
+          </div>
+
+          <!-- CASE STUDY 3: CLARKSTON, GEORGIA (LOCAL BONUS) -->
+          <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Option C • Georgia Local Focus</span>
+              <h3 class="text-base font-bold text-white">Clarkston, Georgia: "Ellis Island of the South"</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <strong>Causes:</strong> In the 1990s, federal refugee agencies designated Clarkston (DeKalb County, GA) as a primary southeastern resettlement hub.
+              </p>
+              <div class="text-xs text-slate-400 space-y-1 bg-slate-950 p-3 rounded-xl border border-slate-800">
+                <p>• <strong>Why Clarkston:</strong> Cheap apartment complexes, MARTA rapid transit, entry-level meatpacking and service jobs in Atlanta.</p>
+                <p>• <strong>Origin Nations:</strong> Over 50 countries including Somalia, Sudan, Bhutan, Afghanistan, Myanmar, and Syria.</p>
+                <p>• <strong>Landscape Impact:</strong> 1.4-square-mile town became the most linguistically diverse square mile in the United States.</p>
+              </div>
+            </div>
+            <div class="text-[11px] text-emerald-400 font-semibold pt-2 border-t border-slate-800">
+              ⭐ <strong>Teacher Favorite:</strong> Using Clarkston directly hits Georgia Standard <code>SSWG4.c</code> and impresses Mrs. Knight!
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 4: RAVENSTEIN & ZELINSKY MODELS       -->
+    <!-- ========================================== -->
+    <div id="tab-theory" class="tab-content hidden space-y-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+        <div>
+          <h2 class="text-xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-amber-400"></i> Theoretical Spatial Models (AP High-Yield)
+          </h2>
+          <p class="text-xs text-slate-400">Connecting your one-pager to foundational AP geographic models guarantees maximum rubric points.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- ZELINSKY'S MIGRATION TRANSITION MODEL -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-amber-400"></i> Wilbur Zelinsky's Migration Transition Model
+              </h3>
+              <span class="text-xs bg-amber-500/20 text-amber-300 font-bold px-2 py-0.5 rounded">Correlated to DTM</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Geographer Wilbur Zelinsky proved that migration patterns shift systematically as a country advances through the <strong>Demographic Transition Model (DTM)</strong>:
+            </p>
+            <div class="space-y-2 text-xs">
+              <div class="p-2.5 bg-slate-950 rounded-xl border border-slate-800">
+                <span class="text-rose-400 font-bold">Stage 1 (Pre-Industrial):</span> High CBR &amp; High CDR. High daily or seasonal mobility (transhumance/pastoralism), but virtually no permanent international migration.
+              </div>
+              <div class="p-2.5 bg-slate-950 rounded-xl border border-slate-800">
+                <span class="text-amber-400 font-bold">Stage 2 (Transitional - e.g., 19th Century Europe, modern Sub-Saharan Africa):</span> Plunging CDR &amp; soaring NIR cause overpopulation. High <strong>international emigration</strong> to wealthier nations and rapid internal <strong>rural-to-urban</strong> migration.
+              </div>
+              <div class="p-2.5 bg-slate-950 rounded-xl border border-slate-800">
+                <span class="text-sky-400 font-bold">Stage 3 &amp; 4 (Industrial &amp; Modern - e.g., USA, UK, Germany):</span> Low CBR &amp; CDR. Destinations for international immigration. Primary internal movement is <strong>intraregional (cities to suburbs)</strong>.
+              </div>
+            </div>
+          </div>
+
+          <!-- THE GRAVITY MODEL OF MIGRATION -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-magnet text-sky-400"></i> The Gravity Model of Spatial Interaction
+              </h3>
+              <span class="text-xs bg-sky-500/20 text-sky-300 font-bold px-2 py-0.5 rounded">Formula</span>
+            </div>
+            <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl text-center">
+              <p class="text-amber-400 font-mono text-sm font-bold">Spatial Interaction = (Pop A × Pop B) ÷ (Distance)²</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              <strong>Core Concept:</strong> Larger population centers have greater economic gravitational pull on migrants, but distance acts as an exponential friction.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+              <li>Why Atlanta attracts migrants from across Georgia rather than Macon or Augusta.</li>
+              <li>Why New York City attracts immigrants from around the world despite vast physical ocean distances.</li>
+              <li>Directly explains Ravenstein's law that long-distance migrants travel to large urban commercial capitals.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 5: MRS. KNIGHT RUBRIC CHECKLIST        -->
+    <!-- ========================================== -->
+    <div id="tab-checklist" class="tab-content hidden space-y-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+        <div>
+          <h2 class="text-xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-clipboard-check text-emerald-400"></i> Pre-Submission Rubric Checklist (Due Tuesday, Oct 13)
+          </h2>
+          <p class="text-xs text-slate-400">Check off each item before handing in your physical paper in Room 1325.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div class="space-y-3">
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">1. Unlined Paper:</strong>
+                <span class="text-slate-400">Created entirely on unlined white paper or cardstock (no loose-leaf notebook lines).</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">2. Zero Blank Space:</strong>
+                <span class="text-slate-400">Fully colored with colored pencils, fine markers, or light background shading (no unfilled white areas).</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">3. Thematic Border:</strong>
+                <span class="text-slate-400">All 4 outer edges framed with migration icons (compasses, footprints, arrows) or quotes.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">4. Central Graphic &amp; Title:</strong>
+                <span class="text-slate-400">Prominent symbolic illustration in Zone 1 (passport, globe, or border bridge) with clear title.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">5. Ravenstein's Laws Included:</strong>
+                <span class="text-slate-400">At least 3 of Ravenstein's laws clearly noted with distance decay illustration.</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="space-y-3">
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">6. 4-Category Push/Pull Matrix:</strong>
+                <span class="text-slate-400">Covers Economic, Political, Environmental, and Social push/pull factors plus intervening barriers.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">7. 5+ Vocab Terms Defined:</strong>
+                <span class="text-slate-400">Accurate AP definitions for Refugee, IDP, Asylum Seeker, Chain Migration, and Step Migration.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">8. Sketch Map with Migration Vectors:</strong>
+                <span class="text-slate-400">Specific case study corridor drawn with origin, directional arrows, and destination.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">9. Dual Consequences Analyzed:</strong>
+                <span class="text-slate-400">Highlights both Remittances (+) and Brain Drain (-) for origin, and labor (+) vs. xenophobia (-) for destination.</span>
+              </div>
+            </label>
+            <label class="flex items-start gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" checked class="mt-0.5 rounded text-amber-500 focus:ring-amber-500 w-4 h-4">
+              <div>
+                <strong class="text-white block">10. Student Name on Back:</strong>
+                <span class="text-slate-400">Your name, class period, and date written clearly on the back of the paper.</span>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -253,9 +563,27 @@
 
   <!-- FOOTER -->
   <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
-    <p>AP Human Geography • Mrs. Anne Knight (Room 1325) • South Forsyth High School</p>
-    <p class="mt-1 text-slate-600">Formative Assessment Milestone: Due Tuesday, October 13, 2026</p>
+    <p>AP Human Geography Study Hub • Mrs. Anne Knight (Room 1325) • South Forsyth High School</p>
+    <p class="mt-1 text-slate-600">Unit 2 Migration One-Pager Toolkit • Formative Milestone</p>
   </footer>
+
+  <!-- SCRIPT FOR TAB SWITCHING -->
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.add('bg-slate-900', 'text-slate-300');
+      });
+      const activeContent = document.getElementById('tab-' + tabId);
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.classList.remove('bg-slate-900', 'text-slate-300');
+      }
+    }
+  </script>
 
 </body>
 </html>
