@@ -1,0 +1,1944 @@
+[
+  {
+    "id": 1,
+    "term": "Population distribution",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "55-58",
+      "definition": "The pattern of human settlement-the spread of people across the earth.",
+      "context": "Human settlement patterns can be clustered, dispersed, or linear. Physical factors (climate, landforms, bodies of water) and human factors (economic opportunity, safety, culture) determine where humans cluster."
+    },
+    "plainEnglish": "Where people live on Earth's surface—showing clusters and empty areas.",
+    "formula": null,
+    "stimulusTypes": [
+      "Dot Density Map",
+      "Cartogram",
+      "Choropleth Map"
+    ],
+    "collegeBoardTestingPattern": "College Board frequently shows a dot density map or cartogram of the world and asks students to identify physical or human factors causing uneven clustering (e.g., East Asia, South Asia, Europe).",
+    "confusingPairs": {
+      "confusedWith": "Population density",
+      "howToDistinguish": "Distribution is the SPATIAL PATTERN (WHERE people are located—clustered, dispersed, linear); Density is the NUMERICAL FREQUENCY (HOW CROWDED an area is per square mile)."
+    },
+    "apExamTraps": "Assuming modern technology allows humans to live equally everywhere. In reality, the ecumene is still heavily constrained by arid deserts, polar ice, high mountains, and wet tropics.",
+    "frqApplication": "When an FRQ asks to 'Describe the spatial distribution', always use geographic pattern words: 'clustered in coastal lowlands and river valleys', 'dispersed across interior highlands', or 'linear along river corridors'.",
+    "realWorldAPExamples": [
+      "Over 90% of humanity lives in the Northern Hemisphere, clustered between 30°N and 60°N (midlatitudes).",
+      "Major global clusters: East Asia (coastal China), South Asia (Indo-Gangetic Plain), Europe (coalfields & industrial cities), Southeast Asia (river deltas/islands).",
+      "Non-ecumene sparse zones: Sahara Desert, Siberian Tundra, Amazon Basin, Tibetan Plateau."
+    ],
+    "memoryHook": "Distribution = Dot Map (Where); Density = Division (How Many per Area)."
+  },
+  {
+    "id": 2,
+    "term": "Population density",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "55, 58-60",
+      "definition": "A measure of the average population per square mile or kilometer of an area.",
+      "context": "Measures how crowded an area is. Demographers use three distinct density measures: arithmetic, physiological, and agricultural."
+    },
+    "plainEnglish": "How crowded a piece of land is on average.",
+    "formula": "Total Population / Total Land Area (for basic density)",
+    "stimulusTypes": [
+      "Data Table",
+      "Choropleth Map"
+    ],
+    "collegeBoardTestingPattern": "Presents a table comparing multiple countries across different density types and asks which country experiences the greatest pressure on its domestic food supply.",
+    "confusingPairs": {
+      "confusedWith": "Overpopulation",
+      "howToDistinguish": "High density simply means many people per unit of land (like Monaco or the Netherlands); overpopulation occurs only when population exceeds carrying capacity and environmental degradation results."
+    },
+    "apExamTraps": "Believing that high population density automatically means poverty or starvation. The Netherlands and Singapore have extremely high densities but very high standards of living.",
+    "frqApplication": "Explain that density measures provide insights into land use, infrastructure strain, and resource allocation, but arithmetic density alone hides internal regional variations.",
+    "realWorldAPExamples": [
+      "United States average density: ~93 people/sq. mi. (hides dense cities like NYC at 27,000/sq. mi. vs. rural Wyoming at 6/sq. mi.).",
+      "Bangladesh average density: ~3,000 people/sq. mi. (extremely crowded delta landscape)."
+    ],
+    "memoryHook": "Density = Division: People divided by Space."
+  },
+  {
+    "id": 3,
+    "term": "Arithmetic density",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "58-60",
+      "definition": "Calculated by dividing a region's population by its total area; the most commonly used measure.",
+      "context": "Gives a crude snapshot of population concentration across an entire country's territory without regard to land quality or habitability."
+    },
+    "plainEnglish": "Crude population density: total people divided by total land area.",
+    "formula": "Total Population / Total Land Area",
+    "stimulusTypes": [
+      "Data Table",
+      "Global Choropleth Map"
+    ],
+    "collegeBoardTestingPattern": "Tests the limitation of arithmetic density by presenting a large country with uneven settlement (e.g., Canada, Egypt, Australia) and asking why arithmetic density gives a misleading impression of population pressure.",
+    "confusingPairs": {
+      "confusedWith": "Physiological density",
+      "howToDistinguish": "Arithmetic divides by TOTAL land area (including deserts, mountains, glaciers); Physiological divides ONLY by ARABLE (farmable) land."
+    },
+    "apExamTraps": "Using arithmetic density to assess agricultural self-sufficiency or food security. Arithmetic density cannot reveal whether land can support farming.",
+    "frqApplication": "Identify that arithmetic density obscures internal unevenness because it assumes humans are evenly dispersed across all square miles of a nation's territory.",
+    "realWorldAPExamples": [
+      "Egypt: Arithmetic density is only ~226 people/sq. mi., which falsely suggests a moderately uncrowded country (because 97% is empty Sahara desert).",
+      "Canada: Arithmetic density is ~11 people/sq. mi., masking the fact that 90% of Canadians live within 100 miles of the US border."
+    ],
+    "memoryHook": "Arithmetic = All Land (Total people / Total land)."
+  },
+  {
+    "id": 4,
+    "term": "Physiological density",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "58-59",
+      "definition": "Calculated by dividing population by the amount of arable land, or land suitable for growing crops.",
+      "context": "Much more useful measure than arithmetic density to determine a region's carrying capacity and nutritional pressure on domestic soil."
+    },
+    "plainEnglish": "How many people rely on each unit of farmable land.",
+    "formula": "Total Population / Arable Land Area",
+    "stimulusTypes": [
+      "Data Comparison Table",
+      "Paired Map Stimulus"
+    ],
+    "collegeBoardTestingPattern": "Provides a table with Country X having low arithmetic density but massive physiological density, then asks: 'Which conclusion is best supported by the data?' Answer: Country X has very little arable land.",
+    "confusingPairs": {
+      "confusedWith": "Agricultural density",
+      "howToDistinguish": "Physiological has TOTAL POPULATION in the numerator (mouths to feed per farmland); Agricultural has only FARMERS in the numerator (farming efficiency)."
+    },
+    "apExamTraps": "A high physiological density does NOT mean a country is starving if it has the financial capital to import food (e.g., Japan or Singapore).",
+    "frqApplication": "Explain that a high physiological density indicates intense pressure on domestic agriculture, requiring high-yield crop techniques or extensive food imports.",
+    "realWorldAPExamples": [
+      "Egypt: Arithmetic density is 226/sq. mi., but physiological density is over 8,078/sq. mi. because only 2.8% of its land is arable along the Nile River.",
+      "Japan: Physiological density exceeds 8,200/sq. mi. due to rugged mountainous terrain with minimal farmable valleys.",
+      "Netherlands: Physiological density of 3,505/sq. mi. offset by advanced greenhouse technology and food processing."
+    ],
+    "memoryHook": "Physiological = Food / Farmable (People / Arable Land; think 'Physiology' = eating food)."
+  },
+  {
+    "id": 5,
+    "term": "Arable land",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "58-59",
+      "definition": "Land suitable for growing crops.",
+      "context": "The critical denominator in both physiological and agricultural density. Arable land is limited globally by soil quality, terrain, water access, and temperature."
+    },
+    "plainEnglish": "Farmable dirt where crops can actually grow.",
+    "formula": null,
+    "stimulusTypes": [
+      "Land Use Map",
+      "Percentage Table"
+    ],
+    "collegeBoardTestingPattern": "Questions focus on how urbanization and desertification are permanently destroying prime arable land, threatening long-term carrying capacity.",
+    "confusingPairs": {
+      "confusedWith": "Total land area",
+      "howToDistinguish": "Arable land is only the farmable subset of total land. In arid or alpine countries, arable land can be under 3% of total area."
+    },
+    "apExamTraps": "Assuming any green space or flat ground is arable. Tundra, rain-leached tropical soils, and saline soils are non-arable despite being flat.",
+    "frqApplication": "Identify loss of arable land through urban sprawl in suburban zones or salinization from excessive irrigation in arid zones.",
+    "realWorldAPExamples": [
+      "Egypt: Only 2.8% of land area is arable.",
+      "Bangladesh: 59.0% of land area is arable (fertile alluvial delta soils).",
+      "United States: Loss of prime agricultural land in California's Central Valley due to suburban expansion."
+    ],
+    "memoryHook": "Arable = Able to farm."
+  },
+  {
+    "id": 6,
+    "term": "Agricultural density",
+    "topic": "2.1",
+    "topicTitle": "Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "59-60",
+      "definition": "Compares the number of farmers to the area of arable land.",
+      "context": "Provides an indicator of technological efficiency and economic development. MDCs have low agricultural density; LDCs have high agricultural density."
+    },
+    "plainEnglish": "How many farmers are working on each square mile of farmland.",
+    "formula": "Number of Farmers / Arable Land Area",
+    "stimulusTypes": [
+      "Economic Development Table",
+      "Scatterplot"
+    ],
+    "collegeBoardTestingPattern": "Shows Country A with 2 farmers/sq. km and Country B with 350 farmers/sq. km, then asks which country is more economically developed. Answer: Country A, because mechanization replaces human farm labor.",
+    "confusingPairs": {
+      "confusedWith": "Physiological density",
+      "howToDistinguish": "Physiological counts ALL PEOPLE (mouths to feed); Agricultural counts ONLY FARMERS (labor intensity)."
+    },
+    "apExamTraps": "Thinking high agricultural density means high agricultural output. It actually indicates low efficiency and subsistence farming with manual labor.",
+    "frqApplication": "Link low agricultural density directly to commercial agriculture, tractors, combines, high capital investment, and late DTM stages.",
+    "realWorldAPExamples": [
+      "United States & Netherlands: Low agricultural density (~1 to 31 farmers/sq. mi.), reflecting massive mechanization.",
+      "Bangladesh & Uganda: High agricultural density (>400 farmers/sq. mi.), reflecting labor-intensive manual subsistence farming."
+    ],
+    "memoryHook": "Agricultural = Ag-Workers / Arable land."
+  },
+  {
+    "id": 7,
+    "term": "Infrastructure",
+    "topic": "2.2",
+    "topicTitle": "Consequences of Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "62",
+      "definition": "The facilities and structures that allow people to carry out their typical activities.",
+      "context": "Includes sewer systems, electrical grids, roads, bridges, public schools, and police/fire stations. High density makes per-person infrastructure cheaper, but rapid growth can overwhelm it."
+    },
+    "plainEnglish": "Basic physical systems of a community: roads, water pipes, power lines, bridges, sewers, schools.",
+    "formula": null,
+    "stimulusTypes": [
+      "City Map",
+      "Urban Growth Chart"
+    ],
+    "collegeBoardTestingPattern": "Tests how rapid urbanization in Stage 2/3 developing nations leads to infrastructure deficits (squatter settlements/favelas lacking piped water, sanitation, and electricity).",
+    "confusingPairs": {
+      "confusedWith": "Services",
+      "howToDistinguish": "Infrastructure is the PHYSICAL BACKBONE (pipes, wires, pavement); Services are the activities provided (teaching, haircuts, medical care)."
+    },
+    "apExamTraps": "Believing high density always causes infrastructure collapse. Dense cities often provide water and transit far more cost-effectively per person than low-density suburbs.",
+    "frqApplication": "Explain how strain on municipal infrastructure (e.g., lack of sewage treatment leading to waterborne disease outbreaks) limits economic productivity.",
+    "realWorldAPExamples": [
+      "Favelas in Rio de Janeiro, Brazil, and Dharavi slum in Mumbai, India: Millions living with informal, unpermitted infrastructure connections.",
+      "Aging water and transit infrastructure in American Rust Belt cities (Flint, MI water crisis)."
+    ],
+    "memoryHook": "Infra = Beneath/Base: the physical foundation under a city."
+  },
+  {
+    "id": 8,
+    "term": "Carrying capacity",
+    "topic": "2.2",
+    "topicTitle": "Consequences of Population Distribution",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "62-63",
+      "definition": "The number of people a region can support without damaging the environment.",
+      "context": "Carrying capacity is dynamic: technological innovation (irrigation, fertilizers, Green Revolution) can expand it; environmental degradation (desertification, over-pumping aquifers) reduces it."
+    },
+    "plainEnglish": "The maximum population an environment can sustainably support without being ruined.",
+    "formula": null,
+    "stimulusTypes": [
+      "Environmental Degradation Chart",
+      "Ecological Footprint Diagram"
+    ],
+    "collegeBoardTestingPattern": "Asks what happens when population exceeds carrying capacity (soil depletion, water shortages, desertification) or how technology can artificially raise carrying capacity.",
+    "confusingPairs": {
+      "confusedWith": "Ecumene",
+      "howToDistinguish": "Ecumene is WHERE humans live; Carrying capacity is HOW MANY people the land can sustainably sustain."
+    },
+    "apExamTraps": "Assuming carrying capacity is a permanent, fixed mathematical ceiling. It changes dynamically with technology, trade, and climate shifts.",
+    "frqApplication": "Explain how exceeding local carrying capacity leads to desertification in semi-arid zones or aquifer depletion in irrigated farmland.",
+    "realWorldAPExamples": [
+      "The African Sahel: Prolonged droughts and overgrazing caused population to exceed ecological carrying capacity, triggering famine and desertification.",
+      "Ogallala Aquifer (US Great Plains): Groundwater extraction exceeding recharge rates, threatening long-term agricultural carrying capacity."
+    ],
+    "memoryHook": "Carrying Capacity = How much weight/people the land can CARRY."
+  },
+  {
+    "id": 9,
+    "term": "Population pyramid",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "65-67",
+      "definition": "The age-sex composition graph, commonly called a population pyramid.",
+      "context": "Displays the percentage or absolute number of a population in five-year age cohorts, with males on the left and females on the right. Reveals past demographic shocks and future social needs."
+    },
+    "plainEnglish": "A split bar chart showing males vs females in 5-year age groups.",
+    "formula": null,
+    "stimulusTypes": [
+      "Population Pyramid Graph"
+    ],
+    "collegeBoardTestingPattern": "Shows a population pyramid and asks students to identify the country's DTM stage, economic challenges (e.g., need for schools vs elder care), or the reason for an asymmetric cohort bulge/indent.",
+    "confusingPairs": {
+      "confusedWith": "Demographic Transition Model (DTM)",
+      "howToDistinguish": "Pyramid is a SNAPSHOT OF AGE/SEX AT ONE TIME; DTM is a HISTORICAL LINE GRAPH OF CBR/CDR OVER CENTURIES."
+    },
+    "apExamTraps": "Failing to check the horizontal axis labels! College Board alternates between PERCENTAGES (%) and ABSOLUTE NUMBERS (millions).",
+    "frqApplication": "Analyze pyramid shape: Wide base = Stage 2 (high CBR/youth dependency); Columnar = Stage 4 (ZPG/stable); Inverted/constricted base = Stage 5 (aging workforce).",
+    "realWorldAPExamples": [
+      "Niger: Wide triangular pyramid with 48% under age 15 (rapid growth, Stage 2).",
+      "Japan: Top-heavy inverted pyramid with shrinking youth cohorts (declining population, Stage 5).",
+      "Kuwait & UAE: Massive male bulge between ages 20-49 due to foreign guest workers in oil and construction."
+    ],
+    "memoryHook": "Triangle = Rapid Growth (Stage 2); Pillar = Slow/Stable (Stage 4); Cup/Inverted = Shrinking (Stage 5)."
+  },
+  {
+    "id": 10,
+    "term": "Baby boom",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "67",
+      "definition": "The birth-rate spike once hostilities end and peace resumes, or during times of sustained economic abundance.",
+      "context": "A prominent demographic cohort that creates a lasting bulge that moves up the population pyramid over subsequent decades."
+    },
+    "plainEnglish": "A huge, multi-year spike in births, usually right after a war ends or during an economic boom.",
+    "formula": null,
+    "stimulusTypes": [
+      "Population Pyramid Cohort Bulge"
+    ],
+    "collegeBoardTestingPattern": "Shows a population pyramid with a prominent bulge in older age cohorts (ages 60-75) and asks for the economic consequences today (strain on Social Security and healthcare systems).",
+    "confusingPairs": {
+      "confusedWith": "Baby echo",
+      "howToDistinguish": "Boom is the ORIGINAL birth spike (e.g., US 1946-1964); Echo is the SECONDARY bulge created when the boomers grow up and have their own children."
+    },
+    "apExamTraps": "Assuming the baby boom was a one-year event. The US post-WWII baby boom lasted nearly two decades (1946–1964), generating ~76 million births.",
+    "frqApplication": "Discuss how the aging of the baby boom generation increases the elderly dependency ratio and strains public pension and healthcare systems.",
+    "realWorldAPExamples": [
+      "United States Post-WWII Baby Boom (1946–1964): Created the largest single generational cohort in US history, now entering retirement.",
+      "Post-war Europe baby booms in the 1950s."
+    ],
+    "memoryHook": "Boom = Explosion of babies after soldiers return home."
+  },
+  {
+    "id": 11,
+    "term": "Baby bust",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "67",
+      "definition": "Birth rates lower for a number of years after a baby boom ends, continuing until the boomers reach childbearing age.",
+      "context": "Produces an indentation or constriction in the population pyramid immediately following the baby boom cohort."
+    },
+    "plainEnglish": "A sharp drop in birth rates right after a baby boom ends.",
+    "formula": null,
+    "stimulusTypes": [
+      "Population Pyramid Indentation"
+    ],
+    "collegeBoardTestingPattern": "Identifies the indentation on a pyramid following a boom and asks what economic or social changes caused fertility to drop (e.g., expanded female higher education, workforce entry, contraception access).",
+    "confusingPairs": {
+      "confusedWith": "Baby echo",
+      "howToDistinguish": "Bust is the DROP in births between a boom and an echo; Echo is the subsequent REBOUND in births."
+    },
+    "apExamTraps": "Attributing a baby bust solely to war or disease. Modern baby busts usually result from cultural changes, female empowerment, career opportunities, and birth control.",
+    "frqApplication": "Explain that baby bust cohorts face a smaller labor pool when they enter the workforce, often resulting in labor shortages.",
+    "realWorldAPExamples": [
+      "United States Generation X (1965–1979): Birth rates plummeted following the introduction of the birth control pill and rising female college enrollment.",
+      "China after the Great Leap Forward famine."
+    ],
+    "memoryHook": "Bust = The balloon popped; births crashed down."
+  },
+  {
+    "id": 12,
+    "term": "Baby echo",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "67",
+      "definition": "The bulge that appears when boomers have children: since this increase reflects an earlier baby boom, it is called an echo.",
+      "context": "A secondary cohort bulge. Even if fertility rates per woman are modest, the sheer size of the boomer generation produces a large total volume of children."
+    },
+    "plainEnglish": "A second birth wave created when the baby boomers grow up and have kids of their own.",
+    "formula": null,
+    "stimulusTypes": [
+      "Population Pyramid Double Bulge"
+    ],
+    "collegeBoardTestingPattern": "Tests demographic momentum: asks why births increased even though individual fertility rates (TFR) were declining. Answer: A large parent cohort creates an echo.",
+    "confusingPairs": {
+      "confusedWith": "Baby boom",
+      "howToDistinguish": "Boom is caused by higher fertility rates per woman; Echo is caused by a large number of women giving birth, even at normal or low fertility rates."
+    },
+    "apExamTraps": "Thinking an echo means fertility rates spiked back to post-war levels. The TFR remained near replacement, but the number of potential mothers was huge.",
+    "frqApplication": "Illustrate how demographic momentum produces an echo cohort that requires new school construction and later job creation.",
+    "realWorldAPExamples": [
+      "United States Millennials (Echo Boomers, born ~1981–1996): Children of the Baby Boomers, forming the largest current living workforce cohort in the US.",
+      "Post-Soviet echo cohorts in Eastern Europe."
+    ],
+    "memoryHook": "Echo = The sound bouncing back; the kids of the boom."
+  },
+  {
+    "id": 13,
+    "term": "Dependent population",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "69-70",
+      "definition": "People under 15 or over 64 who are considered too young or too old to work full-time and rely on the economically active workforce.",
+      "context": "Composed of two segments: Youth Dependents (0-14) and Elderly Dependents (65+). The working-age population is defined as 15-64."
+    },
+    "plainEnglish": "Kids (0-14) and elderly (65+) who do not work full-time and must be supported by the working adults (15-64).",
+    "formula": "Youth (0-14) + Elderly (65+)",
+    "stimulusTypes": [
+      "Age Cohort Table",
+      "Stacked Bar Chart"
+    ],
+    "collegeBoardTestingPattern": "Asks students to evaluate government budgetary trade-offs: countries with youth-heavy dependents spend on schools and pediatric clinics; countries with elderly dependents spend on pensions and healthcare.",
+    "confusingPairs": {
+      "confusedWith": "Dependency ratio",
+      "howToDistinguish": "Dependent population is the RAW COUNT or percentage of non-working people; Dependency ratio is the FRACTION/RATIO comparing dependents to the working-age group."
+    },
+    "apExamTraps": "Assuming 15-64 year olds in LDCs are all employed full-time, or that 65+ year olds in MDCs contribute no taxes. The definition is a demographic convention.",
+    "frqApplication": "Identify the specific fiscal pressures caused by high dependent cohorts on national tax revenues.",
+    "realWorldAPExamples": [
+      "Niger: Over 50% of the entire national population is under age 15.",
+      "Japan & Italy: Over 25–30% of the population is aged 65 and older.",
+      "United States: Growing elderly cohort as baby boomers transition from the workforce to the dependent category."
+    ],
+    "memoryHook": "Dependents = Kids & Grandparents (0-14 & 65+)."
+  },
+  {
+    "id": 14,
+    "term": "Dependency ratio",
+    "topic": "2.3",
+    "topicTitle": "Population Composition",
+    "chapter": "Chapter 3",
+    "amsco": {
+      "page": "69-70, 100-101",
+      "definition": "The comparison between the size of the dependent population and the potential workforce.",
+      "context": "AMSCO calculates this as a decimal: Dependents / Workforce. In the US, (19 + 15) / 66 = 0.52 (each worker supports 0.52 dependents). In Niger, (49 + 3) / 48 = 1.08 (each worker supports over 1 dependent). Some sources multiply by 100."
+    },
+    "plainEnglish": "A math comparison showing how many non-working people depend on each working adult.",
+    "formula": "Dependency Ratio = (Pop 0-14 + Pop 65+) / Pop 15-64  [AMSCO uses decimal; CED often uses x 100]",
+    "stimulusTypes": [
+      "Comparative Data Table",
+      "Population Pyramid"
+    ],
+    "collegeBoardTestingPattern": "Presents a table of age brackets for three countries and asks which country will require the greatest expansion of geriatric services, or which country has a dependency ratio exceeding 1.0.",
+    "confusingPairs": {
+      "confusedWith": "Sex ratio",
+      "howToDistinguish": "Dependency ratio compares AGE brackets (dependents vs workers); Sex ratio compares GENDER (males per 100 females)."
+    },
+    "apExamTraps": "Dividing dependents by the TOTAL population instead of by the WORKING-AGE population (15–64). The denominator must ONLY be the working-age cohort.",
+    "frqApplication": "Contrast the economic challenges: Stage 2 countries face high Youth Dependency (need teacher training, vaccines); Stage 5 countries face high Elderly Dependency (need tax base expansion, pension reform, immigrant healthcare workers).",
+    "realWorldAPExamples": [
+      "Niger: Total dependency ratio ~108 (or 1.08), meaning more dependents than workers.",
+      "Japan: Elderly dependency ratio soaring above 50, driving automated robotic eldercare.",
+      "United States: Total dependency ratio ~52 (or 0.52), rising as boomers retire."
+    ],
+    "memoryHook": "Dependents on TOP, Workers on BOTTOM."
+  },
+  {
+    "id": 15,
+    "term": "Crude birth rate (CBR)",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "77, 81",
+      "definition": "The number of live births per year for each 1,000 people in a population.",
+      "context": "Called 'crude' because it relates births to the entire population without regard to age or gender composition."
+    },
+    "plainEnglish": "How many babies are born each year per 1,000 people in a country.",
+    "formula": "(Total Live Births / Total Population) * 1,000",
+    "stimulusTypes": [
+      "Global Choropleth Map",
+      "DTM Graph"
+    ],
+    "collegeBoardTestingPattern": "Tests understanding of DTM stages: CBR stays high in Stages 1 and 2, begins dropping rapidly in Stage 3 (due to urbanization and female education), and stays low in Stages 4 and 5.",
+    "confusingPairs": {
+      "confusedWith": "Total fertility rate (TFR)",
+      "howToDistinguish": "CBR is per 1,000 TOTAL PEOPLE in the country in a single year; TFR is the AVERAGE NUMBER OF CHILDREN per individual woman over her entire lifetime."
+    },
+    "apExamTraps": "Thinking CBR is a percentage. CBR is a rate PER THOUSAND (e.g., 20 per 1,000, not 20%).",
+    "frqApplication": "Identify female secondary school enrollment and urbanization as the two most effective drivers lowering CBR.",
+    "realWorldAPExamples": [
+      "High CBR: Niger (~45 per 1,000), Mali (~41 per 1,000).",
+      "Low CBR: South Korea (~5.5 per 1,000), Japan (~6.8 per 1,000), United States (~11 per 1,000)."
+    ],
+    "memoryHook": "CBR = Cradle rate per 1,000."
+  },
+  {
+    "id": 16,
+    "term": "Total fertility rate (TFR)",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "77, 96-97",
+      "definition": "The average number of children who would be born per woman assuming every woman lived through her childbearing years (roughly ages 15-49).",
+      "context": "The single most sensitive indicator of female empowerment, education, and development. 2.1 is replacement level."
+    },
+    "plainEnglish": "The average number of babies a woman has in her lifetime.",
+    "formula": "Sum of age-specific birth rates across childbearing ages 15-49",
+    "stimulusTypes": [
+      "Choropleth Map",
+      "Correlation Scatterplot with Female Literacy"
+    ],
+    "collegeBoardTestingPattern": "Shows a scatterplot comparing female literacy rates and TFR: as female literacy increases, TFR drops dramatically. College Board tests the mechanism (delayed marriage, career access, contraception knowledge).",
+    "confusingPairs": {
+      "confusedWith": "Crude birth rate (CBR)",
+      "howToDistinguish": "TFR measures children per WOMAN (e.g., 1.6 or 4.5); CBR measures live births per 1,000 TOTAL POPULATION (e.g., 18 per 1,000)."
+    },
+    "apExamTraps": "Confusing replacement-level fertility (2.1) with zero population growth immediately. Due to demographic momentum, population keeps growing after TFR hits 2.1.",
+    "frqApplication": "Always link declining TFR to: (1) higher female education, (2) urban lifestyle where children are economic costs rather than farm labor assets, and (3) access to reproductive family planning.",
+    "realWorldAPExamples": [
+      "Sub-Saharan Africa: Niger TFR ~6.7 (highest globally).",
+      "East Asia: South Korea TFR ~0.72 (lowest globally in 2023), Taiwan ~0.87.",
+      "Global Replacement Threshold: 2.1 children per woman."
+    ],
+    "memoryHook": "TFR = Total Family Room count: babies per mother."
+  },
+  {
+    "id": 17,
+    "term": "Life expectancy",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "78",
+      "definition": "The average number of years people live from birth.",
+      "context": "A century ago world life expectancy was ~34 years; today it is nearly 70. Strongly correlated with sanitation, clean water, healthcare access, and nutrition."
+    },
+    "plainEnglish": "How many years a newborn baby is expected to live on average.",
+    "formula": null,
+    "stimulusTypes": [
+      "Thematic World Map",
+      "Time-Series Line Chart"
+    ],
+    "collegeBoardTestingPattern": "Tests how historical drops in infant mortality immediately drove up average life expectancy even before adult lifespans expanded significantly.",
+    "confusingPairs": {
+      "confusedWith": "Infant mortality rate (IMR)",
+      "howToDistinguish": "IMR measures deaths under age 1; Life expectancy is average lifetime span from birth. A drop in IMR causes a direct surge in life expectancy."
+    },
+    "apExamTraps": "Believing people in the 1700s always died at age 35. Historical life expectancy was low primarily because so many infants died before age 1, dragging down the statistical average.",
+    "frqApplication": "Identify clean drinking water, municipal sewer systems, and pediatric vaccinations as the primary causes of 20th-century life expectancy expansion.",
+    "realWorldAPExamples": [
+      "High life expectancy: Monaco (~89 years), Japan (~84 years), Switzerland (~83 years).",
+      "Low life expectancy: Chad (~53 years), Central African Republic (~54 years)."
+    ],
+    "memoryHook": "Life Expectancy = Expected years of life."
+  },
+  {
+    "id": 18,
+    "term": "Infant mortality rate (IMR)",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "78",
+      "definition": "The number of children who die before their first birthday per 1,000 live births.",
+      "context": "Regarded as the gold standard indicator of a country's overall healthcare quality, sanitation, clean water, and female nutrition."
+    },
+    "plainEnglish": "How many babies die before age 1 for every 1,000 babies born.",
+    "formula": "(Infant Deaths Under Age 1 / Total Live Births) * 1,000",
+    "stimulusTypes": [
+      "Choropleth Map",
+      "Development Index Table"
+    ],
+    "collegeBoardTestingPattern": "Presents IMR data alongside economic indicators and asks which country has the most developed healthcare and clean water infrastructure.",
+    "confusingPairs": {
+      "confusedWith": "Child mortality rate (CMR)",
+      "howToDistinguish": "IMR is deaths under age 1; CMR is deaths between ages 1 and 5."
+    },
+    "apExamTraps": "Confusing IMR with Crude Death Rate. Highly developed nations often have higher CDR than LDCs due to aging populations, but MDCs have dramatically lower IMR.",
+    "frqApplication": "Explain that high IMR creates a psychological push for parents to have more children to ensure several survive to adulthood, keeping CBR high.",
+    "realWorldAPExamples": [
+      "High IMR: Sierra Leone, Afghanistan, and Somalia (>70-80 deaths per 1,000 live births).",
+      "Low IMR: Finland, Japan, Singapore (<2 deaths per 1,000 live births).",
+      "Massachusetts historical trend: Dropped from 130 per 1,000 in 1850 to ~4 today (AMSCO p. 78)."
+    ],
+    "memoryHook": "IMR = Infant (under 1) Mortality Rate per 1,000."
+  },
+  {
+    "id": 19,
+    "term": "Crude death rate (CDR)",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "81",
+      "definition": "The number of deaths per year for each 1,000 people in a population.",
+      "context": "AMSCO does not give a separate sentence definition, measuring it per 1,000 population. Stage 2 sees CDR plummet; Stage 5 sees CDR rise slightly due to an aging population."
+    },
+    "plainEnglish": "How many people die each year per 1,000 people.",
+    "formula": "(Total Deaths / Total Population) * 1,000",
+    "stimulusTypes": [
+      "DTM Graph",
+      "Comparative Country Table"
+    ],
+    "collegeBoardTestingPattern": "MAJOR AP TRAP QUESTION: Shows that wealthy European countries (e.g., Germany or Bulgaria) have a HIGHER CDR than developing countries (e.g., Mexico or Guatemala) and asks why. Answer: Europe has an older population.",
+    "confusingPairs": {
+      "confusedWith": "Infant mortality rate (IMR)",
+      "howToDistinguish": "CDR applies to all deaths across ALL ages per 1,000 people; IMR applies ONLY to babies under age 1 per 1,000 live births."
+    },
+    "apExamTraps": "Assuming a high CDR means terrible hospitals or warfare. In Stage 4 and 5 countries, CDR rises because a huge percentage of citizens are in old age cohorts where natural death occurs.",
+    "frqApplication": "Explain that the rapid plunge in CDR during Stage 2 is caused by medical breakthroughs, clean water, and pest control, NOT by declining birth rates.",
+    "realWorldAPExamples": [
+      "Bulgaria & Latvia: CDR ~15 per 1,000 (aging population, Stage 5).",
+      "Qatar & UAE: CDR ~1.5 per 1,000 (very young foreign workforce cohorts).",
+      "Global average CDR is approximately 8 per 1,000 (AMSCO p. 81)."
+    ],
+    "memoryHook": "CDR = Coffin rate per 1,000."
+  },
+  {
+    "id": 20,
+    "term": "Rate of natural increase (RNI)",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "81",
+      "definition": "The percentage at which a country's population is growing or declining, without the impact of migration.",
+      "context": "Calculated by subtracting CDR from CBR and dividing by 10 to convert from per 1,000 to a percentage. (Also called Natural Increase Rate / NIR)."
+    },
+    "plainEnglish": "The annual growth rate percentage of a country, counting only births and deaths (no immigration or emigration).",
+    "formula": "RNI (%) = (CBR - CDR) / 10",
+    "stimulusTypes": [
+      "Calculation Problem",
+      "World Map of Growth Rates"
+    ],
+    "collegeBoardTestingPattern": "Provides CBR and CDR for a country (e.g., CBR 25, CDR 5) and asks the student to calculate RNI (2.0%) and resulting Doubling Time (35 years).",
+    "confusingPairs": {
+      "confusedWith": "Demographic Accounting Equation / Total Population Growth",
+      "howToDistinguish": "RNI counts ONLY NATURAL change (births - deaths); Total Growth includes NET MIGRATION (births - deaths + immigrants - emigrants)."
+    },
+    "apExamTraps": "Forgetting to divide by 10! Subtracting CDR from CBR gives growth per 1,000; you MUST divide by 10 to turn it into a percentage (%).",
+    "frqApplication": "State clearly that negative RNI in Stage 5 leads to population decline unless compensated by positive net international migration.",
+    "realWorldAPExamples": [
+      "World average: CBR 20, CDR 8 -> RNI = (20 - 8)/10 = 1.2% (AMSCO p. 81).",
+      "Niger: CBR 45, CDR 7 -> RNI = 3.8% (very rapid growth).",
+      "Ukraine & Japan: Negative RNI (-0.4% to -0.6%), shrinking naturally."
+    ],
+    "memoryHook": "RNI = (CBR - CDR) / 10 -> Natural percentage."
+  },
+  {
+    "id": 21,
+    "term": "Doubling time",
+    "topic": "2.4",
+    "topicTitle": "Population Dynamics",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "82",
+      "definition": "The time it takes for a population to double in size, estimated using the Rule of 70.",
+      "context": "Formula: 70 / growth rate percentage. Small increases in growth rate produce massive decreases in doubling time."
+    },
+    "plainEnglish": "How many years it will take for a country's population to double at its current growth rate.",
+    "formula": "Doubling Time (years) = 70 / RNI (%)",
+    "stimulusTypes": [
+      "Exponential Growth Curve Graph",
+      "Data Table"
+    ],
+    "collegeBoardTestingPattern": "Asks students to apply the Rule of 70 to a country with a 2% growth rate (Doubling time = 70/2 = 35 years) or compare two countries' growth speeds.",
+    "confusingPairs": {
+      "confusedWith": "RNI percentage",
+      "howToDistinguish": "RNI is the SPEED (percentage per year); Doubling time is the DURATION (number of years needed to double)."
+    },
+    "apExamTraps": "Converting the percentage into a decimal in the denominator (e.g., using 0.02 instead of 2.0). With the Rule of 70, use the whole percentage number (70 / 2 = 35).",
+    "frqApplication": "Explain that rapid doubling time severely strains national ability to build schools, generate electricity, and provide housing.",
+    "realWorldAPExamples": [
+      "Ivory Coast: Growth rate 2.0% -> Doubling time = 70 / 2.0 = 35 years (AMSCO p. 82).",
+      "United States: Growth rate 0.77% -> Doubling time = 70 / 0.77 = ~91 years (AMSCO p. 82).",
+      "Niger: Growth rate 3.8% -> Doubling time = 70 / 3.8 = ~18.4 years."
+    ],
+    "memoryHook": "Rule of 70: Divide 70 by the growth percentage."
+  },
+  {
+    "id": 22,
+    "term": "Demographic transition model (DTM)",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83-87",
+      "definition": "Shows how the decline in death rates produced a growth in population and eventually a decline in birth rates as countries modernize.",
+      "context": "Five stages: 1 High stationary, 2 Early expanding, 3 Late expanding, 4 Low stationary, 5 Declining. Changes correspond to shifts from agrarian to industrial and urban service societies."
+    },
+    "plainEnglish": "A 5-stage model showing how countries move from high birth/death rates to low birth/death rates as they develop.",
+    "formula": null,
+    "stimulusTypes": [
+      "5-Stage Line Graph (CBR/CDR curves)",
+      "Paired Population Pyramids"
+    ],
+    "collegeBoardTestingPattern": "Shows the classic DTM graph and asks in which stage population growth is fastest (transition from Stage 2 to Stage 3) or why CBR drops in Stage 3.",
+    "confusingPairs": {
+      "confusedWith": "Epidemiological transition model (ETM)",
+      "howToDistinguish": "DTM tracks BIRTH and DEATH rates; ETM tracks CAUSES of death and disease patterns."
+    },
+    "apExamTraps": "Assuming every country transitions through the DTM at the same speed. European countries took 150 years; developing countries in the 20th century transitioned much faster due to imported medical technology.",
+    "frqApplication": "Identify the industrial revolution as the catalyst for European Stage 2, and the medical revolution/sanitation as the catalyst for 20th-century LDC Stage 2.",
+    "realWorldAPExamples": [
+      "Stage 1: No country today (historical hunter-gatherer / subsistence).",
+      "Stage 2: Niger, Mali, South Sudan (pyramid with wide base).",
+      "Stage 3: Mexico, Turkey, Indonesia, India (pyramid base narrows).",
+      "Stage 4: United States, France, China (column/box shaped).",
+      "Stage 5: Japan, Germany, Italy, South Korea (inverted/top-heavy)."
+    ],
+    "memoryHook": "DTM = 5 Stages from Farm (High B&D) to City (Low B&D)."
+  },
+  {
+    "id": 23,
+    "term": "DTM Stage 1",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83-84",
+      "definition": "High stationary stage: Very high CBR and very high CDR, producing very low or stagnant natural increase.",
+      "context": "Characterized by infectious diseases, famine, and primitive agriculture. No countries remain in Stage 1 today, only isolated uncontacted tribal groups."
+    },
+    "plainEnglish": "Stage 1: Lots of babies born, lots of people dying, population barely grows. (Pre-industrial).",
+    "formula": "Very High CBR + Very High CDR = Very Low NIR (~0%)",
+    "stimulusTypes": [
+      "DTM Stage Graph Segment",
+      "Concave Pyramid"
+    ],
+    "collegeBoardTestingPattern": "Asks why NO entire countries are in Stage 1 today. Answer: Global dissemination of basic antibiotics, vaccines, sanitation, and food aid moved all countries at least into Stage 2.",
+    "confusingPairs": {
+      "confusedWith": "DTM Stage 4",
+      "howToDistinguish": "Both have low NIR (~0%), but Stage 1 has high CBR/CDR (short lifespans) while Stage 4 has low CBR/CDR (long lifespans)."
+    },
+    "apExamTraps": "Claiming the poorest countries in Africa are in Stage 1. Even the poorest countries (e.g., South Sudan, Somalia) are firmly in Stage 2 because their CDR dropped substantially.",
+    "frqApplication": "Note that human history spent over 99% of its existence in Stage 1 prior to the Industrial Revolution (~1750).",
+    "realWorldAPExamples": [
+      "Historical: Global human population before 1750.",
+      "Modern: Isolated uncontacted indigenous tribes in the Amazon rainforest or Sentinelese on North Sentinel Island."
+    ],
+    "memoryHook": "Stage 1 = High Stationary (High In, High Out, No Growth)."
+  },
+  {
+    "id": 24,
+    "term": "DTM Stage 2",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83-85",
+      "definition": "Early expanding stage: High CBR remains steady while CDR drops sharply, producing extremely rapid population growth.",
+      "context": "Drop in CDR caused by Industrial Revolution in Europe (18th-19th c.) and Medical Revolution in LDCs (mid-20th c.). Pyramid has a wide flared base."
+    },
+    "plainEnglish": "Stage 2: Death rates plummet due to medicine/clean water, but birth rates stay high, causing a population explosion.",
+    "formula": "High CBR + Rapidly Falling CDR = Very High NIR (Population Explosion)",
+    "stimulusTypes": [
+      "Broad-based Triangular Population Pyramid",
+      "DTM Graph Gap"
+    ],
+    "collegeBoardTestingPattern": "Shows a classic broad-based triangular pyramid and asks which stage it represents (Stage 2) and what its greatest economic challenge will be (providing schools, pediatric healthcare, and youth employment).",
+    "confusingPairs": {
+      "confusedWith": "DTM Stage 3",
+      "howToDistinguish": "In Stage 2, CBR is STILL HIGH and NOT DROPPING; in Stage 3, CBR begins to FALL RAPIDLY."
+    },
+    "apExamTraps": "Believing Stage 2 growth is caused by a spike in birth rates. Birth rates did NOT rise; death rates plummeted while birth rates stayed high, creating a huge demographic gap.",
+    "frqApplication": "Explain that the wide demographic gap between birth rate and death rate in Stage 2 produces the highest NIR of any stage.",
+    "realWorldAPExamples": [
+      "Niger, Mali, South Sudan, Afghanistan, Chad.",
+      "Europe during the Industrial Revolution (~1800)."
+    ],
+    "memoryHook": "Stage 2 = Explosion: Deaths drop, births stay on top."
+  },
+  {
+    "id": 25,
+    "term": "DTM Stage 3",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83-85",
+      "definition": "Late expanding stage: CBR falls rapidly while CDR continues falling at a slower pace, leading to moderate, slowing population growth.",
+      "context": "Driven by urbanization, female education, factory employment, and child labor laws making children economic costs rather than assets."
+    },
+    "plainEnglish": "Stage 3: Birth rates start falling fast as people move to cities and women get educated, slowing population growth.",
+    "formula": "Rapidly Dropping CBR + Slowly Declining CDR = Moderate NIR",
+    "stimulusTypes": [
+      "House-shaped Population Pyramid",
+      "Urbanization Correlation Graph"
+    ],
+    "collegeBoardTestingPattern": "Asks what societal factors cause the birth rate to plummet in Stage 3. Answer: Urbanization, rising female education, improved female workforce participation, and access to family planning.",
+    "confusingPairs": {
+      "confusedWith": "DTM Stage 2",
+      "howToDistinguish": "Stage 2 has high, flat CBR; Stage 3 has steep, plunging CBR."
+    },
+    "apExamTraps": "Assuming population decreases in Stage 3. Growth is SLOWING, but total population is still GROWING substantially (moderate NIR).",
+    "frqApplication": "Identify the economic shift: on rural farms (Stage 2), children are economic assets (farmhands); in urban apartments (Stage 3), children are economic liabilities (costly food, school, clothing).",
+    "realWorldAPExamples": [
+      "Mexico, Turkey, Indonesia, India, Brazil, Colombia.",
+      "United States and Western Europe during the early-to-mid 20th century."
+    ],
+    "memoryHook": "Stage 3 = Urban Shift: Babies fall as city costs call."
+  },
+  {
+    "id": 26,
+    "term": "DTM Stage 4",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83-86",
+      "definition": "Low stationary stage: Low CBR and low CDR meet, producing Zero Population Growth (ZPG) or very slow natural increase.",
+      "context": "Associated with highly developed service-based economies, high female career participation, widespread contraception, and TFR hovering around 2.1. Pyramid looks like a column or box."
+    },
+    "plainEnglish": "Stage 4: Low births and low deaths balance out, so population growth stabilizes at near zero.",
+    "formula": "Low CBR + Low CDR = Zero Population Growth (ZPG / NIR ~0%)",
+    "stimulusTypes": [
+      "Column-shaped Population Pyramid",
+      "Service Economy Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows a column/box-shaped pyramid with vertical sides and asks which country type it represents (MDC in Stage 4, e.g., US, France, China).",
+    "confusingPairs": {
+      "confusedWith": "DTM Stage 5",
+      "howToDistinguish": "Stage 4 is STABLE (CBR roughly equals CDR; TFR ~2.1); Stage 5 is SHRINKING (CBR drops below CDR; TFR well below 2.1)."
+    },
+    "apExamTraps": "Believing China is in Stage 2 or 3 because of its total size. China's birth rate collapsed under the One-Child Policy, placing it firmly in Stage 4/5.",
+    "frqApplication": "Explain that Stage 4 countries rely heavily on international immigration to sustain their labor forces and tax bases.",
+    "realWorldAPExamples": [
+      "United States, France, United Kingdom, Canada, Australia, China.",
+      "Total Fertility Rates hovering between 1.7 and 2.1."
+    ],
+    "memoryHook": "Stage 4 = Stable Store: Column shape, births and deaths balance."
+  },
+  {
+    "id": 27,
+    "term": "DTM Stage 5",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "83, 86-87",
+      "definition": "Declining stage: Very low CBR drops below the CDR, resulting in a negative natural increase rate and a shrinking population.",
+      "context": "Pyramid becomes inverted (top-heavy with a narrow contracted base). Creates severe economic strains: shrinking tax base, closing schools, labor shortages, and high elderly dependency."
+    },
+    "plainEnglish": "Stage 5: Deaths outnumber births, causing the population to shrink naturally unless immigrants arrive.",
+    "formula": "Very Low CBR < Rising CDR = Negative NIR (-%)",
+    "stimulusTypes": [
+      "Inverted / Top-Heavy Population Pyramid",
+      "Labor Force Decline Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows an inverted pyramid (wider at the top than the bottom) and asks what policies the government must implement (pronatalist incentives, cash baby bonuses, subsidized daycare, increased guest worker immigration).",
+    "confusingPairs": {
+      "confusedWith": "DTM Stage 1",
+      "howToDistinguish": "Both have very low/stagnant growth, but Stage 1 has high mortality (short life); Stage 5 has very high life expectancy and old-age mortality exceeding births."
+    },
+    "apExamTraps": "Assuming CDR is high in Stage 5 because people are sick or starving. CDR rises because a large percentage of the population is over age 75 and dies of old age.",
+    "frqApplication": "Identify two distinct economic solutions: (1) pronatalist policies to boost domestic fertility, and (2) liberalizing immigration policies to bring in young foreign workers.",
+    "realWorldAPExamples": [
+      "Japan: Population has been shrinking by hundreds of thousands per year; adult diapers outsell baby diapers.",
+      "Germany, Italy, South Korea (TFR 0.72), Greece, Bulgaria."
+    ],
+    "memoryHook": "Stage 5 = Shrinking Hive: Inverted pyramid, elderly heavy."
+  },
+  {
+    "id": 28,
+    "term": "Demographic momentum",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "85",
+      "definition": "As countries transition from early Stage 3 into Stage 4, population will continue to grow for at least one generation because of demographic momentum.",
+      "context": "AMSCO notes: 'even though fertility rates have declined, people are living longer' and the sheer number of young people previously born enter their childbearing years, keeping total population growing for 20-40 years."
+    },
+    "plainEnglish": "A country's population keeps growing for 20-40 years even after birth rates drop, like a freight train that takes a long time to brake.",
+    "formula": null,
+    "stimulusTypes": [
+      "Time-lag Population Graph",
+      "DTM Stage Transition Diagram"
+    ],
+    "collegeBoardTestingPattern": "Presents a country whose TFR dropped to 2.1 in 1990, but its population grew by 30 million over the next 25 years. Asks which geographic concept explains this (Demographic Momentum).",
+    "confusingPairs": {
+      "confusedWith": "Zero Population Growth (ZPG)",
+      "howToDistinguish": "ZPG is the FINAL STATE of zero growth; Demographic Momentum is the DELAY/LAG before ZPG is achieved."
+    },
+    "apExamTraps": "Assuming that the moment a country reaches replacement-level fertility (TFR 2.1), its population immediately stops growing. It takes decades for previous large cohorts to pass through reproductive ages.",
+    "frqApplication": "Use the freight train analogy: even when you slam the brakes (drop TFR), the train's momentum carries it forward for miles.",
+    "realWorldAPExamples": [
+      "China: Implemented One-Child Policy in 1979 (TFR plunged below 2.0), but total population continued growing until the 2020s due to demographic momentum.",
+      "Mexico & India today: TFR has dropped close to replacement, but large youth cohorts ensure ongoing population growth."
+    ],
+    "memoryHook": "Momentum = Moving forward even after you hit the brakes."
+  },
+  {
+    "id": 29,
+    "term": "Epidemiological transition model (ETM)",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "88-89",
+      "definition": "Identified by Abdel Omran (1971); predictable stages in disease and life expectancy that countries experience as they develop, explaining changing death rates and causes of death.",
+      "context": "Extension of the DTM. Tracks how primary causes of death shift from infectious pandemics to chronic degenerative diseases of old age."
+    },
+    "plainEnglish": "A model showing how causes of death change from germs/famine (in poor stages) to heart attacks/cancer (in rich stages).",
+    "formula": null,
+    "stimulusTypes": [
+      "Causes of Death Pie Charts",
+      "ETM 5-Stage Diagram"
+    ],
+    "collegeBoardTestingPattern": "Shows pie charts of causes of death for two countries: Country A dies mostly of infectious diseases (Stage 2); Country B dies mostly of chronic heart disease and cancer (Stage 4).",
+    "confusingPairs": {
+      "confusedWith": "Demographic transition model (DTM)",
+      "howToDistinguish": "DTM tracks BIRTH and DEATH rates; ETM tracks the MEDICAL CAUSES of those deaths."
+    },
+    "apExamTraps": "Assuming infectious diseases are permanently wiped out in Stage 4/5. Drug-resistant bacteria, global air travel, and novel viruses (COVID-19) represent Stage 5 reemergence.",
+    "frqApplication": "Connect ETM stages to DTM stages: Stage 1 = Pestilence; Stage 2 = Receding Pandemics; Stage 3 = Degenerative Diseases; Stage 4 = Delayed Degenerative; Stage 5 = Reemergence.",
+    "realWorldAPExamples": [
+      "Abdel Omran's 1971 formulation.",
+      "Comparison: Cholera/malaria deaths in Sub-Saharan Africa vs cardiovascular/Alzheimer's deaths in Western Europe."
+    ],
+    "memoryHook": "ETM = Epidemics, Treatments, and Mortality causes."
+  },
+  {
+    "id": 30,
+    "term": "Diseases and famine",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "88",
+      "definition": "ETM Stage 1 (Pestilence and Famine): High death rate and low life expectancy caused by infectious and parasitic diseases, crop failures, and animal attacks.",
+      "context": "Malthus called these 'positive checks.' Historical epidemics like the Black Death wiped out 30-60% of Europe's population in the 14th century."
+    },
+    "plainEnglish": "ETM Stage 1: Starvation and plagues kill people young, keeping life expectancy low.",
+    "formula": null,
+    "stimulusTypes": [
+      "Historical Mortality Chart",
+      "Pandemic Route Map"
+    ],
+    "collegeBoardTestingPattern": "Asks what kept human population in check for centuries prior to 1750. Answer: Infectious pandemics, famines, and pestilence.",
+    "confusingPairs": {
+      "confusedWith": "Receding pandemic (Stage 2)",
+      "howToDistinguish": "Stage 1 is UNCONTROLLED infectious disease; Stage 2 is RECEDING (controlled by sewers and clean water)."
+    },
+    "apExamTraps": "Believing modern famines in Africa are purely Stage 1 events. Modern famines are usually caused by political warfare and supply chain disruption, not pure Malthusian pestilence.",
+    "frqApplication": "Identify the Black Plague (Bubonic Plague) in 14th-century Europe as the classic textbook example of Stage 1 pestilence.",
+    "realWorldAPExamples": [
+      "The Black Death (1347–1351): Transmitted by fleas on rats along trade routes, killing 25 million Europeans.",
+      "Pre-industrial subsistence famines."
+    ],
+    "memoryHook": "Stage 1 = Pestilence: Plagues and hunger strike everyone."
+  },
+  {
+    "id": 31,
+    "term": "Receding pandemic",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "88-89",
+      "definition": "ETM Stage 2: Pandemics recede as sanitation, nutrition, clean piped water, and medical treatments improve, causing death rates to plummet.",
+      "context": "Corresponds to DTM Stage 2. Dr. John Snow's 1854 cholera map of Soho, London, proved contaminated water pumps spread disease, initiating the public sanitation revolution."
+    },
+    "plainEnglish": "ETM Stage 2: Plagues decline rapidly because cities build clean water pipes and sewer systems, causing death rates to drop.",
+    "formula": null,
+    "stimulusTypes": [
+      "John Snow Cholera GIS Map",
+      "Sewer Construction Timeline"
+    ],
+    "collegeBoardTestingPattern": "Shows Dr. John Snow's 1854 London map linking cholera deaths to the Broad Street water pump, illustrating the birth of GIS and the public health revolution driving Stage 2.",
+    "confusingPairs": {
+      "confusedWith": "Degenerative diseases (Stage 3)",
+      "howToDistinguish": "Stage 2 drops INFECTIOUS deaths; Stage 3 sees the rise of CHRONIC lifestyle diseases as people live long enough to get them."
+    },
+    "apExamTraps": "Thinking antibiotics caused Stage 2 in Europe. European death rates dropped in the 1800s primarily due to CLEAN PIPED WATER, SEWERS, and SOAP decades before penicillin was discovered in 1928.",
+    "frqApplication": "Identify municipal water treatment, enclosed sewers, and pasteurization as the drivers of receding pandemics.",
+    "realWorldAPExamples": [
+      "Dr. John Snow (1854): Removed the Broad Street pump handle in London, ending the cholera outbreak.",
+      "Industrial European cities building underground sewer infrastructure in late 1800s."
+    ],
+    "memoryHook": "Stage 2 = Receding: Sewers and soap wash diseases away."
+  },
+  {
+    "id": 32,
+    "term": "Degenerative and human-created diseases",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "88-89",
+      "definition": "ETM Stage 3: Infectious diseases continue to decline and are replaced by chronic lifestyle and wear-and-tear diseases associated with aging.",
+      "context": "Main killers become cardiovascular diseases (heart attacks, strokes) and cancer. Associated with increased life expectancy, sedentary office work, and processed foods."
+    },
+    "plainEnglish": "ETM Stage 3: People live long enough to die of chronic illnesses like heart disease and cancer rather than infections.",
+    "formula": null,
+    "stimulusTypes": [
+      "Cause of Death Distribution Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows a chart where heart disease and cancer account for over 60% of all national deaths and asks which ETM stage this country is in (Stage 3 or 4).",
+    "confusingPairs": {
+      "confusedWith": "Delayed degenerative diseases (Stage 4)",
+      "howToDistinguish": "In Stage 3, people get degenerative diseases and die quickly; in Stage 4, medical treatments DELAY the death for decades."
+    },
+    "apExamTraps": "Calling heart disease or cancer 'infectious.' They are non-communicable, chronic lifestyle/aging diseases.",
+    "frqApplication": "Explain that as life expectancy surpasses 60 years, degenerative cellular breakdown replaces pathogens as the primary cause of mortality.",
+    "realWorldAPExamples": [
+      "Rise of cardiovascular disease, lung cancer from tobacco smoking, and diabetes in middle-income industrializing countries.",
+      "Latin America and East Asia transitioning into chronic disease profiles."
+    ],
+    "memoryHook": "Stage 3 = Degenerative: Body parts wear out as people age."
+  },
+  {
+    "id": 33,
+    "term": "Delayed degenerative diseases",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "88-89",
+      "definition": "ETM Stage 4: Medical advancements delay the onset and mortality of degenerative diseases, pushing life expectancy to its historical peak.",
+      "context": "Bypass surgeries, statins, chemotherapy, radiation, organ transplants, and healthier lifestyle choices extend senior citizens' lives into their 80s and 90s."
+    },
+    "plainEnglish": "ETM Stage 4: Modern medicine (surgeries, cancer therapies, bypasses) delays death from heart disease and cancer, letting people live into their 80s.",
+    "formula": null,
+    "stimulusTypes": [
+      "Life Expectancy Histogram",
+      "Medical Technology Adoption Graph"
+    ],
+    "collegeBoardTestingPattern": "Asks what caused the surge in elderly cohorts (aged 80+) in Western Europe and North America during the late 20th century (delayed degenerative treatments).",
+    "confusingPairs": {
+      "confusedWith": "Degenerative diseases (Stage 3)",
+      "howToDistinguish": "Stage 4 features ADVANCED SURGICAL & PHARMACEUTICAL INTERVENTIONS that keep patients alive with chronic conditions for 20+ years."
+    },
+    "apExamTraps": "Believing Stage 4 means people no longer get heart disease or cancer. They still get them, but medical interventions prevent premature death.",
+    "frqApplication": "Cite specialized medical infrastructure: cardiac bypass surgery, pacemakers, and oncological therapies.",
+    "realWorldAPExamples": [
+      "United States, Japan, France: Life expectancy exceeding 80–84 years; widespread cardiovascular care.",
+      "US adult smoking dropping from 40% to under 15% (AMSCO p. 89)."
+    ],
+    "memoryHook": "Stage 4 = Delayed: Doctors push back the expiration date."
+  },
+  {
+    "id": 34,
+    "term": "Reemergence of infectious diseases",
+    "topic": "2.5",
+    "topicTitle": "The Demographic Transition Model",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "89",
+      "definition": "ETM Stage 5: Infectious and parasitic diseases return or mutate, causing death rates to rise and life expectancy to potentially decline.",
+      "context": "Driven by three factors: (1) Evolution of drug-resistant superbugs (MRSA, multi-drug resistant TB), (2) Poverty and unsanitary conditions in urban slums, and (3) Increased global connectivity and air travel spreading pathogens worldwide in hours."
+    },
+    "plainEnglish": "ETM Stage 5: Germs strike back because antibiotics stop working and international flights spread new viruses everywhere.",
+    "formula": null,
+    "stimulusTypes": [
+      "Global Airline Flight Connectivity Map",
+      "Antibiotic Resistance Chart"
+    ],
+    "collegeBoardTestingPattern": "Connects globalization (international air travel) to the rapid global diffusion of pandemics, or asks how overuse of antibiotics creates superbugs in Stage 5.",
+    "confusingPairs": {
+      "confusedWith": "ETM Stage 1 (Pestilence)",
+      "howToDistinguish": "Stage 1 was caused by lack of medical knowledge and sewers; Stage 5 is caused by ANTIBIOTIC OVERUSE, GLOBAL AIRLINE NETWORKS, and MUTATING PATHOGENS."
+    },
+    "apExamTraps": "Assuming Stage 5 only affects developing nations. High-income countries with major international airport hubs are often the first infected by global airborne pandemics.",
+    "frqApplication": "Identify three core causes of Stage 5 reemergence: microbial evolution/resistance, spatial interaction/air travel diffusion, and socioeconomic poverty pockets.",
+    "realWorldAPExamples": [
+      "COVID-19 Pandemic (2020): Spread globally in weeks via commercial air flights.",
+      "Drug-resistant Tuberculosis (MDR-TB) and MRSA superbugs in modern hospitals.",
+      "Ebola outbreaks and Zika virus diffusion."
+    ],
+    "memoryHook": "Stage 5 = Germs Strike Back: Superbugs and airplanes."
+  },
+  {
+    "id": 35,
+    "term": "Malthusian theory",
+    "topic": "2.6",
+    "topicTitle": "Malthusian Theory",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "90-91",
+      "definition": "Demographic theory by Thomas Malthus (1798) that food production grows arithmetically (1, 2, 3, 4) while population grows exponentially (1, 2, 4, 8), leading inevitably to catastrophe.",
+      "context": "Predicted human population would hit a 'point of crisis' exceeding carrying capacity, resulting in famine, war, and plagues (positive checks) unless checked by moral restraint (preventive checks)."
+    },
+    "plainEnglish": "Thomas Malthus's 1798 theory that humans multiply faster than food can grow, so mass starvation is inevitable.",
+    "formula": "Food: Arithmetic (1, 2, 3, 4...) vs Population: Exponential (1, 2, 4, 8, 16...)",
+    "stimulusTypes": [
+      "Two-Line Growth Graph (Linear Food vs Exponential Population)",
+      "Point of Crisis Diagram"
+    ],
+    "collegeBoardTestingPattern": "Shows the classic graph of arithmetic food line vs exponential population curve with an intersection marked 'Point of Crisis', and asks why Malthus's prediction failed to materialize.",
+    "confusingPairs": {
+      "confusedWith": "Boserup Theory (Agricultural Intensification)",
+      "howToDistinguish": "Malthus claimed population OUTRUNS food; Boserup claimed population GROWTH STIMULATES technological innovation to create MORE food ('Necessity is the mother of invention')."
+    },
+    "apExamTraps": "Believing Malthus was proven right. His prediction failed because: (1) Green Revolution, fertilizers, and mechanization expanded food exponentially, and (2) birth rates dropped as societies urbanized.",
+    "frqApplication": "List reasons Malthus was wrong: synthetic fertilizers, mechanized tractors, genetically modified crops, global refrigerated shipping, and falling TFR in industrial societies.",
+    "realWorldAPExamples": [
+      "Thomas Malthus: 'An Essay on the Principle of Population' (1798).",
+      "Counter-proof: Global food production today easily feeds 8 billion people, with famines caused by distribution/war, not absolute global food shortages."
+    ],
+    "memoryHook": "Malthus = Math Trap: Food adds (+), People multiply (x)."
+  },
+  {
+    "id": 36,
+    "term": "Overpopulation",
+    "topic": "2.6",
+    "topicTitle": "Malthusian Theory",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "62, 90",
+      "definition": "Having more people than a region can support; when the population exceeds carrying capacity.",
+      "context": "Malthus called an unsupportable population 'overpopulation'. Not simply a matter of high density, but a mismatch between population numbers and sustainable resource availability."
+    },
+    "plainEnglish": "When an area has more people than its resources (food, water, energy) can sustainably support.",
+    "formula": null,
+    "stimulusTypes": [
+      "Resource Depletion Map",
+      "Ecological Deficit Chart"
+    ],
+    "collegeBoardTestingPattern": "Asks whether a densely populated MDC like Singapore is 'overpopulated'. Answer: No, because its economic wealth allows it to trade for resources, whereas a sparsely populated arid area in the Sahel CAN be overpopulated.",
+    "confusingPairs": {
+      "confusedWith": "High population density",
+      "howToDistinguish": "Density is PEOPLE PER SQUARE MILE; Overpopulation is PEOPLE EXCEEDING CARRYING CAPACITY."
+    },
+    "apExamTraps": "Equating overpopulation with sheer numbers or high arithmetic density. A region with 10 people per square mile can be overpopulated if its water and soil can only support 5.",
+    "frqApplication": "Define overpopulation as an ecological relationship: Population > Available Sustainable Resources.",
+    "realWorldAPExamples": [
+      "The African Sahel: Overgrazing and deforestation leading to desertification because population exceeds local carrying capacity.",
+      "Yemen: Severe water table depletion threatening to leave cities without potable drinking water."
+    ],
+    "memoryHook": "Overpopulation = Over the Capacity line."
+  },
+  {
+    "id": 37,
+    "term": "Neo-Malthusian",
+    "topic": "2.6",
+    "topicTitle": "Malthusian Theory",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "91",
+      "definition": "Modern theorists who argue that Malthus's basic warning remains valid today when expanded beyond food to include other finite planetary resources.",
+      "context": "Neo-Malthusians point to depletion of non-renewable fossil fuels, clean freshwater aquifers, arable soil salinization, and atmospheric pollution/climate change caused by global population growth."
+    },
+    "plainEnglish": "Modern environmentalists who say Malthus was right, but about fresh water, clean air, oil, and climate change rather than just food.",
+    "formula": null,
+    "stimulusTypes": [
+      "Global Water Scarcity Map",
+      "Atmospheric Carbon vs Population Graph"
+    ],
+    "collegeBoardTestingPattern": "Presents concerns about global freshwater depletion, desertification, and fossil fuel exhaustion, asking which theoretical perspective this reflects (Neo-Malthusian).",
+    "confusingPairs": {
+      "confusedWith": "Cornucopians / Boserupians",
+      "howToDistinguish": "Neo-Malthusians believe finite ecological resources will CRASH civilization; Cornucopians believe human innovation and technology will ALWAYS overcome resource limits."
+    },
+    "apExamTraps": "Thinking Neo-Malthusians only worry about wheat and rice. Their core focus is on energy, clean water, pollution, ecological footprints, and strip-mining.",
+    "frqApplication": "Cite specific non-food ecological limits: depletion of the Ogallala aquifer, ocean fisheries collapse, and global warming impacts.",
+    "realWorldAPExamples": [
+      "Paul Ehrlich: 'The Population Bomb' (1968).",
+      "Global Water Scarcity: Over 2 billion people living in countries experiencing high water stress (Middle East, North Africa, South Asia)."
+    ],
+    "memoryHook": "Neo-Malthusian = New Malthus: Worried about Water, Oil, and Air."
+  },
+  {
+    "id": 38,
+    "term": "Antinatalist policy",
+    "topic": "2.7",
+    "topicTitle": "Population Policies",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "94-95",
+      "definition": "Government programs and laws designed to decrease the fertility rate and curb population growth.",
+      "context": "Can range from coercive mandates (birth limits, forced sterilizations, heavy fines) to voluntary educational and family planning campaigns (free contraception, female literacy)."
+    },
+    "plainEnglish": "A government law or program to convince or force people to have fewer babies.",
+    "formula": null,
+    "stimulusTypes": [
+      "Government Propaganda Posters",
+      "TFR Drop Line Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows a propaganda poster from China's One-Child Policy and asks about its unintended demographic consequences: an aging population, shrinking workforce, and skewed sex ratio (more males than females).",
+    "confusingPairs": {
+      "confusedWith": "Pronatalist policy",
+      "howToDistinguish": "Antinatalist = AGAINST births (curb growth); Pronatalist = PRO births (boost growth)."
+    },
+    "apExamTraps": "Assuming antinatalist policies only happened in China. India enacted massive sterilization campaigns in the 1970s and family planning education programs.",
+    "frqApplication": "Identify negative long-term impacts of China's One-Child Policy: (1) rapid aging workforce, (2) 4-2-1 dependency burden, and (3) sex ratio imbalance (>115 boys per 100 girls).",
+    "realWorldAPExamples": [
+      "China's One-Child Policy (1979–2015): Heavy fines, loss of state jobs for unauthorized births.",
+      "India: 'Hum Do, Hamare Do' ('We Two, Our Two') campaign; government family planning clinics.",
+      "Singapore in 1966: 'Stop at Two' antinatalist campaign."
+    ],
+    "memoryHook": "Anti = Against Natal (Birth): Stop having babies!"
+  },
+  {
+    "id": 39,
+    "term": "Pronatalist policy",
+    "topic": "2.7",
+    "topicTitle": "Population Policies",
+    "chapter": "Chapter 4",
+    "amsco": {
+      "page": "95",
+      "definition": "Government programs and incentives designed to increase the fertility rate in countries facing declining populations.",
+      "context": "Employed by Stage 4 and 5 countries. Incentives include paid parental leave, subsidized public daycare, direct monthly child allowance cash payments, and tax exemptions."
+    },
+    "plainEnglish": "Government perks (cash, long paid time off, free daycare) to encourage parents to have more children.",
+    "formula": null,
+    "stimulusTypes": [
+      "Incentive Advertisement",
+      "Fertility Rebate Data Table"
+    ],
+    "collegeBoardTestingPattern": "Presents a country offering 12 months paid maternity leave and free daycare, asking what problem the policy addresses (Stage 5 aging population and shrinking workforce).",
+    "confusingPairs": {
+      "confusedWith": "Antinatalist policy",
+      "howToDistinguish": "Pronatalist = PRO-birth (raising TFR); Antinatalist = ANTI-birth (lowering TFR)."
+    },
+    "apExamTraps": "Believing pronatalist policies always succeed. Most pronatalist policies produce only minor, temporary bumps in TFR because the high economic cost of raising children in cities outweighs government subsidies.",
+    "frqApplication": "Identify specific economic mechanisms: paid parental leave, tax credits per child, subsidized state preschools, and cash baby bonuses.",
+    "realWorldAPExamples": [
+      "France: 'Code de la Famille' offering heavily subsidized daycare (crèches) and extensive paid maternity leave.",
+      "Singapore: 1987 reversal to 'Have Three or More, If You Can Afford It' with tax rebates.",
+      "Russia: 'Motherhood Capital' cash bonuses on second and third children.",
+      "Japan, Sweden, and Italy: National public advertising campaigns."
+    ],
+    "memoryHook": "Pro = Promote Natal (Birth): Please have more babies!"
+  },
+  {
+    "id": 40,
+    "term": "Migration",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "108-114",
+      "definition": "A permanent move to a new location.",
+      "context": "Distinguished from temporary mobility or cyclical circulation (such as daily commuting, seasonal farming, or college attendance). Involves relocating one's permanent home."
+    },
+    "plainEnglish": "A permanent move to live in a new place.",
+    "formula": "Net Migration = Immigrants - Emigrants",
+    "stimulusTypes": [
+      "Global Flow-Line Arrow Map",
+      "Migration Stream Diagram"
+    ],
+    "collegeBoardTestingPattern": "Tests whether a movement is true migration vs cyclical mobility (e.g., daily commuting to work is circulation, moving across the country for a new job is migration).",
+    "confusingPairs": {
+      "confusedWith": "Circulation / Periodic movement",
+      "howToDistinguish": "Migration is PERMANENT; Circulation is TEMPORARY and REPETITIVE (daily commuting, seasonal vacationing)."
+    },
+    "apExamTraps": "Calling seasonal agricultural movement 'permanent migration'. Seasonal moves are cyclical mobility or transhumance.",
+    "frqApplication": "Distinguish international migration from internal migration and identify economic opportunity as the primary global driver.",
+    "realWorldAPExamples": [
+      "Global migration: ~280 million international migrants worldwide (~3.6% of global population).",
+      "Major global flows: Latin America to North America, South Asia to Persian Gulf, Africa/Middle East to Europe."
+    ],
+    "memoryHook": "Migration = Move to live permanently."
+  },
+  {
+    "id": 41,
+    "term": "Push factor",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "108-111",
+      "definition": "Negative conditions or circumstances that induce people to leave their current location and move elsewhere.",
+      "context": "Categorized into economic (unemployment), political (war, tyranny, persecution), environmental (drought, hurricanes, crop failure), and social (discrimination)."
+    },
+    "plainEnglish": "Bad things that push you away from your hometown.",
+    "formula": null,
+    "stimulusTypes": [
+      "Push/Pull T-Chart",
+      "Refugee Origin Map"
+    ],
+    "collegeBoardTestingPattern": "Presents a scenario (e.g., severe flooding and joblessness in rural areas) and asks students to classify the factors as economic or environmental push factors.",
+    "confusingPairs": {
+      "confusedWith": "Pull factor",
+      "howToDistinguish": "Push factors are NEGATIVE conditions at the ORIGIN that make you LEAVE; Pull factors are POSITIVE conditions at the DESTINATION that ATTRACT you."
+    },
+    "apExamTraps": "Assuming economic factors are the only push factors. Political warfare and environmental disasters frequently trigger forced migrations.",
+    "frqApplication": "Categorize push factors accurately: Economic (high unemployment, low wages), Social (religious persecution), Political (civil war), Environmental (desertification).",
+    "realWorldAPExamples": [
+      "Syrian Civil War: Bombing and ISIS violence acting as political push factors for 6+ million refugees.",
+      "Irish Potato Famine (1840s): Famine and starvation as catastrophic environmental/economic push factors."
+    ],
+    "memoryHook": "Push = Shoving you OUT the door."
+  },
+  {
+    "id": 42,
+    "term": "Pull factor",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "108-111",
+      "definition": "Positive conditions or circumstances that attract people to move to a new geographic location.",
+      "context": "Economic opportunity (jobs, higher wages) is the #1 pull factor globally. Other pulls include political freedom, educational institutions, safety, and pleasant climate."
+    },
+    "plainEnglish": "Good things that pull you toward a new place.",
+    "formula": null,
+    "stimulusTypes": [
+      "Destination Preference Map",
+      "Survey Table"
+    ],
+    "collegeBoardTestingPattern": "Asks which pull factor is responsible for the largest volume of voluntary migration globally. Answer: Economic pull factors (jobs and higher wages).",
+    "confusingPairs": {
+      "confusedWith": "Push factor",
+      "howToDistinguish": "Push = Bad stuff behind you (origin); Pull = Good stuff ahead of you (destination)."
+    },
+    "apExamTraps": "Overemphasizing climate. While mild winters pull retirees to Florida, jobs and economic survival pull the vast majority of working-age migrants worldwide.",
+    "frqApplication": "Explain how perceived economic pull factors (higher wages) interact with social networks (chain migration) to sustain migration corridors.",
+    "realWorldAPExamples": [
+      "Silicon Valley, California: High-tech salaries pulling software engineers from India and China.",
+      "US Sunbelt: Warm climate, air conditioning, and job growth pulling retirees and corporations from the Rust Belt."
+    ],
+    "memoryHook": "Pull = Magnet drawing you IN."
+  },
+  {
+    "id": 43,
+    "term": "Immigration",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "108",
+      "definition": "When an individual migrates across an international border with the intention of staying permanently (from the perspective of the receiving destination country).",
+      "context": "The person entering is called an immigrant. Net immigration occurs when immigrants exceed emigrants."
+    },
+    "plainEnglish": "Moving INTO a new country permanently (from the new country's point of view).",
+    "formula": "Net In-Migration = Immigrants > Emigrants",
+    "stimulusTypes": [
+      "Immigration By Region Bar Chart",
+      "Historical Census Table"
+    ],
+    "collegeBoardTestingPattern": "Tests the perspective: A person moving from Mexico to the US is an EMIGRANT from Mexico and an IMMIGRANT to the United States.",
+    "confusingPairs": {
+      "confusedWith": "Emigrate",
+      "howToDistinguish": "Immigration is moving **IN**; Emigration is **EXITING**."
+    },
+    "apExamTraps": "Swapping the words. Remember the first letters: **I**mmigrate = **I**nto; **E**migrate = **E**xit.",
+    "frqApplication": "Analyze the demographic impact of immigration on host countries: lowers median age, increases labor supply, and boosts tax revenues.",
+    "realWorldAPExamples": [
+      "United States: Receives the largest total number of international immigrants in the world (~50 million foreign-born residents).",
+      "Canada & Australia: Points-based economic immigration systems."
+    ],
+    "memoryHook": "I = IN (Immigration)."
+  },
+  {
+    "id": 44,
+    "term": "Emigrate",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "108",
+      "definition": "When people migrate away from somewhere; the act of leaving one's home country permanently (from the perspective of the origin country).",
+      "context": "The person leaving is called an emigrant. Countries with high emigration rates often suffer from brain drain but benefit from remittances."
+    },
+    "plainEnglish": "EXITING or leaving your home country permanently (from your home country's point of view).",
+    "formula": "Net Out-Migration = Emigrants > Immigrants",
+    "stimulusTypes": [
+      "Emigration Flow Map",
+      "Diaspora Population Chart"
+    ],
+    "collegeBoardTestingPattern": "Asks what economic benefits and disadvantages an origin country experiences when citizens emigrate (Benefit: remittances; Disadvantage: brain drain and loss of working-age tax base).",
+    "confusingPairs": {
+      "confusedWith": "Immigrate",
+      "howToDistinguish": "Emigrate = **E**XIT; Immigrate = **I**NTO."
+    },
+    "apExamTraps": "Confusing the origin perspective with destination perspective. You emigrate FROM your homeland; you immigrate TO your new country.",
+    "frqApplication": "Identify origin country consequences: loss of educated youth ('brain drain') balanced by financial capital returned ('remittances').",
+    "realWorldAPExamples": [
+      "Over 6 million Venezuelans have emigrated since 2015 due to economic collapse and hyperinflation.",
+      "Historical Irish emigration to the US following the 1845 Potato Famine."
+    ],
+    "memoryHook": "E = EXIT (Emigrate)."
+  },
+  {
+    "id": 45,
+    "term": "Migration transition model",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "110",
+      "definition": "Formulated by geographer Wilbur Zelinsky; claims that migration patterns vary directly with the stages of the Demographic Transition Model.",
+      "context": "Stage 1: Daily/seasonal search for food. Stage 2: High international emigration and internal rural-to-urban migration due to overcrowding. Stages 3 & 4: Destinations for international immigrants and intraregional suburban movement."
+    },
+    "plainEnglish": "Wilbur Zelinsky's model proving that migration types change based on a country's DTM stage: Stage 2 countries send migrants out; Stage 4/5 countries pull migrants in.",
+    "formula": null,
+    "stimulusTypes": [
+      "DTM vs Migration Matrix Table",
+      "Zelinsky Model Diagram"
+    ],
+    "collegeBoardTestingPattern": "Asks: 'According to Wilbur Zelinsky's migration transition model, in which DTM stage does a country experience the highest rate of international emigration?' Answer: Stage 2.",
+    "confusingPairs": {
+      "confusedWith": "Demographic transition model (DTM)",
+      "howToDistinguish": "DTM tracks BIRTH and DEATH rates; Zelinsky's model tracks MIGRATION FLOWS connected to those DTM stages."
+    },
+    "apExamTraps": "Thinking Stage 4 countries produce high international emigration. Stage 4 countries are destination NET-RECEIVERS of immigrants.",
+    "frqApplication": "State Zelinsky's rule: Stage 2 = Source of international migrants (pushed by rapid population growth and job shortages); Stage 4 = Destination for international migrants (pulled by economic opportunity).",
+    "realWorldAPExamples": [
+      "19th-century Europe in DTM Stage 2 sent millions of emigrants to the Americas.",
+      "Contemporary Stage 2 nations (Guatemala, Nigeria) sending migrants to Stage 4 nations (US, UK, Germany)."
+    ],
+    "memoryHook": "Zelinsky = Zooming across borders in Stage 2; Settling in suburbs in Stage 4."
+  },
+  {
+    "id": 46,
+    "term": "Intervening obstacles",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "111",
+      "definition": "Barriers that make it difficult for migrants to reach their intended destination.",
+      "context": "Historically primarily physical/environmental (oceans, mountains, deserts). Today predominantly political/legal (passports, visas, border walls, immigration quotas, deportation enforcement)."
+    },
+    "plainEnglish": "Barriers or roadblocks that stop, slow down, or block a migrant on their journey.",
+    "formula": null,
+    "stimulusTypes": [
+      "Topographic Migration Route Map",
+      "Border Enforcement Infographic"
+    ],
+    "collegeBoardTestingPattern": "Asks how intervening obstacles have shifted over the last century: shifted from physical/environmental barriers (oceans/mountains) to political/legal barriers (visa laws, border surveillance, quotas).",
+    "confusingPairs": {
+      "confusedWith": "Intervening opportunities",
+      "howToDistinguish": "Obstacles are NEGATIVE BARRIERS that block or hurt travel; Opportunities are POSITIVE ATTRACTIONS along the way that tempt you to stop early."
+    },
+    "apExamTraps": "Assuming physical obstacles no longer exist. Migrants crossing the Darién Gap (jungle) or Sonoran Desert still face life-threatening environmental obstacles.",
+    "frqApplication": "Identify legal-political barriers: government quota systems, passport documentation requirements, visa fees, and border fencing.",
+    "realWorldAPExamples": [
+      "Physical: Sonoran Desert along the US-Mexico border; Mediterranean Sea crossing for African migrants.",
+      "Political: US Title 42 border restrictions; European Union Schengen border checks; visa waitlists."
+    ],
+    "memoryHook": "Obstacle = Obstruction: A wall in your way."
+  },
+  {
+    "id": 47,
+    "term": "Intervening opportunities",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "111",
+      "definition": "A favorable economic, social, or environmental opportunity that causes a migrant to stop and settle along the way rather than continuing to their original destination.",
+      "context": "A migrant traveling toward a distant major city finds a good job or affordable housing in an intermediate city and permanently settles there instead."
+    },
+    "plainEnglish": "A good opportunity (like a great job) you encounter along your travel route that makes you stop and settle there instead of going all the way to your original goal.",
+    "formula": null,
+    "stimulusTypes": [
+      "Step-Route Decision Map"
+    ],
+    "collegeBoardTestingPattern": "A migrant leaves Central America heading for Chicago, but gets offered a high-paying construction job in Atlanta, GA and decides to buy a home there. Asks which concept this illustrates (Intervening Opportunity).",
+    "confusingPairs": {
+      "confusedWith": "Intervening obstacle",
+      "howToDistinguish": "Obstacle is BAD (stops you with a wall/hardship); Opportunity is GOOD (tempts you to settle early because life is good there)."
+    },
+    "apExamTraps": "Assuming the migrant failed their journey. They succeeded early by finding economic stability before reaching their original target.",
+    "frqApplication": "Explain that intervening opportunities shorten migration distances and reduce travel costs for migrating families.",
+    "realWorldAPExamples": [
+      "A migrant moving from Florida toward New York finds employment and affordable housing in North Carolina and settles permanently.",
+      "African migrants heading for Germany stopping and finding agricultural work in southern Spain or Italy."
+    ],
+    "memoryHook": "Opportunity = Offered a great deal on the way!"
+  },
+  {
+    "id": 48,
+    "term": "Step migration",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "112",
+      "definition": "A process in which migrants reach their eventual destination through a series of smaller moves or steps.",
+      "context": "Typically progresses up the urban hierarchy: from a rural farm -> to a small village -> to a provincial town -> to a regional city -> to a national or global metropolis."
+    },
+    "plainEnglish": "Moving to a big city in a series of smaller steps instead of one giant leap (e.g., farm -> village -> town -> big city).",
+    "formula": null,
+    "stimulusTypes": [
+      "Hierarchical Route Diagram",
+      "Sequential Travel Map"
+    ],
+    "collegeBoardTestingPattern": "Describes a person who moves from a small rural village to a regional market town, stays 2 years, and then moves to the national capital. Asks which migration pattern is described (Step Migration).",
+    "confusingPairs": {
+      "confusedWith": "Chain migration",
+      "howToDistinguish": "Step migration is about the GEOGRAPHIC SEQUENCE OF STOPS taken by one migrant; Chain migration is about SOCIAL NETWORKS where relatives follow relatives."
+    },
+    "apExamTraps": "Confusing step migration with commuting. Each step involves establishing residency before making the next leap.",
+    "frqApplication": "Connect step migration to E.G. Ravenstein's Laws of Migration: migrants move short distances first to gather information and savings before tackling longer moves.",
+    "realWorldAPExamples": [
+      "A Brazilian farmer moves to a regional town, saves money, and later moves to the megalopolis of São Paulo.",
+      "A migrant from rural Guatemala moves to Guatemala City, then to Mexico City, and eventually to Los Angeles."
+    ],
+    "memoryHook": "Step Migration = Walking up the stairs one step at a time."
+  },
+  {
+    "id": 49,
+    "term": "Rural-to-urban migration",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "112, 117",
+      "definition": "The most significant internal migration flow in human history, involving the movement of people from agricultural rural areas to industrial and commercial urban cities.",
+      "context": "Driven by farm mechanization reducing agricultural labor needs (push) and urban factory/service jobs offering higher wages (pull). The dominant driver of urbanization in LDCs today."
+    },
+    "plainEnglish": "Moving from the countryside/farms into cities.",
+    "formula": null,
+    "stimulusTypes": [
+      "Urban Population Share Over Time Graph",
+      "Internal Migration Flow Chart"
+    ],
+    "collegeBoardTestingPattern": "Asks what primary push and pull factors drive rural-to-urban migration in developing countries today (Push: agricultural mechanization and lack of rural services; Pull: urban factory, construction, and service jobs).",
+    "confusingPairs": {
+      "confusedWith": "Counter-urbanization",
+      "howToDistinguish": "Rural-to-urban is moving INTO cities (urbanization); Counter-urbanization is affluent people moving OUT of cities into rural retreats."
+    },
+    "apExamTraps": "Believing all rural migrants immediately secure formal high-paying corporate jobs. Many end up in the informal economy and informal squatter settlements (favelas/slums).",
+    "frqApplication": "Identify consequences: leads to squatter settlements, rapid urban sprawl, traffic congestion, and infrastructure deficits in megacities.",
+    "realWorldAPExamples": [
+      "China: Over 250 million rural internal migrants moved to coastal manufacturing cities (Shenzhen, Guangzhou, Shanghai) over the past 30 years.",
+      "India: Millions migrating from rural Bihar and Uttar Pradesh to Mumbai and Delhi.",
+      "Industrial Revolution Britain: Enclosure Acts pushed rural peasants into Manchester and London."
+    ],
+    "memoryHook": "Country to City = Farm to Factory."
+  },
+  {
+    "id": 50,
+    "term": "Counter migration",
+    "topic": "2.10",
+    "topicTitle": "Causes of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "112",
+      "definition": "The geographic principle that each primary migration flow produces a compensating movement in the opposite direction.",
+      "context": "Identified in Ravenstein's Laws. Includes return migration (migrants moving back home after saving money or retiring) and counter-currents of differing demographic groups."
+    },
+    "plainEnglish": "For every stream of people moving from point A to point B, a smaller counter-stream moves from point B back to point A.",
+    "formula": null,
+    "stimulusTypes": [
+      "Bidirectional Flow Map",
+      "Ravenstein's Laws Matrix"
+    ],
+    "collegeBoardTestingPattern": "Shows arrows flowing both directions between two regions (e.g., US to Mexico and Mexico to US) and asks which of Ravenstein's laws is illustrated (Counter migration).",
+    "confusingPairs": {
+      "confusedWith": "Chain migration",
+      "howToDistinguish": "Counter migration is movement in the OPPOSITE DIRECTION; Chain migration is movement in the SAME DIRECTION following family."
+    },
+    "apExamTraps": "Thinking migration is a one-way one-directional street. Every migration stream has a return flow or counter-flow.",
+    "frqApplication": "Cite return migration: immigrants returning to their homeland after earning retirement savings or during economic downturns in the host country.",
+    "realWorldAPExamples": [
+      "US-Mexico migration: While millions of Mexicans moved north to the US, over 1 million US citizens (many retirees) moved south to live in Mexico (AMSCO p. 112).",
+      "Return migration of African Americans from Northern industrial cities back to the US South in recent decades ('Reverse Great Migration')."
+    ],
+    "memoryHook": "Counter Migration = Counter-flow in the opposite direction."
+  },
+  {
+    "id": 51,
+    "term": "Forced migration",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "114-116",
+      "definition": "A permanent movement compelled primarily by cultural, political, or severe environmental factors where migrants have no realistic choice.",
+      "context": "Includes enslavement, government-forced relocations, warfare, genocide, religious persecution, and catastrophic natural disasters."
+    },
+    "plainEnglish": "Being forced to move away from home because of war, slavery, violence, or environmental disaster (you have no real choice).",
+    "formula": null,
+    "stimulusTypes": [
+      "Historical Slave Trade Map",
+      "Refugee Displacement Graph"
+    ],
+    "collegeBoardTestingPattern": "Distinguishes forced from voluntary migration: voluntary is motivated primarily by economic choice; forced is driven by violent threat to survival.",
+    "confusingPairs": {
+      "confusedWith": "Voluntary migration",
+      "howToDistinguish": "Forced = compelled by violence/war/persecution (survival at stake); Voluntary = personal choice to seek better wages or lifestyle."
+    },
+    "apExamTraps": "Classifying economic hardship as 'forced migration' on the AP exam. In AP Human Geography conventions, moving for higher wages—even in severe poverty—is categorized as voluntary economic migration.",
+    "frqApplication": "Identify historical and modern forced migrations: Transatlantic Slave Trade, Trail of Tears, and refugees fleeing civil warfare in Syria or Ukraine.",
+    "realWorldAPExamples": [
+      "Transatlantic Slave Trade (1500s–1800s): Over 12 million Africans forcibly enslaved and shipped to the Americas (largest forced migration in history).",
+      "Trail of Tears (1838): Forced displacement of Cherokee and other Indigenous nations to Oklahoma.",
+      "Rohingya forced expulsion from Myanmar into Bangladesh (2017)."
+    ],
+    "memoryHook": "Forced = Gun to your head: Move or die."
+  },
+  {
+    "id": 52,
+    "term": "Internally displaced persons (IDP)",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "115, 117",
+      "definition": "Migrants who have been forced to flee their homes for the same reasons as refugees (war, violence, disasters), but who move to another part of the SAME country.",
+      "context": "Crucial distinction: IDPs do NOT cross an international border. Because they remain within sovereign borders, they do not receive international legal protections under UN refugee treaties."
+    },
+    "plainEnglish": "A person forced out of their home by war or disaster who escapes to another town inside the same country (never crosses a national border).",
+    "formula": null,
+    "stimulusTypes": [
+      "Internal Conflict Map",
+      "UNHCR Displacement Table"
+    ],
+    "collegeBoardTestingPattern": "NUMBER ONE CONFUSION ON THE AP EXAM: A family flees Russian bombing in Eastern Ukraine and moves to a shelter in Lviv, Western Ukraine. Asks: What is their legal status? Answer: Internally Displaced Persons (IDPs) because they never crossed into Poland.",
+    "confusingPairs": {
+      "confusedWith": "Refugees",
+      "howToDistinguish": "IDPs stay **INSIDE** their home country; Refugees **CROSS AN INTERNATIONAL BORDER**."
+    },
+    "apExamTraps": "Calling someone who stays inside their country a refugee. They MUST cross an international border to be legally classified as a refugee.",
+    "frqApplication": "Explain why IDPs are often more vulnerable than refugees: their own national government (which may be the oppressor) retains jurisdiction, preventing international aid intervention without permission.",
+    "realWorldAPExamples": [
+      "Syria: Over 6 million IDPs displaced internally inside Syria.",
+      "Colombia: Over 7 million IDPs displaced by internal rebel and cartel conflicts.",
+      "United States: Residents of New Orleans displaced across the US by Hurricane Katrina (2005)."
+    ],
+    "memoryHook": "IDP = Inside Domestic Perimeter."
+  },
+  {
+    "id": 53,
+    "term": "Refugees",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "115, 117",
+      "definition": "Migrants forced to cross international borders who cannot return home out of a well-founded fear of harm or persecution.",
+      "context": "Protected under the 1951 UN Refugee Convention. Protected by the principle of non-refoulement (cannot be forcibly returned to a country where they face danger)."
+    },
+    "plainEnglish": "People forced to flee across an international border to escape war, persecution, or deadly danger.",
+    "formula": null,
+    "stimulusTypes": [
+      "International Border Crossing Map",
+      "UNHCR Global Trends Report Chart"
+    ],
+    "collegeBoardTestingPattern": "Presents a map of Syrian or Ukrainian families crossing international borders and asks for their legal status and primary push factors.",
+    "confusingPairs": {
+      "confusedWith": "Internally displaced persons (IDP)",
+      "howToDistinguish": "Refugees cross an **INTERNATIONAL BORDER**; IDPs stay **INSIDE** their home country."
+    },
+    "apExamTraps": "Confusing economic migrants with refugees. People fleeing poverty or lack of jobs do NOT qualify as refugees under UN law; refugees must face violent persecution, war, or political terror.",
+    "frqApplication": "State the legal criteria: (1) well-founded fear of persecution, (2) crossed an international border, and (3) unable to safely return.",
+    "realWorldAPExamples": [
+      "Syrian Refugees: Over 6 million refugees fled into Turkey, Lebanon, Jordan, and Europe.",
+      "Ukrainian Refugees: Over 6 million Ukrainians fled into Poland, Germany, and across Europe following the 2022 Russian invasion.",
+      "Clarkston, Georgia: Major refugee resettlement hub in the United States."
+    ],
+    "memoryHook": "Refugee = Ran across an International Border for Refuge."
+  },
+  {
+    "id": 54,
+    "term": "Asylum",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "116",
+      "definition": "Protection granted by one country to an immigrant from another country who has a legitimate fear of harm or death if returned to their homeland.",
+      "context": "An 'asylum seeker' is a migrant who has crossed a border and formally applied for legal refugee status in the host country while awaiting a judicial hearing."
+    },
+    "plainEnglish": "Legal protection and sanctuary granted by a host government to a foreign refugee so they cannot be deported back to danger.",
+    "formula": null,
+    "stimulusTypes": [
+      "Legal Application Flowchart",
+      "Asylum Approval Rate Table"
+    ],
+    "collegeBoardTestingPattern": "Asks what status a migrant holds while waiting for their legal refugee hearing: they are an 'Asylum Seeker'. If granted, they receive 'Asylum'.",
+    "confusingPairs": {
+      "confusedWith": "Guest worker visa",
+      "howToDistinguish": "Asylum is granted for HUMANITARIAN PROTECTION against persecution; Guest worker status is granted solely for TEMPORARY LABOR."
+    },
+    "apExamTraps": "Assuming anyone who asks for asylum gets it. Asylum seekers must legally prove a specific individualized threat of violence or persecution based on race, religion, nationality, social group, or political opinion.",
+    "frqApplication": "Explain that backlogged immigration courts create long waiting periods for asylum seekers, impacting municipal budgets and legal services.",
+    "realWorldAPExamples": [
+      "Political dissidents from Russia, Cuba, or Venezuela seeking political asylum in the United States or Western Europe.",
+      "European Union member states processing asylum applications under the Dublin Regulation."
+    ],
+    "memoryHook": "Asylum = Approved Sanctuary for Life."
+  },
+  {
+    "id": 55,
+    "term": "Voluntary migration",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "114",
+      "definition": "A permanent movement made by personal choice, typically driven by perceived economic opportunity or lifestyle improvement.",
+      "context": "The migrant weighs push and pull factors and decides that moving will result in a better standard of living or future prospects."
+    },
+    "plainEnglish": "Moving by your own free choice to find a better job, better school, or nicer weather.",
+    "formula": null,
+    "stimulusTypes": [
+      "Economic Migration Flow Map",
+      "Ravenstein Matrix"
+    ],
+    "collegeBoardTestingPattern": "Asks what motivates the vast majority of voluntary migrants worldwide. Answer: Economic pull factors (jobs, career advancement, higher wages).",
+    "confusingPairs": {
+      "confusedWith": "Forced migration",
+      "howToDistinguish": "Voluntary is motivated by CHOICE/BETTERMENT (economic advancement); Forced is compelled by THREAT/SURVIVAL (war, expulsion)."
+    },
+    "apExamTraps": "Assuming voluntary migrants have easy journeys. They often face dangerous obstacles, smugglers, and debt, but the fundamental decision to move was made voluntarily.",
+    "frqApplication": "Connect voluntary migration to Ravenstein's laws: voluntary migrants are disproportionately young working-age adults seeking employment.",
+    "realWorldAPExamples": [
+      "Software engineers moving from Bangalore to Silicon Valley.",
+      "Construction workers moving from Mexico to Texas and California.",
+      "Retirees moving from New York to Florida for warm weather."
+    ],
+    "memoryHook": "Voluntary = Volunteered to go for a better life."
+  },
+  {
+    "id": 56,
+    "term": "Internal migration",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "117",
+      "definition": "Permanent movement within the administrative borders of the same country.",
+      "context": "Divided into two main patterns: Interregional (moving from one region to another, e.g., Rust Belt to Sunbelt) and Intraregional (moving within the same region, e.g., urban city to suburbs)."
+    },
+    "plainEnglish": "Moving from one town or state to another inside the same country (e.g., Georgia to Texas).",
+    "formula": null,
+    "stimulusTypes": [
+      "Interregional Migration Arrow Map",
+      "County-to-County Net Migration Data"
+    ],
+    "collegeBoardTestingPattern": "Shows a map of the United States with arrows flowing from the Northeast/Midwest toward the South and West, asking students to identify the migration type (Interregional Internal Migration).",
+    "confusingPairs": {
+      "confusedWith": "Transnational migration",
+      "howToDistinguish": "Internal stays **WITHIN** a single country; Transnational moves **ACROSS** international borders."
+    },
+    "apExamTraps": "Assuming international migration is larger than internal. Globally, INTERNAL MIGRATION is far larger in volume than international migration (over 750 million internal migrants).",
+    "frqApplication": "Identify political effects of US interregional internal migration: reapportionment of Congressional seats and Electoral College votes from the Rust Belt to the Sunbelt.",
+    "realWorldAPExamples": [
+      "United States Great Migration (1916–1970): African Americans moving from the rural South to Northern cities.",
+      "US Sunbelt Shift: Millions moving to Georgia, Texas, Florida, and North Carolina.",
+      "China's interior-to-coastal rural-to-urban movement."
+    ],
+    "memoryHook": "Internal = Inside the country."
+  },
+  {
+    "id": 57,
+    "term": "Transnational migration",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "117",
+      "definition": "When people move from one country to another, or internationally rather than internally.",
+      "context": "AMSCO formal definition: international movement across national boundaries. Also used by geographers to describe migrants who maintain active economic, social, and political ties in both origin and host nations."
+    },
+    "plainEnglish": "Moving from one nation to another across an international border.",
+    "formula": null,
+    "stimulusTypes": [
+      "Global International Flow-Line Map"
+    ],
+    "collegeBoardTestingPattern": "Shows global arrows connecting developing regions to developed regions and asks which term classifies moves across international boundaries (Transnational / International Migration).",
+    "confusingPairs": {
+      "confusedWith": "Internal migration",
+      "howToDistinguish": "Transnational = ACROSS national borders; Internal = INSIDE national borders."
+    },
+    "apExamTraps": "Thinking transnational migrants cut all ties with their homeland. Most maintain deep ties through remittances, phone apps, voting, and cultural connections.",
+    "frqApplication": "Explain how transnational migration fosters globalization and cultural diffusion (syncretism, bilingual signage, ethnic enclaves).",
+    "realWorldAPExamples": [
+      "A migrant moving from Mexico to the United States (AMSCO p. 117 example).",
+      "South Asian guest workers living in Qatar while supporting families in Nepal and India."
+    ],
+    "memoryHook": "Trans-National = Crossing National borders."
+  },
+  {
+    "id": 58,
+    "term": "Chain migration",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "118",
+      "definition": "Migration of people to a specific geographic location because relatives, friends, or members of the same nationality previously settled there.",
+      "context": "One pioneering migrant establishes residency and financial security, then helps siblings, parents, and neighbors move by providing housing, job leads, and social support. Leads directly to ethnic enclaves."
+    },
+    "plainEnglish": "When people move to a specific neighborhood because their relatives or friends already live there.",
+    "formula": null,
+    "stimulusTypes": [
+      "Social Network Linkage Diagram",
+      "Ethnic Neighborhood Map"
+    ],
+    "collegeBoardTestingPattern": "Describes an immigrant who opens a grocery store in Chicago, after which his brother, cousins, and neighbors from the same village move to the same street. Asks which process is described (Chain Migration).",
+    "confusingPairs": {
+      "confusedWith": "Step migration",
+      "howToDistinguish": "Chain migration is about SOCIAL TIES (following family/friends); Step migration is about GEOGRAPHIC STAGES (village -> town -> city)."
+    },
+    "apExamTraps": "Confusing chain migration with forced labor chains. Chain migration is voluntary movement powered by familial and community social networks.",
+    "frqApplication": "Identify chain migration as the primary mechanism responsible for creating urban ethnic enclaves (Chinatowns, Little Havanas, Little Saigons).",
+    "realWorldAPExamples": [
+      "Little Italy in New York and Chinatown in San Francisco: Built generation by generation through chain migration.",
+      "Clarkston, Georgia: Refugee community expanding as initial resettlers sponsored extended families.",
+      "Dominican diaspora clustering in Washington Heights, Manhattan."
+    ],
+    "memoryHook": "Chain = Links in a chain: one family member pulls the next."
+  },
+  {
+    "id": 59,
+    "term": "Guest workers",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "118",
+      "definition": "Transnational migrants who relocate to a new country on temporary legal work visas to fill specific labor shortages, usually sending remittances home.",
+      "context": "Typically employed in low-wage, labor-intensive sectors like construction, agriculture, and service, though some programs recruit high-tech workers. Often face limited citizenship pathways."
+    },
+    "plainEnglish": "Foreign workers allowed into a country on temporary legal work permits to do specific jobs.",
+    "formula": null,
+    "stimulusTypes": [
+      "Population Pyramid with Asymmetric Male Bulge",
+      "Remittance Corridor Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows a population pyramid for Qatar, UAE, or Kuwait with an extreme, unnatural bulge of males aged 20-49 and asks what explains this demographic anomaly. Answer: Influx of male foreign guest workers.",
+    "confusingPairs": {
+      "confusedWith": "Permanent immigrants",
+      "howToDistinguish": "Guest workers have TEMPORARY legal status tied to employment; Permanent immigrants have permanent residency visas and paths to citizenship."
+    },
+    "apExamTraps": "Assuming guest workers can easily become citizens. In many host nations (especially the Persian Gulf), guest workers have zero path to citizenship and must leave when their contract ends.",
+    "frqApplication": "Explain the demographic distortion: guest worker programs create massive gender imbalances (skewed male sex ratios) on population pyramids.",
+    "realWorldAPExamples": [
+      "Persian Gulf States (Qatar, UAE, Saudi Arabia): Guest workers from India, Bangladesh, and the Philippines make up over 70–80% of total populations.",
+      "Historical German *Gastarbeiter* program recruiting Turkish workers in the 1960s-1970s.",
+      "United States H-2A (agricultural) and H-1B (specialty tech) temporary visa programs."
+    ],
+    "memoryHook": "Guest = A guest stays temporarily and doesn't own the house."
+  },
+  {
+    "id": 60,
+    "term": "Transhumance",
+    "topic": "2.11",
+    "topicTitle": "Forced and Voluntary Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "118",
+      "definition": "A system of pastoralism or nomadism in which people travel with their herds according to the seasonal availability of pastures.",
+      "context": "Traditional cyclical mobility: moving livestock up into highland mountain pastures during summer and down into lowland valleys during winter. Common in Mediterranean and alpine regions."
+    },
+    "plainEnglish": "Seasonal movement of herders and their livestock between mountain pastures in summer and lowland valleys in winter.",
+    "formula": null,
+    "stimulusTypes": [
+      "Topographic Seasonal Movement Map",
+      "Agricultural Systems Matrix"
+    ],
+    "collegeBoardTestingPattern": "Asks which agricultural practice involves cyclical, seasonal movement of livestock between mountain pastures in summer and valleys in winter (Transhumance).",
+    "confusingPairs": {
+      "confusedWith": "Nomadic pastoralism / Transnational migration",
+      "howToDistinguish": "Transhumance is SEASONAL AND REPETITIVE between fixed highland/lowland pastures; Transnational is across INTERNATIONAL borders."
+    },
+    "apExamTraps": "Calling transhumance 'permanent migration'. It is cyclical periodic movement; herders return to the same valleys every winter.",
+    "frqApplication": "Classify transhumance as an adaptation to climate and topography that prevents overgrazing of pastures.",
+    "realWorldAPExamples": [
+      "Swiss and Austrian Alps: Herding dairy cattle to high alpine pastures in summer and valley barns in winter.",
+      "Navajo pastoral herders in the American Southwest moving sheep seasonally."
+    ],
+    "memoryHook": "Trans-humance = Across the humus (ground/hills) with cows."
+  },
+  {
+    "id": 61,
+    "term": "Xenophobia",
+    "topic": "2.12",
+    "topicTitle": "Effects of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "120-121",
+      "definition": "A strong dislike, hatred, or fear of people who practice another culture or come from a foreign country.",
+      "context": "Often leads to anti-immigrant political backlash, discriminatory quota legislation, hate crimes, and residential segregation in destination societies."
+    },
+    "plainEnglish": "Fear, hatred, or prejudice against immigrants or foreigners.",
+    "formula": null,
+    "stimulusTypes": [
+      "Historical Political Cartoon",
+      "Anti-Immigrant Legislation Timeline"
+    ],
+    "collegeBoardTestingPattern": "Shows a 19th-century political cartoon depicting anti-immigrant sentiment (e.g., against Irish or Chinese immigrants) and asks which cultural concept is depicted (Xenophobia / Nativism).",
+    "confusingPairs": {
+      "confusedWith": "Ethnocentrism",
+      "howToDistinguish": "Ethnocentrism is judging another culture by your own culture's standards; Xenophobia is ACTIVE FEAR OR HATRED of foreigners."
+    },
+    "apExamTraps": "Believing xenophobia is purely a historical phenomenon. It surges during modern economic recessions when native workers scapegoat immigrants for wage stagnation or job losses.",
+    "frqApplication": "Explain how xenophobia drives restrictive immigration quotas, border militarization, and language assimilation mandates.",
+    "realWorldAPExamples": [
+      "Historical US: Chinese Exclusion Act of 1882 and the Immigration Act of 1924 (strict national origin quotas).",
+      "Rise of anti-immigrant nationalist political parties in contemporary Western Europe."
+    ],
+    "memoryHook": "Xeno = Foreigner; Phobia = Fear/Hatred."
+  },
+  {
+    "id": 62,
+    "term": "Remittances",
+    "topic": "2.12",
+    "topicTitle": "Effects of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "121",
+      "definition": "Money sent by migrant workers back to their family and friends in the country they left.",
+      "context": "A colossal source of international capital in the Global South, often exceeding total official foreign aid. Accounts for 20-40% of national GDP in some developing countries."
+    },
+    "plainEnglish": "Money that immigrant workers earn abroad and send back home to help their families.",
+    "formula": null,
+    "stimulusTypes": [
+      "Global Financial Flow Diagram",
+      "GDP Percentage Bar Chart"
+    ],
+    "collegeBoardTestingPattern": "Shows a bar chart where cross-border wire transfers make up 30% of a country's GDP and asks what these financial flows are called (Remittances) and how they impact the origin country.",
+    "confusingPairs": {
+      "confusedWith": "Foreign direct investment (FDI) / Foreign aid",
+      "howToDistinguish": "Remittances are PRIVATE FUNDS sent by INDIVIDUAL MIGRANTS directly to family; FDI is corporation investments; Foreign aid is government-to-government."
+    },
+    "apExamTraps": "Assuming remittances are payments made by the host government. Remittances are earned wages sent privately by individual workers.",
+    "frqApplication": "Identify positive and negative impacts: Positive = funds food, healthcare, schooling, and home construction directly for poor families; Negative = creates economic dependency on foreign economies.",
+    "realWorldAPExamples": [
+      "Tajikistan & Kyrgyzstan: Remittances account for nearly 40% of total national GDP (AMSCO p. 121).",
+      "Mexico: Receives over $60 billion annually in remittances, primarily from workers in the United States.",
+      "Nepal, El Salvador, Haiti, and the Philippines: Major remittance-dependent economies."
+    ],
+    "memoryHook": "Remit = Send back; Remittance = Return cash to Mama."
+  },
+  {
+    "id": 63,
+    "term": "Brain drain",
+    "topic": "2.12",
+    "topicTitle": "Effects of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "121",
+      "definition": "When migration out of a country is made up of many highly skilled, educated individuals (doctors, scientists, engineers).",
+      "context": "Inflicts severe long-term developmental damage on origin countries that invest in educating professionals only to lose them to wealthier MDCs offering higher salaries and superior facilities."
+    },
+    "plainEnglish": "When a poor country's smartest and most educated people (doctors, engineers, scientists) leave to work in rich countries.",
+    "formula": null,
+    "stimulusTypes": [
+      "Skilled Emigration Table",
+      "Doctor-to-Patient Ratio Map"
+    ],
+    "collegeBoardTestingPattern": "Presents a developing country with a severe shortage of medical personnel because 60% of its medical school graduates emigrate to the UK and US. Asks which concept is illustrated (Brain Drain).",
+    "confusingPairs": {
+      "confusedWith": "Brain gain",
+      "howToDistinguish": "Brain Drain is the LOSS of talent from the ORIGIN country; Brain Gain is the ACQUISITION of talent by the DESTINATION country."
+    },
+    "apExamTraps": "Thinking brain drain only affects universities. It severely cripples public healthcare, clean water engineering, and national governance in developing countries.",
+    "frqApplication": "Explain how brain drain creates a vicious cycle: loss of skilled professionals weakens local infrastructure, creating further push factors for remaining citizens.",
+    "realWorldAPExamples": [
+      "Sub-Saharan Africa: Thousands of medical doctors and nurses emigrating to the United Kingdom, Canada, and the United States, leaving hospitals severely understaffed.",
+      "India: Software developers and IIT graduates moving to Silicon Valley (though partially offset by return migration and tech hubs in Bangalore)."
+    ],
+    "memoryHook": "Brain Drain = Intelligence draining out of the country."
+  },
+  {
+    "id": 64,
+    "term": "Ethnic enclaves",
+    "topic": "2.12",
+    "topicTitle": "Effects of Migration",
+    "chapter": "Chapter 5",
+    "amsco": {
+      "page": "122",
+      "definition": "Neighborhoods filled primarily with people of the same ethnic group, often formed through chain migration.",
+      "context": "Features culturally distinct landscapes: ethnic grocery stores, places of worship, foreign-language signage, and mutual aid societies that help new arrivals adapt while preserving cultural heritage."
+    },
+    "plainEnglish": "A distinct urban neighborhood where immigrants of the same culture or nationality cluster together (like Chinatown or Little Italy).",
+    "formula": null,
+    "stimulusTypes": [
+      "City Neighborhood Map",
+      "Cultural Landscape Photograph"
+    ],
+    "collegeBoardTestingPattern": "Shows a photograph of a streetscape with storefront signs in Korean and English, traditional architectural motifs, and cultural grocery markets. Asks which spatial concept this represents (Ethnic Enclave formed via Chain Migration).",
+    "confusingPairs": {
+      "confusedWith": "Ghetto",
+      "howToDistinguish": "Ethnic enclave is typically VOLUNTARY clustering providing social and economic support; Ghetto historically refers to INVOLUNTARY, segregated clustering enforced by discriminatory housing laws."
+    },
+    "apExamTraps": "Assuming ethnic enclaves prevent assimilation. Enclaves actually provide a vital transitional economic 'cushion' where new immigrants find jobs, credit, and housing before adapting to the broader society.",
+    "frqApplication": "Identify cultural landscape indicators: foreign-language signage, distinct religious architecture (mosques, temples), ethnic specialty food stores, and community banks.",
+    "realWorldAPExamples": [
+      "Chinatown (San Francisco & NYC), Little Havana (Miami), Koreatown (Los Angeles).",
+      "Clarkston, Georgia: Multifaceted refugee enclaves in suburban Atlanta.",
+      "Little Saigon (Orange County, California)."
+    ],
+    "memoryHook": "Enclave = Enclosed cultural neighborhood."
+  }
+]
