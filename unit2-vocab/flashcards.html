@@ -1,0 +1,2877 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 2 Vocab Study</title>
+<meta name="description" content="AP Human Geography Unit 2 vocabulary study page: 64 terms, flashcards, quiz, and the weekly plan for the Monday 2026-10-26 test.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  if (window.tailwind) {
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            paper: 'var(--paper)',
+            ink: 'var(--ink)',
+            chart: 'var(--chart)',
+            lagoon: 'var(--lagoon)',
+            charted: 'var(--charted)',
+            flag: 'var(--flag)',
+            surface: 'var(--surface)',
+            line: 'var(--line)'
+          },
+          fontFamily: {
+            display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+            body: ['"Atkinson Hyperlegible"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  }
+</script>
+<style>
+:root{--paper:#F1F5F4;--ink:#12263A;--chart:#1D5C9E;--lagoon:#16817F;--charted:#2B7A4B;--flag:#B83A32;--surface:#fff;--line:#C6D4D0}
+@media (prefers-color-scheme:dark){:root{--paper:#0E1A22;--ink:#E3EEF1;--chart:#7DB4EA;--lagoon:#4CC2BF;--charted:#5FC48C;--flag:#F2877F;--surface:#15262F;--line:#26404A}}
+body{background-color:var(--paper)}
+/* contour-line background: inline SVG, faded out below the header */
+.contour{position:absolute;top:0;left:0;right:0;height:480px;z-index:-1;pointer-events:none;overflow:hidden;mask-image:linear-gradient(#000,transparent);-webkit-mask-image:linear-gradient(#000,transparent)}
+.contour svg{width:100%;height:100%;display:block;opacity:.6}
+.contour path{fill:none;stroke:var(--line);stroke-width:1.5}
+/* flip card */
+.flip{perspective:1000px;min-height:320px}
+.flip-inner{position:relative;height:320px;transition:transform .5s;transform-style:preserve-3d}
+.flip.is-flipped .flip-inner{transform:rotateY(180deg)}
+.flip-face{backface-visibility:hidden;position:absolute;inset:0;overflow:auto}
+.flip-back{transform:rotateY(180deg)}
+@media (prefers-reduced-motion:reduce){.flip-inner{transition:none}}
+/* print */
+@media print{.no-print{display:none!important}body{background:#fff;color:#000}.card{break-inside:avoid}}
+
+/* ---- supporting styles (plan's tokens, no new colors) ---- */
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--chart);outline-offset:2px}
+html{scroll-padding-top:16px}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:-1px;padding:0;border:0}
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--surface);color:var(--ink);padding:8px 12px;border:1px solid var(--chart)}
+.skip-link:focus{left:16px}
+.guide-link{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;padding:8px 16px;background:var(--chart);color:var(--paper);font-weight:700;text-decoration:none;border-radius:6px}
+button.guide-link{border:0;cursor:pointer;font:inherit;font-weight:700}
+.guide-link:hover{filter:brightness(1.1)}
+.guide-link:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.guide-box{border:2px solid var(--chart);background:var(--surface);padding:20px;border-radius:6px}
+.guide-box h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.2rem;margin:20px 0 6px}
+.guide-box h3:first-of-type{margin-top:12px}
+.guide-box ol,.guide-box ul{max-width:70ch;padding-left:1.4rem;margin:0}
+.guide-box li{margin:4px 0}
+.guide-goal{display:grid;gap:8px;grid-template-columns:minmax(0,1fr)}
+.guide-goal>div{border-left:4px solid var(--lagoon);padding:4px 12px}
+@media (min-width:768px){.guide-goal{grid-template-columns:repeat(3,minmax(0,1fr))}}
+#guide{scroll-margin-top:16px}
+.section-h{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:1.75rem;line-height:1.2;margin:0 0 12px}
+.plate-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:12px}
+.plate-stamp{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0}
+.intro{max-width:70ch;margin:8px 0 0}
+.card{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:2px;padding:16px}
+@media (min-width:640px){.card{padding:20px}}
+.card:hover{border-color:var(--chart)}
+.card-term{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:1.5rem;line-height:1.25;overflow-wrap:anywhere;margin:0}
+.card-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px;font-size:.8125rem;line-height:1.4}
+.stamp,.badge,.video-tag{border:1px solid var(--line);border-radius:2px;padding:2px 8px;display:inline-block}
+.status-text{font-weight:700;padding:2px 0}
+.also{font-size:.875rem;margin:6px 0 0}
+.label{font-size:.8125rem;line-height:1.4;font-weight:700;margin:12px 0 2px}
+.caption{font-size:.8125rem;line-height:1.4;margin:6px 0 0}
+.panel-lagoon{border-left:4px solid var(--lagoon);background:color-mix(in srgb,var(--lagoon) 10%,transparent);padding:12px;margin-top:12px}
+.panel-flag{border-left:4px solid var(--flag);background:color-mix(in srgb,var(--flag) 10%,transparent);padding:12px;margin-top:8px}
+.trick{border-left:2px solid var(--line);padding:4px 0 4px 10px;margin:12px 0 0;font-style:italic}
+.amsco-quote{margin:0 0 6px}
+.btn-primary,.btn-secondary,.chip{min-height:44px;border-radius:2px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn-primary{background:var(--chart);border-color:var(--chart);color:var(--paper)}
+.btn-primary:disabled,.btn-secondary:disabled{opacity:.5;cursor:default}
+.btn-secondary[aria-pressed="true"],.chip[aria-pressed="true"]{background:var(--chart);border-color:var(--chart);color:var(--paper)}
+.btn-secondary[data-act="known"][aria-pressed="true"]{background:var(--charted);border-color:var(--charted)}
+.chip{min-height:44px;padding:6px 12px;font-weight:400;white-space:nowrap}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.controls button{width:100%}
+.chip-bar{display:flex;gap:8px;overflow-x:auto;padding:2px 0 6px;flex-wrap:nowrap}
+@media (min-width:768px){.chip-bar{flex-wrap:wrap;overflow:visible}}
+.cards-grid{display:grid;gap:16px;margin-top:16px;grid-template-columns:minmax(0,1fr)}
+.cards-grid>*{min-width:0}
+.card li{max-width:100%}
+.card .chip{white-space:normal;text-align:left;max-width:100%}
+@media (min-width:768px){.cards-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.tint-chart{background:color-mix(in srgb,var(--chart) 12%,transparent)}
+.marker{display:inline-flex;flex:none;margin-top:4px}
+.marker svg{width:22px;height:22px;display:block}
+.bm-ring{fill:none;stroke:var(--ink);stroke-width:1.5}
+.bm-half,.bm-full{fill:transparent}
+.bm-tri{fill:none;stroke:var(--ink);stroke-width:1.4}
+.marker[data-state="learning"] .bm-half{fill:var(--chart)}
+.marker[data-state="known"] .bm-full{fill:var(--charted)}
+.marker[data-state="known"] .bm-tri{stroke:var(--surface)}
+.legend{display:flex;flex-wrap:wrap;gap:12px 18px;list-style:none;padding:0;margin:0}
+.legend li{display:flex;align-items:center;gap:6px;font-size:.875rem}
+.legend .marker{margin-top:0}
+.progress-track{position:relative;height:14px;border:1px solid var(--line);background:var(--surface);flex:1;min-width:160px}
+.progress-fill{height:100%;width:0;background:var(--charted)}
+.meter{position:relative;height:14px;border:1px solid var(--line);background:var(--surface);margin-top:4px}
+.meter-fill{height:100%;width:0;background:var(--charted)}
+.meter-goal{position:absolute;right:-3px;top:-5px;bottom:-5px;width:2px;background:var(--ink)}
+.quiz-opt{display:flex;align-items:flex-start;gap:8px;width:100%;text-align:left;min-height:44px;padding:10px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:2px;font:inherit;cursor:pointer}
+.quiz-opt:not(:disabled):hover{border-color:var(--chart)}
+.quiz-opt:disabled{cursor:default}
+.opt-correct{border-color:var(--charted)!important;background:color-mix(in srgb,var(--charted) 14%,transparent)!important}
+.opt-wrong{border-color:var(--flag)!important;background:color-mix(in srgb,var(--flag) 10%,transparent)!important}
+.tag{font-weight:700;font-size:.875rem;white-space:nowrap;margin-left:auto}
+.kbd{display:inline-block;min-width:1.5em;border:1px solid var(--line);border-radius:2px;text-align:center;padding:0 4px;font-size:.8125rem;line-height:1.5}
+.field{min-height:44px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 10px;border-radius:2px;font:inherit;width:100%}
+.check{display:flex;align-items:center;gap:8px;min-height:44px}
+.check input{width:20px;height:20px}
+.missed-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);padding:12px;list-style:none}
+.plan-table{width:100%;border-collapse:collapse;font-size:.9375rem}
+.plan-table th,.plan-table td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.plan-table th{font-size:.8125rem}
+@media (max-width:639px){
+  .plan-table thead{display:none}
+  .plan-table tbody tr{display:block;border:1px solid var(--line);margin-bottom:12px;padding:8px}
+  .plan-table td{display:block;border:0;padding:4px 0}
+  .plan-table td::before{content:attr(data-label);display:block;font-weight:700;font-size:.8125rem}
+}
+.bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(4,1fr);height:56px;background:var(--surface);border-top:1px solid var(--line)}
+.bottom-bar a{display:flex;align-items:center;justify-content:center;min-height:44px;font-weight:700;color:var(--ink);text-decoration:none;padding:4px;text-align:center}
+@media (min-width:1024px){.bottom-bar{display:none}}
+.side-nav a{display:block;min-height:44px;line-height:44px;color:var(--ink);text-decoration:underline}
+#print-sheet{display:none}
+@media print{
+  body > *:not(#print-sheet){display:none!important}
+  body{background:#fff!important;color:#000!important}
+  #print-sheet{display:block!important;font-size:10pt;line-height:1.35;color:#000;columns:2;column-gap:10mm}
+  #print-sheet h1{font-size:14pt;column-span:all;margin:0 0 4mm}
+  #print-sheet .ps-row{break-inside:avoid;margin:0 0 2.5mm}
+  #print-sheet p{margin:0 0 1mm}
+  #print-sheet .ps-term{font-weight:700}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .flip-inner{transition:none}
+  .flip.is-flipped .flip-inner{transform:none}
+  .flip-back{transform:none}
+  .flip-front{display:block}
+  .flip.is-flipped .flip-front{display:none}
+  .flip:not(.is-flipped) .flip-back{display:none}
+  .meter-fill{transition:none}
+}
+</style>
+</head>
+<body class="bg-paper text-ink font-body antialiased text-[1.0625rem] leading-[1.6] pb-24 lg:pb-12">
+<div class="contour" aria-hidden="true">
+  <svg viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <path d="M600 60C760 40 900 110 920 240C940 370 800 430 640 420C480 410 380 350 360 240C340 130 440 80 600 60Z"/>
+    <path d="M600 110C720 100 830 150 850 240C870 335 770 380 650 372C530 364 440 320 430 240C420 160 480 120 600 110Z"/>
+    <path d="M600 160C690 150 760 190 775 245C790 300 730 330 660 326C590 322 540 290 535 243C530 196 520 170 600 160Z"/>
+    <path d="M610 200C660 195 700 215 705 245C710 275 680 290 640 288C600 286 585 265 588 242C591 219 575 205 610 200Z"/>
+    <path d="M1010 40C1100 60 1160 150 1140 260C1120 370 1040 420 960 400C880 380 850 300 870 220C890 140 940 30 1010 40Z"/>
+    <path d="M120 300C200 260 300 300 330 370C360 440 250 480 170 460C90 440 40 340 120 300Z"/>
+    <path d="M1080 330C1130 320 1170 360 1160 410C1150 460 1090 470 1060 440C1030 410 1040 340 1080 330Z"/>
+  </svg>
+</div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="relative mx-auto w-full max-w-5xl px-4 sm:px-6 pt-6 pb-2">
+  <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <div class="min-w-0">
+      <h1 class="font-display font-bold text-[2.25rem] leading-[1.1] md:text-[3.25rem]">AP Human Geography Unit 2 Vocabulary</h1>
+      <p class="mt-2">64 terms from the Unit 2 graphic organizer</p>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <a href="Unit2_Vocab_Test_Runner.html" class="guide-link" style="background:#b45309; color:#ffffff;">🎯 Launch 120-Q Word Bank Test Simulator & Trap Guide →</a>
+        <button type="button" id="guide-toggle" class="guide-link" aria-expanded="true" aria-controls="guide"><span id="guide-toggle-text">Hide: how to use this page</span></button>
+      </div>
+    </div>
+    <dl class="md:text-right">
+      <dt class="label">Test</dt>
+      <dd class="m-0">Monday, October 26, 2026</dd>
+      <dt class="label">Countdown</dt>
+      <dd id="countdown" class="m-0 font-display text-[1.5rem] font-bold tabular-nums">Loading</dd>
+    </dl>
+  </div>
+
+  <div class="mt-6 border border-line bg-surface p-4">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-3">
+      <p class="label m-0">Progress</p>
+      <div id="progress-track" class="progress-track" role="progressbar" aria-label="Terms known" aria-valuemin="0" aria-valuemax="64" aria-valuenow="0">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+    <p class="mt-2 mb-0"><span id="progress-text" class="font-bold tabular-nums">0 of 64 known</span> &middot; Goal: 64 of 64</p>
+    <p class="mt-1 mb-0">Still learning <span id="count-learning" class="font-bold tabular-nums">0</span> &middot; Missed <span id="count-missed" class="font-bold tabular-nums">0</span></p>
+    <ul class="legend mt-3" aria-label="Legend">
+      <li><span class="marker" data-state="new" aria-hidden="true" data-legend-marker></span>New</li>
+      <li><span class="marker" data-state="learning" aria-hidden="true" data-legend-marker></span>Still learning</li>
+      <li><span class="marker" data-state="known" aria-hidden="true" data-legend-marker></span>Known</li>
+    </ul>
+    <p id="storage-notice" class="mt-3 mb-0 border-l-4 border-flag bg-surface p-3" role="status" hidden></p>
+  </div>
+</header>
+
+<main id="main" class="mx-auto w-full max-w-5xl px-4 sm:px-6 space-y-8 md:space-y-12 mt-8">
+
+  <section id="guide" aria-labelledby="guide-h">
+    <div class="guide-box">
+      <h2 id="guide-h" class="section-h">How to use this page</h2>
+      <div id="guide-body">
+      <p class="max-w-[70ch] m-0">This page helps you <strong>learn</strong> the 64 Unit 2 (Population and Migration) vocabulary words, using AMSCO wording, so you can <strong>prepare</strong> for the <strong>Unit 2 Vocabulary Summative on Monday, October 26</strong> in Mrs. Knight's AP Human Geography class. The same words also help on the MCQ summative on October 28 and 29.</p>
+
+      <h3>What you are getting ready for</h3>
+      <div class="guide-goal">
+        <div><strong>Mon 10/26</strong><br>Vocabulary summative. Goal: 64 of 64.</div>
+        <div><strong>Wed to Thu 10/28 to 10/29</strong><br>MCQ summative. It uses these same words.</div>
+        <div><strong>FRQs</strong><br>Using terms correctly in sentences earns points.</div>
+      </div>
+
+      <h3>Each day, in this order</h3>
+      <ol>
+        <li><strong>Start with yesterday's misses.</strong> Open "Missed terms" for 5 minutes.</li>
+        <li><strong>Find today's row</strong> in "This week". It tells you the topics, AMSCO pages, and videos.</li>
+        <li><strong>Read the AMSCO pages and watch the video</strong> for that topic.</li>
+        <li><strong>Learn each card:</strong> read the hint, then "Show AMSCO wording" (your test uses this wording), then the example and watch-out.</li>
+        <li><strong>Say it out loud</strong>, then cover the card and write it from memory.</li>
+        <li><strong>Mark it honestly:</strong> "I know this" or "Still learning".</li>
+        <li><strong>Test yourself</strong> with flashcards, then the quiz. A word counts as learned after 2 right answers in a row.</li>
+      </ol>
+
+      <h3>The week at a glance</h3>
+      <ul>
+        <li><strong>Mon to Sun:</strong> 1 or 2 topics a day (see "This week").</li>
+        <li><strong>Sunday:</strong> take the full 64-term test.</li>
+        <li><strong>Monday morning:</strong> redo only your missed terms, then take the test.</li>
+      </ul>
+
+      <h3>Good to know</h3>
+      <ul>
+        <li>Learn the AMSCO wording first. The hint is only a helper.</li>
+        <li>Some numbers and names differ between AMSCO, the videos, and class slides. On a test, use the numbers in the question.</li>
+        <li>Your progress is saved in this browser only. Use the same browser each day.</li>
+      </ul>
+      <button type="button" id="guide-hide" class="guide-link mt-4">Hide this guide</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="this-week" aria-labelledby="week-h">
+    <h2 id="week-h" class="section-h">This week</h2>
+    <p class="max-w-[70ch] mb-0">Rule for every day: first read AMSCO pages and watch the videos, then flashcards on the day's topics, then quiz. A term is done when it has been answered correctly twice in a row. Always begin with 5 minutes on yesterday's missed terms.</p>
+    <table class="plan-table mt-4">
+      <caption class="sr-only">Study plan, Monday October 19 to Monday October 26, 2026</caption>
+      <thead>
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">Terms (count)</th>
+          <th scope="col">AMSCO pages</th>
+          <th scope="col">AP Daily videos</th>
+          <th scope="col">Practice mode</th>
+          <th scope="col">Target</th>
+          <th scope="col">Practice now</th>
+        </tr>
+      </thead>
+      <tbody id="plan-body"></tbody>
+    </table>
+    <p class="mt-3 mb-0">Totals: Mon 8 + Tue 13 + Wed 13 + Thu 5 + Fri 11 + Sat 10 + Sun 4 = 64.</p>
+  </section>
+
+  <section id="learn" aria-labelledby="learn-h">
+    <h2 id="learn-h" class="section-h">How to learn a term</h2>
+    <ol class="max-w-[70ch] list-decimal pl-6 space-y-2">
+      <li>Read the plain-English hint and the AMSCO wording.</li>
+      <li>Say it out loud without looking.</li>
+      <li>Cover it and try to write it from memory.</li>
+      <li>Test yourself with flashcards and the quiz, and mark "Still learning" honestly.</li>
+    </ol>
+  </section>
+
+  <section id="topics" aria-labelledby="topics-h">
+    <h2 id="topics-h" class="section-h">Terms by topic</h2>
+    <div class="grid gap-6 lg:grid-cols-[11rem_minmax(0,1fr)] lg:gap-8">
+      <nav aria-label="Page sections" class="side-nav hidden lg:block lg:sticky lg:top-4 lg:self-start">
+        <ul class="list-none p-0 m-0">
+          <li><a href="#topic-2.1">2.1 Distribution</a></li>
+          <li><a href="#topic-2.2">2.2 Consequences</a></li>
+          <li><a href="#topic-2.3">2.3 Composition</a></li>
+          <li><a href="#topic-2.4">2.4 Dynamics</a></li>
+          <li><a href="#topic-2.5">2.5 Transition models</a></li>
+          <li><a href="#topic-2.6">2.6 Malthus</a></li>
+          <li><a href="#topic-2.7">2.7 Policies</a></li>
+          <li><a href="#topic-2.10">2.10 Causes</a></li>
+          <li><a href="#topic-2.11">2.11 Forced and voluntary</a></li>
+          <li><a href="#topic-2.12">2.12 Effects</a></li>
+          <li><a href="#flashcards">Practice: flashcards</a></li>
+          <li><a href="#quiz">Practice: quiz</a></li>
+          <li><a href="#missed">Missed terms</a></li>
+          <li><a href="#sources">Source notes</a></li>
+        </ul>
+      </nav>
+
+      <div class="min-w-0">
+        <div class="flex flex-col gap-3">
+          <label for="search" class="label m-0">Search terms</label>
+          <input id="search" type="search" class="field" placeholder="Search term, plain English, or AMSCO text" autocomplete="off">
+          <div id="topic-chips" class="chip-bar" role="group" aria-label="Filter by topic"></div>
+          <div class="flex flex-wrap gap-2">
+            <button id="hints-toggle" type="button" class="btn-secondary" aria-pressed="true">Show hints: on</button>
+          </div>
+        </div>
+        <p id="no-match" class="mt-6 border border-line bg-surface p-4" hidden>No terms match. Try a shorter search or pick All.</p>
+
+        <div class="mt-8 space-y-12">
+          <section id="topic-2.1" class="plate" aria-labelledby="h-2.1" data-topic="2.1">
+            <div class="plate-head">
+              <h2 id="h-2.1" class="section-h m-0" data-topic-title>2.1</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.1</span><span class="caption m-0" data-plate-count>0 of 6 known</span></p>
+            </div>
+            <p class="intro">Where people live and three ways to measure how crowded a place is.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.2" class="plate" aria-labelledby="h-2.2" data-topic="2.2">
+            <div class="plate-head">
+              <h2 id="h-2.2" class="section-h m-0" data-topic-title>2.2</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.2</span><span class="caption m-0" data-plate-count>0 of 2 known</span></p>
+            </div>
+            <p class="intro">What crowding does to services and land. Also see <a href="#term-36">Overpopulation in 2.6</a>.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.3" class="plate" aria-labelledby="h-2.3" data-topic="2.3">
+            <div class="plate-head">
+              <h2 id="h-2.3" class="section-h m-0" data-topic-title>2.3</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.3</span><span class="caption m-0" data-plate-count>0 of 6 known</span></p>
+            </div>
+            <p class="intro">Who is in a population: age and sex, booms and busts, and who depends on whom.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.4" class="plate" aria-labelledby="h-2.4" data-topic="2.4">
+            <div class="plate-head">
+              <h2 id="h-2.4" class="section-h m-0" data-topic-title>2.4</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.4</span><span class="caption m-0" data-plate-count>0 of 7 known</span></p>
+            </div>
+            <p class="intro">Births, deaths, and growth rates.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.5" class="plate" aria-labelledby="h-2.5" data-topic="2.5">
+            <div class="plate-head">
+              <h2 id="h-2.5" class="section-h m-0" data-topic-title>2.5</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.5</span><span class="caption m-0" data-plate-count>0 of 13 known</span></p>
+            </div>
+            <p class="intro">How countries move through five stages of growth and five stages of disease.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.6" class="plate" aria-labelledby="h-2.6" data-topic="2.6">
+            <div class="plate-head">
+              <h2 id="h-2.6" class="section-h m-0" data-topic-title>2.6</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.6</span><span class="caption m-0" data-plate-count>0 of 3 known</span></p>
+            </div>
+            <p class="intro">Malthus's warning about food and people.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.7" class="plate" aria-labelledby="h-2.7" data-topic="2.7">
+            <div class="plate-head">
+              <h2 id="h-2.7" class="section-h m-0" data-topic-title>2.7</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.7</span><span class="caption m-0" data-plate-count>0 of 2 known</span></p>
+            </div>
+            <p class="intro">How governments try to raise or lower births.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.10" class="plate" aria-labelledby="h-2.10" data-topic="2.10">
+            <div class="plate-head">
+              <h2 id="h-2.10" class="section-h m-0" data-topic-title>2.10</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.10</span><span class="caption m-0" data-plate-count>0 of 11 known</span></p>
+            </div>
+            <p class="intro">Why people move and what gets in the way.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.11" class="plate" aria-labelledby="h-2.11" data-topic="2.11">
+            <div class="plate-head">
+              <h2 id="h-2.11" class="section-h m-0" data-topic-title>2.11</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.11</span><span class="caption m-0" data-plate-count>0 of 10 known</span></p>
+            </div>
+            <p class="intro">Forced versus voluntary moves and the people who make them.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+
+          <section id="topic-2.12" class="plate" aria-labelledby="h-2.12" data-topic="2.12">
+            <div class="plate-head">
+              <h2 id="h-2.12" class="section-h m-0" data-topic-title>2.12</h2>
+              <p class="plate-stamp"><span class="stamp">Plate 2.12</span><span class="caption m-0" data-plate-count>0 of 4 known</span></p>
+            </div>
+            <p class="intro">What migration does to the places people leave and reach.</p>
+            <div class="cards-grid" data-cards></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flashcards" tabindex="-1" aria-labelledby="fc-h">
+    <h2 id="fc-h" class="section-h">Practice: flashcards</h2>
+    <p class="max-w-[70ch]">Keys work when focus is inside this section (Tab to a control first). Space or Enter flips, Left and Right arrows move, 1 marks still learning, 2 marks I know this and moves on.</p>
+    <div class="flex flex-wrap items-end gap-3 mt-3">
+      <div class="min-w-[9rem]">
+        <label for="fc-topic" class="label">Topic</label>
+        <select id="fc-topic" class="field">
+          <option value="all">All topics</option>
+          <option value="2.1">2.1</option>
+          <option value="2.2">2.2</option>
+          <option value="2.3">2.3</option>
+          <option value="2.4">2.4</option>
+          <option value="2.5">2.5</option>
+          <option value="2.6">2.6</option>
+          <option value="2.7">2.7</option>
+          <option value="2.10">2.10</option>
+          <option value="2.11">2.11</option>
+          <option value="2.12">2.12</option>
+        </select>
+      </div>
+      <label class="check"><input id="fc-only" type="checkbox"> Only terms I'm still learning</label>
+      <button id="fc-shuffle" type="button" class="btn-secondary">Shuffle</button>
+    </div>
+    <p id="fc-counter" class="mt-4 font-bold tabular-nums"></p>
+    <div id="fc-stage" class="mt-2">
+      <div id="fc-flip" class="flip">
+        <div class="flip-inner">
+          <div id="fc-front" class="flip-face flip-front card"></div>
+          <div id="fc-back" class="flip-face flip-back card"></div>
+        </div>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <button id="fc-prev" type="button" class="btn-secondary" aria-keyshortcuts="ArrowLeft">Previous</button>
+        <button id="fc-flip-btn" type="button" class="btn-secondary" aria-keyshortcuts="Space Enter" aria-expanded="false">Flip card</button>
+        <button id="fc-still" type="button" class="btn-secondary" aria-keyshortcuts="1">Still learning (1)</button>
+        <button id="fc-known" type="button" class="btn-primary" aria-keyshortcuts="2">I know this (2)</button>
+        <button id="fc-next" type="button" class="btn-secondary" aria-keyshortcuts="ArrowRight">Next</button>
+      </div>
+    </div>
+    <div id="fc-empty" class="card mt-4" hidden>
+      <p class="m-0">No cards match these filters.</p>
+      <button id="fc-reset" type="button" class="btn-secondary mt-3">Reset filters</button>
+    </div>
+    <p id="fc-live" class="sr-only" aria-live="polite"></p>
+  </section>
+
+  <section id="quiz" tabindex="-1" aria-labelledby="quiz-h">
+    <h2 id="quiz-h" class="section-h">Practice: quiz</h2>
+    <p class="max-w-[70ch]">A missed term goes back into the queue and stays until you answer it correctly twice in a row. The topic chips and the still-learning box apply here too. Keys (when focus is in this section): 1 to 5 choose an option, Enter moves to the next question.</p>
+    <label class="check mt-2"><input id="quiz-only" type="checkbox"> Only terms I'm still learning</label>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <button type="button" class="btn-primary" data-quiz-mode="def2term">Definition to term</button>
+      <button type="button" class="btn-primary" data-quiz-mode="term2def">Term to definition</button>
+      <button type="button" class="btn-primary" data-quiz-mode="full">Full unit test (64 terms, no hints)</button>
+    </div>
+    <p id="quiz-msg" class="mt-3" aria-live="polite"></p>
+    <div id="quiz-stage" class="card mt-6" hidden>
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <p id="quiz-count" class="font-bold tabular-nums m-0"></p>
+        <button id="quiz-end" type="button" class="btn-secondary">End session</button>
+      </div>
+      <div class="mt-3">
+        <div id="quiz-meter" class="meter" role="progressbar" aria-label="First-try accuracy" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="quiz-meter-fill" class="meter-fill"></div>
+          <div class="meter-goal" aria-hidden="true"></div>
+        </div>
+        <p id="quiz-meter-text" class="caption"></p>
+      </div>
+      <p id="quiz-label" class="label mt-5"></p>
+      <p id="quiz-prompt" class="font-display font-bold text-[1.5rem] leading-[1.25] mt-1" aria-live="polite"></p>
+      <ul id="quiz-options" class="mt-4 space-y-2 list-none p-0"></ul>
+      <div id="quiz-feedback" class="mt-4" aria-live="polite"></div>
+      <button id="quiz-next" type="button" class="btn-primary mt-4" hidden>Next question</button>
+    </div>
+  </section>
+
+  <section id="missed" aria-labelledby="missed-h">
+    <h2 id="missed-h" class="section-h">Missed terms</h2>
+    <p class="max-w-[70ch]">Terms still learning or missed, and not yet answered correctly twice in a row.</p>
+    <button id="missed-quiz" type="button" class="btn-primary mt-2">Quiz me on these</button>
+    <ul id="missed-list" class="mt-4 space-y-2 p-0 m-0"></ul>
+    <p id="missed-empty" class="mt-4" hidden>Nothing missed. Run the full unit test.</p>
+  </section>
+
+  <section id="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h" class="section-h">Source notes</h2>
+    <ul class="max-w-[70ch] list-disc pl-6 space-y-2">
+      <li>AMSCO printed page = PDF page + 52 (pages 55-122 used).</li>
+      <li>AP Daily video tags. Files are named AP_Daily_&lt;topic&gt;_Video_&lt;n&gt;_*.mp4. Tags used: 2.1 V1, 2.1 V2, 2.2 V1, 2.2 V2, 2.3 V1, 2.4 V1, 2.4 V2, 2.5 V1, 2.5 V2, 2.6 V1, 2.7 V1, 2.8 V2, 2.9 V1, 2.10 V1, 2.10 V2, 2.11 V1, 2.11 V2, 2.12 V1.</li>
+      <li>Terms in no video: infrastructure, baby bust, baby echo, demographic momentum, migration transition model, transhumance, xenophobia, ethnic enclaves.</li>
+      <li>Terms with no formal AMSCO definition (usage only): baby bust, baby echo, crude death rate, chain migration, rural-to-urban migration.</li>
+    </ul>
+    <h3 class="label mt-6">Where sources differ (each one is a watch-out on its card)</h3>
+    <ul class="max-w-[70ch] list-disc pl-6 space-y-2">
+      <li>Egypt densities: AMSCO 226 (arithmetic) and 8,078 (physiological); video 98 and 6,995; teacher slides 257 and 9,182.</li>
+      <li>Dependency ratio: AMSCO p. 101 sentence says potential workforce divided by dependents; its table divides dependents by workers. Dependents: AMSCO over 64, video over 65.</li>
+      <li>DTM stage names: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining. AP Daily uses low, high, moderate, low, negative growth.</li>
+      <li>China policy: AMSCO says modified in 2016; the 2.7 video says 2015.</li>
+      <li>RNI (AMSCO and organizer) and NIR (AP Daily) are the same measure.</li>
+      <li>Transnational migration: AMSCO means simply moving between countries.</li>
+      <li>Baby boom: AMSCO says 1946 to 1965; the glossary says 1946 to 1964.</li>
+    </ul>
+    <div class="flex flex-wrap gap-2 mt-6">
+      <button id="print-full" type="button" class="btn-primary">Print cheat sheet (with AMSCO wording)</button>
+      <button id="print-terms" type="button" class="btn-secondary">Print terms only</button>
+    </div>
+  </section>
+</main>
+
+<footer class="mx-auto w-full max-w-5xl px-4 sm:px-6 mt-12 pt-4 border-t border-line">
+  <p class="max-w-[70ch] text-[.9375rem]">Built from AMSCO wording, the AP Daily video tags, and the teacher's graphic organizer. When sources disagree, the watch-out on each card says so. Ask the teacher whether the test uses AMSCO or AP Daily stage names.</p>
+</footer>
+
+<nav class="bottom-bar" aria-label="Quick links">
+  <a href="#topics">Terms</a>
+  <a href="#flashcards">Flashcards</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#missed">Missed</a>
+</nav>
+
+<script id="terms-data" type="application/json">[
+ {
+  "id": 1,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Population distribution",
+  "alsoCalled": [
+   "Population distribution (pattern)"
+  ],
+  "amsco": "\"the pattern of human settlement-the spread of people across the earth.\" Representing it on a map highlights places that are crowded, sparsely settled, or even empty.",
+  "plain": "Where people live on the map. It shows crowded places and empty places.",
+  "example": "Settlement patterns can be even (A), clustered/nucleated (B), or linear (C), for example along a river or transit route (p. 58). Most people live in the midlatitudes (30 to 60 degrees), in low-lying areas, and near lakes or rivers (p. 56).",
+  "page": "55-58",
+  "video": "2.1 V1",
+  "watchOut": "Distribution is WHERE people are; density is HOW CROWDED a place is. Do not swap them.",
+  "trick": "Memory trick (not from AMSCO): distribution = a map of dots (where); density = a count per square mile (how many).",
+  "source": "AMSCO p. 55; AP Daily 2.1 V1",
+  "related": [
+   "Population density",
+   "Arithmetic density"
+  ]
+ },
+ {
+  "id": 2,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Population density",
+  "alsoCalled": [],
+  "amsco": "\"a measure of the average population per square mile or kilometer of an area.\" It measures how crowded a place is. AMSCO names three types: arithmetic, physiological, and agricultural.",
+  "plain": "How many people there are for each square mile (or kilometer). Bigger number means more crowded.",
+  "example": "Salt Lake City 1,387/sq. mi.; Utah 34; United States 87; the world 130 (p. 70).",
+  "page": "55, 58",
+  "video": "2.1 V2",
+  "watchOut": "A density is an average. It does not tell you WHERE in the area people live (p. 58).",
+  "trick": "Memory trick (not from AMSCO): density = \"dense\" like thick fog: lots packed into a space.",
+  "source": "AMSCO pp. 55, 58, 70; AP Daily 2.1 V2",
+  "related": [
+   "Population distribution",
+   "Arithmetic density",
+   "Physiological density",
+   "Agricultural density"
+  ]
+ },
+ {
+  "id": 3,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Arithmetic density",
+  "alsoCalled": [
+   "Crude population density (AP Daily 2.1 V2)"
+  ],
+  "amsco": "\"The most commonly used population density... calculated by dividing a region's population by its total area.\"",
+  "plain": "People divided by ALL the land. It is the simple average.",
+  "example": "United States, 2019: 328,239,523 people in 3,841,999 sq. mi. = 85.4 per sq. mi. (p. 58). AMSCO table (p. 59): Egypt 226, Netherlands 1,044, Bangladesh 2,914 per sq. mi.",
+  "page": "58-59",
+  "video": "2.1 V2",
+  "watchOut": "Egypt numbers differ by source. AMSCO: arithmetic 226 and physiological 8,078 per sq. mi. The 2.1 V2 video says 98 and 6,995. Teacher slides say 257 and 9,182 (2020). Use the numbers in the question's stimulus. The video also calls it \"crude population density.\"",
+  "trick": "Memory trick (not from AMSCO): arithmetic = ALL the land (A for All).",
+  "source": "AMSCO pp. 58-59; AP Daily 2.1 V2; teacher 2.1 slides (Egypt numbers)",
+  "related": [
+   "Physiological density",
+   "Agricultural density"
+  ]
+ },
+ {
+  "id": 4,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Physiological density",
+  "alsoCalled": [],
+  "amsco": "\"calculated by dividing population by the amount of arable land, or land suitable for growing crops.\" AMSCO: it is \"a much more useful measure than the arithmetic density to determine a region's carrying capacity.\"",
+  "plain": "People divided by only the land that can grow crops. It shows how hard the farmland has to work.",
+  "example": "Egypt (2.8% arable land): physiological 8,078 vs arithmetic 226 per sq. mi. Japan: 8,218. Netherlands 3,505 and Bangladesh 4,938 (pp. 58-59). A big gap between the two means only a small share of land can grow crops.",
+  "page": "58-59",
+  "video": "2.1 V2",
+  "watchOut": "Same Egypt-number warning as arithmetic density (AMSCO 8,078; video 6,995; teacher slides 9,182).",
+  "trick": "Memory trick (not from AMSCO): physiological = the Plants' land only (arable).",
+  "source": "AMSCO pp. 58-59; AP Daily 2.1 V2",
+  "related": [
+   "Arithmetic density",
+   "Arable land",
+   "Carrying capacity"
+  ]
+ },
+ {
+  "id": 5,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Arable land",
+  "alsoCalled": [],
+  "amsco": "\"land suitable for growing crops.\"",
+  "plain": "Farmland: land where crops can grow.",
+  "example": "Percent arable land (p. 59): Egypt 2.8%, Netherlands 31.0%, Bangladesh 59.0%, Singapore 0.8%.",
+  "page": "58-59",
+  "video": "2.1 V2",
+  "watchOut": "Arable land is the bottom number in physiological AND agricultural density.",
+  "trick": "Memory trick (not from AMSCO): arable sounds like \"a-ruh-ble\" = able to grow crops.",
+  "source": "AMSCO pp. 58-59; AP Daily 2.1 V2",
+  "related": [
+   "Physiological density",
+   "Agricultural density"
+  ]
+ },
+ {
+  "id": 6,
+  "topic": "2.1",
+  "topicTitle": "Population distribution",
+  "term": "Agricultural density",
+  "alsoCalled": [],
+  "amsco": "\"compares the number of farmers to the area of arable land.\" It gives an indication of the efficiency of the region's farmers.",
+  "plain": "Farmers per bit of farmland. Few farmers per acre means modern machines.",
+  "example": "Netherlands 31 per sq. mi. (low; farmers have technology). Bangladesh 431 per sq. mi. (high; more labor needed) (p. 60).",
+  "page": "59-60",
+  "video": "2.1 V2",
+  "watchOut": "Developed countries have LOW agricultural density; less-developed countries have HIGH (p. 59).",
+  "trick": "Memory trick (not from AMSCO): agricultural = Actual farmers counted.",
+  "source": "AMSCO pp. 59-60; AP Daily 2.1 V2",
+  "related": [
+   "Physiological density",
+   "Arable land"
+  ]
+ },
+ {
+  "id": 7,
+  "topic": "2.2",
+  "topicTitle": "Consequences of population distribution",
+  "term": "Infrastructure",
+  "alsoCalled": [],
+  "amsco": "\"the facilities and structures that allows people to carry out their typical activities. Included are things such as sewer systems, electrical grids, roads and bridges.\" (AMSCO's own grammar.)",
+  "plain": "The basic systems a city runs on: pipes, power lines, roads, bridges.",
+  "example": "The larger a city grows, the more demands on its infrastructure. Providing sewer, water, snow removal and policing is more cost-effective in high-density areas (p. 62). Chicago's Loop has about 21,000 people per sq. mi.",
+  "page": "62",
+  "video": "none",
+  "watchOut": "Not covered in any AP Daily video; study from AMSCO.",
+  "trick": "Memory trick (not from AMSCO): infra = below; the stuff under and around a city that keeps it working.",
+  "source": "AMSCO p. 62",
+  "related": [
+   "Carrying capacity",
+   "Overpopulation"
+  ]
+ },
+ {
+  "id": 8,
+  "topic": "2.2",
+  "topicTitle": "Consequences of population distribution",
+  "term": "Carrying capacity",
+  "alsoCalled": [],
+  "amsco": "\"the number of people a region can support without damaging the environment.\"",
+  "plain": "The most people the land and resources can handle without being harmed.",
+  "example": "It can change. Better irrigation or drought-tolerant plants can raise it. The Sahel \"experienced drought and exceeded their carrying capacity without help from outside regions\" (p. 63). Physiological density is a better clue to it than arithmetic density (p. 59).",
+  "page": "62-63",
+  "video": "2.2 V2",
+  "watchOut": "Our glossary says \"maximum population sustained indefinitely\"; use AMSCO's wording. Carrying capacity is NOT fixed.",
+  "trick": "Memory trick (not from AMSCO): carrying capacity = how many people the land can \"carry.\"",
+  "source": "AMSCO pp. 59, 62-63; AP Daily 2.2 V2",
+  "related": [
+   "Overpopulation",
+   "Physiological density",
+   "Malthusian theory"
+  ]
+ },
+ {
+  "id": 9,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Population pyramid",
+  "alsoCalled": [
+   "Age-sex composition graph"
+  ],
+  "amsco": "\"the age-sex composition graph, which is commonly called a population pyramid.\" The vertical axis shows age groups (cohorts); males usually left, females right; values may be percentages or absolute numbers.",
+  "plain": "A graph that shows how many males and females are in each age group.",
+  "example": "A wide base that tapers upward means a growing population: Niger, 2016 (pp. 65-66). Pyramids also show evidence of past wars and epidemics (p. 65).",
+  "page": "65-67",
+  "video": "2.3 V1",
+  "watchOut": "Check whether the horizontal axis shows percentages or real numbers.",
+  "trick": "Memory trick (not from AMSCO): a wide base = lots of babies = a young, growing country.",
+  "source": "AMSCO pp. 65-66; AP Daily 2.3 V1",
+  "related": [
+   "Baby boom",
+   "Dependency ratio",
+   "Demographic transition model (DTM)"
+  ]
+ },
+ {
+  "id": 10,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Baby boom",
+  "alsoCalled": [],
+  "amsco": "\"Once hostilities end and peace resumes, the birth rate often spikes, causing what is known as a baby boom.\" Booms also occur in times of economic abundance.",
+  "plain": "A big jump in births, often right after a war ends.",
+  "example": "After World War II the United States baby boom lasted from 1946 to 1965 (p. 67).",
+  "page": "67",
+  "video": "2.3 V1",
+  "watchOut": "AMSCO says 1946 to 1965; our glossary says 1946-1964. Use AMSCO.",
+  "trick": "Memory trick (not from AMSCO): boom = loud bang of babies.",
+  "source": "AMSCO p. 67; AP Daily 2.3 V1",
+  "related": [
+   "Baby bust",
+   "Baby echo",
+   "Population pyramid"
+  ]
+ },
+ {
+  "id": 11,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Baby bust",
+  "alsoCalled": [],
+  "amsco": "AMSCO gives no formal one-sentence definition. Usage: \"Once the boom ends, birth rates are lower for a number of years. This baby bust continues until the boomers reach childbearing age.\"",
+  "plain": "A stretch of years with fewer births, right after a baby boom.",
+  "example": "Shows up on a pyramid as a narrower band just below the boom bulge (p. 67).",
+  "page": "67",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video; study from AMSCO. Our glossary's Generation X dates are not in AMSCO.",
+  "trick": "Memory trick (not from AMSCO): bust = the balloon pops, so births drop.",
+  "source": "AMSCO p. 67 (usage)",
+  "related": [
+   "Baby boom",
+   "Baby echo"
+  ]
+ },
+ {
+  "id": 12,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Baby echo",
+  "alsoCalled": [
+   "Echo",
+   "Echo cohort"
+  ],
+  "amsco": "AMSCO gives no formal one-sentence definition. Usage: with many boomers having children, \"there can be a significant increase in births that shows up as a bulge on a pyramid. Since this increase reflects an earlier baby boom, it is called an echo.\"",
+  "plain": "A second, smaller bulge made by the children of the baby boomers.",
+  "example": "United States, 2015: boomers were ages 51-69 and an echo appeared in the 20-34 cohort (p. 67).",
+  "page": "67",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video. Our glossary calls it \"Echo Cohort\"; AMSCO says \"echo.\"",
+  "trick": "Memory trick (not from AMSCO): an echo repeats a sound; the echo generation repeats the boom.",
+  "source": "AMSCO p. 67 (usage)",
+  "related": [
+   "Baby boom",
+   "Baby bust"
+  ]
+ },
+ {
+  "id": 13,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Dependent population",
+  "alsoCalled": [],
+  "amsco": "\"Everyone else-people under 15 or over 64-is the dependent population, because they are considered too young or too old to work full-time and, therefore, are assumed to rely on the economically active workforce.\" The workforce is ages 15-64.",
+  "plain": "People who are too young or too old to work full-time, so others support them.",
+  "example": "Niger has a large youth dependent group (under 15); the United States has more seniors than children (p. 70).",
+  "page": "69-70, 100",
+  "video": "2.9 V1 (partial)",
+  "watchOut": "AMSCO says over 64; the 2.9 video says over 65. The video does not use the phrase \"dependent population.\"",
+  "trick": "Memory trick (not from AMSCO): dependents = people who depend on workers.",
+  "source": "AMSCO pp. 69-70, 100; AP Daily 2.9 V1",
+  "related": [
+   "Dependency ratio",
+   "Population pyramid"
+  ]
+ },
+ {
+  "id": 14,
+  "topic": "2.3",
+  "topicTitle": "Population composition",
+  "term": "Dependency ratio",
+  "alsoCalled": [
+   "DR"
+  ],
+  "amsco": "\"The comparison between the size of these two groups is called the dependency ratio.\" (p. 69) Also: \"a value comparing the working to the nonworking parts of a population\" (p. 100).",
+  "plain": "How many dependents there are for each worker. Higher number means more strain on workers.",
+  "example": "Table p. 101: United States (19 + 15) / 66 = 0.52. Niger (49 + 3) / 48 = 1.08. Each US worker supports 1.52 people (himself plus .52); each Niger worker supports 2.08 (p. 70).",
+  "page": "69-70, 100-101",
+  "video": "2.9 V1",
+  "watchOut": "AMSCO p. 101 says \"dividing the potential workforce by the dependent population,\" but its table divides dependents by workers. Follow the table. AMSCO says dependents are over 64; the 2.9 video says over 65. Our old glossary multiplied by 100; AMSCO's table gives a decimal.",
+  "trick": "Memory trick (not from AMSCO): dependents on TOP (the number that depends), workers on the BOTTOM.",
+  "source": "AMSCO pp. 69-70, 100-101; AP Daily 2.9 V1",
+  "related": [
+   "Dependent population",
+   "Population pyramid"
+  ]
+ },
+ {
+  "id": 15,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Crude birth rate (CBR)",
+  "alsoCalled": [
+   "CBR"
+  ],
+  "amsco": "\"the number of live births per year for each 1,000 people.\"",
+  "plain": "Babies born in one year for every 1,000 people.",
+  "example": "World CBR is about 20 (p. 81). AP Daily: a CBR of 15 means 15 babies per 1,000 people that year.",
+  "page": "77, 81",
+  "video": "2.4 V1",
+  "watchOut": "CBR counts everyone in the population; TFR looks only at women ages 15-49. AMSCO says TFR better shows cultural norms; CBR is simpler to calculate (p. 77).",
+  "trick": "Memory trick (not from AMSCO): crude = rough count of everybody.",
+  "source": "AMSCO pp. 77, 81; AP Daily 2.4 V1",
+  "related": [
+   "Total fertility rate (TFR)",
+   "Crude death rate (CDR)",
+   "Rate of natural increase (RNI)"
+  ]
+ },
+ {
+  "id": 16,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Total fertility rate (TFR)",
+  "alsoCalled": [
+   "TFR"
+  ],
+  "amsco": "\"TFR is the average number of children who would be born per woman of that group in a country, assuming every woman lived through her childbearing years.\" The group is women ages 15 to 49.",
+  "plain": "The average number of children a woman would have in her lifetime.",
+  "example": "Europe before 1800: 6.2 children. Ghana, 1990: 7.0 with no schooling, 2.7 with 12 years of schooling (p. 97). TFR generally declines as countries become wealthier (p. 78).",
+  "page": "77-78, 96-97",
+  "video": "2.4 V1",
+  "watchOut": "More schooling for girls goes with a lower TFR (Ghana).",
+  "trick": "Memory trick (not from AMSCO): T-F-R = \"Typical Family Roster\": how many kids per woman.",
+  "source": "AMSCO pp. 77-78, 96-97; AP Daily 2.4 V1",
+  "related": [
+   "Crude birth rate (CBR)",
+   "Life expectancy"
+  ]
+ },
+ {
+  "id": 17,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Life expectancy",
+  "alsoCalled": [],
+  "amsco": "\"the average number of years people live.\" It is commonly expressed from the time of a person's birth.",
+  "plain": "How long the average person lives.",
+  "example": "A century ago global life expectancy was about 34 years at birth; today nearly 70. Most of Europe is over 80; many sub-Saharan countries are under 50 (p. 78).",
+  "page": "78",
+  "video": "2.9 V1 (not in the 2.4 videos)",
+  "watchOut": "AMSCO calls rising life expectancy \"the most important factor in the increase in global population.\"",
+  "trick": "",
+  "source": "AMSCO p. 78; AP Daily 2.9 V1",
+  "related": [
+   "Infant mortality rate (IMR)",
+   "Crude death rate (CDR)"
+  ]
+ },
+ {
+  "id": 18,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Infant mortality rate (IMR)",
+  "alsoCalled": [
+   "IMR"
+  ],
+  "amsco": "\"the number of children who die before their first birthday.\"",
+  "plain": "How many babies die before turning one.",
+  "example": "Massachusetts: infant mortality rate per 1,000 live births dropped from 130 in 1850 to about 4 today (p. 78).",
+  "page": "78",
+  "video": "2.4 V1",
+  "watchOut": "AMSCO's definition has no per-1,000 base, but its Massachusetts example is per 1,000 live births. The video says per 1,000 live births. Use per 1,000 live births.",
+  "trick": "Memory trick (not from AMSCO): IMR = Infants Must Reach one.",
+  "source": "AMSCO p. 78; AP Daily 2.4 V1",
+  "related": [
+   "Life expectancy",
+   "Crude death rate (CDR)"
+  ]
+ },
+ {
+  "id": 19,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Crude death rate (CDR)",
+  "alsoCalled": [
+   "CDR"
+  ],
+  "amsco": "AMSCO gives no formal one-sentence definition. Usage: \"The crude birth rate (CBR) and the crude death rate (CDR) of an area are measured per 1,000 population.\"",
+  "plain": "Deaths in one year for every 1,000 people.",
+  "example": "World CDR is about 8 (p. 81). AP Daily 2.4 V1 defines it as the total number of deaths in one year per 1,000 people.",
+  "page": "81",
+  "video": "2.4 V1",
+  "watchOut": "Definition wording is from AP Daily, not AMSCO. A high CDR does not always mean poor health care.",
+  "trick": "Memory trick (not from AMSCO): CDR = Counting Deaths per thousand, Rough.",
+  "source": "AMSCO p. 81 (usage); AP Daily 2.4 V1",
+  "related": [
+   "Crude birth rate (CBR)",
+   "Rate of natural increase (RNI)"
+  ]
+ },
+ {
+  "id": 20,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Rate of natural increase (RNI)",
+  "alsoCalled": [
+   "RNI",
+   "NIR",
+   "Natural increase rate"
+  ],
+  "amsco": "\"The percentage at which a country's population is growing or declining, without the impact of migration, is the rate of natural increase (RNI).\" Formula: RNI = (CBR - CDR) / 10, then add a percent sign.",
+  "plain": "How fast a population grows from births minus deaths only. Moving in or out does not count.",
+  "example": "World: CBR 20, CDR 8, (20 - 8) / 10 = 1.2 percent (p. 81). RNI tends to be under 1.0 percent in more-developed countries and over 1.0 in less-developed ones (p. 82).",
+  "page": "81-82",
+  "video": "2.4 V1",
+  "watchOut": "AMSCO and the organizer say RNI; the AP Daily videos say NIR. Same thing. Migration is NOT included.",
+  "trick": "Memory trick (not from AMSCO): RNI = Rate Not including Immigration.",
+  "source": "AMSCO pp. 81-82; AP Daily 2.4 V1 (called NIR)",
+  "related": [
+   "Crude birth rate (CBR)",
+   "Crude death rate (CDR)",
+   "Doubling time"
+  ]
+ },
+ {
+  "id": 21,
+  "topic": "2.4",
+  "topicTitle": "Population dynamics",
+  "term": "Doubling time",
+  "alsoCalled": [
+   "Population doubling time",
+   "Rule of 70"
+  ],
+  "amsco": "\"the time it takes to double in size, or population doubling time, can be estimated using... the Rule of 70... the approximate doubling time in years will be 70 divided by the growth rate per year.\"",
+  "plain": "How many years until the population is twice as big. Divide 70 by the growth rate.",
+  "example": "Ivory Coast, 2014, growth about 2.0: 70 / 2 = 35 years. United States 0.77: about 91 years (p. 82). AP Daily: world 1.2% gives 58 years.",
+  "page": "82",
+  "video": "2.4 V1",
+  "watchOut": "Use the growth rate as a percent number (2.0, not 0.02). AMSCO notes some people use the Rule of 72.",
+  "trick": "Memory trick (not from AMSCO): 70 over the rate: \"seventy slices.\"",
+  "source": "AMSCO p. 82; AP Daily 2.4 V1",
+  "related": [
+   "Rate of natural increase (RNI)"
+  ]
+ },
+ {
+  "id": 22,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Demographic transition model (DTM)",
+  "alsoCalled": [
+   "DTM"
+  ],
+  "amsco": "\"shows how the decline in death rates produced a growth in population and eventually a decline in birth rates.\" It \"shows five typical stages of population change that countries experience as they modernize.\"",
+  "plain": "A five-step story of how birth and death rates change as a country develops.",
+  "example": "AMSCO stage names: 1 High stationary, 2 Early expanding, 3 Late expanding, 4 Low stationary, 5 Declining. Death rate starts to fall in Stage 2; birth rate starts to fall in Stage 3 (p. 83).",
+  "page": "83-87",
+  "video": "2.5 V1",
+  "watchOut": "AP Daily names the stages low, high, moderate, low, negative growth. Our glossary says four-to-five stages; AMSCO shows five. DTM can also be used at smaller scales (p. 87).",
+  "trick": "Memory trick (not from AMSCO): death rate falls first (Stage 2), birth rate follows (Stage 3).",
+  "source": "AMSCO pp. 83-87; AP Daily 2.5 V1",
+  "related": [
+   "Epidemiological transition model (ETM)",
+   "Population pyramid"
+  ]
+ },
+ {
+  "id": 23,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "DTM Stage 1",
+  "alsoCalled": [
+   "High stationary"
+  ],
+  "amsco": "High stationary. Birth rate and death rate are both \"high but fluctuating\"; growth is very low. \"Only a few isolated groups are in Stage 1 and they are typically subsistence farmers or hunters and gathers.\" (AMSCO's spelling.)",
+  "plain": "Lots of babies and lots of deaths, so the population barely grows. Almost nobody lives like this today.",
+  "example": "Table examples: scattered isolated groups. Very young population; economy is subsistence agriculture and hunter gathering (p. 84).",
+  "page": "83-84",
+  "video": "2.5 V1",
+  "watchOut": "Stage names differ: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining; AP Daily uses low, high, moderate, low, negative growth. Know both. Teacher slides: no countries in Stage 1.",
+  "trick": "Memory trick (not from AMSCO): Stage 1 = stuck: high and high.",
+  "source": "AMSCO pp. 83-84; AP Daily 2.5 V1; teacher DTM slides",
+  "related": [
+   "DTM Stage 2",
+   "Demographic transition model (DTM)"
+  ]
+ },
+ {
+  "id": 24,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "DTM Stage 2",
+  "alsoCalled": [
+   "Early expanding"
+  ],
+  "amsco": "Early expanding. Death rate \"rapidly declining as nutrition, sanitation, and medicine improve\" while birth rate stays high, giving rapid growth. \"Niger represents a Stage 2 country with an expansive population pyramid... a wide base.\"",
+  "plain": "Death rates drop but birth rates stay high, so the population booms.",
+  "example": "Table examples: Mali, South Sudan. Pyramid example: Niger (p. 84).",
+  "page": "83-84",
+  "video": "2.5 V1",
+  "watchOut": "Stage names differ: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining; AP Daily uses low, high, moderate, low, negative growth. Know both.",
+  "trick": "Memory trick (not from AMSCO): Stage 2: deaths drop first, so the crowd grows fast.",
+  "source": "AMSCO pp. 83-84; AP Daily 2.5 V1",
+  "related": [
+   "DTM Stage 1",
+   "DTM Stage 3"
+  ]
+ },
+ {
+  "id": 25,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "DTM Stage 3",
+  "alsoCalled": [
+   "Late expanding"
+  ],
+  "amsco": "Late expanding. Birth rate declines as urbanization decreases the need for child labor; growth is rapid but slowing. \"The transition from Stage 2 to Stage 3 has the fastest population growth.\"",
+  "plain": "Birth rates start to fall as people move to cities. Growth is still fast but slowing.",
+  "example": "Table examples: Mexico, Turkey, Indonesia. Pyramid example: Turkey, 2016 (p. 85).",
+  "page": "83, 85",
+  "video": "2.5 V1",
+  "watchOut": "Stage names differ: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining; AP Daily uses low, high, moderate, low, negative growth. Know both. The fastest growth is the Stage 2 to 3 transition.",
+  "trick": "Memory trick (not from AMSCO): Stage 3: birth rate begins to Back off.",
+  "source": "AMSCO pp. 83, 85; AP Daily 2.5 V1",
+  "related": [
+   "DTM Stage 2",
+   "DTM Stage 4",
+   "Demographic momentum"
+  ]
+ },
+ {
+  "id": 26,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "DTM Stage 4",
+  "alsoCalled": [
+   "Low stationary"
+  ],
+  "amsco": "Low stationary. Birth rate is \"low but enough to keep the population stable\"; death rate low and stable. France's pyramid is \"typical of the shape known as a stationary population pyramid.\"",
+  "plain": "Birth and death rates are both low, so the population stays about the same size.",
+  "example": "Table examples: United States, China. Pyramid example: France, 2016 (p. 86).",
+  "page": "83, 86",
+  "video": "2.5 V1",
+  "watchOut": "Stage names differ: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining; AP Daily uses low, high, moderate, low, negative growth. Know both. Both AMSCO's table and the video put China in Stage 4.",
+  "trick": "Memory trick (not from AMSCO): Stage 4: stable, low and low.",
+  "source": "AMSCO pp. 83, 86; AP Daily 2.5 V1",
+  "related": [
+   "DTM Stage 3",
+   "DTM Stage 5"
+  ]
+ },
+ {
+  "id": 27,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "DTM Stage 5",
+  "alsoCalled": [
+   "Declining"
+  ],
+  "amsco": "Declining. Birth rate is \"so low it falls below the death rate\"; death rate low, sometimes increasing as the population ages. \"The population is aging and declining slightly overall.\"",
+  "plain": "More deaths than births, so the population shrinks and gets older.",
+  "example": "Table examples: Japan, Germany. Pyramid: Japan, 2016, with a narrow base; the largest age group is 65-69 (p. 86).",
+  "page": "83, 86-87",
+  "video": "2.5 V1",
+  "watchOut": "Stage names differ: AMSCO uses high stationary, early expanding, late expanding, low stationary, declining; AP Daily uses low, high, moderate, low, negative growth. Know both.",
+  "trick": "Memory trick (not from AMSCO): Stage 5: shrinking and gray.",
+  "source": "AMSCO pp. 83, 86-87; AP Daily 2.5 V1",
+  "related": [
+   "DTM Stage 4",
+   "Dependency ratio"
+  ]
+ },
+ {
+  "id": 28,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Demographic momentum",
+  "alsoCalled": [],
+  "amsco": "\"As countries transition from early Stage 3 into Stage 4, population will continue to grow for at least one generation because of demographic momentum. This process occurs because even though fertility rates have declined, people are living longer, and this results in population continuing to grow for another 20-40 years.\"",
+  "plain": "Even after birth rates fall, a population keeps growing for a while.",
+  "example": "Happens as a country moves from early Stage 3 into Stage 4 (p. 85).",
+  "page": "85",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video. AMSCO's reason is that people live longer. Many other sources (including our glossary) add that the many young people already born grow up and have children; that part is not in AMSCO.",
+  "trick": "Memory trick (not from AMSCO): momentum = a rolling ball keeps going after you stop pushing.",
+  "source": "AMSCO p. 85",
+  "related": [
+   "DTM Stage 3",
+   "DTM Stage 4"
+  ]
+ },
+ {
+  "id": 29,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Epidemiological transition model (ETM)",
+  "alsoCalled": [
+   "ETM"
+  ],
+  "amsco": "\"In the early 1970s, epidemiologist Abdel Omran identified predictable stages in disease and life expectancy that countries experience as they develop... This model is an extension of the demographic transition model and explains the changing death rates and more common causes of death within societies.\"",
+  "plain": "Shows how the main causes of death change as a country develops, in five stages.",
+  "example": "Criticism: it ignores lifestyle choices. US adult smoking fell from about 40 percent to under 15 percent (p. 89). COVID-19 (2020) challenged some of its ideas.",
+  "page": "88-89",
+  "video": "2.5 V2",
+  "watchOut": "ETM is about causes of death and life expectancy; DTM is about birth and death rates.",
+  "trick": "Memory trick (not from AMSCO): ETM = \"Early Things that kill Me\" change to \"later things.\"",
+  "source": "AMSCO pp. 88-89; AP Daily 2.5 V2",
+  "related": [
+   "Demographic transition model (DTM)"
+  ]
+ },
+ {
+  "id": 30,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Diseases and famine",
+  "alsoCalled": [
+   "ETM Stage 1",
+   "Disease and Famine"
+  ],
+  "amsco": "ETM Stage 1 (AMSCO: \"Disease and Famine\"). \"Parasitic or infectious diseases, accidents, animal attacks, or human conflicts cause most deaths. Food insecurity makes famine more common.\" Effect: a high death rate and low life expectancy.",
+  "plain": "Early stage. Infections, accidents and hunger cause most deaths.",
+  "example": "High death rate and low life expectancy (p. 88).",
+  "page": "88",
+  "video": "2.5 V2",
+  "watchOut": "Organizer says \"Diseases and famine\"; AMSCO table says \"Disease and Famine.\"",
+  "trick": "Memory trick (not from AMSCO): Stage 1 = survival mode.",
+  "source": "AMSCO p. 88; AP Daily 2.5 V2",
+  "related": [
+   "Receding pandemic"
+  ]
+ },
+ {
+  "id": 31,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Receding pandemic",
+  "alsoCalled": [
+   "ETM Stage 2",
+   "Receding Pandemics"
+  ],
+  "amsco": "ETM Stage 2 (AMSCO: \"Receding Pandemics\"). \"The number of pandemics (widespread diseases that affect large populations) declines as a result of improved sanitation, nutrition, and medicine.\" Death rate decreases and life expectancy increases.",
+  "plain": "Big outbreaks happen less often because of cleaner water, better food and medicine.",
+  "example": "Decreasing death rate, increasing life expectancy (p. 88).",
+  "page": "88",
+  "video": "2.5 V2",
+  "watchOut": "Organizer says \"Receding pandemic\"; AMSCO says \"Receding Pandemics.\"",
+  "trick": "Memory trick (not from AMSCO): pandemics are retreating.",
+  "source": "AMSCO p. 88; AP Daily 2.5 V2",
+  "related": [
+   "Diseases and famine",
+   "Degenerative and human-created diseases"
+  ]
+ },
+ {
+  "id": 32,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Degenerative and human-created diseases",
+  "alsoCalled": [
+   "ETM Stage 3"
+  ],
+  "amsco": "ETM Stage 3. \"Infectious and parasitic diseases continue to decrease, but diseases associated with aging-such as heart disease and types of cancer-increase as people live longer.\" Death rate stabilizes at a low level and life expectancy increases.",
+  "plain": "People live longer, so heart disease and cancer become the big killers.",
+  "example": "Heart disease and cancer (p. 88).",
+  "page": "88",
+  "video": "2.5 V2",
+  "watchOut": "AMSCO's table calls it \"Degenerative and Human-Created Diseases\" (the figure says \"man-made\").",
+  "trick": "Memory trick (not from AMSCO): degenerate = wear down with age.",
+  "source": "AMSCO p. 88; AP Daily 2.5 V2",
+  "related": [
+   "Delayed degenerative diseases"
+  ]
+ },
+ {
+  "id": 33,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Delayed degenerative diseases",
+  "alsoCalled": [
+   "ETM Stage 4"
+  ],
+  "amsco": "ETM Stage 4. \"An extension of Stage 3, but the age-related diseases are put off as medical procedures delay the onset of these diseases through advanced procedures. Diseases such as Alzheimer's and dementia increase.\" Death rate reaches its lowest level and life expectancy reaches a peak.",
+  "plain": "Medicine puts off age-related diseases, so people live even longer.",
+  "example": "Alzheimer's and dementia increase; life expectancy peaks (p. 88).",
+  "page": "88",
+  "video": "2.5 V2",
+  "watchOut": "Do not mix up Stage 3 (diseases of aging appear) and Stage 4 (they are delayed).",
+  "trick": "Memory trick (not from AMSCO): delayed = the sickness shows up late.",
+  "source": "AMSCO p. 88; AP Daily 2.5 V2",
+  "related": [
+   "Degenerative and human-created diseases",
+   "Reemergence of infectious diseases"
+  ]
+ },
+ {
+  "id": 34,
+  "topic": "2.5",
+  "topicTitle": "The demographic transition model",
+  "term": "Reemergence of infectious diseases",
+  "alsoCalled": [
+   "ETM Stage 5",
+   "Reemergence of Infectious and Parasitic Diseases"
+  ],
+  "amsco": "ETM Stage 5. \"Infectious and parasitic diseases increase as some bacteria and parasites become resistant to antibiotics and vaccines.\" Life expectancy decreases.",
+  "plain": "Old infections come back because germs resist medicines.",
+  "example": "The COVID-19 pandemic in 2020 challenged some theories of the model; pandemics are usually part of Stage 1 or 2 (p. 89).",
+  "page": "89",
+  "video": "2.5 V2",
+  "watchOut": "Organizer spelling is \"Reemergence\"; same as AMSCO.",
+  "trick": "Memory trick (not from AMSCO): re-emerge = the old enemies return.",
+  "source": "AMSCO p. 89; AP Daily 2.5 V2",
+  "related": [
+   "Delayed degenerative diseases",
+   "Diseases and famine"
+  ]
+ },
+ {
+  "id": 35,
+  "topic": "2.6",
+  "topicTitle": "Malthusian theory",
+  "term": "Malthusian theory",
+  "alsoCalled": [],
+  "amsco": "Thomas Malthus (1798, An Essay on the Principle of Population): \"food production would increase arithmetically... the population would increase exponentially.\" Since population grows faster than food, famine, war and plagues would limit growth.",
+  "plain": "Malthus said people multiply faster than food, so we would eventually starve.",
+  "example": "\"Point of crisis\": the population exceeds carrying capacity (p. 90). The predicted famine did not happen because food production grew faster than he predicted and fertility rates dropped (p. 91). Ester Boserup argued more people means more hands to work.",
+  "page": "90-91",
+  "video": "2.6 V1",
+  "watchOut": "AMSCO says exponentially; the 2.6 video says geometrically and exponentially. Both are fine. Arithmetic: 1, 2, 3, 4. Exponential: 1, 2, 4, 8 (p. 82).",
+  "trick": "Memory trick (not from AMSCO): food climbs stairs; people ride a rocket.",
+  "source": "AMSCO pp. 82, 90-91; AP Daily 2.6 V1",
+  "related": [
+   "Neo-Malthusian",
+   "Overpopulation",
+   "Carrying capacity"
+  ]
+ },
+ {
+  "id": 36,
+  "topic": "2.6",
+  "topicTitle": "Malthusian theory",
+  "term": "Overpopulation",
+  "alsoCalled": [],
+  "amsco": "\"having more people than it can support\" (p. 62). Malthus said the population \"would soon be unsupportable or referred to by Malthus as overpopulation\" (p. 90).",
+  "plain": "Too many people for the land and resources to support.",
+  "example": "Linked to carrying capacity: at the point of crisis the population exceeds it (p. 90). Whether a region is overpopulated depends partly on distribution and density, and on carrying capacity (p. 62).",
+  "page": "62, 90",
+  "video": "2.2 V2 (brief); 2.6 V1",
+  "watchOut": "High density alone does not mean overpopulation: the Netherlands has high densities but is highly developed and can import food (p. 60). Also listed under 2.2 in AMSCO.",
+  "trick": "Memory trick (not from AMSCO): over + population = over the limit.",
+  "source": "AMSCO pp. 60, 62, 90; AP Daily 2.6 V1",
+  "related": [
+   "Carrying capacity",
+   "Malthusian theory"
+  ]
+ },
+ {
+  "id": 37,
+  "topic": "2.6",
+  "topicTitle": "Malthusian theory",
+  "term": "Neo-Malthusian",
+  "alsoCalled": [
+   "Neo-Malthusians"
+  ],
+  "amsco": "\"there are those who still accept his fundamental premise as correct today... known as neo-Malthusians. They argue that population growth is a serious problem currently and an even greater threat for the future.\"",
+  "plain": "Modern thinkers who agree with Malthus that growth is a danger.",
+  "example": "They say continued growth will deplete nonrenewable resources such as petroleum and metals, pollute air and water, and cause food shortages. The Sahel's population is expected to triple over the next 30 years (p. 91).",
+  "page": "91",
+  "video": "2.6 V1",
+  "watchOut": "Do not confuse with Boserup, who was more hopeful about large populations.",
+  "trick": "Memory trick (not from AMSCO): neo = new Malthus.",
+  "source": "AMSCO p. 91; AP Daily 2.6 V1",
+  "related": [
+   "Malthusian theory",
+   "Overpopulation"
+  ]
+ },
+ {
+  "id": 38,
+  "topic": "2.7",
+  "topicTitle": "Population policies",
+  "term": "Antinatalist policy",
+  "alsoCalled": [
+   "Antinatalist",
+   "Anti-natalist"
+  ],
+  "amsco": "\"Concerns about population growth have led to antinatalist policies. These policies attempt to decrease the number of births in a country and are often used by developing countries.\"",
+  "plain": "Government rules that try to lower the number of births.",
+  "example": "China: \"later, longer, fewer\" (1972), then the One-child policy (1979 until 2016). By 2010, China had 118 males born for every 100 females (pp. 93-94). Singapore in 1966: \"Stop at Two\" (p. 95).",
+  "page": "93-95",
+  "video": "2.7 V1",
+  "watchOut": "AMSCO says China modified the policy in 2016; the 2.7 video says 2015; our glossary says 1979-2015. The unbalanced gender ratio is a known side effect.",
+  "trick": "Memory trick (not from AMSCO): anti = against births.",
+  "source": "AMSCO pp. 93-95; AP Daily 2.7 V1",
+  "related": [
+   "Pronatalist policy"
+  ]
+ },
+ {
+  "id": 39,
+  "topic": "2.7",
+  "topicTitle": "Population policies",
+  "term": "Pronatalist policy",
+  "alsoCalled": [
+   "Pronatalist",
+   "Pro-natalist"
+  ],
+  "amsco": "\"pronatalist policies, or programs designed to increase the fertility rate.\"",
+  "plain": "Government programs that encourage more babies.",
+  "example": "France, Sweden, Japan: paid time off, free childcare, family discounts. Denmark, Singapore, Russia, Italy: advertising campaigns (p. 95). Singapore in 1987: \"Have Three or More, If You Can Afford It.\" AP Daily example: Finland.",
+  "page": "95",
+  "video": "2.7 V1",
+  "watchOut": "Singapore used both antinatalist (1966) and pronatalist (1987) policies.",
+  "trick": "Memory trick (not from AMSCO): pro = for births.",
+  "source": "AMSCO p. 95; AP Daily 2.7 V1",
+  "related": [
+   "Antinatalist policy"
+  ]
+ },
+ {
+  "id": 40,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Migration",
+  "alsoCalled": [],
+  "amsco": "\"Migration is the permanent or semipermanent relocation of people from one place to another.\"",
+  "plain": "Moving from one place to live in another.",
+  "example": "AMSCO: the United States is the most populous immigrant country in the world (p. 108).",
+  "page": "108",
+  "video": "2.10 V1",
+  "watchOut": "AMSCO says permanent OR semipermanent. Our glossary says only permanent.",
+  "trick": "Memory trick (not from AMSCO): migrate = move to settle.",
+  "source": "AMSCO p. 108; AP Daily 2.10 V1",
+  "related": [
+   "Immigration",
+   "Emigrate"
+  ]
+ },
+ {
+  "id": 41,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Push factor",
+  "alsoCalled": [],
+  "amsco": "\"negative circumstances, events, or conditions present where they live that compels a person to leave.\"",
+  "plain": "Something bad at home that makes you want to leave.",
+  "example": "Unemployment among Rust Belt factory workers; drought in the 1930s on farms in Colorado, Kansas, Oklahoma and Texas; violence and persecution (pp. 109-110).",
+  "page": "108-110",
+  "video": "2.10 V1",
+  "watchOut": "Push = negative at home. AP Daily gives the ESPN checklist: Economic, Social, Political, Environmental.",
+  "trick": "Memory trick (not from AMSCO): push = pain.",
+  "source": "AMSCO pp. 108-110; AP Daily 2.10 V1",
+  "related": [
+   "Pull factor"
+  ]
+ },
+ {
+  "id": 42,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Pull factor",
+  "alsoCalled": [],
+  "amsco": "\"positive conditions and circumstances\" at a destination that attract migrants.",
+  "plain": "Something good somewhere else that draws you there.",
+  "example": "Factory workers moved to southern states such as Kentucky and Tennessee as new factories opened; the Homestead Act gave land to settlers (pp. 109, 111).",
+  "page": "108-111",
+  "video": "2.10 V1",
+  "watchOut": "Pull = positive at the destination.",
+  "trick": "Memory trick (not from AMSCO): pull = perks.",
+  "source": "AMSCO pp. 108-111; AP Daily 2.10 V1",
+  "related": [
+   "Push factor"
+  ]
+ },
+ {
+  "id": 43,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Immigration",
+  "alsoCalled": [
+   "Immigrant"
+  ],
+  "amsco": "\"From the perspective of a receiving country, an immigrant is a person who migrates across an international border with the intention of staying permanently.\"",
+  "plain": "Moving INTO a new country to live there.",
+  "example": "The United States is the most populous immigrant country in the world (p. 108).",
+  "page": "108",
+  "video": "2.11 V1",
+  "watchOut": "Immigrate and emigrate describe the same trip from different ends.",
+  "trick": "Memory trick (not from AMSCO): IN = immigrate.",
+  "source": "AMSCO p. 108; AP Daily 2.11 V1",
+  "related": [
+   "Emigrate"
+  ]
+ },
+ {
+  "id": 44,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Emigrate",
+  "alsoCalled": [
+   "Emigrant",
+   "Emigration"
+  ],
+  "amsco": "\"From the perspective of the country the migrant is leaving, the person is viewed as an emigrant. When people migrate away from somewhere, they emigrate.\"",
+  "plain": "Moving OUT of a country.",
+  "example": "AMSCO gives no separate example; it defines the word from the origin country's view (p. 108).",
+  "page": "108",
+  "video": "2.11 V1",
+  "watchOut": "Immigrant = receiving country's view; emigrant = origin country's view.",
+  "trick": "Memory trick (not from AMSCO): EXIT = emigrate.",
+  "source": "AMSCO p. 108; AP Daily 2.11 V1",
+  "related": [
+   "Immigration"
+  ]
+ },
+ {
+  "id": 45,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Migration transition model",
+  "alsoCalled": [
+   "Zelinsky's model"
+  ],
+  "amsco": "Wilbur Zelinsky's theory: \"countries in Stages 2 and 3 of the demographic transition model experience rapid population growth and overcrowding. This overcrowding limits the economic opportunities... and acts as a push factor. Thus, they migrate to less-crowded Stage 4 or 5 countries.\"",
+  "plain": "Crowded Stage 2-3 countries push people toward Stage 4-5 countries with jobs.",
+  "example": "Also p. 121: migrants who leave reduce competition for jobs and resources in the origin country.",
+  "page": "110, 121",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video; study from AMSCO. It describes a general pattern.",
+  "trick": "Memory trick (not from AMSCO): Zelinsky links migration to the DTM.",
+  "source": "AMSCO pp. 110, 121",
+  "related": [
+   "Demographic transition model (DTM)",
+   "Push factor"
+  ]
+ },
+ {
+  "id": 46,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Intervening obstacles",
+  "alsoCalled": [
+   "Intervening obstacle"
+  ],
+  "amsco": "Everett Lee, 1966: \"barriers that make reaching their desired destination more difficult.\" Types: economic, social, political, environmental.",
+  "plain": "Things that block or slow a move: money, laws, deserts, seas.",
+  "example": "Border patrols, deserts, oceans, travel costs. A migrant who cannot get a visa (political) or lacks enough money (economic) (p. 111).",
+  "page": "111",
+  "video": "2.10 V2",
+  "watchOut": "Obstacle = blocks. Opportunity = tempts the migrant to stop early.",
+  "trick": "Memory trick (not from AMSCO): obstacle = roadblock.",
+  "source": "AMSCO p. 111; AP Daily 2.10 V2",
+  "related": [
+   "Intervening opportunities"
+  ]
+ },
+ {
+  "id": 47,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Intervening opportunities",
+  "alsoCalled": [
+   "Intervening opportunity"
+  ],
+  "amsco": "\"opportunities en route that disrupt their original migration plan. For example, a migrant might find a job along the way.\"",
+  "plain": "A chance on the way that makes someone stop before the final goal.",
+  "example": "A migrant finds a job along the route and settles there (p. 111).",
+  "page": "111",
+  "video": "2.10 V2",
+  "watchOut": "Our glossary words it differently, but the idea matches AMSCO.",
+  "trick": "Memory trick (not from AMSCO): opportunity = open door on the road.",
+  "source": "AMSCO p. 111; AP Daily 2.10 V2",
+  "related": [
+   "Intervening obstacles"
+  ]
+ },
+ {
+  "id": 48,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Step migration",
+  "alsoCalled": [],
+  "amsco": "\"a process in which migrants reach their eventual destination through a series of smaller moves.\"",
+  "plain": "Moving to your goal in several smaller steps.",
+  "example": "A migrant from a small town moves first to a larger town, later to a small city, and finally to a large city (p. 112).",
+  "page": "112, 117",
+  "video": "2.8 V2",
+  "watchOut": "Step migration is explained in 2.8 V2; 2.11 V2 only uses it as a practice answer.",
+  "trick": "Memory trick (not from AMSCO): steps = stair steps.",
+  "source": "AMSCO p. 112; AP Daily 2.8 V2",
+  "related": [
+   "Rural-to-urban migration"
+  ]
+ },
+ {
+  "id": 49,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Rural-to-urban migration",
+  "alsoCalled": [],
+  "amsco": "AMSCO gives no formal one-sentence definition. Usage: \"Most migration in history has been from rural agricultural areas to urban city areas.\" Because of the Industrial Revolution, farms needed fewer laborers and cities needed more workers.",
+  "plain": "People moving from the countryside to cities.",
+  "example": "Rural India to Mumbai; rural Syria to cities in Germany (p. 112). In Kenya and India it is the most important factor driving urban growth (p. 117).",
+  "page": "112, 117",
+  "video": "2.8 V2 / 2.12 V1",
+  "watchOut": "Can happen within a country or between countries.",
+  "trick": "Memory trick (not from AMSCO): farm to city.",
+  "source": "AMSCO pp. 112, 117 (usage); AP Daily 2.8 V2",
+  "related": [
+   "Step migration",
+   "Internal migration"
+  ]
+ },
+ {
+  "id": 50,
+  "topic": "2.10",
+  "topicTitle": "Causes of migration",
+  "term": "Counter migration",
+  "alsoCalled": [
+   "Return migration"
+  ],
+  "amsco": "\"Each migration flow produces a movement in the opposite direction, called counter migration.\" Return migration is \"immigrants moving back to their former home.\"",
+  "plain": "People moving back the other way along the same route.",
+  "example": "As many Mexicans moved to the United States, others moved from the US to Mexico, including about 1 million retired US citizens now living in Mexico (p. 112).",
+  "page": "112",
+  "video": "2.8 V2",
+  "watchOut": "Return migration is one kind of counter migration.",
+  "trick": "Memory trick (not from AMSCO): counter = the opposite direction.",
+  "source": "AMSCO p. 112; AP Daily 2.8 V2",
+  "related": [
+   "Return migration",
+   "Step migration"
+  ]
+ },
+ {
+  "id": 51,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Forced migration",
+  "alsoCalled": [],
+  "amsco": "\"Migration that is involuntary, meaning migrants have no choice but to move, is forced migration.\"",
+  "plain": "Moving because you have no choice.",
+  "example": "The African slave trade: about 12.5 million Africans from the 15th through the 19th centuries (p. 115).",
+  "page": "115",
+  "video": "2.11 V1",
+  "watchOut": "AP Daily also covers slavery and trafficking as forced migration.",
+  "trick": "Memory trick (not from AMSCO): forced = no choice.",
+  "source": "AMSCO p. 115; AP Daily 2.11 V1",
+  "related": [
+   "Voluntary migration",
+   "Refugees"
+  ]
+ },
+ {
+  "id": 52,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Internally displaced persons (IDP)",
+  "alsoCalled": [
+   "IDP",
+   "IDPs"
+  ],
+  "amsco": "\"If these migrants move to another part of the same country, they are classified as internally displaced persons (IDPs).\"",
+  "plain": "People forced from home who stay inside their own country.",
+  "example": "Syria: more than 6 million IDPs. Louisianans fled after Hurricane Katrina in 2005 (pp. 115, 117).",
+  "page": "115, 117",
+  "video": "2.11 V1",
+  "watchOut": "IDP stays inside the country; a refugee crosses a border.",
+  "trick": "Memory trick (not from AMSCO): IDP = Inside, Doesn't cross borders.",
+  "source": "AMSCO pp. 115, 117; AP Daily 2.11 V1",
+  "related": [
+   "Refugees",
+   "Internal migration"
+  ]
+ },
+ {
+  "id": 53,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Refugees",
+  "alsoCalled": [
+   "Refugee"
+  ],
+  "amsco": "\"If they cross international borders, they are refugees.\"",
+  "plain": "Forced migrants who cross into another country.",
+  "example": "Syria: more than 4 million refugees, mostly to neighboring or nearby countries such as Turkey and Greece. Haitians after the 2010 earthquakes (pp. 115, 117).",
+  "page": "115, 117",
+  "video": "2.11 V1",
+  "watchOut": "AP Daily says refugees are \"forced to emigrate.\"",
+  "trick": "Memory trick (not from AMSCO): Refugees Run across a border.",
+  "source": "AMSCO pp. 115, 117; AP Daily 2.11 V1",
+  "related": [
+   "Internally displaced persons (IDP)",
+   "Asylum"
+  ]
+ },
+ {
+  "id": 54,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Asylum",
+  "alsoCalled": [
+   "Asylum seeker"
+  ],
+  "amsco": "\"protection granted by one country to an immigrant from another country who has a legitimate fear of harm or death if he or she returns.\" Some political refugees apply for asylum when they arrive.",
+  "plain": "Safe-haven protection from a new country.",
+  "example": "If granted, asylum-seekers receive protection and special status from the receiving government (p. 116). AP Daily: increase in Syrian asylum seekers to the European Union.",
+  "page": "116",
+  "video": "2.11 V1",
+  "watchOut": "AMSCO defines asylum (the protection); AP Daily defines asylum seekers (refugees seeking protection).",
+  "trick": "Memory trick (not from AMSCO): asylum = a safe place to ask to stay.",
+  "source": "AMSCO p. 116; AP Daily 2.11 V1",
+  "related": [
+   "Refugees"
+  ]
+ },
+ {
+  "id": 55,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Voluntary migration",
+  "alsoCalled": [],
+  "amsco": "\"a movement made by choice\" (p. 108); \"voluntary migration occurs when people choose to relocate\" (p. 117).",
+  "plain": "Moving because you chose to.",
+  "example": "Most people who move do so in search of a better life (p. 108).",
+  "page": "108, 117",
+  "video": "2.11 V2",
+  "watchOut": "Even voluntary moves usually combine push and pull factors.",
+  "trick": "Memory trick (not from AMSCO): voluntary = volunteer to go.",
+  "source": "AMSCO pp. 108, 117; AP Daily 2.11 V2",
+  "related": [
+   "Forced migration"
+  ]
+ },
+ {
+  "id": 56,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Internal migration",
+  "alsoCalled": [],
+  "amsco": "\"The term internal migration is used to describe movement that occurs within a country.\"",
+  "plain": "Moving inside the same country.",
+  "example": "Rural-to-urban moves in Kenya and India. Ethiopia: IDPs are also internal migrants (p. 117). AP Daily: Californians moving to Texas when Toyota moved to Plano.",
+  "page": "117",
+  "video": "2.11 V2",
+  "watchOut": "Not always voluntary: IDPs are internal migrants too.",
+  "trick": "Memory trick (not from AMSCO): internal = inside.",
+  "source": "AMSCO p. 117; AP Daily 2.11 V2",
+  "related": [
+   "Transnational migration",
+   "Internally displaced persons (IDP)"
+  ]
+ },
+ {
+  "id": 57,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Transnational migration",
+  "alsoCalled": [],
+  "amsco": "\"Transnational migration is when people move from one country to another, or internationally rather than internally.\"",
+  "plain": "Moving from one country to another.",
+  "example": "A person migrates from Mexico to the United States (p. 117).",
+  "page": "117",
+  "video": "2.11 V2",
+  "watchOut": "AMSCO's meaning is simply moving between countries. Do not use the word \"transnationalism\" from other sources.",
+  "trick": "Memory trick (not from AMSCO): trans = across.",
+  "source": "AMSCO p. 117; AP Daily 2.11 V2",
+  "related": [
+   "Internal migration",
+   "Guest workers"
+  ]
+ },
+ {
+  "id": 58,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Chain migration",
+  "alsoCalled": [],
+  "amsco": "AMSCO gives no formal one-sentence definition. Usage: people \"decide to locate in a city or community where others from their home country, family members, friends, or those from their culture group have previously settled. This process of chain migration... helps migrants transition into the receiving country.\"",
+  "plain": "Following relatives or friends who already moved.",
+  "example": "Migrants settle where people from their culture group already live (p. 117). AP Daily: a relationship with a previous migrant, often a family member.",
+  "page": "117",
+  "video": "2.11 V2 (brief)",
+  "watchOut": "Only a brief mention in the video.",
+  "trick": "Memory trick (not from AMSCO): chain = links of family.",
+  "source": "AMSCO p. 117 (usage); AP Daily 2.11 V2",
+  "related": [
+   "Ethnic enclaves"
+  ]
+ },
+ {
+  "id": 59,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Guest workers",
+  "alsoCalled": [
+   "Guest worker"
+  ],
+  "amsco": "\"Guest workers are also transnational migrants who relocate to a new country to provide labor that isn't available locally.\"",
+  "plain": "Workers who go to another country to do jobs, often for a limited time.",
+  "example": "In Bahrain, Kuwait, Qatar and the UAE, migrants are more than half the population (p. 117). Gulf countries set guest-worker policies with defined time limits (p. 120).",
+  "page": "117-118, 120",
+  "video": "2.11 V2",
+  "watchOut": "Many guest workers do not intend to stay, but frequently do (p. 118). Our glossary adds 'temporary work authorization' that AMSCO does not.",
+  "trick": "Memory trick (not from AMSCO): guest = visitor with a job.",
+  "source": "AMSCO pp. 117-118, 120; AP Daily 2.11 V2",
+  "related": [
+   "Transnational migration",
+   "Remittances"
+  ]
+ },
+ {
+  "id": 60,
+  "topic": "2.11",
+  "topicTitle": "Forced and voluntary migration",
+  "term": "Transhumance",
+  "alsoCalled": [],
+  "amsco": "\"The process of herders moving with their animals to different pastures during different seasons is transhumance.\"",
+  "plain": "Herders moving animals up and down with the seasons.",
+  "example": "Higher in summer, lower in winter in Italy, Greece, Turkey (internal migration). In parts of the Sahara, herders cross international boundaries (p. 118).",
+  "page": "118",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video.",
+  "trick": "Memory trick (not from AMSCO): trans-HUMAN-ce: humans follow the herds.",
+  "source": "AMSCO p. 118",
+  "related": [
+   "Internal migration"
+  ]
+ },
+ {
+  "id": 61,
+  "topic": "2.12",
+  "topicTitle": "Effects of migration",
+  "term": "Xenophobia",
+  "alsoCalled": [],
+  "amsco": "\"a strong dislike of people of another culture.\"",
+  "plain": "Fear or dislike of people from other cultures.",
+  "example": "The Chinese Exclusion Act banned immigration from China between 1882 and 1943 (p. 121).",
+  "page": "121",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video. Combined with economic fears in that example.",
+  "trick": "Memory trick (not from AMSCO): xeno = foreign, phobia = fear.",
+  "source": "AMSCO p. 121",
+  "related": [
+   "Ethnic enclaves"
+  ]
+ },
+ {
+  "id": 62,
+  "topic": "2.12",
+  "topicTitle": "Effects of migration",
+  "term": "Remittances",
+  "alsoCalled": [],
+  "amsco": "\"money sent to their family and friends in the country they left.\"",
+  "plain": "Money migrants send home.",
+  "example": "Nearly 40 percent of the income of Tajikistan and Kyrgyzstan (p. 121). AP Daily: Spanish 'remesa.'",
+  "page": "121",
+  "video": "2.12 V1",
+  "watchOut": "Remittances help the receiving family; they are not payments by the host government.",
+  "trick": "Memory trick (not from AMSCO): remit = send back.",
+  "source": "AMSCO p. 121; AP Daily 2.12 V1",
+  "related": [
+   "Brain drain",
+   "Guest workers"
+  ]
+ },
+ {
+  "id": 63,
+  "topic": "2.12",
+  "topicTitle": "Effects of migration",
+  "term": "Brain drain",
+  "alsoCalled": [],
+  "amsco": "\"When migration out of a country is made up of many highly skilled people, it is called a brain drain.\"",
+  "plain": "Skilled, educated people leaving a country.",
+  "example": "About 11 percent of Africans with graduate or professional degrees were living in the US, Europe or other developed countries, per a UN report (pp. 121-122).",
+  "page": "121-122",
+  "video": "2.12 V1",
+  "watchOut": "The loss is for the country of origin.",
+  "trick": "Memory trick (not from AMSCO): brains drain away.",
+  "source": "AMSCO pp. 121-122; AP Daily 2.12 V1",
+  "related": [
+   "Remittances"
+  ]
+ },
+ {
+  "id": 64,
+  "topic": "2.12",
+  "topicTitle": "Effects of migration",
+  "term": "Ethnic enclaves",
+  "alsoCalled": [
+   "Ethnic enclave"
+  ],
+  "amsco": "\"neighborhoods filled primarily with people of the same ethnic group.\"",
+  "plain": "Neighborhoods mostly made up of one ethnic group.",
+  "example": "\"Little Italy\" or \"Chinatown\" add to the cultural richness of the countries in which they develop (p. 122).",
+  "page": "122",
+  "video": "none",
+  "watchOut": "Not in any AP Daily video.",
+  "trick": "Memory trick (not from AMSCO): enclave = a pocket of one culture.",
+  "source": "AMSCO p. 122",
+  "related": [
+   "Chain migration",
+   "Xenophobia"
+  ]
+ }
+]</script>
+
+<script id="app">
+(function () {
+  'use strict';
+
+  // ---------- constants ----------
+  var KEY_MASTERY = 'u2vocab.v1.mastery';
+  var KEY_SETTINGS = 'u2vocab.v1.settings';
+  var KEY_BEST = 'u2vocab.v1.best';
+  var TOPIC_ORDER = ['2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.10', '2.11', '2.12'];
+  var TEST_START = new Date(2026, 9, 26, 8, 0, 0);
+  var STATUS_LABEL = { 'new': 'New', 'learning': 'Still learning', 'known': 'Known' };
+  var PREFIX = 'AMSCO gives no formal one-sentence definition.';
+  var PLAN_ROWS = [
+    { date: '2026-10-19', day: 'Mon 10/19', terms: '2.1-2.2: population distribution through carrying capacity (8)', pages: '55-63', videos: '2.1 V1, 2.1 V2, 2.2 V1, 2.2 V2', mode: 'Flashcards, then quiz def to term (2.1-2.2)', target: '80% first try; 100% cleared', topics: ['2.1', '2.2'] },
+    { date: '2026-10-20', day: 'Tue 10/20', terms: '2.3-2.4: composition and dynamics (13)', pages: '64-70, 76-82 (and 100-101 for dependency ratio)', videos: '2.3 V1, 2.4 V1, 2.4 V2, 2.9 V1', mode: 'Flashcards, quiz both modes (2.3-2.4) plus 5-minute Mon review', target: '85% first try; 100% cleared', topics: ['2.3', '2.4'] },
+    { date: '2026-10-21', day: 'Wed 10/21', terms: '2.5: DTM and ETM (13)', pages: '83-89', videos: '2.5 V1, 2.5 V2', mode: 'Flashcards, quiz term to def. Light day: FRQ formative is Wed-Thu, so do half now (Stage 1-5 and ETM names) and finish the rest Thu morning if needed', target: '80% first try', topics: ['2.5'] },
+    { date: '2026-10-22', day: 'Thu 10/22', terms: '2.6-2.7: Malthus and policies (5), plus review Mon-Wed (2.1-2.5, 34 terms)', pages: '90-95', videos: '2.6 V1, 2.7 V1', mode: 'Quiz both modes on 2.6-2.7, then quiz "only still learning" on 2.1-2.5', target: '90% first try on review; 100% cleared', topics: ['2.6', '2.7'] },
+    { date: '2026-10-23', day: 'Fri 10/23', terms: '2.10: causes of migration (11)', pages: '108-113', videos: '2.10 V1, 2.10 V2, 2.8 V2 (step migration, counter migration)', mode: 'Flashcards, quiz both modes. Progress check is Fri: keep this to 30 minutes', target: '85% first try', topics: ['2.10'] },
+    { date: '2026-10-24', day: 'Sat 10/24', terms: '2.11: forced and voluntary migration (10)', pages: '115-119', videos: '2.11 V1, 2.11 V2', mode: 'Flashcards, quiz both modes; compare IDP / refugee / asylum', target: '85% first try; 100% cleared', topics: ['2.11'] },
+    { date: '2026-10-25', day: 'Sun 10/25', terms: '2.12: effects of migration (4) plus full 64-term practice test', pages: '120-122', videos: '2.12 V1', mode: 'Learn 2.12, then full unit test', target: '95% first try on full test; fix-up round to 100%', topics: ['2.12'] },
+    { date: '2026-10-26', day: 'Mon 10/26', terms: 'Test day: missed terms only, morning', pages: 'pages on cards in "Missed terms"', videos: 'none', mode: 'Missed terms list, quiz "only still learning", then flashcards once through', target: '100% cleared before school', topics: null, missedOnly: true }
+  ];
+
+  // ---------- state ----------
+  var TERMS = [];
+  var BY_ID = {};
+  var BY_NAME = {};
+  var state = null;
+  var refs = {};
+  var quiz = null;
+  var deck = [];
+  var deckIndex = 0;
+  var flipped = false;
+  var searchTimer = null;
+
+  // ---------- small helpers ----------
+  function el(tag, attrs, text) {
+    var node = document.createElement(tag);
+    if (attrs) {
+      for (var k in attrs) {
+        if (Object.prototype.hasOwnProperty.call(attrs, k)) node.setAttribute(k, attrs[k]);
+      }
+    }
+    if (text !== undefined && text !== null) node.textContent = String(text);
+    return node;
+  }
+  function clear(node) {
+    while (node.firstChild) node.removeChild(node.firstChild);
+  }
+  function norm(s) {
+    return String(s).replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+  function escapeRe(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+  function topicDist(a, b) {
+    return Math.abs(TOPIC_ORDER.indexOf(a) - TOPIC_ORDER.indexOf(b));
+  }
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+  function reducedMotion() {
+    try {
+      return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    } catch (e) { return false; }
+  }
+  function pageLabel(p) {
+    return (/^\d+$/.test(p) ? 'p. ' : 'pp. ') + p;
+  }
+  function dateKey(d) {
+    var m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
+  }
+  function markerSvg() {
+    var NS = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 20 20');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    var shapes = [
+      ['circle', { cx: 10, cy: 10, r: 9, 'class': 'bm-ring' }],
+      ['path', { d: 'M10 1 A9 9 0 0 1 10 19 Z', 'class': 'bm-half' }],
+      ['circle', { cx: 10, cy: 10, r: 9, 'class': 'bm-full' }],
+      ['path', { d: 'M10 5.5 L14 12.5 L6 12.5 Z', 'class': 'bm-tri' }]
+    ];
+    shapes.forEach(function (s) {
+      var node = document.createElementNS(NS, s[0]);
+      for (var k in s[1]) node.setAttribute(k, String(s[1][k]));
+      svg.appendChild(node);
+    });
+    return svg;
+  }
+  function splitAmsco(text) {
+    if (text.indexOf(PREFIX) === 0) return [PREFIX, text.slice(PREFIX.length).replace(/^\s+/, '')];
+    return [null, text];
+  }
+  function amscoNode(text) {
+    var p = el('p', { 'class': 'amsco-quote' });
+    var parts = splitAmsco(text);
+    if (parts[0]) p.appendChild(el('em', null, parts[0] + ' '));
+    p.appendChild(document.createTextNode(parts[1]));
+    return p;
+  }
+
+  // ---------- storage (every access wrapped) ----------
+  function getStore() {
+    try { return window.localStorage || null; } catch (e) { return null; }
+  }
+  function markUnsaved() {
+    if (refs.storageNotice) {
+      refs.storageNotice.textContent = 'Progress will not be saved in this browser mode.';
+      refs.storageNotice.hidden = false;
+    }
+  }
+  function safeGet(key) {
+    var s = getStore();
+    if (!s) return null;
+    var raw;
+    try { raw = s.getItem(key); } catch (e) { markUnsaved(); return null; }
+    if (raw === null) return null;
+    try { return JSON.parse(raw); } catch (e) { return null; }
+  }
+  function safeSet(key, value) {
+    var s = getStore();
+    if (!s) return false;
+    try { s.setItem(key, JSON.stringify(value)); return true; } catch (e) { return false; }
+  }
+  function num(x) {
+    return (typeof x === 'number' && isFinite(x) && x >= 0) ? Math.floor(x) : 0;
+  }
+  function normMastery(v) {
+    var status = (v.status === 'learning' || v.status === 'known') ? v.status : 'new';
+    return {
+      status: status,
+      streak: num(v.streak),
+      missed: num(v.missed),
+      seen: num(v.seen),
+      last: typeof v.last === 'string' ? v.last : ''
+    };
+  }
+  function loadTerms() {
+    var node = document.getElementById('terms-data');
+    try {
+      var arr = JSON.parse(node.textContent);
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) { return []; }
+  }
+  function loadState() {
+    var st = {
+      mastery: {},
+      settings: { hints: true, topicFilter: 'all', onlyLearning: false },
+      best: { def2term: 0, term2def: 0, full: 0 }
+    };
+    var m = safeGet(KEY_MASTERY);
+    if (m && typeof m === 'object' && !Array.isArray(m)) {
+      Object.keys(m).forEach(function (k) {
+        if (m[k] && typeof m[k] === 'object') st.mastery[k] = normMastery(m[k]);
+      });
+    }
+    var s = safeGet(KEY_SETTINGS);
+    if (s && typeof s === 'object') {
+      if (typeof s.hints === 'boolean') st.settings.hints = s.hints;
+      if (typeof s.onlyLearning === 'boolean') st.settings.onlyLearning = s.onlyLearning;
+      if (typeof s.topicFilter === 'string' || Array.isArray(s.topicFilter)) st.settings.topicFilter = s.topicFilter;
+    }
+    var b = safeGet(KEY_BEST);
+    if (b && typeof b === 'object') {
+      ['def2term', 'term2def', 'full'].forEach(function (k) {
+        if (typeof b[k] === 'number' && b[k] >= 0 && b[k] <= 100) st.best[k] = Math.round(b[k]);
+      });
+    }
+    return st;
+  }
+  function saveState(s) {
+    var st = s || state;
+    if (!st) return false;
+    var ok = safeSet(KEY_MASTERY, st.mastery) && safeSet(KEY_SETTINGS, st.settings) && safeSet(KEY_BEST, st.best);
+    if (!ok) markUnsaved();
+    return ok;
+  }
+
+  // ---------- mastery ----------
+  function blankMastery() { return { status: 'new', streak: 0, missed: 0, seen: 0, last: '' }; }
+  function mast(id) {
+    if (!state.mastery[id]) state.mastery[id] = blankMastery();
+    return state.mastery[id];
+  }
+  function isKnown(id) {
+    var m = state.mastery[id];
+    return !!m && (m.status === 'known' || m.streak >= 2);
+  }
+  function displayStatus(id) {
+    if (isKnown(id)) return 'known';
+    var m = state.mastery[id];
+    if (m && (m.status === 'learning' || m.streak > 0 || m.missed > 0)) return 'learning';
+    return 'new';
+  }
+  function setStatus(id, status) {
+    var m = mast(id);
+    var prev = m.status;
+    m.status = status;
+    if (status === 'known') {
+      if (prev === 'new' && m.streak < 2) m.streak = 2;
+    } else {
+      m.streak = 0;
+    }
+    m.seen += 1;
+    m.last = new Date().toISOString();
+    saveState();
+    updateCard(id);
+    renderProgress();
+  }
+  function computeMissed() {
+    return TERMS.filter(function (t) {
+      if (isKnown(t.id)) return false;
+      var m = state.mastery[t.id];
+      return !!m && (m.status === 'learning' || m.missed > 0);
+    });
+  }
+
+  // ---------- filters ----------
+  function currentTopicList() {
+    var tf = state.settings.topicFilter;
+    if (Array.isArray(tf)) return tf.length ? tf.slice() : null;
+    if (typeof tf === 'string' && tf !== 'all' && TOPIC_ORDER.indexOf(tf) !== -1) return [tf];
+    return null;
+  }
+  function currentFilters() {
+    return { topics: currentTopicList(), onlyLearning: !!state.settings.onlyLearning };
+  }
+  function searchText(t) {
+    return [t.term].concat(t.alsoCalled || [], t.plain, t.amsco).join(' ').toLowerCase();
+  }
+  function applyFilters(f) {
+    f = f || {};
+    var q = f.search ? String(f.search).trim().toLowerCase() : '';
+    return TERMS.filter(function (t) {
+      if (f.ids && f.ids.indexOf(t.id) === -1) return false;
+      if (f.topics && f.topics.length && f.topics.indexOf(t.topic) === -1) return false;
+      if (f.onlyLearning && isKnown(t.id)) return false;
+      if (q && searchText(t).indexOf(q) === -1) return false;
+      return true;
+    });
+  }
+  function buildDeck(filters) {
+    return applyFilters(filters || currentFilters());
+  }
+
+  // ---------- quiz text and options ----------
+  function trimDef(s) {
+    if (s.length <= 240) return s;
+    var cut = s.slice(0, 240);
+    var idx = cut.lastIndexOf('. ');
+    if (idx >= 120) return cut.slice(0, idx + 1);
+    return cut.replace(/\s+\S*$/, '') + ' …';
+  }
+  function quizDef(t) {
+    var s = String(t.amsco || '');
+    s = s.replace(/^AMSCO gives no formal one-sentence definition\.\s*Usage:\s*/, '');
+    var stage = /Stage \d/.test(t.term) || /^ETM Stage \d/.test(s);
+    if (/^DTM Stage \d$/.test(t.term)) s = s.replace(/^[^.]*\.\s*/, '');
+    s = s.replace(/^ETM Stage \d(?: \(AMSCO: [^)]*\))?\.\s*/, '');
+    var names = [t.term];
+    var bare = t.term.replace(/\s*\([^)]*\)\s*$/, '');
+    if (bare && bare !== t.term) names.push(bare);
+    (t.alsoCalled || []).forEach(function (a) { if (a && a.length >= 3) names.push(a); });
+    names.sort(function (a, b) { return b.length - a.length; });
+    names.forEach(function (n) {
+      s = s.replace(new RegExp('\\b' + escapeRe(n) + '\\b', 'gi'), '_____');
+    });
+    if (stage) s = s.replace(/\bStage \d\b/g, '_____');
+    s = s.replace(/\s+/g, ' ').trim();
+    return trimDef(s);
+  }
+  function makeOptions(term, mode, pool) {
+    var list = (pool && pool.length) ? pool : TERMS;
+    var textOf = mode === 'def2term' ? function (t) { return t.term; } : quizDef;
+    var answer = textOf(term);
+    var seen = {};
+    seen[norm(answer)] = true;
+    var same = [], other = [];
+    list.forEach(function (t) {
+      if (t.id === term.id) return;
+      (t.topic === term.topic ? same : other).push(t);
+    });
+    var ordered = shuffle(same).concat(
+      shuffle(other).sort(function (a, b) { return topicDist(a.topic, term.topic) - topicDist(b.topic, term.topic); })
+    );
+    var picks = [];
+    for (var i = 0; i < ordered.length && picks.length < 4; i++) {
+      var txt = textOf(ordered[i]);
+      var key = norm(txt);
+      if (seen[key]) continue;
+      seen[key] = true;
+      picks.push(txt);
+    }
+    var options = shuffle(picks.concat([answer]));
+    return { options: options, correctIndex: options.indexOf(answer) };
+  }
+  function pickMode() { return Math.random() < 0.5 ? 'def2term' : 'term2def'; }
+
+  // ---------- cards ----------
+  function renderCard(t) {
+    var art = el('article', { 'class': 'card', id: 'term-' + t.id, 'data-term-id': String(t.id) });
+    var row = el('div', { 'class': 'flex items-start gap-3' });
+    var marker = el('span', { 'class': 'marker', 'data-marker': '', role: 'img', 'aria-label': 'Status: New' });
+    marker.appendChild(markerSvg());
+    row.appendChild(marker);
+    var box = el('div', { 'class': 'min-w-0' });
+    box.appendChild(el('h3', { 'class': 'card-term' }, t.term));
+    var meta = el('div', { 'class': 'card-meta' });
+    meta.appendChild(el('span', { 'class': 'badge' }, 'Topic ' + t.topic));
+    meta.appendChild(el('span', { 'class': 'stamp' }, pageLabel(t.page)));
+    meta.appendChild(el('span', { 'class': 'video-tag' }, t.video === 'none' ? 'No video' : 'AP Daily ' + t.video));
+    meta.appendChild(el('span', { 'class': 'status-text', 'data-status-text': '' }, 'New'));
+    box.appendChild(meta);
+    row.appendChild(box);
+    art.appendChild(row);
+    if (t.alsoCalled && t.alsoCalled.length) {
+      art.appendChild(el('p', { 'class': 'also' }, 'Also called: ' + t.alsoCalled.join(', ')));
+    }
+
+    // plain-English hint (hidden when Show hints is off)
+    var plain = el('div', { 'class': 'panel-lagoon', 'data-hint': '' });
+    plain.appendChild(el('p', { 'class': 'label' }, 'Plain English'));
+    plain.appendChild(el('p', { 'class': 'm-0' }, t.plain));
+    art.appendChild(plain);
+
+    // AMSCO wording and example, collapsed by default
+    var amId = 'amsco-' + t.id;
+    var amBtn = el('button', { type: 'button', 'class': 'btn-secondary mt-3', 'aria-expanded': 'false', 'aria-controls': amId }, 'Show AMSCO wording');
+    var amPanel = el('div', { id: amId, 'class': 'mt-2' });
+    amPanel.hidden = true;
+    amPanel.appendChild(el('p', { 'class': 'label' }, 'AMSCO says'));
+    amPanel.appendChild(amscoNode(t.amsco));
+    amPanel.appendChild(el('p', { 'class': 'label' }, 'Example'));
+    amPanel.appendChild(el('p', { 'class': 'm-0' }, t.example));
+    amBtn.addEventListener('click', function () {
+      var open = amBtn.getAttribute('aria-expanded') === 'true';
+      amBtn.setAttribute('aria-expanded', String(!open));
+      amBtn.textContent = open ? 'Show AMSCO wording' : 'Hide AMSCO wording';
+      amPanel.hidden = open;
+    });
+    art.appendChild(amBtn);
+    art.appendChild(amPanel);
+
+    // watch-out (collapsed on narrow screens)
+    if (t.watchOut) {
+      var wId = 'watch-' + t.id;
+      var narrow = false;
+      try { narrow = window.matchMedia('(max-width: 639px)').matches; } catch (e) { narrow = false; }
+      var wBtn = el('button', { type: 'button', 'class': 'btn-secondary mt-3', 'aria-expanded': String(!narrow), 'aria-controls': wId }, narrow ? 'Watch out (show)' : 'Watch out (hide)');
+      var wPanel = el('div', { id: wId, 'class': 'panel-flag' });
+      wPanel.hidden = narrow;
+      wPanel.appendChild(el('p', { 'class': 'm-0' }, t.watchOut));
+      wBtn.addEventListener('click', function () {
+        var open = wBtn.getAttribute('aria-expanded') === 'true';
+        wBtn.setAttribute('aria-expanded', String(!open));
+        wBtn.textContent = open ? 'Watch out (show)' : 'Watch out (hide)';
+        wPanel.hidden = open;
+      });
+      art.appendChild(wBtn);
+      art.appendChild(wPanel);
+    }
+
+    // memory trick (text already begins with "Memory trick (not from AMSCO):")
+    if (t.trick) art.appendChild(el('p', { 'class': 'trick', 'data-hint': '' }, t.trick));
+
+    // related terms that exist in the data
+    var rel = (t.related || []).map(function (name) { return BY_NAME[norm(name)]; }).filter(Boolean);
+    if (rel.length) {
+      var wrap = el('div', { 'class': 'mt-3' });
+      wrap.appendChild(el('p', { 'class': 'label' }, 'Compare with'));
+      var ul = el('ul', { 'class': 'flex flex-wrap gap-2 list-none p-0 m-0' });
+      rel.forEach(function (r) {
+        var li = el('li');
+        var b = el('button', { type: 'button', 'class': 'chip' }, r.term);
+        b.addEventListener('click', function () { jumpToTerm(r.id); });
+        li.appendChild(b);
+        ul.appendChild(li);
+      });
+      wrap.appendChild(ul);
+      art.appendChild(wrap);
+    }
+
+    art.appendChild(el('p', { 'class': 'caption' }, 'Source: ' + t.source));
+
+    // controls
+    var ctl = el('div', { 'class': 'controls' });
+    var bL = el('button', { type: 'button', 'class': 'btn-secondary', 'data-act': 'learning', 'aria-pressed': 'false' }, 'Still learning');
+    var bK = el('button', { type: 'button', 'class': 'btn-secondary', 'data-act': 'known', 'aria-pressed': 'false' }, 'I know this');
+    bL.addEventListener('click', function () { setStatus(t.id, 'learning'); });
+    bK.addEventListener('click', function () { setStatus(t.id, 'known'); });
+    ctl.appendChild(bL);
+    ctl.appendChild(bK);
+    art.appendChild(ctl);
+    return art;
+  }
+  function updateCard(id) {
+    var art = document.getElementById('term-' + id);
+    if (!art) return;
+    var m = state.mastery[id] || blankMastery();
+    var d = displayStatus(id);
+    var marker = art.querySelector('[data-marker]');
+    marker.setAttribute('data-state', d);
+    marker.setAttribute('aria-label', 'Status: ' + STATUS_LABEL[d]);
+    art.querySelector('[data-status-text]').textContent = STATUS_LABEL[d];
+    art.querySelectorAll('[data-act]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(m.status === b.getAttribute('data-act')));
+    });
+  }
+  function renderTopics(terms, filters) {
+    terms.forEach(function (t) {
+      var sec = document.getElementById('topic-' + t.topic);
+      if (!sec) return;
+      var box = sec.querySelector('[data-cards]');
+      if (!box.querySelector('#term-' + t.id)) {
+        box.appendChild(renderCard(t));
+        sec.querySelector('[data-topic-title]').textContent = t.topic + '  ' + t.topicTitle;
+      }
+    });
+    applyVisibility(filters);
+  }
+  function applyVisibility() {
+    var visible = {};
+    applyFilters({ topics: currentTopicList(), search: refs.search.value }).forEach(function (t) { visible[t.id] = true; });
+    var any = false;
+    TOPIC_ORDER.forEach(function (tp) {
+      var sec = document.getElementById('topic-' + tp);
+      var count = 0;
+      sec.querySelectorAll('article.card').forEach(function (card) {
+        var id = Number(card.getAttribute('data-term-id'));
+        var on = !!visible[id];
+        card.hidden = !on;
+        if (on) count++;
+      });
+      sec.hidden = count === 0;
+      if (count) any = true;
+    });
+    refs.noMatch.hidden = any;
+  }
+  function applyHints() {
+    document.querySelectorAll('[data-hint]').forEach(function (n) {
+      n.hidden = !state.settings.hints;
+    });
+  }
+  function jumpToTerm(id) {
+    var art = document.getElementById('term-' + id);
+    if (!art) return;
+    var sec = art.closest('section');
+    if (art.hidden || (sec && sec.hidden)) {
+      state.settings.topicFilter = 'all';
+      refs.search.value = '';
+      saveState();
+      syncControls();
+    }
+    art.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' });
+    var head = art.querySelector('h3');
+    if (head) {
+      head.setAttribute('tabindex', '-1');
+      head.focus({ preventScroll: true });
+    }
+  }
+
+  // ---------- header, plan, progress ----------
+  function renderCountdown(now) {
+    var sameDay = now.getFullYear() === 2026 && now.getMonth() === 9 && now.getDate() === 26;
+    if (sameDay) return 'Test day';
+    var diff = TEST_START.getTime() - now.getTime();
+    if (diff <= 0) return 'Test has passed';
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var h = hours + (hours === 1 ? ' hour' : ' hours');
+    if (days === 0) return h;
+    return days + (days === 1 ? ' day ' : ' days ') + h;
+  }
+  function renderHeader() {
+    refs.countdown.textContent = renderCountdown(new Date());
+  }
+  function practiceRow(row) {
+    state.settings.topicFilter = row.topics ? row.topics.slice() : 'all';
+    state.settings.onlyLearning = !!row.missedOnly;
+    saveState();
+    syncControls();
+    rebuildDeck();
+    var sec = document.getElementById('flashcards');
+    sec.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' });
+    sec.focus({ preventScroll: true });
+  }
+  function renderPlan(today) {
+    clear(refs.planBody);
+    var todayKey = dateKey(today);
+    PLAN_ROWS.forEach(function (row) {
+      var isToday = row.date === todayKey;
+      var tr = el('tr', isToday ? { 'class': 'tint-chart', 'aria-current': 'date' } : {});
+      tr.appendChild(el('td', { 'data-label': 'Day' }, row.day + (isToday ? ' (today)' : '')));
+      tr.appendChild(el('td', { 'data-label': 'Terms (count)' }, row.terms));
+      tr.appendChild(el('td', { 'data-label': 'AMSCO pages' }, row.pages));
+      tr.appendChild(el('td', { 'data-label': 'AP Daily videos' }, row.videos));
+      tr.appendChild(el('td', { 'data-label': 'Practice mode' }, row.mode));
+      tr.appendChild(el('td', { 'data-label': 'Target' }, row.target));
+      var td = el('td', { 'data-label': 'Practice now' });
+      var btn = el('button', { type: 'button', 'class': 'btn-secondary' }, "Practice today's terms");
+      btn.addEventListener('click', function () { practiceRow(row); });
+      td.appendChild(btn);
+      tr.appendChild(td);
+      refs.planBody.appendChild(tr);
+    });
+  }
+  function renderProgress() {
+    var known = 0, learning = 0;
+    TERMS.forEach(function (t) {
+      var d = displayStatus(t.id);
+      if (d === 'known') known++;
+      else if (d === 'learning') learning++;
+    });
+    var missed = computeMissed();
+    refs.progressFill.style.width = (TERMS.length ? (known / TERMS.length * 100) : 0) + '%';
+    refs.progressTrack.setAttribute('aria-valuenow', String(known));
+    refs.progressText.textContent = known + ' of ' + TERMS.length + ' known';
+    refs.countLearning.textContent = String(learning);
+    refs.countMissed.textContent = String(missed.length);
+    TOPIC_ORDER.forEach(function (tp) {
+      var sec = document.getElementById('topic-' + tp);
+      var all = TERMS.filter(function (t) { return t.topic === tp; });
+      var k = all.filter(function (t) { return isKnown(t.id); }).length;
+      sec.querySelector('[data-plate-count]').textContent = k + ' of ' + all.length + ' known';
+    });
+    renderMissed();
+  }
+  function renderMissed() {
+    var list = computeMissed();
+    clear(refs.missedList);
+    refs.missedEmpty.hidden = list.length > 0;
+    refs.missedQuiz.disabled = list.length === 0;
+    list.forEach(function (t) {
+      var li = el('li', { 'class': 'missed-row' });
+      var info = el('div', { 'class': 'min-w-0' });
+      info.appendChild(el('p', { 'class': 'font-bold m-0' }, t.term));
+      var m = state.mastery[t.id] || blankMastery();
+      info.appendChild(el('p', { 'class': 'caption' }, 'Topic ' + t.topic + ' · ' + pageLabel(t.page) + ' · Missed ' + m.missed + (m.missed === 1 ? ' time' : ' times') + ' · ' + STATUS_LABEL[displayStatus(t.id)]));
+      var btn = el('button', { type: 'button', 'class': 'btn-secondary' }, 'Study this card');
+      btn.addEventListener('click', function () { jumpToTerm(t.id); });
+      li.appendChild(info);
+      li.appendChild(btn);
+      refs.missedList.appendChild(li);
+    });
+  }
+
+  // ---------- controls sync ----------
+  function buildChips() {
+    ['all'].concat(TOPIC_ORDER).forEach(function (v) {
+      var b = el('button', { type: 'button', 'class': 'chip', 'data-topic': v }, v === 'all' ? 'All' : v);
+      b.addEventListener('click', function () {
+        state.settings.topicFilter = v;
+        saveState();
+        syncControls();
+        rebuildDeck();
+      });
+      refs.chips.appendChild(b);
+    });
+  }
+  function syncControls() {
+    var topics = currentTopicList();
+    refs.chips.querySelectorAll('button').forEach(function (b) {
+      var v = b.getAttribute('data-topic');
+      var on = v === 'all' ? !topics : !!(topics && topics.length === 1 && topics[0] === v);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    var custom = refs.fcTopic.querySelector('option[data-custom]');
+    if (topics && topics.length !== 1) {
+      if (!custom) {
+        custom = el('option', { value: 'custom', 'data-custom': '' }, 'Custom set (weekly plan)');
+        refs.fcTopic.appendChild(custom);
+      }
+      refs.fcTopic.value = 'custom';
+    } else {
+      if (custom) refs.fcTopic.removeChild(custom);
+      refs.fcTopic.value = topics ? topics[0] : 'all';
+    }
+    refs.fcOnly.checked = !!state.settings.onlyLearning;
+    refs.quizOnly.checked = !!state.settings.onlyLearning;
+    refs.hintsBtn.setAttribute('aria-pressed', String(!!state.settings.hints));
+    refs.hintsBtn.textContent = 'Show hints: ' + (state.settings.hints ? 'on' : 'off');
+    applyHints();
+    applyVisibility();
+  }
+
+  // ---------- flashcards ----------
+  function rebuildDeck() {
+    deck = buildDeck(currentFilters());
+    deckIndex = 0;
+    flipped = false;
+    renderFlash();
+  }
+  function fillFront(t) {
+    clear(refs.fcFront);
+    refs.fcFront.appendChild(el('p', { 'class': 'badge' }, 'Topic ' + t.topic + '  ' + t.topicTitle));
+    refs.fcFront.appendChild(el('h3', { 'class': 'card-term mt-3' }, t.term));
+    refs.fcFront.appendChild(el('p', { 'class': 'caption' }, 'Flip to see the definition.'));
+  }
+  function fillBack(t) {
+    clear(refs.fcBack);
+    refs.fcBack.appendChild(el('p', { 'class': 'label mt-0' }, 'AMSCO definition'));
+    refs.fcBack.appendChild(amscoNode(t.amsco));
+    refs.fcBack.appendChild(el('p', { 'class': 'label' }, 'Plain English'));
+    refs.fcBack.appendChild(el('p', { 'class': 'm-0' }, t.plain));
+    refs.fcBack.appendChild(el('p', { 'class': 'label' }, 'Example'));
+    refs.fcBack.appendChild(el('p', { 'class': 'm-0' }, t.example));
+    refs.fcBack.appendChild(el('p', { 'class': 'caption' }, pageLabel(t.page) + ' · ' + t.source));
+  }
+  function renderFlash() {
+    var t = deck[deckIndex];
+    refs.fcStage.hidden = !t;
+    refs.fcEmpty.hidden = !!t;
+    refs.fcCounter.textContent = t ? 'Card ' + (deckIndex + 1) + ' of ' + deck.length : '';
+    if (!t) return;
+    fillFront(t);
+    fillBack(t);
+    refs.fcFlip.classList.toggle('is-flipped', flipped);
+    refs.fcFront.setAttribute('aria-hidden', String(flipped));
+    refs.fcBack.setAttribute('aria-hidden', String(!flipped));
+    refs.fcFlipBtn.setAttribute('aria-expanded', String(flipped));
+    refs.fcFlipBtn.textContent = flipped ? 'Show term' : 'Flip card';
+  }
+  function flipCard() {
+    if (!deck[deckIndex]) return;
+    flipped = !flipped;
+    renderFlash();
+    refs.fcLive.textContent = flipped ? 'Showing definition.' : 'Showing term.';
+  }
+  function nextCard() {
+    if (!deck.length) return;
+    deckIndex = (deckIndex + 1) % deck.length;
+    flipped = false;
+    renderFlash();
+    refs.fcLive.textContent = 'Card ' + (deckIndex + 1) + ' of ' + deck.length + ': ' + deck[deckIndex].term;
+  }
+  function prevCard() {
+    if (!deck.length) return;
+    deckIndex = (deckIndex - 1 + deck.length) % deck.length;
+    flipped = false;
+    renderFlash();
+    refs.fcLive.textContent = 'Card ' + (deckIndex + 1) + ' of ' + deck.length + ': ' + deck[deckIndex].term;
+  }
+  function markCard(status) {
+    var t = deck[deckIndex];
+    if (!t) return;
+    setStatus(t.id, status);
+    if (status === 'known') {
+      nextCard();
+    } else {
+      refs.fcLive.textContent = 'Marked still learning: ' + t.term + '.';
+    }
+  }
+
+  // ---------- quiz ----------
+  function showQuizStage(on) {
+    refs.quizStage.hidden = !on;
+  }
+  function startQuiz(mode, opts) {
+    opts = opts || {};
+    var pool;
+    if (mode === 'full') pool = TERMS.slice();
+    else if (opts.ids) pool = applyFilters({ ids: opts.ids });
+    else pool = applyFilters(currentFilters());
+    if (!pool.length) {
+      refs.quizMsg.textContent = 'No terms match these filters. Clear a filter or pick another topic.';
+      quiz = null;
+      showQuizStage(false);
+      return;
+    }
+    refs.quizMsg.textContent = '';
+    quiz = {
+      mode: mode,
+      ids: pool.map(function (t) { return t.id; }),
+      queue: [],
+      qi: 0,
+      current: null,
+      attempted: {},
+      firstTotal: 0,
+      firstCorrect: 0,
+      inFixUp: mode !== 'full',
+      done: false,
+      ended: false
+    };
+    quiz.queue = shuffle(pool).map(function (t) {
+      return { id: t.id, mode: mode === 'full' ? pickMode() : mode };
+    });
+    showQuizStage(true);
+    showQuestion();
+  }
+  function startFixUp() {
+    var ids = quiz.ids.filter(function (id) { return !isKnown(id); });
+    quiz.inFixUp = true;
+    if (!ids.length) { finishQuiz(); return; }
+    quiz.queue = shuffle(ids).map(function (id) { return { id: id, mode: pickMode() }; });
+    quiz.qi = 0;
+    quiz.current = null;
+    showQuestion();
+  }
+  function showQuestion() {
+    if (quiz.qi >= quiz.queue.length) {
+      if (!quiz.inFixUp) { startFixUp(); return; }
+      finishQuiz();
+      return;
+    }
+    var item = quiz.queue[quiz.qi];
+    var t = BY_ID[item.id];
+    var made = makeOptions(t, item.mode, TERMS);
+    quiz.current = { item: item, term: t, options: made.options, correctIndex: made.correctIndex, answered: false };
+    renderQuestion();
+  }
+  function renderQuestion() {
+    var cur = quiz.current;
+    var t = cur.term;
+    refs.quizEnd.hidden = false;
+    var left = quiz.ids.filter(function (id) { return !isKnown(id); }).length;
+    refs.quizCount.textContent = 'Question ' + (quiz.qi + 1) + ' · terms left to clear: ' + left;
+    refs.quizLabel.textContent = cur.item.mode === 'def2term' ? 'Which term matches this definition?' : 'Which definition matches this term?';
+    refs.quizPrompt.textContent = cur.item.mode === 'def2term' ? quizDef(t) : t.term;
+    clear(refs.quizOptions);
+    clear(refs.quizFeedback);
+    refs.quizNext.hidden = true;
+    cur.options.forEach(function (text, i) {
+      var li = el('li');
+      var b = el('button', { type: 'button', 'class': 'quiz-opt' });
+      b.appendChild(el('span', { 'class': 'kbd', 'aria-hidden': 'true' }, String(i + 1)));
+      b.appendChild(document.createTextNode(text));
+      b.addEventListener('click', function () { answerQuestion(i); });
+      li.appendChild(b);
+      refs.quizOptions.appendChild(li);
+    });
+    renderMeter();
+    refs.quizPrompt.setAttribute('tabindex', '-1');
+    refs.quizPrompt.focus({ preventScroll: true });
+  }
+  function requeue(termId, mode) {
+    var k = 3 + Math.floor(Math.random() * 3);
+    var at = Math.min(quiz.qi + k, quiz.queue.length);
+    quiz.queue.splice(at, 0, { id: termId, mode: mode });
+  }
+  function answerQuestion(index) {
+    if (!quiz || quiz.done || !quiz.current || quiz.current.answered) return;
+    if (index < 0 || index >= quiz.current.options.length) return;
+    var cur = quiz.current;
+    cur.answered = true;
+    var t = cur.term;
+    var correct = index === cur.correctIndex;
+    if (!quiz.attempted[t.id]) {
+      quiz.attempted[t.id] = true;
+      quiz.firstTotal++;
+      if (correct) quiz.firstCorrect++;
+    }
+    var m = mast(t.id);
+    m.seen += 1;
+    m.last = new Date().toISOString();
+    if (correct) {
+      m.streak += 1;
+      if (m.streak >= 2) m.status = 'known';
+    } else {
+      m.streak = 0;
+      m.missed += 1;
+      m.status = 'learning';
+    }
+    saveState();
+    var canRequeue = quiz.mode !== 'full' || quiz.inFixUp;
+    if (!isKnown(t.id) && canRequeue) requeue(t.id, cur.item.mode);
+    renderAnswer(index, correct);
+    renderMeter();
+    renderProgress();
+    updateCard(t.id);
+  }
+  function renderAnswer(index, correct) {
+    var cur = quiz.current;
+    var t = cur.term;
+    refs.quizOptions.querySelectorAll('button').forEach(function (b, i) {
+      b.disabled = true;
+      if (i === cur.correctIndex) {
+        b.classList.add('opt-correct');
+        b.appendChild(el('span', { 'class': 'tag' }, '✓ Correct answer'));
+      } else if (i === index) {
+        b.classList.add('opt-wrong');
+        b.appendChild(el('span', { 'class': 'tag' }, '✗ Your answer'));
+      }
+    });
+    var fb = refs.quizFeedback;
+    clear(fb);
+    fb.appendChild(el('p', { 'class': 'font-bold m-0 ' + (correct ? '' : 'text-flag') }, correct ? '✓ Correct.' : '✗ Not quite.'));
+    if (cur.item.mode === 'def2term') fb.appendChild(el('p', { 'class': 'm-0' }, 'The term is: ' + t.term + '.'));
+    else fb.appendChild(el('p', { 'class': 'm-0' }, 'The matching definition is marked above. Term: ' + t.term + '.'));
+    fb.appendChild(el('p', { 'class': 'label' }, 'AMSCO wording (' + pageLabel(t.page) + ')'));
+    fb.appendChild(amscoNode(t.amsco));
+    fb.appendChild(el('p', { 'class': 'label' }, 'Plain English'));
+    fb.appendChild(el('p', { 'class': 'm-0' }, t.plain));
+    if (t.watchOut) {
+      var panel = el('div', { 'class': 'panel-flag' });
+      panel.appendChild(el('p', { 'class': 'm-0' }, 'Watch out: ' + t.watchOut));
+      fb.appendChild(panel);
+    }
+    refs.quizNext.hidden = false;
+    refs.quizNext.focus({ preventScroll: true });
+  }
+  function nextQuestion() {
+    if (!quiz || quiz.done || !quiz.current || !quiz.current.answered) return;
+    quiz.qi++;
+    quiz.current = null;
+    showQuestion();
+  }
+  function renderMeter() {
+    if (!quiz) {
+      refs.quizMeterFill.style.width = '0%';
+      refs.quizMeterText.textContent = '';
+      return;
+    }
+    var total = quiz.firstTotal;
+    var pct = total ? Math.round(quiz.firstCorrect / total * 100) : 0;
+    refs.quizMeterFill.style.width = pct + '%';
+    refs.quizMeter.setAttribute('aria-valuenow', String(pct));
+    var cleared = quiz.ids.filter(function (id) { return isKnown(id); }).length;
+    refs.quizMeterText.textContent = 'First-try accuracy ' + pct + '% (' + quiz.firstCorrect + ' of ' + total + '). Goal 100%. Cleared ' + cleared + ' of ' + quiz.ids.length + '. Best for this mode: ' + (state.best[quiz.mode] || 0) + '%.';
+  }
+  function finishQuiz() {
+    if (!quiz) return;
+    quiz.done = true;
+    quiz.current = null;
+    var total = quiz.firstTotal;
+    var pct = total ? Math.round(quiz.firstCorrect / total * 100) : 0;
+    if ((state.best[quiz.mode] || 0) < pct) state.best[quiz.mode] = pct;
+    saveState();
+    var cleared = quiz.ids.filter(function (id) { return isKnown(id); }).length;
+    refs.quizCount.textContent = '';
+    refs.quizLabel.textContent = '';
+    refs.quizPrompt.textContent = '';
+    clear(refs.quizOptions);
+    refs.quizNext.hidden = true;
+    refs.quizEnd.hidden = true;
+    var fb = refs.quizFeedback;
+    clear(fb);
+    fb.appendChild(el('p', { 'class': 'font-bold' }, quiz.ended ? 'Session ended early.' : 'Session complete.'));
+    fb.appendChild(el('p', { 'class': 'm-0' }, 'First-try accuracy: ' + pct + '% (' + quiz.firstCorrect + ' of ' + total + ').'));
+    fb.appendChild(el('p', { 'class': 'm-0' }, 'Cleared: ' + cleared + ' of ' + quiz.ids.length + '.' + (cleared === quiz.ids.length ? ' Every term here is answered correctly twice in a row.' : ' Missed terms are listed below.')));
+    renderMeter();
+    renderProgress();
+  }
+  function endQuizEarly() {
+    if (!quiz || quiz.done) return;
+    quiz.ended = true;
+    finishQuiz();
+  }
+
+  // ---------- keyboard ----------
+  function onKeydown(e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    var tgt = e.target;
+    var tag = (tgt && tgt.tagName) ? tgt.tagName : '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (tgt && tgt.isContentEditable)) return;
+    var active = document.activeElement;
+    var key = e.key;
+    if (active && refs.fcSection.contains(active)) {
+      if ((key === ' ' || key === 'Enter') && tag !== 'BUTTON' && tag !== 'A') { e.preventDefault(); flipCard(); return; }
+      if (key === 'ArrowRight') { e.preventDefault(); nextCard(); return; }
+      if (key === 'ArrowLeft') { e.preventDefault(); prevCard(); return; }
+      if (key === '1') { e.preventDefault(); markCard('learning'); return; }
+      if (key === '2') { e.preventDefault(); markCard('known'); return; }
+    }
+    if (active && refs.quizSection.contains(active) && quiz && !quiz.done) {
+      if (/^[1-5]$/.test(key)) { e.preventDefault(); answerQuestion(Number(key) - 1); return; }
+      if (key === 'Enter' && quiz.current && quiz.current.answered && tag !== 'BUTTON' && tag !== 'A') {
+        e.preventDefault();
+        nextQuestion();
+      }
+    }
+  }
+
+  // ---------- print ----------
+  function printCheatSheet(termsOnly) {
+    var old = document.getElementById('print-sheet');
+    if (old && old.parentNode) old.parentNode.removeChild(old);
+    var sheet = el('div', { id: 'print-sheet' });
+    sheet.appendChild(el('h1', null, 'Unit 2 Vocabulary cheat sheet'));
+    TOPIC_ORDER.forEach(function (tp) {
+      TERMS.filter(function (t) { return t.topic === tp; }).forEach(function (t) {
+        var row = el('div', { 'class': 'ps-row' });
+        row.appendChild(el('p', { 'class': 'ps-term' }, t.term + ' (' + pageLabel(t.page) + ')'));
+        row.appendChild(el('p', null, t.plain));
+        if (!termsOnly) row.appendChild(amscoNode(t.amsco));
+        sheet.appendChild(row);
+      });
+    });
+    document.body.appendChild(sheet);
+    var cleanup = function () {
+      if (sheet.parentNode) sheet.parentNode.removeChild(sheet);
+      window.removeEventListener('afterprint', cleanup);
+    };
+    window.addEventListener('afterprint', cleanup);
+    window.print();
+  }
+
+  // ---------- wiring ----------
+  function cacheRefs() {
+    function $(id) { return document.getElementById(id); }
+    refs = {
+      search: $('search'), noMatch: $('no-match'), chips: $('topic-chips'), hintsBtn: $('hints-toggle'),
+      countdown: $('countdown'), progressTrack: $('progress-track'), progressFill: $('progress-fill'),
+      progressText: $('progress-text'), countLearning: $('count-learning'), countMissed: $('count-missed'),
+      storageNotice: $('storage-notice'), planBody: $('plan-body'),
+      fcSection: $('flashcards'), fcTopic: $('fc-topic'), fcOnly: $('fc-only'), fcShuffle: $('fc-shuffle'),
+      fcCounter: $('fc-counter'), fcStage: $('fc-stage'), fcEmpty: $('fc-empty'), fcReset: $('fc-reset'),
+      fcFlip: $('fc-flip'), fcFront: $('fc-front'), fcBack: $('fc-back'), fcFlipBtn: $('fc-flip-btn'),
+      fcPrev: $('fc-prev'), fcNext: $('fc-next'), fcStill: $('fc-still'), fcKnown: $('fc-known'), fcLive: $('fc-live'),
+      quizSection: $('quiz'), quizOnly: $('quiz-only'), quizMsg: $('quiz-msg'), quizStage: $('quiz-stage'),
+      quizCount: $('quiz-count'), quizEnd: $('quiz-end'), quizMeter: $('quiz-meter'), quizMeterFill: $('quiz-meter-fill'),
+      quizMeterText: $('quiz-meter-text'), quizLabel: $('quiz-label'), quizPrompt: $('quiz-prompt'),
+      quizOptions: $('quiz-options'), quizFeedback: $('quiz-feedback'), quizNext: $('quiz-next'),
+      missedList: $('missed-list'), missedEmpty: $('missed-empty'), missedQuiz: $('missed-quiz'),
+      printFull: $('print-full'), printTerms: $('print-terms')
+    };
+  }
+  function bindEvents() {
+    refs.search.addEventListener('input', function () {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(applyVisibility, 150);
+    });
+    refs.hintsBtn.addEventListener('click', function () {
+      state.settings.hints = !state.settings.hints;
+      saveState();
+      syncControls();
+    });
+    refs.fcTopic.addEventListener('change', function () {
+      var v = refs.fcTopic.value;
+      if (v === 'custom') return;
+      state.settings.topicFilter = v;
+      saveState();
+      syncControls();
+      rebuildDeck();
+    });
+    refs.fcOnly.addEventListener('change', function () {
+      state.settings.onlyLearning = refs.fcOnly.checked;
+      saveState();
+      syncControls();
+      rebuildDeck();
+    });
+    refs.quizOnly.addEventListener('change', function () {
+      state.settings.onlyLearning = refs.quizOnly.checked;
+      saveState();
+      syncControls();
+      rebuildDeck();
+    });
+    refs.fcShuffle.addEventListener('click', function () {
+      deck = shuffle(deck);
+      deckIndex = 0;
+      flipped = false;
+      renderFlash();
+    });
+    refs.fcReset.addEventListener('click', function () {
+      state.settings.topicFilter = 'all';
+      state.settings.onlyLearning = false;
+      saveState();
+      syncControls();
+      rebuildDeck();
+    });
+    refs.fcFlipBtn.addEventListener('click', flipCard);
+    refs.fcPrev.addEventListener('click', prevCard);
+    refs.fcNext.addEventListener('click', nextCard);
+    refs.fcStill.addEventListener('click', function () { markCard('learning'); });
+    refs.fcKnown.addEventListener('click', function () { markCard('known'); });
+    document.querySelectorAll('[data-quiz-mode]').forEach(function (b) {
+      b.addEventListener('click', function () { startQuiz(b.getAttribute('data-quiz-mode')); });
+    });
+    refs.quizNext.addEventListener('click', nextQuestion);
+    refs.quizEnd.addEventListener('click', endQuizEarly);
+    refs.missedQuiz.addEventListener('click', function () {
+      startQuiz('def2term', { ids: computeMissed().map(function (t) { return t.id; }) });
+    });
+    refs.printFull.addEventListener('click', function () { printCheatSheet(false); });
+    refs.printTerms.addEventListener('click', function () { printCheatSheet(true); });
+    document.addEventListener('keydown', onKeydown);
+  }
+
+  function init() {
+    TERMS = loadTerms();
+    TERMS.forEach(function (t) {
+      BY_ID[t.id] = t;
+      BY_NAME[norm(t.term)] = t;
+    });
+    cacheRefs();
+    state = loadState();
+    if (!getStore()) markUnsaved();
+    document.querySelectorAll('[data-legend-marker]').forEach(function (node) {
+      node.appendChild(markerSvg());
+    });
+    buildChips();
+    renderTopics(TERMS, currentFilters());
+    renderPlan(new Date());
+    renderHeader();
+    TERMS.forEach(function (t) { updateCard(t.id); });
+    renderProgress();
+    syncControls();
+    rebuildDeck();
+    showQuizStage(false);
+    bindEvents();
+    setInterval(renderHeader, 60000);
+    window.__u2 = { terms: TERMS, state: state, makeOptions: makeOptions, quizDef: quizDef, applyFilters: applyFilters, renderCountdown: renderCountdown };
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
+(function(){
+  var KEY="u2vocab.v1.guide";
+  var btn=document.getElementById("guide-toggle"),txt=document.getElementById("guide-toggle-text"),
+      body=document.getElementById("guide"),hide=document.getElementById("guide-hide"),
+      sec=document.getElementById("guide");
+  if(!btn||!body)return;
+  function set(open,scroll){
+    body.hidden=!open;
+    btn.setAttribute("aria-expanded",open?"true":"false");
+    txt.textContent=open?"Hide: how to use this page":"Show: how to use this page";
+    try{localStorage.setItem(KEY,open?"open":"closed");}catch(e){}
+    if(open&&scroll)sec.scrollIntoView({behavior:"smooth",block:"start"});
+  }
+  var saved=null;try{saved=localStorage.getItem(KEY);}catch(e){}
+  set(saved!=="closed",false);
+  btn.addEventListener("click",function(){set(body.hidden,true);});
+  hide.addEventListener("click",function(){set(false,false);btn.focus();});
+})();
+</script>
+</body>
+</html>
