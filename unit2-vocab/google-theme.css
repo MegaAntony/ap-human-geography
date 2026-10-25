@@ -1,0 +1,388 @@
+/* Google Style Clean Theme for AP Human Geography Vocab Studio */
+/* High Readability, Google Docs/Classroom/Material Aesthetic */
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Outfit:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  --google-bg-canvas: #f8f9fa;
+  --google-bg-card: #ffffff;
+  --google-bg-hover: #f1f3f4;
+  --google-border: #dadce0;
+  --google-border-subtle: #e8eaed;
+  --google-text-primary: #202124;
+  --google-text-secondary: #3c4043;
+  --google-text-muted: #5f6368;
+  --google-blue: #1a73e8;
+  --google-blue-hover: #1557b0;
+  --google-blue-bg: rgba(26, 115, 232, 0.08);
+  --google-green: #1e8e3e;
+  --google-green-bg: #e6f4ea;
+  --google-green-border: #34a853;
+  --google-green-text: #137333;
+  --google-amber: #b06000;
+  --google-amber-bg: #fef7e0;
+  --google-amber-border: #f9ab00;
+  --google-red: #d93025;
+  --google-red-bg: #fce8e6;
+  --google-red-border: #ea4335;
+  --google-red-text: #c5221f;
+  --google-card-shadow: 0 1px 3px rgba(60, 64, 67, 0.12), 0 1px 2px rgba(60, 64, 67, 0.24);
+  --google-card-hover-shadow: 0 4px 8px rgba(60, 64, 67, 0.15), 0 1px 3px rgba(60, 64, 67, 0.3);
+}
+
+/* ==========================================================================
+   DEFAULT: GOOGLE CLEAN LIGHT MODE (When html does NOT have class "dark")
+   ========================================================================== */
+
+html:not(.dark) body {
+  background-color: var(--google-bg-canvas) !important;
+  color: var(--google-text-primary) !important;
+  font-family: 'Google Sans', 'Roboto', 'Plus Jakarta Sans', sans-serif !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Base Canvas & Background Overrides */
+html:not(.dark) .bg-slate-950,
+html:not(.dark) .bg-slate-950\/70,
+html:not(.dark) .bg-slate-950\/85,
+html:not(.dark) .bg-slate-950\/90 {
+  background-color: var(--google-bg-canvas) !important;
+}
+
+html:not(.dark) .bg-slate-900,
+html:not(.dark) .bg-slate-900\/60,
+html:not(.dark) .bg-slate-900\/70,
+html:not(.dark) .bg-slate-900\/80,
+html:not(.dark) .bg-slate-900\/90,
+html:not(.dark) .bg-slate-900\/95 {
+  background-color: var(--google-bg-card) !important;
+}
+
+html:not(.dark) .bg-slate-800,
+html:not(.dark) .bg-slate-800\/60,
+html:not(.dark) .bg-slate-800\/80 {
+  background-color: var(--google-bg-hover) !important;
+  color: var(--google-text-primary) !important;
+}
+
+html:not(.dark) .hover\:bg-slate-800:hover,
+html:not(.dark) .hover\:bg-slate-800\/80:hover,
+html:not(.dark) .hover\:bg-slate-700:hover {
+  background-color: #e8eaed !important;
+}
+
+/* Left Command Sidebar in Light Mode */
+html:not(.dark) aside {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  box-shadow: 1px 0 3px rgba(60, 64, 67, 0.08) !important;
+}
+
+html:not(.dark) aside .bg-gradient-to-br {
+  background: #ffffff !important;
+  border-bottom: 1px solid var(--google-border) !important;
+}
+
+/* Sticky Action & Timer Bar in Light Mode */
+html:not(.dark) header {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid var(--google-border) !important;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.12) !important;
+}
+
+/* Borders */
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-800\/60,
+html:not(.dark) .border-slate-800\/90,
+html:not(.dark) .border-slate-700 {
+  border-color: var(--google-border) !important;
+}
+
+/* Typography Hierarchy */
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) .font-heading {
+  color: var(--google-text-primary) !important;
+}
+
+html:not(.dark) p,
+html:not(.dark) li,
+html:not(.dark) td {
+  color: var(--google-text-secondary) !important;
+}
+
+html:not(.dark) .text-white {
+  color: var(--google-text-primary) !important;
+}
+
+html:not(.dark) .text-slate-100,
+html:not(.dark) .text-slate-200 {
+  color: var(--google-text-primary) !important;
+}
+
+html:not(.dark) .text-slate-300,
+html:not(.dark) .text-slate-400 {
+  color: var(--google-text-secondary) !important;
+}
+
+html:not(.dark) .text-slate-500 {
+  color: var(--google-text-muted) !important;
+}
+
+/* Keep Solid Color Button Text White! */
+html:not(.dark) .bg-indigo-600,
+html:not(.dark) .bg-indigo-600 .text-white,
+html:not(.dark) a.bg-indigo-600,
+html:not(.dark) button.bg-indigo-600,
+html:not(.dark) .bg-emerald-600,
+html:not(.dark) a.bg-emerald-600,
+html:not(.dark) button.bg-emerald-600,
+html:not(.dark) .bg-rose-600,
+html:not(.dark) a.bg-rose-600,
+html:not(.dark) button.bg-rose-600 {
+  color: #ffffff !important;
+}
+
+/* Active Navigation Mode in Sidebar */
+html:not(.dark) button[id^="modeBtn-"].bg-indigo-600 {
+  background-color: var(--google-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3) !important;
+}
+html:not(.dark) button[id^="modeBtn-"].bg-indigo-600 * {
+  color: #ffffff !important;
+}
+
+/* Card Elevations */
+html:not(.dark) .rounded-3xl,
+html:not(.dark) .rounded-2xl,
+html:not(.dark) .rounded-xl {
+  box-shadow: var(--google-card-shadow);
+}
+html:not(.dark) .rounded-3xl:hover,
+html:not(.dark) .rounded-2xl:hover {
+  box-shadow: var(--google-card-hover-shadow);
+}
+
+/* How to Study Blueprint Panel */
+html:not(.dark) #howToStudyPanel {
+  background: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+html:not(.dark) #howToStudyPanel .bg-slate-950\/85 {
+  background-color: #f8f9fa !important;
+  border-color: var(--google-border-subtle) !important;
+  box-shadow: none !important;
+}
+
+/* Telemetry Mastery Box in Sidebar */
+html:not(.dark) aside .bg-slate-950\/90 {
+  background-color: #f8f9fa !important;
+  border-color: var(--google-border-subtle) !important;
+  box-shadow: none !important;
+}
+html:not(.dark) aside .bg-slate-950\/90 .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+
+/* Question Cards & Containers */
+html:not(.dark) div[id^="qcard-"] {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+html:not(.dark) div[id^="qcard-"].ring-2 {
+  border-color: var(--google-blue) !important;
+}
+
+/* Text Inputs & Form Controls */
+html:not(.dark) input[type="text"],
+html:not(.dark) select,
+html:not(.dark) textarea {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  color: var(--google-text-primary) !important;
+}
+html:not(.dark) input[type="text"]:focus,
+html:not(.dark) select:focus {
+  border-color: var(--google-blue) !important;
+  outline: 2px solid rgba(26, 115, 232, 0.2) !important;
+}
+
+/* Word Bank Chips */
+html:not(.dark) .word-chip {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  color: var(--google-text-primary) !important;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.12) !important;
+}
+html:not(.dark) .word-chip:hover {
+  background-color: #e8f0fe !important;
+  border-color: var(--google-blue) !important;
+  color: var(--google-blue) !important;
+}
+html:not(.dark) .word-chip.used-chip {
+  background-color: #f1f3f4 !important;
+  color: #80868b !important;
+  border-color: var(--google-border-subtle) !important;
+  box-shadow: none !important;
+}
+
+/* Word Bank Side Panel */
+html:not(.dark) #wordBankPanel {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+html:not(.dark) #wordBankContainer {
+  background-color: #f8f9fa !important;
+  border-color: var(--google-border-subtle) !important;
+  border-radius: 1rem;
+}
+
+/* Mode 2: Showdowns */
+html:not(.dark) #showdownContainer > div {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+html:not(.dark) #showdownContainer button {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  color: var(--google-text-primary) !important;
+}
+html:not(.dark) #showdownContainer button:hover {
+  background-color: #e8f0fe !important;
+  border-color: var(--google-blue) !important;
+  color: var(--google-blue) !important;
+}
+html:not(.dark) div[id^="sdfb-"] {
+  background-color: #e6f4ea !important;
+  border-color: var(--google-green-border) !important;
+  color: #1e3a2f !important;
+}
+html:not(.dark) div[id^="sdfb-"].bg-rose-950\/40 {
+  background-color: var(--google-red-bg) !important;
+  border-color: var(--google-red-border) !important;
+  color: var(--google-red-text) !important;
+}
+
+/* Mode 3: Reflex */
+html:not(.dark) #reflexCardBox > div.bg-slate-950 {
+  background-color: #f8f9fa !important;
+  border-color: var(--google-border-subtle) !important;
+  box-shadow: none !important;
+}
+html:not(.dark) #reflexCardBox button {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  color: var(--google-text-primary) !important;
+}
+html:not(.dark) #reflexCardBox button:hover {
+  background-color: #e8f0fe !important;
+  border-color: var(--google-blue) !important;
+  color: var(--google-blue) !important;
+}
+html:not(.dark) #reflexFeedback.bg-emerald-500\/15 {
+  background-color: var(--google-green-bg) !important;
+  border-color: var(--google-green-border) !important;
+  color: var(--google-green-text) !important;
+}
+html:not(.dark) #reflexFeedback.bg-rose-500\/15 {
+  background-color: var(--google-red-bg) !important;
+  border-color: var(--google-red-border) !important;
+  color: var(--google-red-text) !important;
+}
+
+/* Mode 4: Encyclopedia Cards */
+html:not(.dark) #encyclopediaGrid > div {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+}
+html:not(.dark) #encyclopediaGrid .bg-slate-950,
+html:not(.dark) #encyclopediaGrid .bg-slate-950\/70 {
+  background-color: #f8f9fa !important;
+  border-color: var(--google-border-subtle) !important;
+  box-shadow: none !important;
+}
+html:not(.dark) #encyclopediaGrid .bg-amber-500\/10 {
+  background-color: #fef7e0 !important;
+  border-color: #feefc3 !important;
+  color: #3c4043 !important;
+}
+
+/* Colored Pill Badges */
+html:not(.dark) .bg-amber-500\/15,
+html:not(.dark) .bg-amber-500\/20 {
+  background-color: rgba(227, 116, 0, 0.1) !important;
+  color: var(--google-amber) !important;
+  border-color: rgba(227, 116, 0, 0.25) !important;
+}
+html:not(.dark) .bg-indigo-500\/15,
+html:not(.dark) .bg-indigo-500\/20,
+html:not(.dark) .bg-sky-500\/20 {
+  background-color: rgba(26, 115, 232, 0.1) !important;
+  color: var(--google-blue) !important;
+  border-color: rgba(26, 115, 232, 0.25) !important;
+}
+html:not(.dark) .bg-emerald-500\/15,
+html:not(.dark) .bg-emerald-500\/20 {
+  background-color: rgba(30, 142, 62, 0.1) !important;
+  color: var(--google-green) !important;
+  border-color: rgba(30, 142, 62, 0.25) !important;
+}
+html:not(.dark) .bg-purple-500\/20 {
+  background-color: rgba(147, 52, 230, 0.1) !important;
+  color: #9334e6 !important;
+  border-color: rgba(147, 52, 230, 0.25) !important;
+}
+
+/* Scrollbars */
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f3f4;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 9999px;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
+
+/* ==========================================================================
+   THEME TOGGLE BUTTON STYLES (Light & Dark)
+   ========================================================================== */
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.38rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  border: 1px solid var(--google-border);
+  background: #ffffff;
+  color: var(--google-text-primary);
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.15);
+}
+.theme-toggle-btn:hover {
+  background: #f1f3f4;
+  border-color: var(--google-blue);
+  color: var(--google-blue);
+  box-shadow: 0 2px 5px rgba(26, 115, 232, 0.25);
+}
+html.dark .theme-toggle-btn {
+  background: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+html.dark .theme-toggle-btn:hover {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
