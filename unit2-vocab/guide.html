@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The 9th Grader's Complete Guide to the Unit 2 Vocabulary Summative | AP Human Geography</title>
+  <!-- Anti-flash theme initializer -->
+  <script>
+    try {
+      if (localStorage.getItem('ap_hug_theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    } catch(e) {}
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="google-theme.css">
+  <script src="theme.js" defer></script>
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
@@ -41,14 +51,20 @@
         </div>
       </div>
 
-      <!-- Links to Practice Portal -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <a href="index.html" class="text-xs font-black bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-400 hover:to-orange-300 text-slate-950 px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md shadow-amber-500/20">
-          <i class="fa-solid fa-layer-group"></i> Open 72-Term Flashcard &amp; Quiz Portal ➔
+      <!-- Links to Practice Portal & Theme Toggle -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+        <a href="Unit2_Vocab_Test_Runner.html" class="text-xs font-black bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-400 hover:to-orange-300 text-slate-950 px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md shadow-amber-500/20">
+          <i class="fa-solid fa-bolt"></i> 30-in-30 Simulator ➔
+        </a>
+        <a href="index.html" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 px-3 py-2 rounded-xl border border-slate-700 transition hidden md:flex items-center gap-1.5">
+          <i class="fa-solid fa-layer-group text-amber-400"></i> All 67 Terms
         </a>
         <a href="../index.html" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 px-3 py-2 rounded-xl border border-slate-700 transition hidden sm:flex items-center gap-1.5">
           <i class="fa-solid fa-house text-amber-400"></i> Course Hub
         </a>
+        <button onclick="toggleTheme()" class="theme-toggle-btn" title="Toggle between Google Clean and Dark Mode">
+          <i class="fa-solid fa-moon text-indigo-400"></i> 🌙 Dark Mode
+        </button>
       </div>
     </div>
   </header>

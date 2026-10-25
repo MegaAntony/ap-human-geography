@@ -509,3 +509,150 @@ html.dark .theme-toggle-btn:hover {
   color: #38bdf8;
   border-color: #38bdf8;
 }
+
+/* ==========================================================================
+   ENHANCEMENTS FOR UNIT 2 VOCAB GUIDE (guide.html)
+   ========================================================================== */
+
+/* High-Contrast Color Overrides in Light Mode */
+html:not(.dark) .text-blue-400 {
+  color: var(--google-blue) !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-cyan-400 {
+  color: #007b83 !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-teal-400 {
+  color: #007b83 !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-orange-400 {
+  color: #c2410c !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-purple-400 {
+  color: #7e22ce !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-rose-400 {
+  color: #c5221f !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-amber-400 {
+  color: var(--google-amber) !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) .text-emerald-400 {
+  color: var(--google-green-text) !important;
+  font-weight: 700 !important;
+}
+
+/* Colored Container Pills & Badges in Light Mode */
+html:not(.dark) .bg-cyan-500\/20 {
+  background-color: rgba(0, 123, 131, 0.1) !important;
+  color: #007b83 !important;
+  border-color: rgba(0, 123, 131, 0.25) !important;
+}
+html:not(.dark) .border-cyan-500\/30,
+html:not(.dark) .border-cyan-500\/40 {
+  border-color: rgba(0, 123, 131, 0.4) !important;
+}
+
+html:not(.dark) .bg-orange-500\/20 {
+  background-color: rgba(194, 65, 12, 0.1) !important;
+  color: #c2410c !important;
+  border-color: rgba(194, 65, 12, 0.25) !important;
+}
+html:not(.dark) .border-orange-500\/30 {
+  border-color: rgba(194, 65, 12, 0.4) !important;
+}
+
+html:not(.dark) .bg-teal-500\/20 {
+  background-color: rgba(0, 123, 131, 0.1) !important;
+  color: #007b83 !important;
+  border-color: rgba(0, 123, 131, 0.25) !important;
+}
+html:not(.dark) .border-teal-500\/30 {
+  border-color: rgba(0, 123, 131, 0.4) !important;
+}
+
+html:not(.dark) .border-blue-500\/30 {
+  border-color: rgba(26, 115, 232, 0.4) !important;
+}
+html:not(.dark) .border-rose-500\/30 {
+  border-color: rgba(217, 48, 37, 0.4) !important;
+}
+html:not(.dark) .border-purple-500\/30 {
+  border-color: rgba(126, 34, 206, 0.4) !important;
+}
+
+/* Chapter Jump Link Pills in Hero */
+html:not(.dark) .pt-4.flex.flex-wrap a {
+  background-color: #ffffff !important;
+  border: 1px solid var(--google-border) !important;
+  color: var(--google-text-secondary) !important;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.08) !important;
+  font-weight: 600;
+}
+html:not(.dark) .pt-4.flex.flex-wrap a:hover {
+  background-color: var(--google-blue-bg) !important;
+  border-color: var(--google-blue) !important;
+  color: var(--google-blue) !important;
+}
+
+/* Formula & Sub-Cards */
+html:not(.dark) section .bg-slate-950 {
+  background-color: #ffffff !important;
+  border: 1px solid var(--google-border) !important;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.06) !important;
+}
+html:not(.dark) section .bg-slate-950 .bg-slate-900 {
+  background-color: #f8f9fa !important;
+  border: 1px solid var(--google-border-subtle) !important;
+}
+
+/* DTM Summary Table in Light Mode */
+html:not(.dark) table thead {
+  background-color: var(--google-bg-hover) !important;
+  color: var(--google-text-primary) !important;
+  border-bottom: 2px solid var(--google-border) !important;
+}
+html:not(.dark) table thead th {
+  color: var(--google-text-primary) !important;
+  font-weight: 700 !important;
+}
+html:not(.dark) table tbody {
+  background-color: #ffffff !important;
+}
+html:not(.dark) table tbody tr {
+  border-bottom: 1px solid var(--google-border-subtle) !important;
+}
+html:not(.dark) table tbody tr:hover {
+  background-color: rgba(26, 115, 232, 0.04) !important;
+}
+html:not(.dark) table tbody td {
+  color: var(--google-text-secondary) !important;
+}
+html:not(.dark) table tbody td.font-bold {
+  color: var(--google-text-primary) !important;
+}
+
+/* Footer Call to Action Box */
+html:not(.dark) section.bg-gradient-to-r {
+  background-image: none !important;
+  background-color: #fef7e0 !important;
+  border: 2px solid #f9ab00 !important;
+  box-shadow: 0 2px 6px rgba(176, 96, 0, 0.12) !important;
+}
+html:not(.dark) section.bg-gradient-to-r h3 {
+  color: var(--google-text-primary) !important;
+}
+html:not(.dark) section.bg-gradient-to-r p {
+  color: var(--google-text-secondary) !important;
+}
+
+/* Hero Gradient Title in Light Mode */
+html:not(.dark) h2 .bg-clip-text {
+  background-image: linear-gradient(to right, #b06000, #ea580c, #c5221f) !important;
+}
