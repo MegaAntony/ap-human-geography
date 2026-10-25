@@ -150,7 +150,14 @@
         </span>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-2.5">
+        <!-- How to Study Toggle Button -->
+        <button id="howToStudyBtn" onclick="toggleHowToStudy()" aria-expanded="true" aria-controls="howToStudyPanel" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 shadow-md shadow-amber-500/20 transition">
+          <i class="fa-solid fa-compass"></i>
+          <span id="howToStudyBtnText">Hide: How to Study Guide</span>
+          <i id="howToStudyChevron" class="fa-solid fa-chevron-up text-[10px]"></i>
+        </button>
+
         <!-- Instant Feedback Toggle -->
         <label class="inline-flex items-center gap-2 cursor-pointer bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-300 hover:border-slate-700">
           <input type="checkbox" id="instantCheckToggle" checked onchange="toggleInstantCheckMode()" class="accent-emerald-500 rounded">
@@ -169,7 +176,146 @@
     </header>
 
     <!-- CONTENT CONTAINER -->
-    <main class="flex-1 p-4 sm:p-8 max-w-[1440px] w-full mx-auto">
+    <main class="flex-1 p-4 sm:p-8 max-w-[1440px] w-full mx-auto space-y-6">
+
+      <!-- ================================================================= -->
+      <!-- COLLAPSIBLE "HOW TO STUDY & EXACT ORDER TO GET 100%" PANEL        -->
+      <!-- ================================================================= -->
+      <section id="howToStudyPanel" class="p-5 sm:p-7 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950/50 to-slate-900 border-2 border-amber-500/40 shadow-2xl space-y-6">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-800/90 pb-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              <i class="fa-solid fa-map-signs"></i> Step-by-Step 100% Mastery Blueprint
+            </div>
+            <h2 class="text-xl sm:text-2xl font-black text-white font-heading mt-2">
+              How to Use This Live Page &amp; Exact Study Order for 100%
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl">
+              On Mrs. Knight's Unit 2 Vocab Summative, you get all <strong>67 words in a word bank</strong> and <strong>30 questions in 30 minutes</strong>. Every question is either a <strong>verbatim AMSCO definition</strong>, a <strong>specific AMSCO/Class Notes example</strong> (like <em>"Georgetown = Toponym"</em>), or a <strong>Broad-vs-Specific trap</strong> where two words look right. Follow these 5 steps in order:
+            </p>
+          </div>
+          <button onclick="toggleHowToStudy()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-extrabold text-slate-200 flex items-center gap-1.5 transition shrink-0">
+            <i class="fa-solid fa-eye-slash text-amber-400"></i> Hide Guide
+          </button>
+        </div>
+
+        <!-- 5-Step Study Order Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+          <!-- Step 1 -->
+          <div class="p-4 rounded-2xl bg-slate-950/85 border border-slate-800 flex flex-col justify-between space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-sky-500/20 text-sky-300 border border-sky-500/30">Step 1 • Learn</span>
+                <span class="text-xs font-mono text-slate-400">~20 mins</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-white">🔬 67-Word Encyclopedia</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Read each word's <strong>Exact AMSCO Definition</strong> (yellow trigger phrases), <strong>Notes &amp; AMSCO Examples</strong>, and <strong>9th-Grade Memory Hook</strong>. Click <strong>⭐ Star</strong> on any tricky word.
+              </p>
+            </div>
+            <button onclick="switchMode('encyclopedia')" class="w-full py-2 px-3 rounded-xl bg-sky-600/25 hover:bg-sky-600/40 border border-sky-500/40 text-sky-200 font-extrabold text-xs transition">
+              Open Step 1 (Encyclopedia) →
+            </button>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-4 rounded-2xl bg-slate-950/85 border border-slate-800 flex flex-col justify-between space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-purple-500/20 text-purple-300 border border-purple-500/30">Step 2 • Numbers</span>
+                <span class="text-xs font-mono text-slate-400">~10 mins</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-white">📊 Numbers &amp; Countries</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Memorize the high-frequency numbers &amp; countries (<strong>8,078 Egypt</strong> = Physiological, <strong>2.8%</strong> = Arable Land, <strong>31 vs 431</strong> = Agricultural, <strong>0.52 US</strong> = Dependency Ratio, <strong>6M vs 4M Syria</strong>).
+              </p>
+            </div>
+            <button onclick="switchMode('matrix')" class="w-full py-2 px-3 rounded-xl bg-purple-600/25 hover:bg-purple-600/40 border border-purple-500/40 text-purple-200 font-extrabold text-xs transition">
+              Open Step 2 (Numbers Matrix) →
+            </button>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-4 rounded-2xl bg-slate-950/85 border border-slate-800 flex flex-col justify-between space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">Step 3 • Beat Traps</span>
+                <span class="text-xs font-mono text-slate-400">~15 mins</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-white">⚔️ Broad vs. Specific Arena</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Play all <strong>25 Head-to-Head Duels</strong> where 3 look-alike words compete on the same clue (e.g., why <em>85.4/sq mi</em> is <strong>Arithmetic Density</strong> and NOT broad <strong>Population Density</strong>).
+              </p>
+            </div>
+            <button onclick="switchMode('showdown')" class="w-full py-2 px-3 rounded-xl bg-amber-500/25 hover:bg-amber-500/40 border border-amber-500/40 text-amber-200 font-extrabold text-xs transition">
+              Open Step 3 (25 Trap Duels) →
+            </button>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="p-4 rounded-2xl bg-slate-950/85 border border-slate-800 flex flex-col justify-between space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Step 4 • Speed</span>
+                <span class="text-xs font-mono text-slate-400">~15 mins</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-white">⚡ Example Reflex Trainer</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Rapid-fire 67-card drill showing <strong>ONLY an example</strong> from your AMSCO book or class notes against 4 close contenders. Any miss is automatically <strong>⭐ Starred</strong> for review.
+              </p>
+            </div>
+            <button onclick="switchMode('reflex')" class="w-full py-2 px-3 rounded-xl bg-emerald-600/25 hover:bg-emerald-600/40 border border-emerald-500/40 text-emerald-200 font-extrabold text-xs transition">
+              Open Step 4 (Reflex Drill) →
+            </button>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="p-4 rounded-2xl bg-slate-950/85 border border-indigo-500/50 flex flex-col justify-between space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-indigo-500/25 text-indigo-200 border border-indigo-400/40">Step 5 • Exam Sim</span>
+                <span class="text-xs font-mono text-slate-400">8 Banks</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-white">🎯 30-in-30 Word-Bank Exams</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Take the <strong>8 curated Word-Bank Exams (314 Qs)</strong> below using the full 67-word dropdown bank. Click <strong>Retest Missed Only</strong> after any bank until you hit 100%!
+              </p>
+            </div>
+            <button onclick="switchMode('exam')" class="w-full py-2 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold text-xs transition">
+              Jump to Exam Banks ↓
+            </button>
+          </div>
+        </div>
+
+        <!-- Recommended Order for the 8 Exam Banks & Page Controls Cheat-Sheet -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 pt-1">
+          <div class="lg:col-span-7 p-4 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-2.5">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-amber-300">
+              <i class="fa-solid fa-list-ol mr-1.5"></i> Best Order to Take the 8 Exam Banks in Mode 1 (100% 67-Word Coverage)
+            </div>
+            <ol class="text-xs text-slate-300 space-y-1.5 list-decimal list-inside leading-relaxed">
+              <li><strong>Bank 01 (Your PDF's 30 Qs — Fixed)</strong>: Start here! Includes the critical fix for <strong>#24 Push Factor</strong> &amp; <strong>#25 Pull Factor</strong> (which were swapped in the PDF) and why <strong>#17 is Stage 4 (DTM)</strong>.</li>
+              <li><strong>Bank 02 (AMSCO &amp; Notes Examples)</strong> + <strong>Bank 05 (Numbers &amp; Countries)</strong>: Master every example clue (<em>"Georgetown = Toponym"</em> style) and number (<code>8,078</code>, <code>0.52</code>, <code>752,000</code>, <code>6M vs 4M</code>).</li>
+              <li><strong>Bank 03 (Broad vs. Specific Trap Gauntlet)</strong>: Practice choosing the <strong>more specific word</strong> when 2 words in the 67-word bank both look right.</li>
+              <li><strong>Bank 06 (Remaining Terms Gap-Filler)</strong>: Covers every single word not tested in Banks 1–5 so zero words slip through the cracks.</li>
+              <li><strong>Bank 04 (Full Mixed Dress Rehearsal)</strong>, <strong>Bank 07 (All 67 Exact Definitions)</strong> &amp; <strong>Bank 08 (All 67 Examples)</strong>: Your final 100% mastery check before Monday's test!</li>
+            </ol>
+          </div>
+
+          <div class="lg:col-span-5 p-4 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-2.5">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-300">
+              <i class="fa-solid fa-sliders mr-1.5"></i> How the Interactive Tools Work on Every Question
+            </div>
+            <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed">
+              <li><span class="font-bold text-white">🖱️ Two Ways to Answer:</span> Either pick from the <strong>67-Word Dropdown</strong> on any question, OR click a question card and click a word chip in the <strong>Sticky 67-Word Bank</strong> on the right.</li>
+              <li><span class="font-bold text-amber-300">💡 1. Easy Hint:</span> Reveals a simple 9th-grade memory hook + exact AMSCO trigger words without giving away the answer.</li>
+              <li><span class="font-bold text-purple-300">⚔️ 2. Narrow to 3 Contenders:</span> Shrinks the 67-word dropdown down to <strong>just the correct answer + its 2 closest trap twins</strong> so you can practice picking the most specific term.</li>
+              <li><span class="font-bold text-sky-300">📖 3. Full Breakdown:</span> Shows the <strong>Exact AMSCO Definition</strong>, <strong>Class Notes Example</strong>, <strong>AMSCO Example</strong>, and <strong>Broad-vs-Specific Trap Rule</strong>.</li>
+              <li><span class="font-bold text-emerald-300">⚡ Instant Check vs. Exam Mode:</span> Leave <strong>⚡ Instant Check</strong> (top bar) ON while studying to grade each answer immediately, or turn it OFF for a timed 30-minute test simulation!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- ================================================================= -->
       <!-- MODE 1: 30-IN-30 WORD-BANK SUMMATIVE SIMULATOR                    -->
@@ -1200,6 +1346,18 @@ function markAllMastered(flag) {
   state.mastered = flag ? [...WORD_BANK] : [];
   saveState();
   renderEncyclopedia();
+}
+
+function toggleHowToStudy() {
+  const panel = document.getElementById('howToStudyPanel');
+  const btn = document.getElementById('howToStudyBtn');
+  const btnText = document.getElementById('howToStudyBtnText');
+  const chevron = document.getElementById('howToStudyChevron');
+  if (!panel) return;
+  const isHidden = panel.classList.toggle('hidden');
+  btn.setAttribute('aria-expanded', String(!isHidden));
+  btnText.textContent = isHidden ? 'How to Study (Show Guide)' : 'Hide: How to Study Guide';
+  chevron.className = isHidden ? 'fa-solid fa-chevron-down text-[10px]' : 'fa-solid fa-chevron-up text-[10px]';
 }
 
 // ============================================================================
