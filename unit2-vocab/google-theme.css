@@ -166,7 +166,7 @@ html:not(.dark) .rounded-2xl:hover {
   box-shadow: var(--google-card-hover-shadow);
 }
 
-/* How to Study Blueprint Panel */
+/* How to Study Blueprint Panel & Step Buttons */
 html:not(.dark) #howToStudyPanel {
   background: #ffffff !important;
   border-color: var(--google-border) !important;
@@ -175,6 +175,129 @@ html:not(.dark) #howToStudyPanel .bg-slate-950\/85 {
   background-color: #f8f9fa !important;
   border-color: var(--google-border-subtle) !important;
   box-shadow: none !important;
+}
+
+/* Step 1-5 Action Buttons in How to Study Panel (High Contrast in Light Mode) */
+html:not(.dark) button.bg-sky-600\/25,
+html:not(.dark) .bg-sky-600\/25 {
+  background-color: #e8f0fe !important;
+  border-color: #1a73e8 !important;
+  color: #1a73e8 !important;
+  font-weight: 800 !important;
+}
+html:not(.dark) button.bg-sky-600\/25:hover,
+html:not(.dark) .bg-sky-600\/25:hover {
+  background-color: #1a73e8 !important;
+  color: #ffffff !important;
+}
+
+html:not(.dark) button.bg-purple-600\/25,
+html:not(.dark) .bg-purple-600\/25 {
+  background-color: #f3e8fd !important;
+  border-color: #9334e6 !important;
+  color: #7e22ce !important;
+  font-weight: 800 !important;
+}
+html:not(.dark) button.bg-purple-600\/25:hover,
+html:not(.dark) .bg-purple-600\/25:hover {
+  background-color: #9334e6 !important;
+  color: #ffffff !important;
+}
+
+html:not(.dark) button.bg-amber-500\/25,
+html:not(.dark) .bg-amber-500\/25 {
+  background-color: #fef7e0 !important;
+  border-color: #f9ab00 !important;
+  color: #b06000 !important;
+  font-weight: 800 !important;
+}
+html:not(.dark) button.bg-amber-500\/25:hover,
+html:not(.dark) .bg-amber-500\/25:hover {
+  background-color: #e37400 !important;
+  color: #ffffff !important;
+}
+
+html:not(.dark) button.bg-emerald-600\/25,
+html:not(.dark) .bg-emerald-600\/25 {
+  background-color: #e6f4ea !important;
+  border-color: #34a853 !important;
+  color: #137333 !important;
+  font-weight: 800 !important;
+}
+html:not(.dark) button.bg-emerald-600\/25:hover,
+html:not(.dark) .bg-emerald-600\/25:hover {
+  background-color: #1e8e3e !important;
+  color: #ffffff !important;
+}
+
+/* High Contrast Colored Text Accents in Light Mode */
+html:not(.dark) .text-sky-200,
+html:not(.dark) .text-sky-300,
+html:not(.dark) .text-sky-400 {
+  color: #1a73e8 !important;
+}
+
+html:not(.dark) .text-purple-200,
+html:not(.dark) .text-purple-300,
+html:not(.dark) .text-purple-400 {
+  color: #7e22ce !important;
+}
+
+html:not(.dark) .text-amber-200,
+html:not(.dark) .text-amber-300,
+html:not(.dark) .text-amber-400 {
+  color: #b06000 !important;
+}
+
+html:not(.dark) .text-emerald-200,
+html:not(.dark) .text-emerald-300,
+html:not(.dark) .text-emerald-400 {
+  color: #137333 !important;
+}
+
+html:not(.dark) .text-indigo-200,
+html:not(.dark) .text-indigo-300,
+html:not(.dark) .text-indigo-400 {
+  color: #1a73e8 !important;
+}
+
+html:not(.dark) .text-rose-200,
+html:not(.dark) .text-rose-300,
+html:not(.dark) .text-rose-400 {
+  color: #c5221f !important;
+}
+
+html:not(.dark) .text-orange-200,
+html:not(.dark) .text-orange-300,
+html:not(.dark) .text-orange-400 {
+  color: #c2410c !important;
+}
+
+html:not(.dark) .text-teal-200,
+html:not(.dark) .text-teal-300,
+html:not(.dark) .text-teal-400 {
+  color: #0f766e !important;
+}
+
+/* Bank Selector Buttons in Light Mode */
+html:not(.dark) .bank-btn {
+  background-color: #ffffff !important;
+  border-color: var(--google-border) !important;
+  color: var(--google-text-primary) !important;
+}
+html:not(.dark) .bank-btn:hover {
+  background-color: var(--google-bg-hover) !important;
+  border-color: var(--google-blue) !important;
+}
+html:not(.dark) .bank-btn.border-indigo-500,
+html:not(.dark) .bank-btn.bg-indigo-600\/25 {
+  background-color: #e8f0fe !important;
+  border-color: var(--google-blue) !important;
+  color: var(--google-blue) !important;
+}
+html:not(.dark) .bank-btn.border-indigo-500 .text-white,
+html:not(.dark) .bank-btn.bg-indigo-600\/25 .text-white {
+  color: var(--google-text-primary) !important;
 }
 
 /* Telemetry Mastery Box in Sidebar */
