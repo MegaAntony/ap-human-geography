@@ -7,296 +7,458 @@
   <!-- Anti-flash theme initializer -->
   <script>
     try {
-      if (localStorage.getItem('ap_hug_theme') === 'dark') {
+      var raw = localStorage.getItem('ap_hug_theme');
+      var isDark = raw === 'dark' || raw === '"dark"';
+      if (isDark) {
         document.documentElement.classList.add('dark');
       }
     } catch(e) {}
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="google-theme.css">
   <script src="theme.js" defer></script>
+  <!-- KaTeX: math typography -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });"></script>
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
-    code, pre { font-family: 'JetBrains Mono', monospace; }
+    body { font-family: 'Roboto', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Google Sans', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif; }
+    code, pre, .font-mono { font-family: 'JetBrains Mono', monospace; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f3f4; }
+    ::-webkit-scrollbar-thumb { background: #dadce0; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #bdc1c6; }
+    html.dark ::-webkit-scrollbar-track { background: #0f172a; }
+    html.dark ::-webkit-scrollbar-thumb { background: #334155; }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: #475569; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-amber-500 selection:text-slate-950 flex flex-col justify-between">
+<body class="bg-[#f8f9fa] dark:bg-slate-950 text-[#202124] dark:text-slate-100 min-h-screen selection:bg-[#c2e7ff] selection:text-[#001d35] dark:selection:bg-amber-400 dark:selection:text-slate-950 flex flex-col justify-between transition-colors duration-200">
 
   <!-- TOP STICKY NOTIFICATION BAR -->
-  <header class="sticky top-0 z-50 bg-slate-950/95 border-b border-slate-800 backdrop-blur-md">
+  <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 border-b border-[#dadce0] dark:border-slate-800 backdrop-blur-md shadow-sm">
     <!-- Announcement Bar -->
-    <div class="bg-gradient-to-r from-amber-600 via-orange-600 to-rose-600 text-slate-950 px-4 py-2 font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 shadow-inner">
+    <div class="bg-[#fef7e0] dark:bg-amber-950/40 border-b border-[#f9ab00] dark:border-amber-600/40 text-[#703800] dark:text-amber-200 px-4 py-2 font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2">
       <span>🚨 AP Human Geography Major Assessment:</span>
       <span class="underline font-black">Unit 2 Vocabulary Summative Exam • Friday, Oct 23, 2026</span>
       <span class="hidden md:inline">• Mrs. Anne Knight (Room 1325)</span>
     </div>
 
     <!-- Main Nav -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <a href="index.html" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 flex items-center justify-center text-slate-950 font-black text-lg shadow-lg shadow-amber-500/20 hover:scale-105 transition">
+        <a href="index.html" class="w-10 h-10 rounded-xl bg-[#1a73e8] hover:bg-[#1557b0] flex items-center justify-center text-white font-black text-lg shadow-sm transition" title="Back to Vocab Studio">
           <i class="fa-solid fa-spell-check"></i>
         </a>
         <div>
-          <h1 class="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-2">
+          <h1 class="text-base sm:text-lg font-black tracking-tight text-[#202124] dark:text-white flex items-center gap-2">
             Unit 2 Vocab Summative Master Guide
-            <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded-full font-bold uppercase">All 72 Terms</span>
+            <span class="text-[10px] bg-[#e8f0fe] dark:bg-blue-950/60 text-[#1a73e8] dark:text-sky-300 border border-[#8ab4f8] dark:border-sky-500/40 px-2 py-0.5 rounded-full font-bold uppercase">All 72 Terms</span>
           </h1>
-          <p class="text-xs text-slate-400">Complete Top-to-Bottom Study Guide &amp; Conceptual Explanations</p>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Complete Top-to-Bottom Study Guide &amp; Conceptual Explanations</p>
         </div>
       </div>
 
-      <!-- Links to Practice Portal & Theme Toggle -->
-      <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
-        <a href="Unit2_Vocab_Test_Runner.html" class="text-xs font-black bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-400 hover:to-orange-300 text-slate-950 px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-md shadow-amber-500/20">
-          <i class="fa-solid fa-bolt"></i> 30-in-30 Simulator ➔
-        </a>
-        <a href="index.html" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 px-3 py-2 rounded-xl border border-slate-700 transition hidden md:flex items-center gap-1.5">
-          <i class="fa-solid fa-layer-group text-amber-400"></i> All 67 Terms
-        </a>
-        <a href="../index.html" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 px-3 py-2 rounded-xl border border-slate-700 transition hidden sm:flex items-center gap-1.5">
-          <i class="fa-solid fa-house text-amber-400"></i> Course Hub
-        </a>
-        <button onclick="toggleTheme()" class="theme-toggle-btn" title="Toggle between Google Clean and Dark Mode">
-          <i class="fa-solid fa-moon text-indigo-400"></i> 🌙 Dark Mode
+      <!-- Action & Navigation Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- How to Study Toggle Button -->
+        <button id="howToStudyGuideBtn" onclick="toggleHowToStudyGuide()" aria-expanded="true" aria-controls="howToStudyGuidePanel" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-[#fef7e0] dark:bg-amber-950/40 hover:bg-[#feefc3] dark:hover:bg-amber-900/40 text-[#703800] dark:text-amber-300 border border-[#f9ab00] dark:border-amber-500/40 shadow-sm transition">
+          <i class="fa-solid fa-compass text-[#b06000] dark:text-amber-400"></i>
+          <span id="howToStudyGuideBtnText">Hide Study Blueprint</span>
+          <i id="howToStudyGuideChevron" class="fa-solid fa-chevron-up text-[10px]"></i>
         </button>
+
+        <!-- Theme Toggle Button -->
+        <button onclick="toggleTheme()" class="theme-toggle-btn" title="Toggle Theme">
+          <i class="fa-solid fa-moon text-indigo-400"></i> Theme
+        </button>
+
+        <!-- Links to Practice Portal -->
+        <a href="Unit2_Vocab_Test_Runner.html" class="text-xs font-bold bg-[#1a73e8] hover:bg-[#1557b0] text-white px-3.5 py-1.5 rounded-full transition shadow-sm hidden sm:inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-layer-group"></i> Practice Studio ➔
+        </a>
+        <a href="../index.html" class="text-xs font-semibold bg-white dark:bg-slate-900 hover:bg-[#f1f3f4] dark:hover:bg-slate-800 text-[#3c4043] dark:text-slate-300 px-3 py-1.5 rounded-full border border-[#dadce0] dark:border-slate-800 transition hidden md:inline-flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-house text-[#1a73e8] dark:text-sky-400"></i> Hub
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 flex-1 w-full space-y-16">
+  <!-- MAIN WORKSPACE -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex-1 w-full space-y-10">
+
+    <!-- ================================================================= -->
+    <!-- COLLAPSIBLE "HOW TO STUDY & 5-STEP ORDER TO SCORE 100%" BLUEPRINT -->
+    <!-- ================================================================= -->
+    <section id="howToStudyGuidePanel" class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#e8f0fe] dark:bg-blue-950/60 text-[#1a73e8] dark:text-sky-300 border border-[#8ab4f8] dark:border-sky-500/40">
+            <i class="fa-solid fa-map-signs"></i> 5-Step 100% Mastery Blueprint
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black text-[#202124] dark:text-white font-heading mt-2">
+            How to Use This Deep Guide &amp; Exact Study Order for 100%
+          </h2>
+          <p class="text-xs sm:text-sm text-[#3c4043] dark:text-slate-300 mt-1 max-w-3xl">
+            On Mrs. Knight's Unit 2 Vocab Summative, you have all <strong>67 words in a word bank</strong> and <strong>30 questions in 30 minutes</strong>. Follow these 5 proven steps in order to guarantee full mastery:
+          </p>
+        </div>
+        <span class="text-xs font-mono font-bold text-[#137333] dark:text-emerald-300 bg-[#e6f4ea] dark:bg-emerald-950/50 border border-[#34a853] dark:border-emerald-600/40 px-3 py-1 rounded-full">
+          Recommended Sequence
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+        <!-- Step 1 (Current) -->
+        <div class="p-3.5 rounded-2xl bg-[#e8f0fe] dark:bg-blue-950/40 border-2 border-[#1a73e8] dark:border-sky-500 flex flex-col justify-between space-y-2">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-black text-[#1a73e8] dark:text-sky-300">STEP 1</span>
+              <span class="text-[10px] font-bold bg-[#1a73e8] text-white px-2 py-0.5 rounded-full">YOU ARE HERE</span>
+            </div>
+            <div class="font-extrabold text-[#202124] dark:text-white text-sm mt-1">Deep Reading Guide</div>
+            <p class="text-[#3c4043] dark:text-slate-300 mt-1 leading-relaxed">
+              Read all 6 conceptual clusters below to understand demographic formulas, real-world AP examples, and trap patterns.
+            </p>
+          </div>
+          <div class="text-[11px] font-bold text-[#1a73e8] dark:text-sky-300">Reading &amp; Conceptualization</div>
+        </div>
+
+        <!-- Step 2 -->
+        <a href="flashcards.html" class="p-3.5 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 hover:border-[#9334e6] dark:hover:border-purple-500 hover:bg-[#f3e8fd] dark:hover:bg-purple-950/30 transition flex flex-col justify-between space-y-2 group">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-black text-[#7e22ce] dark:text-purple-300">STEP 2</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#5f6368] dark:text-slate-500 group-hover:text-[#7e22ce] dark:group-hover:text-purple-300"></i>
+            </div>
+            <div class="font-extrabold text-[#202124] dark:text-white text-sm mt-1">72-Card Flashcards</div>
+            <p class="text-[#3c4043] dark:text-slate-300 mt-1 leading-relaxed">
+              Drill each term front-and-back on the 3D interactive flashcard deck until terms feel second nature.
+            </p>
+          </div>
+          <div class="text-[11px] font-bold text-[#7e22ce] dark:text-purple-300">Active Recall Foundation</div>
+        </a>
+
+        <!-- Step 3 -->
+        <a href="Unit2_Vocab_Test_Runner.html" class="p-3.5 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 hover:border-[#f9ab00] dark:hover:border-amber-500 hover:bg-[#fef7e0] dark:hover:bg-amber-950/30 transition flex flex-col justify-between space-y-2 group">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-black text-[#b06000] dark:text-amber-400">STEP 3</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#5f6368] dark:text-slate-500 group-hover:text-[#b06000] dark:group-hover:text-amber-400"></i>
+            </div>
+            <div class="font-extrabold text-[#202124] dark:text-white text-sm mt-1">Trap Showdowns</div>
+            <p class="text-[#3c4043] dark:text-slate-300 mt-1 leading-relaxed">
+              Switch to Mode 2 in the Studio. Master the 12 classic confusing pairs (e.g. Arithmetic vs Physiological, Refugee vs IDP).
+            </p>
+          </div>
+          <div class="text-[11px] font-bold text-[#b06000] dark:text-amber-400">Broad vs Specific Traps</div>
+        </a>
+
+        <!-- Step 4 -->
+        <a href="Unit2_Vocab_Test_Runner.html" class="p-3.5 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 hover:border-[#007b83] dark:hover:border-teal-500 hover:bg-[#e0f2f1] dark:hover:bg-teal-950/30 transition flex flex-col justify-between space-y-2 group">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-black text-[#007b83] dark:text-teal-300">STEP 4</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#5f6368] dark:text-slate-500 group-hover:text-[#007b83] dark:group-hover:text-teal-300"></i>
+            </div>
+            <div class="font-extrabold text-[#202124] dark:text-white text-sm mt-1">Speed Recall Reflex</div>
+            <p class="text-[#3c4043] dark:text-slate-300 mt-1 leading-relaxed">
+              Switch to Mode 3. 5-second rapid recognition bursts that eliminate hesitation and build instant recognition.
+            </p>
+          </div>
+          <div class="text-[11px] font-bold text-[#007b83] dark:text-teal-300">Pacing &amp; Automaticity</div>
+        </a>
+
+        <!-- Step 5 -->
+        <a href="Unit2_Vocab_Test_Runner.html" class="p-3.5 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 hover:border-[#34a853] dark:hover:border-emerald-500 hover:bg-[#e6f4ea] dark:hover:bg-emerald-950/30 transition flex flex-col justify-between space-y-2 group">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-black text-[#137333] dark:text-emerald-400">STEP 5</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#5f6368] dark:text-slate-500 group-hover:text-[#137333] dark:group-hover:text-emerald-400"></i>
+            </div>
+            <div class="font-extrabold text-[#202124] dark:text-white text-sm mt-1">30-in-30 Simulator</div>
+            <p class="text-[#3c4043] dark:text-slate-300 mt-1 leading-relaxed">
+              Take the full timed exam with the 67-word bank. Target 30/30 in under 20 minutes before test day!
+            </p>
+          </div>
+          <div class="text-[11px] font-bold text-[#137333] dark:text-emerald-400">Summative Test Ready</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- HERO SECTION -->
     <section class="text-center space-y-4">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold tracking-wider uppercase">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8f0fe] dark:bg-blue-950/60 border border-[#8ab4f8] dark:border-sky-500/40 text-[#1a73e8] dark:text-sky-300 text-xs font-bold tracking-wider uppercase">
         <span>South Forsyth High School</span>
         <span>•</span>
         <span>College Board Unit 2: Population &amp; Migration</span>
       </div>
-      <h2 class="text-3xl sm:text-5xl font-black text-white font-heading tracking-tight leading-tight">
+      <h2 class="text-3xl sm:text-5xl font-black text-[#202124] dark:text-white font-heading tracking-tight leading-tight">
         The 9th Grader's Complete Guide to the <br>
-        <span class="bg-gradient-to-r from-amber-400 via-orange-300 to-rose-400 bg-clip-text text-transparent">Unit 2 Vocabulary Summative</span>
+        <span class="text-[#1a73e8] dark:text-sky-400">Unit 2 Vocabulary Summative</span>
       </h2>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+      <p class="text-[#3c4043] dark:text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
         Everything you need to master Mrs. Knight’s major vocabulary summative on <strong>Friday, Oct 23</strong>. Organized into 6 clear conceptual clusters with real-world examples, formula breakdowns, and the exact traps tested on AP exams.
       </p>
 
       <!-- CHAPTER JUMP LINKS -->
       <div class="pt-4 flex flex-wrap items-center justify-center gap-2 text-xs">
-        <a href="#cluster1" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">1. Densities &amp; Carrying Capacity</a>
-        <a href="#cluster2" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">2. Vital Rates &amp; NIR Math</a>
-        <a href="#cluster3" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">3. Pyramids &amp; Dependency</a>
-        <a href="#cluster4" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">4. DTM, ETM &amp; Malthus</a>
-        <a href="#cluster5" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">5. Migration Types &amp; Laws</a>
-        <a href="#cluster6" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-500/50 hover:text-amber-300 transition">6. Refugees &amp; Obstacles</a>
+        <a href="#cluster1" class="px-3.5 py-2 rounded-full bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 text-[#3c4043] dark:text-slate-300 hover:bg-[#e8f0fe] dark:hover:bg-slate-800 hover:border-[#1a73e8] dark:hover:border-sky-400 hover:text-[#1a73e8] dark:hover:text-sky-300 shadow-sm font-semibold transition">1. Densities &amp; Carrying Capacity</a>
+        <a href="#cluster2" class="px-3.5 py-2 rounded-full bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 text-[#3c4043] dark:text-slate-300 hover:bg-[#e8f0fe] dark:hover:bg-slate-800 hover:border-[#1a73e8] dark:hover:border-sky-400 hover:text-[#1a73e8] dark:hover:text-sky-300 shadow-sm font-semibold transition">2. Vital Rates &amp; NIR Math</a>
+        <a href="#cluster3" class="px-3.5 py-2 rounded-full bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 text-[#3c4043] dark:text-slate-300 hover:bg-[#e8f0fe] dark:hover:bg-slate-800 hover:border-[#1a73e8] dark:hover:border-sky-400 hover:text-[#1a73e8] dark:hover:text-sky-300 shadow-sm font-semibold transition">3. Pyramids &amp; Dependency</a>
+        <a href="#cluster4" class="px-3.5 py-2 rounded-full bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 text-[#3c4043] dark:text-slate-300 hover:bg-[#e8f0fe] dark:hover:bg-slate-800 hover:border-[#1a73e8] dark:hover:border-sky-400 hover:text-[#1a73e8] dark:hover:text-sky-300 shadow-sm font-semibold transition">4. DTM, ETM &amp; Malthus</a>
+        <a href="#cluster5" class="px-3.5 py-2 rounded-full bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 text-[#3c4043] dark:text-slate-300 hover:bg-[#e8f0fe] dark:hover:bg-slate-800 hover:border-[#1a73e8] dark:hover:border-sky-400 hover:text-[#1a73e8] dark:hover:text-sky-300 shadow-sm font-semibold transition">5 &amp; 6. Migration Types &amp; Laws</a>
+        <a href="#traps" class="px-3.5 py-2 rounded-full bg-[#fef7e0] dark:bg-amber-950/40 border border-[#f9ab00] dark:border-amber-500/40 text-[#703800] dark:text-amber-300 hover:bg-[#feefc3] dark:hover:bg-amber-900/40 shadow-sm font-bold transition">🎯 Top 5 Exam Traps</a>
       </div>
     </section>
 
-    <!-- CLUSTER 1: DENSITIES & CARRIER CAPACITY -->
-    <section id="cluster1" class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-      <div class="flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center font-black text-sm">
+    <!-- ================================================================= -->
+    <!-- CLUSTER 1: DENSITIES & CARRYING CAPACITY                          -->
+    <!-- ================================================================= -->
+    <section id="cluster1" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#e8f0fe] dark:bg-blue-950/60 text-[#1a73e8] dark:text-sky-300 border border-[#8ab4f8] dark:border-sky-500/40 flex items-center justify-center font-black text-sm">
           01
         </span>
-        <h3 class="text-2xl font-extrabold text-white font-heading">Cluster 1: Population Density &amp; Spatial Distribution</h3>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#202124] dark:text-white font-heading">Cluster 1: Population Density &amp; Spatial Distribution</h3>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Topics 2.1 – 2.3 • Terms 1 through 8</p>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-extrabold text-amber-400 text-sm">Arithmetic Density</div>
-          <div class="font-mono text-slate-400">Total People ÷ Total Land</div>
-          <p class="text-slate-300 leading-relaxed">
-            Crude population count per square mile or kilometer. Measures broad density, but hides internal clusters (e.g., US average is 36/km², but NYC is 28,000/km² and Alaska is &lt;1/km²).
+        <!-- Arithmetic Density -->
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-extrabold text-[#1a73e8] dark:text-sky-400 text-sm">Arithmetic Density</div>
+          <div class="font-mono bg-white dark:bg-slate-900 px-2 py-1 rounded border border-[#dadce0] dark:border-slate-800 text-[#202124] dark:text-white font-bold">Total People ÷ Total Land</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Crude population count per square mile or kilometer. Measures broad density, but <strong>hides internal clusters</strong> (e.g., US average is 36/km², but NYC is 28,000/km² and Alaska is &lt;1/km²).
           </p>
         </div>
 
-        <div class="p-4 rounded-2xl bg-slate-950 border border-emerald-500/40 space-y-2">
-          <div class="font-extrabold text-emerald-400 text-sm">Physiological Density</div>
-          <div class="font-mono text-emerald-300">Total People ÷ Arable Land</div>
-          <p class="text-slate-300 leading-relaxed">
+        <!-- Physiological Density -->
+        <div class="p-4 rounded-2xl bg-[#e6f4ea] dark:bg-emerald-950/40 border border-[#34a853] dark:border-emerald-600/40 space-y-2">
+          <div class="font-extrabold text-[#137333] dark:text-emerald-400 text-sm">Physiological Density</div>
+          <div class="font-mono bg-white dark:bg-slate-900 px-2 py-1 rounded border border-[#34a853] dark:border-emerald-600/40 text-[#137333] dark:text-emerald-300 font-bold">Total People ÷ Arable Land</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
             Measures <strong>food carrying capacity pressure</strong>. Shows how many mouths each piece of farmable land must feed. <em>Classic Exam Example:</em> Egypt's arithmetic is 103, but physiological is <strong>3,500+</strong> because 97% of Egypt is desert!
           </p>
         </div>
 
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-extrabold text-blue-400 text-sm">Agricultural Density</div>
-          <div class="font-mono text-slate-400">Farmers ÷ Arable Land</div>
-          <p class="text-slate-300 leading-relaxed">
-            Reflects <strong>economic development and technology</strong>. MDCs (US, Canada) have low agricultural density because combines and tractors do the work. LDCs (Uganda, Bangladesh) have high density (lots of hand laborers).
+        <!-- Agricultural Density -->
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-extrabold text-[#7e22ce] dark:text-purple-400 text-sm">Agricultural Density</div>
+          <div class="font-mono bg-white dark:bg-slate-900 px-2 py-1 rounded border border-[#dadce0] dark:border-slate-800 text-[#202124] dark:text-white font-bold">Farmers ÷ Arable Land</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Reflects <strong>economic development and technology</strong>. MDCs (US, Canada) have very low agricultural density because combines and tractors do the work. LDCs (Uganda, Bangladesh) have high density (lots of peasant hand laborers).
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-1.5">
-          <div class="font-bold text-white">Carrying Capacity &amp; Overpopulation</div>
-          <p class="text-slate-300 leading-relaxed">
-            <strong>Carrying capacity</strong> is the maximum population an ecosystem can sustain. <strong>Overpopulation</strong> occurs when people exceed resources—it is NOT just high population! Singapore has 6M people in a tiny city but is wealthy; an arid Sahel country with 2M can be dangerously overpopulated.
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-1.5">
+          <div class="font-bold text-[#202124] dark:text-white text-sm">Carrying Capacity &amp; Overpopulation</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            <strong>Carrying capacity</strong> is the maximum population an ecosystem can sustain indefinitely. <strong>Overpopulation</strong> occurs when people exceed resources—it is <strong>NOT</strong> just high population! Singapore has 6M people on a tiny island but is wealthy; an arid Sahel country with 2M can be dangerously overpopulated if it cannot feed or water its citizens.
           </p>
         </div>
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-1.5">
-          <div class="font-bold text-white">The Ecumene &amp; The 4 World Clusters</div>
-          <p class="text-slate-300 leading-relaxed">
-            <strong>Ecumene</strong> = permanently settled Earth. 2/3 of humans live in 4 regions: <strong>East Asia</strong> (China coast/rivers), <strong>South Asia</strong> (Indus/Ganges), <strong>Southeast Asia</strong> (volcanic islands), and <strong>Europe</strong> (industrial coalfields).
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-1.5">
+          <div class="font-bold text-[#202124] dark:text-white text-sm">The Ecumene &amp; The 4 World Clusters</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            <strong>Ecumene</strong> = permanently settled Earth. 2/3 of humans live in 4 regions: <strong>East Asia</strong> (China coast/rivers), <strong>South Asia</strong> (Indus/Ganges), <strong>Southeast Asia</strong> (volcanic islands like Java), and <strong>Europe</strong> (industrial coalfields). Non-ecumene zones: polar ice, hyper-arid deserts, dense rainforests, high alpine peaks.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- CLUSTER 2: VITAL RATES & NIR MATH -->
-    <section id="cluster2" class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-      <div class="flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 border border-orange-500/30 flex items-center justify-center font-black text-sm">
+    <!-- ================================================================= -->
+    <!-- CLUSTER 2: VITAL RATES & NIR MATH                                -->
+    <!-- ================================================================= -->
+    <section id="cluster2" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#fef7e0] dark:bg-amber-950/60 text-[#b06000] dark:text-amber-400 border border-[#f9ab00] dark:border-amber-500/40 flex items-center justify-center font-black text-sm">
           02
         </span>
-        <h3 class="text-2xl font-extrabold text-white font-heading">Cluster 2: Demographic Rates &amp; Mathematical Formulas</h3>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#202124] dark:text-white font-heading">Cluster 2: Demographic Rates &amp; Mathematical Formulas</h3>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Topics 2.4 – 2.6 • Terms 9 through 20</p>
+        </div>
       </div>
 
       <!-- FORMULAS CARD -->
-      <div class="p-5 rounded-2xl bg-slate-950 border border-amber-500/40 space-y-3">
-        <h4 class="text-sm font-bold text-white font-heading flex items-center gap-2">
+      <div class="p-5 rounded-2xl bg-[#fef7e0] dark:bg-amber-950/30 border border-[#f9ab00] dark:border-amber-500/40 space-y-3">
+        <h4 class="text-sm font-bold text-[#703800] dark:text-amber-300 font-heading flex items-center gap-2">
           <span>🧮</span> The 3 Mathematical Formulas Mrs. Knight Tests:
         </h4>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-center">
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <div class="text-slate-400">Natural Increase Rate (NIR)</div>
-            <div class="text-sm font-black text-amber-400 mt-1">(CBR - CDR) ÷ 10</div>
-            <div class="text-[10px] text-slate-500 mt-1">Gives annual growth as a %</div>
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm">
+            <div class="text-[#5f6368] dark:text-slate-400 font-medium">Natural Increase Rate (NIR)</div>
+            <div class="text-base font-black text-[#b06000] dark:text-amber-400 mt-1">(CBR - CDR) ÷ 10</div>
+            <div class="text-[11px] text-[#5f6368] dark:text-slate-400 mt-1">Converts rate per 1,000 into a %</div>
           </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <div class="text-slate-400">Doubling Time (Rule of 70)</div>
-            <div class="text-sm font-black text-orange-400 mt-1">70 ÷ NIR (%)</div>
-            <div class="text-[10px] text-slate-500 mt-1">Years to double population</div>
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm">
+            <div class="text-[#5f6368] dark:text-slate-400 font-medium">Doubling Time (Rule of 70)</div>
+            <div class="text-base font-black text-[#c2410c] dark:text-orange-400 mt-1">70 ÷ NIR (%)</div>
+            <div class="text-[11px] text-[#5f6368] dark:text-slate-400 mt-1">Number of years to double population</div>
           </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-            <div class="text-slate-400">Balancing Equation</div>
-            <div class="text-xs font-bold text-emerald-400 mt-1">(B - D) + (I - E)</div>
-            <div class="text-[10px] text-slate-500 mt-1">Natural change + Net migration</div>
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm">
+            <div class="text-[#5f6368] dark:text-slate-400 font-medium">Demographic Balancing Eq.</div>
+            <div class="text-base font-bold text-[#137333] dark:text-emerald-400 mt-1">(B - D) + (I - E)</div>
+            <div class="text-[11px] text-[#5f6368] dark:text-slate-400 mt-1">Natural change + Net migration</div>
           </div>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-bold text-amber-400 text-sm">Total Fertility Rate (TFR) &amp; Replacement Level</div>
-          <p class="text-slate-300 leading-relaxed">
-            The average number of children a woman will have in childbearing years (15–49). <strong>Replacement Level is 2.1</strong> (2 replaces parents, 0.1 accounts for infant mortality). Sub-replacement (&lt;2.1) leads to shrinking populations without migration.
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-bold text-[#b06000] dark:text-amber-400 text-sm">Total Fertility Rate (TFR)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            The average number of children a woman will have throughout her childbearing years (15–49). <strong>Replacement Level is 2.1</strong> (2 replaces both parents, 0.1 accounts for infant mortality). Sub-replacement (&lt;2.1) leads to shrinking populations without migration.
           </p>
         </div>
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-bold text-rose-400 text-sm">Infant Mortality Rate (IMR)</div>
-          <p class="text-slate-300 leading-relaxed">
-            Number of infant deaths (&lt;1 year old) per 1,000 live births. It is widely considered by demographers to be the <strong>single most accurate indicator of a nation's overall healthcare, sanitation, and female nutrition</strong>.
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-bold text-[#c5221f] dark:text-rose-400 text-sm">Infant Mortality Rate (IMR)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Number of infant deaths (&lt;1 year old) per 1,000 live births. Demographers consider IMR the <strong>single most accurate indicator of a nation's overall healthcare, female nutrition, and sanitation systems</strong>.
+          </p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-bold text-[#1a73e8] dark:text-sky-400 text-sm">CBR vs. CDR Trap</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Highly developed nations with large elderly populations (e.g., Germany, Japan) often have a <strong>higher CDR (~11–12)</strong> than developing nations with young populations (e.g., Guatemala or Saudi Arabia, CDR ~3–5)!
           </p>
         </div>
       </div>
     </section>
 
-    <!-- CLUSTER 3: POPULATION PYRAMIDS -->
-    <section id="cluster3" class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-      <div class="flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-purple-500/20 text-purple-400 border border-purple-500/30 flex items-center justify-center font-black text-sm">
+    <!-- ================================================================= -->
+    <!-- CLUSTER 3: POPULATION PYRAMIDS                                   -->
+    <!-- ================================================================= -->
+    <section id="cluster3" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#f3e8fd] dark:bg-purple-950/60 text-[#7e22ce] dark:text-purple-300 border border-[#9334e6] dark:border-purple-500/40 flex items-center justify-center font-black text-sm">
           03
         </span>
-        <h3 class="text-2xl font-extrabold text-white font-heading">Cluster 3: Age Structures &amp; Population Pyramids</h3>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#202124] dark:text-white font-heading">Cluster 3: Age Structures &amp; Population Pyramids</h3>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Topics 2.7 – 2.8 • Terms 21 through 26</p>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-2xl bg-slate-950 border border-rose-500/30 space-y-2">
-          <div class="font-extrabold text-rose-400 text-sm">Stage 2: Wide Base Pyramid</div>
-          <div class="font-bold text-white">Rapid Growth (e.g., Nigeria, Mali)</div>
-          <p class="text-slate-300 leading-relaxed">
+        <div class="p-4 rounded-2xl bg-[#fce8e6] dark:bg-rose-950/30 border-l-4 border-l-[#d93025] border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-extrabold text-[#c5221f] dark:text-rose-400 text-sm">Stage 2: Wide Base Pyramid</div>
+          <div class="font-bold text-[#202124] dark:text-white">Rapid Growth (e.g., Nigeria, Mali)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
             Broad triangle base indicating high CBR. High <strong>youth dependency ratio</strong> putting massive fiscal strain on pediatric clinics, schools, and immunization systems.
           </p>
         </div>
 
-        <div class="p-4 rounded-2xl bg-slate-950 border border-blue-500/30 space-y-2">
-          <div class="font-extrabold text-blue-400 text-sm">Stage 4: Rectangular Column</div>
-          <div class="font-bold text-white">Stable / ZPG (e.g., USA, France)</div>
-          <p class="text-slate-300 leading-relaxed">
-            Even bars across cohorts from youth to adulthood. TFR ~2.1. Balanced working-age tax base supporting stable social security systems.
+        <div class="p-4 rounded-2xl bg-[#e8f0fe] dark:bg-blue-950/30 border-l-4 border-l-[#1a73e8] border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-extrabold text-[#1a73e8] dark:text-sky-400 text-sm">Stage 4: Rectangular Column</div>
+          <div class="font-bold text-[#202124] dark:text-white">Stable / ZPG (e.g., USA, France)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Even bars across cohorts from youth to adulthood. TFR ~2.1. Balanced working-age tax base supporting stable social security and healthcare systems.
           </p>
         </div>
 
-        <div class="p-4 rounded-2xl bg-slate-950 border border-purple-500/30 space-y-2">
-          <div class="font-extrabold text-purple-400 text-sm">Stage 5: Inverted / Constricted</div>
-          <div class="font-bold text-white">Negative Growth (e.g., Japan, Italy)</div>
-          <p class="text-slate-300 leading-relaxed">
+        <div class="p-4 rounded-2xl bg-[#f3e8fd] dark:bg-purple-950/30 border-l-4 border-l-[#7e22ce] border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-extrabold text-[#7e22ce] dark:text-purple-400 text-sm">Stage 5: Inverted / Constricted</div>
+          <div class="font-bold text-[#202124] dark:text-white">Negative Growth (e.g., Japan, Italy)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
             Narrow base, bulging top. TFR &lt; 1.5. Extreme <strong>elderly dependency ratio</strong> causing severe labor shortages and bankrupting pension systems.
           </p>
         </div>
       </div>
 
       <!-- KEY VOCAB: DEPENDENCY & SEX RATIO -->
-      <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 text-xs">
-        <div class="font-bold text-white">Dependency Ratio &amp; Sex Ratio Distortions:</div>
-        <p class="text-slate-300 leading-relaxed">
-          <strong>Dependency Ratio:</strong> $[(Pop\ 0\text{--}14 + Pop\ 65+) \div Pop\ 15\text{--}64] \times 100$. Strains are either youth-based or elderly-based. <br>
-          <strong>Sex Ratio:</strong> Males per 100 females. Skewed heavily male in the Persian Gulf (foreign male construction guest workers) and in China/India (historical son preference / One-Child policy).
+      <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2 text-xs">
+        <div class="font-bold text-[#202124] dark:text-white text-sm">Dependency Ratio &amp; Sex Ratio Distortions:</div>
+        <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+          <strong>Dependency Ratio Formula:</strong> $[(Pop\ 0\text{--}14 + Pop\ 65+) \div Pop\ 15\text{--}64] \times 100$. Strains are either youth-based (schools/vaccines) or elderly-based (pensions/geriatrics). <br>
+          <strong>Sex Ratio:</strong> Males per 100 females. Biological standard is ~105:100. Heavily distorted in the Persian Gulf (over 200:100 due to foreign male construction guest workers) and in China/India (historical son preference / One-Child policy).
         </p>
       </div>
     </section>
 
-    <!-- CLUSTER 4: DTM, ETM & THEORISTS -->
-    <section id="cluster4" class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-      <div class="flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-teal-500/20 text-teal-400 border border-teal-500/30 flex items-center justify-center font-black text-sm">
+    <!-- ================================================================= -->
+    <!-- CLUSTER 4: DTM, ETM & THEORISTS                                  -->
+    <!-- ================================================================= -->
+    <section id="cluster4" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#e0f2f1] dark:bg-teal-950/60 text-[#007b83] dark:text-teal-300 border border-[#80cbc4] dark:border-teal-500/40 flex items-center justify-center font-black text-sm">
           04
         </span>
-        <h3 class="text-2xl font-extrabold text-white font-heading">Cluster 4: Demographic &amp; Epidemiological Models</h3>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#202124] dark:text-white font-heading">Cluster 4: Demographic &amp; Epidemiological Models</h3>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Topics 2.9 – 2.10 • Terms 27 through 41</p>
+        </div>
       </div>
 
       <!-- DTM SUMMARY TABLE -->
-      <div class="overflow-x-auto">
-        <table class="w-full text-left text-xs border border-slate-800 rounded-2xl overflow-hidden">
-          <thead class="bg-slate-900 text-slate-300 font-bold border-b border-slate-800">
+      <div class="overflow-x-auto rounded-2xl border border-[#dadce0] dark:border-slate-800 shadow-sm">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-[#f1f3f4] dark:bg-slate-800 text-[#202124] dark:text-white font-bold border-b-2 border-[#dadce0] dark:border-slate-700">
             <tr>
               <th class="p-3">Stage</th>
-              <th class="p-3">Birth Rate</th>
-              <th class="p-3">Death Rate</th>
+              <th class="p-3">Birth Rate (CBR)</th>
+              <th class="p-3">Death Rate (CDR)</th>
               <th class="p-3">NIR</th>
-              <th class="p-3">Historical Catalyst &amp; Diseases</th>
+              <th class="p-3">Historical Catalyst &amp; Diseases (ETM)</th>
+              <th class="p-3">Examples</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-800/60 text-slate-300 bg-slate-950">
-            <tr>
-              <td class="p-3 font-bold text-white">Stage 1</td>
-              <td class="p-3 text-rose-400">High</td>
-              <td class="p-3 text-rose-400">High</td>
+          <tbody class="divide-y divide-[#dadce0] dark:divide-slate-800 text-[#3c4043] dark:text-slate-300 bg-white dark:bg-slate-950">
+            <tr class="hover:bg-[#f8f9fa] dark:hover:bg-slate-900/60 transition">
+              <td class="p-3 font-bold text-[#202124] dark:text-white">Stage 1</td>
+              <td class="p-3 text-[#c5221f] dark:text-rose-400 font-semibold">High</td>
+              <td class="p-3 text-[#c5221f] dark:text-rose-400 font-semibold">High</td>
               <td class="p-3">~0%</td>
-              <td class="p-3">Pestilence &amp; Famine (Black Plague, hunger). No countries today.</td>
+              <td class="p-3">Pestilence &amp; Famine (Black Plague, starvation, animal attacks).</td>
+              <td class="p-3 font-mono text-[11px] text-[#5f6368] dark:text-slate-400">No countries today</td>
             </tr>
-            <tr>
-              <td class="p-3 font-bold text-white">Stage 2</td>
-              <td class="p-3 text-rose-400">High</td>
-              <td class="p-3 text-emerald-400 font-bold">Plummets</td>
-              <td class="p-3 text-amber-400 font-black">Exploding</td>
-              <td class="p-3">Industrial &amp; Medical Revolutions. Receding pandemics (cholera).</td>
+            <tr class="hover:bg-[#f8f9fa] dark:hover:bg-slate-900/60 transition">
+              <td class="p-3 font-bold text-[#202124] dark:text-white">Stage 2</td>
+              <td class="p-3 text-[#c5221f] dark:text-rose-400 font-semibold">High</td>
+              <td class="p-3 text-[#137333] dark:text-emerald-400 font-bold">Plummets</td>
+              <td class="p-3 text-[#b06000] dark:text-amber-400 font-black">Exploding</td>
+              <td class="p-3">Industrial Rev (1800s West) / Medical Rev (1950s LDCs: antibiotics, DDT). Receding pandemics.</td>
+              <td class="p-3 font-mono text-[11px] text-[#5f6368] dark:text-slate-400">Mali, Niger, Yemen</td>
             </tr>
-            <tr>
-              <td class="p-3 font-bold text-white">Stage 3</td>
-              <td class="p-3 text-emerald-400 font-bold">Plummets</td>
-              <td class="p-3 text-slate-400">Low</td>
+            <tr class="hover:bg-[#f8f9fa] dark:hover:bg-slate-900/60 transition">
+              <td class="p-3 font-bold text-[#202124] dark:text-white">Stage 3</td>
+              <td class="p-3 text-[#137333] dark:text-emerald-400 font-bold">Plummets</td>
+              <td class="p-3 text-[#5f6368] dark:text-slate-400">Low</td>
               <td class="p-3">Slows</td>
               <td class="p-3">Urbanization, female schooling, contraception. Degenerative diseases (heart, cancer).</td>
+              <td class="p-3 font-mono text-[11px] text-[#5f6368] dark:text-slate-400">Mexico, Brazil, India</td>
             </tr>
-            <tr>
-              <td class="p-3 font-bold text-white">Stage 4</td>
-              <td class="p-3 text-slate-400">Low</td>
-              <td class="p-3 text-slate-400">Low</td>
+            <tr class="hover:bg-[#f8f9fa] dark:hover:bg-slate-900/60 transition">
+              <td class="p-3 font-bold text-[#202124] dark:text-white">Stage 4</td>
+              <td class="p-3 text-[#5f6368] dark:text-slate-400">Low</td>
+              <td class="p-3 text-[#5f6368] dark:text-slate-400">Low</td>
               <td class="p-3">~0% (ZPG)</td>
-              <td class="p-3">Delayed degenerative diseases (advanced medical bypasses, stents).</td>
+              <td class="p-3">Delayed degenerative diseases (advanced medical bypasses, stents, chemo).</td>
+              <td class="p-3 font-mono text-[11px] text-[#5f6368] dark:text-slate-400">USA, France, UK</td>
             </tr>
-            <tr>
-              <td class="p-3 font-bold text-white">Stage 5</td>
-              <td class="p-3 text-purple-400 font-bold">Very Low</td>
-              <td class="p-3 text-rose-400">Rises above CBR</td>
-              <td class="p-3 text-rose-400 font-black">Negative</td>
-              <td class="p-3">Re-emergence of superbugs / antibiotic resistance; shrinking workforce.</td>
+            <tr class="hover:bg-[#f8f9fa] dark:hover:bg-slate-900/60 transition">
+              <td class="p-3 font-bold text-[#202124] dark:text-white">Stage 5</td>
+              <td class="p-3 text-[#7e22ce] dark:text-purple-400 font-bold">Very Low</td>
+              <td class="p-3 text-[#c5221f] dark:text-rose-400 font-semibold">Rises above CBR</td>
+              <td class="p-3 text-[#c5221f] dark:text-rose-400 font-black">Negative</td>
+              <td class="p-3">Re-emergence of drug-resistant superbugs / antibiotic resistance; shrinking workforce.</td>
+              <td class="p-3 font-mono text-[11px] text-[#5f6368] dark:text-slate-400">Japan, Italy, S. Korea</td>
             </tr>
           </tbody>
         </table>
@@ -304,51 +466,58 @@
 
       <!-- MALTHUS VS BOSERUP DEBATE -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-        <div class="p-5 rounded-2xl bg-slate-950 border border-rose-500/30 space-y-2">
-          <div class="font-extrabold text-rose-400 text-sm">Thomas Malthus (1798)</div>
-          <p class="text-slate-300 leading-relaxed">
-            Argued population grows <strong>geometrically (exponentially: 1, 2, 4, 8, 16)</strong> while food grows <strong>arithmetically (linearly: 1, 2, 3, 4, 5)</strong>. Predicted inevitable catastrophe. <br>
-            <strong>Neo-Malthusians</strong> say Malthus is right today because population depletes water, clean air, topsoil, and energy.
+        <div class="p-5 rounded-2xl bg-[#fce8e6] dark:bg-rose-950/30 border border-[#ea4335] dark:border-rose-600/40 space-y-2">
+          <div class="font-extrabold text-[#c5221f] dark:text-rose-400 text-sm">Thomas Malthus (1798)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Argued population grows <strong>geometrically (exponentially: 1, 2, 4, 8, 16)</strong> while food grows <strong>arithmetically (linearly: 1, 2, 3, 4, 5)</strong>. Predicted inevitable starvation catastrophe. <br>
+            <strong>Neo-Malthusians</strong> say Malthus is right today because population depletes fresh water, clean air, topsoil, and fossil fuels.
           </p>
         </div>
-        <div class="p-5 rounded-2xl bg-slate-950 border border-emerald-500/30 space-y-2">
-          <div class="font-extrabold text-emerald-400 text-sm">Ester Boserup (Anti-Malthusian)</div>
-          <p class="text-slate-300 leading-relaxed">
-            Argued <em>"Necessity is the mother of invention"</em>. As population density grows, humans invent new technologies (irrigation, Green Revolution hybrid seeds, mechanization) that multiply crop yields.
+        <div class="p-5 rounded-2xl bg-[#e6f4ea] dark:bg-emerald-950/30 border border-[#34a853] dark:border-emerald-600/40 space-y-2">
+          <div class="font-extrabold text-[#137333] dark:text-emerald-400 text-sm">Ester Boserup (Anti-Malthusian)</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            Argued <em>"Necessity is the mother of invention"</em>. As population density grows, humans invent new agricultural technologies (irrigation, Green Revolution hybrid seeds, mechanization) that multiply crop yields.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- CLUSTER 5 & 6: MIGRATION, LAWS & CLASSIFICATIONS -->
-    <section id="cluster5" class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-      <div class="flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center font-black text-sm">
+    <!-- ================================================================= -->
+    <!-- CLUSTER 5 & 6: MIGRATION, LAWS & CLASSIFICATIONS                 -->
+    <!-- ================================================================= -->
+    <section id="cluster5" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12),0_1px_2px_rgba(60,64,67,0.24)] space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#dadce0] dark:border-slate-800 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-[#e0f2f1] dark:bg-teal-950/60 text-[#007b83] dark:text-teal-300 border border-[#80cbc4] dark:border-teal-500/40 flex items-center justify-center font-black text-sm">
           05
         </span>
-        <h3 class="text-2xl font-extrabold text-white font-heading">Cluster 5 &amp; 6: Migration Patterns, Laws &amp; Classifications</h3>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#202124] dark:text-white font-heading">Cluster 5 &amp; 6: Migration Patterns, Laws &amp; Classifications</h3>
+          <p class="text-xs text-[#5f6368] dark:text-slate-400">Topics 2.11 – 2.12 • Terms 42 through 72</p>
+        </div>
       </div>
 
       <!-- CRITICAL REFUGEE VS IDP VS ASYLUM -->
-      <div class="p-5 rounded-2xl bg-slate-950 border border-cyan-500/40 space-y-3 text-xs">
-        <h4 class="text-sm font-bold text-white font-heading">The 3 Displaced Persons Categories (Guaranteed on the Test!):</h4>
+      <div class="p-5 rounded-2xl bg-[#e8f0fe] dark:bg-blue-950/40 border border-[#8ab4f8] dark:border-sky-500/40 space-y-3 text-xs">
+        <h4 class="text-sm font-bold text-[#1a73e8] dark:text-sky-300 font-heading flex items-center gap-2">
+          <span>🛡️</span> The 3 Displaced Persons Categories (Guaranteed on the Test!):
+        </h4>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
-            <strong class="text-cyan-400 block text-sm">1. Refugee</strong>
-            <p class="text-slate-300">
-              Forced to flee due to war/persecution and has <strong>crossed an international border</strong>. Protected by UN international law (*non-refoulement*).
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+            <strong class="text-[#1a73e8] dark:text-sky-400 block text-sm">1. Refugee</strong>
+            <p class="text-[#3c4043] dark:text-slate-300">
+              Forced to flee due to war/persecution and has <strong>crossed an international border</strong>. Legally protected by 1951 UN Convention (<em>non-refoulement</em>).
             </p>
           </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
-            <strong class="text-amber-400 block text-sm">2. IDP (Internally Displaced)</strong>
-            <p class="text-slate-300">
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+            <strong class="text-[#b06000] dark:text-amber-400 block text-sm">2. IDP (Internally Displaced)</strong>
+            <p class="text-[#3c4043] dark:text-slate-300">
               Fled for the same reasons as a refugee, but <strong>remains inside their own country</strong> (e.g., Ukrainians moving to Lviv). No UN treaty protection.
             </p>
           </div>
-          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
-            <strong class="text-emerald-400 block text-sm">3. Asylum Seeker</strong>
-            <p class="text-slate-300">
-              Crossed a border and formally applied for legal refugee status; case is pending in immigration court.
+          <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+            <strong class="text-[#137333] dark:text-emerald-400 block text-sm">3. Asylum Seeker</strong>
+            <p class="text-[#3c4043] dark:text-slate-300">
+              Crossed a border and formally applied for legal refugee protection; case is actively pending in immigration court.
             </p>
           </div>
         </div>
@@ -356,9 +525,9 @@
 
       <!-- RAVENSTEIN LAWS & SPATIAL MODELS -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-bold text-white text-sm">Ravenstein’s Laws of Migration (1885)</div>
-          <ul class="text-slate-300 space-y-1 list-disc pl-4">
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-bold text-[#202124] dark:text-white text-sm">Ravenstein’s Laws of Migration (1885)</div>
+          <ul class="text-[#3c4043] dark:text-slate-300 space-y-1 list-disc pl-4">
             <li>Most migrants move short distances (distance decay).</li>
             <li>Long-distance migrants choose major economic urban centers.</li>
             <li>Migration occurs in steps (step migration).</li>
@@ -368,36 +537,109 @@
           </ul>
         </div>
 
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="font-bold text-white text-sm">Intervening Obstacle vs. Opportunity</div>
-          <p class="text-slate-300 leading-relaxed">
-            • <strong>Intervening Obstacle:</strong> A barrier (desert, border wall, strict visa quota) that blocks or delays migration.<br>
+        <div class="p-4 rounded-2xl bg-[#f8f9fa] dark:bg-slate-950 border border-[#dadce0] dark:border-slate-800 space-y-2">
+          <div class="font-bold text-[#202124] dark:text-white text-sm">Intervening Obstacle vs. Opportunity</div>
+          <p class="text-[#3c4043] dark:text-slate-300 leading-relaxed">
+            • <strong>Intervening Obstacle:</strong> A barrier (desert, ocean, border wall, strict visa quota) that blocks or delays migration.<br>
             • <strong>Intervening Opportunity:</strong> A positive feature (a good job opening along the journey) that convinces the migrant to settle early before reaching their planned destination.
           </p>
-          <div class="pt-2 border-t border-slate-800 text-slate-400">
-            <strong>Chain Migration:</strong> Moving to a neighborhood because kin/relatives moved there earlier $\to$ forms <strong>Ethnic Enclaves</strong> (Chinatown).
+          <div class="pt-2 border-t border-[#dadce0] dark:border-slate-800 text-[#5f6368] dark:text-slate-400">
+            <strong>Chain Migration:</strong> Moving to a neighborhood because kin/relatives moved there earlier $\to$ forms <strong>Ethnic Enclaves</strong> (Chinatown, Little Havana).
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ================================================================= -->
+    <!-- TOP 5 EXAM TRAPS SECTION                                         -->
+    <!-- ================================================================= -->
+    <section id="traps" class="p-6 sm:p-8 rounded-3xl bg-[#fef7e0] dark:bg-amber-950/25 border-2 border-[#f9ab00] dark:border-amber-500/40 shadow-sm space-y-5">
+      <div class="flex items-center gap-3 border-b border-[#f9ab00]/40 dark:border-amber-500/40 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 text-[#b06000] dark:text-amber-400 border border-[#f9ab00] dark:border-amber-500/40 flex items-center justify-center font-black text-sm">
+          🎯
+        </span>
+        <div>
+          <h3 class="text-2xl font-extrabold text-[#703800] dark:text-amber-300 font-heading">Top 5 Traps to Avoid on Mrs. Knight’s Vocab Summative</h3>
+          <p class="text-xs text-[#703800]/80 dark:text-amber-200/80">These 5 distinctions make the difference between an 85% and a 100%</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+          <span class="font-bold text-[#c5221f] dark:text-rose-400">Trap 1: Physiological vs. Agricultural Density</span>
+          <p class="text-[#3c4043] dark:text-slate-300">
+            <strong>Physiological</strong> = <em>People</em> per arable land (food carrying capacity).<br>
+            <strong>Agricultural</strong> = <em>Farmers</em> per arable land (farming technology level).
+          </p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+          <span class="font-bold text-[#1a73e8] dark:text-sky-400">Trap 2: Refugee vs. IDP</span>
+          <p class="text-[#3c4043] dark:text-slate-300">
+            A <strong>Refugee</strong> crossed an <em>international border</em> (has UN treaty protection).<br>
+            An <strong>IDP</strong> stayed <em>inside</em> their own country (no UN treaty protection).
+          </p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+          <span class="font-bold text-[#b06000] dark:text-amber-400">Trap 3: NIR Formula Division</span>
+          <p class="text-[#3c4043] dark:text-slate-300">
+            Always divide by 10! $(CBR - CDR) \div 10$. If $CBR = 20$ and $CDR = 5$, $NIR = 1.5\%$, <strong>never 15%</strong>.
+          </p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1">
+          <span class="font-bold text-[#137333] dark:text-emerald-400">Trap 4: Malthus vs. Boserup</span>
+          <p class="text-[#3c4043] dark:text-slate-300">
+            <strong>Malthus</strong> = Food grows linearly, humans exponentially $\to$ unavoidable famine.<br>
+            <strong>Boserup</strong> = Population pressure stimulates agricultural invention (Green Rev).
+          </p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-sm space-y-1 md:col-span-2">
+          <span class="font-bold text-[#7e22ce] dark:text-purple-400">Trap 5: Why Stage 2 Death Rate Plunged</span>
+          <p class="text-[#3c4043] dark:text-slate-300">
+            In Western Europe/US: **Industrial Revolution** (1800s steam engines, sanitation, wealth).<br>
+            In Developing World (Africa, Asia, Latin America): **Medical Revolution** (1950s imported antibiotics, vaccines, DDT).
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER CALL TO ACTION -->
-    <section class="p-6 rounded-3xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-rose-500/20 border border-amber-500/40 text-center space-y-3">
-      <h3 class="text-lg font-bold text-white font-heading">Ready to Test Your Knowledge?</h3>
-      <p class="text-xs text-slate-300 max-w-lg mx-auto">
-        Switch to the interactive study portal to drill all 72 flashcards, search terms by category, or take the self-grading active recall quiz.
+    <section class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-[#dadce0] dark:border-slate-800 shadow-[0_1px_3px_rgba(60,64,67,0.12)] text-center space-y-3">
+      <h3 class="text-xl font-bold text-[#202124] dark:text-white font-heading">Ready to Test Your Knowledge?</h3>
+      <p class="text-xs sm:text-sm text-[#3c4043] dark:text-slate-300 max-w-lg mx-auto">
+        Switch to the interactive study portal to drill all 72 flashcards, practice the 12 Broad-vs-Specific Showdowns, or take the timed 30-in-30 word bank exam.
       </p>
-      <div class="pt-2">
-        <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-400 text-slate-950 font-black text-xs hover:from-amber-400 hover:to-orange-300 transition shadow-lg shadow-amber-500/20">
-          <i class="fa-solid fa-play"></i> Open Interactive Vocab Quiz &amp; Flashcards ➔
+      <div class="pt-3 flex flex-wrap items-center justify-center gap-3">
+        <a href="Unit2_Vocab_Test_Runner.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1a73e8] hover:bg-[#1557b0] text-white font-bold text-xs transition shadow-sm">
+          <i class="fa-solid fa-play"></i> Open Interactive Vocab Studio ➔
+        </a>
+        <a href="flashcards.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white dark:bg-slate-800 hover:bg-[#f1f3f4] dark:hover:bg-slate-700 text-[#3c4043] dark:text-slate-200 font-semibold text-xs border border-[#dadce0] dark:border-slate-700 transition shadow-sm">
+          <i class="fa-solid fa-layer-group text-[#7e22ce] dark:text-purple-400"></i> 72 3D Flashcards
         </a>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
-    <p>AP Human Geography • Mrs. Anne Knight • South Forsyth High School</p>
+  <footer class="border-t border-[#dadce0] dark:border-slate-800 bg-white dark:bg-slate-950 py-6 text-center text-xs text-[#5f6368] dark:text-slate-400">
+    <div class="max-w-4xl mx-auto px-4 space-y-1">
+      <p class="font-semibold text-[#3c4043] dark:text-slate-200">AP Human Geography • Mrs. Anne Knight • South Forsyth High School</p>
+      <p>Unit 2: Population &amp; Migration Patterns and Processes (Topics 2.1 – 2.12)</p>
+    </div>
   </footer>
+
+  <script>
+    // Collapsible How to Study Guide Toggle
+    function toggleHowToStudyGuide() {
+      const panel = document.getElementById('howToStudyGuidePanel');
+      const btn = document.getElementById('howToStudyGuideBtn');
+      const btnText = document.getElementById('howToStudyGuideBtnText');
+      const chevron = document.getElementById('howToStudyGuideChevron');
+      if (!panel) return;
+      const isHidden = panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      btnText.textContent = isHidden ? 'Show Study Blueprint' : 'Hide Study Blueprint';
+      chevron.className = isHidden ? 'fa-solid fa-chevron-down text-[10px]' : 'fa-solid fa-chevron-up text-[10px]';
+    }
+  </script>
 </body>
 </html>

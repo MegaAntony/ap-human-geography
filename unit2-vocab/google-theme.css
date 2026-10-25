@@ -656,3 +656,116 @@ html:not(.dark) section.bg-gradient-to-r p {
 html:not(.dark) h2 .bg-clip-text {
   background-image: linear-gradient(to right, #b06000, #ea580c, #c5221f) !important;
 }
+
+/* ==========================================================================
+   DARK MODE OVERRIDES FOR GOOGLE CLEAN LIGHT CLASSES (When html has class "dark")
+   ========================================================================== */
+
+html.dark body {
+  background-color: #020617 !important;
+  color: #f8fafc !important;
+}
+
+html.dark header {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  border-bottom-color: #334155 !important;
+}
+
+html.dark header .bg-\[\#fef7e0\] {
+  background-color: #451a03 !important;
+  border-bottom-color: #b45309 !important;
+  color: #fef3c7 !important;
+}
+
+html.dark .bg-\[\#f8f9fa\] {
+  background-color: #020617 !important;
+}
+
+html.dark .bg-white,
+html.dark section.bg-white,
+html.dark footer.bg-white {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+html.dark .border-\[\#dadce0\] {
+  border-color: #334155 !important;
+}
+
+html.dark .text-\[\#202124\] {
+  color: #f8fafc !important;
+}
+
+html.dark .text-\[\#3c4043\] {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-\[\#5f6368\] {
+  color: #94a3b8 !important;
+}
+
+html.dark .bg-\[\#f1f3f4\] {
+  background-color: #1e293b !important;
+}
+
+html.dark table thead.bg-\[\#f1f3f4\] {
+  background-color: #1e293b !important;
+}
+
+html.dark table tbody.bg-white {
+  background-color: #0f172a !important;
+}
+
+html.dark table tbody tr:hover {
+  background-color: #1e293b !important;
+}
+
+html.dark table tbody td {
+  color: #cbd5e1 !important;
+}
+
+html.dark table tbody td.font-bold {
+  color: #f8fafc !important;
+}
+
+html.dark .divide-\[\#dadce0\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #334155 !important;
+}
+
+html.dark #traps.bg-\[\#fef7e0\] {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  border-color: #f59e0b !important;
+}
+
+html.dark #traps h3 {
+  color: #fbbf24 !important;
+}
+
+html.dark #traps p {
+  color: #cbd5e1 !important;
+}
+
+html.dark #traps .bg-white {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+html.dark .bg-\[\#e8f0fe\] {
+  background-color: rgba(26, 115, 232, 0.15) !important;
+}
+
+html.dark .bg-\[\#e6f4ea\] {
+  background-color: rgba(30, 142, 62, 0.15) !important;
+}
+
+html.dark .bg-\[\#f3e8fd\] {
+  background-color: rgba(147, 52, 230, 0.15) !important;
+}
+
+html.dark .bg-\[\#fce8e6\] {
+  background-color: rgba(217, 48, 37, 0.15) !important;
+}
+
+html.dark .bg-\[\#e0f2f1\] {
+  background-color: rgba(0, 123, 131, 0.15) !important;
+}

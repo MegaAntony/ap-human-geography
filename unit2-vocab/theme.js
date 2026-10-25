@@ -16,7 +16,8 @@ function updateThemeToggleButtons(isDark) {
 
 function initTheme() {
   try {
-    const isDark = localStorage.getItem('ap_hug_theme') === 'dark';
+    const raw = localStorage.getItem('ap_hug_theme');
+    const isDark = raw === 'dark' || raw === '"dark"';
     if (isDark) {
       document.documentElement.classList.add('dark');
     } else {
