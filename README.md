@@ -34,6 +34,11 @@ Interactive FRQ study guides and model responses for AP exam preparation:
 - **Topic 7.3**: Measures of Development
 - **Topic 7.5**: Theories of Development
 
+### 📘 `unit2-amsco-test/` (Unit 2 AMSCO Practice Test)
+205 AP-style questions from AMSCO Chapters 3–5 (Topics 2.1–2.12) with clues, trap alerts, and the AMSCO page and exact sentence that proves each answer:
+- **`unit2-amsco-test/index.html`**: the test (Practice and Exam modes, score by topic)
+- **`unit2-amsco-test/img/`**: figures cropped from the textbook pages
+
 ### 🔤 `vocabRunner/` (Vocabulary Summative Simulator Hub)
 Interactive vocabulary test runners with dynamic word banks, 30-minute exam countdown timers, and instant diagnostics:
 - **`vocabRunner/index.html`**: Vocabulary Simulator Hub Dashboard
