@@ -39,6 +39,12 @@ Interactive FRQ study guides and model responses for AP exam preparation:
 - **`unit2-amsco-test/index.html`**: the test (Practice and Exam modes, score by topic)
 - **`unit2-amsco-test/img/`**: figures cropped from the textbook pages
 
+### 🔀 `unit2-amsco-hard/` (Unit 2 AMSCO Hard Mode)
+244 questions (the 205 above plus 39 new) with rewritten, length-balanced answer choices. Every test reshuffles the questions and the A–E choices, and mastery is tracked per question:
+- **`unit2-amsco-hard/index.html`**: the test
+- **`unit2-amsco-hard/hard_bank.json`**: the question bank (also embedded in the page)
+- **`unit2-amsco-hard/img/`**: figures cropped from the textbook pages
+
 ### 🔤 `vocabRunner/` (Vocabulary Summative Simulator Hub)
 Interactive vocabulary test runners with dynamic word banks, 30-minute exam countdown timers, and instant diagnostics:
 - **`vocabRunner/index.html`**: Vocabulary Simulator Hub Dashboard
